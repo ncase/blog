@@ -19,6 +19,9 @@ module.exports = (config)=>{
 	config.addFilter('latestFivePosts', posts=>{
 		return posts.slice(-5).reverse();
 	});
+	config.addFilter('latestOnePost', posts=>{
+		return posts.slice(-1).reverse();
+	});
 
 	// Sh sh sh. No console, only dreams now.
 	config.setQuietMode(true);

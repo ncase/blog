@@ -39,45 +39,27 @@ share_desc: "I learn stuff, then share what I learn"
     </a>
 {% endfor %}
 
-<a href="https://blog.ncase.me/back-to-the-future-with-rss/">
-    <div class="article-summary">
-        <div id="article-thumb" style="background-image:url(styles/assets/test-thumb.png?v=2)"></div>
-        <div id="article-desc">
-            <span id="article-title">
-                <b>Back to the Future with RSS!</b>
-            </span>
-            &nbsp;
-            <span id="article-subtitle">
-                A short intro to the good ol' web.
-            </span>
-            &nbsp;
-            <span id="article-metadata">
-                (5 min read)
-            </span>
-        </div>
-    </div>
-</a>
-
 <hr/>
 
 <p>
 But if you're <i>not</i> new here, well then!
-<b>Here are my 5 latest posts:</b> <a href='/archive'>(see full archive)</a>
+<br>
+<b>Here's my latest post:</b> <a href='/archive'>(see full archive)</a>
 </p>
 
-{% for post in collections.post | latestFivePosts %}
+{% for post in collections.post | latestOnePost %}
     {% include "article.njk" %}
 {% endfor %}
 
 <p>
-    Featured tags:
-    Featured,
-    ART,
-    How To,
-    Nicky Reads,
-    Short Stories,
-    New Project,
-    This Time It Is Personal
+    <b>Featured tags:</b>
+    <!--<a href='/tag/Featured'>Featured</a>,-->
+    <a href='/tag/ART'>ART</a>,
+    <a href='/tag/How To'>How To</a>,
+    <a href='/tag/Nicky Reads'>Nicky Reads</a>,
+    <a href='/tag/Short Stories'>Short Stories</a>,
+    <a href='/tag/New Project'>New Project</a>,
+    <a href='/tag/This Time It Is Personal'>This Time It Is Personal</a>
 </p>
 <p>
     Thanks for reading! 💖

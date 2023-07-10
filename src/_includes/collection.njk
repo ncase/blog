@@ -1,15 +1,17 @@
 <!-- thx https://github.com/11ty/eleventy/issues/1284#issuecomment-648749730 -->
 {% set currentYear = "" %}
 {% for post in showCollection %}
+    {% if not post.data.isDeprecated %}
 
-    <!-- New year... -->
-    {% set postYear = post.date.getFullYear() %}
-    {% if currentYear != postYear %}
-        {% set currentYear = postYear %}
-        <h1 class='archive-year'>~{{ postYear }}~</h1>
+        <!-- New year... -->
+        {% set postYear = post.date.getFullYear() %}
+        {% if currentYear != postYear %}
+            {% set currentYear = postYear %}
+            <h1 class='archive-year'>~{{ postYear }}~</h1>
+        {% endif %}
+
+        <!-- ARTICLE LINK -->
+        {% include "article.njk" %}
+
     {% endif %}
-
-    <!-- ARTICLE LINK -->
-    {% include "article.njk" %}
-
 {% endfor %}
