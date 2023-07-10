@@ -35,12 +35,17 @@ window.addEventListener("load", ()=>{
     let currentPanelName = '';
     // Reveal 'em
     let revealPanel = (panelName)=>{
+        // Remember current one
         currentPanelName = panelName;
+        // Open up
         document.body.setAttribute("sidebar_state", "open");
+        // Hide all except one
         $all("#sidebar > div").forEach( (panelPage)=>{
             panelPage.style.display = 'none';
         });
         $(`#panel_${panelName}`).style.display = 'block';
+        // Don't close plz
+        startToClose = false;
     };
     // Close 'em
     let closePanel = ()=>{
@@ -48,12 +53,30 @@ window.addEventListener("load", ()=>{
         document.body.setAttribute("sidebar_state", "closed");
     };
     // The overlay behind the panel, above content
-    $("#return_to_content").onclick = closePanel;
+    // Must mouse over it for >0.5s to count
+    let closeCountdown = 0,
+        startToClose = false;
+    $("#return_to_content").onmouseover = ()=>{
+        closeCountdown = 100;
+        startToClose = true;
+    };
+    $("#return_to_content").onmouseleave = ()=>{
+        startToClose = false;
+    };
+    setInterval(()=>{
+        if(startToClose){
+            if(closeCountdown<=0) closePanel();
+            else closeCountdown-=10;
+        }
+    },10);
 
     // SIDEBAR: TABLE OF CONTENTS
     // Populate it!
     let allHeadings = $all("h1, h2, h3, h4, h5, h6");
     let tocHTML = "";
+    if(allHeadings.length==0){
+        $('#tab_toc').style.display = 'none';
+    }
     allHeadings.forEach( (heading)=>{
 
         // Table of Contents link
@@ -69,17 +92,24 @@ window.addEventListener("load", ()=>{
 
     });
     $('#panel_toc').innerHTML = tocHTML;
+    // HACK: If ToC is too large... just shrink font until it works
+    let tocFont = 16;
+    do{
+        $('#panel_toc').style.fontSize = tocFont+'px';
+        tocFont--;
+    }while( tocFont>1 && parseInt(window.getComputedStyle($("#panel_toc")).height)+20 > document.body.clientHeight);
 
     // READING CONTROLS
     let updateStyle = ()=>{
 
         // Dark or not
-        document.body.setAttribute("dark_mode", $("#style_dark_mode").checked ? "yes" : "no");
+        let isDark = $("#style_dark_mode").checked;
+        document.body.setAttribute("dark_mode", isDark ? "yes" : "no");
 
         // Font size
         let fontsize = $("#style_fontsize_slider").value + 'px';
         $("#style_fontsize").innerText = fontsize;
-        $("#content").style.fontSize = fontsize;
+        $("#content").style.fontSize = fontsize + 'px';
 
         // Font family
         let selectedFont = $all("input[name=style_font_family]").find( (radioButton)=>{
@@ -87,28 +117,50 @@ window.addEventListener("load", ()=>{
         }).value;
         document.body.setAttribute("font_family", selectedFont);
 
+        // Also update localStorage to save settings across pages
+        window.localStorage.style_dark = isDark;
+        window.localStorage.style_size = fontsize;
+        window.localStorage.style_font = selectedFont;
+
     };
-    // Side
-    $("#style_fontsize_slider").oninput = updateStyle;
     // Dark Mode
     $("#style_dark_mode_container").onclick = ()=>{
         $("#style_dark_mode").checked = !$("#style_dark_mode").checked;
         updateStyle();
     }
+    // Size
+    $("#style_fontsize_slider").oninput = updateStyle;
     // Font Family
     $all("input[name=style_font_family]").forEach( (radioButton)=>{
         radioButton.onclick = updateStyle;
     });
     // Reset
     let resetStyle = ()=>{
-        $("#style_fontsize_slider").value = 19;
         $("#style_dark_mode").checked = false;
+        $("#style_fontsize_slider").value = 19;
         $("input[value=serif]").checked = true;
         updateStyle();
     };
     $("#style_reset").onclick = resetStyle;
-    resetStyle();
-    // TODO: SAVE SETTINGS ACROSS PAGES
+
+    // Save settings across pages
+    // Defaults
+    window.localStorage.style_dark = window.localStorage.style_dark || false;
+    window.localStorage.style_size = window.localStorage.style_size || 19;
+    window.localStorage.style_font = window.localStorage.style_font || "serif";
+    // Cut off transition CSS
+    document.body.style.transition = "none";
+    // Set to localStorage's values (remember, they're STRINGS)
+    $("#style_dark_mode").checked = (window.localStorage.style_dark=="true");
+    $("#style_fontsize_slider").value = parseInt(window.localStorage.style_size);
+    $(`input[value=${window.localStorage.style_font}]`).checked = true;
+    // Anim!
+    setTimeout(()=>{
+        updateStyle();
+        setTimeout(()=>{
+            document.body.style.transition = null;
+        },1000);
+    },10);
 
     ////////////////////////////////////////////////////////////
     // SCROLLY for NOT-FRONTPAGE pages /////////////////////////
@@ -188,7 +240,6 @@ window.addEventListener("load", ()=>{
         // THE CLOCK SCROLLY
         const HEADER_CONTENT_GAP = 48,
               CONTENT_FOOTER_GAP = 67;
-        // TODO: calculate this AFTER nutshell has hidden stuff...
         const CLOCK_SPRITESHEET_WIDTH = 12;
 
         // WHEN SCROLL, UPDATE CLOCK.
