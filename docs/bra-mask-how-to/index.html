@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>BRA MASK (how to)</title>
+
+    <!-- UTF-8-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="BRA MASK (how to)">
+	<meta itemprop="description" content="a dumb tutorial + a rant about masks">
+	<meta itemprop="image" content="https://blog.ncase.me/content/images/2020/04/thumb.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="BRA MASK (how to)">
+	<meta name="twitter:description" content="a dumb tutorial + a rant about masks">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/images/2020/04/thumb.png">
+	<meta property="og:title" content="BRA MASK (how to)">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/images/2020/04/thumb.png">
+	<meta property="og:description" content="a dumb tutorial + a rant about masks">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/OpenDyslexic2/opendyslexic.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, to override -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Tue Apr 07 2020 10:55:51 GMT-0400 (Eastern Daylight Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='TODO' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li>
+            <li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li>
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you got disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (one-time & monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (If you choose monthly support, you can get
+            exclusive rewards, such as early-access bonus content,
+            voting on topics I write about, your name in the credits,
+            a drawing of a cat, etc!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            <img id="splash_image_blurry" src="/styles/assets/placeholder_banner.png"/>
+            <img id="splash_image_real" src="/styles/assets/placeholder_banner.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			BRA MASK (how to)
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<div id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message">
+                💀 <b>THIS POST HAS BEEN DEPRECATED.</b>
+                This means I <i>explicitly dislike the existence of this post</i>,
+                but I'm leaving it up for archival purposes.
+                So hang me with this noose.
+            </div>
+        
+		<p>First off, this tutorial is dumb.</p>
+<p>If you want to make your own cloth mask – and I highly recommend you do, since the cost is minimal &amp; we now know that even healthy-seeming people can spread COVID-19 – just follow the Surgeon General's 45-second tutorial. It's way more practical and way less gross:</p>
+<iframe width="480" height="270" src="https://www.youtube.com/embed/tPx1yqvJgf4?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p>That said, I was bored, so here's how to convert a bra into two face masks:</p>
+<p><img src="/content/images/2020/04/0.JPG" alt=""></p>
+<h2>You Will Need:</h2>
+<ul>
+<li>A bra you don't want anymore (or that you want less than 2 masks)</li>
+<li>Scissors</li>
+<li>Sewing needle &amp; thread (not pictured above, whoops)</li>
+<li>(Optional) Tape, to hold stuff in place before you sew 'em.</li>
+</ul>
+<h3>Mask #1: Around the Head with Bra Band &amp; Hooks</h3>
+<p>Cut out one of the cups with the side-band attached, then cut out the other side-band:</p>
+<p><img src="/content/images/2020/04/1.JPG" alt=""></p>
+<p>Hook both bands together on the back:</p>
+<p><img src="/content/images/2020/04/2.JPG" alt=""></p>
+<p>Wrap it around your face snugly, and mark where the other band should go: (I marked the position with tape)</p>
+<p><img src="/content/images/2020/04/3.JPG" alt=""></p>
+<p>Sew it on <em>from the inside</em>, and trim off the extra cloth!</p>
+<p><img src="/content/images/2020/04/4.JPG" alt=""></p>
+<p>Finally, sew in a loop of string to go around your head <em>over</em> your ears.</p>
+<p>And voilà – you have your first mask!</p>
+<p><img src="/content/images/2020/04/_RIGHT.JPG" alt=""></p>
+<p>(I'm using my glasses to give the mask a good fit around the bridge of my nose, but if you don't have glasses, you can sew in a paperclip or twist-tie)</p>
+<p>Now, let's use the <em>rest</em> of the bra...</p>
+<h3>Mask #2: Over the Ears with Adjustable Bra Straps</h3>
+<p>You should have 2 adjustable straps &amp; another cup left over.</p>
+<p>Loop the straps through their buckles, then mark where they should go on your mask. Your straps should attach to the <em>outside</em> of your mask, for a good fit!</p>
+<p>(I also folded &amp; taped the bottom of the cup, for a tighter fit around my chin)</p>
+<p><img src="/content/images/2020/04/5.JPG" alt=""></p>
+<p>Sew it together!</p>
+<p><img src="/content/images/2020/04/6.JPG" alt=""></p>
+<p>Hallelujah – that's your second mask, with adjustable ear straps:</p>
+<p><img src="/content/images/2020/04/_LEFT.JPG" alt=""></p>
+<p>That's all folks! Stitch out with yo' tits out~ 👙➡️😷😷</p>
+<hr>
+<h2>And Now, A Rant About Masks</h2>
+<p>Besides my bra, there's something else I want to get off my chest. (har har)</p>
+<p>I <em>completely</em> fell for the &quot;healthy people should not wear masks&quot; thing.</p>
+<p>Not &quot;don't <em>buy</em> masks&quot; – that's still damn good advice given we have a mask shortage &amp; healthcare providers need them more – but specifically, &quot;don't <em>wear</em> masks&quot;. For example, on March 2nd, 2020, <a href="https://www.businessinsider.com/americans-dont-need-masks-pence-says-as-demand-increases-2020-2">the US Surgeon General said</a>:</p>
+<blockquote>
+<p>&quot;You can increase your risk of getting [COVID-19] by wearing a mask if you are not a health care provider [...] Folks who don't know how to wear them properly tend to touch their faces a lot and actually can increase the spread of coronavirus.&quot;</p>
+</blockquote>
+<p>So I trusted the expert, chose to not wear <em>cloth</em> masks either, <a href="https://www.patreon.com/posts/plushies-34819423">and then I spread this advice to others</a>.</p>
+<p>All the Western public health organizations – and many of my smart, intelligent friends – said the same list of things:</p>
+<ul>
+<li>It'll make you touch your face more. (Though you could as easily say it's a reminder to touch your face <em>less</em>)</li>
+<li>It's hard to wear masks properly. (It's also hard to wash hands properly, but we don't advise people to <em>not</em> wash hands)</li>
+<li>Masks make you more reckless with handwashing &amp; social distancing. (try: &quot;Safety belts make you more reckless with signalling &amp; braking.&quot;)</li>
+<li>Masks only stop you from spreading the disease, not catching it. And if you have the disease just stay at home. (Lots of folks – including me – were shocked to learn <a href="https://science.sciencemag.org/content/early/2020/03/30/science.abb6936.abstract">up to half of COVID-19 transmissions happen are pre-symptomatic</a>... but honestly, given that epidemiologists already knew that <a href="https://academic.oup.com/aje/article/167/7/775/83777">the &quot;regular&quot; flu reaches peak infectiousness 1 day before peak symptoms</a>, we should've at least <em>prepared for</em> this possibility.)</li>
+</ul>
+<p>And the frustrating thing is: if the officials wanted people to not hoard masks, they could've just recommended cloth masks from the beginning. Well – credit to the Surgeon General – he did finally update his beliefs, and made the wonderful video tutorial above.</p>
+<p>I want to be clear:</p>
+<p>It is <em>my fault</em> for having believed &amp; spread this misinformation.</p>
+<p>I wish I could pretend I was just being intellectually humble, putting aside my skepticism and &quot;trusting the experts&quot;. But honestly, I was intellectually lazy.</p>
+<p>If I even gave it 5 minutes of thought, I could've realized most of the above rationales are bogus. And if I gave it 30 minutes of Google Scholar, I could've learnt that <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2440799/">a tea cloth across your face is about half as good as a surgical mask</a>. (thank you Jonathan from my Patreon comments for linking me to this study!)</p>
+<p>So, I'm writing this rant out of an urge to be intellectually honest, with myself and others: I was a fool and a lemming.</p>
+<p>But at least I'm an <em>honest</em> lemming.</p>
+<p>Anyway, the moral of the story is &quot;trust the experts&quot; is almost never said by actual trustworthy experts. Experts don't rely on appeals to authority. They trust, but verify. I failed to verify.</p>
+<p>Or maybe the moral of the story is &quot;trust the experts from the <em>mask-advising</em> South Korean &amp; Taiwanese health agencies who <em>actually contained</em> COVID-19_,_ instead of the Western health agencies who faffed around for two months.&quot;</p>
+<p>Or maybe the moral of the story is <em>check out my coronavirus fursuit!</em></p>
+<p><img src="/content/images/2020/04/_CUTE.JPG" alt=""></p>
+<p>COwOVID-19</p>
+
+
+	</div>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

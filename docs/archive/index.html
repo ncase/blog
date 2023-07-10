@@ -1,0 +1,3233 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>Nicky&#39;s Blog: The Archives</title>
+
+    <!-- UTF-8-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="Nicky&#39;s Blog: The Archives">
+	<meta itemprop="description" content="I learn stuff, then share what I learn">
+	<meta itemprop="image" content="https://blog.ncase.me/styles/assets/placeholder_thumb.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="Nicky&#39;s Blog: The Archives">
+	<meta name="twitter:description" content="I learn stuff, then share what I learn">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/styles/assets/placeholder_thumb.png">
+	<meta property="og:title" content="Nicky&#39;s Blog: The Archives">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/styles/assets/placeholder_thumb.png">
+	<meta property="og:description" content="I learn stuff, then share what I learn">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/OpenDyslexic2/opendyslexic.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, to override -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    <script>window.NOT_A_POST=true;</script>
+    
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='TODO' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li>
+            <li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li>
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you got disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (one-time & monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (If you choose monthly support, you can get
+            exclusive rewards, such as early-access bonus content,
+            voting on topics I write about, your name in the credits,
+            a drawing of a cat, etc!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  style='display:none'  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            <img id="splash_image_blurry" src="/styles/assets/placeholder_banner.png"/>
+            <img id="splash_image_real" src="/styles/assets/placeholder_banner.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			Nicky&#39;s Blog: The Archives
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<div id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.
+            </div>
+        
+		
+<p style='text-align: center; font-size: 0.75em; line-height: 1.8em;'>
+🐜&nbsp;🐜&nbsp;🐜
+<br>
+<i>Archive Ant says: Don't binge! When consuming media,
+remember to chew slowly, and take time between "meals" to digest.
+Besides, my writing gets cringier the further you scroll down.
+Anything past 3 years is dead to me, honestly.</i>
+<br>
+🐜&nbsp;🐜&nbsp;🐜
+</p>
+
+
+<!-- thx https://github.com/11ty/eleventy/issues/1284#issuecomment-648749730 -->
+
+
+
+    <!-- New year... -->
+    
+    
+        
+        <h1 class='archive-year'>~2022~</h1>
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/new-project-nutshell/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2022/08/nutshell.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>New project! Nutshell: make expandable explanations</b>
+            </span>
+
+            
+            &middot;
+            <span id="article-subtitle">
+                A tool for writers to let readers dive into details
+            </span>
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/new-talk-how-to-explain-things-real-good/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2022/08/talk.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>New talk! “How To Explain Things Real Good”</b>
+            </span>
+
+            
+            &middot;
+            <span id="article-subtitle">
+                A mini-talk I gave at Stanford on math/science communication
+            </span>
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+        
+        <h1 class='archive-year'>~2021~</h1>
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/back-to-the-future-with-rss/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2021/07/rss3.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Back to the Future with RSS!</b>
+            </span>
+
+            
+            &middot;
+            <span id="article-subtitle">
+                How to save the open web, &amp; get (re)started with RSS
+            </span>
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            &middot;
+            <span id="article-metadata">
+                (4 min read)
+            </span>
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/how-do-i-learn-x/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://ncase.me/sharing/thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>How Do I Learn X?</b>
+            </span>
+
+            
+            &middot;
+            <span id="article-subtitle">
+                Advice on learning math, writing, coding, game design, mental health, etc
+            </span>
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+        
+        <h1 class='archive-year'>~2020~</h1>
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/new-explorable-covid-19-futures-explained-with-playable-simulations/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2020/05/thumbnail.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>New Explorable! “COVID-19 Futures, Explained With Playable Simulations”</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/onestepahead/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>#OneStepAhead</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/make-plushie-patterns-with-play-doh-paper-towels/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2020/03/thumb-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Make Plushie Patterns with Play-Doh &amp; Paper Towels</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+        
+        <h1 class='archive-year'>~2019~</h1>
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/2010-2019/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2019/12/thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>What Did I Learn This Decade? (2010-2019)</b>
+            </span>
+
+            
+            &middot;
+            <span id="article-subtitle">
+                A zillion words about being queer, going indie, and mental health (35 min read)
+            </span>
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/my-most-meaningful-media-of-2019/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2019/12/thumb_media.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>My Most Meaningful Media of 2019</b>
+            </span>
+
+            
+            &middot;
+            <span id="article-subtitle">
+                From murder clowns to quantum computing to furry lesbian vampires (9 min read)
+            </span>
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/curse-of-the-chocolate-covered-broccoli-or-emotion-in-learning/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2019/12/broc-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Curse of the Chocolate-Covered Broccoli (or: Emotion in Learning)</b>
+            </span>
+
+            
+            &middot;
+            <span id="article-subtitle">
+                So earlier this year, I learnt my whole career was based on a lie. As one does.
+            </span>
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/calm-down/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2019/05/asdsa-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Calm Down</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/fun-games-to-play-while-youre-waiting-to-be-born/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2019/05/fetus-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Fun Games To Play While You&#39;re Waiting To Be Born</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/the-boy-weapon/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2019/05/dragon-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>The Boy-Weapon</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/lone-wolf/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2019/02/promptss-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Lone Wolf</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/normal-guy/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2019/02/prompts-2.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Normal Guy</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/lizard-person/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2019/02/prompt3-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Lizard Person</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/moms-secret/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2019/02/prompt_2-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>mom&#39;s secret</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/mr-sacks/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2019/02/prompt-2.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Mr. Sacks</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/my-experiment-pre-registration/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2019/01/causal-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>My Experiment &quot;Pre-Registration&quot;</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+        
+        <h1 class='archive-year'>~2018~</h1>
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/the-most-meaningful-books-i-read-in-2018/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2018/12/headers-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>The Most Meaningful Books I Read in 2018</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/habits-i-tried-to-make-in-2018/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2018/12/thumb.JPG)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Habits I (Tried To) Make in 2018</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/parable-of-the-hill-climber/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2018/11/max0001.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Parable of the Hill Climber</b>
+            </span>
+
+            
+            &middot;
+            <span id="article-subtitle">
+                Once upon a time, there was a hill climber.
+            </span>
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/new-explorable-how-to-remember-anything-forever-ish/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>New Explorable! “How To Remember Anything Forever-ish”</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/the-explorables-jam/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2018/08/1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>The Explorables Jam!</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/the-lamps/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2018/08/Screen-Shot-2018-08-08-at-13.00.32.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>The Lamps</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/afterlife/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2018/07/afterlife-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>AfterLife</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/nickys-next-explorable-survey-results/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2018/06/Screen-Shot-2018-06-21-at-07.02.24-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Nicky&#39;s Next Explorable: Survey Results!</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/explorable-explanations-4-more-design-patterns/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2018/06/Screen-Shot-2018-06-20-at-13.00.03.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Explorable Explanations: 4 More Design Patterns</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/new-mini-explorable-attractors/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2018/05/thumbnail-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>New Mini-Explorable! “Attractors”</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/new-explorable-the-wisdom-and-or-madness-of-crowds/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2018/04/animation-1.gif)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>New Explorable! &quot;The Wisdom and/or Madness of Crowds&quot;</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/how-do-we-learn-a-zine/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2018/02/thumb.jpeg)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>How Do We Learn? A Zine</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/how-to-become-a-centaur/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2018/02/31517867887515-1.jpg)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>How To Become A Centaur</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/the-most-meaningful-books-i-read-in-2017/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2018/01/books-2.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>The Most Meaningful Books I Read in 2017</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+        
+        <h1 class='archive-year'>~2017~</h1>
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/take-your-time/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2017/11/thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Take Your Time</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/the-happiness-trap-zine-ified/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2017/11/thumb.jpg)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>The Happiness Trap: Zine-ified</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/how-i-make-an-explorable-explanation/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2017/09/0-1.jpg)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>How I Make Explorable Explanations</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/my-long-now-talk-seeing-whole-systems/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2017/09/intro0018-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>My Long Now Talk: &quot;Seeing Whole Systems&quot;</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/the-evolution-of-trust-is-out/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>&quot;The Evolution of Trust&quot; is out!</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/jigsaw-puzzles/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2017/04/thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Jigsaw Puzzles</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/environment-economy/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2017/04/earth-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>ENVIRONMENT ⇆ ECONOMY</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/the-most-meaningful-books-i-read-in-2016/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2017/01/meta-thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>The Most Meaningful Books I Read in 2016</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+        
+        <h1 class='archive-year'>~2016~</h1>
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/we-become-what-we-behold-a-post-mortem/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2016/11/ejD2NhI-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>We Become What We Behold, a Post-Mortem</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/reflecting-on-the-game/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2016/09/thumb.jpg)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>reflecting on :the game:</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/the-other-side/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2016/08/thumb-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>The Other Side</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/evolution-not-revolution/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2016/08/thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Evolution, Not Revolution</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/its-a-loopy-world/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2016/05/loopy-thumb-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>It&#39;s A Loopy World</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/emergent-evil/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2016/05/splash-2.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Emergent Evil</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/nicky-reads-feeling-good/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2016/05/Screen-Shot-2016-05-15-at-13-47-41-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Nicky Reads: Feeling Good</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/openvisconf-sketchy-notes/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2016/04/logo.jpg)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>OpenVisConf: Sketchy Notes</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/how-to-simulate-the-universe-in-134-easy-steps/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2016/04/bah.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>How To Simulate The Universe, In 134 Easy Steps</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/why-simulate/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2016/04/simulation-1.gif)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Why Simulate?</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/hello-frontline/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Hello, FRONTLINE!</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/sparrows-trapped-in-the-denver-airport/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Sparrows Trapped in the Denver Airport</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/the-building-block-hypothesis/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>The Building Block Hypothesis</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+        
+        <h1 class='archive-year'>~2015~</h1>
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/neurotic-neurons-process/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2015/09/thelongest1_0-1.jpg)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Neurotic Neurons: Process</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/neurotic-neurons-design-patterns/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Neurotic Neurons: Design Patterns</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/neurotic-neurons-simplifications/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2015/09/thumbnail-2.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Neurotic Neurons: Simplifications</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/a-bittersweet-end-to-nothing-to-hide/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>A Bittersweet End to Nothing to Hide</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/the-science-of-social-change/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2015/05/arg2-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>The Science of Social Change</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/in-which-i-take-scott-mccloud-and-replace-comics-with-videogames/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2015/03/Bx1L4ABCYAADsQo-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>In Which I Take Scott McCloud And Replace &quot;Comics&quot; With &quot;Games&quot;</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/explorable-explanations-the-plan/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2015/03/Screen-Shot-2015-03-21-at-16-17-31-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Explorable Explanations: The Plan</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/logicomix/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2015/03/Logicomix_162-163-1.jpg)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>LOGICOMIX</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/sound-system-ii/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2015/03/Screen-Shot-2015-03-17-at-20-37-33-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Sound System II</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/windy-day-thoughts-on-vr-filmmaking/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Windy Day + thoughts on VR filmmaking</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/i-love-google-cardboard/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2015/02/61Uc88V4ZaL-_SL1500_-1.jpg)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>I Love Google Cardboard</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/i-do-and-i-understand/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2015/02/confucius.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>I Do And I Understand</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/a-door-key-minigame/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2015/02/bloop-1.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>A Door-Key Minigame</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/sarahthespacespy-js/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>SarahTheSpaceSpy.js</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/nicky-cases-2014-in-hindsight/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2015/01/boop.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Nicky Case&#39;s 2014 In Hindsight</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+        
+        <h1 class='archive-year'>~2014~</h1>
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/pop-up-textbooks/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2014/10/markforcatalog-003_f279dca3af-1.jpg)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Pop-Up Textbooks</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/explorable-explanations/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Explorable Explanations</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/if-games-were-like-game-stories/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>If Games Were Like Game Stories...</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/coming-out-simulator-2014/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Coming Out Simulator 2014</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/paper-jekyll-wins-the-public-domain-jam/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Paper Jekyll wins The Public Domain Jam!</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/stupid-stupid-cubecats/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Stupid, Stupid Cubecats</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/museum-of-eternal-damnation/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Museum of Eternal Damnation</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/the-public-domain-jam/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>The Public Domain Jam</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+        
+        <h1 class='archive-year'>~2013~</h1>
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/slightly-intoxicated-batman/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Slightly Intoxicated Batman</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+    <!-- New year... -->
+    
+    
+
+    <!-- ARTICLE LINK -->
+    <a href="/tragedy-of-the-commons/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Tragedy of the Commons</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+
+	</div>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

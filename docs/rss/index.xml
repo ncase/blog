@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://blog.ncase.me/">
+
+    <title>Nicky&#39;s Blog</title>
+    <subtitle>I make occasional pictures &amp; words</subtitle>
+    <link href="https://blog.ncase.me/feed.xml" rel="self"/>
+    <link href="https://blog.ncase.me/"/>
+    <updated>2022-08-17T00:00:01Z</updated>
+    <id>https://blog.ncase.me/</id>
+    <author>
+        <name>Nicky Case</name>
+    </author>
+
+    
+        
+        <entry>
+            <title>New project! Nutshell: make expandable explanations</title>
+            <link href="https://blog.ncase.me/posts/new-project-nutshell/"/>
+            <updated>2022-08-17T00:00:01Z</updated>
+            <id>https://blog.ncase.me/posts/new-project-nutshell/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;&lt;img src=&quot;https://ncase.me/nutshell/promo/trailer/trailer.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;After 2 years of procrastinating on this project... it&#39;s finally out! My first post-burnout-hiatus interactive thingy:&lt;/p&gt;
+&lt;p&gt;🥜 &lt;strong&gt;Nutshell: make &lt;em&gt;expandable&lt;/em&gt; explanations&lt;/strong&gt; 🥜&lt;br /&gt;
+👉 &lt;a href=&quot;https://ncase.me/nutshell/&quot;&gt;https://ncase.me/nutshell/&lt;/a&gt; 👈&lt;/p&gt;
+&lt;p&gt;This is a tool for writers, to let their readers dive into details. Not shown in the above .gif, are two other &amp;quot;killer features&amp;quot;: 1) you can embed snippets of text &lt;em&gt;from other authors &amp;amp; websites&lt;/em&gt;, even stuff written years ago! And 2) you can embed interactives, YouTube videos, and the intros of Wikipedia articles.&lt;/p&gt;
+&lt;p&gt;If you&#39;re writing a blog, news articles, code documentation, educational material, etc... I hope Nutshell helps you help &lt;em&gt;your&lt;/em&gt; readers.&lt;/p&gt;
+&lt;p&gt;(See you next month... for explainers written &lt;em&gt;with&lt;/em&gt; Nutshell!)&lt;/p&gt;
+&lt;p&gt;P.S: Testing, testing... let&#39;s see if this blog post can &lt;a href=&quot;https://blog.ncase.me/posts/new-project-nutshell/#NewProject&quot;&gt;:embed itself&lt;/a&gt;...&lt;/p&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>New talk! “How To Explain Things Real Good”</title>
+            <link href="https://blog.ncase.me/posts/new-talk-how-to-explain-things-real-good/"/>
+            <updated>2022-08-05T00:00:01Z</updated>
+            <id>https://blog.ncase.me/posts/new-talk-how-to-explain-things-real-good/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;Ha ha guess who&#39;s still bad at updating this blog and its RSS?&lt;/p&gt;
+&lt;p&gt;Anyway, here&#39;s an 18-minute talk I gave a few months ago to some grad students at Stanford! It&#39;s about how I explain complex math/science ideas accessibly, or: &lt;em&gt;How To Explain Things Real Good.&lt;/em&gt; 👌&lt;/p&gt;
+&lt;p&gt;Enjoy! &lt;a href=&quot;https://youtu.be/b-M2U3Jl1Cg&quot;&gt;Direct YouTube link&lt;/a&gt;, embed below:&lt;/p&gt;
+&lt;iframe width=&quot;787&quot; height=&quot;439&quot; src=&quot;https://www.youtube.com/embed/b-M2U3Jl1Cg&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;One-slide summary:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2022/08/summary.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>Back to the Future with RSS!</title>
+            <link href="https://blog.ncase.me/posts/back-to-the-future-with-rss/"/>
+            <updated>2021-07-01T00:00:01Z</updated>
+            <id>https://blog.ncase.me/posts/back-to-the-future-with-rss/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;🕑 &lt;em&gt;4 min reading time&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Table of Contents:&lt;/em&gt;&lt;br /&gt;
+&lt;a href=&quot;https://blog.ncase.me/posts/back-to-the-future-with-rss/#what&quot;&gt;What is RSS?&lt;/a&gt; · &lt;a href=&quot;https://blog.ncase.me/posts/back-to-the-future-with-rss/#how&quot;&gt;How does RSS work?&lt;/a&gt; · &lt;a href=&quot;https://blog.ncase.me/posts/back-to-the-future-with-rss/#start&quot;&gt;How to get started?&lt;/a&gt; · &lt;a href=&quot;https://blog.ncase.me/posts/back-to-the-future-with-rss/#tips&quot;&gt;Tips for using RSS wisely&lt;/a&gt; · &lt;a href=&quot;https://blog.ncase.me/posts/back-to-the-future-with-rss/#conclusion&quot;&gt;Conclusion: If RSS was so great, why&#39;d it die in the first place?&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;a id=&quot;what&quot;&gt;&lt;/a&gt; What is RSS (Really Simple Syndication)?&lt;/h2&gt;
+&lt;p&gt;Imagine an open version of Twitter or Facebook News Feed, with no psy-op ads, owned by no oligopoly, manipulated by no algorithm, and all under &lt;em&gt;your full control.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Imagine a version of the newsletter where you don&#39;t have to worry about them selling your email to scammers, labyrinth-like unsubscribe pages, or stuffing your inbox with ever more crap.&lt;/p&gt;
+&lt;p&gt;Now imagine this existed and was extremely popular 15 years ago. Then we got suckered by the shiny walled gardens.&lt;/p&gt;
+&lt;p&gt;Well, it&#39;s time to make like a tree and go &lt;em&gt;back to the future&lt;/em&gt;, baby!&lt;/p&gt;
+&lt;h2&gt;&lt;a id=&quot;how&quot;&gt;&lt;/a&gt; How does RSS work?&lt;/h2&gt;
+&lt;p&gt;Unlike newsletters where give each publisher your email (and they may abuse that trust), RSS works on a &amp;quot;don&#39;t call me, I&#39;ll call you&amp;quot; policy.&lt;/p&gt;
+&lt;p&gt;An RSS feed is a text file on a website. It&#39;s just a bunch of posts – no tracking or &amp;quot;personalization&amp;quot; – like a printed newspaper:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2021/07/rss1.png&quot; alt=&quot;Three newsvendors, holding newspapers reading &#39;truth&#39;, &#39;beauty&#39;, and &#39;clickbait&#39;. The last vendor is a clown.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Then, whatever RSS reader app you use – you can use any app made by anyone – it&#39;ll call the websites for the feeds &lt;em&gt;you specifically opted into&lt;/em&gt;, no more or less. The websites can&#39;t force it in the other direction.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2021/07/rss2.png&quot; alt=&quot;A flying RSS logo takes &#39;truth&#39; and &#39;beauty&#39;, and leaves the clown&#39;s clickbait.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Your app then shows you your posts in good ol&#39; reverse chronological order. (Some apps let you add extra filters, but unlike social media algorithms, &lt;em&gt;you&lt;/em&gt; control &#39;em.) Apps also make the posts prettier than raw text:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2021/07/rss3.png&quot; alt=&quot;The RSS logo presents a dazzling scroll entitled, &#39;Truth &amp;amp; Beauty&#39;.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Really Simple, indeed!&lt;/p&gt;
+&lt;p&gt;(Note: there&#39;s something very similar to RSS called &amp;quot;Atom&amp;quot;, but all modern apps work equally with both.)&lt;/p&gt;
+&lt;h2&gt;&lt;a id=&quot;start&quot;&gt;&lt;/a&gt; Cool, how do I get started?&lt;/h2&gt;
+&lt;p&gt;First, you need a reader app. I&#39;m currently using the minimalist &lt;a href=&quot;https://www.inoreader.com/&quot;&gt;Inoreader&lt;/a&gt;, but &lt;a href=&quot;https://feedly.com/&quot;&gt;Feedly&lt;/a&gt; is the most popular, and folks I know use &lt;a href=&quot;https://theoldreader.com/&quot;&gt;The Old Reader&lt;/a&gt;. See this &lt;a href=&quot;https://zapier.com/blog/best-rss-feed-reader-apps/&quot;&gt;list of readers&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To add a feed to your app, just paste a link to the blog/site, and your app will automatically find the feed! RSS also lets you follow creators on YouTube, Substack, Medium, and more.&lt;/p&gt;
+&lt;p&gt;But what to follow? Might I recommend...&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.scotthyoung.com/blog/&quot;&gt;Scott Young&#39;s Blog&lt;/a&gt; – about learning &amp;amp; productivity&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://questionablecontent.net/&quot;&gt;Questionable Content&lt;/a&gt; – a comic about queers and robots&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://webcomicname.com/&quot;&gt;Webcomic Name&lt;/a&gt; – the comic that goes &amp;quot;oh no&amp;quot;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw&quot;&gt;3Blue1Brown&lt;/a&gt; – a YouTube channel that shows the beauty of math&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/AimkidProductions&quot;&gt;Aimkid&lt;/a&gt; – the smoothest, most expressive animations I&#39;ve seen in a long time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(And, selfishly: &lt;a href=&quot;https://ncase.me/&quot;&gt;my new interactive, educational projects&lt;/a&gt; and &lt;a href=&quot;https://blog.ncase.me/&quot;&gt;my blog&lt;/a&gt;)&lt;/p&gt;
+&lt;h2&gt;&lt;a id=&quot;tips&quot;&gt;&lt;/a&gt; Tips for using RSS wisely&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Beware the hoarder instinct. No algorithm can save you from hoarding feeds &amp;quot;just in case&amp;quot;, then being overwhelmed. The only cure is to ruthlessly Marie Kondo that crap – if a feed doesn&#39;t &lt;em&gt;consistently&lt;/em&gt; enrich your life, cut it.&lt;/li&gt;
+&lt;li&gt;Some feeds only give you the excerpt of a post, with a link to see the full post at their site. Don&#39;t follow those: they break you out of the RSS reading experience, and trick you into losing time on their site. (This is a harsh rule: I used to follow Quanta Magazine&#39;s feed, but they switched from full-text to excerpts, so I unsubscribed.)&lt;/li&gt;
+&lt;li&gt;Don&#39;t follow feeds that update more than once a day. Go for daily digests, or better yet, weekly digests.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;&lt;a id=&quot;conclusion&quot;&gt;&lt;/a&gt; If RSS Was So Great, Why&#39;d It Die In The First Place&lt;/h2&gt;
+&lt;p&gt;Well, Google killed Google Reader in 2013, the #1 RSS reader at the time. This was to make way for Google Plus, which failed. The sacrificial lamb was for nothing.&lt;/p&gt;
+&lt;p&gt;But Google only did what nearly &lt;em&gt;everyone&lt;/em&gt; – including yours truly – did in 2013: leave the open, decentralized Web 1.0 for the shiny new Web 2.0 platforms. Why? Well, it was more fun &amp;amp; convenient.&lt;/p&gt;
+&lt;p&gt;But now in 2021, for most of us, social media is very &lt;em&gt;not&lt;/em&gt; fun and &lt;em&gt;not&lt;/em&gt; convenient. That&#39;s why I went back to the future with RSS, and wrote this post encouraging you to do the same!&lt;/p&gt;
+&lt;p&gt;(Ok, RSS had two more problems: 1) Getting overwhelmed with feeds. As said above, the only cure is to trim ruthlessly. 2) RSS lets you serve text/link/image ads, but &lt;em&gt;not&lt;/em&gt; the creepy user-tracking ads. In 2013 that was the &amp;quot;best&amp;quot; way make money on the web, but these days ad revenue is dying, and subscriptions like Patreon/Substack are thriving.)&lt;/p&gt;
+&lt;p&gt;And that&#39;s all, folks! Now you know how to escape the attention-draining, empathy-killing, critical-thought-suffocating siren song of the algorithms. And get your inbox less cluttered with newsletters.&lt;/p&gt;
+&lt;p&gt;Here&#39;s to a renaissance for a kinder, better web. 💖&lt;/p&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>How Do I Learn X?</title>
+            <link href="https://blog.ncase.me/posts/how-do-i-learn-x/"/>
+            <updated>2021-06-27T00:00:01Z</updated>
+            <id>https://blog.ncase.me/posts/how-do-i-learn-x/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;&lt;em&gt;(Cross-posted from my &lt;a href=&quot;https://ncase.me/faq/&quot;&gt;Frequently Asked Questions&lt;/a&gt; page)&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;(Just an advice-dump – I hope it&#39;s helpful to you!)&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;(1 minute read per section, 9 minutes total)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://blog.ncase.me/posts/how-do-i-learn-x/#general&quot;&gt;How do I learn...&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/posts/how-do-i-learn-x/#math&quot;&gt;math?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/posts/how-do-i-learn-x/#write&quot;&gt;to write...&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/posts/how-do-i-learn-x/#explanations&quot;&gt;accessible explanations?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/posts/how-do-i-learn-x/#stories&quot;&gt;stories?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/posts/how-do-i-learn-x/#code&quot;&gt;to code?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/posts/how-do-i-learn-x/#games&quot;&gt;to make games?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/posts/how-do-i-learn-x/#indie&quot;&gt;to go indie?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/posts/how-do-i-learn-x/#mental-health&quot;&gt;good mental health?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;&lt;a id=&quot;general&quot;&gt;&lt;/a&gt; How Do I Learn...&lt;/h2&gt;
+&lt;p&gt;First, some general advice:&lt;/p&gt;
+&lt;p&gt;Most people (including myself!) practice inefficiently by default. Or if they &lt;em&gt;do&lt;/em&gt; practice &amp;quot;efficiently&amp;quot;, it&#39;s at the cost of being boring &amp;amp; demotivating.&lt;/p&gt;
+&lt;p&gt;So, to learn in a way that&#39;s efficient &lt;em&gt;and&lt;/em&gt; motivating, I recommend &lt;strong&gt;making &lt;em&gt;small&lt;/em&gt; projects.&lt;/strong&gt; If you just learned about Special Relativity, write a &lt;em&gt;short&lt;/em&gt; essay explaining it in lay words. If you want to practice writing dialogue, write a &lt;em&gt;short&lt;/em&gt; story with lots of talking.&lt;/p&gt;
+&lt;p&gt;Also, I highly recommend &lt;strong&gt;Spaced Repetition&lt;/strong&gt;. It&#39;s &amp;quot;flashcards on steroids&amp;quot;, backed by replicated cognitive science. Check out &lt;a href=&quot;https://collegeinfogeek.com/spaced-repetition-memory-technique/&quot;&gt;this video&lt;/a&gt;. Most people use the app &lt;a href=&quot;https://apps.ankiweb.net/&quot;&gt;Anki&lt;/a&gt;, but I use a physical &lt;a href=&quot;https://www.youtube.com/watch?v=uvF1XuseZFE&quot;&gt;Leitner Box&lt;/a&gt;, coz the tactility makes it more fun, thus more motivating. Note: Spaced Repetition isn&#39;t just for memorizing raw facts, but also deeper understanding – to your cards, add &amp;quot;why&amp;quot; questions, visual proofs, practice problems, etc.&lt;/p&gt;
+&lt;p&gt;Finally, read this: &lt;strong&gt;&lt;a href=&quot;http://presentationcollege.ie/wp-content/uploads/2017/10/What-works-what-doesnt.pdf&quot;&gt;What Works, What Doesn&#39;t&lt;/a&gt;&lt;/strong&gt;. It&#39;s a summary by 5 cognitive scientists on what studying methods work or don&#39;t. (For example: highlighting &amp;amp; re-reading, the two most popular methods, don&#39;t work.)&lt;/p&gt;
+&lt;p&gt;Now, for learning &lt;em&gt;specific&lt;/em&gt; things...&lt;/p&gt;
+&lt;h2&gt;&lt;a id=&quot;math&quot;&gt;&lt;/a&gt; Math&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;The only people who understand what is going on are the ones most often blamed and least often heard: the students. They say, “math class is stupid and boring,” and they are right.&lt;/em&gt;&lt;br /&gt;
+~ &lt;a href=&quot;https://www.maa.org/external_archive/devlin/LockhartsLament.pdf&quot;&gt;A Mathematician&#39;s Lament&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If I were the Education Czar, I would remove math from the compulsory curriculum, &lt;em&gt;because&lt;/em&gt; I love math. Nothing kills the love for something like &lt;em&gt;forcing people to do it with no intrinsic motivation.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;So if you wanna learn a math topic, please first &lt;em&gt;know your motivation&lt;/em&gt;. Maybe there&#39;s a real-world use (Bayes&#39; Theorem, nonlinear dynamics), or beautiful for its own sake (geometry, complex analysis). Whatever it is, &lt;strong&gt;Step 1: know your purpose.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Then &lt;strong&gt;Step 2: intuition first.&lt;/strong&gt; Imagine a music class where students draw notes on bars for years &lt;em&gt;and never hear an actual song&lt;/em&gt;. That&#39;s math class. If you&#39;re learning math topic X, first look up &amp;quot;[X] visual&amp;quot; or &amp;quot;[X] intuition&amp;quot; on YouTube or DuckDuckGo/Google. (My fave math resources are listed below)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 3: practice with feedback.&lt;/strong&gt; Use spaced repetition (&lt;a href=&quot;https://blog.ncase.me/posts/how-do-i-learn-x/#general&quot;&gt;see above&lt;/a&gt;) to practice recalling facts, deep conceptual questions, and even quick practice problems. Yes, this is the boring step, but if you know your purpose &amp;amp; have the intuition, it&#39;ll feel and &lt;em&gt;be&lt;/em&gt; meaningful.&lt;/p&gt;
+&lt;p&gt;My fave math resources:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/c/3blue1brown&quot;&gt;3Blue1Brown&lt;/a&gt;, especially his series on &lt;a href=&quot;https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&quot;&gt;Linear Algebra&lt;/a&gt; and &lt;a href=&quot;https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&quot;&gt;Calculus&lt;/a&gt;. (YouTube channel)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://betterexplained.com/cheatsheet/&quot;&gt;Better Explained&lt;/a&gt; (blog)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.indiebound.org/book/9780813349107&quot;&gt;Nonlinear Dynamics &amp;amp; Chaos&lt;/a&gt; (textbook)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.indiebound.org/book/9780393337174&quot;&gt;The Art of Strategy&lt;/a&gt; for game theory. (P.S: I read this book 15 years ago for fun, &lt;em&gt;then&lt;/em&gt; my Econ professor assigned it as a textbook. &lt;code&gt;hackerman.jpeg&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://theoreticalminimum.com/courses&quot;&gt;The Theoretical Minimum&lt;/a&gt; for physics. (books &amp;amp; free Stanford lectures online)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I haven&#39;t personally used these resources much, but I&#39;ve heard great things about them:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://brilliant.org/&quot;&gt;Brilliant&lt;/a&gt; (STEM, fundamentals &amp;amp; advanced)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.khanacademy.org/&quot;&gt;Khan Academy&lt;/a&gt; (the whole K-12 curriculum)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id=&quot;write&quot;&gt;&lt;/a&gt; Writing&lt;/h2&gt;
+&lt;p&gt;To make your writing flow: &lt;a href=&quot;https://vimeo.com/123759973&quot;&gt;Therefore &amp;amp; But, Not &amp;quot;And Then&amp;quot;&lt;/a&gt;. Novices write &amp;quot;this happens &lt;em&gt;and then&lt;/em&gt; that happens &lt;em&gt;and then&lt;/em&gt; this happens&amp;quot;... &lt;em&gt;but&lt;/em&gt; that&#39;s boring... &lt;em&gt;therefore&lt;/em&gt; you should connect things like: &amp;quot;this happens &lt;em&gt;but&lt;/em&gt; that happens &lt;em&gt;therefore&lt;/em&gt; this happens.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(and then...)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;To make your writing concise: write your first draft, get its word count, then multiply that number by 0.9 (90%). &lt;em&gt;Cut your writing down to that new word count.&lt;/em&gt; (I got this tip from &lt;a href=&quot;https://www.indiebound.org/book/9780060891541&quot;&gt;On Writing Well&lt;/a&gt;. Also, &lt;a href=&quot;https://www.indiebound.org/book/9780205309023&quot;&gt;Strunk &amp;amp; White&lt;/a&gt; is actually helpful?)&lt;/p&gt;
+&lt;p&gt;Finally, don&#39;t worry about writing with &amp;quot;style&amp;quot;. Just write with &lt;em&gt;substance&lt;/em&gt;. What you find substantial is what you find valuable. Your set of values is what makes your voice identifiable. Your voice is your style.&lt;/p&gt;
+&lt;p&gt;Therefore: substance &lt;em&gt;creates&lt;/em&gt; style.
+Cook something nutritious &lt;em&gt;and&lt;/em&gt; delicious.&lt;/p&gt;
+&lt;h2&gt;&lt;a id=&quot;explanations&quot;&gt;&lt;/a&gt; Writing accessible explanations&lt;/h2&gt;
+&lt;p&gt;In my answer on &lt;a href=&quot;https://blog.ncase.me/posts/how-do-i-learn-x/#math&quot;&gt;how to learn math&lt;/a&gt;, I listed the steps: &lt;strong&gt;1) Purpose, 2) Intuition, &lt;em&gt;then&lt;/em&gt; 3) Practice.&lt;/strong&gt; How to &lt;em&gt;teach&lt;/em&gt; math, or any topic, is just giving your learner those three things in that order.&lt;/p&gt;
+&lt;p&gt;Specific tips:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Purpose:&lt;/strong&gt; &lt;a href=&quot;https://blog.mrmeyer.com/2015/if-math-is-the-aspirin-then-how-do-you-create-the-headache/&quot;&gt;First give them the headache, then give them the aspirin.&lt;/a&gt; And if possible, show cool visuals &amp;amp; real-world uses.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Intuition:&lt;/strong&gt; &lt;a href=&quot;https://gowers.wordpress.com/2007/10/19/my-favourite-pedagogical-principle-examples-first/&quot;&gt;EXAMPLES FIRST&lt;/a&gt;. Use the &lt;a href=&quot;https://betterexplained.com/articles/adept-method/&quot;&gt;ADEPT Method&lt;/a&gt;. Show pictures. When possible, give intuitive proofs for facts, not just &amp;quot;hey memorize this crap&amp;quot;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Problems:&lt;/strong&gt; Cognitive apprenticeship – first do a &amp;quot;worked example&amp;quot; where you show your process, &lt;em&gt;then&lt;/em&gt; give the learner a similar problem to tackle on their own. &lt;a href=&quot;https://en.wikipedia.org/wiki/Worked-example_effect&quot;&gt;Backed by cognitive science!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Inspiration for accessible explanations: See &lt;a href=&quot;https://blog.ncase.me/posts/how-do-i-learn-x/#general&quot;&gt;my above list&lt;/a&gt; of fave math resources. Also, &lt;a href=&quot;https://www.quantamagazine.org/&quot;&gt;Quanta Magazine&lt;/a&gt; and &lt;a href=&quot;https://collegeinfogeek.com/educational-youtube-channels/&quot;&gt;Educational YouTube&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To &lt;em&gt;practice&lt;/em&gt; making accessible explanations, I recommend starting a blog or YouTube channel, then sharing with friends for feedback. (and maybe share on Reddit if you want to &amp;quot;grow your audience&amp;quot; or however one gets discovered on the internet these days)&lt;/p&gt;
+&lt;h2&gt;&lt;a id=&quot;stories&quot;&gt;&lt;/a&gt; Writing stories&lt;/h2&gt;
+&lt;p&gt;Why did our ancestors tell stories, when there were other matters of survival? If stories are stress-relief, why do bad things happen in all fables? If stories are advice, why use fiction at all?&lt;/p&gt;
+&lt;p&gt;My hypothesis: stories &lt;em&gt;do&lt;/em&gt; help us survive, beyond &amp;quot;mere&amp;quot; stress-relief. They &lt;em&gt;do&lt;/em&gt; advise us on choices, consequences, and character growth. But why use fiction? For the same reason Newton imagined a cannonball orbiting the Earth, or Einstein imagined travelling beside a light beam: exaggerated fictions are how we explore deep facts. To paraphrase Picasso: &lt;em&gt;“Art is a lie that tells the truth.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;So: &lt;strong&gt;what truth, that you learned the hard way, do you want to share the story way?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;(What &lt;em&gt;is&lt;/em&gt; a &amp;quot;story&amp;quot;? In short:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Someone needs/wants something, &lt;em&gt;but&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;There&#39;s an inner/outer obstacle, &lt;em&gt;therefore&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;They act/learn/change,&lt;/li&gt;
+&lt;li&gt;Repeat.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Don&#39;t &lt;em&gt;tell&lt;/em&gt; your truth with an abstract sermon, but &lt;em&gt;show&lt;/em&gt; it with the worked-example of a compressed life.)&lt;/p&gt;
+&lt;p&gt;Once you know your story&#39;s purpose, &lt;em&gt;then&lt;/em&gt; you can apply technical craft. I recommend:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.brainpickings.org/2012/04/03/kurt-vonnegut-on-writing-stories&quot;&gt;Kurt Vonnegut&#39;s 8 Tips&lt;/a&gt; (mini-essay)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/c/LessonsfromtheScreenplay/videos?view=0&amp;amp;sort=p&amp;amp;flow=grid&quot;&gt;Lessons From The Screenplay&lt;/a&gt; (YouTube channel)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.indiebound.org/book/9780060391683&quot;&gt;Story&lt;/a&gt; by Rob McKee (book)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For practice &amp;amp; inspiration, here&#39;s &lt;a href=&quot;https://storyaday.org/writing-prompt-sites/&quot;&gt;places to get writing prompts&lt;/a&gt;. (I&#39;ve personally used r/WritingPrompts a lot) Write short stories, and share them with friends for feedback!&lt;/p&gt;
+&lt;p&gt;Finally, I *anti-*recommend doing a Three-Act Structure or Hero&#39;s Journey or whatever. Don&#39;t make an &amp;quot;archetypical narrative&amp;quot;. Make an atypical narrative, that&#39;s uniquely you.&lt;/p&gt;
+&lt;h2&gt;&lt;a id=&quot;code&quot;&gt;&lt;/a&gt; Coding&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;If you can read &amp;amp; write, then you can code.&lt;/strong&gt; If you can understand &amp;quot;if-then&amp;quot; sentences, the word &amp;quot;and&amp;quot;, &lt;em&gt;and&lt;/em&gt; this sentence referring to itself... then you understand conditionals, logic, and recursion, the foundations of programming.&lt;/p&gt;
+&lt;p&gt;Sadly, coding (and STEM) has this aura of &amp;quot;beware, mad geniuses only&amp;quot;. So, let&#39;s break that aura with 1) small weekend projects, that are 2) actually useful and/or fun, and 3) you can create &lt;em&gt;entirely online&lt;/em&gt;, for free, without downloading anything!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HTML: making sites.&lt;/strong&gt; Go to &lt;a href=&quot;https://neocities.org/&quot;&gt;Neocities.org&lt;/a&gt;, sign up for a free account, and do their interactive tutorial on HTML. By the end, you&#39;ll have your &lt;em&gt;very own public website you can share.&lt;/em&gt; A manifesto? A personal page for your cat? Links to your favorite slashfics? The sky&#39;s the limit!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CSS: making sites look pretty.&lt;/strong&gt; Download the Stylus add-on (&lt;a href=&quot;https://addons.mozilla.org/en-CA/firefox/addon/styl-us/&quot;&gt;Firefox&lt;/a&gt;, &lt;a href=&quot;https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne&quot;&gt;Chrome&lt;/a&gt;). &lt;em&gt;[Note: Stylus with an &amp;quot;us&amp;quot;, NOT Stylish. Stylish is malware!]&lt;/em&gt; Go to a website that distracts you, click the add-on, then &amp;quot;Write New Style&amp;quot;. Paste the CSS code: &lt;code&gt;body{ filter: grayscale(100%); }&lt;/code&gt;. &lt;em&gt;This turns the site black &amp;amp; white,&lt;/em&gt; so it&#39;s less attention-grabbing! With CSS and Stylus, you can modify how websites look, to fit &lt;em&gt;your&lt;/em&gt; needs – hide YouTube comments, hide the &amp;quot;approve cookies&amp;quot; popup, or make everything Comic Sans.&lt;/p&gt;
+&lt;p&gt;To learn CSS: &lt;a href=&quot;https://www.khanacademy.org/computing/computer-programming/html-css&quot;&gt;Khan Academy&#39;s HTML/CSS course&lt;/a&gt; is free, with interactive tutorials!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;JavaScript: making sites do things.&lt;/strong&gt; &lt;a href=&quot;https://www.khanacademy.org/computing/computer-programming/programming&quot;&gt;Khan Academy&#39;s Intro to JavaScript&lt;/a&gt; is chockful of interactive tutorials where you draw &amp;amp; animate things with code. It&#39;s fun! And the foundations it teaches you apply to &lt;em&gt;all&lt;/em&gt; modern programming languages, not just JavaScript.&lt;/p&gt;
+&lt;p&gt;Finally, the most important note – if you&#39;re ever unsure how to do something, do what the pros do: look it up online, copy-paste sample code, and stitch it together until your monster comes alive.&lt;/p&gt;
+&lt;p&gt;(Tools: for a code editor, I use &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt;. For web hosting, I use &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;. For domain names, I use &lt;a href=&quot;https://www.namecheap.com/&quot;&gt;Namecheap&lt;/a&gt;.)&lt;/p&gt;
+&lt;h2&gt;&lt;a id=&quot;games&quot;&gt;&lt;/a&gt; Making games&lt;/h2&gt;
+&lt;p&gt;KEEP. YOUR SCOPE. SMALL.&lt;/p&gt;
+&lt;p&gt;KEEP YOUR SCOPE SMALL.&lt;/p&gt;
+&lt;p&gt;&amp;quot;Don&#39;t make your projects too big&amp;quot; is true for learning any art form, but aspiring gamedevs have it the worst, coz they&#39;re inspired by AAA games that took 100s of people years to make, so let me say it again:&lt;/p&gt;
+&lt;p&gt;KEEP. YOUR. SCOPE. S. M. A. L. L.&lt;/p&gt;
+&lt;p&gt;Okay, now, my fave resources on Game Design:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/c/MarkBrownGMT/videos?view=0&amp;amp;sort=p&amp;amp;flow=grid&quot;&gt;Game Maker&#39;s Tool Kit&lt;/a&gt; (YouTube channel) (start with &lt;a href=&quot;https://www.youtube.com/watch?v=MMggqenxuZc&quot;&gt;Valve&#39;s Invisible Tutorial&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLhyKYa0YJ_5C6QC36h5eApOyXtx98ehGi&quot;&gt;Extra Credits: Making Your First Game&lt;/a&gt; (YouTube series)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.indiebound.org/book/9780321886927&quot;&gt;A Game Design Vocabulary&lt;/a&gt; (book) (&lt;a href=&quot;https://w.itch.io/level-design-lessons&quot;&gt;free sample&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.indiebound.org/book/9780123694966&quot;&gt;The Art of Game Design&lt;/a&gt; (textbook)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To start making games &lt;em&gt;without&lt;/em&gt; knowing how to code – or even buying or downloading anything yet! – check out these tools:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://twinery.org/2/#!/welcome&quot;&gt;Twine&lt;/a&gt;, for Choose Your Own Adventure-likes&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bitsy.org/&quot;&gt;Bitsy&lt;/a&gt;, for top-down exploration games (think Undertale)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.puzzlescript.net/&quot;&gt;PuzzleScript&lt;/a&gt;, for Sokoban-like puzzle games&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For practice making SMALL-SCOPED games, check out itch·io&#39;s &lt;a href=&quot;https://itch.io/jams&quot;&gt;list of game jams&lt;/a&gt;!&lt;/p&gt;
+&lt;h2&gt;&lt;a id=&quot;indie&quot;&gt;&lt;/a&gt; Going indie&lt;/h2&gt;
+&lt;p&gt;First, I must admit that being a financially sustainable indie is 50% luck. (For the 50% skill, see my above advice on learning.)&lt;/p&gt;
+&lt;p&gt;But as poker players know, managing your luck &lt;em&gt;is&lt;/em&gt; a skill. So, I recommend:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://sive.rs/tarzan&quot;&gt;Change careers like Tarzan&lt;/a&gt;.&lt;/strong&gt; Do &lt;em&gt;not&lt;/em&gt; quit your old job until the new one can support you. For example: set up a Patreon for your side-hustle and set it to charging &amp;quot;per thing&amp;quot;, until you&#39;re ready to do it full-time and switch to &amp;quot;per month&amp;quot;. (Or: save enough money that you can afford no income for a while)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Make lots of small bets.&lt;/strong&gt; Make lots of small projects – &lt;em&gt;each one &amp;quot;betting&amp;quot; in a different direction&lt;/em&gt; – and when one of them gets more successful than usual, invest slightly more in that direction. For example, &lt;a href=&quot;https://ncase.me/sight-and-light/&quot;&gt;my first Explorable Explanation&lt;/a&gt; was a gamedev tutorial I made in 3 days, which hit #1 on Hacker News, so now I&#39;ve been on this direction for 6 years. (Honestly, it&#39;s time for a change)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a id=&quot;mental-health&quot;&gt;&lt;/a&gt; Good mental health&lt;/h2&gt;
+&lt;p&gt;Ha ha if you figure out how to reliably maintain good mental health let &lt;em&gt;me&lt;/em&gt; know.&lt;/p&gt;
+&lt;p&gt;I&#39;m still struggling, but &amp;quot;my collected lessons so far&amp;quot; are in my interactive story, &lt;a href=&quot;https://ncase.me/anxiety/&quot;&gt;Adventures With Anxiety&lt;/a&gt;, and its companion essay, &lt;a href=&quot;https://ncase.me/mental-health/&quot;&gt;Mental Health Tips &amp;amp; Resources&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In sum:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Humans are social learning animals. So, we have social needs, growth needs, and animal needs. Think: &lt;em&gt;&amp;quot;A long, healthy life tackling important challenges with and for the people I love.&amp;quot;&lt;/em&gt; There is no meaning &lt;em&gt;of&lt;/em&gt; life, but these needs give the meaning &lt;em&gt;in&lt;/em&gt; life.&lt;/li&gt;
+&lt;li&gt;Emotions are (imperfect, wordless) signals on which needs are being met &amp;amp; unmet. So, don&#39;t &amp;quot;stoically&amp;quot; ignore your emotions, nor &amp;quot;always trust your gut&amp;quot;. Trust, but verify.&lt;/li&gt;
+&lt;li&gt;Meet your needs reliably with good habits (i.e. &amp;quot;virtues&amp;quot;), which are created via small steps, small rewards, and repetition.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So uh, yeah, good luck&lt;/p&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>New Explorable! “COVID-19 Futures, Explained With Playable Simulations”</title>
+            <link href="https://blog.ncase.me/posts/new-explorable-covid-19-futures-explained-with-playable-simulations/"/>
+            <updated>2020-05-15T20:49:44Z</updated>
+            <id>https://blog.ncase.me/posts/new-explorable-covid-19-futures-explained-with-playable-simulations/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;I launched this 2 weeks ago and totally forgot to put it on this blog, so here you go: the most technical, in-depth explorable I&#39;ve ever made!&lt;/p&gt;
+&lt;p&gt;😷 &lt;strong&gt;&lt;a href=&quot;https://ncase.me/covid-19/&quot;&gt;“What Happens Next?”&lt;/a&gt;&lt;/strong&gt; (30 min play/read) 😷&lt;br /&gt;
+🔬 A collab with epidemiologist Marcel Salathé 🔬&lt;/p&gt;
+&lt;p&gt;Also, yesterday 3Blue1Brown did a video adaptation of Marcel + my comic explaining how to do COVID-19 contact tracing &lt;em&gt;in a totally privacy-protecting way&lt;/em&gt;! Check it out:&lt;/p&gt;
+&lt;iframe width=&quot;612&quot; height=&quot;344&quot; src=&quot;https://www.youtube.com/embed/D__UaR5MQao?feature=oembed&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;Thanks, Grant! Let&#39;s hope &amp;quot;Test, Trace, Isolate&amp;quot; gets a lot more traction soon, so we can all go back to an 80%-normal life, and I can go back to dating queer cuties over hot chocolate and weeaboo comics&lt;/p&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>#OneStepAhead</title>
+            <link href="https://blog.ncase.me/posts/onestepahead/"/>
+            <updated>2020-03-24T17:07:07Z</updated>
+            <id>https://blog.ncase.me/posts/onestepahead/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;Here&#39;s some COVID-19 Contact Tracing visualizations I made, in collaboration with epidemiologist &lt;a href=&quot;https://twitter.com/marcelsalathe&quot;&gt;Marcel Salathé&lt;/a&gt;! Read &lt;a href=&quot;https://twitter.com/marcelsalathe/status/1242430736944201730&quot;&gt;his Twitter thread on this&lt;/a&gt;. And/or &lt;a href=&quot;https://twitter.com/ncasenmare/status/1242507365666209796&quot;&gt;my thread&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;All pix are CC Zero / public domain – remix &amp;amp; reuse freely! (right click &amp;amp; save)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/waves.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/chain.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/tree.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;(Here&#39;s the first image split into a picture set of two, for easier social media sharing:)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/ca-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/ca-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Special thanks to my supporters &lt;a href=&quot;https://patreon.com/ncase&quot;&gt;on Patreon&lt;/a&gt; who are keeping me afloat while the economy takes a swan dive into a garbage can 💖 No seriously, I&#39;d be dead.&lt;/p&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>Make Plushie Patterns with Play-Doh &amp; Paper Towels</title>
+            <link href="https://blog.ncase.me/posts/make-plushie-patterns-with-play-doh-paper-towels/"/>
+            <updated>2020-03-12T13:00:00Z</updated>
+            <id>https://blog.ncase.me/posts/make-plushie-patterns-with-play-doh-paper-towels/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;So, you want to design a plushie! (&amp;quot;soft toy&amp;quot;, if you&#39;re English)&lt;/p&gt;
+&lt;p&gt;And not just a flat, two-pieces-of-cloth plushie. No: you want &lt;em&gt;three D&#39;s.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;To do that, you first need to transform a 3D surface into 2D pieces, to cut into fabric &amp;amp; sew together. The two most common methods are: 1) be a wizard and do this in your head, or 2) use a 3D modelling software, i.e., be a wizard.&lt;/p&gt;
+&lt;p&gt;I ain&#39;t got time for that, and neither do you!&lt;/p&gt;
+&lt;p&gt;But recently, I was inspired by &lt;a href=&quot;http://laurenvenell.com/epic-how-to-make-a-3-d-plush-pattern-from-a-2-d-drawing/&quot;&gt;this designer&#39;s tutorial&lt;/a&gt;, where she wraps fabric around carved foam. I wanted cheaper/easier materials, so I made a variant where you wrap paper towel pieces around Play-Doh.&lt;/p&gt;
+&lt;p&gt;Let&#39;s start!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/materials.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;What You&#39;ll Need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Modeling clay&lt;/strong&gt; (not necessarily Play-Doh, it just made the title alliterate)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Paper Towel&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scissors&lt;/strong&gt; (preferably small, to cut tight curves)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pen&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Optional: tape&lt;/li&gt;
+&lt;li&gt;Optional: straight pins&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Step 1: Mold your 3D form&lt;/h3&gt;
+&lt;p&gt;Come on, you did this as a kid. It doesn&#39;t have to look smooth, just approximate.&lt;/p&gt;
+&lt;p&gt;For this tutorial, I&#39;m making a &lt;a href=&quot;https://en.wikipedia.org/wiki/Peeps&quot;&gt;Peep&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/1-1.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;Step 2: Cover its surface&lt;/h3&gt;
+&lt;p&gt;Cut out a small piece of paper towel, and press it gently against your clay&#39;s surface. (optional: use a pin to keep it in place)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/3.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Draw the edge of where the clay touches the paper:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/4.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Cut away everything &lt;em&gt;outside&lt;/em&gt; of the edge, and that&#39;s your first 2D piece! Repeat until you&#39;ve covered the whole surface. Tip: write notes on the pieces, to keep track of where they go.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/5.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;(If a piece can&#39;t wrap around the clay without making awkward folds, you may have to split it into two pieces, or snip out the fold to create a &lt;a href=&quot;https://whileshenaps.com/2011/03/elements-of-soft-toy-design-15-triangular-darts.html&quot;&gt;&amp;quot;dart&amp;quot;&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;And that&#39;s it! You just turned a 3D surface into a 2D pattern! 🎉&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/6.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;To save your pattern, you can just scan or take a photo of your pieces as-is.&lt;/p&gt;
+&lt;p&gt;But I wanted to clean mine up first. So, I took a photo &amp;amp; digitally traced the outlines... so that &lt;em&gt;you&lt;/em&gt; can download this Peep Plushie Pattern! (&lt;a href=&quot;https://blog.ncase.me/content/images/2020/03/design.png&quot;&gt;right click &amp;amp; save&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/design.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;In total, designing this plushie pattern took me &lt;strong&gt;one hour.&lt;/strong&gt; On my &lt;em&gt;first try.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You&#39;d expect some kind of catch, but it really &lt;em&gt;was&lt;/em&gt; that easy! All that was left for me to do was, uh, y&#39;know...&lt;/p&gt;
+&lt;h3&gt;Step 3: Make The Rest Of The Friggin&#39; Plushie&lt;/h3&gt;
+&lt;p&gt;This tutorial&#39;s just about how to &lt;em&gt;design&lt;/em&gt; a plushie pattern, not &lt;em&gt;sew&lt;/em&gt; one, but I&#39;ll list the main steps &amp;amp; leave links to other tutorials!&lt;/p&gt;
+&lt;p&gt;First, copy the pieces onto a fabric...&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/8-1.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Cut them out...&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/9.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Sew exterior details first, like the eyes... (see: &lt;a href=&quot;https://www.youtube.com/watch?v=ZvzMMcKHVR4&quot;&gt;how to hand sew&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/10.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Stitch the pieces together &lt;em&gt;wrong side out&lt;/em&gt;, so I can turn it inside-out later...&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/11.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Don&#39;t forget to leave a big enough hole somewhere, to put in the stuffing!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/13.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Stuffing!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/14.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Then close up the hole, knot the thread, and bury the knot inside your fluffy lil&#39; boy. (see: &lt;a href=&quot;https://www.youtube.com/watch?v=c2B_fgEGMlM&quot;&gt;how to invisibly close plushie holes&lt;/a&gt; and &lt;a href=&quot;https://www.youtube.com/watch?v=ZCymy196zlM&quot;&gt;hide knots&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/15.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;and VOILÀ&lt;/p&gt;
+&lt;p&gt;HE&lt;/p&gt;
+&lt;p&gt;IS&lt;/p&gt;
+&lt;p&gt;✨ FABULOUS ✨&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/16-copie.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;As you can see, the plushie&#39;s final form is pretty close to the clay model. Just slightly chubbier, thanks to all that stuffing:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/17.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Peeps dream of flying:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/19.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;And sometimes, dreams really do come true:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/FLY.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Now you know how to turn &lt;em&gt;any 3D form you like&lt;/em&gt; into a 2D plush pattern, no wizards required. Happy pattern-making! 🐥&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Thank you to my generous supporters &lt;a href=&quot;https://www.patreon.com/ncase&quot;&gt;on Patreon&lt;/a&gt;, who thought I&#39;d be making educational videogames since that&#39;s &lt;a href=&quot;https://ncase.me/&quot;&gt;what I usually do&lt;/a&gt;, but I&#39;m currently on sabbati-cation, so, heck it, this week it&#39;s plushies.&lt;/em&gt;&lt;/p&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>What Did I Learn This Decade? (2010-2019)</title>
+            <link href="https://blog.ncase.me/posts/2010-2019/"/>
+            <updated>2019-12-31T19:44:34Z</updated>
+            <id>https://blog.ncase.me/posts/2010-2019/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;&lt;em&gt;(reading time: 35 minutes – a bit over one TV episode)&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;(content note: queer &amp;amp; mental health stuff, the &amp;quot;heavy shit&amp;quot;)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/banner.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I don&#39;t know where the line is between &amp;quot;publicly taking responsibility for my past mistakes&amp;quot; and &amp;quot;masochistic exhibitionism&amp;quot;, but it&#39;s the end of a decade – a good time to reflect, and share stories I&#39;ve &lt;em&gt;never&lt;/em&gt; shared publicly before!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In 2010–2019, I learnt a lot about being queer, going indie, and mental health.&lt;/strong&gt; Life lessons found through trial-and-error-and-error-and-error.&lt;/p&gt;
+&lt;p&gt;So, what wonderful things did I learn this decade?&lt;/p&gt;
+&lt;h2&gt;2010: The Year I Learnt I Was An Asshole&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/2010-1.jpg&quot; alt=&quot;2010-1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(&amp;quot;Nicklaus Liow&amp;quot;, circa 2010, who was an asshole)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I made my lab partner do all the work for our Science Fair project, which won a city-wide contest, and I claimed the credit. But when it lost the province-wide contest, I blamed the &lt;em&gt;fool&lt;/em&gt; for dragging down my &lt;em&gt;genius&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Whenever I lost a game, I&#39;d accuse others of cheating. Whenever I got a test question wrong, I&#39;d blame the ambiguous wording. Every other recess, I&#39;d corner a religious classmate and quote paragraphs from &lt;em&gt;The God Delusion&lt;/em&gt; at them.&lt;/p&gt;
+&lt;p&gt;Also I had a creepy obsession with knives. 🔪&lt;/p&gt;
+&lt;p&gt;It&#39;s a cliché story. Lonely angry kid, raised by a hyper-competitive &lt;a href=&quot;https://en.wikipedia.org/wiki/Tiger_parenting&quot;&gt;tiger mom&lt;/a&gt;, thinks: &amp;quot;I want to not be lonely → I must make others respect me → I must make myself look powerful &amp;amp; others look weak.&amp;quot;&lt;/p&gt;
+&lt;p&gt;In 2010, I learnt the scientific term for this style of cognition is called &amp;quot;being an asshole&amp;quot;.&lt;/p&gt;
+&lt;p&gt;The realization took years. In 2006, we immigrated from Singapore to Vancouver. After four years of hanging out with other classmates, I learnt that their healthy friendships and families were based on, y&#39;know, &lt;em&gt;actual respect&lt;/em&gt;. Not the pile of narcissism, guilt-tripping, and psychological manipulation that I grew up thinking was normal.&lt;/p&gt;
+&lt;p&gt;A healthy relationship with another human being. I wanted that bad.&lt;/p&gt;
+&lt;p&gt;I wanted that so, so bad.&lt;/p&gt;
+&lt;p&gt;Thus, I finally acquired a &amp;quot;voice of conscience&amp;quot;. It said:&lt;/p&gt;
+&lt;p&gt;&amp;quot;I want to not be lonely → &lt;strong&gt;I must become a good person&lt;/strong&gt; → I must help others and make the world a better place.&amp;quot;&lt;/p&gt;
+&lt;p&gt;Why not? It was 2010, a new decade, a new start. I was 16 years old and I knew everything.&lt;/p&gt;
+&lt;p&gt;What&#39;s the worst that could happen?&lt;/p&gt;
+&lt;h2&gt;2011: The Year of Coming Out&lt;/h2&gt;
+&lt;p&gt;I wanted to be a good person. A good person is honest. So, I came out to my mom as bisexual. She sent me to a child psychologist to convince me I was &amp;quot;just confused&amp;quot;.&lt;/p&gt;
+&lt;p&gt;I felt like &lt;em&gt;I&lt;/em&gt; was the asshole. My voice of conscience told me: &lt;em&gt;She&#39;s a poor immigrant AND a single mom AND had an abusive ex-husband AND was raised by a narcissist mother... and now we&#39;re threatening her dreams of having grand-children?!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;So, Mom &amp;amp; I went to the child psychologist. We all talked for a bit, then the shrink requested to speak to me alone. Mom left. I felt like I fucked up so badly. The shrink turned to me, and said with the most serious look:&lt;/p&gt;
+&lt;p&gt;&amp;quot;Don&#39;t worry, I get homophobic parents all the time. You&#39;re okay, Nick.&amp;quot;&lt;/p&gt;
+&lt;p&gt;I&#39;m... okay?&lt;/p&gt;
+&lt;p&gt;No-one&#39;s said that to me before. I may not be a &amp;quot;good person&amp;quot;, but at least I was an &amp;quot;okay person&amp;quot;. I felt so grateful to the psychologist, and I told him that. I also felt sexually attracted to him because he was the only warm father figure in my life, but I did not tell him that.&lt;/p&gt;
+&lt;p&gt;A few months later, a trilogy of &lt;a href=&quot;https://www.newgrounds.com/portal/view/467574&quot;&gt;ultraviolent&lt;/a&gt; &lt;a href=&quot;https://www.newgrounds.com/portal/view/522607&quot;&gt;meme-filled&lt;/a&gt; &lt;a href=&quot;https://www.newgrounds.com/portal/view/569281&quot;&gt;Flash games&lt;/a&gt; I made – under the online handle &amp;quot;NutcaseNightmare&amp;quot; – caught the eye of a developer at Electronic Arts. They offered me a student co-op internship in the Bay Area!&lt;/p&gt;
+&lt;p&gt;Heck yeah I&#39;d sell my soul, I wasn&#39;t using it anyway.&lt;/p&gt;
+&lt;p&gt;I took the offer, mostly to get out of my family &amp;amp; to a more queer-friendly space. EA gets a lot of (justified) flak, but the Human Rights Commission ranks them as &lt;a href=&quot;https://www.polygon.com/2014/11/26/7293809/electronic-arts-lgbt-best-companies&quot;&gt;one of the most LGBTQ-friendly companies&lt;/a&gt;. I&#39;m still deeply grateful to my EA colleagues &amp;amp; mentors who helped me during my coming out.&lt;/p&gt;
+&lt;p&gt;Which reminds me of one moment:&lt;/p&gt;
+&lt;p&gt;The CEO was giving the annual company talk, when he presented one of EA&#39;s employees: a trans woman.&lt;/p&gt;
+&lt;p&gt;This was the first time I (knowingly) saw a trans woman. Remember, this was 2011 – before the world knew Laverne Cox, Caitlyn Jenner, or the Wachowski &lt;em&gt;Sisters&lt;/em&gt;. Probably the only trans character most people had seen was the villain from Ace Ventura: Pet Detective.&lt;/p&gt;
+&lt;p&gt;The woman spoke on how her coworkers helped her through her transition. I was selfishly relieved – if they accepted her while she was on 5-to-6 layers of queer, then I, &amp;quot;NutcaseNightmare&amp;quot;, would be too.&lt;/p&gt;
+&lt;p&gt;I&#39;m okay.&lt;/p&gt;
+&lt;p&gt;(The CEO followed this by supporting the internet-censoring Stop Online Piracy Act. You win some, you lose some.)&lt;/p&gt;
+&lt;h2&gt;2012: The Year of Dropping Out&lt;/h2&gt;
+&lt;p&gt;I got sick of working for &lt;em&gt;THE MAN™.&lt;/em&gt; So after my internship, I dropped out of college to rebel against &lt;em&gt;THE SYSTEM™.&lt;/em&gt; I teamed up with a pal to found a &amp;quot;startup&amp;quot; that would – since my voice of conscience demanded I be a good person – &lt;em&gt;MAKE THE WORLD A BETTER PLACE™&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/2012.png&quot; alt=&quot;2012&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(&amp;quot;Nick Liow&amp;quot;, from a 2012 fundraising video for our bullcrap startup. Note how fundamentally uncomfortable I am in my own body.)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Apparently, it&#39;s stressful to run a fake startup while being technically still a teenager. In 2012, I had my first panic attack in public, and tried drowning my anxiety disorder in random hookups with men old enough to signal &amp;quot;daddy issues&amp;quot;.&lt;/p&gt;
+&lt;p&gt;(hot tip: if you ever go to an orgy at a venture capitalist&#39;s house, they&#39;ll be amused if you call it a seed round)&lt;/p&gt;
+&lt;p&gt;One time, I had unprotected sex in a gay bathhouse. After he came inside me, he mentioned, oh by the way he has HIV. I got tested. Negative. But I had to get tested again in 3 months to be sure. I was in a daze all season, listening to &lt;em&gt;&lt;a href=&quot;https://frontalot.bandcamp.com/track/diseases-of-yore&quot;&gt;Diseases of Yore&lt;/a&gt;&lt;/em&gt; on loop, thinking, &amp;quot;Oh God, I&#39;ve killed myself.&amp;quot;&lt;/p&gt;
+&lt;p&gt;Tested again. Negative again. The biggest fucking sigh of relief.&lt;/p&gt;
+&lt;p&gt;(HIV isn&#39;t the death sentence it used to be, but god damn.)&lt;/p&gt;
+&lt;p&gt;If reality had Proper Storytelling Technique, this &lt;em&gt;should&lt;/em&gt; have the wake-up call to collaborate with my &amp;quot;negative&amp;quot; emotions in a healthy way, rather than drown them in dick-based distractions.&lt;/p&gt;
+&lt;p&gt;It was not. I learnt nothing. (Okay, I learnt to practice safer sex and get an STI checkup every six months. Not a total loss.)&lt;/p&gt;
+&lt;p&gt;Anyway, our startup failed! Nobody cares. Here&#39;s a more fun year in my life:&lt;/p&gt;
+&lt;h2&gt;2013: The Year I Filled A Sink With Blood&lt;/h2&gt;
+&lt;p&gt;I was back in the Bay Area. I was renting a bunk-bed, in a room with 4 people, in a shared house with 10 people. Housing sucks in the Bay Area.&lt;/p&gt;
+&lt;p&gt;Remember my &amp;quot;creepy obsession with knives 🔪&amp;quot;? That&#39;s right, it wasn&#39;t a throwaway one-liner, it was a Chekov&#39;s Gun foreshadow! Proper Storytelling Technique!&lt;/p&gt;
+&lt;p&gt;For my birthday, I bought myself a hunting knife. For reasons I can&#39;t comprehend, I wanted to look at it in a Safeway supermarket. But I didn&#39;t want to scare others around me, so I tried opening the knife in the dark of my backpack, and sliced my thumb open.&lt;/p&gt;
+&lt;p&gt;Well, I didn&#39;t want to bother anyone – a &lt;em&gt;good person&lt;/em&gt; puts others&#39; feelings before their own! – so I grabbed some paper towels, wrapped my thumb, and snuck out of the Safeway while the intercom blared &amp;quot;code 211&amp;quot;. I assume that meant &amp;quot;cleanup&amp;quot;.&lt;/p&gt;
+&lt;p&gt;I took the hour-long Caltrain ride home, and tried rinsing my thumb in the bathroom sink. Strangely, blood just &lt;em&gt;kept coming.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;After half an hour(?), the manager of the shared house knocked on the door, and asked if I was okay. Apparently, he was concerned about the blood drops leading to the bathroom.&lt;/p&gt;
+&lt;p&gt;I said I was okay, but, um, maybe needed a little bit of help if that&#39;s not too much of a bother, I don&#39;t want to be a &lt;em&gt;bother.&lt;/em&gt; I unlocked the door, and he came in.&lt;/p&gt;
+&lt;p&gt;A bunch of blood + a lot of water + a clogged sink = not a pretty sight.&lt;/p&gt;
+&lt;p&gt;He drove my dumb ass to the hospital, while I went full Canadian and said &amp;quot;sorry&amp;quot; 500 times. This was my first run-in with American healthcare – without insurance – so, oof, let&#39;s say I&#39;m glad I saved money by dropping out of college.&lt;/p&gt;
+&lt;p&gt;But here&#39;s what shocked me the most: &lt;em&gt;nobody was mad at me.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I was the kind of person who was so terrified of being a burden on others, I&#39;d rather bleed out than &lt;em&gt;bother&lt;/em&gt; anyone. That&#39;s when I finally learnt:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;It&#39;s okay to ask for help.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Asking for help doesn&#39;t make me a bother, or a bad person, or a narcissistic asshole. And to internalize this lesson, all I had to do was to almost lose a digit to bacterial infection! 👍&lt;/p&gt;
+&lt;h2&gt;2014: The Year I Peaked&lt;/h2&gt;
+&lt;p&gt;I started the year convinced &lt;em&gt;I&lt;/em&gt; was a bacterial infection.&lt;/p&gt;
+&lt;p&gt;I was back to making indie games, but my voice of conscience was screaming louder than ever:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;You&#39;re still not a good person! Help others! Make the world a better place!! All we do is make opiates for the masses in the form of &amp;quot;satire&amp;quot; videogames, with the intellectual sophistication of a newspaper political cartoon!!!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In February 2014, my crowdfunding campaign – for &lt;a href=&quot;https://nothing-to-hide-demo.s3.amazonaws.com/index.html&quot;&gt;a satire videogame about mass surveillance&lt;/a&gt; – was failing. I needed a promo, quick.&lt;/p&gt;
+&lt;p&gt;I narrowed it down to two options:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;An interactive tutorial on how I did the 2D lighting effect in my game, or,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A My Little Pony parody. That marketing strategy worked for the indie game &lt;em&gt;Fighting Is Magic&lt;/em&gt;, right? Bronies eat this stuff up!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Sadly, I couldn&#39;t do Option #2 in time, so I settled for #1.&lt;/p&gt;
+&lt;p&gt;I made &lt;strong&gt;&lt;a href=&quot;https://ncase.me/sight-and-light/&quot;&gt;Sight &amp;amp; Light&lt;/a&gt;&lt;/strong&gt; – my first-ever &amp;quot;explorable explanation&amp;quot;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/snl.png&quot; alt=&quot;snl&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Sight &amp;amp; Light&lt;/em&gt; got &lt;em&gt;way&lt;/em&gt; more popular than the game it was promoting. It was even seen by Bret Victor – former Apple designer, now working on a lab where &lt;a href=&quot;https://dynamicland.org/&quot;&gt;&amp;quot;the entire building &lt;em&gt;is&lt;/em&gt; the computer&amp;quot;&lt;/a&gt; – who invited me to a workshop for people who make experimental media...&lt;/p&gt;
+&lt;p&gt;...which was where I met Vi Hart – math YouTuber, VR/AI researcher, cool snail-person – and together we made &lt;strong&gt;&lt;a href=&quot;https://ncase.me/polygons/&quot;&gt;Parable of the Polygons!&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/polygons.png&quot; alt=&quot;polygons&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Polygons&lt;/em&gt; was a simulation of how small biases can segregate the world. It got 3 million plays. Remember, 2014 was the year of #GamerGate and Ferguson, so, &amp;quot;it was timely&amp;quot;.&lt;/p&gt;
+&lt;p&gt;(I also started my Patreon around this time, for side-income)&lt;/p&gt;
+&lt;p&gt;What about the game I crowdfunded, and was &lt;em&gt;supposed&lt;/em&gt; to be working on?&lt;/p&gt;
+&lt;p&gt;It sucked.&lt;/p&gt;
+&lt;p&gt;Many things sucked about it, but especially the writing. I had no Proper Storytelling Technique! So, I decided to deliberately practice my storytelling skills, by writing 1 short story every other day on &lt;a href=&quot;https://www.reddit.com/r/WritingPrompts/&quot;&gt;r/WritingPrompts&lt;/a&gt; for a month.&lt;/p&gt;
+&lt;p&gt;But I still needed to practice storytelling for &lt;em&gt;games&lt;/em&gt;. So, during a 3-week game jam, I made &lt;strong&gt;&lt;a href=&quot;https://ncase.itch.io/coming-out-simulator-2014&quot;&gt;Coming Out Simulator&lt;/a&gt;&lt;/strong&gt;, a &amp;quot;half-true story about half-truths&amp;quot;. It was an interactive story about the time, in 2011, when I came out to my family as bisexual.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/cos2014.png&quot; alt=&quot;cos2014&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;(&amp;quot;Half-true&amp;quot; – I left out the part where my mom sent me to a child psychologist, because I thought it wouldn&#39;t be believable. I shifted the year from 2011 to 2010 so I could make &lt;em&gt;Inception&lt;/em&gt; jokes. I added back my mom&#39;s abusive ex-husband to make her more sympathizable – Proper Storytelling Technique dictates that all you need for a sympathizable character is a tragic backstory, right?)&lt;/p&gt;
+&lt;p&gt;Turning my painful memory into a game was cathartic. The game reached a million folks, including lots of queer teens, who needed some hope in hard times.&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;Sight &amp;amp; Light, Parable of the Polygons, Coming Out Simulator – all side projects I made to distract myself from my failing &lt;em&gt;main&lt;/em&gt; project – are still some of the most personally meaningful things I&#39;ve ever done.&lt;/p&gt;
+&lt;p&gt;Best of all, it got my voice of conscience to shut up! (For a few months.)&lt;/p&gt;
+&lt;p&gt;Meanwhile...&lt;/p&gt;
+&lt;p&gt;In 2014, in a different shared house, my housemates wanted to pull a prank, which somehow involved someone crossdressing as a woman. I was the only volunteer.&lt;/p&gt;
+&lt;p&gt;My friend lent me her dress, bra, and wig. She helped me put on makeup. I distinctly remember looking in a mirror...&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/2014-1.jpg&quot; alt=&quot;2014-1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;...and wondered why, for the first time in my life, I actually felt &lt;em&gt;comfortable&lt;/em&gt; in my own body.&lt;/p&gt;
+&lt;p&gt;But deeper questions about myself would have to wait for another day. For now, it was imperative I post the photo on Facebook with an ethnic joke:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/2014-2.png&quot; alt=&quot;2014-2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Meanwhile, my online handle &amp;quot;NutcaseNightmare&amp;quot; was too long for Twitter, so I shortened it to &amp;quot;@ncasenmare&amp;quot;. Then, shortening it further, I bought the domain name &amp;quot;&lt;a href=&quot;http://ncase.me/&quot;&gt;ncase.me&lt;/a&gt;&amp;quot;. Finally, I realized I hated having the last name of a father who was never there, so I retconned my own name to fit my website – I changed &amp;quot;Nick Liow&amp;quot; to &amp;quot;Nick Case&amp;quot;.&lt;/p&gt;
+&lt;p&gt;No... that didn&#39;t sound quite right.&lt;/p&gt;
+&lt;p&gt;&amp;quot;Nick_y_ Case.&amp;quot;&lt;/p&gt;
+&lt;p&gt;That sounded... good.&lt;/p&gt;
+&lt;h2&gt;2015: The Year of My ⭐️ MAGNUM OPUS ⭐️&lt;/h2&gt;
+&lt;p&gt;Okay, fine, I was &amp;quot;non-binary&amp;quot;.&lt;/p&gt;
+&lt;p&gt;I don&#39;t know the bio-psycho-sociological reason I feel this way. Maybe &lt;a href=&quot;https://www.tandfonline.com/doi/abs/10.1080/19359705.2013.753393&quot;&gt;prenatal factors&lt;/a&gt; or whatever. But I do know when I look &amp;amp; sound androgynous, I feel, &lt;em&gt;&amp;quot;this body actually belongs to me.&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Strangely, coming out as non-binary was much easier than coming out as bi. I guess it&#39;s because: 1) I was in a more LGBTQ+ supportive environment, and 2) I wasn&#39;t adamant on what pronouns people used for me. I mean, I didn&#39;t want to be a &lt;em&gt;bother&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/2015.jpg&quot; alt=&quot;2015&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(Nicky Case, 2015, who was not a bother)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;My voice of conscience was satisfied that in 2014, I made meaningful projects that helped others. So in 2015, my inner voice congratulated me:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;MAKE MORE, YOU LAZY DINGUS&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It elaborated:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Sure, Parable of the Polygons had a pro-diversity message, but we&#39;re just preaching to the SJW choir! And Coming Out Simulator never gave any actual advice on HOW or IF to come out! We just made #relatable content to capitalize on gay eyeballs!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We&#39;re still the narcissistic asshole we were before 2010! Help others! Be a good person!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;So in 2015, I set forth on my &lt;strong&gt;⭐️ MAGNUM OPUS ⭐️&lt;/strong&gt;: a game mixing my personal journey with hard science, that would help others by blah blah blah it was an overscoped, bloated piece of crap that never launched.&lt;/p&gt;
+&lt;p&gt;(During this time, I didn&#39;t have a 9-to-5 job, and my Patreon wasn&#39;t enough to sustain me. I took on random freelance gigs while burning through my savings. Also, I cancelled the satire videogame I crowdfunded, and gave everyone a 75% partial refund.)&lt;/p&gt;
+&lt;p&gt;While failing to &amp;quot;help others&amp;quot; in my professional life, I also tried to &amp;quot;help others&amp;quot; in my personal life:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;I dated two people with mental disorders for the purpose of &amp;quot;saving them.&amp;quot; Unsurprisingly, that was condescending &amp;amp; shitty. (I&#39;ll make no excuses: I was the asshole here.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I had a &amp;quot;fan&amp;quot; emailing me every day, threatening to kill himself if I didn&#39;t keep responding to his emails within 24 hours. I was a stranger&#39;s one-person suicide hotline for six months. (Spoiler: he wasn&#39;t suicidal, it was just good ol&#39; psyschological manipulation)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I tried reconnecting with my mom. I hoped she changed her views on homosexuality – and she did! She denied having &lt;em&gt;ever&lt;/em&gt; been homophobic, she&#39;s always been the &lt;em&gt;best&lt;/em&gt; supporter of gay rights, and boasts to the other parents about how open-minded she is to have raised such a brave child.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;Why did I try so hard to change others?&lt;/p&gt;
+&lt;p&gt;In hindsight, I know the exact answer: I needed to believe that, with enough kindness, &lt;em&gt;anyone&lt;/em&gt; can change for the better. Why? Because I needed to believe that &lt;em&gt;I&lt;/em&gt; could change for the better.&lt;/p&gt;
+&lt;p&gt;...that I could become a good person.&lt;/p&gt;
+&lt;p&gt;I didn&#39;t want to be just another narcissist raised by a narcissist (who was herself raised by a narcissist). If it wasn&#39;t for my supportive friends, or the sexy child psychologist, or the internship that got me away from home... who knows, maybe I&#39;d have shot up my school.&lt;/p&gt;
+&lt;p&gt;I don&#39;t mean that flippantly. In 2015, I started suffering from violent intrusive thoughts. My most common intrusive thoughts included: cutting off my fingers with garden shears, opening someone&#39;s skull with a rock, burning a person alive.&lt;/p&gt;
+&lt;p&gt;I told no-one about this.&lt;/p&gt;
+&lt;p&gt;This is a subtype of OCD called &lt;strong&gt;&lt;a href=&quot;https://www.intrusivethoughts.org/ocd-symptoms/harm-ocd/&quot;&gt;Harm OCD&lt;/a&gt;&lt;/strong&gt;. Of course, I didn&#39;t know that at the time – let alone how common it is, how it doesn&#39;t predict actual violence, or how “85%(!) of the non-OCD population admits to having unwanted violent thoughts.”&lt;/p&gt;
+&lt;p&gt;You know how &amp;quot;don&#39;t think of an elephant&amp;quot; makes you think of an elephant? That&#39;s how Harm OCD works. Your voice of conscience says &amp;quot;don&#39;t think of something evil&amp;quot;, your imagination comes up with something evil, your conscience freaks out, uses that as further proof you&#39;re a monster, lather rinse repeat.&lt;/p&gt;
+&lt;p&gt;That&#39;s how my conscience worked. It reminded me: &lt;em&gt;you remember the Virginia Tech school shooter? He was ALSO a lonely Asian immigrant kid with a history of severe anxiety and creating ultraviolent media! That could have been YOU! That&#39;s why I need to keep you in check:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If not, you&#39;ll become a monster.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;And so, 2015 ended and I was still not a good person. But at least I started self-studying &lt;strong&gt;&lt;a href=&quot;https://www.apa.org/ptsd-guideline/patients-and-families/cognitive-behavioral&quot;&gt;Cognitive Behavioral Therapy&lt;/a&gt; (CBT)&lt;/strong&gt;, which helped me realize that anxiety was irrational. CBT says anxiety/depression is caused by &amp;quot;cognitive distortions&amp;quot;, like jumping to conclusions, should/should-not statements, the just-world fallacy, etc.&lt;/p&gt;
+&lt;p&gt;Learning about CBT gave me hope: maybe I could fix myself! The decade was only half-over.&lt;/p&gt;
+&lt;p&gt;I could still learn how to be good person.&lt;/p&gt;
+&lt;h2&gt;2016: The Year I Almost Committed A Murder&lt;/h2&gt;
+&lt;p&gt;&amp;quot;Before you rent a room in the house I&#39;m living in, you should know I was convicted in my 50s for having sex with a 15-year-old.&amp;quot;&lt;/p&gt;
+&lt;p&gt;He didn&#39;t say it with quite so much narrative exposition, but close enough. I&#39;d just moved to Boston for a journalism fellowship, and this was who I found on Craigslist.&lt;/p&gt;
+&lt;p&gt;You know where this is going. I was more afraid of being selfish than being safe: that&#39;s why I let myself bleed out into a sink rather than &lt;em&gt;bother&lt;/em&gt; anyone. My voice of conscience demanded I give this 70-year-old a chance:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;He already served his time. Aren&#39;t we believers in restorative justice? In forgiveness, grace, redemption, compassion, empathy? That anyone can change for the better? If we reject him we&#39;re preventing ex-cons from re-integrating into society!! We&#39;re promoting mass incarceration!!!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Besides, he told me about how &lt;em&gt;he&lt;/em&gt; was molested as a kid. Proper Storytelling Technique dictates that all you need for a sympathizable character is a tragic backstory.&lt;/p&gt;
+&lt;p&gt;So, I sympathized, and agreed to live with him.&lt;/p&gt;
+&lt;p&gt;Did I get anxiety about it? Of course! But now I knew anxiety was just irrational &amp;quot;cognitive distortions&amp;quot;. So now, my voice of conscience could override it with reason:&lt;/p&gt;
+&lt;p&gt;The old man kept putting his arm around me? &lt;em&gt;Just a guy trying to be friendly!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;He tells me about nearby parks where people used to have gay sex? &lt;em&gt;Just an old man rambling about the good ol&#39; days!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It turns out – after searching his name online – it wasn&#39;t a one-time fling with a 15-year-old, but two prolonged years with three 13-to-14-year-olds? And he only served 5 years? &lt;em&gt;Hey, we all embellish the truth sometimes!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;My colleagues saved me. They noticed I was coming into the newsroom each day sleep-deprived, as if I&#39;d spent each night carefully watching the lock on my bedroom door for two weeks.&lt;/p&gt;
+&lt;p&gt;They helped me get out, and one of them kindly let me crash on her couch while I found a new room. (The new room had bedbugs. An improvement, really.)&lt;/p&gt;
+&lt;p&gt;Around this point, I wondered if maybe – &lt;em&gt;just maybe&lt;/em&gt; – my voice of conscience &lt;em&gt;was&lt;/em&gt; my anxiety.&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;A few months passed.&lt;/p&gt;
+&lt;p&gt;Summer 2016 was hectic for journalists. Brexit won. 49 people were killed in a gay nightclub. Hillary &amp;amp; Trump were campaigning. 85 people were killed on a beach in France. A gorilla was shot.&lt;/p&gt;
+&lt;p&gt;One hot summer day, I thought again about that creep. I was angry that I let myself be manipulated, that he got away with it, and that he probably found some other vulnerable intern to prey on.&lt;/p&gt;
+&lt;p&gt;But – I thought as I looked around the newsroom – that&#39;s just how the world is. Horrible shit happens, nothing I can do about it.&lt;/p&gt;
+&lt;p&gt;I thought some more.&lt;/p&gt;
+&lt;p&gt;Actually, it&#39;s pretty obvious what I could do about it. I went to the kitchen, got a serrated steak knife, and started walking to the creep&#39;s address which was just 20 minutes away.&lt;/p&gt;
+&lt;p&gt;My anxiety of conscience flipped out. &lt;em&gt;NICKY THIS IS EVIL.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You&#39;re the reason this happened in the first place. Why should I listen to you now? You&#39;re just an irrational voice who&#39;s tortured me my whole life.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Okay he was awful but he shouldn&#39;t DIE for it!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Cognitive distortion: &amp;quot;Should Not&amp;quot; Statement. Morality is just a hegemonic social construct.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If you kill him they&#39;ll put you in jail for life!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Cognitive distortion: Jumping to Conclusions. 40% of murders go unsolved. And I&#39;ve a better chance of getting away with it, because the police won&#39;t look closely into a murdered kiddy fiddler.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;They&#39;ll suspect one of his past victims, and you&#39;ll get them arrested!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Cognitive distortion: Just-World Fallacy. Too fucking bad for them.&lt;/p&gt;
+&lt;p&gt;I got to the creep&#39;s house. The neighborhood was empty because everyone was away at work – except for him, who I knew worked at home. Alone.&lt;/p&gt;
+&lt;p&gt;I hovered my finger over the doorbell, and gave my inner voice one last chance to talk me out of it.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Th... the knife isn&#39;t sharp enough?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I looked at my steak knife. Oh, right. I worked in &lt;em&gt;journalism&lt;/em&gt;. We can&#39;t afford fancy cutlery. This isn&#39;t a steak knife, it&#39;s a &lt;em&gt;bread&lt;/em&gt; knife. A blunt, dinky &lt;em&gt;bread&lt;/em&gt; knife.&lt;/p&gt;
+&lt;p&gt;I felt too embarrassed to murder a guy, so I went back to the office, ate lunch, and told nobody about it until December 2019, when I started writing this blog post.&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;Why the heck did I just tell you this?&lt;/p&gt;
+&lt;p&gt;All but one of my friends strongly advised I do &lt;em&gt;NOT&lt;/em&gt; share this story, lest I get &amp;quot;cancelled&amp;quot;. Yet, that just made me want to share it &lt;em&gt;more!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;After much thinking about my thinking, I think here&#39;s my 3 main reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Nobody was hurt or even &lt;em&gt;knew&lt;/em&gt; about it, thank god.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A story where an inner voice convinces a mentally ill person to &lt;em&gt;not&lt;/em&gt; commit a murder? What a delicious subversion of a standard horror trope! Proper Storytelling Technique!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;I want to de-stigmatize talking about violent urges.&lt;/strong&gt; The &lt;em&gt;years&lt;/em&gt; I suffered from intrusive thoughts, I felt like I couldn&#39;t tell &lt;em&gt;anybody&lt;/em&gt; – not my closest friends, not a therapist, and definitely not the whole internet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A parallel: in the last decade, we&#39;ve made tremendous progress on de-stigmatizing talking about suicide – so that folks suffering from suicidal thoughts can get help to &lt;em&gt;not&lt;/em&gt; act on them.&lt;/p&gt;
+&lt;p&gt;Likewise, we should de-stigmatize talking about violent urges – so that folks suffering from violent thoughts can get help to &lt;em&gt;not&lt;/em&gt; act on them, either.&lt;/p&gt;
+&lt;p&gt;Survivors of abuse/neglect aren&#39;t just more prone to suicidal ideation – we&#39;re more prone to homicidal ideation, too. But &amp;quot;you can&#39;t talk about it&amp;quot;. Therefore, you don&#39;t learn how common (and treatable!) it actually is. So you bottle it up until you implode on yourself, or explode onto others.&lt;/p&gt;
+&lt;p&gt;And then a newsroom like mine reports &amp;quot;oh what a horrible tragedy no-one could have seen coming&amp;quot;. Lather rinse repeat.&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;To be clear: &lt;em&gt;I made a deeply immoral mistake.&lt;/em&gt; I don&#39;t endorse my actions, but I take responsibility for them. Still, I learnt two valuable life lessons:&lt;/p&gt;
+&lt;p&gt;One – Self-studying a therapy &lt;em&gt;may&lt;/em&gt; have limitations.&lt;/p&gt;
+&lt;p&gt;Two – &lt;strong&gt;&amp;quot;Your feelings are always valid&amp;quot; and &amp;quot;Negative emotions are irrational&amp;quot; are both harmful bullshit.&lt;/strong&gt; What anxiety says can be right, wrong, or a mix of both. My journalist colleagues gave me a useful quote for dealing with emotions:&lt;/p&gt;
+&lt;p&gt;&amp;quot;Trust, but verify.&amp;quot; (thanks, Reagan)&lt;/p&gt;
+&lt;p&gt;I didn&#39;t know &lt;em&gt;how&lt;/em&gt; to balance trusting/verifying my anxiety, but it and I reached a ceasefire. I wouldn&#39;t try to drown it out with risky sex or cognitive-distortion-finding – and in return, my anxiety promised:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Okay, I&#39;m sorry. I won&#39;t try to motivate you to be a better person by comparing you to school shooters. Like the 2014 Isla Vista shooter, who was also a lonely, mentally-ill immigrant who hated his Asian heritage. I also *won&#39;t* say the only reason we&#39;re not an &amp;quot;involuntary celibate&amp;quot; spree-killer is because we&#39;re queer and therefore have easy access to HIV-infected dick.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Thanks, anxiety.&lt;/p&gt;
+&lt;p&gt;It also stopped demanding I make my &lt;strong&gt;⭐️ MAGNUM OPUS ⭐️&lt;/strong&gt; – now, I could do smaller experimental projects!&lt;/p&gt;
+&lt;p&gt;In October 2016, I made &lt;strong&gt;&lt;a href=&quot;https://ncase.itch.io/wbwwb&quot;&gt;We Become What We Behold&lt;/a&gt;&lt;/strong&gt;, a 5-minute story-game about hate, violence, and news cycles. (A lot of my frustrations of working in journalism went into this)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/wbwwb.png&quot; alt=&quot;wbwwb&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;In November 2016 someone got elected.&lt;/p&gt;
+&lt;p&gt;In December 2016, I made &lt;strong&gt;&lt;a href=&quot;https://ncase.me/ballot/&quot;&gt;To Build A Better Ballot&lt;/a&gt;&lt;/strong&gt;, an interactive guide to alternative voting systems.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/ballot.png&quot; alt=&quot;ballot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Then...&lt;/p&gt;
+&lt;h2&gt;2017: The Year I Peaked, Again&lt;/h2&gt;
+&lt;p&gt;In March 2017, I made &lt;strong&gt;&lt;a href=&quot;https://ncase.me/loopy/&quot;&gt;LOOPY&lt;/a&gt;&lt;/strong&gt;, a tool for making simulations of systems by &lt;em&gt;drawing&lt;/em&gt; them.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/loopy.png&quot; alt=&quot;loopy&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;In May 2017, I made &lt;strong&gt;&lt;a href=&quot;https://ncase.me/fireflies/&quot;&gt;Fireflies&lt;/a&gt;&lt;/strong&gt;, a simulation of fireflies.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/fireflies.png&quot; alt=&quot;fireflies&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;And then... my &lt;em&gt;lucky break:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In July 2017, I made &lt;strong&gt;&lt;a href=&quot;https://ncase.me/trust/&quot;&gt;The Evolution of Trust&lt;/a&gt;&lt;/strong&gt;, an interactive guide to the game theory of trust – and how to build it (or destroy it) in the world.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/trust.png&quot; alt=&quot;trust&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I still don&#39;t get why &lt;em&gt;this&lt;/em&gt; was the piece that made my career – maybe because 2017 seemed like a zero-trust dumpster fire – but it got 5 million plays, and doubled my Patreon income.&lt;/p&gt;
+&lt;p&gt;Specifically, my Patreon now paid &lt;em&gt;my food and rent.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Goodbye random freelance gigs! Goodbye bouncing from internship to internship! After 7 years, I was now... 🌈 &lt;strong&gt;FULL-TIME INDIE™&lt;/strong&gt; 🌈&lt;/p&gt;
+&lt;p&gt;(But seriously, I&#39;m super grateful to the 1000+ of y&#39;all who have supported me via Patreon over the past few years. 💖 You&#39;re buying me my sustenance and shelter, not to mention creative freedom. Thank you, deeply. I hope my story about almost killing a guy didn&#39;t freak you out too much.)&lt;/p&gt;
+&lt;p&gt;In hindsight, The Evolution of Trust also answered my biggest moral problem:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;quot;How do you be a good person &lt;em&gt;without&lt;/em&gt; being taken advantage of?&amp;quot;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As you&#39;ve seen, my maladaptive version of &amp;quot;forgive &amp;amp; forget&amp;quot; + &amp;quot;put others before yourself&amp;quot; led to several shitty situations.&lt;/p&gt;
+&lt;p&gt;Game theory has a better solution: in The Evolution of Trust, little simulated characters play a game of trust with each other, where they can either &amp;quot;cheat&amp;quot; or &amp;quot;cooperate&amp;quot;.&lt;/p&gt;
+&lt;p&gt;If they only play the game once, the winning strategy is &amp;quot;Always Cheat&amp;quot;. But if they play the game &lt;em&gt;repeatedly,&lt;/em&gt; the winning strategy becomes &amp;quot;Copycat&amp;quot;: cooperate in the first round, then &lt;em&gt;do whatever the other player did in the previous round.&lt;/em&gt; Do unto others!&lt;/p&gt;
+&lt;p&gt;But if mistakes can happen – e.g. someone meant to cooperate but accidentally chose &amp;quot;cheat&amp;quot; – one error between two Copycat players means they&#39;ll take revenge on each other over a single slip-up, forever.&lt;/p&gt;
+&lt;p&gt;So, in a repeated game with mistakes, the winning strategy is &amp;quot;Copykitten&amp;quot;: cooperate in the first round, then keep cooperating &lt;em&gt;unless the other player cheats *twice in a row*.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Copykitten thrives, because it forgives the occasional mistake, but is not &lt;em&gt;so&lt;/em&gt; forgiving that it enables a co-dependent relationship with an abuser.&lt;/p&gt;
+&lt;p&gt;Maybe my voice of conscience could learn a bit from game theory.&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;After such a huge success, my voice of conscience prompted me once again to try a &lt;strong&gt;⭐️ MAGNUM OPUS ⭐️&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;So, I designed not &lt;em&gt;just&lt;/em&gt; a tool for understanding systems, but a tool &lt;em&gt;for designing&lt;/em&gt; tools for understanding systems! This would change the world by blah blah blah it was a mess in concept and execution and I should&#39;ve killed this darling earlier.&lt;/p&gt;
+&lt;p&gt;I also dated another person with mental disorders for the purpose of &amp;quot;saving them.&amp;quot; This was &lt;em&gt;still&lt;/em&gt; a terrible idea.&lt;/p&gt;
+&lt;p&gt;But aside from that, the &amp;quot;Nicky is Non-Binary&amp;quot; sub-plot was going well! I bought femme clothes, wore makeup and nail polish in public more often, and tried feminizing my voice.&lt;/p&gt;
+&lt;p&gt;I also found a cool hack for getting nice tits and ass without hormones: weightlifting workouts targeting the chest and glutes.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/2017-1.jpg&quot; alt=&quot;2017-1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(Nicky Case, 2017, who had a nice ass)&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;2018: The Year of Dreaming Small&lt;/h2&gt;
+&lt;p&gt;On New Year&#39;s Day 2018 – during a cramped five-hour car ride – I had a deep personal conversation with a close friend of mine. He helped me realize:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;My obsession with sacrificing myself for strangers&lt;/li&gt;
+&lt;li&gt;My obsession with making a big &lt;strong&gt;⭐️ MAGNUM OPUS ⭐️&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Were the same thing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;My maladaptive belief that I had to &amp;quot;do the big heroic thing&amp;quot;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It&#39;s our cultural ethos – Dream Big, set ambitious goals, shoot for the moon if you miss you&#39;ll land among the stars...&lt;/p&gt;
+&lt;p&gt;I finally realized it&#39;s &lt;em&gt;all&lt;/em&gt; bullshit.&lt;/p&gt;
+&lt;p&gt;I already knew it was BS in game development – every beginner gamedev tries to make an open-world MMORPG as their first project, coz &amp;quot;Dream Big&amp;quot;. That&#39;s why gamedev schools say it over and over: &lt;em&gt;Scope Small, iterate quickly, prototype early and often.&lt;/em&gt; Or:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Evolution &amp;gt; Revolution.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lots of tiny steps &amp;gt; The big sexy thing.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;And in my professional life, the small experimental projects were usually more meaningful &lt;em&gt;and&lt;/em&gt; popular than my attempted Magnum Opi.&lt;/p&gt;
+&lt;p&gt;But my friend helped me realize I made the same mistake in my &lt;em&gt;personal&lt;/em&gt; life – trying to change myself in big revolutionary acts.&lt;/p&gt;
+&lt;p&gt;I want to be more considerate? &lt;em&gt;Let&#39;s bleed into a sink instead of bothering anyone!&lt;/em&gt; I want to help people? &lt;em&gt;Let&#39;s be this stranger&#39;s one-person suicide hotline for six months!&lt;/em&gt; I want to be more forgiving? &lt;em&gt;Let&#39;s live with a serial kid-fucker!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;So, in 2018, I opted for evolution &amp;gt; revolution.&lt;/p&gt;
+&lt;p&gt;Small daily habits &amp;gt; big sexy goals.&lt;/p&gt;
+&lt;p&gt;My New Year&#39;s Resolution for 2018 was to &amp;quot;try making one new habit a month&amp;quot;. Without repeating &lt;a href=&quot;https://blog.ncase.me/habits-i-tried-to-make-in-2018/&quot;&gt;my blog post about it&lt;/a&gt;, here&#39;s the habits that I still have, that helped me the most:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meditating 10 minutes a day&lt;/li&gt;
+&lt;li&gt;Spaced repetition flashcards (to learn French! Omelette au fromage!)&lt;/li&gt;
+&lt;li&gt;Voice-feminization training&lt;/li&gt;
+&lt;li&gt;No porn&lt;/li&gt;
+&lt;li&gt;Making my bed each morning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;None of this revolutionized my life. Which &lt;em&gt;was the point.&lt;/em&gt; It &amp;quot;merely&amp;quot; improved my life. I felt more focused, more energetic, and – though I still had an anxiety disorder – my physical+mental health had never been better.&lt;/p&gt;
+&lt;p&gt;As a sexy child psychologist once told me: I&#39;m okay.&lt;/p&gt;
+&lt;h2&gt;2019: The Year of Being Okay&lt;/h2&gt;
+&lt;p&gt;I made two more important habits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reach out to a friend every day&lt;/li&gt;
+&lt;li&gt;Meet a friend face-to-face once a week&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;These two habits alone boosted my mental health by a heckload.&lt;/strong&gt; Friendship is &lt;em&gt;THE&lt;/em&gt; problem when you work independently. There&#39;s no school or work schedule to automatically make you meet the same people regularly, so it&#39;s too easy to just... forget.&lt;/p&gt;
+&lt;p&gt;I&#39;m lucky I formed this habit of staying in touch with friends. Because in 2019, I finally had to move back to Canada. Under the new US administration, it was a lot harder to get a visa. (along with, um, &lt;em&gt;many&lt;/em&gt; other things that got harder)&lt;/p&gt;
+&lt;p&gt;I&#39;m also lucky I was learning French, because I moved to Montréal. Tabarnak de poutine!&lt;/p&gt;
+&lt;p&gt;I had a one-month depressive episode after moving – I felt like I left all my friends behind. But thanks to 1) US friends introducing me to Montréal friends, and 2) Regularly scheduled videocalls with US friends, my psychological need for belonging was fulfilled!&lt;/p&gt;
+&lt;p&gt;Friends: I love you. You &lt;em&gt;are&lt;/em&gt; my family. 💖&lt;/p&gt;
+&lt;p&gt;Before &amp;amp; during &amp;amp; after my move, I made &lt;strong&gt;&lt;a href=&quot;https://ncase.me/anxiety/&quot;&gt;Adventures With Anxiety&lt;/a&gt;&lt;/strong&gt;, an interactive story about anxiety... where you play &lt;em&gt;as&lt;/em&gt; the anxiety.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/awa1.png&quot; alt=&quot;awa1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I knew I &lt;em&gt;didn&#39;t&lt;/em&gt; want to do a Magnum Opus to &amp;quot;make the world a better place&amp;quot;, or even to &amp;quot;help others&amp;quot;! I wanted to do this project for a reason that, in years past, I rejected as the sick philosophy of a narcissistic asshole:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I did it for &lt;em&gt;myself&lt;/em&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When I asked my educator/researcher friends how they do things for the world, they replied: &lt;em&gt;&lt;a href=&quot;https://www.patreon.com/posts/fearsonas-whats-30613011&quot;&gt;they don&#39;t&lt;/a&gt;&lt;/em&gt;. They do what&#39;s valuable for &lt;em&gt;themselves&lt;/em&gt;, which has the sustainable side-effect of doing work that&#39;s valuable for others.&lt;/p&gt;
+&lt;p&gt;(And because you&#39;re doing it &amp;quot;for yourself&amp;quot; and not &amp;quot;for the world&amp;quot;, you have the incentive &amp;amp; know-how to make it &lt;em&gt;actually&lt;/em&gt; valuable, not on-paper &amp;quot;valuable&amp;quot; like my BS startup or Magnum Opi)&lt;/p&gt;
+&lt;p&gt;So, I made &lt;em&gt;Adventures With Anxiety&lt;/em&gt; because it&#39;d help &lt;em&gt;me&lt;/em&gt; – with the side-effect of helping my friends, and the 1 in 27 people worldwide with an anxiety disorder.&lt;/p&gt;
+&lt;p&gt;At first, I planned to make the anxiety-wolf character just a total jerk. However, Proper Storytelling Technique dictates that all characters should have clear relatable motivations.&lt;/p&gt;
+&lt;p&gt;Huh. That was an interesting question: what &lt;em&gt;is&lt;/em&gt; anxiety&#39;s motivation? I asked my anxiety about it. I listened. It said:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I want you to be a good person.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Yeah, so you&#39;ve told me a zillion times. What else?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I want you to be safe.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;That... made a lot of sense. The evolutionary function of the fight/flight response &lt;em&gt;is&lt;/em&gt; to keep an organism safe. &lt;strong&gt;Anxiety, who I always thought was a Big Bad Wolf, is actually trying to be a guard dog.&lt;/strong&gt; What else?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I want you to be loved.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Wait.&lt;/p&gt;
+&lt;p&gt;My memory scrolled up 6000 words to the Year 2010 section, where I wrote:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;I want to not be lonely → I must become a good person&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Are you &lt;em&gt;kidding&lt;/em&gt; me. &lt;em&gt;Ten years&lt;/em&gt; of throwing myself into big Magnum Opus projects, of hurting my physical &amp;amp; mental health for strangers, of trying to find &amp;quot;meaning in my life&amp;quot;... was all just because I was &lt;em&gt;lonely?!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;But of course. &lt;a href=&quot;https://science.sciencemag.org/content/302/5643/290.abstract&quot;&gt;Social pain is neurologically similar to physical pain&lt;/a&gt;, because humans have no natural defenses, and thus evolved to a &lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pubmed/7777651&quot;&gt;need to belong&lt;/a&gt; to a tribe who&#39;ll keep them safe. That&#39;s why people join cults &amp;amp; hate-groups – you sell an outcast a tribe that says &lt;em&gt;you&#39;re better than all those fuckers who rejected you&lt;/em&gt;, why, you got yourself a sale.&lt;/p&gt;
+&lt;p&gt;So I listened to my anxiety, and made this the wolf&#39;s motivation:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Anxiety wants to guard your fundamental human needs.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/awa2-1.png&quot; alt=&quot;awa2-1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The rest of my decade inspired the rest of this game.&lt;/p&gt;
+&lt;p&gt;In Chapter 2, the human tries to drown out their wolf with something horrible. This was inspired by me numbing myself with risky sex in 2012.&lt;/p&gt;
+&lt;p&gt;In Chapter 3, the human is about to &lt;em&gt;do&lt;/em&gt; something horrible, and the wolf must save the day. This was inspired by my almost killing a dude in 2016.&lt;/p&gt;
+&lt;p&gt;In Chapter 4 (the final chapter), the human and wolf do something utterly shocking... they sit down, chat, and listen to each other.&lt;/p&gt;
+&lt;p&gt;This was inspired by – strange loop – me trying to write this game in 2019.&lt;/p&gt;
+&lt;p&gt;Just like how writing &lt;em&gt;Coming Out Simulator&lt;/em&gt; helped me make sense of my past, writing &lt;em&gt;Adventures With Anxiety&lt;/em&gt; helped me have a &lt;em&gt;much&lt;/em&gt; healthier relationship with my emotions. In fact, after 10+ years, I...&lt;/p&gt;
+&lt;p&gt;Hang on, let me find some wood to knock.&lt;/p&gt;
+&lt;p&gt;(knock knock)&lt;/p&gt;
+&lt;p&gt;...I don&#39;t think I have an anxiety disorder anymore.&lt;/p&gt;
+&lt;p&gt;I think my anxiety is very well-ordered now, thank you very much. It shows up to meetings, offers valuable constructive criticism, but is open to discussion with my other emotions.&lt;/p&gt;
+&lt;p&gt;I&#39;m serious. For example, my most recent bout of rumination: I was struggling to decide if I should share my violent-urge stories in this post. After consulting with close friends, I brought my emotions together for a board meeting.&lt;/p&gt;
+&lt;p&gt;My &amp;quot;negative emotions&amp;quot; listed some pros &amp;amp; cons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pro: If we &lt;em&gt;don&#39;t&lt;/em&gt; share our story, we&#39;re being inauthentic.&lt;/li&gt;
+&lt;li&gt;Con: There&#39;s a chance of getting ostracized over this.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;My &amp;quot;positive emotions&amp;quot; also listed some pros &amp;amp; cons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pro: We gotta share ALL the stories! We&#39;re an &lt;em&gt;ARTISTE&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Con: Oh girl, wouldn&#39;t it be &lt;em&gt;cool&lt;/em&gt; to take a secret to the grave? That&#39;s &lt;em&gt;sexy.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(So many self-help books ask you to challenge your negative self-talk, but not your positive self-talk. Spoiler alert, that&#39;s how you become a narcissistic asshole.)&lt;/p&gt;
+&lt;p&gt;I trusted my emotions, &lt;em&gt;but verified them with reason&lt;/em&gt;. Working with my emotions as (imperfect) advisors, I decided to share my story, taking care to minimize the risks that my fear helped me notice.&lt;/p&gt;
+&lt;p&gt;Thanks, anxiety. This time I mean it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/awa3.png&quot; alt=&quot;awa3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Adventures With Anxiety reached 2 million people. I&#39;ll always cherish the fan-emails I got, saying it helped them deeper than therapy ever had. 💖 Some fans even drew their own anxieties as animals, i.e. &lt;a href=&quot;https://twitter.com/ncasenmare/status/1175174021513732096&quot;&gt;&amp;quot;fearsonas&amp;quot;&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;In line with my new philosophy of &amp;quot;do things for myself (that happen to help others)&amp;quot;, my next project – launches February 2020? – will be a free, online tool for trans/non-binary folks to train their voice.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/voice.png&quot; alt=&quot;voice&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;We&#39;ll see how it goes, along with the rest of the new decade. Then I&#39;ll publicly own up to my new mistakes, dissect them in a long blog post, and share what I learn.&lt;/p&gt;
+&lt;p&gt;Here&#39;s queer cheers to 10 more years. 🎉&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/2019.jpg&quot; alt=&quot;2019&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(Nicky Case, 2019, who is okay)&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Epilogue: Proper Storytelling Technique&lt;/h2&gt;
+&lt;p&gt;Everything I said was fiction.&lt;/p&gt;
+&lt;p&gt;Not a &lt;em&gt;lie&lt;/em&gt; – but fiction, the same way the physics idea of &amp;quot;point mass in a frictionless vacuum&amp;quot; is fiction. A simplified model.&lt;/p&gt;
+&lt;p&gt;There were 3,652 days in this decade. If each day were a data point...&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/map0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;...then my story was merely the &lt;em&gt;curve of best fit:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/map1-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Stories are like maps – they&#39;re helpful not &lt;em&gt;despite&lt;/em&gt; being simplified, but &lt;em&gt;because&lt;/em&gt; they&#39;re simplified. &lt;em&gt;“The map is not the territory, but you can&#39;t fold up the territory and put it in your pocket.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Call it post-post-modernism. (or, &amp;quot;pragmatism&amp;quot;) Sure, every narrative is made up – the same way every map is made up – yet some maps give better guidance than others.&lt;/p&gt;
+&lt;p&gt;So now that I&#39;ve mapped out my last 10 years, what guidance does it give me for my next 10 years? Or:&lt;/p&gt;
+&lt;h2&gt;No Seriously, What Did I Learn This Decade?&lt;/h2&gt;
+&lt;p&gt;Here&#39;s my current Life Map, drawn in pencil, subject to change:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It&#39;s okay to ask for help.&lt;/li&gt;
+&lt;li&gt;Violent intrusive thoughts are common, and don&#39;t mean you&#39;ll act on them.&lt;/li&gt;
+&lt;li&gt;&amp;quot;Your feelings are always valid&amp;quot; and &amp;quot;Negative emotions are irrational&amp;quot; are both harmful bullshit.&lt;/li&gt;
+&lt;li&gt;Emotions are (imperfect) advisors: Trust, but verify.&lt;/li&gt;
+&lt;li&gt;Forgive the occasional moral mistake, but don&#39;t be so forgiving you enable abusers. (It&#39;s game theory!)&lt;/li&gt;
+&lt;li&gt;Evolution &amp;gt; Revolution&lt;/li&gt;
+&lt;li&gt;Small daily habits &amp;gt; Big heroic acts&lt;/li&gt;
+&lt;li&gt;Do things for yourself, that &lt;em&gt;happen&lt;/em&gt; to help others. (or at least not hurt others)&lt;/li&gt;
+&lt;li&gt;Anxiety is a guard dog for my fundamental human needs: for survival, growth, and love.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And some stuff to figure out in 2020:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;How to balance time working &amp;amp; time with friends?&lt;/strong&gt; Experiment: try cowork-dates with pals?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;How to balance &amp;quot;explore&amp;quot; and &amp;quot;exploit&amp;quot;?&lt;/strong&gt; I like doing wildly differect projects, but I feel bad there&#39;s no &amp;quot;unifying purpose&amp;quot;. And when I &lt;em&gt;do&lt;/em&gt; focus on one project, I feel boxed in. Experiments: Have &lt;em&gt;multiple&lt;/em&gt; unifying purposes? Take one day off per week for &amp;quot;pure exploration&amp;quot;?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;How to balance being authentic &amp;amp; not getting &amp;quot;cancelled&amp;quot;?&lt;/strong&gt; And I can&#39;t just &amp;quot;not care about strangers on the internet&amp;quot; since my food &amp;amp; rent is paid for by strangers on the internet. Experiments: Share more personal stories? Offer constructive criticism about toxicity in the social justice movement? Reveal that I&#39;ve secretly been a furry for 15 years and &lt;a href=&quot;https://web.archive.org/web/20210121133104/https://ncase.me/catgirls.png&quot;&gt;here&#39;s my two catgirl fursonas&lt;/a&gt;?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I feel disappointed-yet-relieved that these questions are kind of &lt;em&gt;boring&lt;/em&gt; compared to &amp;quot;how do I deal with intrusive thoughts of cutting off my own fingers?&amp;quot; I guess I&#39;ll need to find new sources of growth &amp;amp; excitement outside myself.&lt;/p&gt;
+&lt;p&gt;Why not? It&#39;s 2020, a new decade, a new start. I&#39;m 25 years old and I know everything.&lt;/p&gt;
+&lt;p&gt;What&#39;s the worst that could happen?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/time.png&quot; alt=&quot;time&quot; /&gt;&lt;/p&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>My Most Meaningful Media of 2019</title>
+            <link href="https://blog.ncase.me/posts/my-most-meaningful-media-of-2019/"/>
+            <updated>2019-12-31T16:56:14Z</updated>
+            <id>https://blog.ncase.me/posts/my-most-meaningful-media-of-2019/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;&lt;em&gt;(reading time: 9 minutes)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Starting in &lt;a href=&quot;https://blog.ncase.me/the-most-meaningful-books-i-read-in-2016/&quot;&gt;2016&lt;/a&gt;, then &lt;a href=&quot;https://blog.ncase.me/the-most-meaningful-books-i-read-in-2017/&quot;&gt;2017&lt;/a&gt;, then &lt;a href=&quot;https://blog.ncase.me/the-most-meaningful-books-i-read-in-2018/&quot;&gt;2018&lt;/a&gt;, I&#39;ve continued my yearly ritual of sharing &lt;strong&gt;the most personally meaningful books I read that year&lt;/strong&gt;. Which books broke my heart and re-built it stronger? Which books were the keystone puzzle pieces in my mental jigsaw? Which books gave me the swords and shields to survive in our strange new world?&lt;/p&gt;
+&lt;p&gt;Well this year I finally got sick of books.&lt;/p&gt;
+&lt;p&gt;So, here&#39;s my Most Meaningful &lt;em&gt;Media&lt;/em&gt; of 2019 – this includes books, but also films, comics, academic papers, web-interactives, etc.&lt;/p&gt;
+&lt;p&gt;Let&#39;s go!&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;📜 Most Meaningful Story&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/Exhalation_Ted_Chiang.0.jpg&quot; alt=&quot;Exhalation_Ted_Chiang.0&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Ted Chiang&#39;s sci-fi always hits a sweet spot of hard science and humanist feeling, because he knows what few others do: &lt;strong&gt;science &lt;em&gt;is&lt;/em&gt; human.&lt;/strong&gt; Technology &lt;em&gt;is&lt;/em&gt; humanity&#39;s dreams and delusions, made real.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.indiebound.org/book/9781101947883&quot;&gt;Exhalation (2019)&lt;/a&gt;&lt;/strong&gt; is his newest anthology of short sci-fi stories. It begins with a story of deterministic time travel, as a person struggles to accept an unchangeable tragic past. Then there&#39;s a story of AI pet enthusiasts, as they struggle to raise their &amp;quot;children&amp;quot; in a brave new world. And it ends with a story of multiverse communication, as people suffer anxiety over what their alternate selves coulda-woulda-shoulda done.&lt;/p&gt;
+&lt;p&gt;I said that this year I got &amp;quot;sick of books&amp;quot;. That&#39;s because so many novels are stuffed with fluff to meet their contract&#39;s 200-300 page mark. Not with Chiang. Each short story hits its ideas and feelings at lightning pace. Result: you spend half an hour reading one story, then half a day &lt;em&gt;really&lt;/em&gt; thinking about it.&lt;/p&gt;
+&lt;p&gt;Speaking of writing good stories...&lt;/p&gt;
+&lt;h2&gt;🤔 Most Meaningful Non-Fiction&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/ab1313642e2f1287af29551afcf749d2.jpg&quot; alt=&quot;ab1313642e2f1287af29551afcf749d2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&amp;quot;Peter&#39;s uncle died and Peter fights crime.&amp;quot; – that&#39;s not a story.&lt;/p&gt;
+&lt;p&gt;&amp;quot;Peter&#39;s uncle died &lt;em&gt;because&lt;/em&gt; of Peter&#39;s irresponsibility, &lt;em&gt;therefore&lt;/em&gt; Peter uses his great power with great responsibility, and fights crime.&amp;quot; – that&#39;s a story so well-known, it&#39;s practically Mythology.&lt;/p&gt;
+&lt;p&gt;There might never be a Grand Unified Theory of Storytelling, but &lt;strong&gt;Robert McKee&#39;s &lt;a href=&quot;https://www.indiebound.org/book/9780060391683&quot;&gt;Story (1997)&lt;/a&gt;&lt;/strong&gt; comes close:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Story = Value + Cause&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Value is emotional. Cause is logical. What I love about this equation is that it shows how great stories are both – they make us feel &lt;em&gt;and&lt;/em&gt; think. (see: Chiang&#39;s humanist sci-fi)&lt;/p&gt;
+&lt;p&gt;That&#39;s why every human culture tells stories, even though they could use that time for improving one&#39;s survival: because stories &lt;em&gt;do&lt;/em&gt; improve our survival. A simplified fiction guides us through the chaos of life, just as a simplified street map guides us through the chaos of a city.&lt;/p&gt;
+&lt;p&gt;Great stories show us what Causes what we Value.&lt;/p&gt;
+&lt;p&gt;(As for me, I used McKee&#39;s framework to design my interactive story, &lt;a href=&quot;https://ncase.me/anxiety/&quot;&gt;Adventures With Anxiety&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;I said so many novels these days are fluff&#39;d, but I find that most modern non-fiction is too. Especially pop science. This year, I skipped the books, and went straight to the source – the scientific papers themselves:&lt;/p&gt;
+&lt;h2&gt;📄 Most Meaningful Paper(s)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.tandfonline.com/doi/pdf/10.1207/s15326985ep4102_1?needAccess=true&amp;amp;&quot;&gt;Why Minimal Guidance During Instruction Does Not Work (PDF)&lt;/a&gt;&lt;/strong&gt; showed me that my career of making educational games was... kinda based on a lie. But this paper introduced me to powerful new ideas like Cognitive Load Theory + the Expertise Reversal Effect, and ultimately, this hard-to-swallow pill will make my educational games much better.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ippanetwork.org/wp-content/uploads/2017/02/Martela-Steger-JOPP.pdf&quot;&gt;The Three Meanings of Meaning In Life (PDF)&lt;/a&gt;&lt;/strong&gt; made my existential-anxiety episodes more useful. Previously, when I felt &amp;quot;meaninglessness&amp;quot;, I&#39;d get stuck in a loop because &amp;quot;meaning&amp;quot; is a fluffy word. This positive-psychology paper helped break &amp;quot;meaning&amp;quot; down into 3 parts: cognitive, affective, and motivational. (This explains why great stories, which make you feel &lt;em&gt;and&lt;/em&gt; think, are such powerful sources of meaning!)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://journals.sagepub.com/doi/pdf/10.1177/0146167200266002&quot;&gt;Daily Well-Being: The Role of Autonomy, Competence, and Relatedness (PDF)&lt;/a&gt;&lt;/strong&gt; showed me Values &amp;amp; Causes in real life. The study shows how just &lt;strong&gt;3 psychological human needs&lt;/strong&gt; – being true to yourself (Autonomy), being with others (Relatedness), and doing good work (Competence) – predict better mental health, and even better &lt;em&gt;physical&lt;/em&gt; health! Inspired by this paper, I kept a journal of how much my needs were fulfilled/frustrated each day... and how I could do better tomorrow.&lt;/p&gt;
+&lt;p&gt;Speaking of mental health...&lt;/p&gt;
+&lt;h2&gt;🎥 Most Meaningful Film&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/Joaquin-Phoenix-The-Joker-2019.jpg&quot; alt=&quot;Joaquin-Phoenix-The-Joker-2019&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Joker_(2019_film)&quot;&gt;Joker (2019)&lt;/a&gt;&lt;/strong&gt; left me feeling like a worse &lt;em&gt;and&lt;/em&gt; better person.&lt;/p&gt;
+&lt;p&gt;Great stories can also show us what Causes &lt;em&gt;the opposite&lt;/em&gt; of what we Value – what turns people into monsters. You crush an at-risk person&#39;s 3 psychological human needs, and well... they may stop being psychologically human.&lt;/p&gt;
+&lt;p&gt;I already &lt;a href=&quot;https://twitter.com/ncasenmare/status/1182462956191338498&quot;&gt;tweet-stormed&lt;/a&gt; my review of it, so I&#39;ll just repeat it here:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/joker.png&quot; alt=&quot;joker&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;What&#39;s more, &lt;em&gt;Joker&lt;/em&gt; is the only film I&#39;ve seen so far that takes violence &lt;em&gt;seriously.&lt;/em&gt; For contrast: I just saw the new Star Wars flick, where Kylo Ren kills more people in his first scene than Arthur Fleck does in his &lt;em&gt;whole movie.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In &lt;em&gt;Joker&lt;/em&gt;, the violence was almost &lt;strong&gt;anti&lt;/strong&gt;-cinematic. No sanitized cut-aways, no pornographic close-ups, no soundtrack or sexy editing. I don&#39;t think any of the deaths even happen in the &lt;em&gt;middle&lt;/em&gt; of the frame – as if the cameraperson just happened to be there.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Joker&lt;/em&gt; shows violence as it is. It&#39;s not a bringer of glory, nor a sexy taboo act.&lt;/p&gt;
+&lt;p&gt;It&#39;s just ugly.&lt;/p&gt;
+&lt;p&gt;Though, that&#39;s not to say I don&#39;t enjoy the occasional sexy violence...&lt;/p&gt;
+&lt;h2&gt;🖼 Most Meaningful Comix&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/91flVg9E48L.jpg&quot; alt=&quot;91flVg9E48L&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.indiebound.org/book/9781927668689&quot;&gt;When I Arrived At The Castle (2019)&lt;/a&gt;&lt;/strong&gt; by Emily Carroll.&lt;/p&gt;
+&lt;p&gt;&amp;quot;Lesbian gothic horror furry vampire romance.&amp;quot;&lt;/p&gt;
+&lt;p&gt;That&#39;s all I have to say about that.&lt;/p&gt;
+&lt;p&gt;Anyway, speaking of non sequitur segues...&lt;/p&gt;
+&lt;h2&gt;💻 Most Meaningful Web Interactive&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/Screen-Shot-2019-12-30-at-7.05.14-PM.png&quot; alt=&quot;Screen-Shot-2019-12-30-at-7.05.14-PM&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;You know how you read a great book, learn all kinds of insights... then a month later you&#39;ve forgotten everything? (Another reason I&#39;m now &amp;quot;sick of books&amp;quot;.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://quantum.country/qcvc&quot;&gt;Quantum Computing for the Very Curious (2019)&lt;/a&gt;&lt;/strong&gt; by Michael Nielsen and Andy Matuschak solves that problem. Not only is it an accessible-yet-deep intro to quantum computing – you don&#39;t need prior knowledge of quantum mechanics &lt;em&gt;or&lt;/em&gt; computing! – it also has one core new innovation:&lt;/p&gt;
+&lt;p&gt;In-built Spaced Repetition, or, &amp;quot;flashcards on steroids&amp;quot;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=eVajQPuRmk8&quot;&gt;Spaced Repetition&lt;/a&gt; feels like cheating. By just investing a few minutes – strategically spaced out over months – you can choose to commit anything you like to long-term memory!&lt;/p&gt;
+&lt;p&gt;Example: I read QCVC Chapter 1 in March, and nine months later I &lt;em&gt;still&lt;/em&gt; remember what a Hadamard gate is, its exact matrix representation, and famous quantum circuits that use it. In contrast: in March I saw a bunch of talks at a conference and now I don&#39;t even remember &lt;em&gt;which&lt;/em&gt; talks I saw.&lt;/p&gt;
+&lt;p&gt;Combined with the many other cognitive science papers I read this year (like the one which ruined/re-built my edu-games career), I think QCVC hints at how to Cause something I deeply Value – a bright new future of education:&lt;/p&gt;
+&lt;p&gt;One that actually &lt;em&gt;works.&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Stuff From Years Past That Still Influence Me A Lot&lt;/h2&gt;
+&lt;p&gt;Each year, I share media that felt super meaningful to me at the time... but as the years pass, I realize what a gullible idiot infant child I was, and only 5% of the stuff I said was life-changing actually ended up changing my life.&lt;/p&gt;
+&lt;p&gt;But, I guess that&#39;s Time&#39;s job: to filter out the truly great stuff. So, here&#39;s things from years past that are &lt;em&gt;still&lt;/em&gt; meaningful to me, even after all this time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;From &lt;a href=&quot;https://blog.ncase.me/the-most-meaningful-books-i-read-in-2018/&quot;&gt;2018&lt;/a&gt;:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📖 &lt;a href=&quot;https://www.indiebound.org/book/9780385348119&quot;&gt;Fluent Forever&lt;/a&gt;&lt;br /&gt;
+after many failed attempts at Duolingo &amp;amp; Anki, this book &lt;em&gt;finally&lt;/em&gt; got me to learn French &amp;amp; use Spaced Repetition.&lt;/li&gt;
+&lt;li&gt;📖 &lt;a href=&quot;https://www.indiebound.org/book/9780470591963&quot;&gt;Why Don&#39;t Students Like School?&lt;/a&gt;&lt;br /&gt;
+introduced me to the cognitive science of learning&lt;/li&gt;
+&lt;li&gt;📄 &lt;a href=&quot;https://pdfs.semanticscholar.org/3c45/ee6989cfe84f1f4866e26dbe7fae93de26b8.pdf&quot;&gt;Small Wins: Redefining the Scale of Social Problems (PDF)&lt;/a&gt;&lt;br /&gt;
+helped me &amp;quot;dream smaller&amp;quot;&lt;/li&gt;
+&lt;li&gt;📄 &lt;a href=&quot;https://www.researchgate.net/profile/Veronika_Huta/publication/23545617_Living_well_A_self-determination_theory_perspective_on_eudaimonia/links/546ce1330cf26e95bc3ca838/Living-well-A-self-determination-theory-perspective-on-eudaimonia.pdf&quot;&gt;Living Well &amp;amp; Eudamonia (PDF)&lt;/a&gt;&lt;br /&gt;
+showed me there&#39;s more to life than happiness&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;From &lt;a href=&quot;https://blog.ncase.me/the-most-meaningful-books-i-read-in-2017/&quot;&gt;2017&lt;/a&gt;:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📖 &lt;a href=&quot;https://www.indiebound.org/book/9780393327793&quot;&gt;Endless Forms Most Beautiful&lt;/a&gt;&lt;br /&gt;
+the ideal I strive for in my own science writing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;From &lt;a href=&quot;https://blog.ncase.me/the-most-meaningful-books-i-read-in-2016/&quot;&gt;2016&lt;/a&gt;:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📖 &lt;a href=&quot;https://www.indiebound.org/book/9780743203043&quot;&gt;Bowling Alone&lt;/a&gt;&lt;br /&gt;
+showed me the importance of community&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Before, during the 2010s decade:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📖 &lt;a href=&quot;https://www.indiebound.org/book/9780307455772&quot;&gt;The Righteous Mind&lt;/a&gt;&lt;br /&gt;
+made me more humble &amp;amp; understanding&lt;/li&gt;
+&lt;li&gt;📖 &lt;a href=&quot;https://www.indiebound.org/book/9780143036531&quot;&gt;Amusing Ourselves To Death&lt;/a&gt;&lt;br /&gt;
+popped my techno-utopianism&lt;/li&gt;
+&lt;li&gt;📖 &lt;a href=&quot;https://www.indiebound.org/book/9781138632059&quot;&gt;The Art of Game Design&lt;/a&gt;&lt;br /&gt;
+introduced me to Flow and the Interest Curve&lt;/li&gt;
+&lt;li&gt;🎥 &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Babadook&quot;&gt;The Babadook&lt;/a&gt;&lt;br /&gt;
+showed me how to live with trauma&lt;/li&gt;
+&lt;li&gt;🎥 &lt;a href=&quot;https://en.wikipedia.org/wiki/Inside_Out_(2015_film)&quot;&gt;Inside Out&lt;/a&gt;&lt;br /&gt;
+showed me that my &amp;quot;negative emotions&amp;quot; actually have functions&lt;/li&gt;
+&lt;li&gt;🕹 &lt;a href=&quot;https://en.wikipedia.org/wiki/Dys4ia&quot;&gt;Dys4ia&lt;/a&gt;&lt;br /&gt;
+inspired me to make personal games&lt;/li&gt;
+&lt;li&gt;🕹 &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Beginner%27s_Guide&quot;&gt;The Beginner&#39;s Guide&lt;/a&gt;&lt;br /&gt;
+showed me that chasing external validation is poison&lt;/li&gt;
+&lt;li&gt;🕹 &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Walking_Dead_(video_game)&quot;&gt;Telltale&#39;s The Walking Dead Season 1&lt;/a&gt;&lt;br /&gt;
+showed me my worst character flaws&lt;/li&gt;
+&lt;li&gt;🕹 &lt;a href=&quot;http://worrydream.com/ExplorableExplanations/&quot;&gt;Explorable Explanations&lt;/a&gt;&lt;br /&gt;
+jumpstarted my whole dang career&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;What books/films/papers have influenced you the most?&lt;/strong&gt; &lt;a href=&quot;https://twitter.com/ncasenmare/status/1212056115883569152&quot;&gt;Tell me in the Twitter replies!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I hope some of my recommendations are good additions to your 2020 reading/watching/playing list. Happy New Year+Decade, y&#39;all.&lt;/p&gt;
+&lt;p&gt;💖,&lt;br /&gt;
+~ Nicky&lt;/p&gt;
+</content>
+        </entry>
+    
+        
+        <entry>
+            <title>Curse of the Chocolate-Covered Broccoli (or: Emotion in Learning)</title>
+            <link href="https://blog.ncase.me/posts/curse-of-the-chocolate-covered-broccoli-or-emotion-in-learning/"/>
+            <updated>2019-12-05T20:09:52Z</updated>
+            <id>https://blog.ncase.me/posts/curse-of-the-chocolate-covered-broccoli-or-emotion-in-learning/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;&lt;em&gt;(reading time: 9 minutes)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/broc.png&quot; alt=&quot;broc&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(header image &lt;a href=&quot;https://www.edutopia.org/blog/serious-games-not-chocolate-broccoli-matthew-farber&quot;&gt;from edutopia&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;So earlier this year, I learnt my whole career was based on a lie. As one does.&lt;/p&gt;
+&lt;p&gt;I make games to help folks learn by doing. People learn all kinds of complex mechanics entirely &amp;quot;by doing&amp;quot; in games like Portal, right? And it&#39;s fun! Of &lt;em&gt;course&lt;/em&gt; beginners learn better from pure exploration, rather than being railroaded through step-by-step instructions.&lt;/p&gt;
+&lt;p&gt;Anyway, this idea&#39;s been experimentally tested, &lt;a href=&quot;https://www.tandfonline.com/doi/pdf/10.1207/s15326985ep4102_1?needAccess=true&amp;amp;&quot;&gt;and it&#39;s replicatably &lt;strong&gt;false&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;But here&#39;s where this goes from disappointing to bizarre: &amp;quot;active&amp;quot; learning-by-exploring is ineffective for beginner students, but &lt;em&gt;very effective&lt;/em&gt; for advanced students! And &amp;quot;passive&amp;quot; learn-by-step-by-step-instruction is effective for beginners, but &lt;em&gt;ineffective&lt;/em&gt; for the advanced.&lt;/p&gt;
+&lt;p&gt;This paradox is called &lt;a href=&quot;http://lexiconic.net/pedagogy/2003-Kalyuga_et_al.pdf&quot;&gt;&lt;strong&gt;The Expertise Reversal Effect.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/reversal.png&quot; alt=&quot;reversal&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(slide from a talk I&#39;ll post online soon!)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;But maybe I shouldn&#39;t be surprised. Trying to bench-press 200lb would kill a beginner weightlifter, but it&#39;s good for an advanced weightlifter. Like physical load, there&#39;s &lt;strong&gt;cognitive load&lt;/strong&gt;: step-by-step instructions are a &amp;quot;small&amp;quot; load, while pure exploration is a &amp;quot;heavy&amp;quot; load.&lt;/p&gt;
+&lt;p&gt;According to &lt;a href=&quot;https://www.instructionaldesign.institute/uploads/3/1/2/2/31221959/sweller_cognitive_load_theory_1994.pdf&quot;&gt;&lt;strong&gt;Cognitive Load Theory&lt;/strong&gt;&lt;/a&gt;, good education is giving a learner a fitting &amp;quot;load&amp;quot;: one that&#39;s &lt;em&gt;slightly&lt;/em&gt; beyond their comfort zone. (See: &lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Zone_of_proximal_development&quot;&gt;Zone of Proximal Development&lt;/a&gt;&lt;/strong&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Zone_of_proximal_development#Scaffolding&quot;&gt;&lt;strong&gt;scaffolding&lt;/strong&gt;&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/reversal2.png&quot; alt=&quot;reversal2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;(P.S: Here&#39;s &lt;a href=&quot;https://www.researchgate.net/publication/277452339_Scaffolding_and_Achievement_in_Problem-Based_and_Inquiry_Learning_A_Response_to_Kirschner_Sweller_and_Clark_2006&quot;&gt;a good reply&lt;/a&gt; to the original &amp;quot;minimally-guided learning is bad&amp;quot; paper, but here&#39;s &lt;a href=&quot;https://www.ntnu.no/wiki/download/attachments/8324914/sweller_kirschner_clark_reply_ep07.pdf&quot;&gt;an equally good reply&lt;/a&gt; to &lt;em&gt;that&lt;/em&gt; reply + others)&lt;/p&gt;
+&lt;p&gt;Oh, as for &amp;quot;learning-by-doing&amp;quot; in games like Portal, it turns out the designers add &lt;em&gt;tons&lt;/em&gt; of hand-holding guidance – &lt;a href=&quot;https://www.youtube.com/watch?v=MMggqenxuZc&quot;&gt;they just keep it invisible so you can feel smart&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;So if you&#39;re an educator or someone who &amp;quot;communicates through multimedia&amp;quot; like me, what should we do?&lt;/p&gt;
+&lt;p&gt;Richard Mayer has applied Cognitive Load Theory to create &lt;strong&gt;&lt;a href=&quot;http://www.instructionaldesign.institute/uploads/3/1/2/2/31221959/richard_mayer_article_applying_the_science_of_learning.pdf&quot;&gt;10 empirically-based Principles for Multimedia Learning&lt;/a&gt;&lt;/strong&gt;. These principles include: cut out the irrelevant &amp;quot;fun&amp;quot; fluff, organize things step-by-step, signal the important parts, etc. This doesn&#39;t mean being &lt;em&gt;dry&lt;/em&gt;, just clear and minimalist.&lt;/p&gt;
+&lt;p&gt;But, still...&lt;/p&gt;
+&lt;p&gt;I &lt;em&gt;like&lt;/em&gt; the fun fluff.&lt;/p&gt;
+&lt;p&gt;Leonard Susskind&#39;s &lt;a href=&quot;https://www.indiebound.org/search/book?keys=the+theoretical+minimum+susskind&quot;&gt;The Theoretical Minimum&lt;/a&gt; is a technical introduction to physics by one of the world&#39;s top physicists, yet each chapter is sprinkled with silly dad jokes. Cognitive Load Theory predicts these to be &amp;quot;extraneous load&amp;quot; that would hurt learning, but I think the dad jokes are &lt;em&gt;necessary&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Consider &lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Yerkes%E2%80%93Dodson_law&quot;&gt;Yerkes-Dodson&#39;s Law&lt;/a&gt;&lt;/strong&gt;. For &lt;em&gt;complex&lt;/em&gt; tasks – like learning a new thing – too little or too much stress leads to poor task performance, but there&#39;s a &amp;quot;just right&amp;quot; amount of stress for the best task performance:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/yd.png&quot; alt=&quot;yd&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Back to Susskind&#39;s books: tensor products are pretty stressful, so dad jokes help bring the stress level back down to the optimum. Same technique is used in other technical-but-fun (fun-but-technical?) stuff like 3Blue1Brown, Gödel Escher Bach, Mathematical Games, etc.&lt;/p&gt;
+&lt;p&gt;That&#39;s the big gap in the original version of Cognitive Load Theory: it says nothing about emotion... even though neuroscientists &amp;amp; psychologists have known for &lt;em&gt;decades&lt;/em&gt; that the &amp;quot;cognition-emotion divide&amp;quot; is bull! (See: &lt;a href=&quot;http://acs.ist.psu.edu/misc/dirk-files/Papers/Cognition&amp;amp;Emotion/Cognition%20and%20motivation%20in%20emotion..htm&quot;&gt;Lazarus 1991&lt;/a&gt;, &lt;a href=&quot;https://www.indiebound.org/book/9780380726479&quot;&gt;Descartes&#39; Error&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;So last month, I found 4 helpful papers about &lt;em&gt;emotion&lt;/em&gt; in learning!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Paper #1)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I&#39;m very pleased &lt;strong&gt;&lt;a href=&quot;http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.479.9800&amp;amp;rep=rep1&amp;amp;type=pdf&quot;&gt;Um et al 2012&lt;/a&gt;&lt;/strong&gt; provides empirical support for my approach to teaching: &amp;quot;slap a bunch of silly faces on it&amp;quot;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/um.png&quot; alt=&quot;um&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Obviously, making something more &amp;quot;fun&amp;quot; makes a learner more motivated to keep going. But this study found something stranger: making something more &amp;quot;fun&amp;quot; improved learning outcomes &lt;em&gt;directly, not through motivation alone.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Three possibilities why:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The Yerkes-Dodson thing I mentioned earlier.&lt;/li&gt;
+&lt;li&gt;Memories stick better when they&#39;re emotional. (including painful memories)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Being in a relaxed mood actually &amp;quot;opens your mind&amp;quot; more.&lt;/strong&gt; (Imagine how close-minded people get when they&#39;re scared!)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;But what about all the other research showing that &lt;a href=&quot;https://www.researchgate.net/profile/Richard_Mayer7/publication/232595492_How_Seductive_Details_Do_Their_Damage_A_Theory_of_Cognitive_Interest_in_Science_Learning/links/57799b8408ae4645d611f204.pdf&quot;&gt;interesting-but-irrelevant &amp;quot;seductive details&amp;quot; &lt;em&gt;damage&lt;/em&gt; learning&lt;/a&gt;? And in the &amp;quot;educational games&amp;quot; practice, it&#39;s frowned upon to create &lt;a href=&quot;http://balcomsblog.blogspot.com/2017/07/the-myth-of-chocolate-covered-broccoli.html&quot;&gt;&lt;strong&gt;&amp;quot;Chocolate-Covered Broccoli&amp;quot;&lt;/strong&gt;&lt;/a&gt;, coz kids can smell the bull from miles away.&lt;/p&gt;
+&lt;p&gt;The difference between the chocolate-covered broccoli and the Um et al paper is that the extra &amp;quot;fun stuff&amp;quot; &lt;em&gt;is actually relevant.&lt;/em&gt; Thus, they don&#39;t misdirect attention – in fact they help focus it! The cute faces are &lt;em&gt;only&lt;/em&gt; on the important biological agents, while the unimportant background &amp;amp; buttons stay relatively boring.&lt;/p&gt;
+&lt;p&gt;(Same with Susskind&#39;s &lt;em&gt;The Theoretical Minimum&lt;/em&gt; – it&#39;s not &lt;em&gt;filled&lt;/em&gt; with jokes, just sprinkled with them. There&#39;s only 1 pun per 10 pages, and each one is relevant to the learning material. More or less.)&lt;/p&gt;
+&lt;p&gt;But still, this technique somehow feels like... cheating? Lymphocytes aren&#39;t that cute in real life. Is there a way to get learners to feel positive emotions about the material &lt;em&gt;without&lt;/em&gt; resorting to cute doodles?&lt;/p&gt;
+&lt;p&gt;Yes! Let&#39;s get curious, about an emotion called &lt;em&gt;curiosity&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Papers #2 and #3)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Monkeys will solve puzzles for food. So far, so behaviourist.&lt;/p&gt;
+&lt;p&gt;But: &lt;a href=&quot;https://psycnet.apa.org/record/1950-06235-001&quot;&gt;Monkeys will solve puzzles &lt;em&gt;even without a food reward&lt;/em&gt;&lt;/a&gt;. In fact, &lt;em&gt;introducing&lt;/em&gt; food as a reward made the monkeys learn &lt;em&gt;worse&lt;/em&gt;. Understanding the unknown is already a biologically fundamental reward in itself.&lt;/p&gt;
+&lt;p&gt;Same for &lt;em&gt;us&lt;/em&gt; monkeys. Contrary to the &amp;quot;logical thinking means being dispassionate&amp;quot; myth, the world&#39;s top mathematicians and scientists are driven by a specific emotion: curiosity. (Also desperation over grant funding)&lt;/p&gt;
+&lt;p&gt;But what, then, &lt;em&gt;causes&lt;/em&gt; curiosity?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.jstor.org/stable/pdf/40575128.pdf?casa_token=lWWYM7l5bmYAAAAA:t2y7fKOePeyQpk1w1tPDuN1RR-2qYM9v4wNRayPUONo_Ae30W4qqszGkPwp98jffMzr6WCG0auH--JQtwfNBFsD3XWhXNRKVO-cUv9qz5TSdDfGrNA&quot;&gt;Kang et al 2009&lt;/a&gt;&lt;/strong&gt; was a neuroscience study that found three things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;being more curious led to more activation in reward &amp;amp; memory neural circuits,&lt;/li&gt;
+&lt;li&gt;being more curious led to better recall, and&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;we&#39;re most curious when we have a &lt;em&gt;medium&lt;/em&gt;-level of confidence in our answer.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/kang.png&quot; alt=&quot;kang&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Like the Yerkes-Dodson curve, it&#39;s another upside-down U shape. When the answer&#39;s obvious, well duh we&#39;re not curious – it&#39;s &amp;quot;too comprehensible&amp;quot;. But when we have &lt;em&gt;no idea&lt;/em&gt; what the answer even &lt;em&gt;could&lt;/em&gt; be, we also don&#39;t care – it&#39;s &amp;quot;too complex&amp;quot;.&lt;/p&gt;
+&lt;p&gt;But in-between, when you balance complexity &lt;em&gt;and&lt;/em&gt; comprehensibility, then monkeys get curious!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Cognitive Load Theory &lt;em&gt;can&#39;t&lt;/em&gt; predict a such thing as &amp;quot;too comprehensible&amp;quot;! This leads to different implications for science communication: instead of giving the information in a logical order bridging all the gaps (&amp;quot;blah blah blah here&#39;s the formula for orbits&amp;quot;), you should first reveal a &lt;em&gt;medium-sized&lt;/em&gt; gap in the learner&#39;s knowledge (&amp;quot;if gravity keeps the moon near us, why &lt;em&gt;doesn&#39;t&lt;/em&gt; the moon fall down?&amp;quot;), to stimulate the learner&#39;s curiosity! &lt;strong&gt;Show the gap, &lt;em&gt;then&lt;/em&gt; build the bridge.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.590.3074&amp;amp;rep=rep1&amp;amp;type=pdf&quot;&gt;Silvia 2008&lt;/a&gt;&lt;/strong&gt; reports the same thing. I just want to include this 🌶 &lt;em&gt;spicy&lt;/em&gt; 🌶 paragraph of his:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;College textbooks are an intriguing example. The typical textbook wants to engage students’ interest, so it sprinkles each chapter with irrelevant quotes, cartoons, contrived stock photos, and random stories from the authors’ distant childhoods. But diverting attention from the text’s main points isn’t the same thing as making the text’s main points interesting.&lt;br /&gt;
+[...]&lt;br /&gt;
+If interest comes from seeing something as new and comprehensible, then people who want to evoke interest should try to &lt;strong&gt;enhance both complexity and comprehension&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That is: don&#39;t coat the broccoli in chocolate.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Paper #4)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When I started writing this post, I intended to include just the 3 papers above. But as I hunted down my citations, I found this extra gem.&lt;/p&gt;
+&lt;p&gt;You remember above, when I said:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;That&#39;s the big gap in the original version of Cognitive Load Theory: it says nothing about emotion&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Turns out people &lt;em&gt;have&lt;/em&gt; recently added emotion and motivation to Cognitive Load Theory. &lt;strong&gt;&lt;a href=&quot;https://www.csuchico.edu/~nschwartz/Moreno%20CLT%20Response%20to%20de%20Jong.pdf&quot;&gt;Moreno 2010&lt;/a&gt;&lt;/strong&gt; recaps the problems with the old theory, and summarizes a new theory: &lt;strong&gt;Cognitive-Affective Theory of Learning.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It proposes a loop: (Bad drawing by me)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/loop.png&quot; alt=&quot;loop&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;You&#39;ll learn poorly if you&#39;re not motivated, and you&#39;ll be demotivated if you&#39;re learning poorly. But, from vicious to virtuous cycle: you&#39;ll learn well if you&#39;re motivated, and you&#39;ll be more motivated if you&#39;re learning well!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;So, if you make &amp;quot;multimedia learning&amp;quot;, the trick is to boost &lt;em&gt;both&lt;/em&gt; sides of the loop:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(💥💥💥 THIS IS THE SUMMARY SECTION 💥💥💥)&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Improve Cognition with:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Cognitive Load Theory – remove distractions, organize info, signal what&#39;s important, etc&lt;/li&gt;
+&lt;li&gt;Zone of Proximal Development – keep the cognitive load difficulty &lt;em&gt;just&lt;/em&gt; above the learner&#39;s comfort zone.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Improve Motivation with:&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Relevant fun – add &amp;quot;fun&amp;quot; stuff &lt;em&gt;only&lt;/em&gt; if it highlights the important parts.&lt;/li&gt;
+&lt;li&gt;Curiosity first – show a (medium-sized) gap, &lt;em&gt;then&lt;/em&gt; build the bridge.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;(💥💥💥 / END SUMMARY SECTION 💥💥💥)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I&#39;ve made lots of chocolate-coated broccoli before. A science piece with irrelevant stories, a math explainer with strained pop-culture references, a simulation with unnecessary &amp;quot;ooh solve the puzzle!&amp;quot; game-y bits.&lt;/p&gt;
+&lt;p&gt;The original Cognitive Load Theory taught me to strip the chocolate off my broccoli. But finding out that emotion &lt;em&gt;directly&lt;/em&gt; improves learning? That taught me I need to season &amp;amp; roast those veggies, to bring out the natural tastiness that&#39;s &lt;em&gt;already&lt;/em&gt; in the broccoli. As the monkeys showed us, there&#39;s a natural motivation &lt;em&gt;already&lt;/em&gt; in understanding the unknown.&lt;/p&gt;
+&lt;p&gt;There&#39;s the junk food of bad edu-tainment, and the Nutra-Loaf of dry academic papers. The trick to sticking to a healthy diet is to cook stuff that&#39;s both delicious &lt;em&gt;and&lt;/em&gt; nutritious.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;(this essay was originally posted &lt;a href=&quot;https://www.patreon.com/ncase&quot;&gt;on my Patreon&lt;/a&gt;, as part of my patron-exclusive “What&#39;s Nicky Learning?” monthly series, where I share what I learn as I learn it!)&lt;/em&gt;&lt;/p&gt;
+</content>
+        </entry>
+    
+
+</feed>

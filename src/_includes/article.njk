@@ -1,0 +1,40 @@
+<a href="/{{ post.url.slice(7) }}">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            {% if post.data.share_image %}
+                style="background-image:url({{ post.data.share_image }})"
+            {% else %}
+                style="background-image:url(/styles/assets/placeholder_thumb.png)"
+            {% endif %}
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>{{ post.data.title }}</b>
+            </span>
+
+            {% if post.data.share_desc %}
+            &middot;
+            <span id="article-subtitle">
+                {{ post.data.share_desc }}
+            </span>
+            {% endif %}
+
+            <!--
+            Share description will probably contain reading time anyway
+            {% if post.data.readtime %}
+            &middot;
+            <span id="article-metadata">
+                ({{ post.data.readtime }} read)
+            </span>
+            {% endif %}
+            -->
+
+        </div>
+
+    </div>
+</a>

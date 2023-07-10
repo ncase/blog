@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>If Games Were Like Game Stories...</title>
+
+    <!-- UTF-8-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="If Games Were Like Game Stories...">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="https://blog.ncase.me/styles/assets/placeholder_thumb.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="If Games Were Like Game Stories...">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/styles/assets/placeholder_thumb.png">
+	<meta property="og:title" content="If Games Were Like Game Stories...">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/styles/assets/placeholder_thumb.png">
+	<meta property="og:description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/OpenDyslexic2/opendyslexic.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, to override -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Sun Aug 03 2014 12:40:25 GMT-0400 (Eastern Daylight Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='TODO' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li>
+            <li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li>
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you got disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (one-time & monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (If you choose monthly support, you can get
+            exclusive rewards, such as early-access bonus content,
+            voting on topics I write about, your name in the credits,
+            a drawing of a cat, etc!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            <img id="splash_image_blurry" src="/styles/assets/placeholder_banner.png"/>
+            <img id="splash_image_real" src="/styles/assets/placeholder_banner.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			If Games Were Like Game Stories...
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+    			tags:
+                
+                    
+                
+                    
+                        <a class='black-link' href="/tag/Game Design">Game Design</a>
+                    
+                
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<div id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.
+            </div>
+        
+		<p><img src="/content/images/2014/Jul/GameStories0001.png" alt="&quot;Header image&quot;"></p>
+<p>...They'd suck.</p>
+<p>Not for a lack of trying. Game developers often look to other art forms (movies, books, TV) and try to model game stories after them. However, this leads to a disjointed feeling between gameplay and narrative, and why most games stick to the old model of &quot;cutscene-gameplay-cutscene&quot;. How can we merge systems and stories, how can we create <em>systemic stories</em>?</p>
+<p>While creating my short semi-autobiographical narrative game, <a href="http://ncase.itch.io/coming-out-simulator-2014">Coming Out Simulator 2014</a>, I learnt three ways we can make game stories more fluid, more natural. There's one place we should seek to model our games' stories after... and that's games themselves.</p>
+<hr>
+<ol>
+<li>Kill the &quot;branching&quot; metaphor.</li>
+</ol>
+<hr>
+<p><img src="/content/images/2014/Aug/GameStories0004.png" alt="&quot;Branching metaphor&quot;"></p>
+<p>Most games have a <em>continuous</em> playing space. The game gives you countless options in how to move your character, or manage resources, or build a world. Not all the options lead to significantly different outcomes, nor are all of them good. But you still get a broad spectrum of choices.</p>
+<p>In contrast, most game stories only give you a few &quot;branching points&quot; here and there, if they give you any influence over the plot at all. But here's the core problem of &quot;branching&quot;: as you add more branches, your game's content grows exponentially. The most common solutions to this problem aren't much better: have lots of dead ends, have all branches re-combine, have branches only at the end, or have a very short game.</p>
+<p>But &quot;branching&quot; is such a core assumption of game writing nowadays, we forget that there's an alternative right under our noses. Forget about branching. Let game stories have a continuous and ever-broadening possibility space.</p>
+<p>Player choices should <em>flavour</em> the later story, instead of creating entirely separate branches.</p>
+<p><strong>Case Study: Papers, Please.</strong></p>
+<p><img src="/content/images/2014/Aug/Screen-Shot-2014-08-03-at-10-36-08.png" alt="&quot;PP - Approve or Deny&quot;"></p>
+<p>In Papers, Please, you play an immigration officer, deciding whether to approve or reject people for entry. Each &quot;day&quot;/level of the game, you process around 10 people. What you choose for each person affects both the gameplay <em>and</em> the story. But if each approve/deny decision created a new branch in the game, each day would result in 1024 branches. And there's 30 days in the game.</p>
+<p>The game doesn't have 102430 endings, obviously.</p>
+<p>Accidentally reject someone with legit paperwork, and it won't radically change the game. But it does subtly add more stress, resulting in later incorrect or unethical decisions. The game also has multiple sub-stories. Your choices add up over time, as the game/story shifts through a <em>continuous</em> space of possibility.</p>
+<p><strong>Another Example:</strong></p>
+<p>Telltale's The Walking Dead games have a more-or-less linear story, but the big and small details (your reputation, how Clementine sees you, who's still alive) are flavoured by your choices.</p>
+<hr>
+<ol start="2">
+<li>The little things matter.</li>
+</ol>
+<hr>
+<p><img src="/content/images/2014/Aug/GameStories0002.png" alt="&quot;Details matter&quot;"></p>
+<p>In game design, there's the idea of <a href="https://www.youtube.com/watch?v=Fy0aCDmgnxg">&quot;juice&quot;</a>. It's the particles, sound effects, and secondary animation to make the game feel like it's really responding to you. And it's not just for big gameplay actions either. It's the footsteps and inertia of walking around. It's the highlight and sound effect of hovering over a button. It's the little things that matter.</p>
+<p>Why not have the same in game stories? Instead of every decision being a Big Moral Choice, scatter your game with lots of small choices, and actually have those choices pop up again and again. Decisions in the past coming back to surprise the player, or to haunt the player.</p>
+<p>Have small choices <em>flavour</em> the game's story.</p>
+<p><strong>Case Study: um... Papers, Please.</strong></p>
+<p><img src="/content/images/2014/Aug/Screen-Shot-2014-08-03-at-10-34-46.png" alt="&quot;PP - The Banner&quot;"></p>
+<p>My favourite moment from Papers, Please was when someone gave me a banner for a sports team named the Arstotzka Arskickers. I had a choice of whether to put it up on my wall, or not.</p>
+<p>Compared to all the other decisions... taking bribes, separating families, conspiring to take down the Arstotzkan government... this was a small and silly decision. I put it up on my wall, of course.</p>
+<p>But the reason this is so memorable to me, is because the game actively <em>acknowledged</em> this small act! A few people commented on the banner, some remarking it's tacky, some cheering &quot;Go Arskickers!&quot; And then, of course, this decision bites me in the ass when the inspector comes by and tells me the decoration is against protocol, and fines me.</p>
+<p>The game also acknowledges your other choices through dialogue, the newspaper segments, and recurring characters. The point is, if your game's story is so juicy, responsive, and alive... that even a <em>sports banner</em> has a story arc of its own? You've done good.</p>
+<p><strong>Other Examples:</strong></p>
+<ul>
+<li>Bastion. The narrator live-commenting on you attacking enemies, getting hurt, and other actions.</li>
+<li>The Walking Dead making you regret every single damn choice, ever. Even saying the word &quot;shit&quot; instead of &quot;fertilizer&quot;.</li>
+<li>The Stanley Parable. The narrator reacts to your every action, or inaction, no matter how silly. (Did you get the broom closet ending?)</li>
+</ul>
+<hr>
+<ol start="3">
+<li>Game choices = Story choices</li>
+</ol>
+<hr>
+<p><img src="/content/images/2014/Jul/GameStories0003.png" alt="&quot;Game and story choices&quot;"></p>
+<p>Imagine if a platformer game made you use the arrow keys to walk, the mouse to run, and voice recognition to jump. Great idea, if you want carpal tunnel and a sore throat. Otherwise, your game's controls should be consistent, and for a few exceptions, (like menu screens) not change drastically in-game.</p>
+<p>So why do games suddenly switch from run-and-shoot to CHOOSE A OR B when they want to include story decisions?</p>
+<p>Actions speak louder than words. Let the gameplay actions a player takes influence the story. How the player controls the game should be the same way the player controls the story.</p>
+<p><strong>Case Study: yeah, you guessed it... Papers, Please.</strong></p>
+<p><img src="/content/images/2014/Aug/Screen-Shot-2014-08-03-at-10-37-09.png" alt="&quot;PP - Food Resources&quot;"></p>
+<p>APPROVE, or REJECT. That's the choice you have to make every time a new person comes in with paperwork. Not only do story choices and game choices have the same controls, the story choices <em>are</em> the game choices.</p>
+<p>There's another game mechanic in Papers Please that also serves as a story choice mechanism. At the end of each day, you choose how much of your day's salary to go to heat, food, and medicine for your family. On the surface, it's simple resource management. But what you choose, who starves or lives or dies, heavily impacts the story.</p>
+<p>On top of all that, the game's mechanics reflect the mood of the story. The gameplay is routine, but stressful, and forces you to obey arbitrarily changing rules. This reflects the depressing, bureaucratic world your character is trapped in. Game mechanics can convey emotions all by themselves.</p>
+<p><strong>Okay, Fine, Have More Examples:</strong></p>
+<ul>
+<li>Spec Ops: The Line. The core gameplay is shooting at things, and you make story choices the same way. (e.g. shoot at the the thief, or the murderer?... or the snipers, or the rope, or run away...)</li>
+<li>No-One Has To Die. An underappreciated gem of an indie game. This is a puzzle game, where each level has multiple solutions - and which solution you pick determines who lives or dies.</li>
+<li>Brothers: A Tale of Two Sons. You use the left and right thumbsticks to control two brothers separately, and they work together to solve puzzles. They're individual, but united. It's a great mechanical metaphor.</li>
+</ul>
+<hr>
+<h2>In The End...</h2>
+<p><img src="/content/images/2014/Aug/GameStories0005.png" alt="&quot;Conclusion&quot;"></p>
+<p>If games were like game stories... they'd have lots of dead-end branches, feel unresponsive, and have wildly inconsistent controls.</p>
+<p>Games are still a very young art form. We're all still figuring this stuff out, but the several recent examples I listed give me hope. (did I mention Papers Please?) Maybe these games will lead the way in helping us figure out how to do storytelling through gameplay. Systemic Stories. And we can start by asking one question, asking a simple &quot;if&quot;...</p>
+<p><em>&quot;If game stories were like games...&quot;</em></p>
+<hr>
+<p><a href="http://gamasutra.com/blogs/NickyCase/20140811/222467/If_Games_Were_Like_Game_Stories.php">Posted on GamaSutra.</a></p>
+
+
+	</div>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

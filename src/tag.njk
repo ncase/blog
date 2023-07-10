@@ -1,0 +1,22 @@
+---
+pagination:
+    data: collections
+    size: 1
+    alias: tag
+    filter:
+        - draft
+        - post
+        - posts
+        - tagList
+permalink: /tag/{{ tag }}/
+eleventyComputed:
+    title: Tagged “{{ tag }}”
+notAPost: true
+layout: page.njk
+
+share_image: https://blog.ncase.me/styles/assets/placeholder_thumb.png
+share_desc: "I learn stuff, then share what I learn"
+---
+
+{% set showCollection = collections[ tag ] | reverse %}
+{% include "collection.njk" %}

@@ -1,0 +1,22 @@
+---
+title: "Nicky's Blog: The Archives"
+notAPost: true
+layout: page.njk
+
+share_image: https://blog.ncase.me/styles/assets/placeholder_thumb.png
+share_desc: "I learn stuff, then share what I learn"
+---
+
+<p style='text-align: center; font-size: 0.75em; line-height: 1.8em;'>
+🐜&nbsp;🐜&nbsp;🐜
+<br>
+<i>Archive Ant says: Don't binge! When consuming media,
+remember to chew slowly, and take time between "meals" to digest.
+Besides, my writing gets cringier the further you scroll down.
+Anything past 3 years is dead to me, honestly.</i>
+<br>
+🐜&nbsp;🐜&nbsp;🐜
+</p>
+
+{% set showCollection = collections.post | reverse %}
+{% include "collection.njk" %}

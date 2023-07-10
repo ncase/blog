@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>Nicky&#39;s Blog!</title>
+
+    <!-- UTF-8-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="Nicky&#39;s Blog!">
+	<meta itemprop="description" content="I learn stuff, then share what I learn">
+	<meta itemprop="image" content="https://blog.ncase.me/thumb.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="Nicky&#39;s Blog!">
+	<meta name="twitter:description" content="I learn stuff, then share what I learn">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/thumb.png">
+	<meta property="og:title" content="Nicky&#39;s Blog!">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/thumb.png">
+	<meta property="og:description" content="I learn stuff, then share what I learn">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/OpenDyslexic2/opendyslexic.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, to override -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+        <script src="/scripts/frontpage.js"></script> <!-- only if it IS the frontpage -->
+        <script>window.IS_FRONTPAGE=true;</script>
+    
+    <script>window.NOT_A_POST=true;</script>
+    
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='TODO' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li>
+            <li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li>
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you got disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (one-time & monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (If you choose monthly support, you can get
+            exclusive rewards, such as early-access bonus content,
+            voting on topics I write about, your name in the credits,
+            a drawing of a cat, etc!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  style='display:none'  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+	<div id="header" class='frontpage'>
+		<div id="scrolly">
+			<div id="scrolly_text"></div>
+		</div>
+		<div id="header_cont">
+			<div id="header_title"></div>
+		</div>
+		<video id="typing" loop muted autoplay width="400">
+			<source src="styles/assets/Typewriter.webm" type="video/webm">
+		</video>
+	</div>
+    
+
+    <!-- Home button -->
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<div id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.
+            </div>
+        
+		
+<p>
+    <b>
+        Hi, I'm <a href="https://ncase.me/">Nicky Case!</a>
+    </b>
+    If you're new here,
+    I recommend checking out the below articles.
+    These five posts are 1) most representative of what I want to write,
+    and 2) don't make me cringe in hindsight:
+</p>
+
+
+    <a href="/back-to-the-future-with-rss/">
+        <div class="article-summary">
+
+            <!-- Thumb, or placeholder -->
+            <div id="article-thumb" style="background-image:url(https://blog.ncase.me/content/images/2021/07/rss3.png)"></div>
+
+            <!-- Description -->
+            <div id="article-desc">
+                <span id="article-title">
+                    <b>Back to the Future with RSS!</b>
+                </span>
+                <span id="article-subtitle">
+                    a short intro to the good ol&#39; web (X min read)
+                </span>
+            </div>
+
+        </div>
+    </a>
+
+    <a href="/curse-of-the-chocolate-covered-broccoli-or-emotion-in-learning/">
+        <div class="article-summary">
+
+            <!-- Thumb, or placeholder -->
+            <div id="article-thumb" style="background-image:url(https://blog.ncase.me/content/images/2019/12/broc-1.png)"></div>
+
+            <!-- Description -->
+            <div id="article-desc">
+                <span id="article-title">
+                    <b>Curse of the Chocolate-Covered Broccoli</b>
+                </span>
+                <span id="article-subtitle">
+                    the science of emotion in learning, a sloppy literature review (X min read)
+                </span>
+            </div>
+
+        </div>
+    </a>
+
+    <a href="/lizard-person/">
+        <div class="article-summary">
+
+            <!-- Thumb, or placeholder -->
+            <div id="article-thumb" style="background-image:url(https://blog.ncase.me/content/images/2019/02/prompt3-1.png)"></div>
+
+            <!-- Description -->
+            <div id="article-desc">
+                <span id="article-title">
+                    <b>Lizard Person</b>
+                </span>
+                <span id="article-subtitle">
+                    a tiny story in a tiny diner (X min read)
+                </span>
+            </div>
+
+        </div>
+    </a>
+
+    <a href="/parable-of-the-hill-climber/">
+        <div class="article-summary">
+
+            <!-- Thumb, or placeholder -->
+            <div id="article-thumb" style="background-image:url(https://blog.ncase.me/content/images/2018/11/max0001.png)"></div>
+
+            <!-- Description -->
+            <div id="article-desc">
+                <span id="article-title">
+                    <b>Parable of the Hill Climber</b>
+                </span>
+                <span id="article-subtitle">
+                    a children&#39;s picture book about mid-life depression and stochastic gradient descent (X min read)
+                </span>
+            </div>
+
+        </div>
+    </a>
+
+    <a href="/how-do-i-learn-x/">
+        <div class="article-summary">
+
+            <!-- Thumb, or placeholder -->
+            <div id="article-thumb" style="background-image:url(https://ncase.me/sharing/thumb.png)"></div>
+
+            <!-- Description -->
+            <div id="article-desc">
+                <span id="article-title">
+                    <b>How Do I Learn [X]?</b>
+                </span>
+                <span id="article-subtitle">
+                    my quick tips on learning, writing, math, art, etc. (X min read)
+                </span>
+            </div>
+
+        </div>
+    </a>
+
+
+<a href="https://blog.ncase.me/back-to-the-future-with-rss/">
+    <div class="article-summary">
+        <div id="article-thumb" style="background-image:url(styles/assets/test-thumb.png?v=2)"></div>
+        <div id="article-desc">
+            <span id="article-title">
+                <b>Back to the Future with RSS!</b>
+            </span>
+            &nbsp;
+            <span id="article-subtitle">
+                A short intro to the good ol' web.
+            </span>
+            &nbsp;
+            <span id="article-metadata">
+                (5 min read)
+            </span>
+        </div>
+    </div>
+</a>
+
+<hr/>
+
+<p>
+But if you're <i>not</i> new here, well then!
+<b>Here are my 5 latest posts:</b> <a href='/archive'>(see full archive)</a>
+</p>
+
+
+    <a href="/new-project-nutshell/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2022/08/nutshell.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>New project! Nutshell: make expandable explanations</b>
+            </span>
+
+            
+            &middot;
+            <span id="article-subtitle">
+                A tool for writers to let readers dive into details
+            </span>
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+    <a href="/new-talk-how-to-explain-things-real-good/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2022/08/talk.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>New talk! “How To Explain Things Real Good”</b>
+            </span>
+
+            
+            &middot;
+            <span id="article-subtitle">
+                A mini-talk I gave at Stanford on math/science communication
+            </span>
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+    <a href="/back-to-the-future-with-rss/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2021/07/rss3.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>Back to the Future with RSS!</b>
+            </span>
+
+            
+            &middot;
+            <span id="article-subtitle">
+                How to save the open web, &amp; get (re)started with RSS
+            </span>
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            &middot;
+            <span id="article-metadata">
+                (4 min read)
+            </span>
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+    <a href="/how-do-i-learn-x/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://ncase.me/sharing/thumb.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>How Do I Learn X?</b>
+            </span>
+
+            
+            &middot;
+            <span id="article-subtitle">
+                Advice on learning math, writing, coding, game design, mental health, etc
+            </span>
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+    <a href="/new-explorable-covid-19-futures-explained-with-playable-simulations/">
+    <div class="article-summary">
+
+        <!-- Thumb, or placeholder -->
+        <div id="article-thumb"
+            
+                style="background-image:url(https://blog.ncase.me/content/images/2020/05/thumbnail.png)"
+            
+            ></div>
+
+        <!-- Description -->
+        <div id="article-desc">
+
+            <span id="article-title">
+                <b>New Explorable! “COVID-19 Futures, Explained With Playable Simulations”</b>
+            </span>
+
+            
+
+            <!--
+            Share description will probably contain reading time anyway
+            
+            -->
+
+        </div>
+
+    </div>
+</a>
+
+
+<p>
+    Featured tags:
+    Featured,
+    ART,
+    How To,
+    Nicky Reads,
+    Short Stories,
+    New Project,
+    This Time It Is Personal
+</p>
+<p>
+    Thanks for reading! 💖
+</p>
+
+<!--
+<hr/>
+[newsletter iframe]
+-->
+
+	</div>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

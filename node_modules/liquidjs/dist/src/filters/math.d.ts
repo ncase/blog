@@ -1,0 +1,11 @@
+export declare const abs: (x: number) => any;
+export declare const at_least: (...args: number[]) => any;
+export declare const at_most: (...args: number[]) => any;
+export declare const ceil: (x: number) => any;
+export declare const divided_by: (dividend: number, divisor: number, integerArithmetic?: any) => any;
+export declare const floor: (x: number) => any;
+export declare const minus: (v: number, arg: number) => any;
+export declare const modulo: (v: number, arg: number) => any;
+export declare const times: (v: number, arg: number) => any;
+export declare function round(v: number, arg?: number): number;
+export declare function plus(v: number, arg: number): number;

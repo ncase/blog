@@ -1,0 +1,25 @@
+@font-face{
+    font-family: 'Open Dyslexic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(OpenDyslexic-Regular.otf) format('opentype');
+}
+@font-face{
+    font-family: 'Open Dyslexic';
+    font-style: italic;
+    font-weight: 400;
+    src: url(OpenDyslexic-Italic.otf) format('opentype');
+}
+
+@font-face{
+    font-family: 'Open Dyslexic';
+    font-style: normal;
+    font-weight: 700;
+    src: url(OpenDyslexic-Bold.otf) format('opentype');
+}
+@font-face{
+    font-family: 'Open Dyslexic';
+    font-style: italic;
+    font-weight: 700;
+    src: url(OpenDyslexic-BoldItalic.otf) format('opentype');
+}

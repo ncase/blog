@@ -1,0 +1,89 @@
+---
+title: Nicky's Blog!
+notAPost: true
+isFrontpage: true
+layout: page.njk
+
+share_image: https://blog.ncase.me/thumb.png
+share_desc: "I learn stuff, then share what I learn"
+---
+
+<p>
+    <b>
+        Hi, I'm <a href="https://ncase.me/">Nicky Case!</a>
+    </b>
+    If you're new here,
+    I recommend checking out the below articles.
+    These five posts are 1) most representative of what I want to write,
+    and 2) don't make me cringe in hindsight:
+</p>
+
+{% for post in frontpagePosts %}
+    <a href="{{ post.url }}">
+        <div class="article-summary">
+
+            <!-- Thumb, or placeholder -->
+            <div id="article-thumb" style="background-image:url({{ post.share_image }})"></div>
+
+            <!-- Description -->
+            <div id="article-desc">
+                <span id="article-title">
+                    <b>{{ post.title }}</b>
+                </span>
+                <span id="article-subtitle">
+                    {{ post.share_desc }}
+                </span>
+            </div>
+
+        </div>
+    </a>
+{% endfor %}
+
+<a href="https://blog.ncase.me/back-to-the-future-with-rss/">
+    <div class="article-summary">
+        <div id="article-thumb" style="background-image:url(styles/assets/test-thumb.png?v=2)"></div>
+        <div id="article-desc">
+            <span id="article-title">
+                <b>Back to the Future with RSS!</b>
+            </span>
+            &nbsp;
+            <span id="article-subtitle">
+                A short intro to the good ol' web.
+            </span>
+            &nbsp;
+            <span id="article-metadata">
+                (5 min read)
+            </span>
+        </div>
+    </div>
+</a>
+
+<hr/>
+
+<p>
+But if you're <i>not</i> new here, well then!
+<b>Here are my 5 latest posts:</b> <a href='/archive'>(see full archive)</a>
+</p>
+
+{% for post in collections.post | latestFivePosts %}
+    {% include "article.njk" %}
+{% endfor %}
+
+<p>
+    Featured tags:
+    Featured,
+    ART,
+    How To,
+    Nicky Reads,
+    Short Stories,
+    New Project,
+    This Time It Is Personal
+</p>
+<p>
+    Thanks for reading! 💖
+</p>
+
+<!--
+<hr/>
+[newsletter iframe]
+-->
