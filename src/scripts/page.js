@@ -74,30 +74,32 @@ window.addEventListener("load", ()=>{
     // Populate it!
     let allHeadings = $all("h1, h2, h3, h4, h5, h6");
     let tocHTML = "";
-    if(allHeadings.length==0){
-        $('#tab_toc').style.display = 'none';
+    if(!window.NOT_A_POST){ // ONLY FOR POSTS
+        if(allHeadings.length==0){
+            $('#tab_toc').style.display = 'none';
+        }
+        allHeadings.forEach( (heading)=>{
+
+            // Table of Contents link
+            let headingText = heading.innerText,
+                headingForURI = headingText.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+            tocHTML += `<p><a class='black-link' href="#${headingForURI}">${headingText}</a></p>`;
+
+            // Anchor in article
+            let anchor = document.createElement('a');
+            anchor.className = 'scroll-anchor';
+            anchor.id = headingForURI;
+            heading.prepend(anchor);
+
+        });
+        $('#panel_toc').innerHTML = tocHTML;
+        // HACK: If ToC is too large... just shrink font until it works
+        let tocFont = 16;
+        do{
+            $('#panel_toc').style.fontSize = tocFont+'px';
+            tocFont--;
+        }while( tocFont>1 && parseInt(window.getComputedStyle($("#panel_toc")).height)+20 > document.body.clientHeight);
     }
-    allHeadings.forEach( (heading)=>{
-
-        // Table of Contents link
-        let headingText = heading.innerText,
-            headingForURI = headingText.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
-        tocHTML += `<p><a class='black-link' href="#${headingForURI}">${headingText}</a></p>`;
-
-        // Anchor in article
-        let anchor = document.createElement('a');
-        anchor.className = 'scroll-anchor';
-        anchor.id = headingForURI;
-        heading.prepend(anchor);
-
-    });
-    $('#panel_toc').innerHTML = tocHTML;
-    // HACK: If ToC is too large... just shrink font until it works
-    let tocFont = 16;
-    do{
-        $('#panel_toc').style.fontSize = tocFont+'px';
-        tocFont--;
-    }while( tocFont>1 && parseInt(window.getComputedStyle($("#panel_toc")).height)+20 > document.body.clientHeight);
 
     // READING CONTROLS
     let updateStyle = ()=>{
@@ -109,7 +111,7 @@ window.addEventListener("load", ()=>{
         // Font size
         let fontsize = $("#style_fontsize_slider").value + 'px';
         $("#style_fontsize").innerText = fontsize;
-        $("#content").style.fontSize = fontsize + 'px';
+        $("#content").style.fontSize = fontsize;
 
         // Font family
         let selectedFont = $all("input[name=style_font_family]").find( (radioButton)=>{
@@ -129,7 +131,9 @@ window.addEventListener("load", ()=>{
         updateStyle();
     }
     // Size
-    $("#style_fontsize_slider").oninput = updateStyle;
+    $("#style_fontsize_slider").oninput = ()=>{
+        updateStyle();
+    }
     // Font Family
     $all("input[name=style_font_family]").forEach( (radioButton)=>{
         radioButton.onclick = updateStyle;
