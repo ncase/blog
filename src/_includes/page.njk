@@ -34,8 +34,7 @@
 	<!-- STYLES -->
 	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
     <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
-    <link rel="stylesheet" href="/styles/OpenDyslexic2/opendyslexic.css">
-    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, to override -->
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
 	<link rel="stylesheet" href="/styles/page.css">
 
 	<!-- SCRIPTS -->
@@ -61,7 +60,15 @@
     <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
 
     <!-- Orbit: make memory a choice -->
-    {% if hasOrbit %}<script type="module" src="https://js.withorbit.com/orbit-web-component.js"></script>{% endif %}
+    {% if hasOrbit %}
+    <script type="module" src="https://js.withorbit.com/orbit-web-component.js"></script>
+    {% endif %}
+
+    <!-- MathJAX: for nice math -->
+    {% if hasMath %}
+    <script src="/scripts/tex-mml-chtml.js"></script>
+    <!--script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script-->
+    {% endif %}
 
     <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
     <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -170,25 +177,26 @@
         <ul>
             <li>my <a target='_blank' href='/rss'>blog's RSS feed</a></li>
             <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
-            <li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li>
-            <li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
         </ul>
     </div>
     <div id="panel_support">
         <p>
-            If you got disposable income to dispose of,
+            If you have disposable income to dispose of,
             you can support my free, open-source work on:
         </p>
         <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
             <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
-            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (one-time & monthly)</li>
             <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
         </ul>
         <p>
-            (If you choose monthly support, you can get
-            exclusive rewards, such as early-access bonus content,
-            voting on topics I write about, your name in the credits,
-            a drawing of a cat, etc!)
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
         </p>
         <p>
             Thaaaaaaanks~ 💖
@@ -223,9 +231,13 @@
     {% else %}
     <div id="header" class="article">
         <div id="splash_image">
-            {% set splashImage = '/styles/assets/placeholder_banner.png' or banner or share_image %}
-            <img id="splash_image_blurry" src="{{ splashImage }}"/>
-            <img id="splash_image_real" src="{{ splashImage }}"/>
+            {% set splashImageSrc = banner or share_image or '/styles/assets/placeholder_banner.png' %}
+            {% if 'https://blog.ncase.me' in splashImageSrc %}
+                {% set splashImageSrc = splashImageSrc.slice(21) %}
+            {% endif %}
+            <img
+                {% if not banner and share_image %} class="blur" {% endif %}
+                id="splash_image_banner" src="{{ splashImageSrc }}"/>
         </div>
         <div id="header_words">
     		<div id="title">
@@ -302,7 +314,7 @@
 	</div>
 
     <!-- BEHOLD! CONTENT!!!!! -->
-	<div id="content">
+	<article id="content">
 
         <!-- Is Draft, Is Deprecated, Is Old -->
         {% if isDraft %}
@@ -312,15 +324,16 @@
                 There's a floating textbox on the &larr;<i>left</i>, for you
                 to record your notes, as you read along and/or
                 when you're done.
+                (well, unless you're on mobile, then it's not there. record notes somehow else)
                 <br><br>
                 Then, copy-paste your notes, and share them with
                 me via whatever platform I sent you this link!
                 Thank you so muuuuuuuuch! 🎉
             </div>
-<textarea style="position: fixed;width: 200px;height: 400px;bottom: 20px;left: 20px;">
-Please type your notes below! Type *as you read*, that's most helpful for me.
+<textarea id="draft_feedback">
+Please type your notes below! Make notes *as you go along*, that's most helpful for me.
 
-What's confusing, interesting, what you like or dislike? Critical honest feedback at an early stage helps me a lot!
+What's confusing, interesting, what you like or dislike? Critical honest feedback at an early stage helps me a lot! Thanks!
 
 ...
 </textarea>
@@ -341,7 +354,7 @@ What's confusing, interesting, what you like or dislike? Critical honest feedbac
         {% endif %}
 		{{ content | safe }}
 
-	</div>
+	</article>
 
     <!-- FOOTER -->
 	<div id="footer">
@@ -378,6 +391,8 @@ What's confusing, interesting, what you like or dislike? Critical honest feedbac
                 <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
                 <br>
                 <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
             </span>
 		</p>
 	</div>

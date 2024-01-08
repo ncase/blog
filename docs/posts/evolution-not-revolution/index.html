@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>Evolution, Not Revolution</title>
+
+    <!-- UTF-8-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="Evolution, Not Revolution">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="https://blog.ncase.me/content/images/2016/08/thumb.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="Evolution, Not Revolution">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/images/2016/08/thumb.png">
+	<meta property="og:title" content="Evolution, Not Revolution">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/images/2016/08/thumb.png">
+	<meta property="og:description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Fri Aug 12 2016 09:24:57 GMT-0400 (Eastern Daylight Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/rss'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+                
+            
+            <img
+                 class="blur" 
+                id="splash_image_banner" src="/content/images/2016/08/thumb.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			Evolution, Not Revolution
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+    			tags:
+                
+                    
+                
+                    
+                        <a class='black-link' href="/tag/Social Change">Social Change</a>,
+                    
+                
+                    
+                        <a class='black-link' href="/tag/Emergence">Emergence</a>
+                    
+                
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p>The next time you're tempted to praise an idea, a movement, or yet another photo-sharing app as &quot;revolutionary&quot;... remember how <em>actual</em> revolutions usually turn out.</p>
+<p><img src="/content/images/2016/08/header.png" alt=""></p>
+<p>Like everyone else, I was really optimistic at the beginning of the Arab Spring.</p>
+<p>Now, Syria's a bloodbath. Egypt's torturing activists. Libya's descended into civil war. The <em>only</em> success story was Tunisia – the country who started the whole Arab Spring – with their new constitution, new elected president, and a commission to address the previous regime's crimes. But even then, Tunisia is now under threat by ISIS, the terrorist group which grew out of the chaos of post-Spring Syria. (and post-US Iraq) (sidenote: (See Amnesty International's <a href="https://www.amnesty.org/en/latest/campaigns/2016/01/arab-spring-five-years-on/">great summary of the Arab Spring</a>, country by country, five years later.))</p>
+<p><a href="https://malthusiannectar.wordpress.com/2012/12/08/why-do-revolutions-fail/">Most revolutions fail.</a> Even when they <em>succeed</em>, they can still fail – like with Egypt's case of “meet the new boss, same as the old boss”. And if homegrown revolutions are bad, implanted revolutions are even worse – like when America tried to “export democracy” to Vietnam and Iraq. Even the most romanticized revolution, the French Revolution, was extremely bloody – not just for aristocrats, for everyone – and accomplished nothing that the nonviolent Enlightenment couldn't. (sidenote: (Outside the scope of this essay, but worth pondering: why did “exporting democracy” fail for Iraq, but worked for post-WWII Japan? Maybe it's because the US not only exported legal institutions, but also exported their markets and culture? Anime: the bedrock of democracy!))</p>
+<p>Furthermore, it's not just <em>literal</em> revolutions. Why is it so hard to change complex systems, like – say – reforming the police, addressing climate change, or fixing welfare dependence? (I'll come back to these examples later on)</p>
+<p>And finally, if &quot;revolution&quot; doesn't work, what <em>can</em> we do instead to change the world?</p>
+<p>This blog post is my attempt to use <a href="https://en.wikipedia.org/wiki/Complex_systems">complex systems theory</a> to sort-of answer those questions. Really, this whole essay is just advice to myself, a starry-eyed idealist who wants <em>real</em> change in the world right now, who's <em>sick</em> of waiting on the politicians, who wants <em>revolution</em>:</p>
+<p>Don't.</p>
+<p>There's a better way.</p>
+<hr>
+<h2>It's a Loopy World</h2>
+<p>First off, why <em>do</em> most revolutions fail? I think it's because people tend to think political power works like this:</p>
+<p><img src="/content/images/2016/08/loopy0-1.png" alt=""></p>
+<p>And in the case of an <em>actual</em> dictatorship, it's hard not to see it that way – with the dictator at the top of the causal chain, who controls the military, the media, the economy, and everything else:</p>
+<p><img src="/content/images/2016/08/loopy1-1.png" alt=""></p>
+<p>This worldview assumes linear cause-and-effect, with the dictator/president/elites at the top of it all. In this linear worldview, the solution is obvious: replace the ones on top.</p>
+<p>But the first lesson of complex systems theory is that the world is not linear, it's <em>loopy:</em></p>
+<p><img src="/content/images/2016/08/loopy2-1.png" alt=""></p>
+<p>Even in a literal dictatorship, the dictator is still at the whim of the rest of the <em>system</em>. If economic sanctions are placed, the dictator can't fund his army. If the people use encrypted text and social media, the dictator loses his image. And as shown by many a military coup, even a dictator can still be at the mercy of his own army.</p>
+<p>However, this means that when revolutionaries knock out a dictator, whoever takes his place has to reshape themselves to fit the same constraints of the system... and the new boss ends up looking a lot like the old boss. <strong>When you remove one piece from a jigsaw puzzle, any replacement must have the exact same shape.</strong></p>
+<p>This loopy cause-and-effect is why, I think, most revolutions fail.</p>
+<p>So what then? How does one create lasting change, instead of hot-swapping bosses, politicians, presidents? Well, I already spoiled my answer, since I couldn't resist making it the title of this blog post, but I believe we should strive for...</p>
+<hr>
+<h2>Evolution, Not Revolution</h2>
+<p>Biological evolution created all life on earth, constantly adapting everything to their ever-changing environments, and it's been doing this thankless job for over three billion years.</p>
+<p>My goodness, it even turned dog-otters into whales:</p>
+<p><img src="/content/images/2016/08/evo.png" alt="">(sidenote: (In case you're interested, <a href="http://evolution.berkeley.edu/evolibrary/article/evograms_03">here's how whales actually evolved</a>. Science!))</p>
+<p>So instead of <em>revolution</em>, trying to &quot;intelligent design&quot; our way to Utopia, we could learn from <em>evolution</em>, the natural process that made all of us in the first place. And the first lesson from evolution is:</p>
+<h3>1. Use what's already there.</h3>
+<p>A whale is not a fish, it's a mammal. But how <em>did</em> evolution turn a furry, four-legged land-mammal into a big, blubbery fish-looking thing?</p>
+<p>What evolution did <em>not</em> do is hot-swap the whale's lungs for a fish's gills. We tend to anthropomorphize evolution as an engineer, but evolution's more like your weird cousin who's totally a “DIY expert” and their tools are duct tape and more duct tape. So instead of giving a whale gills, evolution decided to shove its nose-hole to the top of its head. And you know what? It worked.</p>
+<p>Maybe that's a lesson for those of us who want to change a complex system: <em>use what's already there</em>.</p>
+<p>For example, police reform. Last month, in my post <a href="http://blog.ncase.me/three-books-on-violence/">on the psychology of violence</a>, I wrote about the murder of five Dallas police officers. What made this shooting doubly tragic, I think, was that Dallas PD was (and still is) <a href="https://www.washingtonpost.com/news/the-watch/wp/2016/07/08/what-dallas-pd-does-right-and-why-doing-those-things-could-now-be-more-difficult/">a fantastic role model</a> in how to do community policing <em>right</em>. And yet, I've seen relatively little talk about Dallas PD's kind, community-based policing techniques, before <em>or</em> after the shootings happened.</p>
+<p>I sympathize with the Black Lives Matter movement, but I worry it's got the same fatal flaw as Occupy. (Another failed Arab Spring-inspired movement) And that problem is not being pragmatic. What <em>would</em> be pragmatic is to highlight the good policing <em>that's already there</em>, like Dallas PD. (In addition to highlighting abusive police, of course. But that alone won't work, and will make police-community relations worse. You need carrots <em>and</em> sticks.) (sidenote: (For more pragmatism, look at BLM leader DeRay Mckesson's <a href="http://www.joincampaignzero.org/">Campaign Zero</a>, with its ten specific, actionable steps to police reform.))</p>
+<p>As Arthur Ashe once said, <em>“Start where you are. Use what you have. Do what you can.”</em></p>
+<p>And there's a lot you <em>can</em> do. Which brings me to evolution's next lesson...</p>
+<h3>2. Every part evolves together.</h3>
+<p>It's not like a furry land-mammal was walking around one day, when suddenly their nose got shoved to their forehead, and <em>then</em> all their hair fell out, and <em>then</em> their fingers fused into paddles, and <em>then</em> they became big and fat, and <em>then</em> they got dumped into the middle of the Pacific Ocean.</p>
+<p>Evolution doesn't work piece-by-piece. Instead, an animal's whole body-system evolves <em>together</em>.</p>
+<p>Earlier, I showed how a country's leadership can both constrain and <em>be</em> constrained by other parts of the system. There are many, many parts to the vast interconnected system that is a nation, but for now, I'll focus on just four:</p>
+<p><img src="/content/images/2016/08/loopy3.png" alt="">(sidenote: (These four were first categorized by Lawrence Lessig as <a href="https://en.wikipedia.org/wiki/Pathetic_dot_theory">Law, Norms, Markets, and Architecture</a>, but I've renamed them slightly, for clarity.))</p>
+<p>Just like how evolution doesn't change <em>just</em> the nose, you can't change <em>just</em> one part of the system, at least, if you want lasting change.</p>
+<p>It may sound overwhelming that you have to change <em>everything</em>, but I think that's a positive! It means that if you're stuck in one area, like Policy, that means you can try pushing other areas, like Technology, Culture, and Economics.</p>
+<p>For example, climate change. As auspicious as the Paris agreements were, they're not exactly <em>legally binding</em>, and even if they were, I'm skeptical they'll be enough. For the longest time, I only saw the Policy part of climate change, and it was a bleak, depressing picture.</p>
+<p>Which was why I was so <em>inspired</em> when I read Bret Victor's <a href="http://worrydream.com/ClimateChange">What Can A Technologist Do About Climate Change</a> and Stewart Brand's <a href="https://www.amazon.com/dp/0143118285">eco-pragmatist manifesto</a>. Even though Policy seems to be stalled, there's so much that's already been done from the Technology side! Solar and wind, of course, but also nuclear power (it's zero-carbon and safer than coal plants), GMO's (we need drought-resistant crops, yesterday), and even geo-engineering. (which includes everything from the well-duh idea of planting more trees, to the wait-what idea of creating artificial clouds)</p>
+<p>There's also innovations on the Economics side, like cap-and-trade, energy democracy, and markets to sell your extra solar power. And there's promising changes on the Culture side, with more and more people adopting &quot;buy local&quot; and minimalism as a lifestyle.</p>
+<p>So, no matter where you are in the system – a voter or senator, an inventor or consumer, a buyer or seller, an artist or audience – you can, you <em>must</em>, play a part in changing the world.</p>
+<p>But don't let hubris get to your head, because our final lesson from evolution is to...</p>
+<h3>3. Go slow &amp; steady.</h3>
+<p>This, above all. We shouldn't be as slow as evolution – taking 50 million years to create a whale – but we should be careful about making large changes to a complex system.</p>
+<p>Recently, there was <a href="http://99percentinvisible.org/episode/magic-bureaucrat-riverside-miracle/">a great episode of 99% Invisible</a> that told the story of what happens if you <em>don't</em> go slow &amp; steady, if you go for revolution over evolution.</p>
+<p>In the late 1980's, California tried out a pilot program for a new system of welfare. The goal was to try to reduce “welfare dependence”. Instead of the education-and-training route of existing welfare programs, this program was a lot more straightforward: just get peeps into a job, any job, as soon as possible.</p>
+<p>And the pilot program seemed to work! Five years later, those who entered the program had 42% higher job earnings than those in the control groups. And so, in 1996, President Clinton signed a bill redesigning the country's entire welfare system, based upon the just-get-a-job philosophy of that pilot program.</p>
+<p>Turns out, that was premature. Although the program's results looked positive after <em>five</em> years, the trends reversed after <em>ten</em> years. Their experiment just happened to take place at a time when low-skill jobs were abundant, but by the 2000's, low-skill jobs became scarce everywhere. Thus, those who went to the traditional education-first welfare programs ended up doing better – in the long term – than those who went to the job-first programs.</p>
+<p>To recap, they did a small-scale experiment first. That was good! But then they scaled it up from one county to <em>the entire country</em>. That was not so good. (sidenote: (I feel that foreign aid is hitting this same problem right now. A too-common story now seems to be: they do a Randomized Controlled Trial in a few rural villages, it seems to work, so they scale it up internationally, then it backfires. See <a href="https://newrepublic.com/article/120178/problem-international-development-and-plan-fix-it">this article on international development</a>, especially the part about the worms.))</p>
+<p>“Go slow &amp; steady” may sound like a backhanded way to maintain the status quo, but I think it's far from it – slow is <em>sustainable</em>. Promises of a quick-fix revolution just give you a new boss, same as the old boss.</p>
+<hr>
+<p><img src="/content/images/2016/08/end.png" alt=""></p>
+<p>The overarching moral is this: <em>humility</em>.</p>
+<p>Humility is the knowledge we don't have that much knowledge. We're all too stupid to completely overhaul a complex political/economic/cultural system. We can't build a world from scratch, so we have to use what's already there. We can't find a silver bullet, so we've got to evolve all the parts simultaneously. We can't let hubris get the better of us, so we should go slow and steady and sustainably.</p>
+<p>And, applying humility to myself, I know <em>I'm</em> too stupid to write a blog post that solves the problems experts have been tackling for years. So, if I said something incredibly dumb re: the middle east, police reform, climate change, welfare dependence, or any of the other examples I used – forgive me, because I <em>am</em> that dumb.</p>
+<p>But you know who else is dumb? Our totally-a-DIY-expert friend, Evolution. They've been working tirelessly and mindlessly for 3.5 billion years, and somehow, here we all are. So if Evolution's techniques work for them, maybe they could work for us – and <em>we</em> have the advantage of actually being able to reflect, think ahead, and collaborate with one another.</p>
+<p>So, cheers. Here's to changing evolving the world.</p>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/rss'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

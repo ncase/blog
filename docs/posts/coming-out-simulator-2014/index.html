@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>Coming Out Simulator 2014</title>
+
+    <!-- UTF-8-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="Coming Out Simulator 2014">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="https://blog.ncase.me/styles/assets/placeholder_thumb.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="Coming Out Simulator 2014">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/styles/assets/placeholder_thumb.png">
+	<meta property="og:title" content="Coming Out Simulator 2014">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/styles/assets/placeholder_thumb.png">
+	<meta property="og:description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Mon Jun 30 2014 15:19:04 GMT-0400 (Eastern Daylight Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/rss'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+            <img
+                
+                id="splash_image_banner" src="/styles/assets/placeholder_banner.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			Coming Out Simulator 2014
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+    			tags:
+                
+                    
+                
+                    
+                        <a class='black-link' href="/tag/Short Stories">Short Stories</a>,
+                    
+                
+                    
+                        <a class='black-link' href="/tag/Social Issues">Social Issues</a>,
+                    
+                
+                    
+                        <a class='black-link' href="/tag/Game Design">Game Design</a>,
+                    
+                
+                    
+                        <a class='black-link' href="/tag/Behind The Scenes">Behind The Scenes</a>
+                    
+                
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p>Maybe it's a need to tell my personal story. Maybe I wanted to make an artsy narrative game. Maybe it's narcissism. But either way, the #Nar8 Game Jam finally gave my an excuse (and a deadline) to create my semi-autobiographical storygame, <strong><a href="http://ncase.itch.io/coming-out-simulator-2014">Coming Out Simulator 2014!</a></strong></p>
+<p>Here's how it all went down.</p>
+<hr>
+<h2>In The Beginning...</h2>
+<p>Here's the very first pencil sketch of Coming Out Simulator 2014, drawn and <a href="https://twitter.com/ncasenmare/status/476095226008711169">tweeted</a> on June 9th.</p>
+<p><img src="/content/images/2014/Jul/BptuFcQCMAARrem.jpg" alt=""></p>
+<p>And this drawing alone got a lot of interest! You know, for as much as you can get from a tweet.</p>
+<p>But this single sketch would really define the direction the rest of the game's development would take. (although that direction would also evolve) Some people have 300-page design docs in 2-point font, I just had this hasty pencil drawing. On top of that, I had one core hypothesis of game storytelling I wanted to try out in COS2014, and that was...</p>
+<p><strong>Make every character remember everything.</strong></p>
+<p>The game will show you it's listening. Almost every dialogue choice, no matter how minor, will be echoed back at some point. Even whether you call out &quot;Mooom?&quot; or &quot;Daaad?&quot; while waiting during dinner is echoed back when Mother reveals she was reading your texts. These tiny details, I hypothesize, make a story feel more organic than &quot;every decision changes everything&quot;. (which would also result in overwhelming exponential story-branching)</p>
+<hr>
+<h2>First Prototype</h2>
+<p><img src="/content/images/2014/Jul/BqBuYSICMAA45Gt.jpg" alt=""></p>
+<p>I published the first prototype on reddit's Feedback Friday and Twitter, and did a few in-person playtests. It was really bare-bones. The art was even still the pencil sketch from above. The response I got made me realize I had something emotionally powerful here, but there were still a few kinks (haha) to work out:</p>
+<p><strong>1) The dialogue options were too linear &amp; predictable.</strong></p>
+<p>They were, like the sketch, also ordered the same way: lying, hinting, <em>strongly</em> hinting. It's a linear gradient. I fixed this in later versions by doing what Telltale's The Walking Dead games do, and order options like this: some option, its opposite, and a compromise/middle option.</p>
+<p>I would also make the first option the one I wanted to &quot;anchor&quot; the decision with. (i.e. lying is the first option in Dinner Part I, then outrage is the first option in Dinner Part II.)</p>
+<p><strong>2) People thought the goal <em>was</em> to come out.</strong></p>
+<p>I guess the title did heavily imply that. I was considering changing the name to Queer Quest, as a homage to Depression Quest, but Coming Out Simulator 2014 just seemed funnier and more memorable, so it stuck.</p>
+<p>In the end, I fixed this by doing two things. First, the Jack intro sequence <em>clearly</em> describes the main dilemma with coming out. If you do that, they might freak out, and you won't get to be with Jack.</p>
+<p>Secondly, I added a few extra lines of dialogue if you choose to tell Mother that Jack is a &quot;good pal&quot; or &quot;more than friends&quot;. Previously, she'd just kinda gloss over it, and ignore the hints. Now, she'd <em>immediately</em> punish you by telling you oh, if you're friends, you're not studying, you're just hanging out. In contrast, nothing bad happens if you tell her you're just study buddies, but you'll have to avoid slipping and saying &quot;he's a friend&quot;.</p>
+<p>Being honest, and being punished immediately for it... or lying, and having to carefully tiptoe to maintain the fiction. I didn't know it at the time, but this would become the <em>real</em> core of the game.</p>
+<p>It was also during this time I came up with the tagline &quot;A half-true game about half-truths&quot;, which would drive the game's philosophy from now on.</p>
+<hr>
+<h2>Second Prototype</h2>
+<p><img src="/content/images/2014/Jul/BrX6napCYAAr79b.png" alt=""></p>
+<p>The week before the game jam ended, I just spent all week crunching on it. Writing a non-linear story takes a surprisingly long time! And I even explicitly avoided <em>branching</em> stories in favour of past decisions <em>flavouring</em> the later story.</p>
+<p><strong>The art style.</strong></p>
+<p>Before I dive into the storywriting, I should give this a quick mention. I'm pretty happy with how the final art style turned out. I wasn't planning for there to be monochrome colour schemes and choppy animation, but those evolved out of both necessity and design experimentation.</p>
+<p>You'll also notice that every scene is geometrically composed. Just look at the above coffeehouse scene! It's so... <em>triangular</em>.</p>
+<p><strong>Lie, Truth, Half-Truth endings.</strong></p>
+<p>This was completely improvised. I knew I needed to tell the player what happened in the four years between the breakup and today, but it didn't feel... right?... to tell just one story. Maybe it was gut instinct, maybe it was overthinking, but I'm glad I went and did all three endings.</p>
+<p>My coming out experience had that tension between wanting to tell the truth, and lying to protect myself. I wasn't conscious of it at the time, but I made my game's narrative structure reflect that tension too... with me, an unreliable narrator, who tells you upfront that they're unreliable.</p>
+<p><strong>Moral ambiguity, and empathizing with my parents.</strong></p>
+<p>I started writing this story with the roles Jack = Ally and Mother = Antagonist. But I love morally ambiguous characters, they're more interesting, so as I wrote more and more, I realized Jack &amp; Mother are opposites of the same coin.</p>
+<p>Jack wanted me to be proud of my identity, and ignored my safety. Mother wanted me to be safe, but ignored my identity.</p>
+<p>I don't blame my ex for asking me to come out, I blame my parents for the aftermath. Rightfully so. But, since writing this game, I sympathize with my real-life mother a bit more. Towards the end of the game, when the Father character comes home, she's the one who tries to protect you when Father punches you.</p>
+<p>But she doesn't succeed in the game. She didn't in real life, either.</p>
+<p>My own character is morally ambiguous in the game, too. My favourite ending to the Dinner Scene is lying and saying &quot;I had sex with Claire.&quot; It's the least 'punishing' ending, but it's the saddest for me, because that marks the beginning of my habit of lying to people by default, even over the most trivial of things.</p>
+<p>I made a half-true game. I guess that habit never fully went away.</p>
+<hr>
+<h2>Release!</h2>
+<p><img src="/content/images/2014/Jul/Screen-Shot-2014-07-02-at-12-44-07.png" alt=""></p>
+<p>In this image, the only vanity metrics I'm able to screenshot. Coming Out Simulator 2014, as of writing, was on the frontpage of r/WebGames and r/Gaymers and garnered over 17,000 plays. And this is just two days in.</p>
+<p>But that's all vanity metrics. What really, <em>really</em> mattered to me, was all the touching responses I got sent to me via Twitter and email. I had no idea I'd be so moved. People in the closet, people already out, parents who want to support their kids, ex-boyfriends of closeted peeps... all reached out to me.</p>
+<p>I was worried, at first, about putting out such a <em>depressing</em> story about coming out. It might have the negative consequence of scaring teens into not coming out. But it turned out, by really diving into the deep end, my game could reach out to people in a dark place. I don't think it could have reached them if the game was all sunshine and rainbows.</p>
+<p>My game could say to them, hey. This sucks, and it won't be easy, I'm sorry. Just know you're not alone.</p>
+<hr>
+<h2>In The End...</h2>
+<p><img src="/content/images/2014/Jul/BCz50AW.gif" alt=""></p>
+<p>I realize now, Coming Out Simulator 2014 isn't about being queer. Not really. I mean, you could say it helps people empathize with the plight of gay teens, (and that's definitely what I'll tell the Games For Change peeps...) but it's bigger than that. People are in the closet about their religious beliefs, their politics, or odd little hobbies they have.</p>
+<p>I realize now, my game is about half-truths.</p>
+<p>It's that tension between needing to <em>be who you are</em>, and hiding that so you can get by day-to-day. It's about living that double-life, that double-consciousness, always aware what others think of you. It's a mix of truth and lies.</p>
+<p>And I realize now... truth and lies aren't mutually exclusive. And I don't mean they're a gradient, on a single axis, I mean <em>truth and lies are two completely separate axes.</em> You can do both. Like you do in my game, you can lie by telling the truth. Or like I did with my game, I can tell the truth by lying.</p>
+<p><strong>My game is emotionally authentic, and factually inaccurate.</strong></p>
+<p>I wouldn't have been able to make something so personal if I didn't also make it somewhat impersonal. Actively acknowledging that all the characters, including past me, are semi-fictional. To get up and close, I needed that distance.</p>
+<p>If you want to stare into the sun, you're gonna need shades.</p>
+<p><em>&quot;Art is a lie that tells the truth.&quot;</em><br>
+~ Picasso</p>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/rss'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

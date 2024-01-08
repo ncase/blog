@@ -16,7 +16,6 @@ translations:
     - Deutsch
     - url url url de
 hasOrbit: true
-hasFootnotes: true
 isDeprecated: true
 ---
 

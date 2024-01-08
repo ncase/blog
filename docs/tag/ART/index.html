@@ -34,8 +34,7 @@
 	<!-- STYLES -->
 	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
     <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
-    <link rel="stylesheet" href="/styles/OpenDyslexic2/opendyslexic.css">
-    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, to override -->
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
 	<link rel="stylesheet" href="/styles/page.css">
 
 	<!-- SCRIPTS -->
@@ -55,6 +54,9 @@
     <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
 
     <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
     
 
     <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
@@ -152,25 +154,26 @@
         <ul>
             <li>my <a target='_blank' href='/rss'>blog's RSS feed</a></li>
             <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
-            <li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li>
-            <li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
         </ul>
     </div>
     <div id="panel_support">
         <p>
-            If you got disposable income to dispose of,
+            If you have disposable income to dispose of,
             you can support my free, open-source work on:
         </p>
         <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
             <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
-            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (one-time & monthly)</li>
             <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
         </ul>
         <p>
-            (If you choose monthly support, you can get
-            exclusive rewards, such as early-access bonus content,
-            voting on topics I write about, your name in the credits,
-            a drawing of a cat, etc!)
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
         </p>
         <p>
             Thaaaaaaanks~ 💖
@@ -194,8 +197,12 @@
     <div id="header" class="article">
         <div id="splash_image">
             
-            <img id="splash_image_blurry" src="/styles/assets/placeholder_banner.png"/>
-            <img id="splash_image_real" src="/styles/assets/placeholder_banner.png"/>
+            
+                
+            
+            <img
+                 class="blur" 
+                id="splash_image_banner" src="/styles/assets/placeholder_thumb.png"/>
         </div>
         <div id="header_words">
     		<div id="title">
@@ -241,7 +248,7 @@
 	</div>
 
     <!-- BEHOLD! CONTENT!!!!! -->
-	<div id="content">
+	<article id="content">
 
         <!-- Is Draft, Is Deprecated, Is Old -->
         
@@ -500,7 +507,7 @@
     
 
 
-	</div>
+	</article>
 
     <!-- FOOTER -->
 	<div id="footer">
@@ -537,6 +544,8 @@
                 <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
                 <br>
                 <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
             </span>
 		</p>
 	</div>

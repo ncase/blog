@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>mom&#39;s secret</title>
+
+    <!-- UTF-8-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="mom&#39;s secret">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="https://blog.ncase.me/content/images/2019/02/prompt_2-1.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="mom&#39;s secret">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/images/2019/02/prompt_2-1.png">
+	<meta property="og:title" content="mom&#39;s secret">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/images/2019/02/prompt_2-1.png">
+	<meta property="og:description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Tue Feb 05 2019 16:51:21 GMT-0500 (Eastern Standard Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/rss'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+                
+            
+            <img
+                 class="blur" 
+                id="splash_image_banner" src="/content/images/2019/02/prompt_2-1.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			mom&#39;s secret
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+    			tags:
+                
+                    
+                
+                    
+                        <a class='black-link' href="/tag/Short Stories">Short Stories</a>
+                    
+                
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p><em>NOTE: the following is a work of fiction. don't @ me</em></p>
+<p><img src="/content/images/2019/02/prompt_2.png" alt="prompt_2"></p>
+<p>I learnt through Facebook that mom died last week.</p>
+<p>Sure enough, there was an email I'd missed from a lawyer about her will. (I don't check email often, the pile of messages gives me anxiety, so I put it off, so the pile gets bigger, so my anxiety gets worse, repeat.) I made an appointment for the next day.</p>
+<p>Frank and Maria were kind enough to come with me, because they know I get stressed out about talking to others. The lawyer told me mom gave everything including the house to me, her only child. The house used to be dad's. I remember one afternoon when I was 9 while mom was forcing me to do the exercises in my Calculus II textbook, dad put on his running shoes, said he was going for a jog, left, and sent a check once a month.</p>
+<p>The lawyer also handed me a note from mom. It read: “Please, keep it a secret.”</p>
+<p>I knew mom meant the basement, which she never let me see, and I never asked why.</p>
+<p>Maria had worked in real estate for 15 years so she suggested we check the house out and see how much we could sell it for. Frank reminded Maria about my anxiety, but Maria reminded him my counselor said exposure therapy would be good for me, to face stressful situations with people I trust. So Frank and Maria and I had sex to calm my nerves and then we drove over, I rode front seat.</p>
+<p>It was an expensive house. We got to the front door and I unlocked it, but I got a panic attack so I grabbed onto Frank to catch my breath, because when I was 11 I sat by this front door crying after I missed the school bus and I knew my mom would be angry because she gave up everything for me, which was why I had to study and work hard to make her proud, you know you got those smart and creative genes from my side of the family right? That evening mom found me puffy-eyed on the front steps, realized I didn't go to school, shot me a look of panicked disgust and immediately rushed to the phone to tell the teacher I was sick all day.</p>
+<p>After catching my breath, Frank kissed me with tongue and told me I was doing great, then we stepped indoors. In the living room on a shelf were my first-place trophies for swimming &amp; track, my dean's list certificates, and several years of straight-A report cards all framed. Maria handed me the trash bag and we put them in.</p>
+<p>Next we went through the library (all my old textbooks), the entertainment room (all my old musical instruments), my old bedroom (everything looked exactly as it did when I left for Stanford at 16). Eventually there was nothing left to check but the basement, which Maria and Frank knew I was putting off for last.</p>
+<p>Maria hugged me from behind fondling my breasts. You're doing fantastic babe, just one more room she told me. And if it was any consolation, this house could easily fetch a million on the market (she'd been taking scout-out pictures of the location this whole time on her phone), how about after we sell this dump let's treat ourselves to that vacation in Paris? Which sounded lovely.</p>
+<p>So I opened the basement door, and went in for the first time.</p>
+<p>Of course over the years I wondered what was in that basement. Maybe porn. Maybe a corpse. Maybe porn of a corpse. Something shameful, something that would hurt her image and pride as a perfect mother of a perfect child in a perfect family. (my dad and her never officially signed any papers) Then again if it was so shameful she'd never let me see it, even after death, so I admit I had no idea what to expect.</p>
+<p>In the basement next to the boiler was a box labelled “[My Name] Baby Photos”. I looked through them, and it didn't take long to realize the baby in the pictures wasn't me. The photos' timestamps ranged from two years before I was born, up to nine months before my birth.</p>
+<p>That baby was my sister.</p>
+<p>There was no information on how she died. Of course mom never told me. Of course I was given her name. Of course I was the &quot;second chance&quot;. She didn't keep these photos in the basement because she was ashamed, she kept them because she was proud.</p>
+<p>Frank and Maria brought me back up to our car and I cried in the backseat sandwiched between them.</p>
+<hr>
+<p>Now I had a dilemma:</p>
+<p>If I were to reveal mom's secret, it would give me a lot of anxiety. But if I chose to keep it a secret, I'd be obeying what she told me to do as per the note. Eventually, with the help of Frank, Maria, and my therapists, I decided that being my own person was worth the cost of some anxiety, which is why I'm writing this Facebook post to share her secret with all of you now.</p>
+<p>The stupid thing is that all mom wanted was for people to like her, which was why she invested so much in making sure she and her family and her friends seemed perfect, which was why she always controlled other people, which was why nobody liked her, which was why she tried even harder, repeat.</p>
+<p>Her funeral was yesterday. I'm sure it was a lovely service. Do any of you have recommendations for things to do in Paris?</p>
+<hr>
+<p><a href="https://www.reddit.com/r/WritingPrompts/comments/ane0eg/wp_all_your_life_you_wondered_why_your_parents/eft0ado/">this short story was originally posted on r/WritingPrompts</a></p>
+<p><a href="https://unsplash.com/photos/xo_h_fiZbR0">header photo by Nathan Wright (CC Zero)</a></p>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/rss'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

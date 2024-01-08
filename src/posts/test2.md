@@ -10,4 +10,6 @@ isDeprecated: true
 
 two...
 
-[:lol](/test1#testy)
+well well well
+
+[:lol](../test1#testy)

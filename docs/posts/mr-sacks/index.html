@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>Mr. Sacks</title>
+
+    <!-- UTF-8-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="Mr. Sacks">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="https://blog.ncase.me/content/images/2019/02/prompt-2.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="Mr. Sacks">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/images/2019/02/prompt-2.png">
+	<meta property="og:title" content="Mr. Sacks">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/images/2019/02/prompt-2.png">
+	<meta property="og:description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Mon Feb 04 2019 20:50:53 GMT-0500 (Eastern Standard Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/rss'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+                
+            
+            <img
+                 class="blur" 
+                id="splash_image_banner" src="/content/images/2019/02/prompt-2.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			Mr. Sacks
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+    			tags:
+                
+                    
+                
+                    
+                        <a class='black-link' href="/tag/Short Stories">Short Stories</a>
+                    
+                
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p><img src="/content/images/2019/02/prompt-1.png" alt="prompt-1"></p>
+<p><em>What part of “ezam a ni eud emit revo dna” don't you understand?</em></p>
+<p>Bloody hell, none of my so-called &quot;peers&quot; get it. The subject we've been interviewing – one Mr. Sacks institutionalized at Massachusetts General Hospital Psychiatry – was not speaking some hitherto unknown language to humanity. It's simply English, in reverse: “and over time due in a maze”. English words, but no grammar. Textbook case of aphasia, possible lesion in the Broca's area.</p>
+<p>They interrupted my coffee break for this?</p>
+<p>I explained my conclusion very, very slowly to my &quot;colleagues&quot;, should they have any lesions in <em>their</em> prefrontal cortices. Bugger, I was late for my lecture. I rushed out the doors, ran through traffic, thinking about how even if I was late the ungrateful undergraduates should kiss my feet for even giving the time of my very busy day, thinking about how I'm good enough dammit, thinking so much I did not notice the BMW rushing through the red light about to hit me, which it did, then I stopped thinking at all.</p>
+<hr>
+<p>I awoke two months later.</p>
+<p>I sat up, and was hit with a headache that made me wish I hadn't put off signing that Do Not Resuscitate form.</p>
+<p>A nurse – couldn't make top grades, huh? – noticed my awakening, and called for an actual doctor, although I'm better than most of these quacks. After taking her sweet time, the doctor finally entered my room and said:</p>
+<p>“##############.”</p>
+<p>...What the hell?</p>
+<p>I tried to ask them if they knew who I goddam was, but all that came out of my mouth was:</p>
+<p>“#####? #####?! ###############!”</p>
+<p>The nurse and doctor looked at each other, then at me, as if <em>I</em> was the one who's gone barmy. Worse, after double-checking my vitals, they transferred me – of all places! – to the Psychiatry ward. And as if Lady Luck wasn't done with me quite yet, the first patient I met there was none other than my former case study, Mr. Sacks. He sat next to me at the in-patient dining room table, a green banana in hand, and said:</p>
+<p>“Hah, got you too, eh friend?”</p>
+<hr>
+<p>This psychiatry ward is <em>nothing</em> compared to the academic career ladder. I climbed my way up that, I could climb my way out of this.</p>
+<p>I'm good enough, dammit.</p>
+<p>First, I bribed a med school intern (one who still recognized me) to bring me my phone and charger. Of course, I couldn't just ask him in language – I was temporarily incapacitated in that regard – so I slowly pantomimed my request to him as if he was a slow child.</p>
+<p>Plan A was to use a speech-to-text app to figure out what the staff were saying. No such luck. I wasn't even able to <em>read</em> the text on my phone's UI – it was all reversed and scrambled, like my initial messages from Mr. Sacks. Who, this whole time, was being unhelpful, saying things like:</p>
+<p>“Why the rush to leave, friend? Relax, stay a while.”</p>
+<p>But he would be useful soon enough. Clearly, I'd discovered a new neurological phenomenon with only two known cases in the world: him, and me. They'd name it after me, of course. Once I got out of here, I could use him to propel myself to the top of the ladder, to international glory, and show everyone who never believed in me. My God, they may even name a <em>university</em> after me!</p>
+<p>“You're not trapped in a maze, pal. You're <em>exploring</em> a maze.”</p>
+<p>In the meantime, Plan B: I wait. Eventually one of my idiot colleagues will come and get me out. Also, I was using this downtime to secretly record my conversations with Mr. Sacks – who gives a toss about some measly HIPPA regulation – so I could analyze his condition later. For now, if I can't understand the others, and they can't understand me, at least I can try to understand this man. I'm good enough, dammit.</p>
+<p>“Good buddy, it's all in due time.”</p>
+<p>He was <em>still</em> holding that damn banana.</p>
+<hr>
+<p>A week went by.</p>
+<p>Nobody, not one of my colleagues, came by to visit me.</p>
+<p>Were they doing this as some kind of sick revenge? After everything I'd done for them? At this point, I didn't even want them to get me out, I just wanted...</p>
+<p>...Well, no matter. I had made a breakthrough with Mr. Sacks' condition. Interestingly, although I <em>heard</em> him in clear English, when I ran his conversations through speech-to-text, it came out reversed and scrambled, the same way as before. By having both his literal words &amp; translated meaning, I could deduce this pattern:</p>
+<ul>
+<li>He says something like “ezam a ni eud emit revo dna”</li>
+<li>Reversed, that reads “and over time due in a maze”</li>
+<li>Break that into three-word fragments, and you get &quot;and over time&quot;, &quot;in due time&quot; (reversed), and &quot;in a maze&quot;.</li>
+<li>Each of these three-word fragments are connected by their first or last words.</li>
+<li>One can plot these fragments as a graph. If you do, <em>a perfect structure is revealed:</em> his words are a winding path through a lattice grid – a grid where each corner is a word, each line is a fragment. What's more, that grid has dimensions N x 3, which looks like this: ###################</li>
+</ul>
+<p>At first I thought Mr. Sacks was just another unpromising case study, but now I understood his logic. Besides, he was the only one I could talk to. None of those ingrate bastards ever visited me. Was I not good enough? After everything I did to please them – all the sleep-deprived nights of studying, all the friendships I sacrificed, all the people I pushed aside to get here – was I still not enough?</p>
+<p>Funny: I ran the staffs' dialogue and mine through speech-to-text, and analyzed their structure. Most of their paths were straight lines. Mine was a loop.</p>
+<p>I told Mr. Sacks all this. Not because I <em>like</em> him or anything, it's just that he can't tell anyone else. In my world, that's as close as you can get to &quot;trust&quot;. After I told him all this, he said nothing. Then, he offered me that banana. The one he'd been holding for a whole week. By then it had gone from green to a brownish, almost-too-ripe. I took it, and ate it. Then Mr. Sacks said to me:</p>
+<p>“You are enough.”</p>
+<p>There must have been something wrong with that banana, because I began choking up and my eyes started watering.</p>
+<hr>
+<p>It's been five years.</p>
+<p>Mr. Sacks and I do get the occasional visitor now. About three years ago a researcher, Henrietta Molaison, found us and deciphered our language structure. She used to be one of my undergrads.</p>
+<p>I'm happy for her, I really am.</p>
+<p>Since then, we've had researchers from around the world come to visit us, stick us in fMRI machines, use supercomputers to decode our language, the whole works. It's strange – though I still can't understand people's words, I feel like I understand people <em>better</em> than when all I had were words. When I talk with others, I see: are they a line? A loop? A branching tree? A wandering path? Or a single, unmoving dot?</p>
+<p>Mr. Sacks and I are happy. A year ago, the supercomputers were briefly unable to decode our language. They got it functioning again once they realized our structure had evolved: our thought-paths had started intertwining into a braid.</p>
+<p>Occasionally I understand short English questions. One we get a lot is: don't we feel trapped? We say, no, we're not trapped.</p>
+<p>We're exploring.</p>
+<p><code>– selected diary entries with permission, translated by Henrietta Molaison</code></p>
+<hr>
+<p><a href="https://www.reddit.com/r/WritingPrompts/comments/an1spc/wp_you_and_a_group_of_scientists_are_studying_a/efqcavf/">originally posted as a reply on r/WritingPrompts</a></p>
+<p><a href="https://unsplash.com/photos/yGUuMIqjIrU">header photo by Daan Stevens (CC Zero)</a></p>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/rss'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

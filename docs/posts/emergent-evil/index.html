@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>Emergent Evil</title>
+
+    <!-- UTF-8-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="Emergent Evil">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="https://blog.ncase.me/content/images/2016/05/splash-2.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="Emergent Evil">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/images/2016/05/splash-2.png">
+	<meta property="og:title" content="Emergent Evil">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/images/2016/05/splash-2.png">
+	<meta property="og:description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Sat May 21 2016 09:59:27 GMT-0400 (Eastern Daylight Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/rss'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+                
+            
+            <img
+                 class="blur" 
+                id="splash_image_banner" src="/content/images/2016/05/splash-2.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			Emergent Evil
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+    			tags:
+                
+                    
+                
+                    
+                        <a class='black-link' href="/tag/Emergence">Emergence</a>,
+                    
+                
+                    
+                        <a class='black-link' href="/tag/Social Change">Social Change</a>
+                    
+                
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p>For my first <a href="http://blog.ncase.me/hello-frontline/">collaboration with PBS Frontline</a>, I've been reading lots of research on the psychology of genocide, massacres, and terrorism. Been doing this for a bit over a month now. Fun.</p>
+<p>Anyway, as it turns out, psychologists have come to a shocking consensus about the minds of these kinds of people, people who can commit atrocities against civilians and children and feel good about it. Here's the terrible truth:</p>
+<p>They're disturbingly normal.</p>
+<p><img src="/content/images/2016/05/splash-1.png" alt="title splash"></p>
+<p>Wait, what? How can normal people participate in acts of mass, semi-indiscriminate violence? As social psychologists have found <a href="https://en.wikipedia.org/wiki/Realistic_conflict_theory#Robbers_cave_study">again</a> and <a href="https://en.wikipedia.org/wiki/Bystander_effect">again</a> and <a href="https://en.wikipedia.org/wiki/Asch_conformity_experiments">again</a> and <a href="https://en.wikipedia.org/wiki/Bobo_doll_experiment">again</a> and <a href="https://en.wikipedia.org/wiki/Milgram_experiment">again</a>... it's not the <em>individual</em> that matters, but the <em>collective</em>. The whole is completely different from the sum of its parts. (sidenote: No, I'm not including Zimbardo's infamous <a href="https://en.wikipedia.org/wiki/Stanford_prison_experiment">Stanford Prison Experiment</a>. That study had so many methodological flaws, and was never replicated. Zimbardo's <a href="https://en.wikipedia.org/wiki/Deindividuation#Philip_Zimbardo_.281969.29">other, less-known work</a> is much better.)</p>
+<p>This is called <strong>emergence</strong>. Which can be a rather fluffy, abstract concept, so here's an analogy that helps me understand it:</p>
+<p>Think of a cup of water. Now, think about that cup of water in a freezer. Even though in both cases it's the <em>exact same water molecules</em>, one's wet and slippery, and the other is cold and solid. The <em>only</em> thing that changes is the arrangement of the <em>collective:</em></p>
+<p><img src="/content/images/2016/05/ice.gif" alt="">(animation from <a href="https://www.youtube.com/watch?v=UukRgqzk-KE">this TED-Ed video</a>)</p>
+<p>The same is true of humans.</p>
+<p>Think of 5 people doing individual jobs, getting rewarded individually. They'll probably do okay. Now, think of those same 5 people doing one job together, and all equally sharing the reward. If you've ever had the misfortune of being stuck on a group class project together, you know what happens. Because responsibility is diffused, everybody (except for the one nerd) slacks off, and y'all end up getting a C+. (sidenote: <strong>One BIG exception:</strong> this only happens with <em>extrinsic rewards</em>, like money or a good grade, and not <em>intrinsic rewards</em>, like honor or intellectual curiosity (you nerd).)</p>
+<p>They're the <em>exact same individuals</em> – the only change was in the arrangement of the <em>collective</em>.</p>
+<p>But just as diffused responsibility for a job can make people <a href="https://en.wikipedia.org/wiki/Social_loafing">less productive</a>, diffused responsibility for an action can make people <a href="https://en.wikipedia.org/wiki/Diffusion_of_responsibility#Real-world_examples">less <em>moral</em></a>. The more people do <code>Horrible Thing</code>, the less likely one is to get caught, so even <em>more</em> people do <code>Horrible Thing</code>, and so on. And that's just one of many, <em>many</em> ways otherwise moral individuals can get broken by an immoral collective.</p>
+<p>That's the idea of <strong>emergent evil</strong>.</p>
+<p><img src="/content/images/2016/05/Screen-Shot-2016-05-20-at-16-44-47.png" alt="micah tweet"></p>
+<p>Like all truly revolutionary ideas in human history, this one started as a couple of cheesy tweets. My friend Micah <a href="https://twitter.com/scanlime/status/669962020033204224">twote the tweet above</a>, but some peeps didn't understand what she meant by &quot;emergence&quot;, (not their fault – again, it's a fluffy, abstract concept) so I replied with some dumb metaphor about water molecules.</p>
+<p>That was six months ago, and I'm still on this train of thought.</p>
+<p>Normal motives – even <em>noble</em> motives – like wanting a sense of belonging, wanting to go on adventures with friends, wanting a bigger purpose and meaning to your life... those desires are all <em>exactly</em> what terrorist groups take advantage of. (sidenote: <strong>Another BIG exception:</strong> While most terrorists are psychologically &quot;normal&quot;, that's not true for &quot;lone wolves&quot;, who, by the way, <a href="https://books.google.com/books?id=fxyE9J1igtIC&amp;pg=PA27&amp;lpg=PA27&amp;dq=%22Ramon+Spaaij%22+1.8%25&amp;source=bl&amp;ots=-wMpgwVcwR&amp;sig=PhWL3qucUVd-HRvyJ3PqlndkMzY&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwiAj4v659LMAhVJ74MKHVuNB9wQ6AEIKjAC#v=onepage&amp;q=%22Ramon%20Spaaij%22%201.8%25&amp;f=false">only account for 1.8% of terrorist attacks</a>.)</p>
+<p><em>The water we drink to stay alive can be used to drown us.</em></p>
+<p>Let me slap on a silver-lining ending.</p>
+<p>One normal psychological quirk we have is the <a href="https://en.wikipedia.org/wiki/Fundamental_attribution_error">fundamental attribution error</a>, the tendency to believe that if someone does bad things, they must be a bad person. This belief, ironically, justifies dehumanizing a group of people who do &quot;evil&quot; things, and thus, making it morally permissible to commit violence against them, which will look &quot;evil&quot; in <em>their</em> eyes, so they retaliate, so you retaliate, and so on. A vicious cycle of violence, <strong>emerging</strong> out of normal human psychology.</p>
+<p>But by realizing the collective is <em>not</em> the individual, and seeing things at a higher systems level, we can avoid going down that circular path. That is to say: <strong>understanding the idea of &quot;emergent evil&quot; <em>is</em> the best defense against emergent evil.</strong></p>
+<p><em>The flood that drowns us can be put through a dam, to give power to the people.</em></p>
+<p>And if my cheesy water metaphors don't help in overcoming the horror of realizing every single one of us has the potential for enacting terror and trauma against the innocent, here, let this silly puppy GIF cheer you up:</p>
+<p><img src="/content/images/2016/05/dog.gif" alt="pup gif"></p>
+<h3>Further Reading:</h3>
+<ul>
+<li>Marc Sageman's (former CIA operative &amp; forensic psychiatrist, who interviewed hundreds of convicted jihadists) <a href="http://faculty.maxwell.syr.edu/rdenever/internationalsecurity/sageman.pdf">notes on how <em>normal</em> terrorists are</a></li>
+<li>Andrew Silke's (counter-terrorism expert who advises for the United Nations) paper on <a href="https://www.researchgate.net/profile/Andrew_Silke/publication/238721660_Holy_Warriors_Exploring_the_Psychological_Processes_of_Jihadi_Radicalization/links/0a85e53c6983bcbf4a000000.pdf">the ordinary psychology of radicalization</a></li>
+<li>A psychology-history book called <a href="http://www.al-edu.com/wp-content/uploads/2014/05/Dutton-The-Psychology-of-Genocide-Massacres-and-Extreme-Violence.pdf">Why &quot;Normal&quot; People Come to Commit Atrocities</a> that I haven't finished reading yet because wow is it depressing</li>
+</ul>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/rss'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>
