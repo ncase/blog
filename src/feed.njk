@@ -16,6 +16,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ metadata.url }}">
 
+    {# The feed meta data #}
     <title>{{ metadata.title }}</title>
     <subtitle>{{ metadata.subtitle }}</subtitle>
     <link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self"/>
@@ -26,8 +27,11 @@
         <name>{{ metadata.author.name }}</name>
     </author>
 
+    {# Data for each post #}
     {% for post in collections.post | latestTenPosts %}
-        {% set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
+
+        {# Ughhhhhhh coz 11ty puts "posts" in there... whatever, strip it out. #}
+        {% set absolutePostUrl = post.url | absoluteUrl(metadata.url) | stripPostsInURL %}
         <entry>
             <title>{{ post.data.title }}</title>
             <link href="{{ absolutePostUrl }}"/>
@@ -35,6 +39,7 @@
             <id>{{ absolutePostUrl }}</id>
             <content xml:lang="{{ metadata.language }}" type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
         </entry>
+
     {% endfor %}
 
 </feed>

@@ -212,17 +212,24 @@ window.addEventListener("load", ()=>{
                 // security error probably, use default 0 0 0
             }
 
-            // Text shadow is avg color...
-            let hex = "#"+r.toString(16)+g.toString(16)+b.toString(16);
-            $("#header_words").style.textShadow = `
-                0px 0px 20px ${hex},
-                0px 0px 10px ${hex},
-                0px 0px 5px ${hex}`;
-
             // If it's mostly dark, shift to white text
-            if( r+g+b < (256*3)/2 ){
+            let luminance = 0.2126*(r/256) + 0.7152*(g/256) + 0.0722*(b/256);
+            let isDark = (luminance < 0.5);
+            if(isDark){
                 $("#header").style.color = $("#home_label").style.color = "#fff";
             }
+
+            // Text shadow
+            let hex;
+            if( Math.abs(luminance-0.5)<0.1 ){
+                hex = isDark ? "#000" : "#fff"; // if too close to middle-gray, go extreme
+            }else{
+                hex = "#"+r.toString(16)+g.toString(16)+b.toString(16); // else, avg color!
+            }
+            $("#header_words").style.textShadow = `
+                0px 0px 5px ${hex},
+                0px 0px 5px ${hex},
+                0px 0px 5px ${hex}`;
 
         }
         if(bannerImage.complete) bannerImage.onload();

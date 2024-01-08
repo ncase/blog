@@ -22,6 +22,9 @@ module.exports = (config)=>{
 	config.addFilter('latestOnePost', posts=>{
 		return posts.slice(-1).reverse();
 	});
+	config.addFilter('stripPostsInURL', postURL=>{
+		return postURL.replace('/posts/','/');
+	});
 
 	// Sh sh sh. No console, only dreams now.
 	config.setQuietMode(true);
