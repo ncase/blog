@@ -26,7 +26,7 @@ Well, it's time to make like a tree and go *back to the future*, baby!
 
 ## <a id="how"></a> How does RSS work?
 
-Unlike newsletters where give each publisher your email (and they may abuse that trust), RSS works on a "don't call me, I'll call you" policy.
+Unlike newsletters where you give each publisher your email (and they may abuse that trust), RSS works on a "don't call me, I'll call you" policy.
 
 An RSS feed is a text file on a website. It's just a bunch of posts – no tracking or "personalization" – like a printed newspaper:
 

@@ -69,7 +69,7 @@
 &lt;p&gt;Now imagine this existed and was extremely popular 15 years ago. Then we got suckered by the shiny walled gardens.&lt;/p&gt;
 &lt;p&gt;Well, it&#39;s time to make like a tree and go &lt;em&gt;back to the future&lt;/em&gt;, baby!&lt;/p&gt;
 &lt;h2&gt;&lt;a id=&quot;how&quot;&gt;&lt;/a&gt; How does RSS work?&lt;/h2&gt;
-&lt;p&gt;Unlike newsletters where give each publisher your email (and they may abuse that trust), RSS works on a &amp;quot;don&#39;t call me, I&#39;ll call you&amp;quot; policy.&lt;/p&gt;
+&lt;p&gt;Unlike newsletters where you give each publisher your email (and they may abuse that trust), RSS works on a &amp;quot;don&#39;t call me, I&#39;ll call you&amp;quot; policy.&lt;/p&gt;
 &lt;p&gt;An RSS feed is a text file on a website. It&#39;s just a bunch of posts – no tracking or &amp;quot;personalization&amp;quot; – like a printed newspaper:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2021/07/rss1.png&quot; alt=&quot;Three newsvendors, holding newspapers reading &#39;truth&#39;, &#39;beauty&#39;, and &#39;clickbait&#39;. The last vendor is a clown.&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Then, whatever RSS reader app you use – you can use any app made by anyone – it&#39;ll call the websites for the feeds &lt;em&gt;you specifically opted into&lt;/em&gt;, no more or less. The websites can&#39;t force it in the other direction.&lt;/p&gt;
