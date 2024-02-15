@@ -77,28 +77,41 @@ window.addEventListener("load", ()=>{
     if(!window.NOT_A_POST){ // ONLY FOR POSTS
         if(allHeadings.length==0){
             $('#tab_toc').style.display = 'none';
+        }else{
+
+            // Add a fake h1 in the beginning!
+            let fakeH1 = document.createElement('h1');
+            fakeH1.innerText = $('title').innerText;
+            fakeH1.style.display = 'none';
+            $('#header').insertBefore(fakeH1, $('#header').firstChild);
+            allHeadings.unshift(fakeH1);
+
+            // For the rest, though...
+            allHeadings.forEach( (heading)=>{
+
+                // Table of Contents link
+                let headingText = heading.innerText,
+                    headingForURI = headingText.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+                tocHTML += `<p><a target='_self' class='black-link' href="#${headingForURI}">${headingText}</a></p>`;
+
+                // Anchor in article
+                let anchor = document.createElement('a');
+                anchor.className = 'scroll-anchor';
+                anchor.id = headingForURI;
+                heading.parentNode.insertBefore(anchor, heading);
+
+            });
+
+            $('#panel_toc').innerHTML = tocHTML;
+
+            // HACK: If ToC is too large... just shrink font until it works
+            let tocFont = 16;
+            do{
+                $('#panel_toc').style.fontSize = tocFont+'px';
+                tocFont--;
+            }while( tocFont>1 && parseInt(window.getComputedStyle($("#panel_toc")).height)+20 > document.body.clientHeight);
+
         }
-        allHeadings.forEach( (heading)=>{
-
-            // Table of Contents link
-            let headingText = heading.innerText,
-                headingForURI = headingText.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
-            tocHTML += `<p><a class='black-link' href="#${headingForURI}">${headingText}</a></p>`;
-
-            // Anchor in article
-            let anchor = document.createElement('a');
-            anchor.className = 'scroll-anchor';
-            anchor.id = headingForURI;
-            heading.prepend(anchor);
-
-        });
-        $('#panel_toc').innerHTML = tocHTML;
-        // HACK: If ToC is too large... just shrink font until it works
-        let tocFont = 16;
-        do{
-            $('#panel_toc').style.fontSize = tocFont+'px';
-            tocFont--;
-        }while( tocFont>1 && parseInt(window.getComputedStyle($("#panel_toc")).height)+20 > document.body.clientHeight);
     }
 
     // READING CONTROLS
@@ -260,6 +273,15 @@ window.addEventListener("load", ()=>{
 
         }
 
+        // All CONTENT links that go to "#" are self!
+        $all('#content > p > a').filter(a=>{
+            let href = a.getAttribute('href');
+            if(!href) return;
+            return href[0]=="#"
+        }).forEach(a=>{
+            a.target = '_self';
+        });
+
         // Footnotes: Littlefoot 'em, THEN hide with Nutshell
         littlefoot.littlefoot({
             activateOnHover: true,
@@ -294,8 +316,8 @@ window.addEventListener("load", ()=>{
 
         // READING TIME
         const NUMBER_OF_WORDS = ($("#content").innerText.match(/\s/g) || []).length,
-              AVERAGE_READING_TIME = 230,
-              READING_TIME_IN_MINUTES = Math.ceil(NUMBER_OF_WORDS/AVERAGE_READING_TIME);
+              AVERAGE_READING_SPEED = 215, // well, lowballing it. remember i usually have pix.
+              READING_TIME_IN_MINUTES = Math.ceil(NUMBER_OF_WORDS/AVERAGE_READING_SPEED);
         $("#reading_time_header").innerText = `${READING_TIME_IN_MINUTES} min`;
 
         // THE CLOCK SCROLLY

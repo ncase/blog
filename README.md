@@ -20,3 +20,4 @@ Code:
 * [goatcounter](https://www.goatcounter.com/) (privacy-first, open-source, minimalist analytics)
 * [littlefoot](https://littlefoot.js.org/) (nicer footnotes that show on hover)
 * [nutshell](https://ncase.me/nutshell/) (expandable, embeddable explanations)
+* [mathjax](https://www.mathjax.org/) (pretty math)

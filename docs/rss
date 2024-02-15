@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://blog.ncase.me/">
 
-    
+
     <title>Nicky&#39;s Blog!</title>
     <subtitle>I make occasional pictures &amp; words</subtitle>
-    <link href="https://blog.ncase.me/feed.xml" rel="self"/>
+    <link href="https://blog.ncase.me/rss/" rel="self"/>
     <link href="https://blog.ncase.me/"/>
     <updated>2022-08-17T00:00:01Z</updated>
     <id>https://blog.ncase.me/</id>
@@ -12,11 +12,11 @@
         <name>Nicky Case</name>
     </author>
 
-    
-    
 
-        
-        
+
+
+
+
         <entry>
             <title>New project! Nutshell: make expandable explanations</title>
             <link href="https://blog.ncase.me/new-project-nutshell/"/>
@@ -33,10 +33,10 @@
 </content>
         </entry>
 
-    
 
-        
-        
+
+
+
         <entry>
             <title>New talk! “How To Explain Things Real Good”</title>
             <link href="https://blog.ncase.me/new-talk-how-to-explain-things-real-good/"/>
@@ -51,10 +51,10 @@
 </content>
         </entry>
 
-    
 
-        
-        
+
+
+
         <entry>
             <title>Back to the Future with RSS!</title>
             <link href="https://blog.ncase.me/back-to-the-future-with-rss/"/>
@@ -106,10 +106,10 @@
 </content>
         </entry>
 
-    
 
-        
-        
+
+
+
         <entry>
             <title>How Do I Learn X?</title>
             <link href="https://blog.ncase.me/how-do-i-learn-x/"/>
@@ -249,10 +249,10 @@ Cook something nutritious &lt;em&gt;and&lt;/em&gt; delicious.&lt;/p&gt;
 </content>
         </entry>
 
-    
 
-        
-        
+
+
+
         <entry>
             <title>New Explorable! “COVID-19 Futures, Explained With Playable Simulations”</title>
             <link href="https://blog.ncase.me/new-explorable-covid-19-futures-explained-with-playable-simulations/"/>
@@ -267,10 +267,10 @@ Cook something nutritious &lt;em&gt;and&lt;/em&gt; delicious.&lt;/p&gt;
 </content>
         </entry>
 
-    
 
-        
-        
+
+
+
         <entry>
             <title>#OneStepAhead</title>
             <link href="https://blog.ncase.me/onestepahead/"/>
@@ -288,10 +288,10 @@ Cook something nutritious &lt;em&gt;and&lt;/em&gt; delicious.&lt;/p&gt;
 </content>
         </entry>
 
-    
 
-        
-        
+
+
+
         <entry>
             <title>Make Plushie Patterns with Play-Doh &amp; Paper Towels</title>
             <link href="https://blog.ncase.me/make-plushie-patterns-with-play-doh-paper-towels/"/>
@@ -364,10 +364,10 @@ Cook something nutritious &lt;em&gt;and&lt;/em&gt; delicious.&lt;/p&gt;
 </content>
         </entry>
 
-    
 
-        
-        
+
+
+
         <entry>
             <title>What Did I Learn This Decade? (2010-2019)</title>
             <link href="https://blog.ncase.me/2010-2019/"/>
@@ -756,10 +756,10 @@ Cook something nutritious &lt;em&gt;and&lt;/em&gt; delicious.&lt;/p&gt;
 </content>
         </entry>
 
-    
 
-        
-        
+
+
+
         <entry>
             <title>My Most Meaningful Media of 2019</title>
             <link href="https://blog.ncase.me/my-most-meaningful-media-of-2019/"/>
@@ -873,10 +873,10 @@ jumpstarted my whole dang career&lt;/li&gt;
 </content>
         </entry>
 
-    
 
-        
-        
+
+
+
         <entry>
             <title>Curse of the Chocolate-Covered Broccoli (or: Emotion in Learning)</title>
             <link href="https://blog.ncase.me/curse-of-the-chocolate-covered-broccoli-or-emotion-in-learning/"/>
@@ -980,6 +980,6 @@ If interest comes from seeing something as new and comprehensible, then people w
 </content>
         </entry>
 
-    
+
 
 </feed>

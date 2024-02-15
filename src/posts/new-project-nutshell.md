@@ -21,4 +21,4 @@ If you're writing a blog, news articles, code documentation, educational materia
 
 (See you next month... for explainers written *with* Nutshell!)
 
-P.S: Testing, testing... let's see if this blog post can [:embed itself](#NewProject)...
+<!--P.S: Testing, testing... let's see if this blog post can [:embed itself](./)...-->

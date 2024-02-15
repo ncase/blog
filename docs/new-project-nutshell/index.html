@@ -9,6 +9,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
     <!-- RSS (Well, Atom) -->
     <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
 
@@ -152,7 +157,7 @@
             Alternatively, here's:
         </p>
         <ul>
-            <li>my <a target='_blank' href='/rss'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
             <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
             <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
             <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
@@ -228,7 +233,7 @@
 
     <!-- Home button -->
     
-    <a href="/">
+    <a target='_self' href="/">
         <div id="home_button">
             <div id="home_icon"></div>
             <div id="home_label">home</div>
@@ -284,8 +289,7 @@
 <p>This is a tool for writers, to let their readers dive into details. Not shown in the above .gif, are two other &quot;killer features&quot;: 1) you can embed snippets of text <em>from other authors &amp; websites</em>, even stuff written years ago! And 2) you can embed interactives, YouTube videos, and the intros of Wikipedia articles.</p>
 <p>If you're writing a blog, news articles, code documentation, educational material, etc... I hope Nutshell helps you help <em>your</em> readers.</p>
 <p>(See you next month... for explainers written <em>with</em> Nutshell!)</p>
-<p>P.S: Testing, testing... let's see if this blog post can <a href="#NewProject">:embed itself</a>...</p>
-
+<!--P.S: Testing, testing... let's see if this blog post can [:embed itself](./)...-->
 
 	</article>
 
@@ -303,7 +307,7 @@
             💖 follow me via
             <a href='https://ncase.me/sub/'>newsletter</a>
             or
-            <a href='/rss'>rss</a>
+            <a href='/feed.xml'>rss</a>
             (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
 		</p>
         <p>

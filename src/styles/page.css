@@ -43,9 +43,21 @@ b,strong{
     font-weight:900;
 }
 hr{
-    border: none;
+    /*border: none;
     border-top: 3px dotted #b9b9b9;
-    margin: 2.5em auto;
+    margin: 2.5em auto;*/
+    border: none;
+    border-top: 3px dashed #333;
+    margin: 3.5em auto;
+    position: relative;
+    left: -50%;
+    width: 200%;
+}
+.footnotes-sep{
+    display: none;
+}
+iframe{
+    border: 1px solid #ddd;
 }
 a{
     color: hsla(0, 80%, 60%);
@@ -222,6 +234,7 @@ ol,ul{
     position: fixed;
     top: 20px;
     left: 20px;
+    z-index: 999;
 }
 @media (max-width: 1100px) {
     #draft_feedback{
@@ -229,8 +242,9 @@ ol,ul{
     }
 }
 
-#content img{
+#content p img{
     max-width: 100%;
+    border: 2px inset rgba(128,128,128,0.1337);
 }
 
 /*******************************/
@@ -339,6 +353,7 @@ body[dark_mode=yes] #reading_time > #clock_icon{
 #everything_container{
     width:100%;
     transition: width 0.3s ease-in-out;
+    overflow-x: hidden;
 }
 #sidebar{
     position: fixed;

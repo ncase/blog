@@ -9,6 +9,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
     <!-- RSS (Well, Atom) -->
     <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
 
@@ -152,7 +157,7 @@
             Alternatively, here's:
         </p>
         <ul>
-            <li>my <a target='_blank' href='/rss'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
             <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
             <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
             <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
@@ -222,11 +227,11 @@
                     
                 
                     
-                        <a class='black-link' href="/tag/This Time It Is Personal">This Time It Is Personal</a>,
+                        <a class='black-link' target='_self' href="/tag/This Time It Is Personal">This Time It Is Personal</a>,
                     
                 
                     
-                        <a class='black-link' href="/tag/Behind The Scenes">Behind The Scenes</a>
+                        <a class='black-link' target='_self' href="/tag/Behind The Scenes">Behind The Scenes</a>
                     
                 
     			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
@@ -242,7 +247,7 @@
 
     <!-- Home button -->
     
-    <a href="/">
+    <a target='_self' href="/">
         <div id="home_button">
             <div id="home_icon"></div>
             <div id="home_label">home</div>
@@ -364,7 +369,7 @@ long live :the game:!</strong></p>
             💖 follow me via
             <a href='https://ncase.me/sub/'>newsletter</a>
             or
-            <a href='/rss'>rss</a>
+            <a href='/feed.xml'>rss</a>
             (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
 		</p>
         <p>

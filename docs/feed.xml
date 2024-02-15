@@ -6,13 +6,81 @@
     <subtitle>I make occasional pictures &amp; words</subtitle>
     <link href="https://blog.ncase.me/feed.xml" rel="self"/>
     <link href="https://blog.ncase.me/"/>
-    <updated>2022-08-17T00:00:01Z</updated>
+    <updated>2024-02-15T00:00:00Z</updated>
     <id>https://blog.ncase.me/</id>
     <author>
         <name>Nicky Case</name>
     </author>
 
     
+    
+
+        
+        
+        <entry>
+            <title>Why don&#39;t brackets matter in multiplication? (Visual proof of associativity)</title>
+            <link href="https://blog.ncase.me/brackets-dont-matter/"/>
+            <updated>2024-02-15T00:00:00Z</updated>
+            <id>https://blog.ncase.me/brackets-dont-matter/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;Remember how in math class, every fact was introduced intuitively &amp;amp; visually, and you never had to rote-memorize stuff without understanding them?&lt;/p&gt;
+&lt;p&gt;Yeah me neither. I&#39;m considering writing a book titled: &lt;em&gt;Math For People Who Have Been Scarred For Life By Math (or: Algebra in Pictures)&lt;/em&gt;. It&#39;d be the K-12 algebra book I wish &lt;em&gt;I&lt;/em&gt; had as a kid: a book where all the facts are re-discovered from scratch, with beautiful visual intuition.&lt;/p&gt;
+&lt;p&gt;While outlining this book, I quickly realized: I &lt;em&gt;don&#39;t&lt;/em&gt; know why some basic facts in algebra are true.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For example, I had no idea why brackets don&#39;t matter in multiplication.&lt;/strong&gt; This fact is called &amp;quot;associativity&amp;quot;: &#92;((a &#92;times b) &#92;times c = a &#92;times (b &#92;times c)&#92;).&lt;/p&gt;
+&lt;p&gt;[Yes, it&#39;s an &amp;quot;axiom&amp;quot;, but why does &lt;em&gt;this specific axiom hold for multiplying numbers?!&lt;/em&gt; Associativity &lt;em&gt;isn&#39;t&lt;/em&gt; true for some operators! e.g. Subtraction: &#92;((3 - 2) - 1 &#92;neq 3 - (2 - 1)&#92;).]&lt;/p&gt;
+&lt;p&gt;As far as I know, &lt;em&gt;there does not already exist a published visual proof&lt;/em&gt; for why brackets don&#39;t matter (associativity) when multiplying whole numbers.&lt;/p&gt;
+&lt;p&gt;In contrast, there &lt;em&gt;do&lt;/em&gt; already exist:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A classic visual proof for why &lt;em&gt;order&lt;/em&gt; doesn&#39;t matter (&amp;quot;commutativity&amp;quot;) in multiplying &lt;em&gt;two&lt;/em&gt; numbers:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/brackets-dont-matter/animation.gif&quot; alt=&quot;Visual proof that 3x4 = 4x3. Rotate a grid of 3-by-4 dots. 3 rows of 4 dots is 4 rows of 3 dots!&quot; /&gt;&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;A visual proof for associativity in multiplying &lt;em&gt;three&lt;/em&gt; numbers.&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/brackets-dont-matter/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; (But it requires a 3D visualization, so it&#39;s impossible to visualize multiplying &lt;em&gt;more than three&lt;/em&gt; numbers.)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/brackets-dont-matter/proof3associative.png&quot; alt=&quot;Visual proof that multiplying 3 numbers is associative. Drawing of a 3D lattice of blocks, 2 by 3 by 4 cubes wide.&quot; /&gt;&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;https://proofwiki.org/wiki/General_Associativity_Theorem/Formulation_2/Proof_2&quot;&gt;A formal university-level proof&lt;/a&gt;, for why if associativity holds for multiplying 3 numbers, then it holds for any multiplying [any number of] numbers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;But: there&#39;s no &lt;em&gt;fully visual proof&lt;/em&gt; for the associativity of multiplication for &lt;em&gt;more than three&lt;/em&gt; whole numbers.&lt;/p&gt;
+&lt;p&gt;Until I found one!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;As far as I know&lt;/em&gt;, this visual proof is novel? I &lt;em&gt;was&lt;/em&gt; hoping to save the grand reveal of this proof for my book that I may or may not ever write. But, it&#39;s been sitting in the closet of my mind for two years, so let&#39;s just get it out:&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;The Proof:&lt;/h2&gt;
+&lt;p&gt;First recall, what do brackets mean in math? It means: &amp;quot;do this first&amp;quot;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/math0001.png&quot; alt=&quot;(I&#39;m sorry, I can&#39;t do accessible alt text for the following pictures, because it&#39;s a visual proof. The main text should be good enough for a rough mental image, hopefully.)&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Now, how can we visualize multiplication? Remember &amp;quot;&lt;em&gt;3&lt;/em&gt; times &lt;em&gt;4&lt;/em&gt;&amp;quot; means &amp;quot;&lt;em&gt;3&lt;/em&gt; groups of &lt;em&gt;4&lt;/em&gt;&amp;quot;. Like, 3 boxes of 4 balls each:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/math0002.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Then, &lt;strong&gt;&amp;quot;doing&amp;quot; a multiplication means &lt;em&gt;removing the box containers:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/math0003.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Now, let&#39;s picture 2 x 3 x 4. That&#39;s 2 boxes of 3 boxes of 4 balls each:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/math0004.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Since doing a multiplication means &lt;em&gt;removing a box container&lt;/em&gt;, it should now be clear: it &lt;em&gt;does not matter which order you remove the box containers, you&#39;ll always end up with the same number of balls.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/math0005.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;In other words, it doesn&#39;t matter which multiplications you do first.&lt;/p&gt;
+&lt;p&gt;In other &lt;em&gt;other&lt;/em&gt; words, &lt;em&gt;brackets don&#39;t matter&lt;/em&gt; in multiplication!&lt;/p&gt;
+&lt;p&gt;Best of all, with this visual, we don&#39;t &lt;em&gt;need&lt;/em&gt; the university-level proof: we can instantly see that associativity must be true for multiplying &lt;em&gt;any number of&lt;/em&gt; numbers!&lt;/p&gt;
+&lt;p&gt;Here&#39;s 2 x 3 x 2 x 3 x 2, bracketed in three different ways, all leading to the same result:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/animation.gif&quot; alt=&quot;Animation of &amp;quot;2 x 3 x 2 x 3 x 2&amp;quot; represented as boxes-within-boxes. No matter which way the boxes are removed, the number of balls in the end must stay the same.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Granted, this proof only works for &lt;em&gt;whole&lt;/em&gt; numbers... but still! Kinda shocking a visual proof of such a basic fact &lt;em&gt;did not&lt;/em&gt; exist before!&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;What&#39;s left to do:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Visual proof of &amp;quot;&lt;em&gt;Order&lt;/em&gt; doesn&#39;t matter (commutativity) for &lt;em&gt;more than two&lt;/em&gt; numbers.&amp;quot;&lt;/li&gt;
+&lt;li&gt;Visual proof of &amp;quot;For &lt;em&gt;any&lt;/em&gt; operator, not just whole-number multiplication: if it&#39;s associative for 3 numbers, then it&#39;s associative for 3+ numbers.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But I guess you&#39;ll have to wait until I write that book, to see those. (Or, wait until I get bored and just dump them as standalone articles.)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This blog post is a standalone section, ripped out of my upcoming 90-minute-long[!!!] blog post, Cleaning Out The Idea Closet (47 Projects on My Backlog).&lt;/em&gt;&lt;/p&gt;
+&lt;iframe src=&quot;https://ncase.me/ncase-credits/signup.html&quot; frameborder=&quot;no&quot; width=&quot;640&quot; height=&quot;200&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;https://ncase.me/ncase-credits/supporters/feb2024.html&quot; frameborder=&quot;no&quot; width=&quot;640&quot; height=&quot;640&quot;&gt;&lt;/iframe&gt;
+&lt;hr class=&quot;footnotes-sep&quot; /&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;The earliest published-online example I could find of this proof is fairly recent: &lt;a href=&quot;https://www.youtube.com/watch?v=gvQkZaWbCrc&quot;&gt;Sri Komala (2020) on YouTube&lt;/a&gt; &lt;a href=&quot;https://blog.ncase.me/brackets-dont-matter/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+        </entry>
+
     
 
         
@@ -29,8 +97,7 @@
 &lt;p&gt;This is a tool for writers, to let their readers dive into details. Not shown in the above .gif, are two other &amp;quot;killer features&amp;quot;: 1) you can embed snippets of text &lt;em&gt;from other authors &amp;amp; websites&lt;/em&gt;, even stuff written years ago! And 2) you can embed interactives, YouTube videos, and the intros of Wikipedia articles.&lt;/p&gt;
 &lt;p&gt;If you&#39;re writing a blog, news articles, code documentation, educational material, etc... I hope Nutshell helps you help &lt;em&gt;your&lt;/em&gt; readers.&lt;/p&gt;
 &lt;p&gt;(See you next month... for explainers written &lt;em&gt;with&lt;/em&gt; Nutshell!)&lt;/p&gt;
-&lt;p&gt;P.S: Testing, testing... let&#39;s see if this blog post can &lt;a href=&quot;https://blog.ncase.me/new-project-nutshell/#NewProject&quot;&gt;:embed itself&lt;/a&gt;...&lt;/p&gt;
-</content>
+&lt;!--P.S: Testing, testing... let&#39;s see if this blog post can [:embed itself](./)...--&gt;</content>
         </entry>
 
     
@@ -870,113 +937,6 @@ jumpstarted my whole dang career&lt;/li&gt;
 &lt;p&gt;I hope some of my recommendations are good additions to your 2020 reading/watching/playing list. Happy New Year+Decade, y&#39;all.&lt;/p&gt;
 &lt;p&gt;💖,&lt;br /&gt;
 ~ Nicky&lt;/p&gt;
-</content>
-        </entry>
-
-    
-
-        
-        
-        <entry>
-            <title>Curse of the Chocolate-Covered Broccoli (or: Emotion in Learning)</title>
-            <link href="https://blog.ncase.me/curse-of-the-chocolate-covered-broccoli-or-emotion-in-learning/"/>
-            <updated>2019-12-05T20:09:52Z</updated>
-            <id>https://blog.ncase.me/curse-of-the-chocolate-covered-broccoli-or-emotion-in-learning/</id>
-            <content xml:lang="en" type="html">&lt;p&gt;&lt;em&gt;(reading time: 9 minutes)&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/broc.png&quot; alt=&quot;broc&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;(header image &lt;a href=&quot;https://www.edutopia.org/blog/serious-games-not-chocolate-broccoli-matthew-farber&quot;&gt;from edutopia&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;So earlier this year, I learnt my whole career was based on a lie. As one does.&lt;/p&gt;
-&lt;p&gt;I make games to help folks learn by doing. People learn all kinds of complex mechanics entirely &amp;quot;by doing&amp;quot; in games like Portal, right? And it&#39;s fun! Of &lt;em&gt;course&lt;/em&gt; beginners learn better from pure exploration, rather than being railroaded through step-by-step instructions.&lt;/p&gt;
-&lt;p&gt;Anyway, this idea&#39;s been experimentally tested, &lt;a href=&quot;https://www.tandfonline.com/doi/pdf/10.1207/s15326985ep4102_1?needAccess=true&amp;amp;&quot;&gt;and it&#39;s replicatably &lt;strong&gt;false&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;But here&#39;s where this goes from disappointing to bizarre: &amp;quot;active&amp;quot; learning-by-exploring is ineffective for beginner students, but &lt;em&gt;very effective&lt;/em&gt; for advanced students! And &amp;quot;passive&amp;quot; learn-by-step-by-step-instruction is effective for beginners, but &lt;em&gt;ineffective&lt;/em&gt; for the advanced.&lt;/p&gt;
-&lt;p&gt;This paradox is called &lt;a href=&quot;http://lexiconic.net/pedagogy/2003-Kalyuga_et_al.pdf&quot;&gt;&lt;strong&gt;The Expertise Reversal Effect.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/reversal.png&quot; alt=&quot;reversal&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;(slide from a talk I&#39;ll post online soon!)&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;But maybe I shouldn&#39;t be surprised. Trying to bench-press 200lb would kill a beginner weightlifter, but it&#39;s good for an advanced weightlifter. Like physical load, there&#39;s &lt;strong&gt;cognitive load&lt;/strong&gt;: step-by-step instructions are a &amp;quot;small&amp;quot; load, while pure exploration is a &amp;quot;heavy&amp;quot; load.&lt;/p&gt;
-&lt;p&gt;According to &lt;a href=&quot;https://www.instructionaldesign.institute/uploads/3/1/2/2/31221959/sweller_cognitive_load_theory_1994.pdf&quot;&gt;&lt;strong&gt;Cognitive Load Theory&lt;/strong&gt;&lt;/a&gt;, good education is giving a learner a fitting &amp;quot;load&amp;quot;: one that&#39;s &lt;em&gt;slightly&lt;/em&gt; beyond their comfort zone. (See: &lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Zone_of_proximal_development&quot;&gt;Zone of Proximal Development&lt;/a&gt;&lt;/strong&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Zone_of_proximal_development#Scaffolding&quot;&gt;&lt;strong&gt;scaffolding&lt;/strong&gt;&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/reversal2.png&quot; alt=&quot;reversal2&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;(P.S: Here&#39;s &lt;a href=&quot;https://www.researchgate.net/publication/277452339_Scaffolding_and_Achievement_in_Problem-Based_and_Inquiry_Learning_A_Response_to_Kirschner_Sweller_and_Clark_2006&quot;&gt;a good reply&lt;/a&gt; to the original &amp;quot;minimally-guided learning is bad&amp;quot; paper, but here&#39;s &lt;a href=&quot;https://www.ntnu.no/wiki/download/attachments/8324914/sweller_kirschner_clark_reply_ep07.pdf&quot;&gt;an equally good reply&lt;/a&gt; to &lt;em&gt;that&lt;/em&gt; reply + others)&lt;/p&gt;
-&lt;p&gt;Oh, as for &amp;quot;learning-by-doing&amp;quot; in games like Portal, it turns out the designers add &lt;em&gt;tons&lt;/em&gt; of hand-holding guidance – &lt;a href=&quot;https://www.youtube.com/watch?v=MMggqenxuZc&quot;&gt;they just keep it invisible so you can feel smart&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;. . .&lt;/p&gt;
-&lt;p&gt;So if you&#39;re an educator or someone who &amp;quot;communicates through multimedia&amp;quot; like me, what should we do?&lt;/p&gt;
-&lt;p&gt;Richard Mayer has applied Cognitive Load Theory to create &lt;strong&gt;&lt;a href=&quot;http://www.instructionaldesign.institute/uploads/3/1/2/2/31221959/richard_mayer_article_applying_the_science_of_learning.pdf&quot;&gt;10 empirically-based Principles for Multimedia Learning&lt;/a&gt;&lt;/strong&gt;. These principles include: cut out the irrelevant &amp;quot;fun&amp;quot; fluff, organize things step-by-step, signal the important parts, etc. This doesn&#39;t mean being &lt;em&gt;dry&lt;/em&gt;, just clear and minimalist.&lt;/p&gt;
-&lt;p&gt;But, still...&lt;/p&gt;
-&lt;p&gt;I &lt;em&gt;like&lt;/em&gt; the fun fluff.&lt;/p&gt;
-&lt;p&gt;Leonard Susskind&#39;s &lt;a href=&quot;https://www.indiebound.org/search/book?keys=the+theoretical+minimum+susskind&quot;&gt;The Theoretical Minimum&lt;/a&gt; is a technical introduction to physics by one of the world&#39;s top physicists, yet each chapter is sprinkled with silly dad jokes. Cognitive Load Theory predicts these to be &amp;quot;extraneous load&amp;quot; that would hurt learning, but I think the dad jokes are &lt;em&gt;necessary&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Consider &lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Yerkes%E2%80%93Dodson_law&quot;&gt;Yerkes-Dodson&#39;s Law&lt;/a&gt;&lt;/strong&gt;. For &lt;em&gt;complex&lt;/em&gt; tasks – like learning a new thing – too little or too much stress leads to poor task performance, but there&#39;s a &amp;quot;just right&amp;quot; amount of stress for the best task performance:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/yd.png&quot; alt=&quot;yd&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Back to Susskind&#39;s books: tensor products are pretty stressful, so dad jokes help bring the stress level back down to the optimum. Same technique is used in other technical-but-fun (fun-but-technical?) stuff like 3Blue1Brown, Gödel Escher Bach, Mathematical Games, etc.&lt;/p&gt;
-&lt;p&gt;That&#39;s the big gap in the original version of Cognitive Load Theory: it says nothing about emotion... even though neuroscientists &amp;amp; psychologists have known for &lt;em&gt;decades&lt;/em&gt; that the &amp;quot;cognition-emotion divide&amp;quot; is bull! (See: &lt;a href=&quot;http://acs.ist.psu.edu/misc/dirk-files/Papers/Cognition&amp;amp;Emotion/Cognition%20and%20motivation%20in%20emotion..htm&quot;&gt;Lazarus 1991&lt;/a&gt;, &lt;a href=&quot;https://www.indiebound.org/book/9780380726479&quot;&gt;Descartes&#39; Error&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;So last month, I found 4 helpful papers about &lt;em&gt;emotion&lt;/em&gt; in learning!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Paper #1)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I&#39;m very pleased &lt;strong&gt;&lt;a href=&quot;http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.479.9800&amp;amp;rep=rep1&amp;amp;type=pdf&quot;&gt;Um et al 2012&lt;/a&gt;&lt;/strong&gt; provides empirical support for my approach to teaching: &amp;quot;slap a bunch of silly faces on it&amp;quot;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/um.png&quot; alt=&quot;um&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Obviously, making something more &amp;quot;fun&amp;quot; makes a learner more motivated to keep going. But this study found something stranger: making something more &amp;quot;fun&amp;quot; improved learning outcomes &lt;em&gt;directly, not through motivation alone.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Three possibilities why:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;The Yerkes-Dodson thing I mentioned earlier.&lt;/li&gt;
-&lt;li&gt;Memories stick better when they&#39;re emotional. (including painful memories)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Being in a relaxed mood actually &amp;quot;opens your mind&amp;quot; more.&lt;/strong&gt; (Imagine how close-minded people get when they&#39;re scared!)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;But what about all the other research showing that &lt;a href=&quot;https://www.researchgate.net/profile/Richard_Mayer7/publication/232595492_How_Seductive_Details_Do_Their_Damage_A_Theory_of_Cognitive_Interest_in_Science_Learning/links/57799b8408ae4645d611f204.pdf&quot;&gt;interesting-but-irrelevant &amp;quot;seductive details&amp;quot; &lt;em&gt;damage&lt;/em&gt; learning&lt;/a&gt;? And in the &amp;quot;educational games&amp;quot; practice, it&#39;s frowned upon to create &lt;a href=&quot;http://balcomsblog.blogspot.com/2017/07/the-myth-of-chocolate-covered-broccoli.html&quot;&gt;&lt;strong&gt;&amp;quot;Chocolate-Covered Broccoli&amp;quot;&lt;/strong&gt;&lt;/a&gt;, coz kids can smell the bull from miles away.&lt;/p&gt;
-&lt;p&gt;The difference between the chocolate-covered broccoli and the Um et al paper is that the extra &amp;quot;fun stuff&amp;quot; &lt;em&gt;is actually relevant.&lt;/em&gt; Thus, they don&#39;t misdirect attention – in fact they help focus it! The cute faces are &lt;em&gt;only&lt;/em&gt; on the important biological agents, while the unimportant background &amp;amp; buttons stay relatively boring.&lt;/p&gt;
-&lt;p&gt;(Same with Susskind&#39;s &lt;em&gt;The Theoretical Minimum&lt;/em&gt; – it&#39;s not &lt;em&gt;filled&lt;/em&gt; with jokes, just sprinkled with them. There&#39;s only 1 pun per 10 pages, and each one is relevant to the learning material. More or less.)&lt;/p&gt;
-&lt;p&gt;But still, this technique somehow feels like... cheating? Lymphocytes aren&#39;t that cute in real life. Is there a way to get learners to feel positive emotions about the material &lt;em&gt;without&lt;/em&gt; resorting to cute doodles?&lt;/p&gt;
-&lt;p&gt;Yes! Let&#39;s get curious, about an emotion called &lt;em&gt;curiosity&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Papers #2 and #3)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Monkeys will solve puzzles for food. So far, so behaviourist.&lt;/p&gt;
-&lt;p&gt;But: &lt;a href=&quot;https://psycnet.apa.org/record/1950-06235-001&quot;&gt;Monkeys will solve puzzles &lt;em&gt;even without a food reward&lt;/em&gt;&lt;/a&gt;. In fact, &lt;em&gt;introducing&lt;/em&gt; food as a reward made the monkeys learn &lt;em&gt;worse&lt;/em&gt;. Understanding the unknown is already a biologically fundamental reward in itself.&lt;/p&gt;
-&lt;p&gt;Same for &lt;em&gt;us&lt;/em&gt; monkeys. Contrary to the &amp;quot;logical thinking means being dispassionate&amp;quot; myth, the world&#39;s top mathematicians and scientists are driven by a specific emotion: curiosity. (Also desperation over grant funding)&lt;/p&gt;
-&lt;p&gt;But what, then, &lt;em&gt;causes&lt;/em&gt; curiosity?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.jstor.org/stable/pdf/40575128.pdf?casa_token=lWWYM7l5bmYAAAAA:t2y7fKOePeyQpk1w1tPDuN1RR-2qYM9v4wNRayPUONo_Ae30W4qqszGkPwp98jffMzr6WCG0auH--JQtwfNBFsD3XWhXNRKVO-cUv9qz5TSdDfGrNA&quot;&gt;Kang et al 2009&lt;/a&gt;&lt;/strong&gt; was a neuroscience study that found three things:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;being more curious led to more activation in reward &amp;amp; memory neural circuits,&lt;/li&gt;
-&lt;li&gt;being more curious led to better recall, and&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;we&#39;re most curious when we have a &lt;em&gt;medium&lt;/em&gt;-level of confidence in our answer.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/kang.png&quot; alt=&quot;kang&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Like the Yerkes-Dodson curve, it&#39;s another upside-down U shape. When the answer&#39;s obvious, well duh we&#39;re not curious – it&#39;s &amp;quot;too comprehensible&amp;quot;. But when we have &lt;em&gt;no idea&lt;/em&gt; what the answer even &lt;em&gt;could&lt;/em&gt; be, we also don&#39;t care – it&#39;s &amp;quot;too complex&amp;quot;.&lt;/p&gt;
-&lt;p&gt;But in-between, when you balance complexity &lt;em&gt;and&lt;/em&gt; comprehensibility, then monkeys get curious!&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Cognitive Load Theory &lt;em&gt;can&#39;t&lt;/em&gt; predict a such thing as &amp;quot;too comprehensible&amp;quot;! This leads to different implications for science communication: instead of giving the information in a logical order bridging all the gaps (&amp;quot;blah blah blah here&#39;s the formula for orbits&amp;quot;), you should first reveal a &lt;em&gt;medium-sized&lt;/em&gt; gap in the learner&#39;s knowledge (&amp;quot;if gravity keeps the moon near us, why &lt;em&gt;doesn&#39;t&lt;/em&gt; the moon fall down?&amp;quot;), to stimulate the learner&#39;s curiosity! &lt;strong&gt;Show the gap, &lt;em&gt;then&lt;/em&gt; build the bridge.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.590.3074&amp;amp;rep=rep1&amp;amp;type=pdf&quot;&gt;Silvia 2008&lt;/a&gt;&lt;/strong&gt; reports the same thing. I just want to include this 🌶 &lt;em&gt;spicy&lt;/em&gt; 🌶 paragraph of his:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;College textbooks are an intriguing example. The typical textbook wants to engage students’ interest, so it sprinkles each chapter with irrelevant quotes, cartoons, contrived stock photos, and random stories from the authors’ distant childhoods. But diverting attention from the text’s main points isn’t the same thing as making the text’s main points interesting.&lt;br /&gt;
-[...]&lt;br /&gt;
-If interest comes from seeing something as new and comprehensible, then people who want to evoke interest should try to &lt;strong&gt;enhance both complexity and comprehension&lt;/strong&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;That is: don&#39;t coat the broccoli in chocolate.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Paper #4)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;When I started writing this post, I intended to include just the 3 papers above. But as I hunted down my citations, I found this extra gem.&lt;/p&gt;
-&lt;p&gt;You remember above, when I said:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;That&#39;s the big gap in the original version of Cognitive Load Theory: it says nothing about emotion&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Turns out people &lt;em&gt;have&lt;/em&gt; recently added emotion and motivation to Cognitive Load Theory. &lt;strong&gt;&lt;a href=&quot;https://www.csuchico.edu/~nschwartz/Moreno%20CLT%20Response%20to%20de%20Jong.pdf&quot;&gt;Moreno 2010&lt;/a&gt;&lt;/strong&gt; recaps the problems with the old theory, and summarizes a new theory: &lt;strong&gt;Cognitive-Affective Theory of Learning.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;It proposes a loop: (Bad drawing by me)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2019/12/loop.png&quot; alt=&quot;loop&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;You&#39;ll learn poorly if you&#39;re not motivated, and you&#39;ll be demotivated if you&#39;re learning poorly. But, from vicious to virtuous cycle: you&#39;ll learn well if you&#39;re motivated, and you&#39;ll be more motivated if you&#39;re learning well!&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;So, if you make &amp;quot;multimedia learning&amp;quot;, the trick is to boost &lt;em&gt;both&lt;/em&gt; sides of the loop:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;(💥💥💥 THIS IS THE SUMMARY SECTION 💥💥💥)&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Improve Cognition with:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Cognitive Load Theory – remove distractions, organize info, signal what&#39;s important, etc&lt;/li&gt;
-&lt;li&gt;Zone of Proximal Development – keep the cognitive load difficulty &lt;em&gt;just&lt;/em&gt; above the learner&#39;s comfort zone.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Improve Motivation with:&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Relevant fun – add &amp;quot;fun&amp;quot; stuff &lt;em&gt;only&lt;/em&gt; if it highlights the important parts.&lt;/li&gt;
-&lt;li&gt;Curiosity first – show a (medium-sized) gap, &lt;em&gt;then&lt;/em&gt; build the bridge.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;(💥💥💥 / END SUMMARY SECTION 💥💥💥)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I&#39;ve made lots of chocolate-coated broccoli before. A science piece with irrelevant stories, a math explainer with strained pop-culture references, a simulation with unnecessary &amp;quot;ooh solve the puzzle!&amp;quot; game-y bits.&lt;/p&gt;
-&lt;p&gt;The original Cognitive Load Theory taught me to strip the chocolate off my broccoli. But finding out that emotion &lt;em&gt;directly&lt;/em&gt; improves learning? That taught me I need to season &amp;amp; roast those veggies, to bring out the natural tastiness that&#39;s &lt;em&gt;already&lt;/em&gt; in the broccoli. As the monkeys showed us, there&#39;s a natural motivation &lt;em&gt;already&lt;/em&gt; in understanding the unknown.&lt;/p&gt;
-&lt;p&gt;There&#39;s the junk food of bad edu-tainment, and the Nutra-Loaf of dry academic papers. The trick to sticking to a healthy diet is to cook stuff that&#39;s both delicious &lt;em&gt;and&lt;/em&gt; nutritious.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;(this essay was originally posted &lt;a href=&quot;https://www.patreon.com/ncase&quot;&gt;on my Patreon&lt;/a&gt;, as part of my patron-exclusive “What&#39;s Nicky Learning?” monthly series, where I share what I learn as I learn it!)&lt;/em&gt;&lt;/p&gt;
 </content>
         </entry>
 

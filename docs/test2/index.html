@@ -9,6 +9,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
     <!-- RSS (Well, Atom) -->
     <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
 
@@ -45,7 +50,6 @@
     
     <script>window.postDate = new Date("Sun Jul 05 2020 20:00:00 GMT-0400 (Eastern Daylight Time)");</script>
     
-        <base target="_blank">
         <script>window.IS_DRAFT=true;</script>
     
 
@@ -155,7 +159,7 @@
             Alternatively, here's:
         </p>
         <ul>
-            <li>my <a target='_blank' href='/rss'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
             <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
             <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
             <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
@@ -221,11 +225,11 @@
     			tags:
                 
                     
-                        <a class='black-link' href="/tag/draft">draft</a>,
+                        <a class='black-link' target='_self' href="/tag/draft">draft</a>,
                     
                 
                     
-                        <a class='black-link' href="/tag/testing">testing</a>
+                        <a class='black-link' target='_self' href="/tag/testing">testing</a>
                     
                 
     			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
@@ -241,7 +245,7 @@
 
     <!-- Home button -->
     
-    <a href="/">
+    <a target='_self' href="/">
         <div id="home_button">
             <div id="home_icon"></div>
             <div id="home_label">home</div>
@@ -324,7 +328,7 @@ What's confusing, interesting, what you like or dislike? Critical honest feedbac
             💖 follow me via
             <a href='https://ncase.me/sub/'>newsletter</a>
             or
-            <a href='/rss'>rss</a>
+            <a href='/feed.xml'>rss</a>
             (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
 		</p>
         <p>

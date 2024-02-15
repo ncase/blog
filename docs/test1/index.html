@@ -9,6 +9,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
     <!-- RSS (Well, Atom) -->
     <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
 
@@ -122,11 +127,11 @@
             </p>
             <ul style="padding-left: 1em;">
                
-                  <li><a href="url url url en">English</a></li>
+                  <li><a target='_self' href="url url url en">English</a></li>
                
-                  <li><a href="url url url es">Esparanto</a></li>
+                  <li><a target='_self' href="url url url es">Esparanto</a></li>
                
-                  <li><a href="url url url de">Deutsch</a></li>
+                  <li><a target='_self' href="url url url de">Deutsch</a></li>
                
             </ul>
         
@@ -168,7 +173,7 @@
             Alternatively, here's:
         </p>
         <ul>
-            <li>my <a target='_blank' href='/rss'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
             <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
             <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
             <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
@@ -234,11 +239,11 @@
     			tags:
                 
                     
-                        <a class='black-link' href="/tag/testing">testing</a>,
+                        <a class='black-link' target='_self' href="/tag/testing">testing</a>,
                     
                 
                     
-                        <a class='black-link' href="/tag/foobar">foobar</a>
+                        <a class='black-link' target='_self' href="/tag/foobar">foobar</a>
                     
                 
     			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
@@ -254,7 +259,7 @@
 
     <!-- Home button -->
     
-    <a href="/">
+    <a target='_self' href="/">
         <div id="home_button">
             <div id="home_icon"></div>
             <div id="home_label">home</div>
@@ -421,7 +426,7 @@
             💖 follow me via
             <a href='https://ncase.me/sub/'>newsletter</a>
             or
-            <a href='/rss'>rss</a>
+            <a href='/feed.xml'>rss</a>
             (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
 		</p>
         <p>

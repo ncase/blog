@@ -9,6 +9,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- On POSTS, links are external by default -->
+    {% if not notAPost %}
+        <base target="_blank">
+    {% endif %}
+
     <!-- RSS (Well, Atom) -->
     <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
 
@@ -48,7 +53,6 @@
     {% if notAPost %}<script>window.NOT_A_POST=true;</script>{% endif %}
     {% if date %}<script>window.postDate = new Date("{{date}}");</script>{% endif %}
     {% if isDraft %}
-        <base target="_blank">
         <script>window.IS_DRAFT=true;</script>
     {% endif %}
 
@@ -133,7 +137,7 @@
             </p>
             <ul style="padding-left: 1em;">
                {% for name, translation in translations %}
-                  <li><a href="{{ translation[1] }}">{{ translation[0] }}</a></li>
+                  <li><a target='_self' href="{{ translation[1] }}">{{ translation[0] }}</a></li>
                {% endfor %}
             </ul>
         {% endif %}
@@ -175,7 +179,7 @@
             Alternatively, here's:
         </p>
         <ul>
-            <li>my <a target='_blank' href='/rss'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
             <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
             <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
             <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
@@ -255,7 +259,7 @@
     			tags:
                 {% for tag in tags %}
                     {% if tag != 'post' %}
-                        <a class='black-link' href="/tag/{{ tag }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
+                        <a class='black-link' target='_self' href="/tag/{{ tag }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
                     {% endif %}
                 {% endfor %}
     			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
@@ -271,7 +275,7 @@
 
     <!-- Home button -->
     {% if not isFrontpage %}
-    <a href="/">
+    <a target='_self' href="/">
         <div id="home_button">
             <div id="home_icon"></div>
             <div id="home_label">home</div>
@@ -370,7 +374,7 @@ What's confusing, interesting, what you like or dislike? Critical honest feedbac
             💖 follow me via
             <a href='https://ncase.me/sub/'>newsletter</a>
             or
-            <a href='/rss'>rss</a>
+            <a href='/feed.xml'>rss</a>
             (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
 		</p>
         <p>
