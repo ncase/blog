@@ -392,9 +392,6 @@ body[sidebar_state=open] #sidebar_tabs{
 #sidebar a:hover{
     opacity:0.5;
 }
-#sidebar #panel_toc p{
-    margin: 1em 0;
-}
 
 #sidebar_tabs{
     position: fixed;
@@ -445,6 +442,24 @@ body[sidebar_state=open] #sidebar_tabs{
 #tab_share > div{ background-image: url(assets/icons/share.png); }
 #tab_sub > div{ background-image: url(assets/icons/subscribe.png); }
 #tab_support > div{ background-image: url(assets/icons/support.png); }
+
+#sidebar > #panel_toc{
+    width: 180px;
+    margin-right: 0px;
+    height: 100%;
+    margin-top: 0px;
+    overflow-y: scroll;
+}
+ul#toc_list{
+    font-size: 0.9em;
+    padding-left: 0;
+    list-style-type: none;
+    padding-right: 10px;
+    padding-right: 1em;
+}
+ul#toc_list li{
+    margin-bottom:0.33em;
+}
 
 body[dark_mode=yes] #sidebar{
     background: #333;

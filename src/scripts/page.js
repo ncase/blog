@@ -70,6 +70,24 @@ window.addEventListener("load", ()=>{
         }
     },10);
 
+    // HACK: Catching scrolls on Table of Contents only
+    let panel_toc = $("#panel_toc");
+    panel_toc.addEventListener("scroll",(e)=>{
+        console.log('aaaa');
+        e.stopPropagation();
+    },true);
+    window.addEventListener("scroll",(e)=>{
+        console.log('bbbb');
+    });
+    // sidebar overflow hide
+    // thx https://gist.github.com/kevsimpson/7309923
+    panel_toc.onmouseover = ()=>{
+        document.body.style.overflow = 'hidden';
+    };
+    panel_toc.onmouseout = ()=>{
+        document.body.style.overflow = '';
+    };
+
     // SIDEBAR: TABLE OF CONTENTS
     // Populate it!
     let allHeadings = $all("h1, h2, h3, h4, h5, h6");
@@ -87,12 +105,22 @@ window.addEventListener("load", ()=>{
             allHeadings.unshift(fakeH1);
 
             // For the rest, though...
+            tocHTML = '<ul id="toc_list">';
             allHeadings.forEach( (heading)=>{
 
                 // Table of Contents link
                 let headingText = heading.innerText,
                     headingForURI = headingText.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
-                tocHTML += `<p><a target='_self' class='black-link' href="#${headingForURI}">${headingText}</a></p>`;
+                // What heading hierarchy? that's the indentation! (1em for each past h2)
+                let hierarchy = parseInt(heading.tagName[1]);
+                if(hierarchy>2){
+                    let indent = (hierarchy-2);
+                    tocHTML += `<li style="padding-left:${indent}em">`;
+                }else{
+                    tocHTML += '<li>';
+                }
+                tocHTML += `<a target='_self' class='black-link' href="#${headingForURI}">${headingText}</a>`;
+                tocHTML += '</li>';
 
                 // Anchor in article
                 let anchor = document.createElement('a');
@@ -101,15 +129,16 @@ window.addEventListener("load", ()=>{
                 heading.parentNode.insertBefore(anchor, heading);
 
             });
+            tocHTML += '</ul>';
 
             $('#panel_toc').innerHTML = tocHTML;
 
             // HACK: If ToC is too large... just shrink font until it works
-            let tocFont = 16;
+            /*let tocFont = 16;
             do{
                 $('#panel_toc').style.fontSize = tocFont+'px';
                 tocFont--;
-            }while( tocFont>1 && parseInt(window.getComputedStyle($("#panel_toc")).height)+20 > document.body.clientHeight);
+            }while( tocFont>1 && parseInt(window.getComputedStyle($("#panel_toc")).height)+20 > document.body.clientHeight);*/
 
         }
     }
