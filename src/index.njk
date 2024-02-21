@@ -12,10 +12,15 @@ share_desc: "I learn stuff, then share what I learn"
     <b>
         Hi, I'm <a href="https://ncase.me/">Nicky Case!</a>
     </b>
-    If you're new here,
-    I recommend checking out the below articles.
-    These five posts are 1) most representative of what I want to write,
-    and 2) don't make me cringe in hindsight:
+    Here are my latest three posts: <a href='/archive'>(see full archive)</a>
+</p>
+
+{% for post in collections.post | latestThreePosts %}
+    {% include "article.njk" %}
+{% endfor %}
+
+<p>
+And here's five of my favorite things I've written so far:
 </p>
 
 {% for post in frontpagePosts %}
@@ -40,33 +45,22 @@ share_desc: "I learn stuff, then share what I learn"
     </a>
 {% endfor %}
 
+<!--
 <hr/>
 
 <p>
-But if you're <i>not</i> new here, well then!
-<br>
-<b>Here's my latest post: <a href='/archive'>(see full archive)</a></b>
-</p>
-
-{% for post in collections.post | latestOnePost %}
-    {% include "article.njk" %}
-{% endfor %}
-
-<p>
     <b>Featured tags:</b>
-    <!--<a href='/tag/Featured'>Featured</a>,-->
+    <!-<a href='/tag/Featured'>Featured</a>,->
     <a href='/tag/ART'>ART</a>,
     <a href='/tag/How To'>How To</a>,
     <a href='/tag/Nicky Reads'>Nicky Reads</a>,
     <a href='/tag/Short Stories'>Short Stories</a>,
     <a href='/tag/New Project'>New Project</a>,
     <a href='/tag/This Time It Is Personal'>This Time It Is Personal</a>
-</p>
+</p>-->
+
 <p>
     Thanks for reading! 💖
 </p>
 
-<!--
-<hr/>
-[newsletter iframe]
--->
+<iframe src="https://ncase.me/ncase-credits/signup.html" frameborder="no" width=640 height=200></iframe>

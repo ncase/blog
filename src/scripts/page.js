@@ -108,6 +108,9 @@ window.addEventListener("load", ()=>{
             tocHTML = '<ul id="toc_list">';
             allHeadings.forEach( (heading)=>{
 
+                // IF IT'S A COLLAPSED NUTSHELL, SKIP.
+                if(heading.innerText.trim()[0]==":") return;
+
                 // Table of Contents link
                 let headingText = heading.innerText,
                     headingForURI = headingText.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
@@ -303,7 +306,7 @@ window.addEventListener("load", ()=>{
         }
 
         // All CONTENT links that go to "#" are self!
-        $all('#content > p > a').filter(a=>{
+        $all('#content a').filter(a=>{
             let href = a.getAttribute('href');
             if(!href) return;
             return href[0]=="#"

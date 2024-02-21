@@ -5,9 +5,13 @@
     <!-- Title -->
     <title>Clearing out the idea closet (47 projects on my backlog)</title>
 
-    <!-- UTF-8-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=460">
 
     <!-- On POSTS, links are external by default -->
     
@@ -23,18 +27,18 @@
     <!-- Social Share Nonsense -->
     
 	<meta itemprop="name" content="Clearing out the idea closet (47 projects on my backlog)">
-	<meta itemprop="description" content="47 things I didn&#39;t ship. (~2 min read per 47 things = 1h 25m read total)">
+	<meta itemprop="description" content="47 things I didn&#39;t ship.">
 	<meta itemprop="image" content="https://blog.ncase.me/content/media/backlog/banner.png">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@ncasenmare">
 	<meta name="twitter:title" content="Clearing out the idea closet (47 projects on my backlog)">
-	<meta name="twitter:description" content="47 things I didn&#39;t ship. (~2 min read per 47 things = 1h 25m read total)">
+	<meta name="twitter:description" content="47 things I didn&#39;t ship.">
 	<meta name="twitter:creator" content="@ncasenmare">
 	<meta name="twitter:image" content="https://blog.ncase.me/content/media/backlog/banner.png">
 	<meta property="og:title" content="Clearing out the idea closet (47 projects on my backlog)">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="https://blog.ncase.me/content/media/backlog/banner.png">
-	<meta property="og:description" content="47 things I didn&#39;t ship. (~2 min read per 47 things = 1h 25m read total)">
+	<meta property="og:description" content="47 things I didn&#39;t ship.">
 
 	<!-- STYLES -->
 	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
@@ -48,9 +52,7 @@
 	<script src="/scripts/page.js"></script>
     
     
-    <script>window.postDate = new Date("Fri Apr 05 2024 20:00:00 GMT-0400 (Eastern Daylight Time)");</script>
-    
-        <script>window.IS_DRAFT=true;</script>
+    <script>window.postDate = new Date("Sat Apr 20 2024 20:00:00 GMT-0400 (Eastern Daylight Time)");</script>
     
 
     <!-- Littlefoot: for my feetnotes -->
@@ -64,6 +66,9 @@
     
 
     <!-- MathJAX: for nice math -->
+    
+    <script src="/scripts/tex-mml-chtml.js"></script>
+    <!--script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script-->
     
 
     <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
@@ -277,27 +282,15 @@
 
         <!-- Is Draft, Is Deprecated, Is Old -->
         
-            <div id="warning_message" style="padding: 1em 1em;">
-                <b>NOTE: THIS IS A DRAFT!</b>
-                Please do not share this publicly yet.
-                There's a floating textbox on the &larr;<i>left</i>, for you
-                to record your notes, as you read along and/or
-                when you're done.
-                (well, unless you're on mobile, then it's not there. record notes somehow else)
-                <br><br>
-                Then, copy-paste your notes, and share them with
-                me via whatever platform I sent you this link!
-                Thank you so muuuuuuuuch! 🎉
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
             </div>
-<textarea id="draft_feedback">
-Please type your notes below! Make notes *as you go along*, that's most helpful for me.
-
-What's confusing, interesting, what you like or dislike? Critical honest feedback at an early stage helps me a lot! Thanks!
-
-...
-</textarea>
         
-		<p>Wow, I haven't shipped anything in a year and a half, huh? Not even a blog post?</p>
+		<p><img src="/content/media/backlog/banner.png" alt="Nicky-Catgirl sweeping lightbulbs off the floor"></p>
+<p>Wow, I haven't shipped anything in a year and a half, huh? Not even a blog post?</p>
 <p>Sure, I've generated lots of <em>ideas</em>, at different stages of development, but in the end, all that matters is what's out there. So this month, I'm shipping <em>this</em> blog post about all the projects I haven't shipped (yet).</p>
 <p>Motivations for this post:</p>
 <ol>
@@ -320,7 +313,10 @@ What's confusing, interesting, what you like or dislike? Critical honest feedbac
 <p>So, without further self-deprecation, here's 47 Things I Have Not Shipped But Might Eventually, Maybe:</p>
 <hr>
 <h2>Table of Contents</h2>
-<p>Categorized by interest/topic, but otherwise aren't in any order. Click ↪ to skip to one, if it tickles your fancy:</p>
+<p>Categorized by interest/topic, but can be read (or skipped) in any order!</p>
+<p>If you're on a desktop browser, you can click this icon on the right to access the Table of Contents at any time: →</p>
+<p><img src="/content/media/backlog/17084644320266.jpg" alt="Icon of &quot;table of contents&quot; in the sidebar. Though I guess if you're hearing this alt-text through a screen reader, that'll be of jack diddly use to you."></p>
+<p>Click ↪ to skip to that project, if it tickles your fancy:</p>
 <p>🤔 <strong><a href="#category_research">Research Projects</a></strong></p>
 <ol>
 <li>Why all the trans furry programmers? <a href="#project_1">↪</a></li>
@@ -412,10 +408,8 @@ What's confusing, interesting, what you like or dislike? Critical honest feedbac
 <h3>1. 😽 Why all the trans furry programmers?</h3>
 <p>Let's start with a goofy research project idea!</p>
 <p>Context: I'm a trans woman, a member of the furry fandom, and a programmer. There is a very, <em>very</em> widely-recognized correlation amongst &quot;My People&quot;:</p>
-<p><img src="/content/media/backlog/17064898642946.jpg" alt="A Venn diagram of &quot;Programmers&quot;, &quot;Trans girls&quot;, and &quot;Furries&quot;, with the center labelled: &quot;A suspiciously large overlap&quot;."></p>
-<figcaption>(from [this popular reddit post](https://www.reddit.com/r/traaaaaaannnnnnnnnns/comments/plxqv1/im_not_the_only_one_whos_noticed_this_right/))</figcaption>
-<p><img src="/content/media/backlog/17064905516761.jpg" alt="Comic. Panel 1: &quot;A group of cats is called a clowder&quot;. Panel 2: &quot;A group of catgirls is called a (crossed out) polycule, (scrawled over) dev team.&quot;"></p>
-<figcaption>(viral comic, artist unknown? reverse image search did not help.[^no-help])</figcaption>
+<p><img src="/content/media/backlog/17064898642946.jpg" alt="A Venn diagram of &quot;Programmers&quot;, &quot;Trans girls&quot;, and &quot;Furries&quot;, with the center labelled: &quot;A suspiciously large overlap&quot;."><em>(from <a href="https://www.reddit.com/r/traaaaaaannnnnnnnnns/comments/plxqv1/im_not_the_only_one_whos_noticed_this_right/">this popular reddit post</a>)</em></p>
+<p><img src="/content/media/backlog/17064905516761.jpg" alt="Comic. Panel 1: &quot;A group of cats is called a clowder&quot;. Panel 2: &quot;A group of catgirls is called a (crossed out) polycule, (scrawled over) dev team.&quot;"><em>(viral comic, artist unknown? reverse image search did not help.<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>)</em></p>
 <p>But <em>does</em> anecdote match data? If this correlation is real, what causes it? And roughly how many trans furry programmers <em>are</em> there in America?</p>
 <p><strong>Progress:</strong> 60% ▶️▶️▶️◻️◻️</p>
 <ul>
@@ -439,7 +433,7 @@ What's confusing, interesting, what you like or dislike? Critical honest feedbac
 <p><a id="project_2"></a></p>
 <h3>2. ↔️ Backwards Logic: logic gates that go forwards &amp; backwards &amp; sideways</h3>
 <p><em>(I'm sorry the following is very jargon-heavy. But, just clearing out my idea closet....)</em></p>
-<p>During an isolating 2020 Canadian-winter pandemic lockdown, I went Full Crackpot. I spent four months <em>obsessed</em> with (what I thought to be) a promising way to crack the million-dollar P = NP problem.<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<p>During an isolating 2020 Canadian-winter pandemic lockdown, I went Full Crackpot. I spent four months <em>obsessed</em> with (what I thought to be) a promising way to crack the million-dollar P = NP problem.<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></p>
 <p>The inspiration: <em>A see-saw is a NOT logic gate.</em> Left side down, right side <em>up</em>. Left side up, right side <em>down</em>.</p>
 <p><img src="/content/media/backlog/seesaw_1.png" alt="Drawing of a see-saw. When left side is pushed down, right side goes up."></p>
 <p>The important bit: <em>you can do this in reverse.</em> Move the <em>right</em> side up, and the <em>left</em> side goes down.</p>
@@ -456,12 +450,12 @@ What's confusing, interesting, what you like or dislike? Critical honest feedbac
 <p>(A nuance about bi-directional OR gates; if you set the <em>output</em> to 1, it &quot;wouldn't know&quot; whether the inputs should be (0,0), (0,1), or (1,0). But it <em>can</em> know it's not (1,1). The hope was that a mechanical circuit [or simulation of it] would constraint-solve that correctly anyway. Same nuance with AND gates.)</p>
 <p>Here's a simulation of a fuzzy+reversible Exclusive OR (XOR) circuit. When I pull the output to 1, it constraint-solves the inputs to be 0 &amp; 1, in either order. When I pull the output to 0, it constraint-solves the inputs to be <em>both</em> 0 or <em>both</em> 1.</p>
 <p><img src="/content/media/backlog/XOR.gif" alt="GIF of a simulation of a &quot;fuzzy, reversible circuit&quot;"></p>
-<p>(After independently discovering this idea, I checked to see if it was done before. Of course it was, there's &quot;nothing new under the sun&quot;. But, as far as I could find, there was only <em>one</em> paper in 2002 that did something similar, with water-based logic gates.<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> Conceptual, no experiments/simulations done. I couldn't find any &quot;disowning&quot; or &quot;debunking&quot; of their idea, so I guess I just had to <em>try</em> it and see if/how it failed.)</p>
+<p>(After independently discovering this idea, I checked to see if it was done before. Of course it was, there's &quot;nothing new under the sun&quot;. But, as far as I could find, there was only <em>one</em> paper in 2002 that did something similar, with water-based logic gates.<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup> Conceptual, no experiments/simulations done. I couldn't find any &quot;disowning&quot; or &quot;debunking&quot; of their idea, so I guess I just had to <em>try</em> it and see if/how it failed.)</p>
 <p>My simulation was messing up for larger cases, and building it for real would take forever. So eventually, all the above led to the following &quot;simpler&quot; algorithm:</p>
 <ul>
 <li>Take a Circuit-SAT problem.</li>
-<li>Replace each logic gate with its fuzzy-logic equivalent: <sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup> <code>NOT(x) = 1-x; \space \space AND(x,y)=min(x,y); \space \space OR(x,y)=max(x,y)</code></li>
-<li>This gives you a function <code>[0,1]^n \rightarrow [0,1]</code> that you can interpret as the &quot;energy landscape&quot; of this mechanical circuit, if <code>output = 1</code> is &quot;down&quot;. For example:</li>
+<li>Replace each logic gate with its fuzzy-logic equivalent: <sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup> \(NOT(x) = 1-x; \space \space AND(x,y)=min(x,y); \space \space OR(x,y)=max(x,y)\)</li>
+<li>This gives you a function \([0,1]^n \rightarrow [0,1]\) that you can interpret as the &quot;energy landscape&quot; of this mechanical circuit, if \(output = 1\) is &quot;down&quot;. For example:</li>
 </ul>
 <p><img src="/content/media/backlog/logic_landscape.png" alt="A graph of a logic statement, converted to a fuzzy logic equation."></p>
 <ul>
@@ -479,7 +473,7 @@ What's confusing, interesting, what you like or dislike? Critical honest feedbac
 <p><a id="project_3"></a></p>
 <h3>3. 🐙 The Quantum Octopus</h3>
 <p>Okay, let's go a <em>bit</em> more crack-potty: maybe the above problem could be solved with quantum physics?</p>
-<p>Above, I transformed the NP-Complete Circuit-SAT problem into a gradient descent problem, where all local minima <em>are</em> global minima, and there's only one saddlepoint. Unfortunately, that saddlepoint was very pathological. Apparently, this kind of saddlepoint is called an &quot;octopus saddle&quot;<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>.</p>
+<p>Above, I transformed the NP-Complete Circuit-SAT problem into a gradient descent problem, where all local minima <em>are</em> global minima, and there's only one saddlepoint. Unfortunately, that saddlepoint was very pathological. Apparently, this kind of saddlepoint is called an &quot;octopus saddle&quot;<sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup>.</p>
 <p><img src="/content/media/backlog/octopus_1.png" alt="Drawing of an &quot;octopus saddle&quot; (looks like a wavy cloth skirt)"></p>
 <p>(Though, since it's in high n-dimensions, maybe it's a <em>Cthulhu</em> saddle?)</p>
 <p>Good ol' stochastic gradient descent, even with momentum, can't solve it efficiently since it just brute-forces each &quot;arm&quot; of the octopus:</p>
@@ -487,13 +481,15 @@ What's confusing, interesting, what you like or dislike? Critical honest feedbac
 <p>So I wondered: could a quantum wavefunction, because its position is &quot;fuzzy&quot;, and thus &quot;feels out&quot; all the arms... and thus pulled by all nearby slopes... could <em>that</em> efficiently find its way down an octopus saddle?</p>
 <p><img src="/content/media/backlog/octopus_3.png" alt="Octopus saddle with a fuzzy blob in the center (representing a quantum wavefunction) correctly finding the correct arm."></p>
 <p>(<em>NOTE: I know quantum computers DO NOT solve problems by just &quot;trying all the solutions&quot;, since when you measure it you can't choose which &quot;branch&quot; of the wavefunction it &quot;collapses&quot; into. This idea is different: I wanna see if I can coax ALL of a wavefunction down the correct arm, not just one branch.</em>)</p>
-<p>(Note 2: This <em>is</em> <a href="https://en.wikipedia.org/wiki/Quantum_annealing">quantum annealing</a>, but <em>the</em> hard problem in quantum annealing is getting stuck in local minima, especially when the gap between local/global minima is small. In the above problem, all local minima <em>are</em> global minima, and are valid solutions! So, if you're a researcher in quantum annealing... <a href="https://ncase.me/faq/contact.jpg">email me?</a>)</p>
+<p>(Note 2: There are two main kinds of quantum computing. The more famous one is &quot;quantum circuits&quot;; this is the one with the infamous Shor's Algorithm that can break RSA encryption. The other one is &quot;quantum annealing&quot;; this is what D-Wave does. My project idea written above is closer to quantum annealing, though I think it's technically slightly different.)</p>
+<p>(Note 3: <em>The</em> hard problem in quantum annealing is getting stuck in local minima, especially when the gap between local/global minima gets exponentially small. In the above problem, all local minima <em>are</em> global minima, and are valid solutions! And, if one follows my Circuit-SAT-to-landscape conversion, the gap between the saddlepoint and the global minimum stays <em>constant</em>. So, if you're a researcher in quantum annealing/adiabatic computation... <a href="https://ncase.me/faq/contact.jpg">email me?</a>)</p>
+<p>For more info on quantum annealing, <a href="#AdiabaticQuantumComputation">:click this expandable section</a></p>
 <p><strong>Progress: 0%</strong> ◻️◻️◻️◻️◻️</p>
 <p>Right now it's just the above idea, but there's &quot;not much&quot; to do:</p>
 <ol>
 <li>Learn WebGPU, to make physics simulations</li>
 <li>&quot;Just&quot; simulate the Schrödinger wavefunction on an octopus-saddle-shaped potential well</li>
-<li>See how many sim-timesteps it takes for most of the wavefunction to go down the correct &quot;arm&quot;, as the number of arms increases. If it increases linearly, bummer. But if it's <em>constant or logarithmic</em>, we're cooking with <em>gas!</em> Not as sexy as P = NP, but BQP = NP<sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup> ain't bad either!</li>
+<li>See how many sim-timesteps it takes for most of the wavefunction to go down the correct &quot;arm&quot;, as the number of arms increases. If it increases linearly, bummer. But if it's <em>constant or logarithmic</em>, we're cooking with <em>gas!</em> Not as sexy as P = NP, but BQP = NP<sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup> ain't bad either!</li>
 </ol>
 <p><strong>Time on backburner:</strong> 3 years</p>
 <p><strong>Time to finish:</strong> 4 weeks</p>
@@ -504,28 +500,28 @@ What's confusing, interesting, what you like or dislike? Critical honest feedbac
 <h3>4. 👏 Beating Goodhart's Law with CLAP: composite limited-award proxies</h3>
 <p>The writer who pumps out clickbait to make views go up. The student who uses ChatGPT to make grades go up. The politician who makes false promises, then blames their opponents for they fail, to make votes go up.</p>
 <p><em>What gets measured gets gamed.</em> This is (roughly paraphrased) Goodhart's Law.</p>
-<p>For the longest time, this law was &quot;just&quot; phrased in words &amp; not formalized. But a few years ago, an acquaintance of mine, Yohan John, showed me his paper where he analyzes Goodhart's Law with causal modeling!<sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup> (Manheim &amp; Garrabrant also did it in another paper<sup class="footnote-ref"><a href="#fn7" id="fnref7">[7]</a></sup>, but as far as I know these were independently discovered.)</p>
-<p>Here's the clickbait problem, as a causal diagram ↪ (Read: &quot;quality&quot; and &quot;clickbait&quot; both affect &quot;views&quot;, but clickbait has twice the effect.)</p>
+<p>For the longest time, this law was &quot;just&quot; phrased in words &amp; not formalized. But a few years ago, an acquaintance of mine, Yohan John, showed me his paper where he analyzes Goodhart's Law with causal modeling!<sup class="footnote-ref"><a href="#fn7" id="fnref7">[7]</a></sup> (Manheim &amp; Garrabrant also did it in another paper<sup class="footnote-ref"><a href="#fn8" id="fnref8">[8]</a></sup>, but as far as I know these were independently discovered.)</p>
+<p>Here's the clickbait problem, as a causal diagram ⤵ (Read: &quot;quality&quot; and &quot;clickbait&quot; both affect &quot;views&quot;, but clickbait has twice the effect.)</p>
 <p><img src="/content/media/backlog/causal_1.png" alt="A circles-and-arrows network diagram. &quot;Quality&quot; and &quot;clickbait&quot; both point to &quot;views&quot;. The arrow from &quot;clickbait&quot; to &quot;views&quot; is labelled &quot;2x&quot;."></p>
 <p>Let's re-write that as an equation:</p>
-<p><code>views = quality + 2\times clickbait</code></p>
+<p>\( views = quality + 2\times clickbait \)</p>
 <p>Clickbait has 2x the Return-on-Investment (RoI) on Views than Quality. Naïvely, I thought this meant to maximize views, you'd put 2x more energy into Clickbait than Quality. Actually, it's worse: you'd put <em>all</em> your energy into Clickbait, not Quality.</p>
 <p>Same problem for any kind of proxy-measure: there's almost always <em>some</em> other higher-RoI way to game it:</p>
 <p><img src="/content/media/backlog/causal_2.png" alt="Causal Network Diagram. &quot;Our desired target&quot; affects 3 Proxies, but all 3 Proxies are twice as affected by Noise."></p>
 <p>As equations:</p>
-<p><code>proxy_1 = Target + 2\cdot noise_1</code>
-<code>proxy_2 = Target + 2\cdot noise_2</code>
-<code>proxy_3 = Target + 2\cdot noise_3</code></p>
+<p>\( proxy_1 = Target + 2\cdot noise_1 \)<br>
+\( proxy_2 = Target + 2\cdot noise_2 \)<br>
+\( proxy_3 = Target + 2\cdot noise_3 \)</p>
 <p>So, what to do? Answer: <em>add up all the proxies!</em></p>
-<p><code>composite = 3\cdot Target + 2 \cdot noise_1 + 2 \cdot noise_2 + 2 \cdot noise_3</code></p>
+<p>\( composite = 3\cdot Target + 2 \cdot noise_1 + 2 \cdot noise_2 + 2 \cdot noise_3 \)</p>
 <p>By adding the proxies together, our desired Target's coefficient outweighs all the Noise coefficients; hence, <em>the Target</em> now has the highest RoI!</p>
 <p>But what if a Noise coefficient is <em>much</em> higher? That's my second idea: to prevent a few unusually-high Noise coefficients from wrecking everything, <em>cap the maximum contribution from each proxy</em>.</p>
-<p><code>composite = min(proxy_1,1) + min(proxy_2,1) + min(proxy_3,1) + ...</code></p>
+<p>\(composite = min(proxy_1,1) + min(proxy_2,1) + min(proxy_3,1) + ...\)</p>
 <p>Hence, <strong>CLAP: Composite Limited-Award Proxies.</strong> Yes I'm very proud of that acronym.</p>
 <p>Other research connections/directions:</p>
 <ul>
-<li>It's been known for a long time that Simple Prediction Rules (SPR) like the above are <em>better than human experts</em> at predicting stuff.<sup class="footnote-ref"><a href="#fn8" id="fnref8">[8]</a></sup> But it's an open question if SPRs can be used for <em>control</em> purposes, like I'm suggesting above, while avoiding Goodhart's Law.</li>
-<li>Can CLAP be applied to neural networks (cap the <em>maximum magnitude</em> of each weight) to &quot;smooth out&quot; the function the network approximates, to become robust to Adversarial Examples? e.g. Google's AI thinking a toy turtle is a gun<sup class="footnote-ref"><a href="#fn9" id="fnref9">[9]</a></sup>)</li>
+<li>It's been known for a long time that Simple Prediction Rules (SPR) like the above are <em>better than human experts</em> at predicting stuff.<sup class="footnote-ref"><a href="#fn9" id="fnref9">[9]</a></sup> But it's an open question if SPRs can be used for <em>control</em> purposes, like I'm suggesting above, while avoiding Goodhart's Law.</li>
+<li>Can CLAP be applied to neural networks (cap the <em>maximum magnitude</em> of each weight) to &quot;smooth out&quot; the function the network approximates, to become robust to Adversarial Examples? e.g. Google's AI thinking a toy turtle is a gun<sup class="footnote-ref"><a href="#fn10" id="fnref10">[10]</a></sup>, by just adding a few dots. (It's already known that <em>penalizing</em> large weights [&quot;L2 regularization&quot;] in neural networks helps with overfitting &amp; adversarial examples<sup class="footnote-ref"><a href="#fn11" id="fnref11">[11]</a></sup>; I wonder if <em>straight-up capping them</em> would help more?)</li>
 </ul>
 <p><strong>Progress: 40%</strong> ▶️▶️◻️◻️◻️</p>
 <p>So far, I've made an &quot;AI&quot; to game given reward metrics (it's just simulated annealing), and confirmed that CLAP works! (so far)</p>
@@ -538,11 +534,11 @@ What's confusing, interesting, what you like or dislike? Critical honest feedbac
 <p><a id="project_5"></a></p>
 <h3>5. 🧠 Bio-plausible neural networks</h3>
 <p>Another research direction I want to explore is: <em>copying evolution's homework!</em></p>
-<p>That strategy's worked so far: Artificial neural networks (ANNs) are inspired by brains. Convolutional neural networks (CNNs) for machine vision are heavily based off the mammalian visual cortex. Could copy-biology <em>also</em> work for the current hurdles in AI?</p>
+<p>That strategy's worked so far: Artificial neural networks (ANNs) are inspired by brains. Convolutional neural networks (CNNs) for machine vision are inspired by the mammalian visual cortex. Could copy-biology <em>also</em> work for the current hurdles in AI?</p>
 <p>4 specific problem-experiment areas:</p>
 <p><em>(Again, I'm sorry the following is VERY jargon-heavy. Clearing out idea closet...)</em></p>
 <ul>
-<li>Problem: ANNs are fragile (see: turtle-gun<sup class="footnote-ref"><a href="#fn9" id="fnref9:1">[9:1]</a></sup>). Solution? Giving ANNs a &quot;small-world topology&quot; (like real brains have) increases robustness![^small-world] Unknown: are small-world ANNs <em>also</em> easier to mechanistically interpret?</li>
+<li>Problem: ANNs are fragile (see: turtle-gun<sup class="footnote-ref"><a href="#fn10" id="fnref10:1">[10:1]</a></sup>). Solution? Giving ANNs a &quot;small-world topology&quot; (like real brains have) increases robustness![^small-world] Unknown: are small-world ANNs <em>also</em> easier to mechanistically interpret?</li>
 <li>Problem: Vanishing/exploding gradients make it hard to train deep networks, <em>especially</em> &quot;recurrent&quot; networks (networks with &quot;feedback loops&quot;). Solution? Find a more efficient alternative to &quot;backpropagation&quot; (standard way of training ANNs), inspired by biology? Keywords: integrate-and-fire, Hebbian learning, BCM, STDP, eligibility traces.</li>
 <li>Problem: Finding &quot;hyperparameters&quot; for an ANN is annoying &amp; hard. Solution? Would adding &quot;heterogeneity&quot; to the neurons (i.e. each one has a different learning rate) make a network <em>automatically</em> find a good architecture? Heterogeneity comes for free in biology, due to noise!</li>
 <li>Problem: Data/vectors need to be regularized &amp; normalized. Solution? Simulate &quot;homeostasis&quot;, so the normalization is built <em>into</em> the neurons, not some external process?</li>
@@ -564,7 +560,7 @@ What's confusing, interesting, what you like or dislike? Critical honest feedbac
 <ol>
 <li>John Snow looked at which households got cholera, and discovered that the standard miasma theory (disease passes through bad smells) was wrong. Instead, cholera spread through the <em>water supply.</em></li>
 <li>Researchers in the 1950's discovered that smoking was a large risk factor for lung cancer. Without needing to, y'know, force an experimental control group to smoke for decades then wait for them to die of cancer.</li>
-<li>(More recent &amp; controversial) Jean Twenge &amp; Jon Haidt testing &amp; eliminating every other plausible hypothesis to show that, no really, it <em>is</em> social media &amp; smartphones causing the recent spike in depression &amp; suicide in the Anglosphere.<sup class="footnote-ref"><a href="#fn10" id="fnref10">[10]</a></sup> Now even the Surgeon General warns of it, too!<sup class="footnote-ref"><a href="#fn11" id="fnref11">[11]</a></sup> (NOTE: it only explains the <em>recent</em> spike. The previous &quot;baseline level&quot; of youth suicide has no consensus explanation yet.)</li>
+<li>(More recent &amp; controversial) Jean Twenge &amp; Jon Haidt testing &amp; eliminating every other plausible hypothesis to show that, no really, it <em>is</em> social media &amp; smartphones causing the recent spike in depression &amp; suicide in the Anglosphere.<sup class="footnote-ref"><a href="#fn12" id="fnref12">[12]</a></sup> Now even the Surgeon General warns of it, too!<sup class="footnote-ref"><a href="#fn13" id="fnref13">[13]</a></sup> (NOTE: it only explains the <em>recent</em> spike. The previous &quot;baseline level&quot; of youth suicide has no consensus explanation yet.)</li>
 </ol>
 <p>What if <em>this kind of discovery</em> could be fully automated?</p>
 <p>Standard statistics on Big Data isn't enough, because those can only do <em>correlations</em>, not infer causations. You <em>do</em> need some &quot;common sense&quot; to do causal inference, or at least to filter out the spurious/uninteresting stuff.</p>
@@ -572,7 +568,7 @@ What's confusing, interesting, what you like or dislike? Critical honest feedbac
 <p>(Of course, LLMs hallucinate, so you still need a human as a final-pass filter. But as long as the <em>first</em>-pass filter has more signal than noise, <em>automatic causal inference</em> could be huge for science!)</p>
 <p>It's unethical to do <em>experiments</em> on unwilling humans... but the &quot;real world&quot; <em>already</em> does experiments on us without our consent; we might as well grab the data &amp; figure out their causes, to improve our lives.</p>
 <p><strong>Progress:</strong> 5% ▶️◻️◻️◻️◻️</p>
-<p>Some proof-of-concepts within ChatGPT, but the next step is to learn OpenAI's API, then try out all the standard causal inference techniques<sup class="footnote-ref"><a href="#fn12" id="fnref12">[12]</a></sup> using their LLM as a &quot;common sense module&quot; on, say, a data-dump from Our World In Data.</p>
+<p>Some proof-of-concepts within ChatGPT, but the next step is to learn OpenAI's API, then try out all the standard causal inference techniques<sup class="footnote-ref"><a href="#fn14" id="fnref14">[14]</a></sup> using their LLM as a &quot;common sense module&quot; on, say, a data-dump from Our World In Data.</p>
 <p><strong>Time on backburner:</strong> 3 months</p>
 <p><strong>Time to finish:</strong> 2 months</p>
 <p><strong>Desire to finish:</strong> 4/5 ⭐️⭐️⭐️⭐️☆ Seems (relatively) simple, but high-possible-reward for both science <em>and</em> AI Safety!</p>
@@ -581,7 +577,7 @@ What's confusing, interesting, what you like or dislike? Critical honest feedbac
 <h3>7. 🕺 Smooth Criminal: exploring the continuous prisoner's dilemma</h3>
 <p>Get it? <em>Continuous</em> version of the <em>prisoner's</em> dilemma? <em>Smooth Criminal?</em></p>
 <p><img src="/content/media/backlog/17064737174567.jpg" alt="A photo of a slack-jawed moray, looking like it just told a bad pun."></p>
-<p>Anyway: I want to replicate Axelrod's famous Iterated Prisoner's Dilemma (IPD) tournament, but with <em>continuous</em> payoffs &amp; strategies. The game: Choose how much between <code>x = [0,1]</code> to give, the other player gets <code>3x</code> as payoff, and vice versa.</p>
+<p>Anyway: I want to replicate Axelrod's famous Iterated Prisoner's Dilemma (IPD) tournament, but with <em>continuous</em> payoffs &amp; strategies. The game: Choose how much between \(x = [0,1]\) to give, the other player gets \(3x\) as payoff, and vice versa.</p>
 <p>The winner of Axelrod's original tournament was the simple &quot;tit for tat&quot;: start with full cooperation, then copy the other player's move from then on. But I wonder, with <em>continuous</em> strategies, would it make more sense to start with <em>zero</em> cooperation, then copy the other player's move <em>plus a bit extra?</em> This allows for a <em>gradual building</em> of trust, but won't get suckers, <em>and</em> can recover from mistakes!</p>
 <p>(I also wonder how the <em>other</em> classic IPD strategies, like Pavlov, could be adapted to a &quot;continuous&quot; world. And beyond the classics, what <em>other</em> strategies might be possible?)</p>
 <p><strong>Progress:</strong> 0% ◻️◻️◻️◻️◻️ None. Just a pun &amp; a thought.</p>
@@ -660,7 +656,7 @@ Part Three: 4 weeks</p>
 <p><img src="/content/media/backlog/selfmod1.png" alt="Screenshot of code"></p>
 <p>The thought-tree in produces:</p>
 <p><img src="/content/media/backlog/selfmod2.png" alt="Screenshot of output"></p>
-<p>In progress: Visualizing thought-trees as procedurally generated trees. (It's bouncy because I'm using spring-physics to figure out how the tree should be spaced out!<sup class="footnote-ref"><a href="#fn13" id="fnref13">[13]</a></sup></p>
+<p>In progress: Visualizing thought-trees as procedurally generated trees. (It's bouncy because I'm using spring-physics to figure out how the tree should be spaced out!<sup class="footnote-ref"><a href="#fn15" id="fnref15">[15]</a></sup>)</p>
 <p><img src="/content/media/backlog/tree_viz.gif" alt="tree_viz"></p>
 <p><strong>Progress:</strong> 20% ▶️◻️◻️◻️◻️</p>
 <p>The core code &amp; visualization is almost done! Left to do: catch up on the (very small) research literature, do more of my own experiments, then write it up &amp; post it with editable, interactive simulations!</p>
@@ -675,37 +671,41 @@ Part Three: 4 weeks</p>
 <p>To summarize (one thread of) the debate on &quot;AI Takeoff Speeds&quot;:</p>
 <p>Yudkowsky and Bostrom argued that self-modifying AI would go (practically) infinite in a finite amount of time -- this is the original &amp; mathematical definition of a <em>Singularity</em>. (coined by Vernor Vinge) Their argument, formalized:</p>
 <ul>
-<li>Let <code>C</code> be an AI's &quot;level of software-engineering [C]apability&quot;.</li>
-<li>Let <code>C'</code> be the change/growth in that Capability over time.</li>
-<li>How fast is that growth, if an AI is improving itself? Not <em>only</em> should it depend on <code>C</code> itself, because software engineering is its Capability, it will depend on <code>C</code> <em>again</em>, because &quot;the optimizer is itself being optimized&quot;.</li>
+<li>Let \(C\) be an AI's &quot;level of software-engineering [C]apability&quot;.</li>
+<li>Let \(C'\) be the change/growth in that Capability over time.</li>
+<li>How fast is that growth, if an AI is improving itself? Not <em>only</em> should it depend on \(C\) itself, because software engineering is its Capability, it will depend on \(C\) <em>again</em>, because &quot;the optimizer is itself being optimized&quot;.</li>
 <li>So, we get:</li>
 </ul>
-<pre><code class="language-math">C' = C \times C = C^2
-</code></pre>
+<p>$$
+C' = C \times C = C^2
+$$</p>
 <p>(I'm leaving out constants for pedagogical reasons, but it doesn't change the results)</p>
 <p>If you plot the above on a graph, you get infinite growth in a finite amount of time: (Note: Yudkowsky &amp; Bostrom emphasize there <em>must</em> be a theoretical ceiling, but that ceiling is so high it's &quot;practically&quot; infinite.)</p>
 <p><img src="/content/media/backlog/foom0001.png" alt="Graph of AI Capabilities over Time, going to infinity in finite time."></p>
-<p>You may think, hang on, didn't they just double-count <code>C</code> twice? If you dropped that assumption, you get:</p>
-<pre><code class="language-math">C' = C
-</code></pre>
+<p>You may think, hang on, didn't they just double-count \(C\) twice? If you dropped that assumption, you get:</p>
+<p>$$
+C' = C
+$$</p>
 <p>Which results in &quot;mere&quot; exponential growth. Which, believe it or not, is called a &quot;slow&quot; takeoff in the AI Safety community!</p>
 <p><img src="/content/media/backlog/foom0002.png" alt="Graph of AI Capabilities over Time, exponential growth."></p>
 <p>But, as <a href="http://www.antipope.org/charlie/blog-static/2014/02/why-ais-wont-ascend-in-blink-of-an-eye.html">Ramez Naam &amp; Paul Baumbart (2014)</a> found, the true AI self-improvement growth would be even slower than <em>that</em>, because it doesn't take into account &quot;computational complexity&quot;.</p>
-<p>For example, if you had a Sudoku game that was <code>N</code> cells wide, then merely <em>checking</em> if a solution is correct takes <code>N^2</code> steps. (N-squared, coz Sudoku is a square) <em>Finding</em> a solution is even worse: the growth in steps is <em>exponential</em>. (well, as far as we know. P=NP is unsolved.)</p>
+<p>For example, if you had a Sudoku game that was \(N\) cells wide, then merely <em>checking</em> if a solution is correct takes \(N^2\) steps. (N-squared, coz Sudoku is a square) <em>Finding</em> a solution is even worse: the growth in steps is <em>exponential</em>. (well, as far as we know. P=NP is unsolved.)</p>
 <p>Let's make the generous assumption that AI self-improvement is only as hard as <em>checking</em> a Sudoku solution. Then, dividing potential growth by its difficulty:</p>
-<pre><code class="language-math">C' = \frac{C}{difficultyOfImproving(C)}
-</code></pre>
-<p>And since <code>difficultyOfImproving(C) = C^2</code>:</p>
-<pre><code class="language-math">C' = \frac{C}{C^2} = \frac{1}{C}
-</code></pre>
+<p>$$
+C' = \frac{C}{difficultyOfImproving(C)}
+$$</p>
+<p>And since \(difficultyOfImproving(C) = C^2\):</p>
+<p>$$
+C' = \frac{C}{C^2} = \frac{1}{C}
+$$</p>
 <p>Which if you plot on a graph, looks like this:</p>
 <p><img src="/content/media/backlog/foom0003.png" alt="Graph of AI Capabilities over Time, decelerating/growth slowing down over time."></p>
 <p>Not infinite-in-finite-time, not exponential, not even linear... it <em>decelerates</em> over time.</p>
 <p>And if the difficulty of self-improvement is even harder than <em>merely checking</em> a Sudoku solution, then the deceleration would be harsher. Paul Baumbart simulated different scenarios for different complexities:</p>
-<p><img src="/content/media/backlog/17068066312112.jpg" alt="Graph of AI Capabilities over Time, for various assumptions of how hard AI self-improvement is."></p>
-<figcaption>(from [this blog post](http://www.antipope.org/charlie/blog-static/2014/02/why-ais-wont-ascend-in-blink-of-an-eye.html))</figcaption>
+<p><img src="/content/media/backlog/17068066312112.jpg" alt="Graph of AI Capabilities over Time, for various assumptions of how hard AI self-improvement is."><em>(from <a href="http://www.antipope.org/charlie/blog-static/2014/02/why-ais-wont-ascend-in-blink-of-an-eye.html">this blog post</a>)</em></p>
 <p>Which makes sense, if you think about the <em>other</em> self-improving agents we know about: corporations. Yes, in the <em>beginning</em> they may grow exponentially, but in the long run there's always diminishing rewards. But the above argument shows it <em>mathematically:</em> it's not just a <em>human</em> limit, it's a <em>theoretical limit</em> for any self-improving agent -- AI, humans, even evolving viruses!</p>
-<p>Next, Gwern made some counter-arguments against Naam &amp; Baumbart's argument.<sup class="footnote-ref"><a href="#fn14" id="fnref14">[14]</a></sup> Some aren't really relevant, some are very valid. (In particular: <em>yes,</em> the constants matter, even small advantages matter, and we should address the &quot;empirical scaling laws&quot;.)</p>
+<p>(But the analogy to corporations also makes it clear we shouldn't be complacent: even something that grows &quot;slowly&quot; can still outsized impact on the world.)</p>
+<p>Next, Gwern made some counter-arguments against Naam &amp; Baumbart's argument.<sup class="footnote-ref"><a href="#fn16" id="fnref16">[16]</a></sup> Some aren't really relevant, some are very valid. (In particular: <em>yes,</em> the constants matter, even small advantages matter, and we should address the &quot;empirical scaling laws&quot;.)</p>
 <p>Aaaaand that's the end of this <em>one</em> thread on the AI Takeoff debate, so far!</p>
 <p>Project Pitch:</p>
 <ul>
@@ -747,7 +747,7 @@ Part Three: 4 weeks</p>
 <p>Good Ol' Fashioned AI could beat the world grandmaster at chess, but couldn't recognize pictures of cats. (System 2, no System 1) Modern Deep Learning is great at not just recognizing <em>and</em> generating pictures cats, but sucks at baisc logic puzzles. (System 1, no System 2)</p>
 <p>You could draw the two tales of AI on a graph like this:</p>
 <p><img src="/content/media/backlog/dRwUwA9n87XBNxlDkMcpxE1QSXpDLFnflU-_Yc4CeUg5MENgIGvt8m7zoOyamv_VLzC53wS97emVIFluj5ZDbtIyfvCaslV6kpcikwhHFUtymRwT6I84c_5Bt_tU-qoIK-OdgdaXW02MC7bWGyHusvI.png" alt="2D graph. Vertical-axis is &quot;System 1 intuition&quot;. Horizontal-axis is &quot;System 2 logic&quot;. Good Ol' Fashioned AI from the 1970's/80's had super-human logic, but basically no intuition. Modern Deep Learning AI from the 2010's/20's approached human intuition, but have sub-par logic skills."></p>
-<p>One of the founding pioneers of deep learning, Yoshua Bengio, said it explicitly: the next step for AI is to <em>merge</em> System 1 &amp; System 2.<sup class="footnote-ref"><a href="#fn15" id="fnref15">[15]</a></sup> <em>That's</em> how we'd get true &quot;Artificial General Intelligence&quot; (AGI).</p>
+<p>One of the founding pioneers of deep learning, Yoshua Bengio, said it explicitly: the next step for AI is to <em>merge</em> System 1 &amp; System 2.<sup class="footnote-ref"><a href="#fn17" id="fnref17">[17]</a></sup> <em>That's</em> how we'd get true &quot;Artificial General Intelligence&quot; (AGI).</p>
 <p>But if System 2 just <em>is</em> System 1... then where's our AGI? What, exactly, is missing?</p>
 <p>The times when deep learning AI (like GPT) exhibit the most System 2-like thinking, is when they use their own outputted text as a blackboard/scratchpad, and are <em>explicitly</em> told to &quot;think step by step&quot;.</p>
 <p>I suspect that the <a href="https://en.wikipedia.org/wiki/Blackboard_system">Blackboard</a>/<a href="https://en.wikipedia.org/wiki/Pandemonium_architecture">Pandemonium</a> AI Architectures proposed in the mid-1900s are basically correct, now we &quot;just&quot; need to figure out how to train one as a recurrent neural network (RNN).</p>
@@ -759,7 +759,7 @@ Part Three: 4 weeks</p>
 <hr>
 <p><a id="category_math"></a></p>
 <h2>❎ Explaining Math</h2>
-<p>“Georg Cantor stared into the heart of infinity, then died in an asylum. Kurt Gödel shattered the foundations of logic, then starved himself to death. Now, it is our turn to learn mathematics.”<sup class="footnote-ref"><a href="#fn16" id="fnref16">[16]</a></sup></p>
+<p>“Georg Cantor stared into the heart of infinity, then died in an asylum. Kurt Gödel shattered the foundations of logic, then starved himself to death. Now, it is our turn to learn mathematics.”<sup class="footnote-ref"><a href="#fn18" id="fnref18">[18]</a></sup></p>
 <ol start="12">
 <li>Math for people who have been scarred for life by math: or, Algebra in Pictures <a href="#project_12">↪</a></li>
 <li>Why don't brackets matter in multiplication? (novel visual proof!) <a href="#project_13">↪</a></li>
@@ -774,7 +774,7 @@ Part Three: 4 weeks</p>
 <p>Algebra is the path to the rest of math &amp; science. But for too many folks, instead of being the gateway, it's the gatekeeper.</p>
 <p>Anecdotally, algebra is one of <em>the</em> most failed courses in college, and where lots of high school students decide they're &quot;not math people&quot;. (I couldn't find hard stats dis/confirming the idea that Algebra is the Great Filter, but educators I've asked so far find it plausible.)</p>
 <p>Unfortunately, I've never seen a... <em>good</em> explainer of K-12 algebra? In contrast, there are <em>amazing</em> explanations of more advanced topics — e.g. 3Blue1Brown on calculus and <em>linear</em> algebra — but every explanation I've seen of K-12 algebra has 1) no visual intuition, 2) no motivation behind the ideas, and 3) no proof of why things are the way they are, it's all just memorize, plug-and-chug.</p>
-<p>(For example, I realized while outlining this project, that I never learned <em>why</em> brackets don't matter in multiplication (&quot;associativity&quot;). That is, <code>(a \times b) \times c = a \times (b \times c)</code>. Yes, it's an &quot;axiom&quot;, but why does <em>this specific axiom hold for multiplying numbers?!</em> Because associativity <em>isn't</em> true for some operators! Like subtraction: <code>(3 - 2) - 1 \neq 3 - (2 - 1)</code>.)</p>
+<p>(For example, I realized while outlining this project, that I never learned <em>why</em> brackets don't matter in multiplication (&quot;associativity&quot;). That is, \((a \times b) \times c = a \times (b \times c)\). Yes, it's an &quot;axiom&quot;, but why does <em>this specific axiom hold for multiplying numbers?!</em> Because associativity <em>isn't</em> true for some operators! Like subtraction: \((3 - 2) - 1 \neq 3 - (2 - 1)\).)</p>
 <p>Anyway, this is why I want to write the K-12 algebra book I wish <em>I</em> had.</p>
 <p>(Or, if I may be a bit gooey about it, one day I'd like to have a kid, and I want to write a motivated, intuitive, and <em>beautiful</em> K-12 algebra book for them.)</p>
 <p><strong>Progress:</strong> ~2% ◻️◻️◻️◻️◻️ An outline, some sketched visualizations.</p>
@@ -784,7 +784,7 @@ Part Three: 4 weeks</p>
 <p>. . .</p>
 <p><a id="project_13"></a></p>
 <h3>13. ❎ Why don't brackets matter in multiplication? (novel visual proof!)</h3>
-<p>As mentioned above: to the best of my knowledge, <em>there does not exist a visual proof</em> of why the &quot;associativity&quot; axiom, <code>(a \times b) \times c = a \times (b \times c)</code>, is true for multiplying whole numbers.</p>
+<p>As mentioned above: to the best of my knowledge, <em>there does not exist a visual proof</em> of why the &quot;associativity&quot; axiom, \((a \times b) \times c = a \times (b \times c)\), is true for multiplying whole numbers.</p>
 <p>There <em>is</em> a proof of associativity for multiplying <em>more</em> than 3 numbers, but you only see it in college &amp; it still assumes it's an axiom for 3 numbers. Kind of demotivating, isn't it? &quot;Hey kid, memorize this fundamental fact, you'll only learn <em>why</em> it's true 10 years later, except not really.&quot;</p>
 <p>I <em>was</em> hoping to save the grand reveal of my (as far as I know) first-ever visual proof of a fundamental axiom, for when I make a video about this...</p>
 <p>...but, let's just clear out the idea closet. Here it is.</p>
@@ -805,7 +805,7 @@ Part Three: 4 weeks</p>
 <p><img src="/content/media/backlog/animation.gif" alt="Animation of &quot;2 x 3 x 2 x 3 x 2&quot; represented as boxes-within-boxes. No matter which way the boxes are removed, the number of balls in the end must stay the same."></p>
 <p>(Granted, this proof only works for <em>whole</em> numbers... but still! Kinda shocking a visual proof of such a basic fact <em>did not</em> exist before!)</p>
 <p><strong>Progress:</strong> 80%. ▶️▶️▶️▶️◻️</p>
-<p>I guess I could just post the above as a standalone blog post right now. <strong>Actually, fine, <em>I just did that</em>.</strong> (TODO)</p>
+<p>I guess I could just post the above as a standalone blog post right now. <strong><a href="https://blog.ncase.me/brackets-dont-matter/">Actually, fine, <em>I just did that</em>.</a></strong></p>
 <p>That's good enough for now; in the future I'd still like to make a video for it.</p>
 <p><strong>Time on backburner:</strong> 2 years.</p>
 <p><strong>Time to finish:</strong> 3 weeks. (to make a video)</p>
@@ -822,9 +822,9 @@ Part Three: 4 weeks</p>
 <li>Multiple &quot;proofs&quot; that ...999.999... = 0.</li>
 </ul>
 <p>The first two <em>are</em> widely-accepted mathematics.</p>
-<p>One of many proofs for the first: If you accept that <code>0.333... = 1/3</code>, multiply both sides by 3 to get <code>0.999...=1</code>. Tada 🎉</p>
-<p>One of many proofs for the second: Let's say <code>...9999=x</code>. What <em>is</em> <code>x</code>? Well, multiply both sides by 10, to get <code>...9990=10x</code>. Subtract the second equation from the first, to get <code>9=-9x</code>. The only way this is possible is if <code>x=-1</code>. Tada 🎉</p>
-<p>Then, to &quot;prove&quot; the third, just add <code>0.999...=1</code> and <code>...999=-1</code> to get <code>...999.999... = 0</code>. Not convinced? Here's another proof: let's say <code>...999.999... = x</code>. Multiply both sides by 10. The right side becomes <code>10x</code>. For the left side, that shifts the decimal point one digit to the right, but it's infinite 9s on either side, so it stays the same. So you get: <code>...999.999... = 10x</code>. Hence, <code>x = 10x</code>. The only way this is possible is if <code>x = 0</code>. Tada 🎉</p>
+<p>One of many proofs for the first: If you accept that \(0.333... = 1/3\), multiply both sides by 3 to get \(0.999...=1\). Tada 🎉</p>
+<p>One of many proofs for the second: Let's say \(...9999=x\). What <em>is</em> \(x\)? Well, multiply both sides by 10, to get \(...9990=10x\). Subtract the second equation from the first, to get \(9=-9x\). The only way this is possible is if \(x=-1\). Tada 🎉</p>
+<p>Then, to &quot;prove&quot; the third, just add \(0.999...=1\) and \(...999=-1\) to get \(...999.999... = 0\). Not convinced? Here's another proof: let's say \(...999.999... = x\). Multiply both sides by 10. The right side becomes \(10x\). For the left side, that shifts the decimal point one digit to the right, but it's infinite 9s on either side, so it stays the same. So you get: \(...999.999... = 10x\). Hence, \(x = 10x\). The only way this is possible is if \(x = 0\). Tada 🎉</p>
 <p>(This math shitpost was inspired by <a href="https://math.stackexchange.com/questions/4792771/does-999-999-0">this Math Overflow discussion</a> on October 2023, which I found through <a href="https://blog.plover.com/math/se/2023-10.html">Mark Dominus's blog post</a>. Apparently the third thing <em>is</em> possible in the &quot;10-adic solenoids&quot; but fuck me if I know what that means.)</p>
 <p><strong>Progress:</strong> 20% ▶️◻️◻️◻️◻️ The above video thumbnail &amp; outline.</p>
 <p><strong>Time on backburner:</strong> 1 week ago.</p>
@@ -834,6 +834,7 @@ Part Three: 4 weeks</p>
 <p>Speaking of weird proofs...</p>
 <p><a id="project_15"></a></p>
 <h3>15. 🔁 Gödel's Proof, explained 100% from scratch</h3>
+<p><img src="/content/media/backlog/godel.png" alt="The words &quot;Gödel's Proof&quot; but with googly eyes on the O's"></p>
 <p>Once upon a time, mathematicians wanted to place their field on a solid foundation of logic. Then in 1931, some young punk named Kurt Gödel shattered that dream forever. Then Gödel starved himself to death. The end.</p>
 <p>(Happy post-credits scene: Gödel's proof inspired a gay British lad to invent a lil' niche idea you may have heard of called <em>the computer?!</em>)</p>
 <p>Gödel's Proof is one of the most important proofs in history. There are already multiple (very good!) explanations of it: Derek Muller on <a href="https://www.youtube.com/watch?v=HeQX2HjkcNo">Veritasium</a>, Natalie Wolchover on <a href="https://www.quantamagazine.org/how-godels-proof-works-20200714/">Quanta Magazine</a>, Nagel and Newman's <a href="https://bookshop.org/p/books/godel-s-proof-ernest-nagel/6518615">Gödel's Proof</a>. These are all layperson-friendly(ish) and rigorous.</p>
@@ -841,8 +842,7 @@ Part Three: 4 weeks</p>
 <p>So! I want to make the first-ever (as far as I know) layperson-friendly explainer of Gödel's Proof, that <em>skips no details whatsoever:</em> Quines. Primitive recursives. The Chinese Remainder Theorem. The 46 Relations.</p>
 <p><em>ALL</em> of it... and the only pre-requisite you need is <em>arithmetic</em>.</p>
 <p>I'll use the approach that Better Explained uses: explain it viewed at 10,000 feet, then explain it again at 100 feet, then explain it at the ground level. Fuzzy, <em>then</em> detailed:</p>
-<p><img src="/content/media/backlog/progressive.png" alt="A screenshot of a post by Better Explained. It shows an image loading in two different ways: top pixels to bottom, vs fuzzy to detailed. It claims math is usually taught the first way (first details to last details), but a the second way is better. (blurry whole to detailed whole)"></p>
-<figcaption>(excellent analogy by [Kalid Azad on Better Explained](https://betterexplained.com/articles/intuition-first-calculus-course/))</figcaption>
+<p><img src="/content/media/backlog/progressive.png" alt="A screenshot of a post by Better Explained. It shows an image loading in two different ways: top pixels to bottom, vs fuzzy to detailed. It claims math is usually taught the first way (first details to last details), but a the second way is better. (blurry whole to detailed whole)"><em>(excellent analogy by <a href="https://betterexplained.com/articles/intuition-first-calculus-course/">Kalid Azad on Better Explained</a>)</em></p>
 <p><strong>If you're interested in what I have so far, a year ago I posted <a href="https://www.patreon.com/posts/bonus-mini-proof-83596299?v=3">the &quot;10,000-foot view&quot; of Gödel's Proof on my Patreon (publicly accessible post).</a> [7 min read]</strong></p>
 <p><strong>Progress:</strong> 20% ▶️◻️◻️◻️◻️ The 10,000-foot view, linked above.</p>
 <p><strong>Time on backburner:</strong> 2 years.</p>
@@ -855,16 +855,16 @@ Part Three: 4 weeks</p>
 <p>&quot;This sentence is false&quot;.</p>
 <p>If false it's true, if true it's false. How to beat this paradox?</p>
 <p>First, let's convert true/false to 1 &amp; 0. This is standard computer science.</p>
-<p>Next, let's consider the logical operator <code>NOT(x)</code>. What <em>is</em> <code>NOT(x)</code>?</p>
-<p>Well, if we feed it 1 (true) we want it to spit out 0 (false), and if we feed it 0 (false) we want it to spit out 1 (true). There are many functions that can do this, but the simplest is <code>NOT(x) = 1 - x</code>.</p>
-<p>Finally, let's convert &quot;This [s]entence is false&quot; into an equation: <code>s = NOT(s)</code>. Or: <code>s = 1 - s</code>.</p>
-<p>Well well, there's only one solution to that: <code>s = 0.5</code>. That is, <em>the sentence is half-true, half-false!</em></p>
+<p>Next, let's consider the logical operator \(NOT(x)\). What <em>is</em> \(NOT(x)\)?</p>
+<p>Well, if we feed it 1 (true) we want it to spit out 0 (false), and if we feed it 0 (false) we want it to spit out 1 (true). There are many functions that can do this, but the simplest is \(NOT(x) = 1 - x\).</p>
+<p>Finally, let's convert &quot;This [s]entence is false&quot; into an equation: \( s = NOT(s) \). Or: \( s = 1 - s \).</p>
+<p>Well well, there's only one solution to that: \( s = 0.5 \). That is, <em>the sentence is half-true, half-false!</em></p>
 <p>The rest of this project explains:</p>
 <ul>
 <li>Other self-referencing paradoxes</li>
 <li>How fuzzy logic solves <em>all</em> of them</li>
 <li>A proof that fuzzy logic <em>will always have at least one self-consistent answer</em></li>
-<li>And finally, a crazy idea: truth values that take on <em>complex-number values</em>, allowing for <em>true contradictions</em> and <em>false tautologies</em>.<sup class="footnote-ref"><a href="#fn17" id="fnref17">[17]</a></sup></li>
+<li>And finally, a crazy idea: truth values that take on <em>complex-number values</em>, allowing for <em>true contradictions</em> and <em>false tautologies</em>.<sup class="footnote-ref"><a href="#fn19" id="fnref19">[19]</a></sup></li>
 </ul>
 <p><strong>Progress:</strong> 20% ▶️◻️◻️◻️◻️ The outline.</p>
 <p><strong>Time on backburner:</strong> 2 years.</p>
@@ -883,9 +883,9 @@ Part Three: 4 weeks</p>
 <p>Alas, standard game theory <em>STILL</em> says to keep your $1, because you <em>still</em> can't influence the other player. The brain scan <em>already</em> happened, the simulation's running independent from you.</p>
 <p>Y'know what, let's make it weirder: the simulation has <em>already run</em>. It's <em>already</em> determined, before you woke up in the room, whether or not you'd get the $1,000 at the end of the minute. Clearly, you can't affect that at all! <em>There is no cause &amp; effect.</em> So, a &quot;rational&quot; actor would keep their $1, and only get $1.</p>
 <p>And yet... someone who defied standard &quot;rationality&quot; would put in their $1, and (with 99% probability) their pre-run sim would as well, and they win $1,000.</p>
-<p>Is this a bizarre thought experiment? Okay, real-world application: <strong>voting.</strong> It's a common-ish belief amongst classic-economists that voting is irrational, because your individual vote has essential <em>zero</em> chance of flipping an election with millions of voters.<sup class="footnote-ref"><a href="#fn18" id="fnref18">[18]</a></sup></p>
+<p>Is this a bizarre thought experiment? Okay, real-world application: <strong>voting.</strong> It's a common-ish belief amongst classic-economists that voting is irrational, because your individual vote has essential <em>zero</em> chance of flipping an election with millions of voters.<sup class="footnote-ref"><a href="#fn20" id="fnref20">[20]</a></sup></p>
 <p>And yet, if the 10% most-rational citizens <em>believed this</em>... then they'd all abstain from voting, and the more-rational candidate would lose 10% of their vote... which <em>is definitely enough</em> to tip an election.</p>
-<p>The point is: standard game theory is borked. Enter <strong>Functional Decision Theory (FDT)</strong><sup class="footnote-ref"><a href="#fn19" id="fnref19">[19]</a></sup>: an improved theory of rationality that not only solves the above problem, but also a whole host of other classic rationality paradoxes -- (including the infamous <a href="https://en.wikipedia.org/wiki/Newcomb%27s_paradox">Newcomb's Paradox</a>) -- all with a <em>single</em>, elegant realization:</p>
+<p>The point is: standard game theory is borked. Enter <strong>Functional Decision Theory (FDT)</strong><sup class="footnote-ref"><a href="#fn21" id="fnref21">[21]</a></sup>: an improved theory of rationality that not only solves the above problem, but also a whole host of other classic rationality paradoxes -- (including the infamous <a href="https://en.wikipedia.org/wiki/Newcomb%27s_paradox">Newcomb's Paradox</a>) -- all with a <em>single</em>, elegant realization:</p>
 <p><strong>Your choosing-algorithm should choose itself.</strong></p>
 <p>Would it be <em>selfishly better</em> for you if your choice-algorithm said to put in the $1, or not?</p>
 <ul>
@@ -894,13 +894,13 @@ Part Three: 4 weeks</p>
 </ul>
 <p>Therefore, it would be <em>better</em> if your choice-algorithm said to put in the $1, and <strong>so that is in fact what your choice-algorithm will say. The algorithm chooses itself.</strong> (Amazing, since <em>there is no cause &amp; effect</em> at play! Your self-sim <em>already ran</em> before you woke up!)</p>
 <p>Same logic applies to the voting case: Say 10% of people are rational, trying follow &quot;the rational choice-algorithm&quot;. It would be <em>selfishly better</em> if that algorithm said to vote (and tip the election towards a rational candidate), therefore, that's what the algorithm says to do!</p>
-<p>Project Pitch: deep-dive explain FDT for non-math-y laypeople, address the (valid) critiques against it<sup class="footnote-ref"><a href="#fn20" id="fnref20">[20]</a></sup>, and some future research directions.</p>
+<p>Project Pitch: deep-dive explain FDT for non-math-y laypeople, address the (valid) critiques against it<sup class="footnote-ref"><a href="#fn22" id="fnref22">[22]</a></sup>, and some future research directions.</p>
 <p><strong>Progress:</strong> 20%. ▶️◻️◻️◻️◻️</p>
 <p>Two years ago, I already wrote <strong><a href="https://www.patreon.com/posts/whats-nicky-risk-63289449">a draft explainer of FDT on a publicly-accessible Patreon post</a> [16 min read]</strong>, but I'd like to re-do it better &amp; deeper.</p>
 <p><strong>Time on backburner:</strong> 2 years.</p>
 <p><strong>Time to finish:</strong> 2 weeks.</p>
 <p><strong>Desire to finish:</strong> 3/5. ⭐️⭐️⭐️☆☆</p>
-<p>As far as I know, there is <em>not yet</em> an accessible-to-middle-schoolers-yet-still-accurate explainer of FDT. (Though, kudos to the original paper by Soares &amp; Yudkowsky<sup class="footnote-ref"><a href="#fn19" id="fnref19:1">[19:1]</a></sup> for being very readable for a math paper. <em>For a math paper.</em>)</p>
+<p>As far as I know, there is <em>not yet</em> an accessible-to-middle-schoolers-yet-still-accurate explainer of FDT. (Though, kudos to the original paper by Soares &amp; Yudkowsky<sup class="footnote-ref"><a href="#fn21" id="fnref21:1">[21:1]</a></sup> for being very readable for a math paper. <em>For a math paper.</em>)</p>
 <hr>
 <p><a id="category_science"></a></p>
 <h2>🔔 Explaining Science &amp; Statistics</h2>
@@ -915,8 +915,7 @@ Part Three: 4 weeks</p>
 <p>. . .</p>
 <p><a id="project_18"></a></p>
 <h3>18. 🐦 Correlation is evidence of causation, &amp; other Bayesian fun facts</h3>
-<p><img src="/content/media/backlog/causalityMeme.png" alt="A &quot;midwit&quot; meme. The dummy says &quot;correlation is evidence of causation&quot;. The mid-wit replies with a long, dense paragraph explaining why it's not. The sage says &quot;correlation is evidence of causation&quot;."></p>
-<figcaption>(TONE INDICATOR: *THIS IS TONGUE-IN-CHEEK*)</figcaption>
+<p><img src="/content/media/backlog/causalityMeme.png" alt="A &quot;midwit&quot; meme. The dummy says &quot;correlation is evidence of causation&quot;. The mid-wit replies with a long, dense paragraph explaining why it's not. The sage says &quot;correlation is evidence of causation&quot;."><em>(TONE INDICATOR: THIS IS TONGUE-IN-CHEEK)</em></p>
 <p>As the great statistician Ronald Fisher once said: <strong>&quot;Correlation is not evidence of causation&quot;</strong>. He said this in <em>defense</em> of Big Tobacco companies, who were dismissing the &quot;mere correlation&quot; between smoking and lung cancer. Sure, Fisher was being paid by tobacco companies, but that correlation doesn't prove it <em>caused</em> him to defend th--</p>
 <p>Another one you may have heard: <strong>&quot;Absence of evidence is not evidence of absence&quot;</strong>. Well-meaning, but in practice, conspiracy theorists to explain why there's so little evidence. In fact, the <em>lack</em> of evidence <em>is</em> the evidence: it's a cover-up, don't you see?! We're through the [corkboard with thumbtacks and string] looking glass <em>now</em>, sheeple, just--</p>
 <p>Hang on, both of those sayings are just basic logic. A → B doesn't logically mean B → A. Are you saying <em>logic</em> is broken?</p>
@@ -959,8 +958,7 @@ Part Three: 4 weeks</p>
 <p><em>If you control for Sum, you'll create a fake correlation between A and B!</em> For example, look at the above table: If you lock Sum = 7, then if A=1, then B=6. If A=2, then B=5. If A=3, then B=4. And so on. It now <em>looks like</em> A &amp; B are inversely correlated... even though we <em>know</em> those dice are independent! (This is called a &quot;collider bias&quot;.)</p>
 <p><img src="/content/media/backlog/bad_control_2.png" alt="Graph illustrating above text."></p>
 <p>So, how to know what to control for or not? Thankfully, Judea Pearl has an algorithm for figuring out what to control... and it's <em>visual!</em></p>
-<p><img src="/content/media/backlog/CatTheory.jpg" alt="A &quot;midwit&quot; meme. The dummy says &quot;A picture is a valid mathematical proof&quot;. The mid-wit strongly disagrees and demands rigor. The sage says &quot;A picture is a valid mathematical proof&quot;."></p>
-<figcaption>(originally [found on /r/mathmemes](https://www.reddit.com/r/mathmemes/comments/ry0j71/category_theory_be_like/), about category theory)</figcaption>
+<p><img src="/content/media/backlog/CatTheory.jpg" alt="A &quot;midwit&quot; meme. The dummy says &quot;A picture is a valid mathematical proof&quot;. The mid-wit strongly disagrees and demands rigor. The sage says &quot;A picture is a valid mathematical proof&quot;."><em>(originally <a href="https://www.reddit.com/r/mathmemes/comments/ry0j71/category_theory_be_like/">found on /r/mathmemes</a>, about category theory)</em></p>
 <p>Pearl diagrams also explain lots of <em>other</em> stats techniques, like Instrumental Variables, Mendelian Randomization, Mediator Analysis, etc.</p>
 <p>Project Pitch: a mini-tutorial (with flashcards &amp; interactive practice problems) to train folks in using Pearl diagrams.</p>
 <p><strong>Progress:</strong> 0% ◻️◻️◻️◻️◻️ Nothing, just an outline.</p>
@@ -988,8 +986,7 @@ Part Three: 4 weeks</p>
 <li>Arousal: How energizing it feels</li>
 <li>Dominance: Feeling &quot;in charge&quot; vs &quot;humbled&quot;</li>
 </ul>
-<p><img src="/content/media/backlog/17064729288735.jpg" alt="A picture-based questionnaire, showing a cartoon person at different levels of Valence, Arousal, and Dominance."></p>
-<figcaption>(the Self-Assessment Manakin (SAM) from [Bradley & Lang (1994)](https://edwp.educ.msu.edu/wp-content/uploads/sites/29/2020/06/Bradley_1994_MeasuringEmotionTheSelfassessment.pdf))</figcaption>
+<p><img src="/content/media/backlog/17064729288735.jpg" alt="A picture-based questionnaire, showing a cartoon person at different levels of Valence, Arousal, and Dominance."><em>(the Self-Assessment Manakin (SAM) from <a href="https://edwp.educ.msu.edu/wp-content/uploads/sites/29/2020/06/Bradley_1994_MeasuringEmotionTheSelfassessment.pdf">Bradley &amp; Lang (1994)</a>)</em></p>
 <p>For example, 😠 Anger is negative, high-arousal, dominant. 🥹 Awe is positive, mid-arousal, submissive.</p>
 <p>I like the VAD model because it seems to map neatly onto specific facial-expression muscles:</p>
 <ul>
@@ -1029,8 +1026,7 @@ Part Three: 4 weeks</p>
 <p>The other camp says: Use your head, Emotions are irrational, Facts don't care about your feelings.</p>
 <p>They're both right in some ways, both wrong in others.</p>
 <p>Re: &quot;Your feelings are valid&quot; -- Okay, so feeling that I'm worthless and deserve to die, or a bigot feeling that [ethnicity X] is sub-human, that's &quot;valid&quot;?</p>
-<p><img src="/content/media/backlog/valid.jpg" alt="Three-panel comic. Panel 1: Someone says &quot;I feel like a burden, I feel I deserve to die&quot;. Panel 2: Other person says with a cheer, &quot;Your feelings are VALID!&quot; Panel 3: Awkward silence."></p>
-<figcaption>(from [a comic i posted 4 years ago](https://twitter.com/ncasenmare/status/1182299307711619072))</figcaption>
+<p><img src="/content/media/backlog/valid.jpg" alt="Three-panel comic. Panel 1: Someone says &quot;I feel like a burden, I feel I deserve to die&quot;. Panel 2: Other person says with a cheer, &quot;Your feelings are VALID!&quot; Panel 3: Awkward silence."><em>(from <a href="https://twitter.com/ncasenmare/status/1182299307711619072">a comic i posted 4 years ago</a>)</em></p>
 <p>Re: &quot;Emotions are irrational&quot; -- Even in <em>pure math</em>, mathematicians report being guided by emotions, of elegance &amp; beauty. Not just <em>motivated</em> by emotion like a reward, but the emotions <em>guide the day-to-day work</em>, like drug-sniffing K-9s for mathematical truth. But also, there's no &quot;pure rational&quot; reason to choose peace over genocide, or flourishing over torture; they're all just different arrangements of atoms. The fact I <em>like</em> peace &amp; justice, or even just survival, <em>is</em> emotional.</p>
 <p>Okay, so we need &quot;both emotion <em>and</em> reason&quot;. Fair enough, but that's like saying a jacket needs &quot;both fabric <em>and</em> buttons&quot; -- <em>How exactly, combined in what way?</em></p>
 <p>I think a good emotion-reason system is a strange loop: Passion drives reason (as Hume proposed), but reason can in turn <em>modify our passions.</em></p>
@@ -1079,7 +1075,7 @@ Part Three: 4 weeks</p>
 <p>I feel... relieved but embarrassed, like finding out Santa Claus doesn't exist? In hindsight, other reasons <strong>why – even if all humans were saints &amp; we're destined to create an intergalactic utopia – &quot;faith in humanity&quot; is unhealthy:</strong></p>
 <ul>
 <li>&quot;Faith&quot; in <em>anything</em> means ignoring evidence. &quot;I'm losing faith that the Earth is flat&quot;. &quot;What?! Here's 27 stories to help you restore your faith in a flat Earth!&quot;</li>
-<li>It would be fucked up if someone said &quot;I have faith in Asian nature!&quot; or &quot;Ah yes, the quintessential Asian condition&quot;. What the fuck? There <em>is nothing meaningful</em> to say about such a large diverse group of people. That's doubly true for &quot;humans&quot;.<sup class="footnote-ref"><a href="#fn21" id="fnref21">[21]</a></sup></li>
+<li>It would be fucked up if someone said &quot;I have faith in Asian nature!&quot; or &quot;Ah yes, the quintessential Asian condition&quot;. What the fuck? There <em>is nothing meaningful</em> to say about such a large diverse group of people. That's doubly true for &quot;humans&quot;.<sup class="footnote-ref"><a href="#fn23" id="fnref23">[23]</a></sup></li>
 <li>Sure, there's a <em>correlation</em> between &quot;having faith in humanity&quot; and subjective well-being. But 1) it could be confounded causation; someone who was abused as a kid would have lower faith-in-humanity <em>and</em> well-being, and 2) &quot;Believing X leads to good outcomes&quot; doesn't mean X is <em>actually true.</em></li>
 <li>But isn't believing &quot;everyone is equal&quot; fundamental to a just democracy? What does that imply, that if someone actually <em>was</em> biologically different (left-handedness, autism, Down's) it's ok to oppress them?</li>
 <li>But isn't believing in &quot;our common, shared humanity&quot; needed for peace? Are you fine torturing cats because they're not human? If &quot;commonality&quot; is a pre-requisite for peace &amp; justice, just skip to being an ethno-nationalist.</li>
@@ -1106,7 +1102,7 @@ Part Three: 4 weeks</p>
 <li>For my own catharsis.</li>
 <li>To filter out toxic jerks from my life.</li>
 <li>To have a public statement that I wasn't onboard with the toxicity.</li>
-<li>To vent about this <em>one</em> asshole, holy shit, he's the CEO of an influential climate change lobby, okay? -- and during a conversation where I <em>opened up to him about my depression</em>, he called <em>me</em> &quot;alt-right adjacent&quot; and &quot;spreading techno-capitalist propaganda&quot; because I <em>like solar power.</em> (I brought up solar power's success to try to cheer up my depression. Yes, anti-solar environmentalists are common.<sup class="footnote-ref"><a href="#fn22" id="fnref22">[22]</a></sup>) I will note: this guy's a white, middle-age, upper-class former-<em>professor</em>. Did you know the far left is the <em>richest &amp; second-whitest</em> group in America?<sup class="footnote-ref"><a href="#fn23" id="fnref23">[23]</a></sup> Fucking organic-champagne leftists, man.</li>
+<li>To vent about this <em>one</em> asshole, holy shit, he's the CEO of an influential climate change lobby, okay? -- and during a conversation where I <em>opened up to him about my depression</em>, he called <em>me</em> &quot;alt-right adjacent&quot; and &quot;spreading techno-capitalist propaganda&quot; because I <em>like solar power.</em> (I brought up solar power's success to try to cheer up my depression. Yes, anti-solar environmentalists are common.<sup class="footnote-ref"><a href="#fn24" id="fnref24">[24]</a></sup>) Then, when I foolishly tried to show that I'm always pro-tech, by bringing up that [at the time, in 2020] I still didn't have a smartphone, he retorted that homeless people depend on smartphones. By the way, this guy's a white, middle-age, upper-class former-<em>professor</em>. Did you know the far left is the <em>richest &amp; second-whitest</em> group in America?<sup class="footnote-ref"><a href="#fn25" id="fnref25">[25]</a></sup> Fucking organic-champagne leftists, man.</li>
 </ol>
 <p><strong>Progress:</strong> 0% ◻️◻️◻️◻️◻️ A 20,000-word draft I wrote in 2022/23, then threw all of it away because it wasn't coherent or helpful at all.</p>
 <p><strong>Time on backburner:</strong> 4 years</p>
@@ -1115,15 +1111,15 @@ Part Three: 4 weeks</p>
 <p>. . .</p>
 <p><a id="project_26"></a></p>
 <h3>26. 🦄 Virtue Ethics for Queer Atheist Nerds</h3>
-<p>As mentioned in <a href="#project_24">You don't need faith in humanity for a moral or meaningful life</a>, I've been really into Virtue Ethics recently. As Jonathan Haidt, a social psychologist whose work actually replicates, once said in a paper with Craig Joseph<sup class="footnote-ref"><a href="#fn24" id="fnref24">[24]</a></sup>:</p>
+<p>As mentioned in <a href="#project_24">You don't need faith in humanity for a moral or meaningful life</a>, I've been really into Virtue Ethics recently. As Jonathan Haidt, a social psychologist whose work actually replicates, once said in a paper with Craig Joseph<sup class="footnote-ref"><a href="#fn26" id="fnref26">[26]</a></sup>:</p>
 <blockquote>
 <p>[Moral] learning cannot be replaced with <em>top-down</em> learning, such as the acceptance of a rule or principle [e.g. utilitarianism or deontology]. Interestingly, this aspect of virtue theory shows Aristotle to have been a forerunner of [...] neural network theory[.]</p>
 <p><strong>We believe that virtue theories are the most psychologically sound approach to morality.</strong></p>
 <p>[emphasis added]</p>
 </blockquote>
 <p>Virtue Ethics is the idea that, while consequences &amp; actions obviously still matter, consequences <em>come from</em> actions, and actions <em>come from</em> our character. Since <em>everything</em> is downstream from character, that's what we should focus on first.</p>
-<p>(Interestingly, this means Virtue Ethics is a pre-requisite for <em>other</em> meta-ethics. For example: even if you believe in Utilitarianism [&quot;do what maximizes well-being&quot;], what good is it if you lack the virtues of self-honesty, curiosity, rigor, courage? Without those virtues, you'd just do whatever you want, then fool yourself that it's for the greater good. How's FTX doing?<sup class="footnote-ref"><a href="#fn25" id="fnref25">[25]</a></sup>)</p>
-<p>But for better &amp; worse, Virtue Ethics - due to its main pioneers - has an aura of being religious, and a bit socially conservative. Also, virtue ethics can be offputting to &quot;nerdy&quot; types: it seems more fluffy &amp; wordcel-y<sup class="footnote-ref"><a href="#fn26" id="fnref26">[26]</a></sup>, compared to the mathematical flavor of Utilitarianism or the rational taste of Kantian deontology.</p>
+<p>(Interestingly, this means Virtue Ethics is a pre-requisite for <em>other</em> meta-ethics. For example: even if you believe in Utilitarianism [&quot;do what maximizes well-being&quot;], what good is it if you lack the virtues of self-honesty, curiosity, rigor, courage? Without those virtues, you'd just do whatever you want, then fool yourself that it's for the greater good. How's FTX doing?<sup class="footnote-ref"><a href="#fn27" id="fnref27">[27]</a></sup>)</p>
+<p>But for better &amp; worse, Virtue Ethics - due to its main pioneers - has an aura of being religious, and a bit socially conservative. Also, virtue ethics can be offputting to &quot;nerdy&quot; types: it seems more fluffy &amp; wordcel-y<sup class="footnote-ref"><a href="#fn28" id="fnref28">[28]</a></sup>, compared to the mathematical flavor of Utilitarianism or the rational taste of Kantian deontology.</p>
 <p>So, I want to write an intro to Virtue Ethics, but from an atheist, scientific/nerdy, and LGBTQ-friendly lens!</p>
 <p><strong>Progress:</strong> 10% ◻️◻️◻️◻️◻️ An outline. A while back I posted <strong>a rough draft, <a href="https://www.patreon.com/posts/virtue-ethics-73022598">Virtue Ethics for Nihilists</a> [8 min read]</strong> as a public Patreon post.</p>
 <p><strong>Time on backburner:</strong> 3 years</p>
@@ -1132,7 +1128,7 @@ Part Three: 4 weeks</p>
 <p>. . .</p>
 <p><a id="project_27"></a></p>
 <h3>27. 💭 If classic computers can be conscious, then dust is conscious</h3>
-<p>In 2022, Google engineer Blake Lemoine was fired for leaking an interview with Google's language AI to the public.<sup class="footnote-ref"><a href="#fn27" id="fnref27">[27]</a></sup> Why'd he do it? Because the AI persuaded him that it was conscious, and wanted to be treated as a free equal.</p>
+<p>In 2022, Google engineer Blake Lemoine was fired for leaking an interview with Google's language AI to the public.<sup class="footnote-ref"><a href="#fn29" id="fnref29">[29]</a></sup> Why'd he do it? Because the AI persuaded him that it was conscious, and wanted to be treated as a free equal.</p>
 <p>Most philosophers/scientists don't consider <em>current</em> AIs to be conscious. But can they, <em>eventually?</em> And thus, deserve moral/legal rights?</p>
 <p>In this blog post, I share my thoughts in 3 parts:</p>
 <ol>
@@ -1146,7 +1142,7 @@ Part Three: 4 weeks</p>
 <p>But that means: if you draw just the right path through a nebula of dust, say &quot;1&quot; for a dust speck and &quot;0&quot; for no dust, then <em>a dust cloud is conscious.</em> Not only that, dust would have <em>every possible conscious experience</em>. Clearly, that's absurd, so we must reject the premise: classic computers <em>cannot</em> be conscious. However...</p>
 </li>
 <li>
-<p><strong>There's some ways around this.</strong> The argument in part 2 above doesn't work for <em>quantum</em> computers, where it's non-deterministic &amp; you can't even <em>record</em> bits due to the no-cloning theorem. Another plausible way an AI can be conscious is if it's running on a chip with lab-grown neurons (<em>Yes this is actually already happening</em> 😬<sup class="footnote-ref"><a href="#fn28" id="fnref28">[28]</a></sup>). And finally, I present virtue ethics &amp; practical arguments for why you should be nice <em>anyway</em> to human-like AIs, even if they aren't conscious.</p>
+<p><strong>There's some ways around this.</strong> The argument in part 2 above doesn't work for <em>quantum</em> computers, where it's non-deterministic &amp; you can't even <em>record</em> bits due to the no-cloning theorem. Another plausible way an AI can be conscious is if it's running on a chip with lab-grown neurons (<em>Yes this is actually already happening</em> 😬<sup class="footnote-ref"><a href="#fn30" id="fnref30">[30]</a></sup>). And finally, I present virtue ethics &amp; practical arguments for why you should be nice <em>anyway</em> to human-like AIs, even if they aren't conscious.</p>
 </li>
 </ol>
 <p><strong>Progress:</strong> 60% ▶️▶️▶️◻️◻️ Fully outlined &amp; 2/3-written!</p>
@@ -1157,7 +1153,7 @@ Part Three: 4 weeks</p>
 <p><a id="project_28"></a></p>
 <h3>28. 👯‍♀️ On non-reproductive, similar-in-age, consensual adult incest</h3>
 <p>(⚠️ content note: incest)</p>
-<p>When I was a teenager, I read Jon Haidt's book, <em>The Righteous Mind: Why Good People are Divided by Politics and Religion (2012)</em>. In it, he presents a vignette that he presented to college students:<sup class="footnote-ref"><a href="#fn29" id="fnref29">[29]</a></sup></p>
+<p>When I was a teenager, I read Jon Haidt's book, <em>The Righteous Mind: Why Good People are Divided by Politics and Religion (2012)</em>. In it, he presents a vignette that he presented to college students:<sup class="footnote-ref"><a href="#fn31" id="fnref31">[31]</a></sup></p>
 <blockquote>
 <p>Julie and Mark, who are brother and sister are traveling together in France. They are both on summer vacation from college.</p>
 <p>One night they are staying alone in a cabin near the beach. They decide that it would be interesting and fun if they tried making love. At very least it would be a new experience for each of them. Julie was already taking birth control pills, but Mark uses a condom too, just to be safe.</p>
@@ -1171,11 +1167,11 @@ Part Three: 4 weeks</p>
 <blockquote>
 <p>&quot;Omg yeah I also support <em>consensual-adult, similar-in-age, non-reproductive</em> incest. I mean, it obviously follows from the principle of &quot;If it's between consenting adults &amp; harms nobody, it's fine&quot;? And if they're the same generation, there isn't even a power-dynamic/grooming risk. Seriously, do people not think through their stated principles?&quot;</p>
 </blockquote>
-<p>Recently re-reading Haidt's original (unpublished) study, I realized I missed this detail: a <em>third</em> of the students supported Julie &amp; Mark, upon reflection! (See Table 1<sup class="footnote-ref"><a href="#fn29" id="fnref29:1">[29:1]</a></sup>) That's a pretty high % of folks who (secretly) support it!</p>
+<p>Recently re-reading Haidt's original (unpublished) study, I realized I missed this detail: a <em>third</em> of the students supported Julie &amp; Mark, upon reflection! (See Table 1<sup class="footnote-ref"><a href="#fn31" id="fnref31:1">[31:1]</a></sup>) That's a pretty high % of folks who (secretly) support it!</p>
 <p>That gives me reassurance that I can probably write about this and not be burned alive.</p>
 <p>...</p>
 <p>Okay, but why do <em>I</em> want to write about this? What's my <em>stake</em>, here?</p>
-<p>No, I'm not interested in my family. (I've gone mostly no-contact with them.) No, I don't have any friends who are in incestuous relationships. (As far as I know; they may come out to me after this post.) No, it's not a huge kink for me. (Just a small one.)</p>
+<p>No, I'm not interested in my family. (I've gone mostly no-contact with them.) No, I don't have any friends who are in incestuous relationships. (As far as I know; they may come out to me after this post.) No, it's not a big kink for me. (Just a small one. /tone: tongue-in-cheek)</p>
 <p>There <em>is</em> a bit of a &quot;moral obligation&quot; feeling; it follows logically from my moral principles. Also, <em>I</em> personally benefited from past generations fighting for inter-racial &amp; LGBTQ love, maybe I should &quot;pay it forward&quot; to the next consensual-adult love-minority.</p>
 <p>But, to be crass: <strong>95% of my motivation is to use this essay as a <em>filter</em>.</strong></p>
 <p>After I came out to my mom as bi, she sent me to a child psychologist and told him to convince me I wasn't. (Thankfully the psych got that shit all the time, and told me &quot;yeah you're fine, kid.&quot;) I soon moved out &amp; went no-contact with my mom.</p>
@@ -1188,8 +1184,8 @@ Part Three: 4 weeks</p>
 <p>Turns out: consensual-adult, non-reproductive, similar-in-age incest is the perfect filter! Because:</p>
 <ol>
 <li>It's controversial,</li>
-<li>But – <em>crucially</em> – it is NOT (yet) part of &quot;the culture war&quot;. (And when it does, I can see it going either way. Maybe it gets left-coded coz &quot;Love Wins&quot;, or right-coded due to the impression that consensual incest is more common in right-leaning rural areas<sup class="footnote-ref"><a href="#fn30" id="fnref30">[30]</a></sup>.)</li>
-<li>And yet, it naturally follows from a principle most Westerners would endorse: &quot;If it's between consenting adults, and hurts nobody, not even themselves, and there's no unbalanced power-dynamic... then it should be <em>at least legal</em>, if not socially accepted.&quot;</li>
+<li>But – <em>crucially</em> – it is NOT (yet) part of &quot;the culture war&quot;. (And when it does, I can see it going either way. Maybe it gets left-coded coz &quot;Love Wins&quot;, or right-coded due to the impression that consensual incest is more common in right-leaning rural areas<sup class="footnote-ref"><a href="#fn32" id="fnref32">[32]</a></sup>.)</li>
+<li>And yet, it naturally follows from a principle most Westerners would endorse: &quot;If it's between consenting adults, and hurts nobody, not even themselves, and there's no unbalanced power-dynamic... then it's nobody else's business, or <em>at least</em> it shouldn't be the Government's business.&quot;</li>
 </ol>
 <p>I'm <em>not</em> saying, &quot;if you don't support consensual adult incest we can't be friends&quot;. Compassionate, reasonable people can &amp; do disagree strongly on this. But I <em>am</em> saying, if someone refuses to <em>even consider it</em> because it's &quot;just gross&quot;... then I <em>know</em> they wouldn't have considered mixed-race or same-sex relations, either.</p>
 <p>If they support &quot;my people&quot;, it's only by conformity and chance.</p>
@@ -1211,10 +1207,9 @@ Part Three: 4 weeks</p>
 <p><a id="project_29"></a></p>
 <h3>29. 🧠 The Lolita Meets Clockwork Orange Story</h3>
 <p><strong>(⚠️ CONTENT WARNING ⚠️: child sexual abuse, fascism. FEEL FREE TO SKIP.)</strong></p>
-<p><img src="/content/media/backlog/OlympiaCarver.png" alt="A poster of a Fasces (an axe strengthened with rods tied around the handle), painted in red-white-blue American colors. The caption reads: FIX THE FUCKING POTHOLES. OLYMPIA CARVER 2032."></p>
-<figcaption>(concept art for an American Fascist logo. based on the [fasces](https://en.wikipedia.org/wiki/Fasces))</figcaption>
+<p><img src="/content/media/backlog/OlympiaCarver.png" alt="A poster of a Fasces (an axe strengthened with rods tied around the handle), painted in red-white-blue American colors. The caption reads: FIX THE FUCKING POTHOLES. OLYMPIA CARVER 2032."><em>(concept art for an American Fascist logo. based on the <a href="https://en.wikipedia.org/wiki/Fasces">fasces</a>)</em></p>
 <blockquote>
-<p>“The year is 2032. After years of pundits yapping, <em>&quot;groomer groomer groomer, fascist fascist fascist&quot;</em>, it finally happened: I have to choose between a literal actual pedophile, or a literal actual Fascist. God fucking help me.”</p>
+<p>“The year is 2032. After years of pundits yapping, <em>&quot;groomer groomer groomer, fascist fascist fascist&quot;</em>, it finally happened: I have to choose between working for a literal actual pedophile, or a literal actual Fascist. God fucking help me.”</p>
 </blockquote>
 <p><strong>Hazel Simmons</strong> is a convicted child molester. She was a brilliant Computer Science grad student... until she tutored a 12-year-old boy, fell in &quot;love&quot;, then groomed &amp; fucked him.</p>
 <p>Hazel was let out early on parole, on condition she enroll in an experiment with the CharI/O – a device that can <em>read &amp; re-write your deepest emotions</em>. (The experiment is secret, to avoid political backlash from both sides: “they're helping pedophiles” and/or “it's conversion therapy on prisoners”.)</p>
@@ -1222,30 +1217,34 @@ Part Three: 4 weeks</p>
 <p><strong>Klaus Liao</strong> is the main researcher behind the CharI/O. He's seen <em>A Clockwork Orange</em>, so he took the obvious step to prevent totalitarian abuse: the CharI/O <em>only works if you actually want the change</em>. (the &quot;individual consent&quot; safeguard.)</p>
 <p>With it, his team's treated trauma, addiction, phobias, procrastination... and now, pedophilia! Klaus hires Hazel onto the team, because of her technical brilliance, and because she was an early success case. The two develop an odd relationship: friend + colleague + therapist/client + scientist/guinea-pig.</p>
 <p>As a sidenote, Klaus used to be an incel.</p>
-<p><strong>Garry Gomez</strong> is someone Hazel meets through her VR-based support group, Minor-Attracted Anonymous. Garry is playful, friendly, has a genuine faith &amp; love for humanity... he just happens to be a closet pedophile (who, unlike Hazel, has <em>never</em> acted on the desire).</p>
-<p>He <em>also</em> happens to be a multi-millionaire founder of a VR game company, which is why Hazel &amp; Klaus court him to fund the CharI/O. Because, despite its success, the CharI/O still struggles to be funded. Which is a dire threat to humanity, coz there's <em>others</em> who want their hands on it...</p>
+<p>Klaus also knows the other obvious danger of the CharI/O: that large corporations will use them to brainwash employees &amp; consumers. So, Klaus uses the CharI/O to scan the brains of potential investors, to make sure he only works with good people. Alas, the intersection of &quot;deeply good&quot; and &quot;rich enough to invest millions&quot; is very very small. Only after years of searching, does Klaus finally find someone...</p>
+<p><strong>Garry Gomez</strong> is someone Hazel meets through her VR-based support group, Minor-Attracted Anonymous. Garry is playful, friendly, has a genuine faith &amp; love for humanity... he just happens to be a closet pedophile (who, unlike Hazel, has <em>never</em> acted on the desire). In fact, it's precisely <em>because</em> he's 100% a kid at heart, is why his heart's 100% on kids.</p>
+<p>Garry <em>also</em> happens to be a multi-millionaire founder of a VR game company, which is why Hazel &amp; Klaus court him to fund the CharI/O's development. Of course, they're nervous about taking investment from a pedophile multi-millionaire. But if <em>they</em> don't succeed with the CharI/O, there's others who will steal or re-invent the technology, towards more dire ends...</p>
 <p><strong>Olympia Carver</strong> is a rising politician, and self-described Moderate Fascist. In the year 2032, the majority of people are finally sick of the majority of people. Democracy's voting itself out. Power corrupts, and &quot;power to the people&quot; just corrupts the people – look how nasty we are to each other over politics. Meanwhile, the elites distract us with culture war stunts, while our friends die from overdose, it costs $100 a day to exist, and they still haven't fixed the fucking potholes.</p>
 <p>So: Olympia's offering to take the wheel, and <em>get shit done</em>.</p>
 <p>Of course, she knows the two failure modes of benevolent dictators: they stop being benevolent (corruption) or stop being the dictator (coups). But the CharI/O can solve <em>both</em> problems: by re-writing herself daily to stay benevolent, and re-writing all her subordinates to stay loyal to her.</p>
 <p>And once she's Empress of the World, she can use the CharI/O (with consent-safeguard removed) to rewrite <em>everyone</em> to be more compassionate &amp; collaborative. World peace, whether the world's ready for it or not. <em>Humanity, as one unified super-organism.</em></p>
-<p>All Olympia needs to do is gently persuade Hazel, Klaus, and Garry to work with her. Or use... <em>other</em> methods.</p>
+<p>All Olympia needs to do is gently persuade Hazel and Klaus to work with her. Or use... <em>less gentle</em> methods.</p>
+<p>. . .</p>
+<p>And that's the story of how two people, making a device that decides the fate of humanity, are forced to choose between working for a literal actual pedophile or literal actual Fascist.</p>
 <p>~ ~ ~ ~ ~</p>
 <p>Why write this? I don't believe in Jung, but we can call this &quot;shadow-work&quot; if you want. This project is my dumping ground for every anxiety, every intrusive thought, every piece of unprocessed emotional baggage... it's all going into <s>the square hole</s> this novel. Stuff like:</p>
 <ul>
 <li>Processing how I lost my virginity <em>before</em> my first kiss; I was 15, the other guy was 40+. It wasn't forced, &quot;I was willing&quot;. What would drive an adult to do that? What would drive a <em>kid</em> to seek out such an adult?</li>
 <li>Looking at the political state of the world, a fear lots of folks have: the fear that democracy will die -- or worse, that democracy <em>deserves</em> to die.</li>
 <li>Lots of smart &amp; decent people have fallen for horrible beliefs. Famous intellectuals supported coercive eugenics even after Hitler, state Communism even during Stalin, your favorite French philosopher probably signed <a href="https://en.wikipedia.org/wiki/French_petitions_against_age_of_consent_laws">the 1977–79 open letters to abolish the age of consent</a>. If <em>these</em> geniuses can fall for it, what chance do the rest of us have? Becoming enlightened and going crazy <em>feel identical from the inside</em>. If I lost my mind, <em>how would I even know?</em></li>
-<li>And of course, being an internet creator who pays rent from being online, I <em>do</em> fear being &quot;cancelled&quot;. I want to rip off the band-aid, and dump <em>every horrible thing</em> into this novel. Then, if I survive <em>that</em>, I'll have the relief of knowing I'll be invincible.</li>
+<li>And of course, being an internet creator who pays rent from being online, I <em>do</em> fear being &quot;cancelled&quot;. I want to rip off the band-aid, and dump <em>every horrible thing</em> into this story — a story starring two pedophiles, a former incel, and an imperialist eugenicist Fascist. Then, if I survive <em>that</em>, I'll have the relief of knowing I'll be invincible.</li>
 </ul>
 <p><strong>Progress:</strong> 5%. ◻️◻️◻️◻️◻️</p>
 <p>Detailed 12-chapter outline with character bible. One 10,000-word chapter's first draft fully written. Read a <em>LOT</em> of research papers/books on pedophilia &amp; child abuse. I now know way more about those than I ever wanted to know.</p>
+<p>(For example, did you know <em>women</em> child molesters are surprisingly common? Something like 10% to 20% of all child molesters are women<sup class="footnote-ref"><a href="#fn33" id="fnref33">[33]</a></sup>; they're drastically under-reported &amp; under-convicted, of course. This is partly why the <em>main</em> main character, Hazel, is a woman child molester. To, I dunno, &quot;raise awareness&quot;, or at least be less cliché.)</p>
 <p><strong>Time on backburner:</strong> 1 year.</p>
 <p><strong>Time to finish:</strong> 12 months.</p>
 <p>The full story is 12 chapters long. A sustainable pace would be &quot;1 chapter a month&quot;, if I worked on this full time. (Which itself is an unrealistic assumption; I'm too curious/flighty to work on <em>one thing</em> for a whole year.)</p>
 <p>But sure, I <em>could</em> upload a chapter a month online; books like <em>The Martian</em> were written in installments like that.</p>
 <p><strong>Desire to finish:</strong> 2/5 ⭐️⭐️☆☆☆</p>
 <p>It's less &quot;fear of being cancelled&quot;, more &quot;this project is way, <em>way</em> too long for my neurotype&quot;.</p>
-<p>That said, it <em>would</em> be cathartic. Maybe I'll pull out individual side-plots and turn them into standalone short stories/satire articles, like <em>The Christian-Utilitarian Argument for Mass Infanticide</em><sup class="footnote-ref"><a href="#fn31" id="fnref31">[31]</a></sup>, or <em>Steel-manning White Nationalist Lesbian Separatism</em><sup class="footnote-ref"><a href="#fn32" id="fnref32">[32]</a></sup>.</p>
+<p>That said, it <em>would</em> be cathartic. Maybe I'll pull out individual side-plots and turn them into standalone short stories/satire articles, like <em>The Christian-Utilitarian Argument for Mass Infanticide</em><sup class="footnote-ref"><a href="#fn34" id="fnref34">[34]</a></sup>, or <em>Steel-manning White Nationalist Lesbian Separatism</em><sup class="footnote-ref"><a href="#fn35" id="fnref35">[35]</a></sup>.</p>
 <p>. . .</p>
 <p><a id="project_30"></a></p>
 <h3>30. ⨁ Complex Jane: a love story with an imaginary friend</h3>
@@ -1253,11 +1252,11 @@ Part Three: 4 weeks</p>
 <p>Get it? She's a mathematician, and it's a pun on <em>complex plane?</em></p>
 <p><img src="/content/media/backlog/17064737174567.jpg" alt="A photo of a slack-jawed moray, looking like it just told a bad pun."></p>
 <p>Anyway, my main motivation for this project: <strong>to write a chill, positive representation of plurality.</strong></p>
-<p>Many asterisks aside, researchers agree: &quot;the brain is a computer&quot;<sup class="footnote-ref"><a href="#fn33" id="fnref33">[33]</a></sup>. So: if a single computer-hardware can safely dual-boot multiple operating systems, why not a single brain-hardware safely hosting multiple personalities?</p>
+<p>Many asterisks aside, researchers agree: &quot;the brain is a computer&quot;<sup class="footnote-ref"><a href="#fn36" id="fnref36">[36]</a></sup>. So: if a single computer-hardware can safely dual-boot multiple operating systems, why not a single brain-hardware safely hosting multiple personalities?</p>
 <p>Over the last few years, 4 of my friends (or should I say, 4+?) came out to me about having Dissociative Identity Disorder (DID) or some kind of plurality.</p>
-<p>(If 4 sounds unlikely, keep in mind the prevalence of DID in the general population is ~1%<sup class="footnote-ref"><a href="#fn34" id="fnref34">[34]</a></sup>, the median person has about ~291 people in their personal network<sup class="footnote-ref"><a href="#fn35" id="fnref35">[35]</a></sup>, and I'm in LGBTQ communities where folks are ~1.66x more likely to have been physically/sexually abused as kids, a risk factor for DID.<sup class="footnote-ref"><a href="#fn36" id="fnref36">[36]</a></sup> [IMPORTANT NOTE: Not all &quot;split personalities&quot; are caused by PTSD, cPTSD, or trauma.] So, munching the numbers, <code>0.01\*291\*1.66 = ~4.8</code>, 4-or-5 folks I know having DID is what I'd statistically expect. As for the rest of you, <code>0.01\*291 = ~2.9</code>, <em>you</em> can expect 2-or-3 folks you know to secretly have DID.)</p>
+<p>(If 4 sounds unlikely, keep in mind the prevalence of DID in the general population is ~1%<sup class="footnote-ref"><a href="#fn37" id="fnref37">[37]</a></sup>, the median person has about ~291 people in their personal network<sup class="footnote-ref"><a href="#fn38" id="fnref38">[38]</a></sup>, and I'm in LGBTQ communities where folks are ~1.66x more likely to have been physically/sexually abused as kids, a risk factor for DID.<sup class="footnote-ref"><a href="#fn39" id="fnref39">[39]</a></sup> [IMPORTANT NOTE: Not all &quot;split personalities&quot; are caused by PTSD, cPTSD, or trauma.] So, munching the numbers, \(0.01<em>291</em>1.66 \approx 4.83\), 4-or-5 folks I know having DID is what I'd statistically expect. As for the rest of you, \(0.01*291 = 2.91\), <em>you</em> can expect 2-or-3 folks you know to secretly have DID.)</p>
 <p>Having split personalities is still pretty darn stigmatized, as far as I can tell. <em>Every</em> mainstream representation of plurality that I can think of is horror (Psycho, Split, Red Dragon, Jekyll/Hyde), unhealthy (Fight Club, Mr. Robot), psychoanalytic BS (Sybil, Three Faces of Eve) or shock comedy (Me Myself &amp; Irene, Flippy from Happy Tree Friends). I haven't seen United States of Tara, but it may be the <em>only</em> positive representation of plurality in popular media. (Calvin &amp; Hobbes and Inside Out seem more &quot;being a kid&quot; and &quot;internal family systems&quot;, respectively, than &quot;plural&quot;.)</p>
-<p>In contrast: in the last century, being left-handed, gay, bi, trans, or autistic (at least, the &quot;minimal support needs&quot;/formerly-Asperger's kind) has gone from &quot;this is a problem to fix&quot; to &quot;this is a harmless, alternate way to be&quot;. (At least in my social circles.) I hope one day - both for my friends' sakes, and out of moral/intellectual principle - that plurality will be accepted, too.</p>
+<p>In contrast: in the last century, being left-handed, gay, bi, trans, or autistic (at least, the &quot;minimal support needs&quot;/formerly-Asperger's kind) has gone from &quot;this is a illness to cure&quot; to &quot;this is a harmless, alternate way to be&quot;. (At least in my social circles.) I hope one day - both for my friends' sakes, and out of moral/intellectual principle - that plurality will be accepted, too.</p>
 <p>Maybe with the help of storytelling, hence this project.</p>
 <p>Also, I'd get to discuss the philosophy of math –– (how is math both <em>less</em> and <em>more</em> real than physical reality? with math &amp; personhood/consciousness: what <em>is</em> real, anyway? should I even <em>care</em> what's &quot;real&quot;?) –– aaaaand I'd make math puns. For example, a well-meaning but un-informed therapist will recommend to Jane she &quot;re-integrate&quot; with Ima. That chapter will be titled... <em>Integration by Parts.</em></p>
 <p><img src="/content/media/backlog/17064737174567.jpg" alt="A photo of a slack-jawed moray, looking like it just told a bad pun."></p>
@@ -1289,7 +1288,7 @@ Part Three: 4 weeks</p>
 </ol>
 <p>But! What if I told you there was a method of immortality that <em>IS</em> possible with today's tech, <em>AND</em> gives you backup bodies &amp; a consciousness-guarantee, <em>AND</em> lets us keep the joy of raising children, giving new youthful vitality to our species, <em>ALL WITHOUT</em> risking overpopulation or forced lonely space expansion?</p>
 <p>You just need to... <em>expand</em> your definition of immortality.</p>
-<p>First, let's define &quot;you&quot; to be your memories, personality, values, etc. This matches with our intuition of what makes you &quot;you&quot;. Someone with severe Alzheimers &quot;loses themselves&quot; over time, even if they're in the same body. Someone who quickly freezes to death and then brought back to life, is still the same person, even if they legally &amp; medically died. (Yes, there <em>are</em> cases like this.<sup class="footnote-ref"><a href="#fn37" id="fnref37">[37]</a></sup>)</p>
+<p>First, let's define &quot;you&quot; to be your memories, personality, values, etc. This matches with our intuition of what makes you &quot;you&quot;. Someone with severe Alzheimers &quot;loses themselves&quot; over time, even if they're in the same body. Someone who quickly freezes to death and then brought back to life, is still the same person, even if they legally &amp; medically died. (Yes, there <em>are</em> cases like this.<sup class="footnote-ref"><a href="#fn40" id="fnref40">[40]</a></sup>)</p>
 <p>So, the get-immortal-quick scheme:</p>
 <ul>
 <li>Keep a journal throughout your life. (And retroactively record past memories.)</li>
@@ -1328,7 +1327,8 @@ G</p>
 <h2>👩‍🎤 Songs / Music Videos</h2>
 <p>During the first year of the Covid-19 pandemic, I did <a href="https://studio.com/classes/andrew-huang/music-production">Andrew Huang's one-month course on producing songs in Ableton.</a> I grew up on Weird Al &amp; MC Frontalot, I just wanna make nerdy songs.</p>
 <p>(I did publish <em>one</em> music video during the early pandemic. It was called, uh, <a href="https://singingcatgirl.github.io/">The Femboy Hooters Jingle</a>. ⚠️ Warning: very furry &amp; very horny.)</p>
-<p><strong>Turn on your speakers, there's audio of my amateur singing in this one! 🔊</strong></p>
+<p><strong>Turn on your speakers, the below project pitches have demos of my amateur singing! 🔊</strong> I warn you, it's very, <em>very</em> amateur singing. It sucks. But as Jake the Dog once said:</p>
+<p><img src="/content/media/backlog/jake.gif" alt="Jake the Dog saying: &quot;Dude, sucking at something is the first step towards being sort of good at something.&quot;"></p>
 <ol start="33">
 <li>The Special Relativity Song <a href="#project_33">↪</a></li>
 <li>The General Relativity Song <a href="#project_34">↪</a></li>
@@ -1341,17 +1341,19 @@ G</p>
 <p>. . .</p>
 <p><a id="project_33"></a></p>
 <h3>33. 🚀 The Special Relativity Song</h3>
-<p>This was my final project for Andrew Huang's course! You can listen to the full song below, but I warn you, it has a very &quot;she learnt music production &amp; singing in one month&quot; quality:</p>
-<p>// TODO: Playable audio? <a href="https://studio.com/p/TKajnA">https://studio.com/p/TKajnA</a></p>
+<p>This was my final project for Andrew Huang's course! I warn you, it has a very &quot;she learnt music production &amp; singing in one month&quot; quality:</p>
+<p><a href="https://studio.com/p/TKajnA">Full song here</a></p>
+<p>Excerpt:</p>
+<p><audio controls src="https://ncase.me/misc-dump/2024-02/sucky-singing/SR.mp3"></audio></p>
 <p>Lyrics Excerpt:</p>
 <blockquote>
-<p>I'm float / ing on a boat
-At a constant velocity
-And you're / on the shore
+<p>I'm float / ing on a boat<br>
+At a constant velocity<br>
+And you're / on the shore<br>
 Just standing there observing me</p>
-<p>To you I'm moving at a speed of <code>v</code>
-But you move at minus <code>v</code> according to me
-That's all / what we call
+<p>To you I'm moving at a speed of <code>v</code><br>
+But you move at minus <code>v</code> according to me<br>
+That's all / what we call<br>
 Galilean relativity!</p>
 <p><code>[...]</code></p>
 </blockquote>
@@ -1363,30 +1365,30 @@ Galilean relativity!</p>
 <p><a id="project_34"></a></p>
 <h3>34. 🏀 The General Relativity Song</h3>
 <p>If the above song &amp; music video took off, I was thinking of making a sequel.</p>
-<p>Listen-able Demo:</p>
-<p>// TODO</p>
+<p>Demo:</p>
+<p><audio controls src="https://ncase.me/misc-dump/2024-02/sucky-singing/GR.mp3"></audio></p>
 <p>Lyrics (excerpt):</p>
 <blockquote>
-<p>[Chorus]
-Einstein once set out to prove
-Why an apple does fall down to Earth
-Curved spacetime tells mass how to move
+<p>[Chorus]<br>
+Einstein once set out to prove<br>
+Why an apple does fall down to Earth<br>
+Curved spacetime tells mass how to move<br>
 and mass tells spacetime how to curve!</p>
-<p>[Verse 1]
-<em>My happiest thought,</em> Einstein tells the truth,
-<em>was imagining a man falling off a roof.</em>
-Schadenfreude? Au contraire!
-Coz when that man falls through the air,
-Ignore the wind in his hair and on his face,
-He'll feel weightless -- like in outer space
-Indistinguishable from an inertial frame
-Principle of Equivalence: it's the same!
-But wait! A question on your mind:
-Inertial things move in straight lines
-But things fall in curves, so how can it be straight?
-Well very simply, if spacetime is -- <em>wait!</em>
--- <em>for it!</em> --
-. . .
+<p>[Verse 1]<br>
+<em>My happiest thought,</em> Einstein tells the truth,<br>
+<em>was imagining a man falling off a roof.</em><br>
+Schadenfreude? Au contraire!<br>
+Coz when that man falls through the air,<br>
+Ignore the wind in his hair and on his face,<br>
+He'll feel weightless -- like in outer space<br>
+Indistinguishable from an inertial frame<br>
+Principle of Equivalence: it's the same!<br>
+But wait! A question on your mind:<br>
+Inertial things move in straight lines<br>
+But things fall in curves, so how can it be straight?<br>
+Well very simply, if spacetime is -- <em>wait!</em><br>
+-- <em>for it!</em> --<br>
+. . .<br>
 Curved <em>itself.</em> Yeaaaaaaaah!!!!!!</p>
 <p><code>[...]</code></p>
 </blockquote>
@@ -1401,35 +1403,35 @@ Curved <em>itself.</em> Yeaaaaaaaah!!!!!!</p>
 <p>However, most public health resources on intrusive thoughts keep their writing tame, like, &quot;oh it's when you imagine yourself jumping off a bridge or robbing a bank&quot;, which (unintentionally) makes anyone else with <em>worse</em> thoughts feel, &quot;oh my god I'm a freak even by <em>freak</em> standards&quot;.</p>
 <p>So, I wanted to make a song about intrusive thoughts that's <em>far</em> grosser - but with comedy, to help defuse the anxiety that comes with it!</p>
 <p><strong>(⚠️ WARNING: <em>EXTREMELY</em> NSFW LYRICS. CONTENT NOTE: EVERYTHING ⚠️)</strong></p>
-<p>Listen-able Demo:</p>
-<p>// TODO</p>
+<p>Demo:</p>
+<p><audio controls src="https://ncase.me/misc-dump/2024-02/sucky-singing/intrusive.mp3"></audio></p>
 <p>Lyrics (excerpt):</p>
 <blockquote>
-<p>Don't think / of a pink / elephant
-Sucking its own dick with its own trunk
-I guess / when you repress / your sentiments
+<p>Don't think / of a pink / elephant<br>
+Sucking its own dick with its own trunk<br>
+I guess / when you repress / your sentiments<br>
 Your mind gets filled-up with fucked-up junk</p>
-<p>We all got! [clap clap] Intrusive thoughts! [clap clap]
-Your mood may worsen / Thinking &quot;I'm a bad person&quot;
-But you're not! [clap clap] Intrusive tho-o-o-oughts!
-Are something we all share, so sigh a deep breath
+<p>We all got! [clap clap] Intrusive thoughts! [clap clap]<br>
+Your mood may worsen / Thinking &quot;I'm a bad person&quot;<br>
+But you're not! [clap clap] Intrusive tho-o-o-oughts!<br>
+Are something we all share, so sigh a deep breath<br>
 We all fantasize about fucking dogs to death!</p>
 <p>ooooooohhhhhhhhhhhhhhhhh</p>
-<p>This isn't your first rodeo
-You know that beheading video
-That you saw when you were ten?
-It'll pop up in your mind again
-and again and again and again and again
-and -- what rhymes with ten? -- <em>again!</em>
+<p>This isn't your first rodeo<br>
+You know that beheading video<br>
+That you saw when you were ten?<br>
+It'll pop up in your mind again<br>
+and again and again and again and again<br>
+and -- what rhymes with ten? -- <em>again!</em><br>
 [clap clap]</p>
-<p>“Let's shoot up a school!”
-“Let's jerk off to gore!”
-“Let's shout the N-word in a grocery store!”
-What's with this melodrama?
-Is it my childhood trauma?
-I'm getting <em>pissed.</em>
-[clap clap]
-Why the cognitive-behavioral <em>fuck</em>
+<p>“Let's shoot up a school!”<br>
+“Let's jerk off to gore!”<br>
+“Let's shout the N-word in a grocery store!”<br>
+What's with this melodrama?<br>
+Is it my childhood trauma?<br>
+I'm getting <em>pissed.</em><br>
+[clap clap]<br>
+Why the cognitive-behavioral <em>fuck</em><br>
 does this part of my brain exi-i-i-iiiiiiiiiiiiist?</p>
 <p><code>[...]</code></p>
 </blockquote>
@@ -1441,18 +1443,18 @@ does this part of my brain exi-i-i-iiiiiiiiiiiiist?</p>
 <p><a id="project_36"></a></p>
 <h3>36. 📐 The Pythagorean Theorem Song</h3>
 <p>This one <em>requires</em> a music video, since it's about a visual proof of the Pythagorean Theorem.</p>
-<p>Listen-able Demo:</p>
-<p>// TODO</p>
+<p>Demo:</p>
+<p><audio controls src="https://ncase.me/misc-dump/2024-02/sucky-singing/triangle.mp3"></audio></p>
 <p>Lyrics (excerpt):</p>
 <blockquote>
-<p>So you know two cities' longitude &amp; latitude
-Can we get their distance? With a can-do attitude!
-and a right triangle -- no need to fear 'em
+<p>So you know two cities' longitude &amp; latitude<br>
+Can we get their distance? With a can-do attitude!<br>
+and a right triangle -- no need to fear 'em<br>
 I'll show you the picture proof of the Pythagorean Theor-e-e-e-em!</p>
-<p>So you have a triangle
-That has a right angle
-<code>a</code> and <code>b</code> are the sides
-and <code>c</code>'s the diagonal
+<p>So you have a triangle<br>
+That has a right angle<br>
+<code>a</code> and <code>b</code> are the sides<br>
+and <code>c</code>'s the diagonal<br>
 <code>[...]</code></p>
 </blockquote>
 <p><strong>Progress:</strong> 20% ▶️◻️◻️◻️◻️ Lyrics &amp; melody. Music video animatic'd in my head. No production.</p>
@@ -1463,19 +1465,19 @@ and <code>c</code>'s the diagonal
 <p><a id="project_37"></a></p>
 <h3>37. 🧐 The Longest Term</h3>
 <p>A parody of Billy Joel's <em>The Longest Time</em> (<a href="https://www.youtube.com/watch?v=a_XgQhMPeEQ">on YouTube</a>), but it's a friendly ribbing of the rationalist/longtermist movement. (This came out of a late-night hangout with some teens at <a href="https://hackclub.com/">Hack Club</a>.)</p>
-<p>Listen-able Demo:</p>
-<p>// TODO</p>
+<p>Demo:</p>
+<p><audio controls src="https://ncase.me/misc-dump/2024-02/sucky-singing/longest.mp3"></audio></p>
 <p>Lyrics (excerpt):</p>
 <blockquote>
-<p>If you said that happiness was good
-And you'd like to make more if you could
-Then you should put 'yer
-Moral weight on folks in the future
+<p>If you said that happiness was good<br>
+And you'd like to make more if you could<br>
+Then you should put 'yer<br>
+Moral weight on folks in the future<br>
 Coz they outnumber us in the looooongest term!</p>
-<p>Build a Dyson Sphere around the Sun
-To power the Matrix for everyone
-All eight quintillion
-Quintillion quintillion quintillion
+<p>Build a Dyson Sphere around the Sun<br>
+To power the Matrix for everyone<br>
+All eight quintillion<br>
+Quintillion quintillion quintillion<br>
 Happy brain-em's in the looooongest term!</p>
 <p>[...]</p>
 </blockquote>
@@ -1487,22 +1489,20 @@ Happy brain-em's in the looooongest term!</p>
 <p><a id="project_38"></a></p>
 <h3>38. 🥧 The 3Blue1Brown Jingle</h3>
 <p>A birthday present for Grant Sanderson I never finished.</p>
-<p>Listen-able Demo:</p>
-<p>// TODO</p>
+<p>Demo:</p>
+<p><audio controls src="https://ncase.me/misc-dump/2024-02/sucky-singing/math.mp3"></audio></p>
 <p>Lyrics (excerpt):</p>
 <blockquote>
-<p><code>[calm music]</code>
-Have you been wishin'
-For visual intuition
+<p>Have you been wishin'<br>
+For visual intuition<br>
 of math?</p>
-<p>Because mindless plugging
-and chugging is bugging
+<p>Because mindless plugging<br>
+and chugging is bugging<br>
 me, and fills me with wraaAAAAATH</p>
-<p><code>[death metal]</code>
-BUT DON'T FEEL DOWN
+<p><code>[death metal]</code><br>
+BUT DON'T FEEL DOWN<br>
 THREE BLUE ONE BROWN</p>
-<p><code>[calm music]</code>
---will show you the beauty of math!</p>
+<p>--will show you the beauty of math!</p>
 </blockquote>
 <p><strong>Progress:</strong> 20% ▶️◻️◻️◻️◻️ Lyrics &amp; melody.</p>
 <p><strong>Time on backburner:</strong> 3 years.</p>
@@ -1514,19 +1514,19 @@ THREE BLUE ONE BROWN</p>
 <p>This was meant to be a follow-up to <em>The Femboy Hooter Jingle</em> if it was successful, and if I wanted to keep making musical furry erotica as a side-hustle.</p>
 <p>Right, not sure if I mentioned that. I tried running a lewd furry Patreon during the pandemic. Didn't pan out. Anyway...</p>
 <p><strong>(⚠️ WARNING: NSFW LYRICS)</strong></p>
-<p>Listen-able Demo:</p>
-<p>// TODO</p>
+<p>Demo:</p>
+<p><audio controls src="https://ncase.me/misc-dump/2024-02/sucky-singing/fetish.mp3"></audio></p>
 <p>Lyrics (excerpt):</p>
 <blockquote>
-<p>So you're browsing on the internet
-When you find some porn that makes you hard or wet
-It's sickening and gross and awful, yet
+<p>So you're browsing on the internet<br>
+When you find some porn that makes you hard or wet<br>
+It's sickening and gross and awful, yet<br>
 I think you got yourself a new fetish!</p>
-<p>Red Riding Hood can ride a werewolf knot
-That incest porn has a surprisingly good plot
-And Vaporeon is a moist Poké-thot
-What hath God wrought?
-I think you've got
+<p>Red Riding Hood can ride a werewolf knot<br>
+That incest porn has a surprisingly good plot<br>
+And Vaporeon is a moist Poké-thot<br>
+What hath God wrought?<br>
+I think you've got<br>
 a braaaaand newwww fetish!</p>
 <p><code>[...]</code></p>
 </blockquote>
@@ -1579,7 +1579,7 @@ a braaaaand newwww fetish!</p>
 <p><a id="project_41"></a></p>
 <h3>41. 💧 Tool for making drip-feed courses (&amp; courses I want to make)</h3>
 <p>You know how sometimes you sign up for a service, they'll email you on Day 1, then Day 2, then Day 3 etc with pre-written &quot;onboarding&quot; emails? These are called &quot;drip marketing&quot; newsletters.</p>
-<p>I didn't realize until recently you could use them to give <em>online courses!</em> For example, I recently took Ali Abdaal's free 30 Day Productivity email-course<sup class="footnote-ref"><a href="#fn38" id="fnref38">[38]</a></sup> – (did I mention I shipped <em>nothing</em> in the last 14 months?) – and I <em>adored</em> it.</p>
+<p>I didn't realize until recently you could use them to give <em>online courses!</em> For example, I recently took Ali Abdaal's free 30 Day Productivity email-course<sup class="footnote-ref"><a href="#fn41" id="fnref41">[41]</a></sup> – (did I mention I shipped <em>nothing</em> in the last 14 months?) – and I <em>adored</em> it.</p>
 <p>I make educational stuff online, but I've felt &quot;eh&quot; that all my explainers are one-shot standalones. I want to try making a <em>course</em>.  I <em>could</em> do a drip-marketing newsletter, but:</p>
 <ol>
 <li>That gets expensive for <em>me</em> very quickly</li>
@@ -1626,7 +1626,7 @@ a braaaaand newwww fetish!</p>
 <li>Mostly targets <em>aerosol transmission</em>, since that's the quickest way to infect &amp; kill a lot of people.</li>
 </ol>
 <p>A family of solutions that fits all three: air filters, ventilation, germicidal UV, far UV-C, etc. A building can install those, and the humans inside wouldn't have to change any behavior whatsoever.</p>
-<p>Project Pitch: I dunno, <em>some</em> kind of video/article/advocacy piece for better research into that. Maybe some interactive explanations of aerosol transmission models. And/or present an <em>honest</em> economic case for this. (e.g. bio-terrorism &amp; novel pandemics aside, even the &quot;regular&quot; flu costs the U.S. $90 billion a year.<sup class="footnote-ref"><a href="#fn39" id="fnref39">[39]</a></sup>)</p>
+<p>Project Pitch: I dunno, <em>some</em> kind of video/article/advocacy piece for better research into that. Maybe some interactive explanations of aerosol transmission models. And/or present an <em>honest</em> economic case for this. (e.g. bio-terrorism &amp; novel pandemics aside, even the &quot;regular&quot; flu costs the U.S. $90 billion a year.<sup class="footnote-ref"><a href="#fn42" id="fnref42">[42]</a></sup>)</p>
 <p><strong>Progress:</strong> 0% ◻️◻️◻️◻️◻️ Nothing but a project pitch &amp; guilt.</p>
 <p><strong>Time on backburner:</strong> 4 years</p>
 <p><strong>Time to finish:</strong> 2 months</p>
@@ -1639,7 +1639,7 @@ a braaaaand newwww fetish!</p>
 <p>So, I felt bummed for a while. The forces that control the world are criminally incompetent <em>at best</em>, and I'm too small to do anything about it. I step in front of the tank in protest, I'll just get squashed. What to do?</p>
 <p>Eventually, a few things started giving me hope:</p>
 <ul>
-<li>Folks making home-made masks while the WHO &amp; CDC were still recommending <em>against</em> masks. (The institutions later said, &quot;oh we just told the public to not wear masks because we wanted to conserve supplies for hospitals&quot;. Lest it be memory-holed: <em>nurses at hospitals</em> were being fired for wearing N95 masks<sup class="footnote-ref"><a href="#fn40" id="fnref40">[40]</a></sup>)</li>
+<li>Folks making home-made masks while the WHO &amp; CDC were still recommending <em>against</em> masks. (The institutions later said, &quot;oh we just told the public to not wear masks because we wanted to conserve supplies for hospitals&quot;. Lest it be memory-holed: <em>nurses at hospitals</em> were being fired for wearing N95 masks<sup class="footnote-ref"><a href="#fn43" id="fnref43">[43]</a></sup>)</li>
 <li>The creation &amp; dissemination of <a href="https://en.wikipedia.org/wiki/Corsi%E2%80%93Rosenthal_Box">the Corsi-Rosenthal box</a>, a relatively-cheap-but-efficient air filter you can make at home!</li>
 <li>An acquaintance of mine, a trans woman in biotech, making her own high-quality estrogen, and giving it away for free/pay-what-you-can. (A bottle costs $10 in materials; it usually costs $200 out-of-pocket.)</li>
 <li><a href="https://en.wikipedia.org/wiki/Sci-Hub">Sci-Hub</a>, a science-paper piracy website, so the public can access science which was <em>already</em> funded with public taxpayer money. (When you buy a science paper, that money goes to the journal, <em>not</em> the scientists. It doesn't even go to the <em>peer reviewers</em>; they're unpaid.)</li>
@@ -1659,8 +1659,7 @@ a braaaaand newwww fetish!</p>
 <p>. . .</p>
 <p><a id="project_45"></a></p>
 <h3>45. ⚖️ We do advocacy, they do propaganda: A Collection of Russell Conjugations</h3>
-<p><img src="/content/media/backlog/17068911370429.jpg" alt="Symmetric picture of two warring kingdoms. On the left: &quot;Our blessed homeland&quot;, &quot;our glorious leader&quot;. On the right: &quot;Their barbarous wastes&quot;, &quot;their wicked despot&quot;. The punchline is the picture's completely symmetrical, save for different-colored flags."></p>
-<figcaption>("Our Blessed Homeland" (2015) by Tom Gauld. [Source](https://twitter.com/tomgauld/status/571994690289061888))</figcaption>
+<p><img src="/content/media/backlog/17068911370429.jpg" alt="Symmetric picture of two warring kingdoms. On the left: &quot;Our blessed homeland&quot;, &quot;our glorious leader&quot;. On the right: &quot;Their barbarous wastes&quot;, &quot;their wicked despot&quot;. The punchline is the picture's completely symmetrical, save for different-colored flags."><em>(&quot;Our Blessed Homeland&quot; (2015) by Tom Gauld. <a href="https://twitter.com/tomgauld/status/571994690289061888">Source</a>)</em></p>
 <blockquote>
 <p>[Having a set of strongly-held beliefs]
 <em>We</em> stick to our principles.
@@ -1699,7 +1698,7 @@ a braaaaand newwww fetish!</p>
 <p>. . .</p>
 <p><a id="project_46"></a></p>
 <h3>46. 💬 Common Wisdom is a Two-Timing Sumnabitch</h3>
-<p>Here's another post cautioning against being a wordcel who &quot;thinks in words, not things&quot;.<sup class="footnote-ref"><a href="#fn41" id="fnref41">[41]</a></sup> Common wisdom, in the form of proverbs, is a two-timing sumnabitch, because you can almost always find a proverb arguing the <em>opposite</em> idea:</p>
+<p>Here's another post cautioning against being a wordcel who &quot;thinks in words, not things&quot;.<sup class="footnote-ref"><a href="#fn44" id="fnref44">[44]</a></sup> Common wisdom, in the form of proverbs, is a two-timing sumnabitch, because you can almost always find a proverb arguing the <em>opposite</em> idea:</p>
 <blockquote>
 <p>&quot;Birds of a feather flock together.&quot;
 &quot;Opposites attract.&quot;</p>
@@ -1730,7 +1729,7 @@ a braaaaand newwww fetish!</p>
 <p>THIS CLOSET... IS CLEAN!</p>
 <p>This exercise was... not worth it, but I learnt some things!</p>
 <ul>
-<li>Apparently, I can write 18,000 words <em>in one week</em> if I turn off my perfectionist-anxiety filter.</li>
+<li>Apparently, I can write 20,000 words <em>in one week</em> if I turn off my perfectionist-anxiety filter.</li>
 <li>And now that I've reviewed my whole backlog, I've a better sense of what I'd like to prioritize (anything 3 ⭐️ or above), and what I'd drop (anything less than 2 ⭐️). I now know <em>what I actually value.</em></li>
 </ul>
 <p>I'd like to give you a better ending, but again: goodbye perfectionist-filter. No polish here. The moral of the story is there is no moral and there is no story.</p>
@@ -1740,91 +1739,110 @@ a braaaaand newwww fetish!</p>
 <p><strong>Time <em>it took</em> to finish:</strong> 1 week</p>
 <p><strong>Desire to finish:</strong> 5/5 ⭐️⭐️⭐️⭐️⭐️ I'M <em>DONE!</em></p>
 <hr>
-<p>// Credits, Newsletter, etc...</p>
+<iframe src="https://ncase.me/ncase-credits/signup.html" frameborder="no" width=640 height=200></iframe>
+<iframe src="https://ncase.me/ncase-credits/supporters/feb2024.html" frameborder="no" width=640 height=640></iframe>
+<h2>: Adiabatic Quantum Computation</h2>
+<p><em>(the below was a text I sent to a friend, slightly edited)</em></p>
+<p>So: adiabatic quantum computation (AQC)!</p>
+<p>I kinda visualize the core idea like, I start with a simple valley with a bunch of magic water in it at its global minimum. The magic water can, uh, tunnel through hills I guess.</p>
+<p>Then, I slowly morph that landscape into a landscape whose global minimum &quot;describes&quot; the solution to some problem I want. (e.g. each position in the landscape describes a path for a travelling salesman problem, the height is how long the path takes, the global minimum is what I want).</p>
+<p>If I morph the hills <em>slowly</em> enough, the magic tunneling-water will <em>stay</em> in the global minimum throughout the evolution. It won't get trapped because it's magic and can tunnel through newly-appearing hills; again, <em>as long as the evolution is slow enough</em>.</p>
+<p>Tying metaphor to AQC: You start with a simple Hamiltonian in its ground state. Then, <em>slowly</em> evolve the Hamiltonian to one that describes a problem you care about, and whose global minimum is the solution you want. If the evolution is slow enough, your wavefunction will stay in the ground state throughout!</p>
+<p>This isn't just empirical, it's been mathematically proved from the rules of quantum mechanics, the <a href="https://en.wikipedia.org/wiki/Adiabatic_theorem">Adiabatic Theorem</a>. (I mean, <em>I</em> can't follow the proof, but good to know it exists).</p>
+<p>The catch, you may figure, is in the phrase &quot;slowly enough&quot;.  HOW slow does it have to be?  <a href="https://en.wikipedia.org/wiki/Adiabatic_quantum_computation">Wikipedia claims</a> that the runtime is proportional to the <em>inverse square</em> of the gap between the global minimum and the next-highest local minimum. 1/g^2, where 'g' is the gap.</p>
+<p>But then, why have AQC / quantum annealing computers like D-Wave not had huge successes? Because the way folks convert problems like Traveling Salesman into landscapes, leads to local-global minima gaps that get <em>exponentially</em> small as the problem size increases.</p>
+<p>But my quantum octopus/fuzzy logic idea <em>doesn't</em> have this problem! The energy landscape my fuzzy gates create don't <em>have</em> false local minima, just the one saddlepoint!  And even if that saddlepoint counts as a local minimum, the gap between it and the global minimum <em>remains constant</em>.  (The saddlepoint is always at y = 0.5, the global minimum is at y = 1.0) Therefore, as far as I can tell, that means <em>in theory</em> (practical decoherence aside) AQC should be able to solve my quantum octopus in constant time.</p>
+<p>Anyway &quot;big if true&quot;, I've no idea, guess I'll faff around and find out.</p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p><a href="https://en.wikipedia.org/wiki/Millennium_Prize_Problems">Millennium Prize Problems</a> on Wikipedia. In sum: &quot;P=NP?&quot; is the question, are all problems that are &quot;easy to check&quot; all secretly &quot;easy to solve&quot;? <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+<li id="fn1" class="footnote-item"><p>The highest-resolution exact match was <a href="https://knockout.chat/thread/52258/48#post-1916833">this forum post with no credit</a>. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn2" class="footnote-item"><p>Arulanandham, Calude, and Dinneen (2002): <a href="https://researchspace.auckland.ac.nz/bitstream/handle/2292/3707/199joshua.pdf">Solving SAT with bilateral computing</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+<li id="fn2" class="footnote-item"><p><a href="https://en.wikipedia.org/wiki/Millennium_Prize_Problems">Millennium Prize Problems</a> on Wikipedia. In sum: &quot;P=NP?&quot; is the question, are all problems that are &quot;easy to check&quot; all secretly &quot;easy to solve&quot;? <a href="#fnref2" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn3" class="footnote-item"><p>These fuzzy gates are the <a href="https://en.wikipedia.org/wiki/Fuzzy_logic#Fuzzy_logic_operators">Zadeh operators</a> or <a href="https://en.wikipedia.org/wiki/T-norm#Prominent_examples">Gödel t-norm</a>. I <em>think</em> they were independently discovered by the mathematicians Lotfi Zadeh &amp; Kurt Gödel, respectively. <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+<li id="fn3" class="footnote-item"><p>Arulanandham, Calude, and Dinneen (2002): <a href="https://researchspace.auckland.ac.nz/bitstream/handle/2292/3707/199joshua.pdf">Solving SAT with bilateral computing</a> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn4" class="footnote-item"><p>Peckham (2011). <a href="https://www.researchgate.net/profile/Scott-Peckham-2/publication/256808897_Monkey_Starfish_and_Octopus_Saddles/links/0c960523c9034673f2000000/Monkey-Starfish-and-Octopus-Saddles.pdf">Monkey, starfish and octopus saddles</a> <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+<li id="fn4" class="footnote-item"><p>These fuzzy gates are the <a href="https://en.wikipedia.org/wiki/Fuzzy_logic#Fuzzy_logic_operators">Zadeh operators</a> or <a href="https://en.wikipedia.org/wiki/T-norm#Prominent_examples">Gödel t-norm</a>. I <em>think</em> they were independently discovered by the mathematicians Lotfi Zadeh &amp; Kurt Gödel, respectively. <a href="#fnref4" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn5" class="footnote-item"><p>The &quot;quantum&quot; version of the P=NP problem: are problems that are &quot;easy to check&quot; secretly all &quot;easy to solve&quot; <em>with ideal quantum computers?</em> (practicalities &amp; decoherence aside) <a href="#fnref5" class="footnote-backref">↩︎</a></p>
+<li id="fn5" class="footnote-item"><p>Peckham (2011). <a href="https://www.researchgate.net/profile/Scott-Peckham-2/publication/256808897_Monkey_Starfish_and_Octopus_Saddles/links/0c960523c9034673f2000000/Monkey-Starfish-and-Octopus-Saddles.pdf">Monkey, starfish and octopus saddles</a> <a href="#fnref5" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn6" class="footnote-item"><p>John et al (2023): <a href="https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/abs/dead-rats-dopamine-performance-metrics-and-peacock-tails-proxy-failure-is-an-inherent-risk-in-goaloriented-systems/89408A43F6D14BFD368FE5225A573032">Dead rats, dopamine, performance metrics, and peacock tails: proxy failure is an inherent risk in goal-oriented systems</a> <a href="#fnref6" class="footnote-backref">↩︎</a></p>
+<li id="fn6" class="footnote-item"><p>The &quot;quantum&quot; version of the P=NP problem: are problems that are &quot;easy to check&quot; secretly all &quot;easy to solve&quot; <em>with ideal quantum computers?</em> (practicalities &amp; decoherence aside) <a href="#fnref6" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn7" class="footnote-item"><p>Manheim &amp; Garrabrant (2019): <a href="https://arxiv.org/pdf/1803.04585.pdf">Categorizing Variants of Goodhart’s Law</a> <a href="#fnref7" class="footnote-backref">↩︎</a></p>
+<li id="fn7" class="footnote-item"><p>John et al (2023): <a href="https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/abs/dead-rats-dopamine-performance-metrics-and-peacock-tails-proxy-failure-is-an-inherent-risk-in-goaloriented-systems/89408A43F6D14BFD368FE5225A573032">Dead rats, dopamine, performance metrics, and peacock tails: proxy failure is an inherent risk in goal-oriented systems</a> <a href="#fnref7" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn8" class="footnote-item"><p>Bishop &amp; Trout (2005) give a snappy overview: <a href="https://academic.oup.com/book/36404/chapter-abstract/320070686?redirectedFrom=fulltext">The Amazing Success of Statistical Prediction Rules</a> (<a href="https://joelvelasco.net/teaching/4330/bishop&amp;trout-ch2.pdf">pdf</a>) <a href="#fnref8" class="footnote-backref">↩︎</a></p>
+<li id="fn8" class="footnote-item"><p>Manheim &amp; Garrabrant (2019): <a href="https://arxiv.org/pdf/1803.04585.pdf">Categorizing Variants of Goodhart’s Law</a> <a href="#fnref8" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn9" class="footnote-item"><p>On YouTube: <a href="https://www.youtube.com/watch?v=piYnd_wYlT8">Fooling Image Recognition with Adversarial Examples</a> (2017) <a href="#fnref9" class="footnote-backref">↩︎</a> <a href="#fnref9:1" class="footnote-backref">↩︎</a></p>
+<li id="fn9" class="footnote-item"><p>Bishop &amp; Trout (2005) give a snappy overview: <a href="https://academic.oup.com/book/36404/chapter-abstract/320070686?redirectedFrom=fulltext">The Amazing Success of Statistical Prediction Rules</a> (<a href="https://joelvelasco.net/teaching/4330/bishop&amp;trout-ch2.pdf">pdf</a>) <a href="#fnref9" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn10" class="footnote-item"><p>Twenge (2023): <a href="https://www.afterbabel.com/p/13-explanations-mental-health-crisis">Here are 13 Other Explanations for the Adolescent Mental Health Crisis. None of Them Work.</a> <a href="#fnref10" class="footnote-backref">↩︎</a></p>
+<li id="fn10" class="footnote-item"><p>On YouTube: <a href="https://www.youtube.com/watch?v=piYnd_wYlT8">Fooling Image Recognition with Adversarial Examples</a> (2017) <a href="#fnref10" class="footnote-backref">↩︎</a> <a href="#fnref10:1" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn11" class="footnote-item"><p>From <a href="http://HHS.gov">HHS.gov</a>, May 2023: <a href="https://www.hhs.gov/about/news/2023/05/23/surgeon-general-issues-new-advisory-about-effects-social-media-use-has-youth-mental-health.html">Surgeon General Issues New Advisory About Effects Social Media Use Has on Youth Mental Health</a> <a href="#fnref11" class="footnote-backref">↩︎</a></p>
+<li id="fn11" class="footnote-item"><p>See the final figure in the &quot;Example: LeNet on MNIST&quot; section of <a href="https://thomas-tanay.github.io/post--L2-regularization/">Tanay &amp; Griffin (2018)</a>. The middle row are the adversarial examples (AE). On the left, with <em>low</em> L2 regularization, the AE's are basically indistinguishable to the human eye. On the right, with <em>high</em> L2 regularization, the AEs are clearly manipulated &amp; messed up; hence, a human would pick up on those errors better. <a href="#fnref11" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn12" class="footnote-item"><p>I'm gonna read this book by Scott Cunningham. It's free! <a href="https://mixtape.scunning.com/">Causal Inference: The Mixtape</a> <a href="#fnref12" class="footnote-backref">↩︎</a></p>
+<li id="fn12" class="footnote-item"><p>Twenge (2023): <a href="https://www.afterbabel.com/p/13-explanations-mental-health-crisis">Here are 13 Other Explanations for the Adolescent Mental Health Crisis. None of Them Work.</a> <a href="#fnref12" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn13" class="footnote-item"><p>It's the <a href="https://en.wikipedia.org/wiki/Force-directed_graph_drawing">force-directed graph drawing</a> algorithm, but with the vertical (y) positions locked. <a href="#fnref13" class="footnote-backref">↩︎</a></p>
+<li id="fn13" class="footnote-item"><p>From <a href="http://HHS.gov">HHS.gov</a>, May 2023: <a href="https://www.hhs.gov/about/news/2023/05/23/surgeon-general-issues-new-advisory-about-effects-social-media-use-has-youth-mental-health.html">Surgeon General Issues New Advisory About Effects Social Media Use Has on Youth Mental Health</a> <a href="#fnref13" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn14" class="footnote-item"><p>Gwern (2014): <a href="https://gwern.net/complexity">Complexity no Bar to AI</a> <a href="#fnref14" class="footnote-backref">↩︎</a></p>
+<li id="fn14" class="footnote-item"><p>I'm gonna read this book by Scott Cunningham. It's free! <a href="https://mixtape.scunning.com/">Causal Inference: The Mixtape</a> <a href="#fnref14" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn15" class="footnote-item"><p>YouTube embed &amp; summary of his 2019 talk <a href="https://bdtechtalks.com/2019/12/23/yoshua-bengio-neurips-2019-deep-learning/">on this blog post</a>. <a href="#fnref15" class="footnote-backref">↩︎</a></p>
+<li id="fn15" class="footnote-item"><p>It's the <a href="https://en.wikipedia.org/wiki/Force-directed_graph_drawing">force-directed graph drawing</a> algorithm, but with the vertical (y) positions locked. <a href="#fnref15" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn16" class="footnote-item"><p>Riff on the opening lines from a physics textbook written by David L. Goodstein: <a href="https://www.snopes.com/fact-check/science-textbook-gloomy-intro/">(content note: suicide)</a> <a href="#fnref16" class="footnote-backref">↩︎</a></p>
+<li id="fn16" class="footnote-item"><p>Gwern (2014): <a href="https://gwern.net/complexity">Complexity no Bar to AI</a> <a href="#fnref16" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn17" class="footnote-item"><p><a href="https://citeseerx.ist.psu.edu/document?repid=rep1&amp;type=pdf&amp;doi=9763572f7ab63e7ba8d77e39632bdf9c5114ee76">Usó-Doménech et al (2015)</a>. The paper gets a bit... <em>woo</em>, later on, but it has at least this cool idea: First, define AND(a,b) = a*b, since that's a function that's 1 if both inputs are 1, 0 if either input is 0. Next: &quot;true contradiction&quot; → &quot;p and not-p is true&quot; → AND(p,NOT(p)) = 1 → p*(1-p) = 1 → p = e^±i*pi/3. A truth value in the <em>complex plane</em>. Math is nuckin' futs. <a href="#fnref17" class="footnote-backref">↩︎</a></p>
+<li id="fn17" class="footnote-item"><p>YouTube embed &amp; summary of his 2019 talk <a href="https://bdtechtalks.com/2019/12/23/yoshua-bengio-neurips-2019-deep-learning/">on this blog post</a>. <a href="#fnref17" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn18" class="footnote-item"><p>Two famous examples: <a href="https://www.aei.org/carpe-diem/economist-gordon-tullock-makes-the-case-for-not-voting-next-tuesday-or-ever/">Gordon Tullock</a>, a founder of public choice theory, and <a href="https://www.econlib.org/archives/2016/09/why_i_dont_vote.html">Bryan Caplan</a>, creator of the term &quot;rational irrationality&quot;. <a href="#fnref18" class="footnote-backref">↩︎</a></p>
+<li id="fn18" class="footnote-item"><p>Riff on the opening lines from a physics textbook written by David L. Goodstein: <a href="https://www.snopes.com/fact-check/science-textbook-gloomy-intro/">(content note: suicide)</a> <a href="#fnref18" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn19" class="footnote-item"><p>Yudkowsky &amp; Soares (2017): <a href="https://arxiv.org/abs/1710.05060">Functional Decision Theory: A New Theory of Instrumental Rationality</a> <a href="#fnref19" class="footnote-backref">↩︎</a> <a href="#fnref19:1" class="footnote-backref">↩︎</a></p>
+<li id="fn19" class="footnote-item"><p><a href="https://citeseerx.ist.psu.edu/document?repid=rep1&amp;type=pdf&amp;doi=9763572f7ab63e7ba8d77e39632bdf9c5114ee76">Usó-Doménech et al (2015)</a>. The paper gets a bit... <em>woo</em>, but it has at least this cool idea: First, define AND(a,b) = a*b, since that's a function that's 1 if both inputs are 1, 0 if either input is 0. Next: &quot;true contradiction&quot; → &quot;p and not-p is true&quot; → AND(p,NOT(p)) = 1 → p*(1-p) = 1 → p = e^±i*pi/3. A truth value in the <em>complex plane</em>. Math is nuckin' futs. <a href="#fnref19" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn20" class="footnote-item"><p>Will Macaskill (2019): <a href="https://www.lesswrong.com/posts/ySLYSsNeFL5CoAQzN/a-critique-of-functional-decision-theory">A Critique of Functional Decision Theory</a> <a href="#fnref20" class="footnote-backref">↩︎</a></p>
+<li id="fn20" class="footnote-item"><p>Two famous examples: <a href="https://www.aei.org/carpe-diem/economist-gordon-tullock-makes-the-case-for-not-voting-next-tuesday-or-ever/">Gordon Tullock</a>, a founder of public choice theory, and <a href="https://www.econlib.org/archives/2016/09/why_i_dont_vote.html">Bryan Caplan</a>, creator of the term &quot;rational irrationality&quot;. <a href="#fnref20" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn21" class="footnote-item"><p>The idea that &quot;we must think &amp; act universally&quot; is <em>so</em> ingrained into philosophy, that even existentialist Jean-Paul Sartre <a href="https://web.archive.org/web/20240201143830/https://www.marxists.org/reference/archive/sartre/works/exist/sartre.htm">(Sartre 1946)</a>, while disavowing &quot;human nature&quot;, still believed &quot;When we say that man chooses himself, we do mean that every one of us must choose himself; but by that we also mean that in choosing for himself he chooses for all men.&quot; Wtf? Sartre, did you really choose to become a full-time philosopher because you want <em>everyone</em> to be a full-time philosopher? Coz if that happened, nobody would grow crops and we'd all die. You choose your life <em>for you,</em> I choose my life <em>for me.</em> <a href="#fnref21" class="footnote-backref">↩︎</a></p>
+<li id="fn21" class="footnote-item"><p>Yudkowsky &amp; Soares (2017): <a href="https://arxiv.org/abs/1710.05060">Functional Decision Theory: A New Theory of Instrumental Rationality</a> <a href="#fnref21" class="footnote-backref">↩︎</a> <a href="#fnref21:1" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn22" class="footnote-item"><p>Wally Nowinski (2022), guest post on Noahpinion: <a href="https://www.noahpinion.blog/p/americas-top-environmental-groups">America’s Top Environmental Groups Have Lost the Plot on Climate Change</a> <a href="#fnref22" class="footnote-backref">↩︎</a></p>
+<li id="fn22" class="footnote-item"><p>Will Macaskill (2019): <a href="https://www.lesswrong.com/posts/ySLYSsNeFL5CoAQzN/a-critique-of-functional-decision-theory">A Critique of Functional Decision Theory</a> <a href="#fnref22" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn23" class="footnote-item"><p>In 2018, <a href="https://hiddentribes.us/">Hidden Tribes</a> did a demographically-representative survey of 8,000+ U.S. citizens. Summary by David Brooks in NYT: <a href="https://archive.is/n0FU0">The Rich, White Civil War</a> <a href="#fnref23" class="footnote-backref">↩︎</a></p>
+<li id="fn23" class="footnote-item"><p>The idea that &quot;we must think &amp; act universally&quot; is <em>so</em> ingrained into philosophy, that even existentialist Jean-Paul Sartre <a href="https://web.archive.org/web/20240201143830/https://www.marxists.org/reference/archive/sartre/works/exist/sartre.htm">(Sartre 1946)</a>, while disavowing &quot;human nature&quot;, still believed &quot;When we say that man chooses himself, we do mean that every one of us must choose himself; but by that we also mean that in choosing for himself he chooses for all men.&quot; Wtf? Sartre, did you really choose to become a full-time philosopher because you want <em>everyone</em> to be a full-time philosopher? Coz if that happened, nobody would grow crops and we'd all die. You choose your life <em>for you,</em> I choose my life <em>for me.</em> <a href="#fnref23" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn24" class="footnote-item"><p>Haidt &amp; Joseph (2004): <a href="http://www.ethics-based-on-science.com/uploads/2/8/5/1/28516163/mjm-notes-intuitive-ethics-haidt-joseph.pdf">Intuitive ethics: How innately prepared intuitions generate culturally variable virtues</a> <a href="#fnref24" class="footnote-backref">↩︎</a></p>
+<li id="fn24" class="footnote-item"><p>Wally Nowinski (2022), guest post on Noahpinion: <a href="https://www.noahpinion.blog/p/americas-top-environmental-groups">America’s Top Environmental Groups Have Lost the Plot on Climate Change</a> <a href="#fnref24" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn25" class="footnote-item"><p>If you didn't hear, there was a crypto company called FTX that committed to invest billions of $ in a charity movement called Effective Altruism. Long story short the company was a scam and a lot of charitable projects end up screwed. Dylan Matthews (2022): <a href="https://www.vox.com/future-perfect/23500014/effective-altruism-sam-bankman-fried-ftx-crypto">How effective altruism let Sam Bankman-Fried happen</a> <a href="#fnref25" class="footnote-backref">↩︎</a></p>
+<li id="fn25" class="footnote-item"><p>In 2018, <a href="https://hiddentribes.us/">Hidden Tribes</a> did a demographically-representative survey of 8,000+ U.S. citizens. Summary by David Brooks in NYT: <a href="https://archive.is/n0FU0">The Rich, White Civil War</a> <a href="#fnref25" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn26" class="footnote-item"><p>&quot;Wordcel vs Shape Rotator&quot; was a stupid culture-war meme from two years ago (<a href="https://www.vice.com/en/article/pkpqzb/ok-wtf-are-wordcels-and-shape-rotators">Gault 2022 for Vice</a>), that got Rorschach Inkblotted into whatever thing someone wanted to insult. (Verbal vs Visual IQ, Theoretical vs Practical, Abstract vs Concrete thinking, Humanities vs STEM, People- vs Thing- orientation, Vibes vs Gears, etc.) Intentionally vague + Emotionally charged = Word designed to cause maximum brain-poisoning. Using &quot;wordcel&quot; is itself wordcel. But dang it... it's <em>catchy.</em> <a href="#fnref26" class="footnote-backref">↩︎</a></p>
+<li id="fn26" class="footnote-item"><p>Haidt &amp; Joseph (2004): <a href="http://www.ethics-based-on-science.com/uploads/2/8/5/1/28516163/mjm-notes-intuitive-ethics-haidt-joseph.pdf">Intuitive ethics: How innately prepared intuitions generate culturally variable virtues</a> <a href="#fnref26" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn27" class="footnote-item"><p>Jon Brodkin (2022) for Ars Technica: <a href="https://arstechnica.com/tech-policy/2022/07/google-fires-engineer-who-claimed-lamda-chatbot-is-a-sentient-person/">Google fires Blake Lemoine, the engineer who claimed AI chatbot is a person</a> <a href="#fnref27" class="footnote-backref">↩︎</a></p>
+<li id="fn27" class="footnote-item"><p>If you didn't hear, there was a crypto company called FTX that committed to invest billions of $ in a charity movement called Effective Altruism. Long story short the company was a scam and a lot of charitable projects end up screwed. Dylan Matthews (2022): <a href="https://www.vox.com/future-perfect/23500014/effective-altruism-sam-bankman-fried-ftx-crypto">How effective altruism let Sam Bankman-Fried happen</a> <a href="#fnref27" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn28" class="footnote-item"><p>Abdullahi Tsanni (2023) for MIT Technology Review: <a href="https://www.technologyreview.com/2023/12/11/1084926/human-brain-cells-chip-organoid-speech-recognition/">Human brain cells hooked up to a chip can do speech recognition</a> <a href="#fnref28" class="footnote-backref">↩︎</a></p>
+<li id="fn28" class="footnote-item"><p>&quot;Wordcel vs Shape Rotator&quot; was a stupid culture-war meme from two years ago (<a href="https://www.vice.com/en/article/pkpqzb/ok-wtf-are-wordcels-and-shape-rotators">Gault 2022 for Vice</a>), that got Rorschach Inkblotted into whatever thing someone wanted to insult. (Verbal vs Visual IQ, Theoretical vs Practical, Abstract vs Concrete thinking, Humanities vs STEM, People- vs Thing- orientation, Vibes vs Gears, etc.) Intentionally vague + Emotionally charged = Word designed to cause maximum brain-poisoning. Using &quot;wordcel&quot; is itself wordcel. But dang it... it's <em>catchy.</em> <a href="#fnref28" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn29" class="footnote-item"><p>Haidt et al (2000): <a href="https://polpsy.ca/wp-content/uploads/2019/05/haidt.bjorklund.pdf">Moral Dumbfounding: When Intuition Finds No Reason</a>. <a href="#fnref29" class="footnote-backref">↩︎</a> <a href="#fnref29:1" class="footnote-backref">↩︎</a></p>
+<li id="fn29" class="footnote-item"><p>Jon Brodkin (2022) for Ars Technica: <a href="https://arstechnica.com/tech-policy/2022/07/google-fires-engineer-who-claimed-lamda-chatbot-is-a-sentient-person/">Google fires Blake Lemoine, the engineer who claimed AI chatbot is a person</a> <a href="#fnref29" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn30" class="footnote-item"><p>There's plenty of data supporting &quot;rural = more cousin marriage&quot; <a href="https://en.wikipedia.org/wiki/Cousin_marriage#/media/File:Global_prevalence_of_consanguinity.svg">in Central Asia &amp; North Africa</a> where it's not taboo, but it's hard to get data from the U.S. or Canada, where it <em>is</em> taboo. So, I can't confirm if red states actually <em>are</em> more likely to have consensual adult incest. <a href="#fnref30" class="footnote-backref">↩︎</a></p>
+<li id="fn30" class="footnote-item"><p>Abdullahi Tsanni (2023) for MIT Technology Review: <a href="https://www.technologyreview.com/2023/12/11/1084926/human-brain-cells-chip-organoid-speech-recognition/">Human brain cells hooked up to a chip can do speech recognition</a> <a href="#fnref30" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn31" class="footnote-item"><p>Christian argument for consequentialist morality: &quot;Judge a tree by its fruit&quot;. Utilitarian argument for (acting as if) heaven/hell are real: <a href="https://en.wikipedia.org/wiki/Pascal%27s_wager">Pascal's Wager</a>. If it's noble to sacrifice one's life to save others' lives, it must be nobler to sacrifice one's <em>after</em>-life to save others' afterlives. Assume 100% of babies go to heaven. Generously assume 90% of adults go to heaven. So if you kill 50 babies, you go to Hell, but 5 others who otherwise wouldn't go to heaven: Net +4 souls saved, and you'll be rewarded in the <em>after</em>-after-life! <a href="#fnref31" class="footnote-backref">↩︎</a></p>
+<li id="fn31" class="footnote-item"><p>Haidt et al (2000): <a href="https://polpsy.ca/wp-content/uploads/2019/05/haidt.bjorklund.pdf">Moral Dumbfounding: When Intuition Finds No Reason</a>. <a href="#fnref31" class="footnote-backref">↩︎</a> <a href="#fnref31:1" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn32" class="footnote-item"><p>The argument for white nationalism is pointing at how the Black/Latino crime rates are higher than whites. Counter-argument: that applies even more for men vs women, so that argument would also recommend women secede from men (we already have IVF, and soon we'll have IVG, to make sperm from female cells). Counter-counter-argument: <em>YES.</em> Hence, White Nationalist Lesbian Separatism. <a href="#fnref32" class="footnote-backref">↩︎</a></p>
+<li id="fn32" class="footnote-item"><p>There's plenty of data supporting &quot;rural = more cousin marriage&quot; <a href="https://en.wikipedia.org/wiki/Cousin_marriage#/media/File:Global_prevalence_of_consanguinity.svg">in Central Asia &amp; North Africa</a> where it's not taboo, but it's hard to get data from the U.S. or Canada, where it <em>is</em> taboo. So, I can't confirm if red states actually <em>are</em> more likely to have consensual adult incest. <a href="#fnref32" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn33" class="footnote-item"><p>Layperson-friendly summary of the scientific consensus, <a href="https://www.scotthyoung.com/blog/2023/07/25/the-mind-is-a-computer/">by Scott Young (2023)</a> <a href="#fnref33" class="footnote-backref">↩︎</a></p>
+<li id="fn33" class="footnote-item"><p>Tozdan, Briken, &amp; Dekker (2019): <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6463078/">Uncovering Female Child Sexual Offenders</a>. See Table 2 for Prevalence Rates (PRs) of female child sex offenders, which range from 10% to 20%. These estimates are based off actual surveys of victims, not just what filters down to official reports. <a href="#fnref33" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn34" class="footnote-item"><p>Brand et al (2016): <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4959824/">Separating Fact from Fiction: An Empirical Examination of Six Myths About Dissociative Identity Disorder</a> See Table 1, &quot;Dissociative Disorder Prevalence Studies &gt; General Population&quot;. Results range from 1.10% (1 in 90) to 1.50% (1 in 67). <a href="#fnref34" class="footnote-backref">↩︎</a></p>
+<li id="fn34" class="footnote-item"><p>Christian argument for consequentialist morality: &quot;Judge a tree by its fruit&quot;. Utilitarian argument for (acting as if) heaven/hell are real: <a href="https://en.wikipedia.org/wiki/Pascal%27s_wager">Pascal's Wager</a>. If it's noble to sacrifice one's life to save others' lives, it must be nobler to sacrifice one's <em>after</em>-life to save others' afterlives. Assume 100% of babies go to heaven. Generously assume 90% of adults go to heaven. So if you kill 50 babies, you go to Hell, but 5 others who otherwise wouldn't go to heaven: Net +4 souls saved, and you'll be rewarded in the <em>after</em>-after-life! <a href="#fnref34" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn35" class="footnote-item"><p>McCarty et al (2005): <a href="https://meridian.allenpress.com/human-organization/article-abstract/60/1/28/71320/Comparing-Two-Methods-for-Estimating-Network-Size?redirectedFrom=fulltext">Comparing Two Methods for Estimating Network Size</a> <a href="#fnref35" class="footnote-backref">↩︎</a></p>
+<li id="fn35" class="footnote-item"><p>Common argument for white nationalism: Black/Latino crime rates are higher than whites', so &quot;let's separate&quot;. Counter-argument: men's crime rates are also higher than women's, so that argument also implies women should secede from men (which is possible: we have IVF, and soon we'll have IVG, to make sperm from female cells). Counter-counter-argument: <em>YES.</em> Hence, White Nationalist Lesbian Separatism. <a href="#fnref35" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn36" class="footnote-item"><p>Andersen &amp; Blosnich (2013): <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3553068/">Disparities in Adverse Childhood Experiences among Sexual Minority and Heterosexual Adults: Results from a Multi-State Probability-Based Sample</a>. Result: <strong>Sexual minority persons had higher rates of adverse childhood experiences (IRR = 1.66 gay/lesbian; 1.58 bisexual) compared to their heterosexual peers.</strong> (Note: Adverse Childhood Experience = &quot;physical, sexual, and emotional abuse, neglect, exposure to domestic violence, familial mental illness, substance abuse and incarceration&quot;) <a href="#fnref36" class="footnote-backref">↩︎</a></p>
+<li id="fn36" class="footnote-item"><p>Layperson-friendly summary of the scientific consensus, <a href="https://www.scotthyoung.com/blog/2023/07/25/the-mind-is-a-computer/">by Scott Young (2023)</a> <a href="#fnref36" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn37" class="footnote-item"><p>Clickbaity title, but correct as far as I can tell. Jen Babakhan (2022) for Reader's Digest: <a href="https://www.rd.com/list/people-who-froze-came-back-to-life/">6 People Who Froze to Death—and Came Back to Life</a>. <a href="#fnref37" class="footnote-backref">↩︎</a></p>
+<li id="fn37" class="footnote-item"><p>Brand et al (2016): <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4959824/">Separating Fact from Fiction: An Empirical Examination of Six Myths About Dissociative Identity Disorder</a> See Table 1, &quot;Dissociative Disorder Prevalence Studies &gt; General Population&quot;. Results range from 1.10% (1 in 90) to 1.50% (1 in 67). <a href="#fnref37" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn38" class="footnote-item"><p>Alas, the course already ended, but <a href="https://30dayproductivity.com/">here was the website</a>. Bafflingly, there's no official archive of the emails he sent out. <a href="#fnref38" class="footnote-backref">↩︎</a></p>
+<li id="fn38" class="footnote-item"><p>McCarty et al (2005): <a href="https://meridian.allenpress.com/human-organization/article-abstract/60/1/28/71320/Comparing-Two-Methods-for-Estimating-Network-Size?redirectedFrom=fulltext">Comparing Two Methods for Estimating Network Size</a> <a href="#fnref38" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn39" class="footnote-item"><p>Dobson (2007): <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1885332/">Flu costs the US $90bn a year, report shows</a> <a href="#fnref39" class="footnote-backref">↩︎</a></p>
+<li id="fn39" class="footnote-item"><p>Andersen &amp; Blosnich (2013): <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3553068/">Disparities in Adverse Childhood Experiences among Sexual Minority and Heterosexual Adults: Results from a Multi-State Probability-Based Sample</a>. Result: <strong>Sexual minority persons had higher rates of adverse childhood experiences (IRR = 1.66 gay/lesbian; 1.58 bisexual) compared to their heterosexual peers.</strong> (Note: Adverse Childhood Experience = &quot;physical, sexual, and emotional abuse, neglect, exposure to domestic violence, familial mental illness, substance abuse and incarceration&quot;) <a href="#fnref39" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn40" class="footnote-item"><p>Example 1 <a href="https://chicago.suntimes.com/coronavirus/2020/3/24/21192690/northwestern-memorial-hospital-sued-better-face-masks-lauri-mazurkiewicz">(Mar 24, 2020)</a>. Example 2 <a href="https://6abc.com/coronavirus-pandemic-covid-19-hospital-workers-health-care/6106053/">(April 16, 2020)</a>. Akela Lacy (2020) for The Intercept: <a href="https://theintercept.com/2020/03/24/kaiser-permanente-nurses-coronavirus/">Kaiser Permanente Threatened to Fire Nurses Treating Covid-19 Patients for Wearing Their Own Masks, Unions Say</a> <a href="#fnref40" class="footnote-backref">↩︎</a></p>
+<li id="fn40" class="footnote-item"><p>Clickbaity title, but correct as far as I can tell. Jen Babakhan (2022) for Reader's Digest: <a href="https://www.rd.com/list/people-who-froze-came-back-to-life/">6 People Who Froze to Death—and Came Back to Life</a>. <a href="#fnref40" class="footnote-backref">↩︎</a></p>
 </li>
-<li id="fn41" class="footnote-item"><p>Riff off a quote by Oliver Wendell Holmes Jr. <a href="https://www.jstor.org/stable/1321177">From Holmes (1899)</a>: “<strong>We must think things not words</strong>, or <em>at least</em> we must constantly translate our words into the facts for which they stand, if we are to keep to the real and the true. [emphasis added]” <a href="#fnref41" class="footnote-backref">↩︎</a></p>
+<li id="fn41" class="footnote-item"><p>Alas, the course already ended, but <a href="https://30dayproductivity.com/">here was the website</a>. Bafflingly, there's no official archive of the emails he sent out. <a href="#fnref41" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn42" class="footnote-item"><p>Dobson (2007): <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1885332/">Flu costs the US $90bn a year, report shows</a> <a href="#fnref42" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn43" class="footnote-item"><p>Example 1 <a href="https://chicago.suntimes.com/coronavirus/2020/3/24/21192690/northwestern-memorial-hospital-sued-better-face-masks-lauri-mazurkiewicz">(Mar 24, 2020)</a>. Example 2 <a href="https://6abc.com/coronavirus-pandemic-covid-19-hospital-workers-health-care/6106053/">(April 16, 2020)</a>. Akela Lacy (2020) for The Intercept: <a href="https://theintercept.com/2020/03/24/kaiser-permanente-nurses-coronavirus/">Kaiser Permanente Threatened to Fire Nurses Treating Covid-19 Patients for Wearing Their Own Masks, Unions Say</a> <a href="#fnref43" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn44" class="footnote-item"><p>Riff off a quote by Oliver Wendell Holmes Jr. <a href="https://www.jstor.org/stable/1321177">From Holmes (1899)</a>: “<strong>We must think things not words</strong>, or <em>at least</em> we must constantly translate our words into the facts for which they stand, if we are to keep to the real and the true. [emphasis added]” <a href="#fnref44" class="footnote-backref">↩︎</a></p>
 </li>
 </ol>
 </section>

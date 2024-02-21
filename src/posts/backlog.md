@@ -1,14 +1,16 @@
 ---
 title: "Clearing out the idea closet (47 projects on my backlog)"
 tags:
-- draft
+- post
 share_image: https://blog.ncase.me/content/media/backlog/banner.png
-share_desc: "47 things I didn't ship. (~2 min read per 47 things = 1h 25m read total)"
-date: 2024-04-06
-isDraft: true
-readtime: "// min"
+share_desc: "47 things I didn't ship."
+date: 2024-04-21
+readtime: "90 min"
 layout: base-layout.njk
+hasMath: true
 ---
+
+![Nicky-Catgirl sweeping lightbulbs off the floor](/content/media/backlog/banner.png)
 
 Wow, I haven't shipped anything in a year and a half, huh? Not even a blog post?
 
@@ -40,7 +42,13 @@ So, without further self-deprecation, here's 47 Things I Have Not Shipped But Mi
 
 ## Table of Contents
 
-Categorized by interest/topic, but otherwise aren't in any order. Click ↪ to skip to one, if it tickles your fancy:
+Categorized by interest/topic, but can be read (or skipped) in any order!
+
+If you're on a desktop browser, you can click this icon on the right to access the Table of Contents at any time: &rarr;
+
+![Icon of "table of contents" in the sidebar. Though I guess if you're hearing this alt-text through a screen reader, that'll be of jack diddly use to you.](/content/media/backlog/17084644320266.jpg)
+
+Click ↪ to skip to that project, if it tickles your fancy:
 
 🤔 **[Research Projects](#category_research)**
 
@@ -143,13 +151,9 @@ Let's start with a goofy research project idea!
 
 Context: I'm a trans woman, a member of the furry fandom, and a programmer. There is a very, *very* widely-recognized correlation amongst "My People":
 
-![A Venn diagram of "Programmers", "Trans girls", and "Furries", with the center labelled: "A suspiciously large overlap".](/content/media/backlog/17064898642946.jpg)
+![A Venn diagram of "Programmers", "Trans girls", and "Furries", with the center labelled: "A suspiciously large overlap".](/content/media/backlog/17064898642946.jpg)*(from [this popular reddit post](https://www.reddit.com/r/traaaaaaannnnnnnnnns/comments/plxqv1/im_not_the_only_one_whos_noticed_this_right/))*
 
-<figcaption>(from [this popular reddit post](https://www.reddit.com/r/traaaaaaannnnnnnnnns/comments/plxqv1/im_not_the_only_one_whos_noticed_this_right/))</figcaption>
-
-![Comic. Panel 1: "A group of cats is called a clowder". Panel 2: "A group of catgirls is called a (crossed out) polycule, (scrawled over) dev team."](/content/media/backlog/17064905516761.jpg)
-
-<figcaption>(viral comic, artist unknown? reverse image search did not help.[^no-help])</figcaption>
+![Comic. Panel 1: "A group of cats is called a clowder". Panel 2: "A group of catgirls is called a (crossed out) polycule, (scrawled over) dev team."](/content/media/backlog/17064905516761.jpg)*(viral comic, artist unknown? reverse image search did not help.[^no-help])*
 
 [^no-help]: The highest-resolution exact match was [this forum post with no credit](https://knockout.chat/thread/52258/48#post-1916833).
 
@@ -221,8 +225,8 @@ Here's a simulation of a fuzzy+reversible Exclusive OR (XOR) circuit. When I pul
 My simulation was messing up for larger cases, and building it for real would take forever. So eventually, all the above led to the following "simpler" algorithm:
 
 * Take a Circuit-SAT problem.
-* Replace each logic gate with its fuzzy-logic equivalent: [^fuzzy-operators] ``NOT(x) = 1-x; \space \space AND(x,y)=min(x,y); \space \space OR(x,y)=max(x,y)``
-* This gives you a function ``[0,1]^n \rightarrow [0,1]`` that you can interpret as the "energy landscape" of this mechanical circuit, if ``output = 1`` is "down". For example:
+* Replace each logic gate with its fuzzy-logic equivalent: [^fuzzy-operators] \\(NOT(x) = 1-x; \space \space AND(x,y)=min(x,y); \space \space OR(x,y)=max(x,y)\\)
+* This gives you a function \\([0,1]^n \rightarrow [0,1]\\) that you can interpret as the "energy landscape" of this mechanical circuit, if \\(output = 1\\) is "down". For example:
 
 [^fuzzy-operators]: These fuzzy gates are the [Zadeh operators](https://en.wikipedia.org/wiki/Fuzzy_logic#Fuzzy_logic_operators) or [Gödel t-norm](https://en.wikipedia.org/wiki/T-norm#Prominent_examples). I *think* they were independently discovered by the mathematicians Lotfi Zadeh & Kurt Gödel, respectively.
 
@@ -273,7 +277,11 @@ So I wondered: could a quantum wavefunction, because its position is "fuzzy", an
 
 (*NOTE: I know quantum computers DO NOT solve problems by just "trying all the solutions", since when you measure it you can't choose which "branch" of the wavefunction it "collapses" into. This idea is different: I wanna see if I can coax ALL of a wavefunction down the correct arm, not just one branch.*)
 
-(Note 2: This *is* [quantum annealing](https://en.wikipedia.org/wiki/Quantum_annealing), but *the* hard problem in quantum annealing is getting stuck in local minima, especially when the gap between local/global minima is small. In the above problem, all local minima *are* global minima, and are valid solutions! So, if you're a researcher in quantum annealing... [email me?](https://ncase.me/faq/contact.jpg))
+(Note 2: There are two main kinds of quantum computing. The more famous one is "quantum circuits"; this is the one with the infamous Shor's Algorithm that can break RSA encryption. The other one is "quantum annealing"; this is what D-Wave does. My project idea written above is closer to quantum annealing, though I think it's technically slightly different.)
+
+(Note 3: *The* hard problem in quantum annealing is getting stuck in local minima, especially when the gap between local/global minima gets exponentially small. In the above problem, all local minima *are* global minima, and are valid solutions! And, if one follows my Circuit-SAT-to-landscape conversion, the gap between the saddlepoint and the global minimum stays *constant*. So, if you're a researcher in quantum annealing/adiabatic computation... [email me?](https://ncase.me/faq/contact.jpg))
+
+For more info on quantum annealing, [:click this expandable section](#AdiabaticQuantumComputation)
 
 **Progress: 0%** ◻️◻️◻️◻️◻️
 
@@ -309,14 +317,14 @@ For the longest time, this law was "just" phrased in words & not formalized. But
 
 [^causal-2]: Manheim & Garrabrant (2019): [Categorizing Variants of Goodhart’s Law](https://arxiv.org/pdf/1803.04585.pdf)
 
-Here's the clickbait problem, as a causal diagram ↪ (Read: "quality" and "clickbait" both affect "views", but clickbait has twice the effect.)
+Here's the clickbait problem, as a causal diagram ⤵ (Read: "quality" and "clickbait" both affect "views", but clickbait has twice the effect.)
 
 ![A circles-and-arrows network diagram. "Quality" and "clickbait" both point to "views". The arrow from "clickbait" to "views" is labelled "2x".](/content/media/backlog/causal_1.png)
 
 
 Let's re-write that as an equation:
 
-`` views = quality + 2\times clickbait ``
+\\( views = quality + 2\times clickbait \\)
 
 Clickbait has 2x the Return-on-Investment (RoI) on Views than Quality. Naïvely, I thought this meant to maximize views, you'd put 2x more energy into Clickbait than Quality. Actually, it's worse: you'd put *all* your energy into Clickbait, not Quality.
 
@@ -327,30 +335,32 @@ Same problem for any kind of proxy-measure: there's almost always *some* other h
 
 As equations:
 
-`` proxy_1 = Target + 2\cdot noise_1 ``
-`` proxy_2 = Target + 2\cdot noise_2 ``
-`` proxy_3 = Target + 2\cdot noise_3 ``
+\\( proxy_1 = Target + 2\cdot noise_1 \\)    
+\\( proxy_2 = Target + 2\cdot noise_2 \\)    
+\\( proxy_3 = Target + 2\cdot noise_3 \\)    
 
 So, what to do? Answer: *add up all the proxies!*
 
-``composite = 3\cdot Target + 2 \cdot noise_1 + 2 \cdot noise_2 + 2 \cdot noise_3``
+\\( composite = 3\cdot Target + 2 \cdot noise_1 + 2 \cdot noise_2 + 2 \cdot noise_3 \\)
 
 By adding the proxies together, our desired Target's coefficient outweighs all the Noise coefficients; hence, *the Target* now has the highest RoI!
 
 But what if a Noise coefficient is *much* higher? That's my second idea: to prevent a few unusually-high Noise coefficients from wrecking everything, *cap the maximum contribution from each proxy*.
 
-``composite = min(proxy_1,1) + min(proxy_2,1) + min(proxy_3,1) + ...``
+\\(composite = min(proxy_1,1) + min(proxy_2,1) + min(proxy_3,1) + ...\\)
 
 Hence, **CLAP: Composite Limited-Award Proxies.** Yes I'm very proud of that acronym.
 
 Other research connections/directions:
 
 * It's been known for a long time that Simple Prediction Rules (SPR) like the above are *better than human experts* at predicting stuff.[^spr] But it's an open question if SPRs can be used for *control* purposes, like I'm suggesting above, while avoiding Goodhart's Law.
-* Can CLAP be applied to neural networks (cap the *maximum magnitude* of each weight) to "smooth out" the function the network approximates, to become robust to Adversarial Examples? e.g. Google's AI thinking a toy turtle is a gun[^adversarial])
+* Can CLAP be applied to neural networks (cap the *maximum magnitude* of each weight) to "smooth out" the function the network approximates, to become robust to Adversarial Examples? e.g. Google's AI thinking a toy turtle is a gun[^adversarial], by just adding a few dots. (It's already known that *penalizing* large weights ["L2 regularization"] in neural networks helps with overfitting & adversarial examples[^l2]; I wonder if *straight-up capping them* would help more?)
 
 [^spr]: Bishop & Trout (2005) give a snappy overview: [The Amazing Success of Statistical Prediction Rules](https://academic.oup.com/book/36404/chapter-abstract/320070686?redirectedFrom=fulltext) ([pdf](https://joelvelasco.net/teaching/4330/bishop&trout-ch2.pdf))
 
 [^adversarial]: On YouTube: [Fooling Image Recognition with Adversarial Examples](https://www.youtube.com/watch?v=piYnd_wYlT8) (2017)
+
+[^l2]: See the final figure in the "Example: LeNet on MNIST" section of [Tanay & Griffin (2018)](https://thomas-tanay.github.io/post--L2-regularization/). The middle row are the adversarial examples (AE). On the left, with *low* L2 regularization, the AE's are basically indistinguishable to the human eye. On the right, with *high* L2 regularization, the AEs are clearly manipulated & messed up; hence, a human would pick up on those errors better.
 
 **Progress: 40%** ▶️▶️◻️◻️◻️
 
@@ -374,7 +384,7 @@ Speaking of neural networks...
 
 Another research direction I want to explore is: *copying evolution's homework!*
 
-That strategy's worked so far: Artificial neural networks (ANNs) are inspired by brains. Convolutional neural networks (CNNs) for machine vision are heavily based off the mammalian visual cortex. Could copy-biology *also* work for the current hurdles in AI?
+That strategy's worked so far: Artificial neural networks (ANNs) are inspired by brains. Convolutional neural networks (CNNs) for machine vision are inspired by the mammalian visual cortex. Could copy-biology *also* work for the current hurdles in AI?
 
 4 specific problem-experiment areas:
 
@@ -453,7 +463,7 @@ Get it? *Continuous* version of the *prisoner's* dilemma? *Smooth Criminal?*
 
 ![A photo of a slack-jawed moray, looking like it just told a bad pun.](/content/media/backlog/17064737174567.jpg)
 
-Anyway: I want to replicate Axelrod's famous Iterated Prisoner's Dilemma (IPD) tournament, but with *continuous* payoffs & strategies. The game: Choose how much between ``x = [0,1]`` to give, the other player gets ``3x`` as payoff, and vice versa.
+Anyway: I want to replicate Axelrod's famous Iterated Prisoner's Dilemma (IPD) tournament, but with *continuous* payoffs & strategies. The game: Choose how much between \\(x = [0,1]\\) to give, the other player gets \\(3x\\) as payoff, and vice versa.
 
 The winner of Axelrod's original tournament was the simple "tit for tat": start with full cooperation, then copy the other player's move from then on. But I wonder, with *continuous* strategies, would it make more sense to start with *zero* cooperation, then copy the other player's move *plus a bit extra?* This allows for a *gradual building* of trust, but won't get suckers, *and* can recover from mistakes!
 
@@ -573,7 +583,7 @@ The thought-tree in produces:
 
 ![Screenshot of output](/content/media/backlog/selfmod2.png)
 
-In progress: Visualizing thought-trees as procedurally generated trees. (It's bouncy because I'm using spring-physics to figure out how the tree should be spaced out![^force-directed]
+In progress: Visualizing thought-trees as procedurally generated trees. (It's bouncy because I'm using spring-physics to figure out how the tree should be spaced out![^force-directed])
 
 [^force-directed]: It's the [force-directed graph drawing](https://en.wikipedia.org/wiki/Force-directed_graph_drawing) algorithm, but with the vertical (y) positions locked.
 
@@ -604,14 +614,14 @@ To summarize (one thread of) the debate on "AI Takeoff Speeds":
 
 Yudkowsky and Bostrom argued that self-modifying AI would go (practically) infinite in a finite amount of time -- this is the original & mathematical definition of a *Singularity*. (coined by Vernor Vinge) Their argument, formalized:
 
-* Let ``C`` be an AI's "level of software-engineering [C]apability".
-* Let ``C'`` be the change/growth in that Capability over time.
-* How fast is that growth, if an AI is improving itself? Not *only* should it depend on ``C`` itself, because software engineering is its Capability, it will depend on ``C`` *again*, because "the optimizer is itself being optimized".
+* Let \\(C\\) be an AI's "level of software-engineering [C]apability".
+* Let \\(C'\\) be the change/growth in that Capability over time.
+* How fast is that growth, if an AI is improving itself? Not *only* should it depend on \\(C\\) itself, because software engineering is its Capability, it will depend on \\(C\\) *again*, because "the optimizer is itself being optimized".
 * So, we get:
 
-```math
+$$
 C' = C \times C = C^2
-```
+$$
 
 (I'm leaving out constants for pedagogical reasons, but it doesn't change the results)
 
@@ -619,11 +629,11 @@ If you plot the above on a graph, you get infinite growth in a finite amount of 
 
 ![Graph of AI Capabilities over Time, going to infinity in finite time.](/content/media/backlog/foom0001.png)
 
-You may think, hang on, didn't they just double-count ``C`` twice? If you dropped that assumption, you get:
+You may think, hang on, didn't they just double-count \\(C\\) twice? If you dropped that assumption, you get:
 
-```math
+$$
 C' = C
-```
+$$
 
 Which results in "mere" exponential growth. Which, believe it or not, is called a "slow" takeoff in the AI Safety community!
 
@@ -631,19 +641,19 @@ Which results in "mere" exponential growth. Which, believe it or not, is called 
 
 But, as [Ramez Naam & Paul Baumbart (2014)](http://www.antipope.org/charlie/blog-static/2014/02/why-ais-wont-ascend-in-blink-of-an-eye.html) found, the true AI self-improvement growth would be even slower than *that*, because it doesn't take into account "computational complexity".
 
-For example, if you had a Sudoku game that was ``N`` cells wide, then merely *checking* if a solution is correct takes ``N^2`` steps. (N-squared, coz Sudoku is a square) *Finding* a solution is even worse: the growth in steps is *exponential*. (well, as far as we know. P=NP is unsolved.)
+For example, if you had a Sudoku game that was \\(N\\) cells wide, then merely *checking* if a solution is correct takes \\(N^2\\) steps. (N-squared, coz Sudoku is a square) *Finding* a solution is even worse: the growth in steps is *exponential*. (well, as far as we know. P=NP is unsolved.)
 
 Let's make the generous assumption that AI self-improvement is only as hard as *checking* a Sudoku solution. Then, dividing potential growth by its difficulty:
 
-```math
+$$
 C' = \frac{C}{difficultyOfImproving(C)}
-```
+$$
 
-And since ``difficultyOfImproving(C) = C^2``:
+And since \\(difficultyOfImproving(C) = C^2\\):
 
-```math
+$$
 C' = \frac{C}{C^2} = \frac{1}{C}
-```
+$$
 
 Which if you plot on a graph, looks like this:
 
@@ -653,10 +663,11 @@ Not infinite-in-finite-time, not exponential, not even linear... it *decelerates
 
 And if the difficulty of self-improvement is even harder than *merely checking* a Sudoku solution, then the deceleration would be harsher. Paul Baumbart simulated different scenarios for different complexities:
 
-![Graph of AI Capabilities over Time, for various assumptions of how hard AI self-improvement is.](/content/media/backlog/17068066312112.jpg)
-<figcaption>(from [this blog post](http://www.antipope.org/charlie/blog-static/2014/02/why-ais-wont-ascend-in-blink-of-an-eye.html))</figcaption>
+![Graph of AI Capabilities over Time, for various assumptions of how hard AI self-improvement is.](/content/media/backlog/17068066312112.jpg)*(from [this blog post](http://www.antipope.org/charlie/blog-static/2014/02/why-ais-wont-ascend-in-blink-of-an-eye.html))*
 
 Which makes sense, if you think about the *other* self-improving agents we know about: corporations. Yes, in the *beginning* they may grow exponentially, but in the long run there's always diminishing rewards. But the above argument shows it *mathematically:* it's not just a *human* limit, it's a *theoretical limit* for any self-improving agent -- AI, humans, even evolving viruses!
+
+(But the analogy to corporations also makes it clear we shouldn't be complacent: even something that grows "slowly" can still outsized impact on the world.)
 
 Next, Gwern made some counter-arguments against Naam & Baumbart's argument.[^gwern] Some aren't really relevant, some are very valid. (In particular: *yes,* the constants matter, even small advantages matter, and we should address the "empirical scaling laws".)
 
@@ -767,7 +778,7 @@ Anecdotally, algebra is one of *the* most failed courses in college, and where l
 
 Unfortunately, I've never seen a... *good* explainer of K-12 algebra? In contrast, there are *amazing* explanations of more advanced topics — e.g. 3Blue1Brown on calculus and *linear* algebra — but every explanation I've seen of K-12 algebra has 1) no visual intuition, 2) no motivation behind the ideas, and 3) no proof of why things are the way they are, it's all just memorize, plug-and-chug.
 
-(For example, I realized while outlining this project, that I never learned *why* brackets don't matter in multiplication ("associativity"). That is, ``(a \times b) \times c = a \times (b \times c)``. Yes, it's an "axiom", but why does *this specific axiom hold for multiplying numbers?!* Because associativity *isn't* true for some operators! Like subtraction: ``(3 - 2) - 1 \neq 3 - (2 - 1)``.)
+(For example, I realized while outlining this project, that I never learned *why* brackets don't matter in multiplication ("associativity"). That is, \\((a \times b) \times c = a \times (b \times c)\\). Yes, it's an "axiom", but why does *this specific axiom hold for multiplying numbers?!* Because associativity *isn't* true for some operators! Like subtraction: \\((3 - 2) - 1 \neq 3 - (2 - 1)\\).)
 
 Anyway, this is why I want to write the K-12 algebra book I wish *I* had.
 
@@ -787,7 +798,7 @@ Anyway, this is why I want to write the K-12 algebra book I wish *I* had.
 
 ### 13. ❎ Why don't brackets matter in multiplication? (novel visual proof!)
 
-As mentioned above: to the best of my knowledge, *there does not exist a visual proof* of why the "associativity" axiom, ``(a \times b) \times c = a \times (b \times c)``, is true for multiplying whole numbers.
+As mentioned above: to the best of my knowledge, *there does not exist a visual proof* of why the "associativity" axiom, \\((a \times b) \times c = a \times (b \times c)\\), is true for multiplying whole numbers.
 
 There *is* a proof of associativity for multiplying *more* than 3 numbers, but you only see it in college & it still assumes it's an axiom for 3 numbers. Kind of demotivating, isn't it? "Hey kid, memorize this fundamental fact, you'll only learn *why* it's true 10 years later, except not really."
 
@@ -829,7 +840,7 @@ Here's 2 x 3 x 2 x 3 x 2, bracketed in three different ways, all leading to the 
 
 **Progress:** 80%. ▶️▶️▶️▶️◻️
 
-I guess I could just post the above as a standalone blog post right now. **Actually, fine, _I just did that_.** (TODO)
+I guess I could just post the above as a standalone blog post right now. **[Actually, fine, _I just did that_.](https://blog.ncase.me/brackets-dont-matter/)**
 
 That's good enough for now; in the future I'd still like to make a video for it.
 
@@ -857,11 +868,11 @@ This is a video, with three parts:
 
 The first two *are* widely-accepted mathematics.
 
-One of many proofs for the first: If you accept that ``0.333... = 1/3``, multiply both sides by 3 to get ``0.999...=1``. Tada 🎉
+One of many proofs for the first: If you accept that \\(0.333... = 1/3\\), multiply both sides by 3 to get \\(0.999...=1\\). Tada 🎉
 
-One of many proofs for the second: Let's say ``...9999=x``. What *is* ``x``? Well, multiply both sides by 10, to get ``...9990=10x``. Subtract the second equation from the first, to get ``9=-9x``. The only way this is possible is if ``x=-1``. Tada 🎉
+One of many proofs for the second: Let's say \\(...9999=x\\). What *is* \\(x\\)? Well, multiply both sides by 10, to get \\(...9990=10x\\). Subtract the second equation from the first, to get \\(9=-9x\\). The only way this is possible is if \\(x=-1\\). Tada 🎉
 
-Then, to "prove" the third, just add ``0.999...=1`` and ``...999=-1`` to get ``...999.999... = 0``. Not convinced? Here's another proof: let's say ``...999.999... = x``. Multiply both sides by 10. The right side becomes ``10x``. For the left side, that shifts the decimal point one digit to the right, but it's infinite 9s on either side, so it stays the same. So you get: ``...999.999... = 10x``. Hence, ``x = 10x``. The only way this is possible is if ``x = 0``. Tada 🎉
+Then, to "prove" the third, just add \\(0.999...=1\\) and \\(...999=-1\\) to get \\(...999.999... = 0\\). Not convinced? Here's another proof: let's say \\(...999.999... = x\\). Multiply both sides by 10. The right side becomes \\(10x\\). For the left side, that shifts the decimal point one digit to the right, but it's infinite 9s on either side, so it stays the same. So you get: \\(...999.999... = 10x\\). Hence, \\(x = 10x\\). The only way this is possible is if \\(x = 0\\). Tada 🎉
 
 (This math shitpost was inspired by [this Math Overflow discussion](https://math.stackexchange.com/questions/4792771/does-999-999-0) on October 2023, which I found through [Mark Dominus's blog post](https://blog.plover.com/math/se/2023-10.html). Apparently the third thing *is* possible in the "10-adic solenoids" but fuck me if I know what that means.)
 
@@ -881,6 +892,8 @@ Speaking of weird proofs...
 
 ### 15. 🔁 Gödel's Proof, explained 100% from scratch
 
+![The words "Gödel's Proof" but with googly eyes on the O's](/content/media/backlog/godel.png)
+
 Once upon a time, mathematicians wanted to place their field on a solid foundation of logic. Then in 1931, some young punk named Kurt Gödel shattered that dream forever. Then Gödel starved himself to death. The end.
 
 (Happy post-credits scene: Gödel's proof inspired a gay British lad to invent a lil' niche idea you may have heard of called *the computer?!*)
@@ -895,9 +908,7 @@ So! I want to make the first-ever (as far as I know) layperson-friendly explaine
 
 I'll use the approach that Better Explained uses: explain it viewed at 10,000 feet, then explain it again at 100 feet, then explain it at the ground level. Fuzzy, *then* detailed:
 
-![A screenshot of a post by Better Explained. It shows an image loading in two different ways: top pixels to bottom, vs fuzzy to detailed. It claims math is usually taught the first way (first details to last details), but a the second way is better. (blurry whole to detailed whole)](/content/media/backlog/progressive.png)
-
-<figcaption>(excellent analogy by [Kalid Azad on Better Explained](https://betterexplained.com/articles/intuition-first-calculus-course/))</figcaption>
+![A screenshot of a post by Better Explained. It shows an image loading in two different ways: top pixels to bottom, vs fuzzy to detailed. It claims math is usually taught the first way (first details to last details), but a the second way is better. (blurry whole to detailed whole)](/content/media/backlog/progressive.png)*(excellent analogy by [Kalid Azad on Better Explained](https://betterexplained.com/articles/intuition-first-calculus-course/))*
 
 **If you're interested in what I have so far, a year ago I posted [the "10,000-foot view" of Gödel's Proof on my Patreon (publicly accessible post).](https://www.patreon.com/posts/bonus-mini-proof-83596299?v=3) [7 min read]**
 
@@ -923,13 +934,13 @@ If false it's true, if true it's false. How to beat this paradox?
 
 First, let's convert true/false to 1 & 0. This is standard computer science.
 
-Next, let's consider the logical operator ``NOT(x)``. What *is* ``NOT(x)``?
+Next, let's consider the logical operator \\(NOT(x)\\). What *is* \\(NOT(x)\\)?
 
-Well, if we feed it 1 (true) we want it to spit out 0 (false), and if we feed it 0 (false) we want it to spit out 1 (true). There are many functions that can do this, but the simplest is ``NOT(x) = 1 - x``.
+Well, if we feed it 1 (true) we want it to spit out 0 (false), and if we feed it 0 (false) we want it to spit out 1 (true). There are many functions that can do this, but the simplest is \\(NOT(x) = 1 - x\\).
 
-Finally, let's convert "This [s]entence is false" into an equation: `` s = NOT(s) ``. Or: `` s = 1 - s ``.
+Finally, let's convert "This [s]entence is false" into an equation: \\( s = NOT(s) \\). Or: \\( s = 1 - s \\).
 
-Well well, there's only one solution to that: `` s = 0.5 ``. That is, *the sentence is half-true, half-false!*
+Well well, there's only one solution to that: \\( s = 0.5 \\). That is, *the sentence is half-true, half-false!*
 
 The rest of this project explains:
 
@@ -938,7 +949,7 @@ The rest of this project explains:
 * A proof that fuzzy logic *will always have at least one self-consistent answer*
 * And finally, a crazy idea: truth values that take on *complex-number values*, allowing for *true contradictions* and *false tautologies*.[^true-contradictions]
 
-[^true-contradictions]: [Usó-Doménech et al (2015)](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=9763572f7ab63e7ba8d77e39632bdf9c5114ee76). The paper gets a bit... *woo*, later on, but it has at least this cool idea: First, define AND(a,b) = a\*b, since that's a function that's 1 if both inputs are 1, 0 if either input is 0. Next: "true contradiction" → "p and not-p is true" → AND(p,NOT(p)) = 1 → p\*(1-p) = 1 → p = e^±i\*pi/3. A truth value in the *complex plane*. Math is nuckin' futs.
+[^true-contradictions]: [Usó-Doménech et al (2015)](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=9763572f7ab63e7ba8d77e39632bdf9c5114ee76). The paper gets a bit... *woo*, but it has at least this cool idea: First, define AND(a,b) = a\*b, since that's a function that's 1 if both inputs are 1, 0 if either input is 0. Next: "true contradiction" → "p and not-p is true" → AND(p,NOT(p)) = 1 → p\*(1-p) = 1 → p = e^±i\*pi/3. A truth value in the *complex plane*. Math is nuckin' futs.
 
 **Progress:** 20% ▶️◻️◻️◻️◻️ The outline.
 
@@ -1031,8 +1042,7 @@ She blinded me with... *science!*
 
 ### 18. 🐦 Correlation is evidence of causation, & other Bayesian fun facts
 
-![A "midwit" meme. The dummy says "correlation is evidence of causation". The mid-wit replies with a long, dense paragraph explaining why it's not. The sage says "correlation is evidence of causation".](/content/media/backlog/causalityMeme.png)
-<figcaption>(TONE INDICATOR: *THIS IS TONGUE-IN-CHEEK*)</figcaption>
+![A "midwit" meme. The dummy says "correlation is evidence of causation". The mid-wit replies with a long, dense paragraph explaining why it's not. The sage says "correlation is evidence of causation".](/content/media/backlog/causalityMeme.png)*(TONE INDICATOR: THIS IS TONGUE-IN-CHEEK)*
 
 As the great statistician Ronald Fisher once said: **"Correlation is not evidence of causation"**. He said this in *defense* of Big Tobacco companies, who were dismissing the "mere correlation" between smoking and lung cancer. Sure, Fisher was being paid by tobacco companies, but that correlation doesn't prove it *caused* him to defend th--
 
@@ -1109,9 +1119,7 @@ A less obvious risk of controlling for too much: you can accidentally *create* a
 
 So, how to know what to control for or not? Thankfully, Judea Pearl has an algorithm for figuring out what to control... and it's *visual!*
 
-![A "midwit" meme. The dummy says "A picture is a valid mathematical proof". The mid-wit strongly disagrees and demands rigor. The sage says "A picture is a valid mathematical proof".](/content/media/backlog/CatTheory.jpg)
-
-<figcaption>(originally [found on /r/mathmemes](https://www.reddit.com/r/mathmemes/comments/ry0j71/category_theory_be_like/), about category theory)</figcaption>
+![A "midwit" meme. The dummy says "A picture is a valid mathematical proof". The mid-wit strongly disagrees and demands rigor. The sage says "A picture is a valid mathematical proof".](/content/media/backlog/CatTheory.jpg)*(originally [found on /r/mathmemes](https://www.reddit.com/r/mathmemes/comments/ry0j71/category_theory_be_like/), about category theory)*
 
 Pearl diagrams also explain lots of *other* stats techniques, like Instrumental Variables, Mendelian Randomization, Mediator Analysis, etc.
 
@@ -1161,8 +1169,7 @@ But one alternate model is the Valence-Arousal-Dominance (VAD) model. Analogy: E
 * Arousal: How energizing it feels
 * Dominance: Feeling "in charge" vs "humbled"
 
-![A picture-based questionnaire, showing a cartoon person at different levels of Valence, Arousal, and Dominance.](/content/media/backlog/17064729288735.jpg)
-<figcaption>(the Self-Assessment Manakin (SAM) from [Bradley & Lang (1994)](https://edwp.educ.msu.edu/wp-content/uploads/sites/29/2020/06/Bradley_1994_MeasuringEmotionTheSelfassessment.pdf))</figcaption>
+![A picture-based questionnaire, showing a cartoon person at different levels of Valence, Arousal, and Dominance.](/content/media/backlog/17064729288735.jpg)*(the Self-Assessment Manakin (SAM) from [Bradley & Lang (1994)](https://edwp.educ.msu.edu/wp-content/uploads/sites/29/2020/06/Bradley_1994_MeasuringEmotionTheSelfassessment.pdf))*
 
 For example, 😠 Anger is negative, high-arousal, dominant. 🥹 Awe is positive, mid-arousal, submissive.
 
@@ -1221,9 +1228,7 @@ They're both right in some ways, both wrong in others.
 
 Re: "Your feelings are valid" -- Okay, so feeling that I'm worthless and deserve to die, or a bigot feeling that [ethnicity X] is sub-human, that's "valid"?
 
-![Three-panel comic. Panel 1: Someone says "I feel like a burden, I feel I deserve to die". Panel 2: Other person says with a cheer, "Your feelings are VALID!" Panel 3: Awkward silence.](/content/media/backlog/valid.jpg)
-
-<figcaption>(from [a comic i posted 4 years ago](https://twitter.com/ncasenmare/status/1182299307711619072))</figcaption>
+![Three-panel comic. Panel 1: Someone says "I feel like a burden, I feel I deserve to die". Panel 2: Other person says with a cheer, "Your feelings are VALID!" Panel 3: Awkward silence.](/content/media/backlog/valid.jpg)*(from [a comic i posted 4 years ago](https://twitter.com/ncasenmare/status/1182299307711619072))*
 
 Re: "Emotions are irrational" -- Even in *pure math*, mathematicians report being guided by emotions, of elegance & beauty. Not just *motivated* by emotion like a reward, but the emotions *guide the day-to-day work*, like drug-sniffing K-9s for mathematical truth. But also, there's no "pure rational" reason to choose peace over genocide, or flourishing over torture; they're all just different arrangements of atoms. The fact I *like* peace & justice, or even just survival, *is* emotional.
 
@@ -1332,7 +1337,7 @@ If - *if* - I wrote this, it'd *only* selfishly be:
 1) For my own catharsis.
 2) To filter out toxic jerks from my life.
 3) To have a public statement that I wasn't onboard with the toxicity.
-4) To vent about this *one* asshole, holy shit, he's the CEO of an influential climate change lobby, okay? -- and during a conversation where I *opened up to him about my depression*, he called *me* "alt-right adjacent" and "spreading techno-capitalist propaganda" because I *like solar power.* (I brought up solar power's success to try to cheer up my depression. Yes, anti-solar environmentalists are common.[^anti-solar-env]) I will note: this guy's a white, middle-age, upper-class former-*professor*. Did you know the far left is the *richest & second-whitest* group in America?[^rich-white] Fucking organic-champagne leftists, man.
+4) To vent about this *one* asshole, holy shit, he's the CEO of an influential climate change lobby, okay? -- and during a conversation where I *opened up to him about my depression*, he called *me* "alt-right adjacent" and "spreading techno-capitalist propaganda" because I *like solar power.* (I brought up solar power's success to try to cheer up my depression. Yes, anti-solar environmentalists are common.[^anti-solar-env]) Then, when I foolishly tried to show that I'm always pro-tech, by bringing up that [at the time, in 2020] I still didn't have a smartphone, he retorted that homeless people depend on smartphones. By the way, this guy's a white, middle-age, upper-class former-*professor*. Did you know the far left is the *richest & second-whitest* group in America?[^rich-white] Fucking organic-champagne leftists, man.
 
 [^anti-solar-env]: Wally Nowinski (2022), guest post on Noahpinion: [America’s Top Environmental Groups Have Lost the Plot on Climate Change](https://www.noahpinion.blog/p/americas-top-environmental-groups)
 
@@ -1456,7 +1461,7 @@ That gives me reassurance that I can probably write about this and not be burned
 
 Okay, but why do *I* want to write about this? What's my *stake*, here?
 
-No, I'm not interested in my family. (I've gone mostly no-contact with them.) No, I don't have any friends who are in incestuous relationships. (As far as I know; they may come out to me after this post.) No, it's not a huge kink for me. (Just a small one.)
+No, I'm not interested in my family. (I've gone mostly no-contact with them.) No, I don't have any friends who are in incestuous relationships. (As far as I know; they may come out to me after this post.) No, it's not a big kink for me. (Just a small one. /tone: tongue-in-cheek)
 
 There *is* a bit of a "moral obligation" feeling; it follows logically from my moral principles. Also, *I* personally benefited from past generations fighting for inter-racial & LGBTQ love, maybe I should "pay it forward" to the next consensual-adult love-minority.
 
@@ -1480,7 +1485,7 @@ Turns out: consensual-adult, non-reproductive, similar-in-age incest is the perf
 
 1. It's controversial,
 2. But – *crucially* – it is NOT (yet) part of "the culture war". (And when it does, I can see it going either way. Maybe it gets left-coded coz "Love Wins", or right-coded due to the impression that consensual incest is more common in right-leaning rural areas[^cousin].)
-3. And yet, it naturally follows from a principle most Westerners would endorse: "If it's between consenting adults, and hurts nobody, not even themselves, and there's no unbalanced power-dynamic... then it should be *at least legal*, if not socially accepted."
+3. And yet, it naturally follows from a principle most Westerners would endorse: "If it's between consenting adults, and hurts nobody, not even themselves, and there's no unbalanced power-dynamic... then it's nobody else's business, or *at least* it shouldn't be the Government's business."
 
 [^cousin]: There's plenty of data supporting "rural = more cousin marriage" [in Central Asia & North Africa](https://en.wikipedia.org/wiki/Cousin_marriage#/media/File:Global_prevalence_of_consanguinity.svg) where it's not taboo, but it's hard to get data from the U.S. or Canada, where it *is* taboo. So, I can't confirm if red states actually *are* more likely to have consensual adult incest.
 
@@ -1517,11 +1522,9 @@ If they support "my people", it's only by conformity and chance.
 
 **(⚠️ CONTENT WARNING ⚠️: child sexual abuse, fascism. FEEL FREE TO SKIP.)**
 
-![A poster of a Fasces (an axe strengthened with rods tied around the handle), painted in red-white-blue American colors. The caption reads: FIX THE FUCKING POTHOLES. OLYMPIA CARVER 2032.](/content/media/backlog/OlympiaCarver.png)
+![A poster of a Fasces (an axe strengthened with rods tied around the handle), painted in red-white-blue American colors. The caption reads: FIX THE FUCKING POTHOLES. OLYMPIA CARVER 2032.](/content/media/backlog/OlympiaCarver.png)*(concept art for an American Fascist logo. based on the [fasces](https://en.wikipedia.org/wiki/Fasces))*
 
-<figcaption>(concept art for an American Fascist logo. based on the [fasces](https://en.wikipedia.org/wiki/Fasces))</figcaption>
-
-> “The year is 2032. After years of pundits yapping, *"groomer groomer groomer, fascist fascist fascist"*, it finally happened: I have to choose between a literal actual pedophile, or a literal actual Fascist. God fucking help me.”
+> “The year is 2032. After years of pundits yapping, *"groomer groomer groomer, fascist fascist fascist"*, it finally happened: I have to choose between working for a literal actual pedophile, or a literal actual Fascist. God fucking help me.”
 
 **Hazel Simmons** is a convicted child molester. She was a brilliant Computer Science grad student... until she tutored a 12-year-old boy, fell in "love", then groomed & fucked him.
 
@@ -1535,9 +1538,11 @@ With it, his team's treated trauma, addiction, phobias, procrastination... and n
 
 As a sidenote, Klaus used to be an incel.
 
-**Garry Gomez** is someone Hazel meets through her VR-based support group, Minor-Attracted Anonymous. Garry is playful, friendly, has a genuine faith & love for humanity... he just happens to be a closet pedophile (who, unlike Hazel, has *never* acted on the desire).
+Klaus also knows the other obvious danger of the CharI/O: that large corporations will use them to brainwash employees & consumers. So, Klaus uses the CharI/O to scan the brains of potential investors, to make sure he only works with good people. Alas, the intersection of "deeply good" and "rich enough to invest millions" is very very small. Only after years of searching, does Klaus finally find someone...
 
-He *also* happens to be a multi-millionaire founder of a VR game company, which is why Hazel & Klaus court him to fund the CharI/O. Because, despite its success, the CharI/O still struggles to be funded. Which is a dire threat to humanity, coz there's *others* who want their hands on it...
+**Garry Gomez** is someone Hazel meets through her VR-based support group, Minor-Attracted Anonymous. Garry is playful, friendly, has a genuine faith & love for humanity... he just happens to be a closet pedophile (who, unlike Hazel, has *never* acted on the desire). In fact, it's precisely *because* he's 100% a kid at heart, is why his heart's 100% on kids.
+
+Garry *also* happens to be a multi-millionaire founder of a VR game company, which is why Hazel & Klaus court him to fund the CharI/O's development. Of course, they're nervous about taking investment from a pedophile multi-millionaire. But if *they* don't succeed with the CharI/O, there's others who will steal or re-invent the technology, towards more dire ends...
 
 **Olympia Carver** is a rising politician, and self-described Moderate Fascist. In the year 2032, the majority of people are finally sick of the majority of people. Democracy's voting itself out. Power corrupts, and "power to the people" just corrupts the people – look how nasty we are to each other over politics. Meanwhile, the elites distract us with culture war stunts, while our friends die from overdose, it costs $100 a day to exist, and they still haven't fixed the fucking potholes.
 
@@ -1547,7 +1552,11 @@ Of course, she knows the two failure modes of benevolent dictators: they stop be
 
 And once she's Empress of the World, she can use the CharI/O (with consent-safeguard removed) to rewrite *everyone* to be more compassionate & collaborative. World peace, whether the world's ready for it or not. *Humanity, as one unified super-organism.*
 
-All Olympia needs to do is gently persuade Hazel, Klaus, and Garry to work with her. Or use... *other* methods.
+All Olympia needs to do is gently persuade Hazel and Klaus to work with her. Or use... *less gentle* methods.
+
+. . .
+
+And that's the story of how two people, making a device that decides the fate of humanity, are forced to choose between working for a literal actual pedophile or literal actual Fascist.
 
 ~ ~ ~ ~ ~
 
@@ -1556,11 +1565,15 @@ Why write this? I don't believe in Jung, but we can call this "shadow-work" if y
 * Processing how I lost my virginity *before* my first kiss; I was 15, the other guy was 40+. It wasn't forced, "I was willing". What would drive an adult to do that? What would drive a *kid* to seek out such an adult?
 * Looking at the political state of the world, a fear lots of folks have: the fear that democracy will die -- or worse, that democracy *deserves* to die.
 * Lots of smart & decent people have fallen for horrible beliefs. Famous intellectuals supported coercive eugenics even after Hitler, state Communism even during Stalin, your favorite French philosopher probably signed [the 1977–79 open letters to abolish the age of consent](https://en.wikipedia.org/wiki/French_petitions_against_age_of_consent_laws). If *these* geniuses can fall for it, what chance do the rest of us have? Becoming enlightened and going crazy *feel identical from the inside*. If I lost my mind, *how would I even know?*
-* And of course, being an internet creator who pays rent from being online, I *do* fear being "cancelled". I want to rip off the band-aid, and dump *every horrible thing* into this novel. Then, if I survive *that*, I'll have the relief of knowing I'll be invincible.
+* And of course, being an internet creator who pays rent from being online, I *do* fear being "cancelled". I want to rip off the band-aid, and dump *every horrible thing* into this story — a story starring two pedophiles, a former incel, and an imperialist eugenicist Fascist. Then, if I survive *that*, I'll have the relief of knowing I'll be invincible.
 
 **Progress:** 5%. ◻️◻️◻️◻️◻️
 
 Detailed 12-chapter outline with character bible. One 10,000-word chapter's first draft fully written. Read a *LOT* of research papers/books on pedophilia & child abuse. I now know way more about those than I ever wanted to know.
+
+(For example, did you know *women* child molesters are surprisingly common? Something like 10% to 20% of all child molesters are women[^fsco]; they're drastically under-reported & under-convicted, of course. This is partly why the *main* main character, Hazel, is a woman child molester. To, I dunno, "raise awareness", or at least be less cliché.)
+
+[^fsco]: Tozdan, Briken, & Dekker (2019): [Uncovering Female Child Sexual Offenders](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6463078/). See Table 2 for Prevalence Rates (PRs) of female child sex offenders, which range from 10% to 20%. These estimates are based off actual surveys of victims, not just what filters down to official reports.
 
 **Time on backburner:** 1 year.
 
@@ -1578,7 +1591,7 @@ That said, it *would* be cathartic. Maybe I'll pull out individual side-plots an
 
 [^infanticide]: Christian argument for consequentialist morality: "Judge a tree by its fruit". Utilitarian argument for (acting as if) heaven/hell are real: [Pascal's Wager](https://en.wikipedia.org/wiki/Pascal%27s_wager). If it's noble to sacrifice one's life to save others' lives, it must be nobler to sacrifice one's _after_-life to save others' afterlives. Assume 100% of babies go to heaven. Generously assume 90% of adults go to heaven. So if you kill 50 babies, you go to Hell, but 5 others who otherwise wouldn't go to heaven: Net +4 souls saved, and you'll be rewarded in the _after_-after-life!
 
-[^separatism]: The argument for white nationalism is pointing at how the Black/Latino crime rates are higher than whites. Counter-argument: that applies even more for men vs women, so that argument would also recommend women secede from men (we already have IVF, and soon we'll have IVG, to make sperm from female cells). Counter-counter-argument: _YES._ Hence, White Nationalist Lesbian Separatism.
+[^separatism]: Common argument for white nationalism: Black/Latino crime rates are higher than whites', so "let's separate". Counter-argument: men's crime rates are also higher than women's, so that argument also implies women should secede from men (which is possible: we have IVF, and soon we'll have IVG, to make sperm from female cells). Counter-counter-argument: _YES._ Hence, White Nationalist Lesbian Separatism.
 
 . . .
 
@@ -1600,7 +1613,7 @@ Many asterisks aside, researchers agree: "the brain is a computer"[^scott-young-
 
 Over the last few years, 4 of my friends (or should I say, 4+?) came out to me about having Dissociative Identity Disorder (DID) or some kind of plurality.
 
-(If 4 sounds unlikely, keep in mind the prevalence of DID in the general population is ~1%[^DID-myths], the median person has about ~291 people in their personal network[^network-size], and I'm in LGBTQ communities where folks are ~1.66x more likely to have been physically/sexually abused as kids, a risk factor for DID.[^LGBTQ-ACE] [IMPORTANT NOTE: Not all "split personalities" are caused by PTSD, cPTSD, or trauma.] So, munching the numbers, `0.01\*291\*1.66 = ~4.8`, 4-or-5 folks I know having DID is what I'd statistically expect. As for the rest of you, `0.01\*291 = ~2.9`, *you* can expect 2-or-3 folks you know to secretly have DID.)
+(If 4 sounds unlikely, keep in mind the prevalence of DID in the general population is ~1%[^DID-myths], the median person has about ~291 people in their personal network[^network-size], and I'm in LGBTQ communities where folks are ~1.66x more likely to have been physically/sexually abused as kids, a risk factor for DID.[^LGBTQ-ACE] [IMPORTANT NOTE: Not all "split personalities" are caused by PTSD, cPTSD, or trauma.] So, munching the numbers, \\(0.01*291*1.66 \approx 4.83\\), 4-or-5 folks I know having DID is what I'd statistically expect. As for the rest of you, \\(0.01*291 = 2.91\\), *you* can expect 2-or-3 folks you know to secretly have DID.)
 
 [^DID-myths]: Brand et al (2016): [Separating Fact from Fiction: An Empirical Examination of Six Myths About Dissociative Identity Disorder](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4959824/) See Table 1, "Dissociative Disorder Prevalence Studies > General Population". Results range from 1.10% (1 in 90) to 1.50% (1 in 67).
 
@@ -1610,7 +1623,7 @@ Over the last few years, 4 of my friends (or should I say, 4+?) came out to me a
 
 Having split personalities is still pretty darn stigmatized, as far as I can tell. *Every* mainstream representation of plurality that I can think of is horror (Psycho, Split, Red Dragon, Jekyll/Hyde), unhealthy (Fight Club, Mr. Robot), psychoanalytic BS (Sybil, Three Faces of Eve) or shock comedy (Me Myself & Irene, Flippy from Happy Tree Friends). I haven't seen United States of Tara, but it may be the *only* positive representation of plurality in popular media. (Calvin & Hobbes and Inside Out seem more "being a kid" and "internal family systems", respectively, than "plural".)
 
-In contrast: in the last century, being left-handed, gay, bi, trans, or autistic (at least, the "minimal support needs"/formerly-Asperger's kind) has gone from "this is a problem to fix" to "this is a harmless, alternate way to be". (At least in my social circles.) I hope one day - both for my friends' sakes, and out of moral/intellectual principle - that plurality will be accepted, too.
+In contrast: in the last century, being left-handed, gay, bi, trans, or autistic (at least, the "minimal support needs"/formerly-Asperger's kind) has gone from "this is a illness to cure" to "this is a harmless, alternate way to be". (At least in my social circles.) I hope one day - both for my friends' sakes, and out of moral/intellectual principle - that plurality will be accepted, too.
 
 Maybe with the help of storytelling, hence this project.
 
@@ -1720,7 +1733,9 @@ During the first year of the Covid-19 pandemic, I did [Andrew Huang's one-month 
 
 (I did publish *one* music video during the early pandemic. It was called, uh, [The Femboy Hooters Jingle](https://singingcatgirl.github.io/). ⚠️ Warning: very furry & very horny.)
 
-**Turn on your speakers, there's audio of my amateur singing in this one! 🔊**
+**Turn on your speakers, the below project pitches have demos of my amateur singing! 🔊** I warn you, it's very, *very* amateur singing. It sucks. But as Jake the Dog once said:
+
+![Jake the Dog saying: "Dude, sucking at something is the first step towards being sort of good at something."](/content/media/backlog/jake.gif)
 
 33. The Special Relativity Song [↪](#project_33)
 34. The General Relativity Song [↪](#project_34)
@@ -1736,21 +1751,25 @@ During the first year of the Covid-19 pandemic, I did [Andrew Huang's one-month 
 
 ### 33. 🚀 The Special Relativity Song
 
-This was my final project for Andrew Huang's course! You can listen to the full song below, but I warn you, it has a very "she learnt music production & singing in one month" quality:
+This was my final project for Andrew Huang's course! I warn you, it has a very "she learnt music production & singing in one month" quality:
 
-// TODO: Playable audio? https://studio.com/p/TKajnA
+[Full song here](https://studio.com/p/TKajnA)
+
+Excerpt:
+
+<audio controls src="https://ncase.me/misc-dump/2024-02/sucky-singing/SR.mp3"></audio>
 
 Lyrics Excerpt:
 
-> I'm float / ing on a boat
-> At a constant velocity
-> And you're / on the shore
-> Just standing there observing me
+> I'm float / ing on a boat    
+> At a constant velocity    
+> And you're / on the shore    
+> Just standing there observing me    
 >
-> To you I'm moving at a speed of `v`
-> But you move at minus `v` according to me
-> That's all / what we call
-> Galilean relativity!
+> To you I'm moving at a speed of `v`    
+> But you move at minus `v` according to me    
+> That's all / what we call    
+> Galilean relativity!    
 >
 > `[...]`
 
@@ -1770,34 +1789,34 @@ Lyrics Excerpt:
 
 If the above song & music video took off, I was thinking of making a sequel.
 
-Listen-able Demo:
+Demo:
 
-// TODO
+<audio controls src="https://ncase.me/misc-dump/2024-02/sucky-singing/GR.mp3"></audio>
 
 Lyrics (excerpt):
 
-> [Chorus]
-> Einstein once set out to prove
-> Why an apple does fall down to Earth
-> Curved spacetime tells mass how to move
-> and mass tells spacetime how to curve!
+> [Chorus]    
+> Einstein once set out to prove    
+> Why an apple does fall down to Earth    
+> Curved spacetime tells mass how to move    
+> and mass tells spacetime how to curve!    
 >
-> [Verse 1]
-> *My happiest thought,* Einstein tells the truth,
-> *was imagining a man falling off a roof.*
-> Schadenfreude? Au contraire!
-> Coz when that man falls through the air,
-> Ignore the wind in his hair and on his face,
-> He'll feel weightless -- like in outer space
-> Indistinguishable from an inertial frame
-> Principle of Equivalence: it's the same!
-> But wait! A question on your mind:
-> Inertial things move in straight lines
-> But things fall in curves, so how can it be straight?
-> Well very simply, if spacetime is -- *wait!*
-> -- *for it!* --
-> . . .
-> Curved *itself.* Yeaaaaaaaah!!!!!!
+> [Verse 1]    
+> *My happiest thought,* Einstein tells the truth,    
+> *was imagining a man falling off a roof.*    
+> Schadenfreude? Au contraire!    
+> Coz when that man falls through the air,    
+> Ignore the wind in his hair and on his face,    
+> He'll feel weightless -- like in outer space    
+> Indistinguishable from an inertial frame    
+> Principle of Equivalence: it's the same!    
+> But wait! A question on your mind:    
+> Inertial things move in straight lines    
+> But things fall in curves, so how can it be straight?    
+> Well very simply, if spacetime is -- *wait!*    
+> -- *for it!* --    
+> . . .    
+> Curved *itself.* Yeaaaaaaaah!!!!!!    
 >
 > `[...]`
 
@@ -1823,44 +1842,44 @@ So, I wanted to make a song about intrusive thoughts that's *far* grosser - but 
 
 **(⚠️ WARNING: *EXTREMELY* NSFW LYRICS. CONTENT NOTE: EVERYTHING ⚠️)**
 
-Listen-able Demo:
+Demo:
 
-// TODO
+<audio controls src="https://ncase.me/misc-dump/2024-02/sucky-singing/intrusive.mp3"></audio>
 
 Lyrics (excerpt):
 
-> Don't think / of a pink / elephant
-> Sucking its own dick with its own trunk
-> I guess / when you repress / your sentiments
-> Your mind gets filled-up with fucked-up junk
->
-> We all got! [clap clap] Intrusive thoughts! [clap clap]
-> Your mood may worsen / Thinking "I'm a bad person"
-> But you're not! [clap clap] Intrusive tho-o-o-oughts!
-> Are something we all share, so sigh a deep breath
-> We all fantasize about fucking dogs to death!
->
-> ooooooohhhhhhhhhhhhhhhhh
->
-> This isn't your first rodeo
-> You know that beheading video
-> That you saw when you were ten?
-> It'll pop up in your mind again
-> and again and again and again and again
-> and -- what rhymes with ten? -- *again!*
-> [clap clap]
->
-> “Let's shoot up a school!”
-> “Let's jerk off to gore!”
-> “Let's shout the N-word in a grocery store!”
-> What's with this melodrama?
-> Is it my childhood trauma?
-> I'm getting *pissed.*
-> [clap clap]
-> Why the cognitive-behavioral *fuck*
-> does this part of my brain exi-i-i-iiiiiiiiiiiiist?
->
-> `[...]`
+> Don't think / of a pink / elephant    
+> Sucking its own dick with its own trunk    
+> I guess / when you repress / your sentiments    
+> Your mind gets filled-up with fucked-up junk    
+>    
+> We all got! [clap clap] Intrusive thoughts! [clap clap]    
+> Your mood may worsen / Thinking "I'm a bad person"    
+> But you're not! [clap clap] Intrusive tho-o-o-oughts!    
+> Are something we all share, so sigh a deep breath    
+> We all fantasize about fucking dogs to death!    
+>    
+> ooooooohhhhhhhhhhhhhhhhh    
+>    
+> This isn't your first rodeo    
+> You know that beheading video    
+> That you saw when you were ten?    
+> It'll pop up in your mind again    
+> and again and again and again and again    
+> and -- what rhymes with ten? -- *again!*    
+> [clap clap]    
+>    
+> “Let's shoot up a school!”    
+> “Let's jerk off to gore!”    
+> “Let's shout the N-word in a grocery store!”    
+> What's with this melodrama?    
+> Is it my childhood trauma?    
+> I'm getting *pissed.*    
+> [clap clap]    
+> Why the cognitive-behavioral *fuck*    
+> does this part of my brain exi-i-i-iiiiiiiiiiiiist?    
+>    
+> `[...]`    
 
 **Progress:** 20% ▶️◻️◻️◻️◻️ Lyrics & melody.
 
@@ -1878,22 +1897,22 @@ Lyrics (excerpt):
 
 This one *requires* a music video, since it's about a visual proof of the Pythagorean Theorem.
 
-Listen-able Demo:
+Demo:
 
-// TODO
+<audio controls src="https://ncase.me/misc-dump/2024-02/sucky-singing/triangle.mp3"></audio>
 
 Lyrics (excerpt):
 
-> So you know two cities' longitude & latitude
-> Can we get their distance? With a can-do attitude!
-> and a right triangle -- no need to fear 'em
-> I'll show you the picture proof of the Pythagorean Theor-e-e-e-em!
+> So you know two cities' longitude & latitude    
+> Can we get their distance? With a can-do attitude!    
+> and a right triangle -- no need to fear 'em    
+> I'll show you the picture proof of the Pythagorean Theor-e-e-e-em!    
 >
-> So you have a triangle
-> That has a right angle
-> `a` and `b` are the sides
-> and `c`'s the diagonal
-> `[...]`
+> So you have a triangle    
+> That has a right angle    
+> `a` and `b` are the sides    
+> and `c`'s the diagonal    
+> `[...]`    
 
 **Progress:** 20% ▶️◻️◻️◻️◻️ Lyrics & melody. Music video animatic'd in my head. No production.
 
@@ -1911,23 +1930,23 @@ Lyrics (excerpt):
 
 A parody of Billy Joel's _The Longest Time_ ([on YouTube](https://www.youtube.com/watch?v=a_XgQhMPeEQ)), but it's a friendly ribbing of the rationalist/longtermist movement. (This came out of a late-night hangout with some teens at [Hack Club](https://hackclub.com/).)
 
-Listen-able Demo:
+Demo:
 
-// TODO
+<audio controls src="https://ncase.me/misc-dump/2024-02/sucky-singing/longest.mp3"></audio>
 
 Lyrics (excerpt):
 
-> If you said that happiness was good
-> And you'd like to make more if you could
-> Then you should put 'yer
-> Moral weight on folks in the future
-> Coz they outnumber us in the looooongest term!
+> If you said that happiness was good    
+> And you'd like to make more if you could    
+> Then you should put 'yer    
+> Moral weight on folks in the future    
+> Coz they outnumber us in the looooongest term!    
 >
-> Build a Dyson Sphere around the Sun
-> To power the Matrix for everyone
-> All eight quintillion
-> Quintillion quintillion quintillion
-> Happy brain-em's in the looooongest term!
+> Build a Dyson Sphere around the Sun    
+> To power the Matrix for everyone    
+> All eight quintillion    
+> Quintillion quintillion quintillion    
+> Happy brain-em's in the looooongest term!    
 >
 > [...]
 
@@ -1947,27 +1966,25 @@ Lyrics (excerpt):
 
 A birthday present for Grant Sanderson I never finished.
 
-Listen-able Demo:
+Demo:
 
-// TODO
+<audio controls src="https://ncase.me/misc-dump/2024-02/sucky-singing/math.mp3"></audio>
 
 Lyrics (excerpt):
 
-> `[calm music]`
-> Have you been wishin'
-> For visual intuition
-> of math?
+> Have you been wishin'    
+> For visual intuition    
+> of math?    
 >
-> Because mindless plugging
-> and chugging is bugging
-> me, and fills me with wraaAAAAATH
+> Because mindless plugging    
+> and chugging is bugging    
+> me, and fills me with wraaAAAAATH    
 >
-> `[death metal]`
-> BUT DON'T FEEL DOWN
-> THREE BLUE ONE BROWN
+> `[death metal]`    
+> BUT DON'T FEEL DOWN    
+> THREE BLUE ONE BROWN    
 >
-> `[calm music]`
-> --will show you the beauty of math!
+> --will show you the beauty of math!    
 
 **Progress:** 20% ▶️◻️◻️◻️◻️ Lyrics & melody.
 
@@ -1989,23 +2006,23 @@ Right, not sure if I mentioned that. I tried running a lewd furry Patreon during
 
 **(⚠️ WARNING: NSFW LYRICS)**
 
-Listen-able Demo:
+Demo:
 
-// TODO
+<audio controls src="https://ncase.me/misc-dump/2024-02/sucky-singing/fetish.mp3"></audio>
 
 Lyrics (excerpt):
 
-> So you're browsing on the internet
-> When you find some porn that makes you hard or wet
-> It's sickening and gross and awful, yet
-> I think you got yourself a new fetish!
+> So you're browsing on the internet    
+> When you find some porn that makes you hard or wet    
+> It's sickening and gross and awful, yet    
+> I think you got yourself a new fetish!    
 >
-> Red Riding Hood can ride a werewolf knot
-> That incest porn has a surprisingly good plot
-> And Vaporeon is a moist Poké-thot
-> What hath God wrought?
-> I think you've got
-> a braaaaand newwww fetish!
+> Red Riding Hood can ride a werewolf knot    
+> That incest porn has a surprisingly good plot    
+> And Vaporeon is a moist Poké-thot    
+> What hath God wrought?    
+> I think you've got    
+> a braaaaand newwww fetish!    
 >
 > `[...]`
 
@@ -2217,9 +2234,7 @@ Project Pitch: I'd like to make an article sharing lots of examples + spread the
 
 ### 45. ⚖️ We do advocacy, they do propaganda: A Collection of Russell Conjugations
 
-![Symmetric picture of two warring kingdoms. On the left: "Our blessed homeland", "our glorious leader". On the right: "Their barbarous wastes", "their wicked despot". The punchline is the picture's completely symmetrical, save for different-colored flags.](/content/media/backlog/17068911370429.jpg)
-
-<figcaption>("Our Blessed Homeland" (2015) by Tom Gauld. [Source](https://twitter.com/tomgauld/status/571994690289061888))</figcaption>
+![Symmetric picture of two warring kingdoms. On the left: "Our blessed homeland", "our glorious leader". On the right: "Their barbarous wastes", "their wicked despot". The punchline is the picture's completely symmetrical, save for different-colored flags.](/content/media/backlog/17068911370429.jpg)*("Our Blessed Homeland" (2015) by Tom Gauld. [Source](https://twitter.com/tomgauld/status/571994690289061888))*
 
 > [Having a set of strongly-held beliefs]
 > *We* stick to our principles.
@@ -2321,7 +2336,7 @@ THIS CLOSET... IS CLEAN!
 
 This exercise was... not worth it, but I learnt some things!
 
-* Apparently, I can write 18,000 words *in one week* if I turn off my perfectionist-anxiety filter.
+* Apparently, I can write 20,000 words *in one week* if I turn off my perfectionist-anxiety filter.
 * And now that I've reviewed my whole backlog, I've a better sense of what I'd like to prioritize (anything 3 ⭐️ or above), and what I'd drop (anything less than 2 ⭐️). I now know *what I actually value.*
 
 I'd like to give you a better ending, but again: goodbye perfectionist-filter. No polish here. The moral of the story is there is no moral and there is no story.
@@ -2338,4 +2353,30 @@ I'm just *clearing out the closet.*
 
 ---
 
-// Credits, Newsletter, etc...
+<iframe src="https://ncase.me/ncase-credits/signup.html" frameborder="no" width=640 height=200></iframe>
+
+<iframe src="https://ncase.me/ncase-credits/supporters/feb2024.html" frameborder="no" width=640 height=640></iframe>
+
+## : Adiabatic Quantum Computation
+
+*(the below was a text I sent to a friend, slightly edited)*
+
+So: adiabatic quantum computation (AQC)!
+
+I kinda visualize the core idea like, I start with a simple valley with a bunch of magic water in it at its global minimum. The magic water can, uh, tunnel through hills I guess.
+
+Then, I slowly morph that landscape into a landscape whose global minimum "describes" the solution to some problem I want. (e.g. each position in the landscape describes a path for a travelling salesman problem, the height is how long the path takes, the global minimum is what I want).
+
+If I morph the hills *slowly* enough, the magic tunneling-water will *stay* in the global minimum throughout the evolution. It won't get trapped because it's magic and can tunnel through newly-appearing hills; again, *as long as the evolution is slow enough*.
+
+Tying metaphor to AQC: You start with a simple Hamiltonian in its ground state. Then, *slowly* evolve the Hamiltonian to one that describes a problem you care about, and whose global minimum is the solution you want. If the evolution is slow enough, your wavefunction will stay in the ground state throughout!
+
+This isn't just empirical, it's been mathematically proved from the rules of quantum mechanics, the [Adiabatic Theorem](https://en.wikipedia.org/wiki/Adiabatic_theorem). (I mean, *I* can't follow the proof, but good to know it exists).
+
+The catch, you may figure, is in the phrase "slowly enough".  HOW slow does it have to be?  [Wikipedia claims](https://en.wikipedia.org/wiki/Adiabatic_quantum_computation) that the runtime is proportional to the *inverse square* of the gap between the global minimum and the next-highest local minimum. 1/g^2, where 'g' is the gap.
+
+But then, why have AQC / quantum annealing computers like D-Wave not had huge successes? Because the way folks convert problems like Traveling Salesman into landscapes, leads to local-global minima gaps that get _exponentially_ small as the problem size increases.
+
+But my quantum octopus/fuzzy logic idea *doesn't* have this problem! The energy landscape my fuzzy gates create don't *have* false local minima, just the one saddlepoint!  And even if that saddlepoint counts as a local minimum, the gap between it and the global minimum *remains constant*.  (The saddlepoint is always at y = 0.5, the global minimum is at y = 1.0) Therefore, as far as I can tell, that means *in theory* (practical decoherence aside) AQC should be able to solve my quantum octopus in constant time.
+
+Anyway "big if true", I've no idea, guess I'll faff around and find out.

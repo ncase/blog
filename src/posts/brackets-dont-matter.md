@@ -87,7 +87,7 @@ What's left to do:
 
 But I guess you'll have to wait until I write that book, to see those. (Or, wait until I get bored and just dump them as standalone articles.)
 
-*This blog post is a standalone section, ripped out of my upcoming 90-minute-long[!!!] blog post, Cleaning Out The Idea Closet (47 Projects on My Backlog).*
+_This blog post is a standalone section, ripped out of my 90-minute-long[!!!] blog post, **[Cleaning Out The Idea Closet (47 Projects on My Backlog)](../backlog).**_
 
 <iframe src="https://ncase.me/ncase-credits/signup.html" frameborder="no" width=640 height=200></iframe>
 

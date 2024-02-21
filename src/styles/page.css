@@ -83,6 +83,19 @@ ol,ul{
     padding-left: 1em;
 }
 
+blockquote{
+    border-left: 5px solid rgba(128,128,128,0.4);
+    margin-left: 0;
+    padding-left: 2em;
+}
+img{
+    text-align: center;
+}
+img + em{
+    display: block;
+    text-align: center;
+}
+
 /*******************************/
 /* HEADER */
 /*******************************/
@@ -319,6 +332,7 @@ body[dark_mode=yes] .article-summary{
     right: 10px;
     bottom: 13px;
     text-align: center;
+    z-index: 999;
 }
 #reading_time > #clock_icon{
     width:40px; height:40px;
@@ -484,6 +498,19 @@ input#submit{
 input#submit:hover{
     top:-1px;
     background: #777;
+}
+
+/* Mobile "friendly" */
+@media (max-width: 800px) {
+    #sidebar, #sidebar_tabs{
+        display: none !important;
+    }
+    #content{
+        width: 400px !important;
+    }
+    #header{
+        font-size: 50px !important;
+    }
 }
 
 
