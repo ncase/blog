@@ -4,7 +4,7 @@ tags:
 - post
 share_image: https://blog.ncase.me/content/media/backlog/banner.png
 share_desc: "47 things I didn't ship."
-date: 2024-04-21
+date: 2024-02-21
 readtime: "90 min"
 layout: base-layout.njk
 hasMath: true
