@@ -5,7 +5,7 @@ window.$all = (query, el=document)=>{
     return [...document.querySelectorAll(query)];
 };
 
-window.addEventListener("load", ()=>{
+window.addEventListener("DOMContentLoaded", ()=>{
 
     // ARTICLE SUMMARIES
     // Scale the thumnails:
