@@ -6,13 +6,137 @@
     <subtitle>I make occasional pictures &amp; words</subtitle>
     <link href="https://blog.ncase.me/feed.xml" rel="self"/>
     <link href="https://blog.ncase.me/"/>
-    <updated>2024-05-31T00:00:00Z</updated>
+    <updated>2024-06-28T00:00:00Z</updated>
     <id>https://blog.ncase.me/</id>
     <author>
         <name>Nicky Case</name>
     </author>
 
     
+    
+
+        
+        
+        <entry>
+            <title>Signal Boosts for June 2024</title>
+            <link href="https://blog.ncase.me/signal-boosts-june-2024/"/>
+            <updated>2024-06-28T00:00:00Z</updated>
+            <id>https://blog.ncase.me/signal-boosts-june-2024/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;Ay it&#39;s yo&#39; girl Nicky, sharing &lt;a href=&quot;https://blog.ncase.me/signal-boosts-may-2024/&quot;&gt;another&lt;/a&gt; collection of cool/useful stuff I found last month!&lt;/p&gt;
+&lt;p&gt;In no particular order:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#khan&quot;&gt;An actually-good tutor-bot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#obsidian&quot;&gt;Open-source note-taking app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#data&quot;&gt;Data detectives&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#murder&quot;&gt;Binging on mystery novels&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#clover&quot;&gt;I FOUND A FIVE-LEAF CLOVER&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a id=&quot;khan&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;🌱 Khan Academy&#39;s tutor-bot&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sb-june2024/khan.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;fan of the app, not a fan of the Cronenberg-esque fleshy-speech-bubble mascot...&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;First off, I&#39;m not being sponsored by Khan Academy or OpenAI to mention this. I mean, I&#39;ll take your money, but no-one&#39;s offering.&lt;/p&gt;
+&lt;p&gt;Anyway: 1-on-1 tutoring&#39;s been long known to have one of the greatest effect sizes on learning&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;, but alas, 1-on-1 tutoring ain&#39;t cheap. So, that&#39;s always been the promise of AI tutors: personalized tutoring, but affordable to all.&lt;/p&gt;
+&lt;p&gt;So when ChatGPT first came, I was excited then immediately disappointed, coz &lt;em&gt;wow&lt;/em&gt; ChatGPT sucked at tutoring math / physics / technical topics.  For example, I asked it to help me re-derive the rocket equation (which tells you how a rocket&#39;s velocity changes) and after 20 minutes of stringing me along with plausible BS, it told me, &amp;quot;assume the rocket&#39;s velocity is constant&amp;quot;.  &lt;em&gt;That&#39;s&lt;/em&gt; when I closed the app in disgust.&lt;/p&gt;
+&lt;p&gt;Well 2 years later, I can finally honestly say I&#39;ve experienced an &lt;em&gt;actually good&lt;/em&gt; AI tutor:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.khanmigo.ai/&quot;&gt;Khanmigo, by Khan Academy!&lt;/a&gt;&lt;/strong&gt; (powered by GPT-4)&lt;/p&gt;
+&lt;p&gt;(Ok, I haven&#39;t tried the &lt;em&gt;full&lt;/em&gt; Khanmigo yet, I&#39;m currently using &lt;a href=&quot;https://chatgpt.com/g/g-hRCqiqVlM-tutor-me&quot;&gt;Khanmigo Lite&lt;/a&gt; on a free plan of ChatGPT. But after a month of trying it, I&#39;m excited to buy the full version!)&lt;/p&gt;
+&lt;p&gt;Khanmigo, so far, has helped me understand the rocket equation, some integral calculus, and misc stuff from math &amp;amp; physics I wanted to buff up on.&lt;/p&gt;
+&lt;p&gt;A few features of Khanmigo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Works better on math / physics / technical topics than ChatGPT.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Will not&lt;/em&gt; give you the answer all in one go; instead, it&#39;ll help &lt;em&gt;you&lt;/em&gt; re-discover ideas from scratch!&lt;/li&gt;
+&lt;li&gt;Gives you practice problems, &lt;em&gt;and&lt;/em&gt; gives feedback on your work.&lt;/li&gt;
+&lt;li&gt;Can create graphs &amp;amp; other visuals.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Of course, Khanmigo&#39;s missing that social human element&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;, and it&#39;s not as good as a master teacher like, say, 3Blue1Brown... but dare I claim, it&#39;s on par with an &lt;em&gt;average&lt;/em&gt; college tutor, at only $4/month!&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fn3&quot; id=&quot;fnref3&quot;&gt;[3]&lt;/a&gt;&lt;/sup&gt; Also, it&#39;s free for US teachers, and Khan Academy&#39;s a non-profit.&lt;/p&gt;
+&lt;p&gt;And yes, since I&#39;m someone who&#39;s &lt;em&gt;entire income&lt;/em&gt; comes from making educational stuff, I should be slightly scared of this. Oh well. Not a bad way to end up broke, I guess.&lt;/p&gt;
+&lt;p&gt;&lt;a id=&quot;obsidian&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;🪨 Obsidian, an open-source note-taking app&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sb-june2024/obsidian.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I&#39;ve been on the hunt for a &lt;em&gt;good&lt;/em&gt; note-taking app for years. A decade ago I used Notational Velocity, but my needs outgrew its minimalism. Then I used Bear but it doesn&#39;t have folders &amp;amp; crashed a lot on tablet. Then I used Notion but &lt;em&gt;dear god it&#39;s so slow &amp;amp; laggy&lt;/em&gt;, also there&#39;s no offline mode on Android? Then I used Google Keep, but again, no folders and sometimes laggy. Then I tried a lesser-known app called &lt;a href=&quot;https://www.mweb.im/&quot;&gt;MWeb&lt;/a&gt;, which was pretty good, but there&#39;s no Android version.&lt;/p&gt;
+&lt;p&gt;This month, I (re-)found &lt;strong&gt;Obsidian&lt;/strong&gt;!  I actually &lt;em&gt;did&lt;/em&gt; try Obsidian last year, but it didn&#39;t stick because I went overboard with their cross-linking note system &amp;amp; made a mess of it.  But now, I use Obsidian for almost &lt;em&gt;everything&lt;/em&gt; text-related:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Day / Week / Year task management&lt;/li&gt;
+&lt;li&gt;Journaling &amp;amp; Dream diaries&lt;/li&gt;
+&lt;li&gt;Dumping ideas &amp;amp; notes from research/studying&lt;/li&gt;
+&lt;li&gt;Writing articles — including &lt;em&gt;this&lt;/em&gt; blog post you&#39;re reading!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some features of Obsidian that make it especially good for me:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;For staying organized:&lt;/strong&gt; Todo-list-style checkboxes; Clicking headers &amp;amp; bulletpoints to hide/collapse sections. (Obsidian also allows cross-linking notes like in Notion, but honestly, as mentioned earlier, every time cross-linking it becomes a mess. Shame, coz that feature &lt;em&gt;sounds&lt;/em&gt; so cool, yet it&#39;s always been bad for me. Other folks swear by it, though.)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;For articles/writing:&lt;/strong&gt; I can write in Markdown (what my blog engine requires), stick pictures in notes, &lt;em&gt;and even use LaTeX, a math-rendering tool&lt;/em&gt;. That last one&#39;s important, since I do math-education stuff sometimes. $a^2 + b^2 = &#92;text{yo momma}$&lt;/li&gt;
+&lt;li&gt;(Finally: Obsidian allows plug-ins, so if there&#39;s some other feature you want, someone&#39;s probably written a plug-in for that!)&lt;/li&gt;
+&lt;li&gt;(I also appreciate that it&#39;s open-source, unlike most of the popular note-taking apps like Notion or Evernote.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I currently use Obsidian on Mac OS X, iPad, and Android. App itself is free, but I pay $4/month for Obsidian Sync, to synchronize all my devices. Again, I&#39;m not being sponsored to say any of this, I just really like Obsidian.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://obsidian.md/&quot;&gt;Check out Obsidian here!&lt;/a&gt;&lt;/strong&gt; Available on all major platforms.&lt;/p&gt;
+&lt;p&gt;&lt;a id=&quot;data&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;🍸 Data Colada, data detectives&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A previous version of this post was supposed to go live in January 2019. But the day before it was scheduled, &lt;strong&gt;the Data Colada team (Uri, Leif, and Joe) received an email that we took to be a potential death threat.&lt;/strong&gt; After discussions with the local police, the FBI, and our families, we decided to postpone its publication indefinitely.&lt;/p&gt;
+&lt;p&gt;~ from &lt;a href=&quot;http://datacolada.org/117&quot;&gt;Data Colada #117&lt;/a&gt;  [emphasis added]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That wasn&#39;t even the &lt;em&gt;first&lt;/em&gt; time these data detectives got seriously threatened. From &lt;a href=&quot;https://datacolada.org/116&quot;&gt;Data Colada #116&lt;/a&gt;: [emphasis added]&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We identified evidence of fabricated data in four studies co-authored by Francesca Gino. We asked her employer, Harvard University, to look into it. They spent a year and a half doing that, and determined that we were right. So they contacted the relevant journals with requests for retractions and put Gino on unpaid administrative leave. Then we wrote some blog posts about it. &lt;strong&gt;Then Francesca Gino filed a $25M defamation lawsuit against us and Harvard.&lt;/strong&gt; Legal wackiness ensued.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That lawsuit is &lt;em&gt;still&lt;/em&gt; ongoing.&lt;/p&gt;
+&lt;p&gt;Anyway, what I love most about Data Colada&#39;s posts is they genuinely feel like &lt;em&gt;murder mysteries.&lt;/em&gt; Showing exhibit A, exhibit B, etc, all independently pointing to stinky fishiness.&lt;/p&gt;
+&lt;p&gt;For example, in &lt;a href=&quot;https://datacolada.org/98&quot;&gt;one of their biggest fraud busts [Data Colada #98]&lt;/a&gt;, they investigated a famous study on honesty. (Yes: Fraud, in a study on honesty. Lady Irony must eat well, coz irony be &lt;em&gt;thicc.&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Supposedly,&lt;/em&gt; the study asked 13,488 folks to report how many miles they drove. Now, if the data was &lt;em&gt;real&lt;/em&gt;, you&#39;d expect a bell curve like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sb-june2024/data1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;What you would &lt;em&gt;NOT&lt;/em&gt; expect, is the data looking like &lt;em&gt;this:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sb-june2024/data2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;That is: looking like someone typed &lt;code&gt;RANDBETWEEN(0,50000)&lt;/code&gt; in Excel to get uniformly-random fake data. And this was just &lt;em&gt;one&lt;/em&gt; of the many signs of fraud our detectives uncovered.&lt;/p&gt;
+&lt;p&gt;Anyway, to read their &amp;quot;data murder mysteries&amp;quot;, check out the above links! Data Colada also writes insightful articles on statistics in general. One of my faves is: &lt;a href=&quot;https://datacolada.org/30&quot;&gt;why the standard way to detect publication bias sucks, and a better way to do it&lt;/a&gt;. (the authors &lt;em&gt;invented&lt;/em&gt; a new statistical tool!)&lt;/p&gt;
+&lt;p&gt;&lt;a id=&quot;murder&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;🔪 Holly Jackson&#39;s mystery novels&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sb-june2024/hj.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Iiiiiiiii just binged on all (but one) of Holly Jackson&#39;s books last month.&lt;/p&gt;
+&lt;p&gt;My mini-reviews: (90% spoiler-free)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HJ&#39;s Good Girl series:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;A Good Girl&#39;s Guide to Murder:&lt;/strong&gt; A solid classic! Full of surprising-but-logical twists, good character arcs &amp;amp; motivations. Loved how most chapters ended with a running list of notes &amp;amp; questions &amp;amp; hypotheses. Felt kinda &amp;quot;rationalist fic&amp;quot;, with the protagonist – &amp;quot;Pip&amp;quot; – demonstrating a &amp;quot;scientific method&amp;quot; approach. (Main criticism: characters sometimes unrealistically monologue, but the exposition-dump is twist-y enough to be worth it.)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Good Girl, Bad Blood:&lt;/strong&gt; This sequel goes meta: Pip makes a podcast about her story in the previous book, then solves a new missing-persons case for the podcast. The story never uses this idea much (the podcast was not crucial to any clues or story points), and one of the Big Twists un-satisfyingly comes out of nowhere.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;As Good As Dead:&lt;/strong&gt; My misgivings about the 2nd novel were &lt;em&gt;well&lt;/em&gt;-compensated for. The 2nd novel&#39;s ending set up a much more &lt;em&gt;psychological&lt;/em&gt; 3rd novel, with Pip struggling with PTSD, anger, and the injustice of the legal system. (This book shows the reader &lt;em&gt;real&lt;/em&gt; stats, like how often false confessions happen &amp;amp; why.&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fn4&quot; id=&quot;fnref4&quot;&gt;[4]&lt;/a&gt;&lt;/sup&gt;) Then, like &lt;em&gt;Psycho&lt;/em&gt; &amp;amp; &lt;em&gt;Hereditary&lt;/em&gt;, the novel throws a &lt;em&gt;complete&lt;/em&gt; curveball in the middle, and becomes a wildly different story. The book was a bit too hammy on the &amp;quot;everything&#39;s coming full circle!&amp;quot; theme, but, yeah. It worked. Solid ending to the series.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Kill Joy:&lt;/strong&gt; &lt;code&gt;(prequel novella, haven&#39;t read yet)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HJ&#39;s standalone books:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Five Survive:&lt;/strong&gt; Six young adults stuck in an RV in a dead zone with a sniper! Lots of clever MacGyver&#39;ing &amp;amp; cat-and-mouse action. That said, I don&#39;t like novels where the Big Twist is &lt;em&gt;artificially&lt;/em&gt; held from you; in this case, the protagonist &lt;em&gt;knows&lt;/em&gt; (one of) the Big Twists, but her internal monologue refuses to tell you, the reader, until 2/3 of the way in.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Re-appearance of Rachel Price:&lt;/strong&gt; A &lt;em&gt;reverse&lt;/em&gt; murder mystery, of someone&#39;s mom coming back from the dead! This one best captured the same spirit of HJ&#39;s first book, but in a fresh distinct way. I&#39;m talking: logical twists, clever detective work, solid emotional character arcs! Ending is disturbing-in-a-good-way, too.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(If you hate reading, there&#39;s a BBC adaptation of the first novel coming out July, then streaming on Netflix in August. I probably won&#39;t watch it.)
+&lt;a id=&quot;clover&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;🍀 I FOUND A FRIGGIN&#39; &lt;em&gt;FIVE&lt;/em&gt;-LEAF CLOVER&lt;/h2&gt;
+&lt;p&gt;True fact!&lt;/p&gt;
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube-nocookie.com/embed/azG7E8LyVqg?si=LPwAI0hVhIN1DH_V&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;Anyway, that&#39;s all for this month, folks. Go home.&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot; /&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;An oft-cited old study found that 1-on-1 tutoring + &amp;quot;mastery learning&amp;quot; = &lt;a href=&quot;https://en.wikipedia.org/wiki/Bloom%27s_2_sigma_problem&quot;&gt;a two-sigma improvement&lt;/a&gt;: that is, the average tutored student gets better than 98%(!!) of non-tutored students. (or, going from a C student to an A student, according to &lt;a href=&quot;https://www.calcunation.com/calculator/bell-curve-grade.php&quot;&gt;this grade curve calculator&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alas, like much early psych research, this doesn&#39;t replicate.&lt;/strong&gt; (See &lt;a href=&quot;https://www.educationnext.org/two-sigma-tutoring-separating-science-fiction-from-science-fact/&quot;&gt;these&lt;/a&gt; &lt;a href=&quot;https://nintil.com/bloom-sigma/&quot;&gt;reviews&lt;/a&gt; )&lt;/p&gt;
+&lt;p&gt;According to recent meta-analyses, &lt;a href=&quot;https://www.researchgate.net/profile/Matthew-Burns-10/publication/317159091_Meta-Analysis_of_the_Effects_of_Academic_Interventions_and_Modifications_on_Student_Behavior_Outcomes/links/5eeba09d458515814a6825ab/Meta-Analysis-of-the-Effects-of-Academic-Interventions-and-Modifications-on-Student-Behavior-Outcomes.pdf&quot;&gt;1-on-1 tutoring&lt;/a&gt;&#39;s effect size is ~0.5, and &lt;a href=&quot;https://scholarsbank.uoregon.edu/xmlui/bitstream/handle/1794/28137/stockard_jean_id9.pdf?sequence=1&quot;&gt;mastery learning&lt;/a&gt;&#39;s is ~0.5, so added together they probably &amp;quot;only&amp;quot; have a 1-sigma effect: taking an average student to above 68% of other students. (or, C student to B student)&lt;/p&gt;
+&lt;p&gt;Which definitely isn&#39;t as impressive... but still pretty good! &lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Actually, the &amp;quot;social human element&amp;quot; &lt;a href=&quot;http://web.archive.org/web/20240628180937/https://edisciplinas.usp.br/pluginfile.php/4279672/mod_resource/content/1/Intelligent%20tutoring%20systems%20and%20learning%20outcomes%20A%20meta-analysis.pdf&quot;&gt;may not matter much&lt;/a&gt;: &amp;quot;No significant difference between learning from [tutor software] and learning from individualized human tutoring or small-group instruction.&amp;quot;&lt;/p&gt;
+&lt;p&gt;But I still believe (without hard evidence) that an &lt;em&gt;excellent&lt;/em&gt; human (like 3Blue1Brown) can still out-teach the best &lt;em&gt;current&lt;/em&gt; software (for now). &lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn3&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;For context, &lt;a href=&quot;https://tutorcruncher.com/average-tutoring-rates/&quot;&gt;the average hourly tutor rate is ~$20&lt;/a&gt;.  So, instead of 1 hour of an &lt;em&gt;average&lt;/em&gt; human tutor, you could have &lt;em&gt;5 months&lt;/em&gt; of Khanmigo. &lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fnref3&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn4&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;From &lt;a href=&quot;https://innocenceproject.org/overturning-false-confessions/&quot;&gt;the Innocence Project&lt;/a&gt;: “In approximately 25% of the wrongful convictions overturned with DNA evidence, defendants made false confessions, admissions or statements to law enforcement officials.” &lt;a href=&quot;https://innocenceproject.org/false-confessions/&quot;&gt;False confessions happen&lt;/a&gt; due to a subject&#39;s intellectual disabilities, coercive/deceptive interrogations, being bribed with promise of immunity, sleep-deprived confusion, to protect someone else, etc. &lt;a href=&quot;https://cris.maastrichtuniversity.nl/ws/portalfiles/portal/1091296/guid-03aa0f12-49eb-46f9-9b67-e382ab75fcf1-ASSET1.0.pdf&quot;&gt;Other replicated research&lt;/a&gt; shows it&#39;s really easy to elicit false confessions, even with negative consequences. &lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fnref4&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+        </entry>
+
     
 
         
@@ -2048,82 +2172,6 @@ Cook something nutritious &lt;em&gt;and&lt;/em&gt; delicious.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/ca-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/ca-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Special thanks to my supporters &lt;a href=&quot;https://patreon.com/ncase&quot;&gt;on Patreon&lt;/a&gt; who are keeping me afloat while the economy takes a swan dive into a garbage can 💖 No seriously, I&#39;d be dead.&lt;/p&gt;
-</content>
-        </entry>
-
-    
-
-        
-        
-        <entry>
-            <title>Make Plushie Patterns with Play-Doh &amp; Paper Towels</title>
-            <link href="https://blog.ncase.me/make-plushie-patterns-with-play-doh-paper-towels/"/>
-            <updated>2020-03-12T13:00:00Z</updated>
-            <id>https://blog.ncase.me/make-plushie-patterns-with-play-doh-paper-towels/</id>
-            <content xml:lang="en" type="html">&lt;p&gt;So, you want to design a plushie! (&amp;quot;soft toy&amp;quot;, if you&#39;re English)&lt;/p&gt;
-&lt;p&gt;And not just a flat, two-pieces-of-cloth plushie. No: you want &lt;em&gt;three D&#39;s.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;To do that, you first need to transform a 3D surface into 2D pieces, to cut into fabric &amp;amp; sew together. The two most common methods are: 1) be a wizard and do this in your head, or 2) use a 3D modelling software, i.e., be a wizard.&lt;/p&gt;
-&lt;p&gt;I ain&#39;t got time for that, and neither do you!&lt;/p&gt;
-&lt;p&gt;But recently, I was inspired by &lt;a href=&quot;http://laurenvenell.com/epic-how-to-make-a-3-d-plush-pattern-from-a-2-d-drawing/&quot;&gt;this designer&#39;s tutorial&lt;/a&gt;, where she wraps fabric around carved foam. I wanted cheaper/easier materials, so I made a variant where you wrap paper towel pieces around Play-Doh.&lt;/p&gt;
-&lt;p&gt;Let&#39;s start!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/materials.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;h2&gt;What You&#39;ll Need&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Modeling clay&lt;/strong&gt; (not necessarily Play-Doh, it just made the title alliterate)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Paper Towel&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Scissors&lt;/strong&gt; (preferably small, to cut tight curves)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Pen&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Optional: tape&lt;/li&gt;
-&lt;li&gt;Optional: straight pins&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Step 1: Mold your 3D form&lt;/h3&gt;
-&lt;p&gt;Come on, you did this as a kid. It doesn&#39;t have to look smooth, just approximate.&lt;/p&gt;
-&lt;p&gt;For this tutorial, I&#39;m making a &lt;a href=&quot;https://en.wikipedia.org/wiki/Peeps&quot;&gt;Peep&lt;/a&gt;!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/1-1.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;h3&gt;Step 2: Cover its surface&lt;/h3&gt;
-&lt;p&gt;Cut out a small piece of paper towel, and press it gently against your clay&#39;s surface. (optional: use a pin to keep it in place)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/3.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Draw the edge of where the clay touches the paper:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/4.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Cut away everything &lt;em&gt;outside&lt;/em&gt; of the edge, and that&#39;s your first 2D piece! Repeat until you&#39;ve covered the whole surface. Tip: write notes on the pieces, to keep track of where they go.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/5.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;(If a piece can&#39;t wrap around the clay without making awkward folds, you may have to split it into two pieces, or snip out the fold to create a &lt;a href=&quot;https://whileshenaps.com/2011/03/elements-of-soft-toy-design-15-triangular-darts.html&quot;&gt;&amp;quot;dart&amp;quot;&lt;/a&gt;.)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;And that&#39;s it! You just turned a 3D surface into a 2D pattern! 🎉&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/6.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;To save your pattern, you can just scan or take a photo of your pieces as-is.&lt;/p&gt;
-&lt;p&gt;But I wanted to clean mine up first. So, I took a photo &amp;amp; digitally traced the outlines... so that &lt;em&gt;you&lt;/em&gt; can download this Peep Plushie Pattern! (&lt;a href=&quot;https://blog.ncase.me/content/images/2020/03/design.png&quot;&gt;right click &amp;amp; save&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/design.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;In total, designing this plushie pattern took me &lt;strong&gt;one hour.&lt;/strong&gt; On my &lt;em&gt;first try.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;You&#39;d expect some kind of catch, but it really &lt;em&gt;was&lt;/em&gt; that easy! All that was left for me to do was, uh, y&#39;know...&lt;/p&gt;
-&lt;h3&gt;Step 3: Make The Rest Of The Friggin&#39; Plushie&lt;/h3&gt;
-&lt;p&gt;This tutorial&#39;s just about how to &lt;em&gt;design&lt;/em&gt; a plushie pattern, not &lt;em&gt;sew&lt;/em&gt; one, but I&#39;ll list the main steps &amp;amp; leave links to other tutorials!&lt;/p&gt;
-&lt;p&gt;First, copy the pieces onto a fabric...&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/8-1.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Cut them out...&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/9.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Sew exterior details first, like the eyes... (see: &lt;a href=&quot;https://www.youtube.com/watch?v=ZvzMMcKHVR4&quot;&gt;how to hand sew&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/10.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Stitch the pieces together &lt;em&gt;wrong side out&lt;/em&gt;, so I can turn it inside-out later...&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/11.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Don&#39;t forget to leave a big enough hole somewhere, to put in the stuffing!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/13.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Stuffing!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/14.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Then close up the hole, knot the thread, and bury the knot inside your fluffy lil&#39; boy. (see: &lt;a href=&quot;https://www.youtube.com/watch?v=c2B_fgEGMlM&quot;&gt;how to invisibly close plushie holes&lt;/a&gt; and &lt;a href=&quot;https://www.youtube.com/watch?v=ZCymy196zlM&quot;&gt;hide knots&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/15.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;and VOILÀ&lt;/p&gt;
-&lt;p&gt;HE&lt;/p&gt;
-&lt;p&gt;IS&lt;/p&gt;
-&lt;p&gt;✨ FABULOUS ✨&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/16-copie.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;As you can see, the plushie&#39;s final form is pretty close to the clay model. Just slightly chubbier, thanks to all that stuffing:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/17.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Peeps dream of flying:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/19.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;And sometimes, dreams really do come true:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2020/03/FLY.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Now you know how to turn &lt;em&gt;any 3D form you like&lt;/em&gt; into a 2D plush pattern, no wizards required. Happy pattern-making! 🐥&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Thank you to my generous supporters &lt;a href=&quot;https://www.patreon.com/ncase&quot;&gt;on Patreon&lt;/a&gt;, who thought I&#39;d be making educational videogames since that&#39;s &lt;a href=&quot;https://ncase.me/&quot;&gt;what I usually do&lt;/a&gt;, but I&#39;m currently on sabbati-cation, so, heck it, this week it&#39;s plushies.&lt;/em&gt;&lt;/p&gt;
 </content>
         </entry>
 
