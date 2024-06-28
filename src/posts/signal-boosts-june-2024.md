@@ -82,7 +82,7 @@ This month, I (re-)found **Obsidian**!  I actually *did* try Obsidian last year,
 Some features of Obsidian that make it especially good for me:
 
 * **For staying organized:** Todo-list-style checkboxes; Clicking headers & bulletpoints to hide/collapse sections. (Obsidian also allows cross-linking notes like in Notion, but honestly, as mentioned earlier, every time cross-linking it becomes a mess. Shame, coz that feature *sounds* so cool, yet it's always been bad for me. Other folks swear by it, though.)
-* **For articles/writing:** I can write in Markdown (what my blog engine requires), stick pictures in notes, *and even use LaTeX, a math-rendering tool*. That last one's important, since I do math-education stuff sometimes. $a^2 + b^2 = \text{yo momma}$
+* **For articles/writing:** I can write in Markdown (what my blog engine requires), stick pictures in notes, *and even use LaTeX, a math-rendering tool*. That last one's important, since I do math-education stuff sometimes. \\(a^2 + b^2 = \text{yo momma}\\)
 * (Finally: Obsidian allows plug-ins, so if there's some other feature you want, someone's probably written a plug-in for that!)
 * (I also appreciate that it's open-source, unlike most of the popular note-taking apps like Notion or Evernote.)
 
