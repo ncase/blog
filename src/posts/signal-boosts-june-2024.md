@@ -9,11 +9,11 @@ layout: base-layout.njk
 hasMath: true
 ---
 
-Ay it's yo' girl Nicky, sharing [another](https://blog.ncase.me/signal-boosts-may-2024/) collection of cool/useful stuff I found last month!
+Ay it's yo' girl Nicky, sharing [another](/signal-boosts-may-2024) collection of cool/useful stuff I found last month!
 
 In no particular order:
 * [An actually-good tutor-bot](#khan)
-* [Open-source note-taking app](#obsidian)
+* [A note-taking app](#obsidian)
 * [Data detectives](#data)
 * [Binging on mystery novels](#murder)
 * [I FOUND A FIVE-LEAF CLOVER](#clover)
@@ -66,7 +66,7 @@ And yes, since I'm someone who's *entire income* comes from making educational s
 
 
 <a id="obsidian"></a>
-## 🪨 Obsidian, an open-source note-taking app
+## 🪨 Obsidian, a note-taking app
 
 ![](/content/media/sb-june2024/obsidian.png)
 
@@ -84,11 +84,12 @@ Some features of Obsidian that make it especially good for me:
 * **For staying organized:** Todo-list-style checkboxes; Clicking headers & bulletpoints to hide/collapse sections. (Obsidian also allows cross-linking notes like in Notion, but honestly, as mentioned earlier, every time cross-linking it becomes a mess. Shame, coz that feature *sounds* so cool, yet it's always been bad for me. Other folks swear by it, though.)
 * **For articles/writing:** I can write in Markdown (what my blog engine requires), stick pictures in notes, *and even use LaTeX, a math-rendering tool*. That last one's important, since I do math-education stuff sometimes. \\(a^2 + b^2 = \text{yo momma}\\)
 * (Finally: Obsidian allows plug-ins, so if there's some other feature you want, someone's probably written a plug-in for that!)
-* (I also appreciate that it's open-source, unlike most of the popular note-taking apps like Notion or Evernote.)
 
 I currently use Obsidian on Mac OS X, iPad, and Android. App itself is free, but I pay $4/month for Obsidian Sync, to synchronize all my devices. Again, I'm not being sponsored to say any of this, I just really like Obsidian.
 
 **[Check out Obsidian here!](https://obsidian.md/)** Available on all major platforms.
+
+(CORRECTION on June 29, 2024: The original version of this post claimed that Obsidian was open-source. [It's not.](https://github.com/obsidianmd/obsidian-releases?tab=readme-ov-file#about-this-repo) I don't know how I mixed it up in my head, sorry. Sincere thanks to J.C. & Q for emailing me about the error!) 
 
 
 <a id="data"></a>

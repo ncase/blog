@@ -22,11 +22,11 @@
             <link href="https://blog.ncase.me/signal-boosts-june-2024/"/>
             <updated>2024-06-28T00:00:00Z</updated>
             <id>https://blog.ncase.me/signal-boosts-june-2024/</id>
-            <content xml:lang="en" type="html">&lt;p&gt;Ay it&#39;s yo&#39; girl Nicky, sharing &lt;a href=&quot;https://blog.ncase.me/signal-boosts-may-2024/&quot;&gt;another&lt;/a&gt; collection of cool/useful stuff I found last month!&lt;/p&gt;
+            <content xml:lang="en" type="html">&lt;p&gt;Ay it&#39;s yo&#39; girl Nicky, sharing &lt;a href=&quot;https://blog.ncase.me/signal-boosts-may-2024&quot;&gt;another&lt;/a&gt; collection of cool/useful stuff I found last month!&lt;/p&gt;
 &lt;p&gt;In no particular order:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#khan&quot;&gt;An actually-good tutor-bot&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#obsidian&quot;&gt;Open-source note-taking app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#obsidian&quot;&gt;A note-taking app&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#data&quot;&gt;Data detectives&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#murder&quot;&gt;Binging on mystery novels&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#clover&quot;&gt;I FOUND A FIVE-LEAF CLOVER&lt;/a&gt;&lt;/li&gt;
@@ -52,7 +52,7 @@
 &lt;p&gt;Of course, Khanmigo&#39;s missing that social human element&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;, and it&#39;s not as good as a master teacher like, say, 3Blue1Brown... but dare I claim, it&#39;s on par with an &lt;em&gt;average&lt;/em&gt; college tutor, at only $4/month!&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fn3&quot; id=&quot;fnref3&quot;&gt;[3]&lt;/a&gt;&lt;/sup&gt; Also, it&#39;s free for US teachers, and Khan Academy&#39;s a non-profit.&lt;/p&gt;
 &lt;p&gt;And yes, since I&#39;m someone who&#39;s &lt;em&gt;entire income&lt;/em&gt; comes from making educational stuff, I should be slightly scared of this. Oh well. Not a bad way to end up broke, I guess.&lt;/p&gt;
 &lt;p&gt;&lt;a id=&quot;obsidian&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;🪨 Obsidian, an open-source note-taking app&lt;/h2&gt;
+&lt;h2&gt;🪨 Obsidian, a note-taking app&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sb-june2024/obsidian.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;I&#39;ve been on the hunt for a &lt;em&gt;good&lt;/em&gt; note-taking app for years. A decade ago I used Notational Velocity, but my needs outgrew its minimalism. Then I used Bear but it doesn&#39;t have folders &amp;amp; crashed a lot on tablet. Then I used Notion but &lt;em&gt;dear god it&#39;s so slow &amp;amp; laggy&lt;/em&gt;, also there&#39;s no offline mode on Android? Then I used Google Keep, but again, no folders and sometimes laggy. Then I tried a lesser-known app called &lt;a href=&quot;https://www.mweb.im/&quot;&gt;MWeb&lt;/a&gt;, which was pretty good, but there&#39;s no Android version.&lt;/p&gt;
 &lt;p&gt;This month, I (re-)found &lt;strong&gt;Obsidian&lt;/strong&gt;!  I actually &lt;em&gt;did&lt;/em&gt; try Obsidian last year, but it didn&#39;t stick because I went overboard with their cross-linking note system &amp;amp; made a mess of it.  But now, I use Obsidian for almost &lt;em&gt;everything&lt;/em&gt; text-related:&lt;/p&gt;
@@ -67,10 +67,10 @@
 &lt;li&gt;&lt;strong&gt;For staying organized:&lt;/strong&gt; Todo-list-style checkboxes; Clicking headers &amp;amp; bulletpoints to hide/collapse sections. (Obsidian also allows cross-linking notes like in Notion, but honestly, as mentioned earlier, every time cross-linking it becomes a mess. Shame, coz that feature &lt;em&gt;sounds&lt;/em&gt; so cool, yet it&#39;s always been bad for me. Other folks swear by it, though.)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;For articles/writing:&lt;/strong&gt; I can write in Markdown (what my blog engine requires), stick pictures in notes, &lt;em&gt;and even use LaTeX, a math-rendering tool&lt;/em&gt;. That last one&#39;s important, since I do math-education stuff sometimes. &#92;(a^2 + b^2 = &#92;text{yo momma}&#92;)&lt;/li&gt;
 &lt;li&gt;(Finally: Obsidian allows plug-ins, so if there&#39;s some other feature you want, someone&#39;s probably written a plug-in for that!)&lt;/li&gt;
-&lt;li&gt;(I also appreciate that it&#39;s open-source, unlike most of the popular note-taking apps like Notion or Evernote.)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I currently use Obsidian on Mac OS X, iPad, and Android. App itself is free, but I pay $4/month for Obsidian Sync, to synchronize all my devices. Again, I&#39;m not being sponsored to say any of this, I just really like Obsidian.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://obsidian.md/&quot;&gt;Check out Obsidian here!&lt;/a&gt;&lt;/strong&gt; Available on all major platforms.&lt;/p&gt;
+&lt;p&gt;(CORRECTION on June 29, 2024: The original version of this post claimed that Obsidian was open-source. &lt;a href=&quot;https://github.com/obsidianmd/obsidian-releases?tab=readme-ov-file#about-this-repo&quot;&gt;It&#39;s not.&lt;/a&gt; I don&#39;t know how I mixed it up in my head, sorry. Sincere thanks to J.C. &amp;amp; Q for emailing me about the error!)&lt;/p&gt;
 &lt;p&gt;&lt;a id=&quot;data&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;🍸 Data Colada, data detectives&lt;/h2&gt;
 &lt;blockquote&gt;
