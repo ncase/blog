@@ -110,7 +110,7 @@ So, the potential costs & benefits of drug-free nasal sprays:
 * Benefits: *possibly* huge.
     * Human trials [papers 2,3] suggests it cuts infection down to a 1/3 or 1/5.
     * Animal study results [papers 1,4] are promising, and I think likely to transfer to humans. Unlike vaccines, these treatments don't depend on rodent vs human immune systems — the drug-free nasal sprays' mechanisms involves physically trapping the viruses, blocking spike proteins, neutralizing them with alcohol, etc.
-    * Why this doesn't strike me as "like the ivermectin situation": the mechanisms for how nasal sprays work is more understood, and the (few) studies' sample sizes are larger.
+    * How this contrasts with "the ivermectin situation": the mechanisms for how nasal sprays work are more understood, and the studies' sample sizes are larger. (Still, more studies would be nice.)
 
 Anyway, there's a Covid-19 wave this summer & I'm taking a flight soon.
 
@@ -126,7 +126,7 @@ So personally: I'll be stocking up on nasal sprays!
 
 Last month, [I signal-boosted Khan Academy's tutor-bot](https://blog.ncase.me/signal-boosts-june-2024/#khan). This month, I realized an even better way to use Large Language Model (LLM) chatbots to study: they can *automatically generate* Anki spaced repetition flashcards in bulk!
 
-(Bonus, click to expand - [: What's spaced repetition & Anki?](https://aisafety.dance/#SpacedRepetition))
+(Bonus, click to expand → [: What's spaced repetition & Anki?](https://aisafety.dance/#SpacedRepetition))
 
 [Anki can import flashcards](https://docs.ankiweb.net/importing/text-files.html), as text files formatted in [CSV](https://en.wikipedia.org/wiki/Comma-separated_values). Here's the LLM prompt I use to make flashcards in bulk:
 
@@ -162,7 +162,7 @@ Stay tuned for that article!
 
 In 2001, linguist Sonja Lang struggled with depression. But she remembered the most (in)famous hypothesis in linguistics: [The Sapir-Whorf Hypothesis](https://en.wikipedia.org/wiki/Linguistic_relativity), the idea that the language you think in can *greatly* change how you think.
 
-(Bonus, click to expand - [: My thoughts on the Sapir-Whorf Hypothesis](#SapirWhorf))
+(Bonus, click to expand → [: My thoughts on the Sapir-Whorf Hypothesis](#SapirWhorf))
 
 Sonja thought: My depression is partly caused by over-convoluted negative self-talk. So what if I *designed* a language optimized for simplicity & fun?
 
@@ -312,7 +312,7 @@ or:
 
 ---
 
-### : Sapir-Whorf
+### : What do I think about the Sapir-Whorf hypothesis?
 
 It seems to me that both the ideas that language *0%* or *100%* shapes how you think, are wrong:
 
@@ -342,7 +342,7 @@ In sum:
 * I love lists!
 
 
-### : Lucky 10k
+### : Today's Lucky 10k
 
 ![xkcd comic: I try not to make fun of people for admitting they don't know something that 'everyone knows'. \[Does math, to estimate that the # of people in the US who are hearing a fun fact for the first time is 10,000 da day.\] If you don't know something, "you're one of today's lucky 10,000."](../content/media/aug-2024/10k.png)
 
