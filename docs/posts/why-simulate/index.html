@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>Why Simulate?</title>
+
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=460">
+
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="Why Simulate?">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="https://blog.ncase.me/content/images/2016/04/simulation-1.gif">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="Why Simulate?">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/images/2016/04/simulation-1.gif">
+	<meta property="og:title" content="Why Simulate?">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/images/2016/04/simulation-1.gif">
+	<meta property="og:description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Fri Apr 15 2016 07:18:21 GMT-0700 (Pacific Daylight Saving Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+                
+            
+            <img
+                 class="blur" 
+                id="splash_image_banner" src="/content/images/2016/04/simulation-1.gif"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			Why Simulate?
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+    			tags:
+                
+                    
+                
+                    
+                        <a class='black-link' target='_self' href="/tag/Explorable Explanations">Explorable Explanations</a>,
+                    
+                
+                    
+                        <a class='black-link' target='_self' href="/tag/Journo Stuff">Journo Stuff</a>
+                    
+                
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a target='_self' href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p><img src="/content/images/2016/04/simulation.gif" alt="that sim-u-la-tion gif"></p>
+<p>When most people hear the word “simulation”, they probably think about The Matrix, and whether we're all living in a simulation or something. But real simulations are made for a <em>purpose</em>. They're created to figure out the past, improve the present, or explore possible futures.</p>
+<p>So the good news is, we <em>can't</em> be living in a simulation, because this world <em>has</em> no purpose! Yaaaaaaaay!</p>
+<hr>
+<p>There's many reasons to use simulations, but for this blog post, I've created a rough taxonomy of 6 main functions. Of course, these categories are broad, fuzzy, and not mutually exclusive. This list is mostly for my own sake, but if you're an educator, researcher, or journalist, hopefully it can be of help to you as well!</p>
+<p>Anyway, here's how we can use, or are already using, simulations to understand the world around us:</p>
+<p><img src="/content/images/2016/04/simulating.png" alt="1"></p>
+<h2>1. Exploration (What If?)</h2>
+<p>First off, simulation as thought experiment. Thought experiments aren't just some useless armchair philosophizing – they've been <em>critical</em> to the development of science! For example, Galileo never actually dropped balls off the Tower of Pisa to prove different masses must fall at the same rate – <a href="https://en.wikipedia.org/wiki/Thought_experiment#Overview">he proved it via thought experiment</a>. Simulations let us ask, “what if?” (sidenote: Another scientific example: Albert Einstein's chasing-a-light-beam thought experiment leading directly to Special Relativity.)</p>
+<p><strong>Examples:</strong></p>
+<p><strong><a href="http://worrydream.com/ExplorableExplanations/#reactiveDocument">Explorable Explanations</a></strong> by Bret Victor – In this example, one can ask <em>“what if”</em> of a policy proposal, by dragging numbers, to see what effects different prices and parameters would have.</p>
+<p><a href="http://ncase.me/simulating/"><strong>Simulating The World In Emoji</strong> 😘</a> by Nicky Case (me!) – inspired by Bret Victor's work, I made this tool to model systems, so a reader can change <em>every</em> rule and parameter, asking all sorts of &quot;what if&quot; questions.</p>
+<p><strong><a href="https://www.themarshallproject.org/2015/08/04/the-new-science-of-sentencing#simulator">The New Science of Sentencing</a></strong> by the Marshall Project, and the very closely inspired <strong><a href="http://jonuy.com/firearms-and-deaths/">Gun Suicides</a></strong> by Jon Uy – both of these let you change sliders to let you <em>make tradeoffs</em> between different public policies.</p>
+<p><img src="/content/images/2016/04/polygons.png" alt="2"></p>
+<h2>2. Explanation (How Does?)</h2>
+<p>This one is the most common kind of simulation I've seen. Simulations are best at explaining <strong>processes</strong>, things that happen over lots and lots of small steps. (sidenote: Of course, there are simpler ways to show simpler processes – no need to use a flamethrower for a birthday cake candle. For example, <a href="https://en.wikipedia.org/wiki/Causal_loop_diagram">causal loop diagrams</a>, flowcharts, or even just a numbered list of steps.)</p>
+<p><strong>Examples:</strong></p>
+<p><strong><a href="http://ncase.me/polygons/">Parable of the Polygons</a></strong> by Vi Hart &amp; Nicky Case (me again!) – this interactive shows how harmless individual decisions can accumulate to a harmful societal result... and lets <em>you</em> make those small individual decisions, step by step. <em>You</em> lead the process, here.</p>
+<p><strong><a href="http://www.redblobgames.com/pathfinding/a-star/introduction.html">Introduction to A*</a></strong> by Amit Patel – simulations to explain a technical concept. In this example, you provide <em>different inputs</em> to a computational process, and see what the process spits out back at you.</p>
+<p><strong><a href="https://en.wikipedia.org/wiki/Weasel_program">Methinks It Is Like A Weasel</a></strong> by Richard Dawkins – this one isn't &quot;interactive&quot;, and doesn't need to be, since simulation != interactive. But it's still one of my favorite educational sims, coz it's so simple, yet shows how the <em>process</em> of evolution works. (sidenote: OR DOES IT? I wrote another post recently, about how random mutation + non-random selection isn't enough to explain evolution; <a href="http://blog.ncase.me/the-building-block-hypothesis/">you need <em>recombination</em>.</a>)</p>
+<p><img src="/content/images/2016/04/netlogo.png" alt="3"></p>
+<h2>3. Emergence</h2>
+<p>A few simple rules in Go or Chess can lead to centuries of complex play. Individually dumb ants can make up a scary-smart colony. The mindless process of evolution creates life that looks designed.</p>
+<p>That's emergence, and it's hella cool. (sidenote: See previous blog post: <a href="http://blog.ncase.me/emergence-is-frikkin-magic/">Emergence Is Frikkin' Magic</a>)</p>
+<p>But it's also something humans can't figure out just in their head, what with <a href="https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two">our working memory of 7 ± 2 things</a>. But just like how writing let us extend our memory to paper, and led to the invention of mathematics and history, computers can <a href="http://www.dougengelbart.org/pubs/augment-3906.html">augment</a> (but should not <em>replace</em>) our ability to work with complexity and emergence.</p>
+<p>(The following examples are not &quot;interactive&quot;, but again, simulation != interactive)</p>
+<p><strong>Tools:</strong> one popular simulation tool (for both education and research) is <a href="https://ccl.northwestern.edu/netlogo/">NetLogo</a>. On the more theoretical, non-software side, there's also <a href="https://en.wikipedia.org/wiki/Agent-based_model">agent-based models</a>, <a href="https://en.wikipedia.org/wiki/Stock_and_flow">stock-and-flows</a>, and <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method">monte carlo simulations</a>.</p>
+<p><strong>Algorithms:</strong> some algorithms <em>use</em> emergent behavior to become incredibly powerful. For example, <a href="https://en.wikipedia.org/wiki/Genetic_algorithm">genetic algorithms</a> and <a href="https://en.wikipedia.org/wiki/Artificial_neural_network">neural networks</a> (which recently beat expert humans at Go). (sidenote: Ooh! Check out this cool, new <a href="http://playground.tensorflow.org/">explorable explanation on neural networks!</a>)</p>
+<p><img src="/content/images/2016/04/Screen-Shot-2016-04-14-at-16-36-34.png" alt="4"></p>
+<h2>4. Predicting the Unknown (meh)</h2>
+<p>First of all, I gotta say – prediction is <em>totally</em> overrated. The world is way too complex for prediction, and even if you <em>can</em> predict something, the effort is probably better spent in being <em>adaptive</em> to multiple possible futures, or <em>changing</em> the future – rather than trying to predict and plan for <em>one</em> future.</p>
+<p>But hey, peeps try. (sidenote: Alright, I'm being over-the-top cynical. Forecasting is important, but for any complex system, one should only predict <em>probabilities</em>, not specifics.)</p>
+<p><strong>In The Real World:</strong> obviously, weather forecasts, which are only accurate up to a few days. But peeps also use sims to try to <a href="https://en.wikipedia.org/wiki/Dynamic_stochastic_general_equilibrium">predict economics</a>, which is accurate up to... um, prolly not ever, really.</p>
+<p><strong><em>Retro</em>-diction:</strong> now <em>this</em> usage I kinda like. Instead of trying to predict the unknown future, using simulations to &quot;predict&quot; the unknown past. For example, computational archeologists have used agent-based sims to try to figure out <a href="http://www.css.gmu.edu/~axtell/Rob/Research/Pages/Ancient_societies_files/Anasazi-Nature%20(J%20Diamond).pdf">how the Anasazi tribe suddenly disappeared.</a></p>
+<p><img src="/content/images/2016/04/Screen-Shot-2014-05-23-at-5-45-25-PM.png" alt="5"></p>
+<h2>5. Creating the Unknown (yeh!)</h2>
+<p>Now <em>this</em> is the good stuff. Scientists, engineers, and even policymakers, all already use simulations to test out different futures, and design &amp; pick the better ones.</p>
+<p><strong>In The Real World</strong> - <a href="https://en.wikipedia.org/wiki/Wildfire_modeling">Firefighters use sims</a> to fight forest fires in real-time. <a href="http://www.urbansim.com/">City planners use sims</a> to figure out building placement, traffic flow, resources, etc. <a href="http://www.cdc.gov/epicasestudies/download_simulation.html">The CDC uses sims</a> to strategize how to combat epidemics. See? <em>SIMULATIONS SAVE LIVES.</em></p>
+<p>But I have one main complaint about these sims, and that's that they're not accessible to the rest of us. These simulations are used to decide how citizens' lives are shaped, shouldn't we be able to use them, too? I don't think it's malicious, it's just that designing things to be friendly and generally accessible is hard, which is why we should look to... (sidenote: One exception I can think of is <a href="https://www.climateinteractive.org/tools/c-roads/">C-ROADS</a>, a stock-and-flow model of climate change that's meant for laypeeps &amp; policypeeps, yet scientifically rigorous.)</p>
+<p><strong>Vidyagames!</strong> – like <a href="https://en.wikipedia.org/wiki/The_Sims">The Sims</a> series, or those <a href="https://en.wikipedia.org/wiki/Business_simulation_game">business-management games</a>. They're probably not very accurate, but dang they sure do a good job of making complex systems and tradeoffs not only accessible, but <em>fun!</em></p>
+<p><img src="https://i.imgur.com/nQLibhO.png" alt="6"></p>
+<h2>6. Role-Playing</h2>
+<p>Finally, I'd like to end with something a little bit more <em>human</em> – role-playing. Our natural curiosity to know what it's like to be another person, to live another life. Whether that's through books, movies, games... or simulations.</p>
+<p><strong>Interactive Stories:</strong> Despite <a href="https://ncase.itch.io/coming-out-simulator-2014">my having <em>made</em> an &quot;empathy game&quot;</a>, I take a lot of issue with &quot;empathy games&quot;. I mean, nobody describes books or movies as being &quot;for empathy&quot;. That said, there are some great role-playing interactive stories out there, that actually enlighten and educate. One that impacted me personally is <a href="http://www.depressionquest.com/">Depression Quest</a> by Zoe Quinn. (You can read my analysis/dissection of it in my essay, <a href="http://blog.ncase.me/i-do-and-i-understand/">I Do &amp; I Understand</a>) (sidenote: Runner-up: <a href="http://www.bbc.com/news/world-middle-east-32057601">Syrian Journey</a> from BBC Interactive. Rough, but good idea of using a &quot;composite character&quot; from real interviews to tell a nonfic story. The game-y tone of writing is <em>awful</em>, though.)</p>
+<p><strong>Real Life Uses Too, I Guess:</strong> And of course, role-playing simulations are used to train flight pilots, surgeons, and military personnel.</p>
+<hr>
+<p>The world is shaped by complex systems, too vast and complicated for the unaided human mind to handle. But like how we use oven mitts to get a grasp on fresh, hot cookies, we can use simulations to get a grasp on complexity. And it'll be just as delicious.</p>
+<p>* <em>Further reading: <a href="http://jasss.soc.surrey.ac.uk/11/4/12.html">Why Model?</a> by Joshua Epstein.</em></p>
+<p>** <em>the header .gif is from the adventure-comedy indie game, <a href="http://www.jazzpunk.net/">JAZZPUNK</a>. i don't know how to explain it. it is not a thing that can be explained</em></p>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

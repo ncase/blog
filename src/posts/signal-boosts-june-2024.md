@@ -3,7 +3,7 @@ title: "Signal Boosts for June 2024"
 tags:
 - post
 share_image: https://blog.ncase.me/content/media/sb/thumb.png
-share_desc: "stuff I liked last month"
+share_desc: "Tutor bots, data detectives, and I FOUND A FIVE-LEAF CLOVER"
 date: 2024-06-28
 readtime: "8 min"
 layout: base-layout.njk

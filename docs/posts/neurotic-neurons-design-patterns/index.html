@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>Neurotic Neurons: Design Patterns</title>
+
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=460">
+
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="Neurotic Neurons: Design Patterns">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="https://blog.ncase.me/styles/assets/placeholder_thumb.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="Neurotic Neurons: Design Patterns">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/styles/assets/placeholder_thumb.png">
+	<meta property="og:title" content="Neurotic Neurons: Design Patterns">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/styles/assets/placeholder_thumb.png">
+	<meta property="og:description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Sun Sep 27 2015 13:15:00 GMT-0700 (Pacific Daylight Saving Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+            <img
+                
+                id="splash_image_banner" src="/styles/assets/placeholder_banner.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			Neurotic Neurons: Design Patterns
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+    			tags:
+                
+                    
+                
+                    
+                        <a class='black-link' target='_self' href="/tag/Behind The Scenes">Behind The Scenes</a>
+                    
+                
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a target='_self' href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p>Ten months ago, I had the idea to do <em>some</em> interactive thing involving Hebb's Rule &amp; neurons. Since then, I've been sketching/prototyping several different versions. The final version I released, <em><a href="http://ncase.me/neurons">Neurotic Neurons</a></em>, took only four weeks from start to finish, and that's including one week off for XOXO.</p>
+<p>So, that's nine months of mucking about, then one month of actually useful work. The 90% crap rule holds up.</p>
+<p>Anyway, the upside of having created and playtested so many different versions, is that I can compare and contrast them. With the feedback of dozens of playtesters, I now have semi-sorta-kinda-not-really-empirical evidence of what does and doesn't work for an interactive explanation.</p>
+<p>Here's what works. This is kind of a note to self, so next time, I can avoid nine months of mucking about.</p>
+<h3>1. Huge possibility space.</h3>
+<p>Before <em>Neurotic Neurons</em>, my neurons project looked like this:</p>
+<p><img src="/content/images/2015/09/ahhh.gif" alt="GIF - iltbam anxiety"></p>
+<p>It definitely had more story and art, but there were only there things you could actually interact with. As my playtesters reported, it didn't feel like a <em>system</em>, it felt like an obtuse animation.</p>
+<p><em>Neurotic Neurons</em> took the complete opposite approach:</p>
+<p><img src="/content/images/2015/09/Screen-Shot-2015-09-27-at-14-00-02.png" alt="click neuron"></p>
+<p>When it starts off, you get 30-ish neurons you can click in any order you want, whenever you want, even while the narrator is talking. Even in the therapy scene:</p>
+<p><img src="/content/images/2015/09/Screen-Shot-2015-09-27-at-14-02-53.png" alt="therapy"></p>
+<p>There's still nine neurons you can click in any order you want. What I <em>could</em> have done was force the player to go through each set of three in sequence, but limiting it down to three options would feel like -- as reported before -- an obtuse animation. Ironically, most players solved the therapy puzzle sequentially from left-to-right <em>anyway</em>.</p>
+<p>There's another major difference <em>Neurotic Neurons</em> took from my previous version...</p>
+<h3>2. Direct manipulation.</h3>
+<p>As you saw in the first GIF above, you'd click the book, <em>then</em> my character reads it, <em>then</em> some magic signal flies off, <em>then</em> it fires the neuron. That's three in-betweens.</p>
+<p>In Neurotic Neurons, you click to fire a neuron. Not even <em>one</em> in-between. The manipulation is <em>direct</em>.</p>
+<p>There's not much to say about the virtues of direct manipulation, other than it gives better control, or at least a better <em>illusion</em> of control, and besides, it just <em>feels</em> good, which brings me to my next point...</p>
+<h3>3. Juice! Juice! Juice!</h3>
+<p>When you first click on a neuron, it just sends <em>so many</em> signals out flying, creating lots of interesting visuals from one or a few interactions. That's what game designers call <em>juicy</em> -- things that squish &amp; squash &amp; bounce &amp; brighten &amp; react to whatever you do.</p>
+<p><img src="/content/images/2015/09/propagation.gif" alt="GIF - clicky propagation"></p>
+<p>Feels good, man.</p>
+<p>(In an early prototype of <em>Neurons</em>, the neural network was randomly generated, meaning some neurons would have no outbound connections, so they were boring to click. So that's why in the released iteration, I manually created a neural network so that <em>any</em> neuron you'd click on your first go would be juicy and interesting.)</p>
+<p>On top of the <em>visual</em> juice, one unique aspect of Neurons was the <em>voice</em> juice.</p>
+<p>I, the narrator, would react to little things you do, too! (Inspired by <em>The Stanley Parable</em> and <em>Bastion</em>, of course.) If you made little mistakes in the Hebb/Anti-Hebb parts, my narrator would gently guide you. The first time you click a neuron, I say <em>“Yeah!”</em> If you click a neuron before I was done talking in the intro, I'd say <em>“Ex-CUSE me, I'm talking here!”</em></p>
+<p>Why would I let the player interrupt me? Other than being funny, it fits other design pattern I stumbled upon...</p>
+<h3>4. Low non-interaction.</h3>
+<p>With the exception of the 8-second intro and 8-second outro, you can <em>always</em> interact with something in Neurotic Neurons. Even during the credits. Even while the narrator is talking.</p>
+<p>(For some reason, most of my players decide to patiently wait for me to finish talking, and I'm not sure why. Maybe just the <em>knowledge</em> you could interact if you wanted to is enough.)</p>
+<p>This &quot;Always Be Interactive&quot; rule has already made its way to mainstream game design, with games that deliver story through scripted sequences, or disembodied voiceovers. (as opposed to the game-story design philosophy of mixing cutscenes and gameplay, like oil and water.)</p>
+<p>However, not <em>all</em> kinds of interaction are good, so...</p>
+<h3>5. No crap-interaction.</h3>
+<p>Think back again to the first GIF I showed you, where you have to click to get a piece of the story about my anxieties, and there's no meaningful choice of what to click. That's a crap interaction.</p>
+<p>(<strong>Aside:</strong> There's two exceptions I can think of for when &quot;click-this-to-progress&quot; can work: creating anticipation, like unwrapping a present, or creating panic, like a series of fast quicktime events.)</p>
+<p>(<strong>Aside II - The Tangentioning:</strong> I'll write more about crap-interaction in a future post, but Bret Victor's long-ass essay, <a href="http://worrydream.com/MagicInk/">Magic Ink</a>, has a particularly eye-opening section titled “Interaction Considered Harmful”. If you have, uh, an hour to spare, I recommend reading it.)</p>
+<p>But interaction for the sake of interaction? No. So in my new version, when I deliver the part of my story about my anxieties, the neurons <em>automatically</em> fire. You <em>can</em> still interact with it if you want to, but you no longer <em>have</em> to:</p>
+<p><img src="/content/images/2015/09/fears.gif" alt="GIF - fears"></p>
+<p>Oh, this scene reminds me. You see that specific arrangement of neurons? I considered other arrangements, but this one was the only one that let me...</p>
+<h3>6. Keep mechanics consistent.</h3>
+<p>For comparison, I previously wanted to make the fears <em>hierarchical</em>, like a fear of public speaking connecting to both a fear of social interaction and a fear of failure. However, if the player were to disconnect <em>those</em> connections, the entire thing would make no sense. The only way to prevent that would be to &quot;lock&quot; the connections.</p>
+<p>An ugly solution which, actually, in a previous version, I did implement:</p>
+<p><img src="/content/images/2015/09/Screen-Shot-2015-09-27-at-13-49-09.png" alt="pavlov lock"></p>
+<p>It's a sucky solution, so I scrapped my plans for a hierarchical arrangement, and did the three-part arrangement you see in the final version.</p>
+<p>However, <em>that</em> arrangement still needed constraints. You shouldn't be able to connect fears to each other, or connect feeling fear to feeling safe. However, this time, I could enforce that constraint through <em>spatial distance</em>! Those neurons would simply be too far apart for Hebb's Rule to work, something I already established <em>before</em>.</p>
+<p>The lesson I learnt was, whenever you need to enforce a constraint, <em>try to use the mechanics you already have</em>.</p>
+<p>Also, one should try to be consistent with the mechanics throughout. In the introduction to Neurons, I could have disabled Hebb &amp; Anti-Hebb's rule, just to focus on the signal propagation, but I thought it'd feel more elegant to have it consistent throughout.</p>
+<p>And besides, in a previous version, I <em>did</em> toggle the rules on-and-off at different points, but that just made it more confusing, <em>less</em> clear, which brings me to my final lesson...</p>
+<h3>7. Clarity &gt; Cleverness.</h3>
+<p>Early on, I made a whole bunch of things I thought was just <em>sooooo</em> clever, but just ended up making things more confusing. Here's a few of 'em:</p>
+<p><img src="/content/images/2015/09/Screen-Shot-2015-09-27-at-13-57-47.png" alt="Hebb's Rule"></p>
+<p>Hebb's Rule has a nice mnemonic rhyme, “Neurons that fire together, wire together.” However, that rhyme doesn't tell you <em>which</em> direction the connection is created. Anti-Hebb's rhyme, “Neurons that fire out of sync, lose their link,” also just confused people.</p>
+<p><img src="/content/images/2015/09/Screen-Shot-2015-09-27-at-13-51-32.png" alt="pavlov's pug"></p>
+<p>One original premise for my neurons project was to explain the famous conditioning experiments, and see them in a new light! However, since they wouldn't be in “a new light” if you <em>didn't</em> know about them, and if you <em>already</em> knew about them, the puzzles would be boringly easy... so it was all just cleverness for no solid reason.</p>
+<p><img src="/content/images/2015/09/Screen-Shot-2015-09-27-at-13-56-15.png" alt="chompy"></p>
+<p>Finally, there's this clever thing, the thing I was most reluctant to kill. Chompy the Lizard Brain. So cute! So loveable! Ended up being a very muddled metaphor that confused everyone, including myself.</p>
+<p>(<strong>Note: more clarity =/= more exposition.</strong> In previous versions, I'd over-explain things, but the more redundant information, the less players paid attention, so the <em>more</em> confused they were later on.)</p>
+<p>By the way, as much as I dislike listicles -- such as this blog post -- I will admit it's a very clear format.</p>
+<h3>In Summary:</h3>
+<ol>
+<li>Huge possibility space.</li>
+<li>Direct manipulation.</li>
+<li>Juice! Juice! Juice!</li>
+<li>Low non-interaction.</li>
+<li>No crap-interaction.</li>
+<li>Keep mechanics consistent.</li>
+<li>Clarity &gt; Cleverness.</li>
+</ol>
+<p>Here's to less mucking about next time.</p>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

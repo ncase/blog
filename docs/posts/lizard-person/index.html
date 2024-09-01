@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>Lizard Person</title>
+
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=460">
+
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="Lizard Person">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="https://blog.ncase.me/content/images/2019/02/prompt3-1.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="Lizard Person">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/images/2019/02/prompt3-1.png">
+	<meta property="og:title" content="Lizard Person">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/images/2019/02/prompt3-1.png">
+	<meta property="og:description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Wed Feb 06 2019 14:45:02 GMT-0800 (Pacific Standard Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+                
+            
+            <img
+                 class="blur" 
+                id="splash_image_banner" src="/content/images/2019/02/prompt3-1.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			Lizard Person
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+    			tags:
+                
+                    
+                
+                    
+                        <a class='black-link' target='_self' href="/tag/Short Stories">Short Stories</a>
+                    
+                
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a target='_self' href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p><img src="/content/images/2019/02/prompt3.png" alt="prompt3"></p>
+<p>“First of all, we prefer <em>Reptile American</em>, not lizard person,” said Liz, the lizard person.</p>
+<p>Bill from BuzzFeed jotted this down in his overpriced Moleskine. He couldn't believe it – here he was in this mom-and-pop diner at midnight, interviewing a real-life lizard person! The puppetmaster behind the strings of the cat's cradle that is our world, and he got to blow the story wide open! Finally all those people who thought Bill was never good enough, who thought all he did was tabloid clickbait, well who's laughing now? Edward Snowden ain't got squat on Bill today, no-sir-ree!</p>
+<p>“And no, we don't control the world.” Liz fiddled with the human-mask she'd taken off for the interview. “I barely control my <em>life</em>. I've worked at this diner for 10 years. Thought I'd get promoted from waitress by now, but–”</p>
+<p>Bill cut in. “so what are your thoughts on the Bilderberg Group?”</p>
+<p>“The–” Liz frowned, though it's hard to discern emotions on a lizard face, “–what? No! All those conspiracy theories are just made up by powerless people to feel like there's some semblance of logic out there. But there isn't! There's no logic, there's no system, there's no Illuminati. It's just us and our dumb asses.”</p>
+<p>Bill made a note: <em>LIZARD PERSON DENIES EXISTENCE OF ILLUMINATI</em></p>
+<p>“I can read that upside-down, you know.”</p>
+<p><em>LIZARD PERSON USES SUPERNATURAL SENSORY TACTICS</em></p>
+<p>“Damn it, I knew this interview was a bad idea. Why'd I think that anyone would ever care about someone like...” Liz turned away from Bill. She looked out the diner window. Complete dark. As if the only things that existed in the universe were Liz, the diner, and this dumb J-school dropout.</p>
+<p>Bill paused. It was pretty clear he wasn't going to get the 10-million-clicks story he wanted. Maybe she had a different story?</p>
+<p>He closed the Moleskine. “What do <em>you</em> want people to know?”</p>
+<p>Liz turned back to Bill.</p>
+<p>“I want them to know <em>me</em>.”</p>
+<p>“Tell me about yourself, Liz.”</p>
+<p>”Well, I'm–” Liz stumbled. When was the last time someone asked her that? “–I'm... I'm funny! People don't know this but I'm actually an aspiring stand-up comedian, when business gets slow at the diner I practice writing jokes.”</p>
+<p>“I'd love to hear one, if you don't mind?”</p>
+<p>“Um–” Liz choked. “What... what do you call it when a Reptile American gets her period?”</p>
+<p>“What do you call it?”</p>
+<p>“A clo-ACHE-a!”</p>
+<p>Bill stared. No reaction. Liz started fidgeting. She stared down at her human mask. She felt sick.</p>
+<p>Bill opened up his Moleskine again, and wrote:</p>
+<p><em>LIZARD PERSON IS ACTUALLY REALLY HILARIOUS, OMG</em></p>
+<p>Liz looked up.</p>
+<p><em>LIZARD PERSON IS ALSO... KIND OF CUTE?</em></p>
+<p>Liz jolted back.</p>
+<p>“Oh! Um um uh I mean WOW okay no-one's ever WHOO wow hm yes alright SO CONSPIRACY THEORIES EH, HOW ABOUT THAT JET FUEL”</p>
+<p>“Hey.” Bill tossed the Moleskine into his Lululemon man-purse. “Forget the interview. I've got a backlog of duckling GIFs to make my click-quota for the week.”</p>
+<p>Liz tried to stop her tail from wagging. “I'd... I'd like to see those ducklings.”</p>
+<p>“My laptop's back at my place.”</p>
+<p>“I'd...” Liz failed to stop her tail from wagging. “...I'd still like to see them.”</p>
+<p>Meanwhile outside the diner in the void of night, billions of people tried to make sense of their lack of control in a world that seemed spinning out of control. Sometimes they blamed lizard people. Sometimes they blamed themselves. But sometimes, they realized that even though their lives meant nothing in the grand scheme of things, they could still find little moments of joy in places like a crappy off-highway diner, where a 20-something intern was walking back to his car with a 1200-something lizard person, who felt like she was 600 again.</p>
+<hr>
+<p><a href="https://www.reddit.com/r/WritingPrompts/comments/anqnm5/wp_you_find_the_lizard_people_rule_the_world/efvhcbo/">this short story was originally posted on r/WritingPrompts</a></p>
+<p><a href="https://unsplash.com/photos/RTDMLoPUyVI">header photo by Егор Камелев (CC Zero)</a></p>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

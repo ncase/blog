@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>The Explorables Jam!</title>
+
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=460">
+
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="The Explorables Jam!">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="https://blog.ncase.me/content/images/2018/08/1.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="The Explorables Jam!">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/images/2018/08/1.png">
+	<meta property="og:title" content="The Explorables Jam!">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/images/2018/08/1.png">
+	<meta property="og:description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Tue Aug 28 2018 07:41:19 GMT-0700 (Pacific Daylight Saving Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+                
+            
+            <img
+                 class="blur" 
+                id="splash_image_banner" src="/content/images/2018/08/1.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			The Explorables Jam!
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+    			tags:
+                
+                    
+                
+                    
+                        <a class='black-link' target='_self' href="/tag/Explorable Explanations">Explorable Explanations</a>
+                    
+                
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a target='_self' href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p>Note: the following was originally posted on my Patreon, in <a href="https://www.patreon.com/posts/scenes-from-jam-20717847">two</a> <a href="https://www.patreon.com/posts/explorables-jam-20877889">parts</a>.</p>
+<h2>Part I: (posted Aug 12)</h2>
+<p>Hi all! Sorry I didn't update in a while – I forgot to mention I was going on &quot;vacation&quot;. I say &quot;vacation&quot; because I ended up working on stuff anyway... including co-organizing an <em>in-person</em> Explorables Jam kickoff event!</p>
+<p>On July 28-29, Chris Walker (creator of <a href="http://sineridergame.com/">SineRider</a>) and I hosted a small Explorables hackathon. There was collaboration, lightning talks, mini-presentations, and best of all: food that was NOT pizza.</p>
+<p><img src="/content/images/2018/08/1.jpeg" alt="1"></p>
+<p>(pictured: a few Explorables jammers!)</p>
+<p>My favorite part was at the beginning: totally unplanned, on their own, the jammers took a couple whiteboards, and used them to brainstorm dozens of ideas! Then, using sliced post-it notes, they voted on what ideas they liked/could help with. These would help them form their teams. Spontaneous self-organization!</p>
+<p><img src="/content/images/2018/08/2.jpeg" alt="2"></p>
+<p>There were videos recorded of the lightning talks &amp; the mini-presentations at the end. (We'll post these online eventually!)</p>
+<p>In the meantime, though, the jam is still going! This was just the in-person kickoff event. The full jam runs for three weeks online, and ends Aug 19, in one week. I'd like to highlight a few in-progress explorables that caught my eye: (at least, those with screenshots posted online)</p>
+<p><img src="/content/images/2018/08/3.png" alt="3"></p>
+<p>(from top-left to bottom-right: cellular automata, honeybee democracy, arithmetic, the mandelbrot set, epicycles, fourier transforms, puzzle design, graphs of functions)</p>
+<p>I'm excited to see how all of these turn out! A dozen-plus new educational interactives online, for all to play and learn from. You'll find them all after the jam ends, at: <a href="https://explorabl.es/jam">explorabl.es/jam</a></p>
+<p>Thank you to everyone who made the in-person Explorables Jam kickoff a success! ❤️</p>
+<h2>Part II: (posted Aug 20)</h2>
+<p>After three weeks of jamming, peeps made 19 new small, playful explorable explanations! Here they are:</p>
+<p>🎉 <strong><a href="https://explorabl.es/jam/">The Entries for the Explorable Explanations Jam!</a></strong> 🎉</p>
+<p>There's a few I'd especially like to highlight, for doing something inventive with interactivity... (maybe I'll borrow their ideas for future projects!)</p>
+<p><img src="/content/images/2018/08/4.gif" alt="4"></p>
+<p><strong><a href="https://spaciecat.github.io/cells/">From Cells To Systems</a> by SpacieCat</strong></p>
+<p>All about 1D cellular automata! Definitely more fun to read than Wolfram's 1000+ page tome. The unique thing this explorable does: you can change the simulation's rules <em>by directly manipulating the simulation itself!</em> (In contrast, almost all my sims have you change rules with sliders &amp; buttons) I wanna see more sims designed this way!</p>
+<p><strong><a href="https://explore.paulbutler.org/fractal/">Understanding The Mandelbrot Fractal</a> by Paul Butler</strong></p>
+<p>Not only is this a good example of how to go up the ladder of abstraction step-by-step, but there's this interaction at the end: you explore the fractal by painting it. It's an effective way to build up the idea of a heatmap! (In hindsight, I'd wish I'd done that for Better Ballot.)</p>
+<p><strong><a href="https://auroriax.com/puzzle-explorable/">How To Make a Good Puzzle</a> by Tom Hermans</strong></p>
+<p>There's comics about crafting comics (Scott McCloud), there's short films about crafting films (Every Frame A Painting), there's writing about crafting writing (Strunk &amp; White)... why are there no games about crafting games? Well, there is now! I like the way this one embeds games inside itself, and contrasts good design &amp; bad design. Also some of the puzzles are genuinely tasty-hard challenges.</p>
+<p><strong><a href="https://xeniasuper.github.io/recaman-sequence/">Recáman Sequence</a> by Xenia Fedorova</strong></p>
+<p>This one's short and sweet, and has a really creative use of sound! In the simulation at the end, not only do you see a visualization of a chaotic number sequence, you hear it as well. You listen to math!</p>
+<p>These are just a small sample of all the great stuff peeps have made for this jam. Again, you can play with and learn from all of them, here: <a href="https://explorabl.es/jam">explorabl.es/jam</a> Enjoy!</p>
+<p><strong>&lt;3</strong>,<br>
+~ Nicky Case</p>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>The Science of Social Change</title>
+
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=460">
+
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="The Science of Social Change">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="https://blog.ncase.me/content/images/2015/05/arg2-1.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="The Science of Social Change">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/images/2015/05/arg2-1.png">
+	<meta property="og:title" content="The Science of Social Change">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/images/2015/05/arg2-1.png">
+	<meta property="og:description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Wed May 20 2015 14:23:01 GMT-0700 (Pacific Daylight Saving Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+                
+            
+            <img
+                 class="blur" 
+                id="splash_image_banner" src="/content/images/2015/05/arg2-1.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			The Science of Social Change
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+    			tags:
+                
+                    
+                
+                    
+                        <a class='black-link' target='_self' href="/tag/Social Change">Social Change</a>
+                    
+                
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a target='_self' href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p><strong>We're doing it wrong.</strong></p>
+<p>Doing what wrong? The way we, activists and storytellers, seem to go about trying to change peoples' minds: by more or less just telling them “you're doing it wrong”.</p>
+<p>And to be fair, I used to do this style of &quot;activism&quot; all the time. For example, my entire :the game: Flash game trilogy followed a cheap brand of criticism - simply <em>presenting</em> an exaggerated, strawman version of X. Intellectualized sarcasm. I was a huge fan of South Park at the time, and the hip, cool &quot;everything sucks&quot; apoliticism they wore proudly.</p>
+<p>But even if you're not apolitical... (And let's be honest, for most people claiming to be &quot;apolitical&quot;, it's usually just code for &quot;don't challenge the status quo&quot;. At least South Park had enough heart to challenge normality.) ...us activists still fall into this trap.</p>
+<p>Because proposing solutions is hard, pointing out problems is easy...</p>
+<p>and saying &quot;fuk you, ur wrong&quot; is easiest.</p>
+<p><img src="/content/images/2015/05/arg0.png" alt=""></p>
+<p>Aristotle categorized three main ways we persuade people: <strong>Ethos</strong> (personal character), <strong>Logos</strong> (logic), and <strong>Pathos</strong> (emotion).</p>
+<p>For the longest time, I thought only logic mattered. Emotions are irrational, we should all be dispassionate Spocks &amp; Sherlocks. And character was mere charisma, an &quot;appeal to authority&quot;, which is always a logical fallacy and why you should never trust experts.</p>
+<p>Changing my mind about that was a long process, but if there was one definitive moment where it all &quot;clicked&quot; for me, it was after reading Jonathan Haidt's <a href="http://righteousmind.com/">The Righteous Mind</a>, a book on the psychology of morality. In it, he shows how emotions are actually the <em>driving force</em> behind logic. Peeps unable to experience emotion due to brain damage literally can't make decisions. Not only that, Haidt shows that higher IQ peeps are better at coming up with arguments for their own side of an issue, but no better at arguments for the other side. Not more <em>rational</em>, but more <em>rationalizing</em>.</p>
+<p>I used to pride myself on being &quot;smart&quot;. This book made me eat humble pie.</p>
+<p>After reading it, I finally realized that if we want to make social change, the logical content of an argument is crucial, but <em>not enough</em>. We need to carefully and compassionately(!!!) craft the emotional content, too.</p>
+<p>And if, right now, the emotional content of our arguments are [boring academia-talk] or &quot;get educated shitlord&quot;, that's gonna make the other side more confident in their beliefs, scare off potential new supporters, and turn our entire community toxic.</p>
+<p>In sum, what the fuck are we doing to our own cause?</p>
+<p><img src="/content/images/2015/05/arg1.png" alt=""></p>
+<p>Now, like I said, pointing out problems is easy. It'd be hypocritical of me to just point out the problem of just pointing out problems, without talking about the solution of talking about solutions. Or, put in a less labyrinthine way:</p>
+<p><strong>“Be for, not just against.”</strong></p>
+<p>While researching pedagogy &amp; education for my <a href="http://explorableexplanations.com/">explorable explanations</a>, I found three separate scientific studies that show why “for <em>and</em> against” is more effective than either alone. As I just realized while typing this paragraph, the three pieces roughly align with Aristotle's three modes of persuasion.</p>
+<p><strong>Ethos: <a href="http://www.apa.org/monitor/oct02/theory.aspx">Social change through character growth</a></strong></p>
+<p>I've written lots about Miguel Sabido before, but it bears repeating: the guy's goddamn amazing. He makes soap operas for social change in developing nations, with <em>SCIENCE</em>. Using randomized controlled trials - airing his shows in some villages and not others - his soap operas have been empirically proven to get people to adopt literacy, girls' education, empowering women, contraceptives, family planning, and more.</p>
+<p>And how does he do it? With <em>SCIENCE</em>. His shows make strong use of Social Learning Theory, which basically says we learn by observing other people. And so, when Sabido wants to get people to adopt a behavior, he creates three sets of characters on his shows: positive role models (for), negative role models (against), and transitional characters.</p>
+<p>Good things happen to characters who adopt X, bad things happen to characters who don't, and the transitional characters are the audience surrogate. The good/bad consequences follow logically from the characters' actions, and it avoids preachiness by having complex characters, and show-don't-tell storytelling.</p>
+<p>By using characters, ethos, Sabido has created cost-effective and regular-effective social change in developing nations.</p>
+<p><strong>Logos: <a href="https://www.youtube.com/watch?v=RQaW2bFieo8">Show misconceptions before facts</a></strong></p>
+<p>Derek Muller (Veritasium) is one of my favorite edu-YouTubers, and I was surprised to learn he actually did his PhD in science education! He conducted a study, trying to find out how to use videos to teach physics.</p>
+<p>For the control group, he tested some students on Newtonian physics, then showed them a video showing the correct Newtonian models, then tested them again. The students loved it! They thought the video was clear and straightforward. The change in correct answers?... <em>absolutely nothing</em>. In fact, the students got <em>more</em> confident in their wrong answers.</p>
+<p>Why? Because, like how only being <em>against</em> something isn't enough, neither is only being <em>for</em> something. Students simply interpreted the entire video they watched as confirming their false beliefs. <em>That's</em> why they thought it was clear and straightforward.</p>
+<p>So Muller tried again. This time, the video had two students talking, (learning through characters!) one voicing common misconceptions, and the other responding with why that's wrong, and the two coming to the correct answer <em>together</em>. (Incidentally, many students' misconceptions were the same as Aristotelian Physics. Haha, that Aristotle, what a silly dum-dum.)</p>
+<p>This time, no students said the video was clear or straightforward. It confused them. And as a result, their test scores doubled.</p>
+<p>Logos!</p>
+<p><strong>Pathos: <a href="http://pss.sagepub.com/content/25/8/1630">Don't just punish evil, reward goodness</a></strong></p>
+<p>So I was analyzing stories-as-game-theory-strategies, because that's what happens when a nerd attempts lit crit. I was framing The Boy Who Cried Wolf as an argument against using the always-defect strategy in an Iterated Prisoner's Dilemma. Essentially, keep on lying, and eventually peeps will stop cooperating with you. Then you get eaten by a wolf.</p>
+<p>Yeah, so turns out, even kids don't buy this story.</p>
+<p>A team of Canadian psychologists let kids play a game, gave them an obvious opportunity to cheat, then read them a short fable about lying, then asked them if they cheated. The control story was The Tortoise and the Hare. The fables about lying were Pinocchio (moral: lying leads to shame), Boy Who Cried Wolf (moral: lying causes personal harm), and George Washington's Cherry Tree (moral: honesty is praised).</p>
+<p>The stories where lying was punished did <em>no better</em> than the control story at getting the kids to admit they cheated. However, the one story where <em>honesty was rewarded</em>, George Washington's Cherry Tree, made kids ‘more than three times less likely to lie’. They aspired to George's personal character, his ethos.</p>
+<p>(When the story was modified so Lil' George was punished for lying, it did no better than the control. So, it <em>is</em> the honesty-being-rewarded, not the name recognition of G-Wash.)</p>
+<p>Why didn't kids respond to the stories where lying was punished? Because they've already been <em>told</em> lying is wrong, and worse, adult behavior constantly <em>contradicts</em> what they say. Kids see their parents &amp; teachers make white lies all the time, and be socially rewarded for it.</p>
+<p>(This result was actually a bit of a relief to me. One ethical concern I had about storytelling-as-social-change is if it was, well... mind control. Manipulative. But fortunately, even toddlers can call bullshit on a story with threats of death-by-wolf.)</p>
+<p>So with pathos, it's not enough to make kids feel bad about lying, you've got to make them feel good about telling the truth.</p>
+<p><strong>“Be for, not just against.”</strong></p>
+<p><img src="/content/images/2015/05/arg2.png" alt=""></p>
+<p>Of course, I'm not an expert in any of these topics, (anti-ethos? anti-Appeal-To-Authority?) but I'm learning, and am trying my best to apply these lessons to the work I do... including <em>this</em> blog post!</p>
+<p>First, there's <strong>ethos</strong>, personal character growth. I started off this article by showing how I used to follow the &quot;everything sucks&quot; style of criticism. I could have left this part out to make myself look better, but that would feel smug, holier-than-thou, off-putting. Instead, I wanted to show <em>growth</em> through my character.</p>
+<p>And of course, there's <strong>logos</strong>, logic. First, I cited a bunch of scientific studies above. (Dear science journalists: don't just mention the results, <em>mention the methodology!</em> I want to know about the control group, dammit!) But I also structured this essay to flow logically. I use <a href="http://www.aerogrammestudio.com/2014/03/06/writing-advice-from-south-parks-trey-parker-and-matt-stone/">Therefore-And-But transitions</a>, as coined by the creators of South Park, as well as make callbacks to previous &quot;plot points&quot;, like how I just brought up South Park.</p>
+<p>Finally, there's <strong>pathos</strong>, emotion. Which, uh, I just realized I haven't done a lot of that in this post yet. Hm. Okay, uh, let's see what the emotional core of this article should be... [scrolls all the way up]... doo de doo... Activism... Aristotle... Oh! <em>“We need to carefully and compassionately craft the emotional content”</em>. Sure, let me add a (!!!) next to “compassionately”.</p>
+<p>Because at its core, that's what I'm trying to argue for today.</p>
+<p>Compassion.</p>
+<p><img src="/content/images/2015/05/arg3.png" alt=""></p>
+<p><strong>We're not that different.</strong></p>
+<p>In <em>The Righteous Mind</em>, that book on the psychology of morality, which I can honestly say changed my life, the author lists 6 Moral Foundations. These foundations were discovered by surveying people across countries and cultures. It's a self-admittedly incomplete list, but they are:</p>
+<ol>
+<li>Care</li>
+<li>Proportionality</li>
+<li>Anti-Oppression</li>
+<li>Loyalty</li>
+<li>Authority</li>
+<li>Sanctity</li>
+</ol>
+<p>If you're like me, you might find some of these important, some irrelevant, but here's the thing - <em>we all share these foundations,</em> to some degree. Yes, even the most evil communities you can think of. Fascism's just Authority turned up to eleven. A bloody vendetta is Proportionality that's gone too far. A surveillance state is Care mixed with paranoia. ISIS is a warped, deadly combination of Sanctity, Loyalty, and Anti-Oppression.</p>
+<p>Combined with the infamous <a href="https://en.wikipedia.org/wiki/Milgram_experiment">Milgram experiments</a>, which showed that two-thirds of us would obey orders to administer a lethal shock, all this goes to show that we're all capable of great acts of evil, and we're not so different from the monsters we condemn.</p>
+<p>And that makes me feel <em>GREAT!</em></p>
+<p>:D</p>
+<p>No, seriously, because the 6 Moral Foundations finally gave me a way to understand <em>anybody</em>. This book has made me more compassionate, more empathetic, and gave me a slighter better grasp on how my fellow humans tick.</p>
+<p>For example, I once couldn't understand many of the &quot;backwards&quot; beliefs that some developing nations have, the kind Miguel Sabido tackled with his soap operas. Why would anyone believe girls didn't deserve education? What bag-of-dicks would shoot Malala Yousafzai? I couldn't even begin to comprehend it.</p>
+<p>Then, I realized I was born in an East Asian country where Confucian values rule. Not too bad. Even non-Confucians like Confucius. But <em>the</em> most important tenet of Confucianism is the stability of family, even over individual freedom. Family is sacred. (Sanctity) The mother obeys the father. (Authority) Blood is thicker than water. (Loyalty) Even in the West, lots of peeps still care deeply about family, for good reason. But in developing nations, family isn't just social, it's <em>a deeply economical institution that could mean feast or famine</em>.</p>
+<p><strong>P.S:</strong> an explanation is not an excuse.</p>
+<p>So, in that context, the people who prevent girls from going to school don't just &quot;hate women&quot;, they think they're <em>doing the morally right thing</em>. Heck, they probably think they're <em>helping</em> women! Like caging a pet bird so it doesn't fly away and hurt itself. (Care)</p>
+<p><strong>P.P.S:</strong> an explanation is not an excuse.</p>
+<p>These people think they're preserving the family unit, the specialized role of obedient housewife, that staple of their entire economy and society. And if I had stayed in patriarchal East Asia a little bit longer, I could have easily adopted and enforced those values, too.</p>
+<p><strong>P.P.P.S:</strong> understanding a thing is not validating a thing. empathy is not uncritical acceptance. <em>an explanation is not an excuse.</em></p>
+<p>And to think, Miguel Sabido helped change these millennia-old beliefs with a freakin' soap opera! In one of the villages in Sabido's experimental group, girls' enrollment in schools <em>almost quadrupled</em> thanks to his shows. (10% to 38%. Not 100%, but hey, progress)</p>
+<p>And he did this <em>not</em> by being antagonistic or &quot;fighting the enemy&quot;, but by reaching out to communities, researching them deeply, and collaborating with them.</p>
+<p><strong>F.F.S:</strong> Seriously, why do people think trying to understand a villain is the same as justifying them? That we shouldn't try to empathize with them, see what they see, find the root causes of their immorality? <em>A goddamn explanation is not a goddamn excuse</em>.</p>
+<p>Obviously, girls deserve education, and Malala's shooter is still the biggest burlap sack of tightly compacted dicks there ever was. But saying &quot;oh they're just bigoted / evil / assholes&quot; is not <em>useful</em>. It may be accurate -- in the case of Malala's shooter, it <em>is</em> accurate -- but it's not a workable explanation, and if you want to create real, lasting social change, you need to show compassion, empathy, and make a genuine effort to understand monsters.</p>
+<p>Even the worst of humanity still has humanity.</p>
+<p>And we owe it to the world to understand them, and if possible, cure them.</p>
+<p><img src="/content/images/2015/05/arg4.png" alt=""></p>
+<p>Thirty tangents later, let's return to the fashionable brand of activism I mostly see today:</p>
+<p>“fuk you, ur wrong”</p>
+<p>And, I get it. I understand that &quot;the other side&quot; can be so hateful, so hurtful, so stubborn. I'm not denying you the right to righteous anger. I've been there. I just don't want us, in our good intentions, to hurt our own cause. That kind of anger is natural, maybe even necessary... in a world before we scientifically studied social change.</p>
+<p>Even if you don't believe &quot;the other side&quot; deserves empathy or compassion -- and I'm not gonna force anyone to believe that -- I hope I've at least shown that being compassionate can be a good <em>strategic</em> choice for social change.</p>
+<p>Compassion is like medicine. Saying “I'm not showing these assholes compassion, they don't deserve compassion.” is like saying “I'm not going to treat my hemorrhoids, they don't deserve a treat.”</p>
+<p>Screw ethos and pathos, I'm coming down to brass-tacks <em>logos</em>:</p>
+<p><strong>Compassion is a powerful tactic, backed by <em>SCIENCE</em>.</strong></p>
+<p>Because, as <em>The Righteous Mind</em> showed, emotions are the driving force of logic. And if you show anger at someone, their emotions go into defensive-mode, so their logic goes defensive-mode. But if you show compassion, with luck, their emotions will go cooperative-mode, and so they'll be more open to logical arguments.</p>
+<p>From there, you can appeal to their human nature. I don't mean &quot;human nature&quot; in a fluffy philosophical sense, I mean it in the very concrete evolutionary-psychology sense. Minds and genes vary wildly between people, but there's always lots of commonalities. Appeal to our mental common ground: logic, emotion, and the 6 Moral Foundations.</p>
+<p>And make it <em>easy</em> for people to change beliefs. Simply telling someone they're wrong doesn't tell them what's right. Address their misconceptions first, then work step-by-step towards better belief systems. Be for <em>and</em> against. That is the lesson that educational psychologists know.</p>
+<p>It's all so scientific, heck, I even made an easy-to-digest list.</p>
+<p><strong>How To Change Hearts &amp; Minds:</strong></p>
+<ol>
+<li>Logic isn't enough, you need emotion and good character. (Ethos, Logos, Pathos)</li>
+<li>Help people go from misconceptions to truth. (Be For, Not Just Against)</li>
+<li>Appeal to our universal humanity. (6 Moral Foundations)</li>
+</ol>
+<p>Whether it's a soap opera in rural villages, or a blog post on the internet... if you act on this strategy of compassion, and genuinely try to understand &quot;the other side&quot;, you can effect some real lasting social change.</p>
+<p>In fact, it's the only way it's ever happened.</p>
+<p>You may not see it from across the internet, or through an opaque bureaucratic system, or overseas in some faraway country where they don't have the same skin or tongue as you... but, like Soylent Green, &quot;the other side&quot; is made of people. Sad fragile people, living on a dot on a dot on a dot in a cold, uncaring universe, so show some compassion, okay?</p>
+<p>We all go into death alone. Play nice.</p>
+<p><img src="/content/images/2015/05/arg5.png" alt=""></p>
+<p><em>The interstitial comics are from <a href="https://xkcd.com/438/">xkcd</a>, published under a CC-BY-ND license. The hemorrhoid joke comes from <a href="https://twitter.com/jimbenton/status/489742528942317568">Jim Benton</a>. The original title for this article was “fuk you, ur wrong”, but I chickened out and changed the title to something more descriptive. And alliterative.</em></p>
+<p><em>I dedicate this essay to <a href="https://creativecommons.org/publicdomain/zero/1.0/">the public domain</a>, whoo hoo.</em></p>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

@@ -3,7 +3,7 @@ title: "Signal Boosts for May 2024"
 tags:
 - post
 share_image: https://blog.ncase.me/content/media/sb/thumb.png
-share_desc: "stuff I liked last month"
+share_desc: "Beavers, papers, and the CONE ZONE"
 date: 2024-05-31
 readtime: "8 min"
 layout: base-layout.njk

@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>I Do And I Understand</title>
+
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=460">
+
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="I Do And I Understand">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="https://blog.ncase.me/content/images/2015/02/confucius.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="I Do And I Understand">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/images/2015/02/confucius.png">
+	<meta property="og:title" content="I Do And I Understand">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/images/2015/02/confucius.png">
+	<meta property="og:description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Mon Feb 09 2015 09:41:22 GMT-0800 (Pacific Standard Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+                
+            
+            <img
+                 class="blur" 
+                id="splash_image_banner" src="/content/images/2015/02/confucius.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			I Do And I Understand
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+    			tags:
+                
+                    
+                
+                    
+                        <a class='black-link' target='_self' href="/tag/Game Design">Game Design</a>,
+                    
+                
+                    
+                        <a class='black-link' target='_self' href="/tag/Explorable Explanations">Explorable Explanations</a>,
+                    
+                
+                    
+                        <a class='black-link' target='_self' href="/tag/How To">How To</a>
+                    
+                
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a target='_self' href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p><img src="http://i.imgur.com/3IqMcnf.png" alt="confucius intro"></p>
+<p>Okay, Confucius <em>probably</em> wasn't talking about videogames.</p>
+<p>Still, you don't learn how to ride a bike from a lecture. You get on that bike, fall down, and learn from your mistakes. You don't learn how to talk to people from a textbook. You reach out, open up, and let yourself be vulnerable. And you don't learn how to use games to change hearts and minds, to create a visceral sense of understanding, all from a blog post. You <em>make</em> games.</p>
+<p>Which is why there'll be a do-it-yourself exercise at the end of this post. Get a scrap of paper ready!</p>
+<p><img src="http://i.imgur.com/K3dPkks.png" alt=""></p>
+<p>Cause and effect. The backbone of any good story, logical argument, or game.</p>
+<p>Please don't think that learning-by-doing is restricted to videogames! Anything where you can explore cause-and-effect, from videogames to simulations to board games to roleplay to social interaction to tinkertoys to interactive art... they all have this power.</p>
+<p>We can get people to understand the world. To understand each other. To understand themselves.</p>
+<p>And they learn to understand, by <em>doing</em>.</p>
+<p>Here's three games that do that.</p>
+<hr>
+<ol>
+<li>Monopoly</li>
+</ol>
+<hr>
+<p><img src="http://i.imgur.com/NpqXINo.png" alt="monopoly"></p>
+<p>Let's start with this. It's a game pretty much everyone's played, but it has a fascinating history that few people know. Monopoly was originally <em><a href="https://en.wikipedia.org/wiki/The_Landlord's_Game">The Landlord's Game</a></em>, designed by Elizabeth Magie in 1904, to teach the (very obscure) economic philosophy of Georgism.</p>
+<p>Yes, we had women game designers and serious games <em>over 100 years ago</em>.</p>
+<p>Georgists advocate for a free market and abolishing all taxes, except on land, which should be collectively owned by the public. It's like Communism and Capitalism had a baby and couldn't decide who got custody. Like most economic philosophies, Georgism can be complicated and hard to grasp. That's why Magie set out to make her board game, believing that with learning by doing, she could <em>make</em> people understand!</p>
+<p><strong>The Rules:</strong></p>
+<ol>
+<li>The more money you have, the more land you can buy.</li>
+<li>The more land you have, the more money you get from others.</li>
+<li>(some stuff about trains and jails)</li>
+</ol>
+<p>If you've ever had the misfortune of being dragged into a family board game night, you know how this plays out. Whoever gets the slight edge in the beginning will be guaranteed to win. The rich get richer. Finally, they get a land monopoly, and everyone else is left in ruins. <em>That's</em> the lesson Magie hoped her players would take away.</p>
+<p>(In the 1932 edition of <em>The Landlord's Game</em>, players could vote to switch rules mid-game. With these new rules, land rent is paid to a public treasury, not another player. In this version, everyone wins!)</p>
+<p>Monopoly is obviously very financially successful, but it failed at its original educational purpose. Most people have never even <em>heard</em> about Georgism. Parker Brothers stripped out all meaning and educational value from Magie's game, rendering it safe and inoffensive. They never did give Elizabeth Magie any royalties or even any credit. They just gave her $500.</p>
+<p>Well, that's depressing. Speaking of which...</p>
+<ol start="2">
+<li>Depression Quest</li>
+</ol>
+<hr>
+<p><img src="http://i.imgur.com/nQLibhO.png" alt="depression quest"></p>
+<p>Here's another serious game created by a woman game designer! Zoe Quinn's <em><a href="http://www.depressionquest.com/">Depression Quest</a></em> turns psychological mechanisms into gameplay mechanisms. Using a minimalist ruleset, Quinn's game shows that clinical depression is a vicious cycle: the effect <em>reinforces</em> the cause.</p>
+<p><strong>The Rules:</strong></p>
+<ol>
+<li>You have a &quot;mental energy&quot; level.</li>
+<li>You get choices, varying in how much mental effort they take.</li>
+<li>The higher effort options boost your energy. (e.g. socialize, get a pet, see therapist)</li>
+<li>The lower effort options lower your energy. (e.g. stay home, drink alone, watch Netflix)</li>
+<li>The lower your energy, the more high-effort options get struck out.</li>
+</ol>
+<p>As you play out these rules, you start to viscerally understand the negative feedback loop. Bad choices lead to less energy. Less energy means you can only make worse choices. Worst of all, clinical depression means your energy level will not swing back to &quot;normal&quot; by itself, due to chemical imbalances in the brain.</p>
+<p>And now, personal story time.</p>
+<p>I was in a really dark place when I found this game. Actually, I was hoping it would make me feel even <em>more</em> depressed. I <em>wanted</em> to feel bad. That's the kind of irrational vicious cycle that happens when you're feeling mentally unstable. Instability leads to instability, like dominos tipping each other over until they all fall down.</p>
+<p>But this game saved me. Or at least, snapped me out of it. Depression Quest let me see what I was doing to myself, from an external viewpoint, and on a compressed timescale. I had to break the vicious cycle before it broke me.</p>
+<p>The next week, I forced myself to go rock climbing with friends. It helped.</p>
+<p>For years, I used to feel guilty about making games. Really. I thought they could only be &quot;mere&quot; escapism. Nothing wrong with trivial fun, of course... but producing &amp; playing trivial fun for a living made my life feel, well, trivial. I know I'm not the only gamedev that has felt that way. <em>Depression Quest</em> was what finally showed me that what I do - games - can actually be profoundly meaningful.</p>
+<ol start="3">
+<li>Parable of the Polygons</li>
+</ol>
+<hr>
+<p><img src="http://i.imgur.com/cP3veBN.png" alt="parable"></p>
+<p>I learn by doing. I wanted to learn how to make things that help others learn by doing. So, I did that.</p>
+<p>Here's a “game” I made. Hopefully this section doesn't come off as narcissistic - unlike the other two examples, I actually know all the design decisions that went behind this, so there's more personal insight here.</p>
+<p><em><a href="http://ncase.me/polygons/">Parable of the Polygons</a></em> is a playable post: half-game, half-blog-post. Building on top of the work of Nobel Prize-winning game theorist, Thomas Schelling, this post lets readers discover how small individual biases can become large collective biases... and how we can reverse it.</p>
+<p>We designed <em>Parable of the Polygons</em> around the idea of &quot;mechanical plot twists&quot;. We gave readers interactive sections, and let them follow simple rules through to their counterintuitive results. They weren't simply told the counterintuitive thing - <em>they proved it to themselves</em>.</p>
+<p><strong>The Rules:</strong></p>
+<ol>
+<li>Triangles and squares live together on a grid.</li>
+<li>Each shape thinks: “I want to move if less than 1/3 of my neighbors are like me.”</li>
+<li>Move shapes around randomly, until nobody wants to move.</li>
+</ol>
+<p>First plot twist - it turns out, even though every shape would be okay with a mixed neighborhood, their entire shape society becomes severely segregated. Small biases add up. Second plot twist - even when the readers could lower the individual bias, if the society was already segregated, it stays segregated due to inertia. The past haunts the present.</p>
+<p>But there is a happy ending! At the end, we added another rule, to see what would happen when shapes are uncomfortable with complete uniformity around them:</p>
+<p>4. Each shape thinks: “I want to move if <em>all</em> of my neighbors are like me.”</p>
+<p>Well, that doesn't seem a lot better, does it? Every shape would still be okay with 90% of their neighbors being like them. But here's the final, third plot twist - that we <em>can</em> desegregate a society with small, local, bottom-up efforts. Diversify your social circle, your workplace, that conference panel you're organizing.</p>
+<p>Again, we did not simply tell the readers this. They proved it for themselves using our playable, accessible, cuter version of Thomas Schelling's work.</p>
+<hr>
+<h2>How To Actually Do Any Of This Stuff</h2>
+<p>An essay on &quot;learning by doing&quot; would be rather hypocritical without an exercise for the reader, so get out a pen and napkin, here we go! From message to mechanics, in three sort-of-simple steps:</p>
+<h4>1. What do you want to explain?</h4>
+<p><img src="http://i.imgur.com/OxuJ3gD.jpg" alt="exercise - cause and effect"></p>
+<p><em>The Landlord's Game</em> explained economics. <em>Depression Quest</em> explained psychology. <em>Parable of the Polygons</em> explained sociology.</p>
+<p>We understand the world through models. Not just the obvious models in the sciences, but also in arts, business, and even our personal relationships with one another. <strong>Think about an idea that compels you, in the form of &quot;Cause → Effect&quot;.</strong> No, seriously. Don't go past this section without coming up with something. Here's a few examples to help you get started:</p>
+<p><strong>Arts:</strong> Wider audience → Fewer common interests → More general/generic art.<br>
+<strong>Business:</strong> Indie → Low budget → Less to lose → Can afford more risk → More innovation.<br>
+<strong>Personal:</strong> You want to protect your kid → You don't let them learn from their mistakes → They can't learn by doing → They grow up unprepared and scared → You monster.</p>
+<h4>2. How does the player prove the lesson to themselves?</h4>
+<p><img src="http://i.imgur.com/nFBrIH0.jpg" alt="exercise 2 - the game itself"></p>
+<p>Now, here's the hard part - how do you turn your argument into a model, with rules logically leading to the intended result?</p>
+<p><strong>What's your core set of rules?</strong> If you did your &quot;Cause → Effect&quot; argument well, it should be almost obvious what the rules should be. Take the above Arts example. The Cause → Effect chain depends on audiences &amp; their interests. The rules of the game might be: 1) There's a random population of 1,000,000 people. 2) They all have varying interests, some more common than others. 3) With each level, you need to make your TV channel appeal to more and more people.</p>
+<p><strong>Your model should be visible.</strong> Board games and video games are inherently spatial, so you may need to think of a way to represent your model spatially, or at least graphically. This isn't a hard rule, of course. You could have interactive fiction, or spreadsheets, or computational models, just as long as the player can clearly see the entire state of the system.</p>
+<p><strong>Your model should start simple.</strong> Start simple, then add complexity as the player progresses. Don't feel bad for simplifying! All models of the world are simplifications, anyway. As long as you get all the important bits, add some nuance, and acknowledge the limitations, you're golden.</p>
+<p>Stop. Drawing time. Think about that message that compels you. Think about how you can represent your argument as a set of rules, leading to a result. What might that system/game look like? It could be a flowchart, diagram, graph, UI mockup, or a whole bunch of stickpeople. Draw that.</p>
+<h4>3. How will you package this up?</h4>
+<p><img src="http://i.imgur.com/FKWISIq.jpg" alt="exercise 3 - the show must go on"></p>
+<p>When the first videogames came out, they were criticized for not being &quot;real games&quot;. They didn't have the human-created dynamic narratives of a good D&amp;D session. They didn't have the tactile experience of handling stones in Go. They didn't even have the social aspect of Never Have I Ever.</p>
+<p><strong>Point is, don't worry about making &quot;a real game&quot;.</strong> Throw away the old conventions, these shackles of tradition, to best serve your message. Form should follow function, not the other way around. Your game doesn't need to be fun, or replayable, or full of hilarious glitches for Let's Players to find.</p>
+<p>That said, you might want to add something to your otherwise dry, bare-bones model.</p>
+<p><strong>Consider adding a narrative!</strong> It could be as simple as &quot;you're a monopolist landlord, versus other monopolist landlords&quot;. Story and characters can take your abstract argument, make it concrete, and show how the topic affects actual people. It would make your lesson not just understood intellectually, but resonate emotionally.</p>
+<p><strong>Your &quot;packaging&quot; can also help frame your argument in the right way.</strong> Take my Arts example again. I'd want to frame it so it doesn't come off as super-snobby elitism, and that my players don't think my message is &quot;the masses are dumb&quot; or &quot;popular = bad.&quot; Because while sex, drugs, and reality TV are widely common interests, so are questions about life, love, and the human condition. By definition, the human condition is the thing most humans would have in common!</p>
+<hr>
+<p><img src="http://i.imgur.com/mMuqadY.png" alt="end of part i"></p>
+<p>Sometimes we get trapped in systems, and we can't see it.</p>
+<p>Maybe the system is too abstract, too slow, too fast, too far away, or too close for us to fully grasp.</p>
+<p>But games can <em>make</em> us understand. We can learn by doing. Actually, not just games - anything that lets you explore cause-and-effect, from simulations to social interactions, also has that untapped potential to change us for the better.</p>
+<p>I'm no Confucius. Like, think of an <em>anti</em>-Confucius, then multiply that by four, and that's approximately me. I don't know much, and I'm figuring it all out as I go along, same as everyone. But I think, just maybe, once we know how to create models of the world as it is...</p>
+<p>...we can create new models of the world as it should be.</p>
+<p><img src="http://i.imgur.com/qYmjRbs.png" alt="confucius flies off"></p>
+<p><strong><a href="https://www.patreon.com/ncase">If you liked this article, consider supporting my Patreon!</a></strong></p>
+<p>Other than game design writing, I also make interactive art like <a href="http://ncase.me/polygons/">Parable of the Polygons</a>, one of this post's case studies, and <a href="http://ncase.itch.io/coming-out-simulator-2014">Coming Out Simulator 2014</a>, an IGF Finalist this year for Excellency in Narrative. Best of all, all my stuff is open source/public domain!</p>
+<p>my tweeter: <a href="https://twitter.com/ncasenmare">@ncasenmare</a></p>
+<p><strong>Further Reading:</strong></p>
+<ul>
+<li><a href="http://bogost.com/books/persuasive_games/">Ian Bogost's Persuasive Games</a>, and his theory of procedural rhetoric.</li>
+<li><a href="http://blog.ncase.me/explorable-explanations/">My notes</a> from a workshop on Explorable Explanations.</li>
+<li><a href="http://www.gamasutra.com/blogs/NickyCase/20140811/222467/If_Games_Were_Like_Game_Stories.php">A previous popular Gamasutra post I wrote</a>, also with lots of silly drawings.</li>
+</ul>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

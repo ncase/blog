@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>reflecting on :the game:</title>
+
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=460">
+
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="reflecting on :the game:">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="https://blog.ncase.me/content/images/2016/09/thumb.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="reflecting on :the game:">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/images/2016/09/thumb.jpg">
+	<meta property="og:title" content="reflecting on :the game:">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/images/2016/09/thumb.jpg">
+	<meta property="og:description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Sun Sep 11 2016 07:00:33 GMT-0700 (Pacific Daylight Saving Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+                
+            
+            <img
+                 class="blur" 
+                id="splash_image_banner" src="/content/images/2016/09/thumb.jpg"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			reflecting on :the game:
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+    			tags:
+                
+                    
+                
+                    
+                        <a class='black-link' target='_self' href="/tag/This Time It Is Personal">This Time It Is Personal</a>,
+                    
+                
+                    
+                        <a class='black-link' target='_self' href="/tag/Behind The Scenes">Behind The Scenes</a>
+                    
+                
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a target='_self' href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p>Holy nostalgia, Batman! I found the original concept &quot;art&quot; for a videogame I made eight years ago. (sidenote: (And on my birthday, too! It's my birthday today! It's a really sad &amp; tragic date but whoo birthdayyyyy!))</p>
+<p>On November 1st, 2008 – <em>remember that? the week obama was elected?</em> – I uploaded to Newgrounds – <em>remember that? the site with all the rude, crude Flash animations?</em> – the game titled, uh, <strong><a href="http://www.newgrounds.com/portal/view/467574">:the game:</a></strong>.</p>
+<p><img src="/content/images/2016/09/header.jpg" alt=""></p>
+<p>I have to confess upfront, I have very mixed feelings about :the game: and the <a href="http://www.newgrounds.com/portal/view/522607">two</a> <a href="http://www.newgrounds.com/portal/view/569281">sequels</a> I made. On one hand, it was my first taste of <em>success</em> – millions of people played it and loved it, for the first time I realized that I could actually bring <em>joy</em> to people's lives!</p>
+<p>On the other hand, I made it when I was 14 and oh <em>god</em> it's so cringe-y to look back on.</p>
+<p>Anyway, I found some of the old concept art for :the game: that I drew when I was a wee lil' pubescent sack of hormones. Here was the very first one:</p>
+<p><img src="/content/images/2016/09/0.jpg" alt=""></p>
+<p>A couple things to note:</p>
+<p>One – yeah, apparently somewhere between the paper sketch and the final game, I got too lazy to draw stickmen with arms, or even separate legs.</p>
+<p>And two – some of you may notice that's almost identical to a joke <a href="https://youtu.be/FMkJVXi7Rp8?t=12m32s">that Ze Frank did in 2007</a>. That's because it is. I swiped his Atheism: The Game joke, then expanded the premise to a zillion other -isms, such as:</p>
+<p><img src="/content/images/2016/09/1.jpg" alt=""></p>
+<p>...that, and memes. lots and lots of stupid memes.</p>
+<p><img src="/content/images/2016/09/2.jpg" alt=""></p>
+<p>...you can now kinda understand my mixed feelings over the meme-iness of :the game: eight years later, right? It feels like it was made by a stupid teenager, because it <em>was</em>.</p>
+<p><img src="/content/images/2016/09/memes.jpg" alt=""></p>
+<p><em>[cringe-shudder]</em></p>
+<p>And despite none of its jokes having aged well, apparently a lot of people are still big fans of the :the game: trilogy? Every month, someone will ask me on Twitter when :The Game 4: is coming out. And I was stunned when Markiplier, who I'm a huge fan of, revealed <em>he</em> was a fan of <em>me</em> when he did <a href="https://www.youtube.com/watch?v=fCb_5PbsiJA">a nostalgic Let's Play of :the game:</a>. (...I still can't bring myself to watch him play it. It's too embarrassing.)</p>
+<p>I recently surveyed a few old fans of mine, to find out what they liked about :the game:, because <em>I</em> can only see it as the equivalent of an awkward high school yearbook photo. Here's why they said they enjoyed :the game::</p>
+<ul>
+<li>The simple but varied gameplay</li>
+<li>The joyful art and animation</li>
+<li>It's &quot;funny&quot;</li>
+<li>It's &quot;smart&quot;</li>
+<li>It &quot;subverts convention&quot;</li>
+</ul>
+<p>And looking back, sure! I can see the first two points. But as you can tell by my &quot;over-use&quot; of &quot;scare&quot; &quot;quotes&quot;, I'm ambivalent when it comes to the last three.</p>
+<h3>&quot;Funny&quot;</h3>
+<p><img src="/content/images/2016/09/funny.jpg" alt=""></p>
+<p>All of :the game: was pretty much either shock humor or <a href="https://i.imgur.com/XS5LK.gif">reference humor</a>. So, exactly what you'd expect on Newgrounds. But the point is, I can no longer stand that <a href="https://en.wikipedia.org/wiki/Scary_Movie_5">Scary Movie</a> shocks-and-references brand of scare-quote-scare-unquote &quot;humor&quot;. Even if at some point in my life I <em>loved</em> that kinda crap.</p>
+<h3>&quot;Smart&quot;</h3>
+<p><img src="/content/images/2016/09/smart.jpg" alt=""></p>
+<p>If it seems like :the game:'s levels were about as clever as a newspaper political cartoon, that's because I <em>was</em> directly inspired by newspaper political cartoons.</p>
+<p>Back when I was a Teen™, I would religiously check <a href="http://www.cagle.com/">Cagle.com</a> for new political cartoons, and honestly, that was pretty much how I kept up-to-date on world events. At least, it let me BS my way through a five-minute political conversation, like the world's worst Turing Test.</p>
+<p>To be fair (to myself?), there <em>is</em> one level from :the game: that I'm still fond of. The level was called CAPITALISM :THE GAME:, and the goal was to compete with others to run around and catch falling money. And the more money you caught, the bigger you grew. But the bigger you grew, the easier it was to catch more money. It's a feedback loop!</p>
+<p>Granted, the whole &quot;rich get richer&quot; argument isn't exactly a Nobel Prize-winning discovery, but I liked how I transformed a real-world feedback loop into a silly gameplay loop. And on top of that, showing business growth as actual growth, and business competition as gameplay competition. Systems thinking!</p>
+<p><em>That's</em> the kind of stuff I still love, and <a href="http://explorableexplanations.com/">am still doing</a>.</p>
+<p>Too bad the rest of :the game: wasn't like that.</p>
+<h3>&quot;Subverts Convention&quot;</h3>
+<p><img src="/content/images/2016/09/convention.jpg" alt=""></p>
+<p>This was :the game:'s greatest strength, but eventually, its greatest weakness. Sure, the just-jump-off-a-cliff gameplay was a funny subversion the <em>first</em> time I did it, but making <em>two</em> sequels with the same shtick? I turned my subversion of a formula <em>into a formula</em>.</p>
+<p>And <em>that's</em> why I ended the :the game: series. So I could be free to subvert my convention-subverting convention.</p>
+<p><img src="/content/images/2016/09/free.jpg" alt=""></p>
+<p>This whole post-mortem probably sounds really negative. I just wanna make clear – I don't look down upon my fans who liked :the game:. I don't regret the years I spent making that trilogy. If anything, the reason I'm able to critique my old work this harshly is <em>because</em> of the lessons I could only learn by <em>doing</em> that work.</p>
+<p>I realize three things now.</p>
+<p>One – that I just lost the game. God damn it.</p>
+<p>Two – that in another 8 years, I'll look back at the work I'm doing now, and probably cringe just as hard. Sucks, but I think that's a sign of true growth!</p>
+<p>Three – that I have an unhealthy tendency to be harsh with myself. Not just with my projects, but personal life, too. <em>“You fucking idiot. Why'd you drop out of college, Nicky? You tore your family apart when you came out as bi. How the fuck did you slice your thumb open in a Safeway? You betrayed your best friend's trust, twice. Why didn't you leave immediately when you found out your landlord was a convicted child molester?</em></p>
+<p><em>These aren't even mistakes that you can tell others as cautionary tales, because nobody would make the mistakes you did. You. Stupid. Bitch.”</em></p>
+<p>...is what I would say to myself, if I was still as much of a nervous wreck as I was <a href="http://blog.ncase.me/nicky-reads-feeling-good/">before I took up Cognitive Behavioral Therapy.</a> It took me a really, really long time to internalize that I'm worth something – and you know what? Maybe the smiles and laughs that :the game: brought to peeps was my first step towards realizing that.</p>
+<p><strong>:the game: is dead.<br>
+long live :the game:!</strong></p>
+<p><img src="/content/images/2016/09/heaven.jpg" alt=""></p>
+<h2>Epilogue</h2>
+<p>Actually? I still love making jokes, explaining social systems, and drawing dumb little hopping stick people! <a href="https://www.patreon.com/posts/screenshot-6731592">Guess it's TIME FOR A COMEBACK.</a></p>
+<p><img src="https://i.imgur.com/RARs6lc.gif" alt=""></p>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

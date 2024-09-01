@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>Explorable Explanations: 4 More Design Patterns</title>
+
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=460">
+
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="Explorable Explanations: 4 More Design Patterns">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="https://blog.ncase.me/content/images/2018/06/Screen-Shot-2018-06-20-at-13.00.03.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="Explorable Explanations: 4 More Design Patterns">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/images/2018/06/Screen-Shot-2018-06-20-at-13.00.03.png">
+	<meta property="og:title" content="Explorable Explanations: 4 More Design Patterns">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/images/2018/06/Screen-Shot-2018-06-20-at-13.00.03.png">
+	<meta property="og:description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Wed Jun 20 2018 09:59:58 GMT-0700 (Pacific Daylight Saving Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+                
+            
+            <img
+                 class="blur" 
+                id="splash_image_banner" src="/content/images/2018/06/Screen-Shot-2018-06-20-at-13.00.03.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			Explorable Explanations: 4 More Design Patterns
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+    			tags:
+                
+                    
+                
+                    
+                        <a class='black-link' target='_self' href="/tag/Explorable Explanations">Explorable Explanations</a>,
+                    
+                
+                    
+                        <a class='black-link' target='_self' href="/tag/How To">How To</a>
+                    
+                
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a target='_self' href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p>Four years ago (wow, already four?), we had <a href="https://blog.ncase.me/explorable-explanations/">the first-ever Explorable Explanations meetup</a>, to talk about teaching through play.</p>
+<p>We had no idea what we were doing. Still don't.</p>
+<p>But, four years later – <a href="http://explorabl.es/all/">after 100+ Explorables</a> made by educators, journalists, and curious laypeople like yours truly – I think we figured out a bit more on how to share complex, powerful, beautiful ideas through play. So here's a listicle about that.</p>
+<h2>Pattern #1: Puzzle It Out</h2>
+<p><img src="/content/images/2018/06/sinerider.gif" alt="GIF of SineRider"> (sidenote: from <a href="http://sineridergame.com/">SineRider</a>)</p>
+<p>Not all learning-by-doing is equal. In high school, I did lots of those chemistry &quot;experiments&quot; where the teacher just tells you exactly what to do and exactly what result to expect. I remember setting my hand on fire. I don't remember any actual chemistry, though.</p>
+<p>That's because even though our lab was hands-on (especially hands-on-fire), and we &quot;did&quot; things, we didn't do the one thing needed for learning anything: <em>thinking</em>.</p>
+<p>Not so in Chris Walker's <a href="http://sineridergame.com/">SineRider</a>! In this TI-86-inspired puzzle game, you create a wintery landscape by graphing equations, to slide your tobogganer characters to their goal. Instead of mindlessly following an algorithm to get the One True Answer™, you're forced to actually <em>think</em> about how equations become curves and vice versa, and invent your own solution out of ∞ possible solutions.</p>
+<p>Chris repeated this puzzle-based design in <a href="http://polytrope.com/district/">District</a>, and inspired me to give puzzles a shot in <a href="https://ncase.me/crowds/">The Wisdom and/or Madness of Crowds</a>. Puzzles, besides adding a tasty challenge, also make your players <em>prove</em> they actually understand the underlying ideas before they can move on. &quot;Teaching&quot; and &quot;Assessment&quot; get rolled up in one.</p>
+<p><strong>This Design Pattern is good for:</strong> teaching topics that lend themselves to simulation, e.g. math, programming, science</p>
+<p>But if making a whole simulation is too much, there's a simpler way to challenge your players, and that's with...</p>
+<h2>Pattern #2: Place Your Bets!</h2>
+<p><img src="/content/images/2018/06/drawit.gif" alt="GIF from You Draw It"> (sidenote: from <a href="https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html">You Draw It</a>)</p>
+<p>Learning requires thinking. That's why simply <em>giving</em> someone &quot;the answer&quot; often fails. However, asking your reader to puzzle out the answer every time may be impractical, so you can do the next best thing: give them the answer, but only after they've wrestled with the <em>question</em>.</p>
+<p>The Upshot's <em>You Draw It</em> series (on <a href="https://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html">education</a>, <a href="https://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html">obama</a>, <a href="https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html">overdoses</a>) does this well. Instead of showing you a graph of some statistic upfront, the website first makes you draw what <em>you</em> think the graph should look like. Only then, it reveals how your expectations (mis)match with reality. By forcing you to put down your expectations, the <em>real</em> answer comes as a bigger shock. (for me, my holy-crap moment was seeing how much I'd underestimated the opioid epidemic)</p>
+<p>This place-your-bets pattern also appears in The Pudding's <a href="https://pudding.cool/2018/04/birthday-paradox/">Birthday Paradox</a>, and in my <a href="https://ncase.me/trust/">The Evolution of Trust</a>. In Steven Strogatz's essay, <em>Writing about Math for the Perplexed &amp; Traumatized</em> (<a href="https://static.squarespace.com/static/5436e695e4b07f1e91b30155/t/54452bf9e4b0d8c56ac26931/1413819385579/writing-about-math-for-the-perplexed-and-the-traumatized.pdf">pdf</a>), he talks about how ineffective traditional math teaching is, because “it answers questions the student hasn’t thought to ask.” The solution: <em>“You have to help them love the questions.”</em></p>
+<p><strong>This Design Pattern is good for:</strong> teaching topics with a clear right or wrong answers</p>
+<p>But what if what you're teaching doesn't <em>have</em> a clear right or wrong answer? What if it's about philosophy or politics or ethics? In that case, you could try...</p>
+<h2>Pattern #3: Role Play</h2>
+<p><img src="/content/images/2018/06/syrian.gif" alt="GIF of A Syrian Journey"> (sidenote: from <a href="https://www.bbc.com/news/world-middle-east-32057601">A Syrian Journey</a>)</p>
+<p><em>I did it! My family and I escaped Syria, traveled to Turkey, and made it across the river in a small inflatable boat onto Greece's shore. Finally, we -- oh, القرف. A second boat just capsized behind us. A woman and her daughter are struggling in the water. Do I dive in to save them, and risk getting caught by the border guards... or do I run into the woods with my family, and leave the mother and girl to their fate – a fate which could have just as easily been ours?</em></p>
+<p>That's a scene from BBC's <a href="https://www.bbc.com/news/world-middle-east-32057601">A Syrian Journey</a>, an interactive story based on real Syrian refugee stories. It's more than creating &quot;empathy&quot; – a word now on par with &quot;synergy&quot; and &quot;paradigm shift&quot; – it makes you actually <em>think</em> (and thus <em>learn</em>) about the dilemmas that refugees face.</p>
+<p>Some other role-playing explorables include: BBC's <a href="http://crossingdivides.bbcnewslabs.co.uk/">Crossing Divides</a>, Pippin Barr's <a href="https://www.pippinbarr.com/games/trolleyproblem/TrolleyProblem.html">Trolley Problem</a>, and Gabrielle LaMarr LeMee's <a href="https://gabriellelamarrlemee.github.io/thesis-simulation/">Educate Your Child</a>. In all of these, there are no right answers, but they still make you think about the right <em>questions</em>.</p>
+<p><strong>This Design Pattern is good for</strong>: exploring hard questions about philosophy, politics, ethics, or life</p>
+<p>But what if your topic not only has no right answers, but also <em>no right questions?</em> To maximize the &quot;explorable&quot; in &quot;explorable explanation&quot;, you could look at our final design pattern...</p>
+<h2>Pattern #4: Sandbox Mode</h2>
+<p><img src="/content/images/2018/06/earth.gif" alt="GIF of Earth: A Primer"> (sidenote: from <a href="http://www.earthprimer.com/">Earth: A Primer</a>)</p>
+<p>Just give your reader a big simulation to play around in, with little to no guidance. The upside of throwing your audience into the deepest end of the pool is that this is the way to get the deepest form of knowledge. The downside is they could drown.</p>
+<p>Learning requires thinking. But if you give someone a task that's far beyond their current capabilities, they'll just drop it – like a dumbbell that's too heavy. For example, Daniel Smilkov &amp; Shan Carter's <a href="http://playground.tensorflow.org/">A Neural Network Playground</a> is a well-designed simulation, and my friends who already know a bit about machine learning find it useful... but for me, it's information overload. I've no idea how to even begin getting the idea.</p>
+<p>One way to avoid this is to make a <em>really</em> simple simulation. Your player is thrown into the deep end of the kiddy pool. That's not to say it can't be an amazing kiddy pool! Ableton's <a href="https://learningmusic.ableton.com/">Learning Music</a> lets you create your own simple compositions with a digital drum machine, and Neil Thapen's <a href="https://dood.al/pinktrombone/">Pink Trombone</a> lets you play with a (hilariously horrifying) simulation of the human voice.</p>
+<p>Another solution is to put the full &quot;sandbox mode&quot; at the <em>end</em> of the explorable, and everything leading up to that just introduces bits and pieces of the sandbox. This approach was taken in Chaim Gingold's <a href="http://www.earthprimer.com/">Earth: A Primer</a>, and my + Vi Hart's <a href="https://ncase.me/polygons/">Parable of the Polygons</a>. You start by dipping your toes in the shallow end of the pool, then gradually go deeper.</p>
+<p><strong>This Design Pattern is good for:</strong> understanding simulations in science, or using tools in art/music</p>
+<p>· · ·</p>
+<p>Of course, these aren't the <em>only</em> design patterns that have been invented, or have <em>yet to be</em> invented! There's so many fundamental questions:</p>
+<ul>
+<li>Can an explorable let you go <em>beyond</em> its author, and let you challenge the author's conclusions using the author's own simulation? (<a href="http://worrydream.com/ExplorableExplanations/">see Bret Victor's vision</a>)</li>
+<li>Can an explorable augment human intelligence itself, like writing once did? (<a href="https://www.dougengelbart.org/pubs/augment-3906.html">see Douglas Engelbart's vision</a>)</li>
+<li>Can explorables that teach <em>skills</em>, not just ideas?</li>
+<li>Can readers learn and make things <em>together</em>, not just individually?</li>
+<li>Can an interactive be – to paraphrase <a href="https://medium.com/@dominikus/the-end-of-interactive-visualizations-52c585dcafcb">this article on &quot;the death of interactives&quot;</a> – like having a tête-à-tête conversation with an expert on a subject, patient enough to explain to you everything?</li>
+</ul>
+<p>Nobel Laureate Carl Wieman once compared our current educational practices to ancient medical practices, and called lectures <a href="http://www.pnas.org/content/111/23/8319.full">“the pedagogical equivalent of bloodletting”</a>. I don't know what the future of learning looks like, but I – and the explorable explanations community – bet it'll be the pedagogical equivalent of kids getting exercise by racing along the beach, immersed in sunlight and fresh air, building tiny castles on the shore of a deep, vast, and beautiful ocean.</p>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

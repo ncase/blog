@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>OpenVisConf: Sketchy Notes</title>
+
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=460">
+
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="OpenVisConf: Sketchy Notes">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="https://blog.ncase.me/content/images/2016/04/logo.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="OpenVisConf: Sketchy Notes">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/images/2016/04/logo.jpg">
+	<meta property="og:title" content="OpenVisConf: Sketchy Notes">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/images/2016/04/logo.jpg">
+	<meta property="og:description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Sat Apr 30 2016 14:37:30 GMT-0700 (Pacific Daylight Saving Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+                
+            
+            <img
+                 class="blur" 
+                id="splash_image_banner" src="/content/images/2016/04/logo.jpg"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			OpenVisConf: Sketchy Notes
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+    			tags:
+                
+                    
+                
+                    
+                        <a class='black-link' target='_self' href="/tag/Journo Stuff">Journo Stuff</a>
+                    
+                
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a target='_self' href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p>Earlier this week, <a href="http://ncase.me/OVC2016/">I spoke at OpenVisConf</a>, about how systems thinking and simulations can <em>CHANGE THE WORLD!!!</em> or summin' like that. I'm happy that my talk was relatively early in the conference, so once I was done with it, I could relax and actually pay attention to the other talks.</p>
+<p>Like I did <a href="http://blog.ncase.me/systems-thinking-journalism-sketchy-notes/">for the systems thinking workshop</a> I went to two weeks ago, I thought I'd share the sketchy-notes I took from this conference!</p>
+<p>Here goes. My sketchy notes of 17(!) talks from...</p>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/logo.jpg" alt=""></p>
+<h3>DAY ONE</h3>
+<p>I skipped the early morning talks on the first day, because I wanted to add some last-minute changes to my talk. (And I skipped the early talks on the second day coz... uh, I slept in.) The following talk summary-notes will be in chronological order, and each sketch will contain the speaker's name, plus <em>the</em> mental image that their talk lodged into my mind.</p>
+<p>Anyway, the first talk I saw was the one right before mine:</p>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/mariko.jpg" alt=""></p>
+<p>Mariko's talk was a tutorial on using the <code>&lt;canvas&gt;</code> element. I already have a lot of experience with <code>&lt;canvas&gt;</code>, but I've never seen it explained in such an accessible and adorable way!</p>
+<p>For example, to explain image filters, Mariko asked us to imagine a neighborhood of pixels. (as pictured above)</p>
+<p>A &quot;blur&quot; filter would be when a pixel <em>likes</em> its neighbors, and wants to be more like them. So, it looks at the colors of itself and its neighbors, and takes on the average color. All pixels do this simultaneously, blurring the image. (And for the reverse, a &quot;sharpen&quot; filter would be when a pixel <em>hates</em> its neighbors, and wants to be less like them.)</p>
+<p>This was both a cute and effective way of teaching a pretty technical concept! Vi &amp; I also discovered the effectiveness of &quot;anthropomorphizing&quot; when we made Parable of the Polygons. After all, people think in people.</p>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/nicky.jpg" alt=""></p>
+<p>This one's <em>my</em> talk, about systems &amp; simulations! The picture above shows what I think is the core of systems thinking: that cause-and-effect isn't linear, it's <em>LOOPY</em>. Feedback loops, vicious &amp; virtuous cycles, etc.</p>
+<p>And from there, I talk about how systems thinking can make us more empathetic and empowered, maybe.</p>
+<p><strong><a href="http://ncase.me/OVC2016/">Here's the full pics &amp; text version of my talk!</a></strong></p>
+<p>This was one of the more philosophical and theory-heavy talks at OpenVisConf, but I think I balanced it out with some good practical tips and tools for simulations &amp; systems modeling. Peeps seemed to like my talk. In any case, I'm honored to have been invited to speak there, and okay I'll shut up and stop tooting my own horn now.</p>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/amelia.jpg" alt=""></p>
+<p>Amelia's talk was titled, “Do you know Nothing when you see it?” and that pretty much captures her talk – when we see data, how can we make it obvious if it's statistically significant, or just random noise?</p>
+<p>She demonstrated a pretty brilliant idea, and described it like this: <em>a police line-up of graphs.</em></p>
+<p>What you do is have twenty graphs displayed in a line-up. (or, if you wanna get Tufte-y, a <a href="https://en.wikipedia.org/wiki/Small_multiple">&quot;small multiple&quot;</a>) Why twenty? Coz p &lt; 0.05 is statistical significance. So one of these graphs will contain your real data, and the other 19 will be randomly <a href="https://en.wikipedia.org/wiki/Resampling_(statistics)">resampled</a> data. Then, your job is to try to pick your own data out of a lineup. If you can, congrats, it's probably not noise. If you can't, too bad so sad.</p>
+<p>Statistics is a field with so many real-life applications, but my god, the equations are all eldritch abominations. I love these kind of visual/simulation approaches to statistics, because they make stats <em>intuitive.</em></p>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/nadieh.jpg" alt=""></p>
+<p>This was the most visually stunning talk. It was a tutorial on how to use SVG gradients. Not very technically difficult, but Nadieh's work showed how you could use them to both add information and aesthetic charm.</p>
+<p>The picture above is my attempt at a crosshatch gradient. Whatever.</p>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/patricio.jpg" alt=""></p>
+<p>A nice high-level explainer of how WebGL shaders and the GPU work! The picture above is how Patricio visualized the big difference between the CPU and the GPU. A CPU is like one very big pipe – it can do large calculations, but only one at a time. The GPU is like lots of tiny pipes side-by-side – it can only do small calculations, but can do thousands of 'em in parallel.</p>
+<p>Here's something I didn't appreciate until I watched Patricio's talk – let's say you want to draw <em>N</em> circles onto a screen. If you were to draw one circle after another, like with the 2d <code>&lt;canvas&gt;</code>, the time it'd take would increase linearly with <em>N</em>. But because the GPU does all the calculations for each pixel individually, it makes <em>no difference</em> between drawing one circle, ten circles, ten thousand circles, etc.</p>
+<p>And that ability to render lots of things at once, is crucial for visualizing a large number of data points. (<em>There's</em> the tie-in to dataviz!)</p>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/zan.jpg" alt=""></p>
+<p>This talk's all about periodic data! There was a lot here, but I'll relay the one big counterintuitive takeaway I got from this talk:</p>
+<p><em>MONTHS SUCK</em></p>
+<p>Or rather, trying to analyze data &quot;by month&quot; sucks, even though it's one of the more common ways to get aggregate data.</p>
+<p>But consider this example Zan gave: let's say you run a small restaurant. In this toy example, you make <em>exactly</em> $500/day on weekdays, and <em>exactly</em> $2000/day on weekends. This is the most periodic data you could possibly get. And it'll look periodic, if you analyze it by day, or by week.</p>
+<p>But by <em>month?</em> Well. Because the number of days each month isn't always evenly divisible by 7, some months will, by random chance, have more weekends or weekdays than another month. So if you were to analyze your small restaurant's earnings by month, it would look completely noisy. <em>Even though the underlying data is perfectly periodic.</em></p>
+<p><code>[mind blown]</code></p>
+<p>So yeah, unless you're dealing with inherently monthly data, (like a landlord collecting rent) don't analyze it per-month.</p>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/shirley.jpg" alt=""></p>
+<p>In this talk, Shirley goes through the trials and tribulations of creating visualizations for enterprise software.</p>
+<p>One big takeaway I got, was a lesson I'd just learnt two weeks before while trying to make a visualization for PBS Frontline on ISIS's networks. And that is that <a href="https://bl.ocks.org/mbostock/4062045">force-directed graphs</a> (pictured above) are actually really disappointing.</p>
+<p>At first you think, wow, this'll automatically generate good-looking graphs for me, cluster the relevant nodes together, <em>and</em> put the most central players in the center! And above all that, they're fun and spring-y!</p>
+<p>And then it turns out they make a mess with pretty much any real-world data.</p>
+<p>You can't automate insight. Alas.</p>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/tony.jpg" alt=""></p>
+<p>I'm really glad there was another high-level philosophical talk at OpenVisConf so I didn't stick out. Besides, Tony's talk was really, really insightful!</p>
+<p>The picture above is how Tony visually described the core act of <em>communication.</em> We do not simply &quot;transmit&quot; information from one brain to another. We have to help the other person <em>reconstruct it for themselves</em> – but we have limited attention, limited cognitive power, and limited ways of communicating (voice, drawings, flailing hands in the air wildly).</p>
+<p>This, by the way, is the epistemological/educational philosophy called <a href="http://learning.media.mit.edu/content/publications/EA.Piaget%20_%20Papert.pdf">constructivism and/or constructionism</a>. (&quot;knowledge ain't transmitted, it's constructed&quot;) It's something I've geeked out about before, uh, <a href="http://explorableexplanations.com/">a lot.</a></p>
+<p>Anyway, if we have limited attention and communication channels, how do you get a reader to &quot;successfully&quot; re-construct an idea you want them to have?</p>
+<p>Tony likened it to Lego instruction books. You don't just dump all the pieces on the floor and say &quot;now make the thing&quot;. Instead, you...</p>
+<ol>
+<li>show them what they're gonna make</li>
+<li>give them the pieces step by step, one at a time</li>
+<li>have them build the &quot;sub-modules&quot; of the grand thing</li>
+<li>put the &quot;sub-modules&quot; together</li>
+<li>ta-dah</li>
+</ol>
+<p>General goal, then piece by piece, submodule by submodule.</p>
+<p>As a more concrete example, Tony showed how this applied to one of his more popular works, <a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/">A Visual Introduction to Machine Learning</a>:</p>
+<ol>
+<li>show an overview of what they'll learn. (with fancy visual)</li>
+<li>give a concrete example, their first lego brick. in this case, SF &amp; NY housing prices</li>
+<li>go through each step of each sub-module of the full idea. (data, dimensions, decision trees, etc) also, <em>transitioning</em> between ideas with literal animated <em>transitions</em>.</li>
+<li>put 'em all together!</li>
+<li>ta-dah</li>
+</ol>
+<p>So if you wanna teach someone something, you can't simply <em>teach</em> them the thing. Not directly. <strong>You have to break your idea down into submodules, then break those submodules into individual Lego bricks – stories, visuals, direct experiences.</strong> This will be hard. Because if you're already really familiar with an idea, it'll already seem to you like a single, unbreakable Lego brick.</p>
+<p>But you gotta break it down. And build it back up again.</p>
+<p>Finally, Tony concluded his talk – and concluded Day One of OpenVisConf – with how <em>not</em> to teach people things:</p>
+<p><img src="https://i.imgur.com/pIy3QNt.jpg" alt=""></p>
+<hr>
+<h3>DAY TWO</h3>
+<p>I slept in and missed the first two talks OH WELL. I eventually arrived in time for this talk, summarizing the academic literature in visualization:</p>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/kennedy.jpg" alt=""></p>
+<p>The title of the talk was &quot;37 Studies in 30 Minutes&quot;, so, this was a really quick-paced and jam-packed presentation. Honestly, I can't even read my notes anymore. They're just panicked scribbles as I was trying to catch up. I'll wait for the slides to be put up online.</p>
+<p>Two takeaways I do remember, though, drawn in the sketch above:</p>
+<ul>
+<li>We can, and should, apply the scientific method to data visualization!</li>
+<li>Apparently pie charts aren't <em>thaaaaaaaat</em> bad. (at least, for showing proportions. For everything else, no. Also never never never ever use a 3D pie chart, what is <em>wrong</em> with you)</li>
+</ul>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/rachel.jpg" alt=""></p>
+<p>Rachel Binx goes through the visualization work she did at NASA, to measure our robots... in <em>SPAAAAAAAAAAAAAAAAAAAAAACE!!!</em></p>
+<p>She pulls a big plot twist and reveals that the work she did at NASA was, quote, &quot;pretty boring&quot;. She made mostly standard bar charts and status indicators. But – and here's the takeaway of her talk – that's not a bug, that's a feature. The NASA engineers needed to get their information as quickly and clearly as possible, and any fancy dataviz stuff would just get in the way.</p>
+<p>Rachel's talk is a good reminder – throughout all the cool stuff being shown off at this conference – that sometimes, you really don't need all that, and it's best to just get back to the basics.</p>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/arvind.jpg" alt=""></p>
+<p>Wow my sketch header for this talk is pretty abstract.</p>
+<p>What it's trying to say is that declarative programming (the brush) is a more creative and freeing way to code than imperative programming (the list). Imperative programming is the standard way we do things, by listing instructions step by step, saying <em>how</em> you want a thing to be made. Declarative programming is just saying <em>what</em> thing you want.</p>
+<p><strong>Declarative:</strong> Spreadsheets, CSS, HTML<br>
+<strong>Imperative:</strong> JavaScript</p>
+<p>And that's the core of (the first half of) Arvind's talk! It really reminded me a lot of Bret Victor's talk, <a href="https://vimeo.com/71278954">The Future Of Programming</a>, where he pretends to be in 1973, talking about the promising new programming prototypes around that time, allowing us to declaratively and directly manipulate processes, and how absolutely tragic it would be if we're stuck with an imperative text-based interface for coding 40 years later.</p>
+<p>yup</p>
+<p>In the second half of his talk, Arvind showed off Vega, a framework for making data visualizations in a declarative manner. Cool demos abound! But in hindsight, it's kind of ironic that this talk about a big brand new framework would come right before this one...</p>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/adam.jpg" alt=""></p>
+<p>The title of Adam's talk: &quot;Tiny Tools&quot;</p>
+<p>Adam goes through a few dozen-line programs he's written for himself, tools which shave off seconds and minutes here and there. It may seem trivial, premature optimization, but Adam says it's not just about saving time – these tools let him code more declaratively, and the shorter the iteration time between coding, and seeing what it does, the more <em>creative</em> you can be. It <em>frees your mind</em>.</p>
+<p>(This reminds me of another of Bret Victor's talk, <a href="https://vimeo.com/36579366">Inventing on Principle</a>.)</p>
+<p>Anyway, takeaway: make tiny tools, and open-sauce it for the rest of us, k thx</p>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/jessica.jpg" alt=""></p>
+<p>This talk wins the award for Best Extended Metaphor</p>
+<p>Jessica's talk is about how to visually communicate <em>uncertainty</em>. She compares the static ways we do it – histograms, violin plots, error bars – are like folk music: old technology, and abstract as hell. In contrast, using simulations (the theme of my talk!) to show that probability is a <em>process</em>, is like disco music: new technology, and a lot more visceral!</p>
+<p>So how do you make a good probability-simulation? Two things are needed:</p>
+<ol>
+<li>Show one case happening at a time.</li>
+<li>Build the aggregate distribution step-by-step.</li>
+</ol>
+<p>Concrete → Abstract.</p>
+<p>Good examples of this form of probability-simulation include Nathan Yau's <a href="http://flowingdata.com/2015/09/23/years-you-have-left-to-live-probably/">Years You have Left To Live Probably</a>, Maarten Lambrecht's <a href="http://rocknpoll.graphics/">Rock n' Poll.</a>, and Victor Powell's <a href="http://blog.vctr.me/monty-hall/">explainer of the Monty Hall paradox</a>.</p>
+<p>Now that I'm writing up all these notes back-to-back, I'm noticing this fits <em>perfectly</em> into Tony Chu's framework for teaching things: concrete bricks, one at a time, that build up to the main idea.</p>
+<p>(I'm also noticing this talk picks up on a theme Amelia used in her talk, Do You Know Nothing When You See It – and that theme is that statistical resampling &amp; simulation is goddamn magic.)</p>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/kim.jpg" alt=""></p>
+<p>Like Amelia's talk, this one's less about using visualization to communicate <em>to</em> an audience, but using visualization internally, for and between scientists to figure out what to communicate in the first place!</p>
+<p>The above sketch-drawing is Kim showing how visualization can be used by a solitary scientist to find insight, or used to aid collaboration between scientists of different fields, or, of course, to present their findings to a general audience.</p>
+<p>Kim gave me a lil' shoutout, saying &quot;See, visualization is <em>LOOPY!</em>&quot;</p>
+<p>thanks Kim :3</p>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/christine.jpg" alt=""></p>
+<p>Another talk about <em>SPAAAAAAAAAAAAAAAAACE!!!</em></p>
+<p>Other than lots of cool pictures from space, (and by &quot;cool&quot; I mean &quot;depressing&quot;, because half of them showed retreating glaciers, flooded cities, forest fires, and other horrid effects of climate change, oh well) Christine posed a pretty good question to the dataviz community: why don't we use more bitmap data? (Most dataviz peeps use vectors, coz they're easier to work with mathematically) After all, there's thousands of free, public domain space satellite images to work from, which tell really powerful stories.</p>
+<p>(I note, looking at these talks back-to-back, that the first talk I saw about <code>&lt;canvas&gt;</code>, from Mariko, might have some specific tips on how to analyze that bitmap data from <em>SPAAAAACE!!!</em>)</p>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/chris.jpg" alt=""></p>
+<p>The introduction to this talk refuted the introduction to my talk.</p>
+<p>fack.</p>
+<p>At the beginning of my talk, I claimed that more information was making us <em>less</em> informed, because now there's too much haystack, not enough needle. We're getting constant updates on surface-level events, but few people are investigating the deep, underlying systems of the world.</p>
+<p>Chris's talk starts off with a long, long list of people in history (including famous media theorist, Marshall McLuhan) making the same claim – that the more information we have, the less we'll be able to filter out all the crap.</p>
+<p>The mistake I now realize I made, is thinking it's linear, not loopy. The amount of data may be increasing exponentially, but so will our ability to sort through them. It's an arms race between crap and the crap-filters. (I feel better knowing that very smart people like McLuhan made the same mistake, though. And actually, maybe people who raise alarms about this might be necessary to motivate people to make better filtering processes. Maybe it all works out. Or maybe, like all arms races in the past, it'll still end badly.)</p>
+<p>Anyway, Chris's talk was about text analysis, scraping through everything from tweets to legal documents to leaked passwords, to find interesting patterns and stories! Chris self-awarely notes that text analysis is limited, and looking at a word cloud of Shakespeare is <em>not</em> the same as reading Shakespeare.</p>
+<p><img src="https://s3.amazonaws.com/ncase/ovc2016/ana.jpg" alt=""></p>
+<p><strong>T h e   F i n a l   T a l k .</strong></p>
+<p>Ana spends this last hour showing off some cool videos of data visualizations in VR! The one that stuck with me the most is the one I crappily drew above: the NASDAQ stock prices, before and after the 2000 dotcom bust, as a <em>VR ROLLERCOASTER EXPERIENCE.</em></p>
+<p>It uses the affordances of the VR medium – a visceral sense of scale, our fear of heights, motion through a space – to communicate how exciting the moments leading up the boom were, and how steep the drop right afterwards was.</p>
+<p>Now, Ana admits that VR faces a lot of challenges – how do you interact with no hands, text is hard to read in VR, it causes nausea in a lot of people, etc – but maybe these unique affordances of VR could lend itself to some visceral gut-punch visualizations.</p>
+<p>Ana concludes her talk, and thus concludes the conference, with a video of her (adorable!) granny trying VR for the first time, on a Google Cardboard. She's playing through the Boom-Bust Rollercoaster. And when it plays, her granny says in the sweetest voice:</p>
+<p><em>“oh, that's marvelous!”</em></p>
+<hr>
+<p>And that's it! That's the end of the conference! And the sketch-notes for the 17 talks I went to, gosh, wish I could've seen the four morning talks I missed. Oh well.</p>
+<p>Hopefully these notes of mine could help you, and weren't too rambly! I think this compilation also helped me see some recurring themes, some connections between the talks I missed the first time.</p>
+<p><strong>And so, a meta-summary of my summaries:</strong></p>
+<ol>
+<li>Concrete → Abstract</li>
+<li>Break it down, then build it back up.</li>
+<li>Statistical simulations are frikkin' magic.</li>
+<li>Teach by example, and by metaphor.</li>
+<li><em>SPAAAAAAAAAAAAAAACE</em></li>
+</ol>
+<p>Thanks again to OpenVisConf for the opportunity to speak here!</p>
+<p><img src="/content/images/2016/04/badge.jpg" alt=""></p>
+<p><strong>&lt;3,</strong><br>
+~ Nicky Case</p>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

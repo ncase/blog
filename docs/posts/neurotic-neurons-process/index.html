@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>Neurotic Neurons: Process</title>
+
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=460">
+
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="Neurotic Neurons: Process">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="https://blog.ncase.me/content/images/2015/09/thelongest1_0-1.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="Neurotic Neurons: Process">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/images/2015/09/thelongest1_0-1.jpg">
+	<meta property="og:title" content="Neurotic Neurons: Process">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/images/2015/09/thelongest1_0-1.jpg">
+	<meta property="og:description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Sun Sep 27 2015 17:55:42 GMT-0700 (Pacific Daylight Saving Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+                
+            
+            <img
+                 class="blur" 
+                id="splash_image_banner" src="/content/images/2015/09/thelongest1_0-1.jpg"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			Neurotic Neurons: Process
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+    			tags:
+                
+                    
+                
+                    
+                        <a class='black-link' target='_self' href="/tag/Behind The Scenes">Behind The Scenes</a>
+                    
+                
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a target='_self' href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p><img src="/content/images/2015/09/thelongest1_0.jpg" alt=""></p>
+<p>This a picture of the art installation, <a href="http://www.jorgemacchi.com/en/works/34/longest-distance-between-two-points">The Longest Distance Between Two Points</a>. The installation uses those airport belt-thingies to create a long winding path between two doors, a journey of the highest inefficiency, a commentary on bureaucracy, probably. I learnt about this art installation while thumbing through some book somewhere.</p>
+<p>Anyway, point is, that installation sums up what my process behind making <em><a href="http://ncase.me/neurons">Neurotic Neurons</a></em> felt like.</p>
+<p>I first got the idea to make an interactive <em>something</em> about neurons back in December 2014, while working on <a href="http://ncase.me/polygons/">Parable of the Polygons</a>. I'd learnt about Hebb's Rule through some book on AI, and thought it'd be a great to turn that into a playable system. Here's how the idea evolved -- although &quot;evolved&quot; wrongly implies steady improvement -- over time:</p>
+<p><strong>Dec 2014:</strong> Something involving social-cognitive theory and media violence. Yeah, I wanted to build up social-cognitive theory <em>from the neuron up?!</em></p>
+<p><strong>Mar 2015:</strong> Cutting it down to just classical &amp; operant conditioning. Planned on making it an interactive blog post like Parable of the Polygons, and have players recreate the Pavlov's Dog and Skinner Box experiments.</p>
+<p><strong>Jun 2015:</strong> I <em>finally</em> learn about Anti-Hebbian learning, jeez. Without it, the model was really limited. I title the project &quot;I'd Like To Be A Machine&quot;, and it would be a long interactive article, interleaved with a personal story of me overcoming anxiety. I drop the experiment-recreation parts, since they were boring in practice.</p>
+<p><strong>Aug 2015:</strong> I'd Like To Be A Machine was starting to get <em>really</em> bloated. At this point, it was a five-act blog post. I finished three out of five acts before I quit and reset everything. <a href="http://s3.amazonaws.com/iltbam/alpha-2015-08-23/_playtest.html">This was my final prototype.</a></p>
+<p><strong>Sep 2015:</strong> After many lackluster playtests, I finally admit to myself that I'd Like To Be A Machine wasn't working, and quit it. Besides, I'd been aching to try out this new idea for an interactive <em>video</em>, so I thought I'd try <em>that</em>. Made <a href="http://ncase.me/neuron-prototype">a prototype</a> in one week, peeps really liked it. Fleshed it out in two weeks, and <em>bam</em>, Neurotic Neurons was complete.</p>
+<p>Time spent mucking about: ~9 months.<br>
+Time that actually mattered: ~1 month.</p>
+<p>ಠ______ಠ</p>
+<p>Somewhere in my sketchbook-diary, I have, scrawled over two pages, a short note to self written in gigantic letters...</p>
+<h1>FUCK MAGNUM OPUSSES</h1>
+<p>...and a short footnote in the margins pondering what the plural of magnum opus was. (it's “magna opera”) I made this crude note to self, because it was then that I finally realized the vicious cycle I tend to trap myself in:</p>
+<p>I dream big.<br>
+→ I get attached to this big idea.<br>
+→ I spend lots of time implementing the idea.<br>
+→ I feel guilty that it's taken so long.<br>
+→ To make up for it, I dream even bigger.</p>
+<p>I'd fallen into this trap several times before, with my crowdfunded indie game <a href="http://us3.campaign-archive2.com/?u=dfc6ed35d0a2933c059395987&amp;id=47e5a7480f">Nothing To Hide</a>, my former &quot;startup&quot; Craftyy, and wanting to turn my :The Game: series into a media franchise with t-shirts and a sister webcomic(?!)</p>
+<p>All because I thought it was good to “dream big”.</p>
+<p>As a culture, we really tend to push that idea of “dreaming big”. But, uh, have you <em>had</em> a dream recently? Last night I dreamt my tongue turned into a tree. Two weeks ago I dreamt I pulled all my fingers off, and no, I don't know how I pulled my last finger off if I had no other fingers left???</p>
+<p>The point is, dreams ain't worth shit. Nighttime dreams live in a warped reality, while daytime dreams spring from one's limited knowledge of reality. “Dreaming Big” is the act of making up answers for your life, based off assumptions you haven't even tested yet.</p>
+<p>As a culture, we celebrate big answers over big questions.</p>
+<p>And I think that's unhealthy. So from now on, fuck magna opera, and thinking some big project can ever be The Answer to figuring out my life. From now on, I'll try to ask interesting <em>questions</em> through my prototypes and sketches -- after all, isn't that what it means to be <em>experimental</em>, to ask questions, and know I don't know the answer?</p>
+<p>Maybe. Anyway, “fuck magna opera” isn't a very actionable statement, so here's some guidelines I'm going to try to stick to for the next few months:</p>
+<ol>
+<li><strong>Research lots</strong>, so I can ask <em>interesting</em> questions.</li>
+<li><strong>Ask questions</strong> in the form of prototypes.</li>
+<li><strong>Keep options open.</strong> No planning beyond the prototype, <em>until</em> I've finished the prototype.</li>
+<li><strong>No more than a week</strong> on the prototype.</li>
+<li><strong>No more than two weeks</strong> on the full project.</li>
+</ol>
+<p>For example, the biggest question I was trying to answer with my first prototype for Neurotic Neurons, was “Does the interactive narrator <em>work?</em>” Would the voiceover distract from the play, or vice versa? Would people just not like it for other reasons?</p>
+<p>I <em>wasn't</em> asking if people would like interacting with the neurons, or how to best teach Hebb &amp; Anti-Hebb. Because, the silver lining from nine months of thrashing: I already knew the answers to those.</p>
+<p>And you know what, those nine months weren't a total waste. Other than the feedback I'd gained, I also coded a lot of the engine, and learnt a lot of auxiliary stuff about social-cognitive theory, media theory, and therapy, which had a profound effect on my interests and personal life.</p>
+<p>But, y'know, if I could gain epiphanies more efficiently, and not travel the longest distance between two points, that'd be nice.</p>
+<hr>
+<h3>Bonus Behind-The-Scenes-Pics!</h3>
+<p>A page from my sketchbook, my first attempt at figuring out the storyboard for <em>Neurons</em>:</p>
+<p><img src="/content/images/2015/09/storyboard.jpg" alt=""></p>
+<p>An early digital sketch of the intro scene: (The art was made in Adobe Flash, but don’t worry, everything was exported to PNG, so I could use the art with pure HTML5 &amp; canvas)</p>
+<p><img src="/content/images/2015/09/art.png" alt=""></p>
+<p>Where I did my sound recording — in my bedroom closet, with an old, beaten-up microphone, surrounded by pillows to prevent echo:</p>
+<p><img src="/content/images/2015/09/sound.jpg" alt=""></p>
+<p>That’s not a black circle on the microphone, that’s a gaping hole. It's old and dying. As all of us will be, some day~</p>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>
