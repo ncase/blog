@@ -2,6 +2,7 @@
 title: "Signal Boosts for June 2024"
 tags:
 - post
+share_image: https://blog.ncase.me/content/media/sb/thumb.png
 share_desc: "stuff I liked last month"
 date: 2024-06-28
 readtime: "8 min"
@@ -89,7 +90,7 @@ I currently use Obsidian on Mac OS X, iPad, and Android. App itself is free, but
 
 **[Check out Obsidian here!](https://obsidian.md/)** Available on all major platforms.
 
-(CORRECTION on June 29, 2024: The original version of this post claimed that Obsidian was open-source. [It's not.](https://github.com/obsidianmd/obsidian-releases?tab=readme-ov-file#about-this-repo) I don't know how I mixed it up in my head, sorry. Sincere thanks to J.C. & Q for emailing me about the error!) 
+(CORRECTION on June 29, 2024: The original version of this post claimed that Obsidian was open-source. [It's not.](https://github.com/obsidianmd/obsidian-releases?tab=readme-ov-file#about-this-repo) I don't know how I mixed it up in my head, sorry. Sincere thanks to J.C. & Q for emailing me about the error!)
 
 
 <a id="data"></a>

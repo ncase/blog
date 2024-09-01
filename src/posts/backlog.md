@@ -153,9 +153,7 @@ Context: I'm a trans woman, a member of the furry fandom, and a programmer. Ther
 
 ![A Venn diagram of "Programmers", "Trans girls", and "Furries", with the center labelled: "A suspiciously large overlap".](/content/media/backlog/17064898642946.jpg)*(from [this popular reddit post](https://www.reddit.com/r/traaaaaaannnnnnnnnns/comments/plxqv1/im_not_the_only_one_whos_noticed_this_right/))*
 
-![Comic. Panel 1: "A group of cats is called a clowder". Panel 2: "A group of catgirls is called a (crossed out) polycule, (scrawled over) dev team."](/content/media/backlog/17064905516761.jpg)*(viral comic, artist unknown? reverse image search did not help.[^no-help])*
-
-[^no-help]: The highest-resolution exact match was [this forum post with no credit](https://knockout.chat/thread/52258/48#post-1916833).
+![Comic. Panel 1: "A group of cats is called a clowder". Panel 2: "A group of catgirls is called a (crossed out) polycule, (scrawled over) dev team."](/content/media/backlog/17064905516761.jpg)*(Comic by AntisocialRavens, [source](https://www.reddit.com/r/196/comments/143irry/gayest_suggestion_gets_drawn_day_5_go_3/)! **Edit Aug 31 2024:** thank you to Nathan W & Raspberry Floof for independently finding this source, sorry it took me half a year to finally update this blog post.)*
 
 But *does* anecdote match data? If this correlation is real, what causes it? And roughly how many trans furry programmers *are* there in America?
 
