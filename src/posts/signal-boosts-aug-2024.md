@@ -4,7 +4,7 @@ tags:
 - post
 share_image: https://blog.ncase.me/content/media/sb/thumb.png
 share_desc: "Nasal sprays, constructed languages, and sassy sci-fi satires"
-date: 2024-08-31
+date: 2024-09-01
 readtime: "8 min"
 layout: base-layout.njk
 hasMath: true
