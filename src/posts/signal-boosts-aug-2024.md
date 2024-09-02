@@ -42,7 +42,7 @@ I applied! Fingers crossed for me, and maybe I'll see you there? Let's learn tog
 
 <a id="nasal-spray"></a>
 
-## 👃 "Drug-free" nasal sprays vs Covid?
+## 👃 "Drug-free" nasal sprays vs airborne pathogens?
 
 ![](../content/media/aug-2024/nasal.png)
 *(Diagram on how a drug-free, non-vaccine nasal spray can PHYSICALLY block & neutralize pathogens! From [Paper 1] listed below.)*
@@ -57,13 +57,15 @@ As much as I like this new friend, this sounded like bullshit, like Ivermectin 2
 
 (Note: there's also nasal spray *vaccines*, but this is different! These are *"drug-free"* nasal sprays: they only use ingredients *already* on the FDA's "generally recognized as safe" or "inactive ingredient database" lists. Hence why I'm excited: safe, cheap to produce, and available over-the-counter!)
 
-Here's a few papers I found on using nasal sprays as a prophylactic (tool to prevent disease) against Covid-19 & other respiratory pathogens. Not a comprehensive list, just what I've read so far:
+Here's 7 papers I found on using nasal sprays as a prophylactic (tool to prevent disease) against Covid-19 & other respiratory diseases like influenza, RSV, E.coli, etc:
 
 1. [A preprint paper by 24 authors](https://www.biorxiv.org/content/biorxiv/early/2023/10/03/2023.10.02.560602.full.pdf), mostly Bostonites from Harvard Medical School, Brigham and Women’s Hospital, and Boston University. (The most "fancy credentials" paper on this list, if that's something you weigh heavily.)
     * **Treatment:** Multi-ingredient mix, listed on Page 5 Line 26 under Results.
-    * **Result:** In mice exposed to a modified H1N1, cuts the death rate from 100% to *0%*. Reduces virus count by >99.99%.
+    * **Result:** In mice exposed to a modified H1N1, cuts the death rate from 100% to *0%*. The spray reduces the virus count for Influenza & SARS-CoV-2 (the virus that causes Covid) by >99.99%, and does pretty good on RSV & E.coli.
 
 ![Figure showing above results.](../content/media/aug-2024/mice.png)
+    
+![Figure showing above results.](../content/media/aug-2024/viral_counts.png)
     
 2. [Randomized double-blind human trial](https://www.sciencedirect.com/science/article/pii/S1386653222001809#sec0002). 556 participants (275 treatment, 281 placebo), all healthcare workers in India.
     * **Treatment:** Multi-ingredient mix, listed in Section 2.1.
@@ -71,7 +73,7 @@ Here's a few papers I found on using nasal sprays as a prophylactic (tool to pre
 
 3. [Pre-registered randomized double-blind human trial](https://www.tandfonline.com/doi/pdf/10.2147/IJGM.S328486). 394 participants (196 treatment, 198 placebo), all healthcare workers in Argentina.
     * **Treatment:** Main ingredient: Iota-Carrageena.
-    * **Result:** Cut Covid infection rate down to a *fifth*. (from 5% to 1%.) No significant difference in adverse effects.
+    * **Result:** Cut Covid infection rate down to a *fifth*. (from 5% to 1%. note: low percentages mean higher uncertainty.) No significant difference in adverse effects, between placebo/treatment groups.
 
 ![Figure showing above results.](../content/media/aug-2024/human.png)
     
@@ -81,18 +83,20 @@ Here's a few papers I found on using nasal sprays as a prophylactic (tool to pre
 
 ![Figure showing above results.](../content/media/aug-2024/hampster.jpg)
     
-5. [A meta-analysis on nasal sprays & mouthwash vs Covid](https://www.mdpi.com/1660-4601/19/19/12148). In sum: yeah seems to work so far. (Though human trials with larger sample sizes are needed.)
-6. [A short & sweet literature review (and op-ed) on nasal sprays vs Covid.](https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1010079)
+5. [Pre-registered meta-analysis on nasal sprays & mouthwash vs Covid](https://www.mdpi.com/1660-4601/19/19/12148). In sum: yeah seems to work so far. (Though human trials with larger sample sizes are needed.)
+6. [Meta-analysis of randomized trials for xylitol nasal sprays](https://www.theajo.com/article/view/4479/html). In sum: yeah it works, but also *oh my god* top kudos to whichever scientist coined the "Sinonasal Outcome Test (SNOT)".
+7. [Short & sweet literature review (and op-ed) on nasal sprays vs Covid.](https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1010079)
 
 [^hampster]: [Hampster](https://en.wikipedia.org/wiki/Hampster_Dance).
 
 Before you & I get too excited, some caveats:
 
 * *The above papers are all testing different ingredients.* So maybe some ingredients work *really* well, some don't.
-* Paper [5], the only meta-analysis I could find on *non*-vaccine nasal sprays, doesn't check for [publication bias](https://en.wikipedia.org/wiki/Publication_bias).
+* While meta-analyses [5, 6] *do* check for some sources of bias, there aren't enough papers to reliably check for [publication bias](https://en.wikipedia.org/wiki/Publication_bias).
 * General reminder that straight-up fraud in science is more common than you'd hope.[^fraud-examples]
 * Many of these papers have authors with ties to private pharma companies, so there may be financial pressure to skew the results.
 * [The FDA has issued a warning](https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/salvacion-usa-inc-672252-02132024) against the company that makes my friend's nasal spray (Covixyl). But eh, fuck 'em, [FDA kept stalling on cheap Covid self-tests already approved in Europe](https://www.nbcnews.com/health/health-news/rapid-tests-covid-rsv-flu-are-available-europe-stopping-us-rcna64470).
+* I don't know how easily pathogens can evolve around these treatments, like how pathogens already evolve around vaccines & antibiotics.
 * **There are... shockingly very few papers studying drug-free nasal sprays vs Covid or other respiratory diseases.** This seems like a super important thing to invest more research into, even if just to find out if it really works.
     * (And in general, we really *really* need to "solve airborne pandemics" before something escapes from a CRISPR & bioAI-enhanced bioweapons lab. [Germicidal UV](https://en.wikipedia.org/wiki/Ultraviolet_germicidal_irradiation), [far UV-C](https://en.wikipedia.org/wiki/Far-UVC), and [air ventilation/filters/quality](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8146370/) all also seem like relatively-neglected-yet-promising research areas.)
 
@@ -160,11 +164,7 @@ Stay tuned for that article!
 
 ## 🙂 Toki Pona: a small language for fun & good
 
-In 2001, linguist Sonja Lang struggled with depression. But she remembered the most (in)famous hypothesis in linguistics: [The Sapir-Whorf Hypothesis](https://en.wikipedia.org/wiki/Linguistic_relativity), the idea that the language you think in can *greatly* change how you think.
-
-(Bonus, click to expand → [: My thoughts on the Sapir-Whorf Hypothesis](#SapirWhorf))
-
-Sonja thought: My depression is partly caused by over-convoluted negative self-talk. So what if I *designed* a language optimized for simplicity & fun?
+In 2001, linguist Sonja Lang struggled with depression. Then she thought: My depression is partly caused by over-convoluted negative self-talk. So what if I *designed* a language optimized for simplicity & fun?
 
 Hence, **toki pona** was born.
 
@@ -172,8 +172,8 @@ Toki Pona has:
 
 * Only 137 "core" words. (with some extras made by the community)
 * Simple, consistent spelling & pronunciation. (unlike English)
-* A cute bonus picture-language! (called "sitelen sitelen")
 * A relatively simple grammar. (well, compared to English.)
+* Bonus: a cute picture-language! (I'll show an example later)
 
 Analogy: just like how the "mere" 118 elements of the periodic table, combined as molecules, can make almost all the things you see... the "mere" 137 core words of Toki Pona, combined as sentences, can express almost anything you want.
 
@@ -181,7 +181,7 @@ For example, here's how to say "GO TO HORNY JAIL" in toki pona:
 
 **o, tawa tomo awen pi wile unpa!**
 
-In the cute picture-language:
+And re-written in the cute picture-language: ("sitelen pona")
 
 ![](../content/media/aug-2024/toki.jpg)
 *(from [this t-shirt design](https://www.teepublic.com/t-shirt/23829497-tomo-awen-pi-wile-unpa))*
@@ -202,7 +202,7 @@ Or, "command: go to stay-building of wanting-sex!"
 
 Anyway:
 
-**The hope is that, by thinking in simple happy words, you can become a simple happy person.**
+**The hope is that, by thinking in minimalist happy words, you can become a minimalist happy person.**
 
 So, how's that experiment going so far?
 
@@ -227,6 +227,10 @@ For more of a taste, here's famous songs translated to toki pona:
 * 🍎 "Bad Apple" -> [Kili ike](https://www.youtube.com/watch?v=kzwoc_JLbJE) (Bad fruit)
 
 I'm tempted to translate *The Black Parade* to this tiny happy language. (*Musi Tawa Pimeja*)
+
+(**edit Sep 2, 2024:** Thank you to Capn Wing Ding for friendly corrections on this section! Specifically, my original post repeated the myth that Sonja Lang was inspired by the [Sapir-Whorf Hypothesis](https://en.wikipedia.org/wiki/Linguistic_relativity), a misconception she's disavowed.[^swh] If you're curious, here's [:my personal thoughts on the Sapir-Whorf Hypothesis](#SapirWhorf) [←click to expand].)
+
+[^swh]: See [citation 3 of this Wiki page](https://sona.pona.la/wiki/Sapir%E2%80%93Whorf_hypothesis).
 
 ---
 
@@ -314,7 +318,9 @@ or:
 
 ### : What do I think about the Sapir-Whorf hypothesis?
 
-It seems to me that both the ideas that language *0%* or *100%* shapes how you think, are wrong:
+[The Sapir-Whorf Hypothesis](https://en.wikipedia.org/wiki/Linguistic_relativity) is the (in)famous idea that the language you think in can *greatly* change how you think.
+
+It seems to me — and as far as I'm aware this is the current mainstream position in linguistics — that both the ideas that language *0%* or *100%* shapes how you think, are wrong:
 
 * The fact that we *can* invent new words, proves that our language doesn't *100%* constrain what we can think...
 * But the fact we *feel the need* to invent new words, proves that our language doesn't have *0%* influence on how we think.
@@ -336,7 +342,7 @@ I'm not sure why using a different natural language *doesn't* affect my thoughts
 
 In sum:
 
-* I think your "medium of thought" shapes your thoughts a decent amount. 25", if I have to give a fake number. 
+* I think your "medium of thought" shapes your thoughts a decent amount. 25%, if I have to give a fake number. 
 * I don't think natural languages (English vs Mandarin vs Arabic) influence your thoughts/feelings much. Not sure yet about constructed languages like Toki Pona.
 * I *do* think one should try to think as simply & specifically as possible, to avoid fooling oneself.
 * I love lists!
