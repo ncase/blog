@@ -75,7 +75,7 @@ Let's consider a spectrum of tools, from "most artists approve of this" to "most
 ![Spectrum from "Most artists approve to most artists disapprove"](../content/media/sep-2024/xoxo/NickyCase0015.png)
 
 In writing: everyone's fine with *automated* spellchecking, formatting, copy-paste, word count, etc.
- 
+
 In animation: most folks are fine with *automated* tweening, blending modes, 3d rendering, simulated physics, etc.
 
 In some cases, the automation *is* the art! Consider [Darius Kazemi](https://en.wikipedia.org/wiki/Darius_Kazemi)'s weird bots, [Kate Compton](http://www.galaxykate.com/)'s procedural art, or Neal Agarwal's game [Infinite Craft](https://en.wikipedia.org/wiki/Infinite_Craft), which uses a language AI to generate infinite-ish possibilites.
@@ -102,7 +102,7 @@ In the field of "human-computer interaction", there's a famous idea:[^quote]
 
 ![Quote: "A computer should be a bicycle for the mind."](../content/media/sep-2024/xoxo/NickyCase0018.png)
 
-> 
+>
 
 What does that mean? Well, like all vehicles, a bicycle gets you from point A to B. But *unlike* most vehicles, a bicycle is 1) *powered* by a human, and 2) *makes the human stronger.*
 
@@ -261,4 +261,4 @@ Thank you! `</END_TALK>`
 
 <iframe src="https://ncase.me/ncase-credits/signup.html" frameborder="no" width=640 height=200></iframe>
 
-<iframe src="https://ncase.me/ncase-credits/supporters/feb2024.html" frameborder="no" width=640 height=640></iframe>
+<iframe src="https://ncase.me/ncase-credits/supporters/sep2024.html" frameborder="no" width=640 height=640></iframe>
