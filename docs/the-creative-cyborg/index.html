@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>The Creative Cyborg (my XOXO 2024 mini-talk)</title>
+
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=460">
+
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="The Creative Cyborg (my XOXO 2024 mini-talk)">
+	<meta itemprop="description" content="On how we may re-design AI to enhance artists, not replace them">
+	<meta itemprop="image" content="https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0033.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="The Creative Cyborg (my XOXO 2024 mini-talk)">
+	<meta name="twitter:description" content="On how we may re-design AI to enhance artists, not replace them">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0033.png">
+	<meta property="og:title" content="The Creative Cyborg (my XOXO 2024 mini-talk)">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0033.png">
+	<meta property="og:description" content="On how we may re-design AI to enhance artists, not replace them">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Sun Sep 01 2024 17:00:00 GMT-0700 (Pacific Daylight Saving Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+    <script src="/scripts/tex-mml-chtml.js"></script>
+    <!--script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script-->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+                
+            
+            <img
+                 class="blur" 
+                id="splash_image_banner" src="/content/media/sep-2024/xoxo/NickyCase0033.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			The Creative Cyborg (my XOXO 2024 mini-talk)
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a target='_self' href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p>I gave a mini-talk <a href="http://web.archive.org/web/20240825055310/https://xoxofest.com/2024/schedule/art-code/">at XOXO 2024</a>, the <em>final</em> XOXO! Alas, these mini-talks weren't recorded, so here's my slides &amp; speech notes. I hope the ideas in this talk/post are helpful for you, and help you think more fruitfully about AI, art, and &quot;AI art&quot;!</p>
+<h2>The Creative Cyborg: or, How do we keep art human in the face of AI?</h2>
+<p><code>&lt;BEGIN_TALK&gt;</code></p>
+<p>(I walk on stage.)</p>
+<p>(inhale)</p>
+<p>(screaming into microphone:)</p>
+<p><em>A...</em></p>
+<p><em>I!!!</em></p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0003.png" alt="Drawing of a big scary Robot Sun"></p>
+<p>Yes, it's yet another obligatory AI talk.  I apologize.</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0004.png" alt="Cat-person looking at Robot Sun"></p>
+<p>Anyway, as you all know way too well, for the last couple years we've all been haunted by this... <em>Majora's Mask entity</em> of more and more powerful AI. Oh God, it's coming down to get us, aaa, what do we do. Sure, it's not <em>the</em> most messed-up thing that's happened in the last 5 years since the previous XOXO... but it's, Top 5, maybe?</p>
+<p>So, there's two levels of problem, regarding AI.</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0005.png" alt="The general problem: How do we keep ourselves human in the face of powerful AI?"></p>
+<p>And, for us internet artists here at XOXO,</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0006.png" alt="The specific problem: How do we keep our art human in the face of powerful AI?"></p>
+<p>Yes we're all sick of these discussions, but we <em>do</em> still need to figure it out. But it's painful to stare directly at the sun... so, like that cool eclipse that happened a few months ago, we're going to need some <em>special lenses.</em></p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0008.png" alt="Cat-person looking at Robot Sun, with special eclipse glasses"></p>
+<p>Here's <em>three</em> lenses that helped <em>me</em> think more fruitfully about AI, that I hope may help you too:</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0009.png" alt="1) AI is &quot;just&quot; automation, for better and worse. 2) Bicycle for the mind: Amplify what's human, Automate the rest. 3) Become a cyborg: Machines should enhance us, not replace us."></p>
+<p>These lenses apply to AI in general, but since I only have 15 minutes and this is XOXO, let's focus on the sub-problem of AI &amp; Art.</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0010.png" alt="Venn diagram showing the teeny-tiny part of the AI Debates this talk is about."></p>
+<p>More specifically, the <em>art</em> part of art, putting aside the other important issues of copyright, economics, technical problems, etc.</p>
+<p>So, let's think step by step:</p>
+<h2>Lens One:</h2>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0011.png" alt="AI is &quot;just&quot; automation"></p>
+<p><em>(silence as I wait for folks to read this next slide:)</em></p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0012.png" alt="&quot;Is This An X?&quot; Meme format. Butterfly: literally any piece of software. Person: Is this AI?"></p>
+<p>The first step to thinking clearly, is to ditch hype words that don't mean anything. &quot;AI&quot; doesn't mean anything. So, let's just use a plain, boring word, like &quot;automation&quot;.</p>
+<p>On one hand, yay it feels good to pop the tech industry's hype bubble. On the other hand, this re-frame made me realize: <em>we artists already use lots of automation.</em></p>
+<p>Let's consider a spectrum of tools, from &quot;most artists approve of this&quot; to &quot;most artists disapprove&quot;.</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0015.png" alt="Spectrum from &quot;Most artists approve to most artists disapprove&quot;"></p>
+<p>In writing: everyone's fine with <em>automated</em> spellchecking, formatting, copy-paste, word count, etc.</p>
+<p>In animation: most folks are fine with <em>automated</em> tweening, blending modes, 3d rendering, simulated physics, etc.</p>
+<p>In some cases, the automation <em>is</em> the art! Consider <a href="https://en.wikipedia.org/wiki/Darius_Kazemi">Darius Kazemi</a>'s weird bots, <a href="http://www.galaxykate.com/">Kate Compton</a>'s procedural art, or Neal Agarwal's game <a href="https://en.wikipedia.org/wiki/Infinite_Craft">Infinite Craft</a>, which uses a language AI to generate infinite-ish possibilites.</p>
+<p>So most artists support <em>some</em> automation. But on the other hand, most of us — including myself — don't want an AI to write a <em>whole</em> story, or animate a <em>whole</em> film.</p>
+<p>So between those extremes, where do we draw the line?</p>
+<p>It'd be a <em>massive</em> coincidence if I just <em>happened</em> to be born at the time when all automation <em>I</em> grew up with is fine, but any automation <em>after</em> that isn't. If <em>that</em> was my line, a pro-AI-Art person could, <em>correctly</em>, accuse me of being... this:</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0016.png" alt="&quot;Old Artists Yells At AI&quot;, drawn in the style of the &quot;Old Man Yells At Cloud&quot; Simpsons meme"></p>
+<p>So <em>am</em> I being &quot;Old Artist Shakes Fist At New Tech&quot;?  <em>Are</em> my instincts any different from folks who said electronic music isn't real music, or folks who said videogames can't be art?</p>
+<p>So: is there a more <em>principled</em> way to draw the line, between what kind of automation helps or hurts the artistic spirit?  I think so!  Which brings me to my second lens...</p>
+<h2>Lens Two:</h2>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0017.png" alt="Bicycle for the mind: Amplify what's human, Automate the rest."></p>
+<p>In the field of &quot;human-computer interaction&quot;, there's a famous idea:<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0018.png" alt="Quote: &quot;A computer should be a bicycle for the mind.&quot;"></p>
+<blockquote></blockquote>
+<p>What does that mean? Well, like all vehicles, a bicycle gets you from point A to B. But <em>unlike</em> most vehicles, a bicycle is 1) <em>powered</em> by a human, and 2) <em>makes the human stronger.</em></p>
+<p>Minds are like muscles: <em>use it or lose it</em>. If our tools don't <em>use</em> our human strengths, <em>we lose it</em>.</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0019.png" alt=""></p>
+<p><em>That's</em> the line I draw for automation in art:</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0020.png" alt="Does this tool atrophy or amplify, my human strengths?"></p>
+<p>Or, another quote-worthy way of putting it:</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0021.png" alt="A great tool makes you better even when you're not using the tool."></p>
+<p>So. Let's apply this!</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0023.png" alt="2x2 grid diagram summing up the below text"></p>
+<p>Consider word processors, like Microsoft Word or Google Docs. Yes, using word processors will cause atrophy to my speling &amp; penmanship. But I'm not trying to win a spelling bee, I'm trying to write a moving story. The <em>less</em> I can worry about spelling, the <em>more</em> I can focus on using the mind-muscles that matter most to <em>me</em>: reason, imagination, empathy.</p>
+<p>In contrast, asking ChatGPT to write a whole story for me, does <em>not</em> engage those mind-muscles. It only engages my... &quot;asking&quot; skills? Sorry, &quot;prompt engineering&quot;. <code>[uproarious audience laughter]</code> <code>[really i swear]</code></p>
+<p>Point is: <em>this is NOT neutral on my mental muscles</em>: if I don't use it, I <em>will</em> lose it. I'll <em>lose</em> my reason &amp; imagination &amp; empathy.</p>
+<p>But: preaching, choir. Y'all here probably already agree. So let's try a question that's harder for <em>this</em> crowd:</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0024.png" alt="Is there some way to use modern AI, that amplifies our creative human spirit, not replaces it?"></p>
+<p>That is: if big tech is headed towards &quot;Replace us&quot;, and the opposite reactionary urge is &quot;Keep us exactly the same&quot;, what does the <em>perpendicular</em> direction, &quot;Enhance us&quot;, look like?</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0026.png" alt="Showing the above two opposite directions, and its perpendicular direction."></p>
+<p>So: let's think of some concrete ways AI can <em>enhance</em> my creativity, not replace it!</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0028.png" alt="Image summarizing below text."></p>
+<p>Now, I do writing. Personally, <em>I</em> will not use ChatGPT (or similar) to write <em>any</em> of my final pieces' words, or even the drafts. But! I've fruitfully used AI to:</p>
+<ol>
+<li>Do research — yes, AIs &quot;hallucinate&quot;, but so does Wikipedia.</li>
+<li>Critique my first drafts, to catch the major flaws, before I bother human friends with it.</li>
+<li>Be a brainstorming partner, but I <em>reverse</em> the usual role of the AI: the chatbot asks <em>me</em> questions, which will sharpen my thinking <em>even when I'm not using the bot.</em> It <em>strengthens</em> me. This tool makes me better <em>even when I'm not using the tool.</em></li>
+</ol>
+<p>I also do animation! Personally, <em>I</em> want the character designs and the animation to still be <em>me</em>. But! Here's some tedious stuff I'd <em>like</em> AI to automate away:</p>
+<ol>
+<li>Coloring the exact same flat colors for a moving character, 24 times per second.</li>
+<li>Breaking down a whole voice track into exact phonemes (mouth-shapes) a character should make.</li>
+<li>Checking for continuity errors, or if my drawings are off-model.</li>
+</ol>
+<p>Those are all tedious tasks with no creativity, so I'm fine automating all that.</p>
+<p>Some of these ideas are already plugins, some of these are beyond the capabilities of current AI. But, whether or not <em>these</em> specific ideas will work, my general principle stands:</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0029.png" alt="Amplify what's human. Automate the rest."></p>
+<p>(Claps hands) And there we go, problem 100% solved! Not. I <em>wish</em> this was a clear, unambiguous rule, but it's of course it's not. So for the sake of honesty, here's some things I'm undecided about, if they &quot;cross the line&quot; for me:</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0030.png" alt="Image summarizing below text"></p>
+<ul>
+<li><strong>Smart brushes.</strong> Draw a rough outline, AI fills it in with your art style. Is this tacky, or just an upgrade from Photoshop brushes?</li>
+<li><strong>AI animating in-between frames.</strong> How much creative expression is lost from this? But is it any different from good ol' tweening?</li>
+<li><strong>Style Transfers.</strong> (or automatic rotoscoping) A year ago, Corridor Digital made a parody anime, which used AI to convert their live-action video to anime style. <a href="https://screenrant.com/ai-anime-corridor-crew-disney-animators-react-video/">This was controversial</a> &amp; I was weirded out by it, but I can't think of why this would be &quot;cheating&quot;, but motion capture (The Last of Us) or digital puppetry (Dog of Wisdom) isn't.</li>
+</ul>
+<p>I dunno. I look forward to y'all's very <em>animated</em> discussion about where <em>you</em> personally draw the line.</p>
+<p>But still, as a first-draft rule, &quot;Amplify what's human, Automate the rest&quot;, ain't bad.</p>
+<p>Which leads me to my final lens...</p>
+<h2>Lens Three:</h2>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0032.png" alt="Becoming a cyborg: Machines should enhance us, not replace us"></p>
+<p><em>A cyborg?</em> I hear you cry. <em>But then we won't even be human!</em></p>
+<p>Do you feel that way about folks with pacemakers? Their hearts are literally half-machine. And so what? Heart's just a pump made of meat. And what about glasses, prosthetic limbs, hearing aids, implants, birth control, hormones, joint replacements, piercings, and so on?</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0033.png" alt="Drawing of the many tools we use to enhance our bodies"></p>
+<p>My friends:</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0034.png" alt="Same image with superimposed text: We're all already cyborgs."></p>
+<p><em>We're all already cyborgs.</em></p>
+<p>We've <em>always</em> extended ourselves with our tools.</p>
+<p>And that's just our <em>bodies</em>!  Everyone's <em>minds</em> here are already augmented with this one technology: writing. (And writing <em>is</em> a technology, lest you forget. It's still tech even if it was invented before you were born.) Writing affects our minds so much, neuroscientists can even detect how it changes <em>our brain's anatomy</em>.<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></p>
+<p>So: is becoming a cyborg an affront to human nature? No:</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0035.png" alt="Enhancing our human nature is human nature."></p>
+<p>(pause)</p>
+<p>...(and also crow nature, and elephant nature, and octopus nature, and dozens of other animals which use tools.)</p>
+<p>(Also, to be clear, I'm using &quot;cyborg&quot; as a metaphor for enhancing yourself. You don't <em>actually</em> need to stick wires in your head. I mean, I ain't gonna cyborg-shame. What you do in the privacy of your skull is between you &amp; your neurosurgeon.)</p>
+<p>Anyway, point is:</p>
+<p>We humans have severe flaws, so we can't stay the same. But we've got parts we value, so I don't endorse full replacement either. So, we need to go <em>perpendicular</em>, and seriously think about how to enhance ourselves, the bicycle for the mind, the creative cyborg.</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0037.png" alt="Picture of muscular brain on robot bicycle, made entirely of Apple Emoji."></p>
+<p>Back to our specific, and general problems:</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0038.png" alt="The specific problem: How do we keep our art human in the face of powerful AI?"></p>
+<p>I dunno! But I'll guess it'll look like games that <em>subtly</em> use AI like <em>Infinite Craft</em>, or chatbots for brainstorming &amp; research, or AI that can paint flat colors frame-by-frame for my animations because that is <em>so</em> tedious and annoying.</p>
+<p><em>Amplify what's human, automate the rest.</em></p>
+<p>That principle may even extend to...</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0039.png" alt="The general problem: How do we keep ourselves human in the face of powerful AI?"></p>
+<p>One idea for keeping human values at the centre of AI system, is to just... <em>literally put humans</em> in the centre of AI systems. <em>Keep the human at the center of our tools.</em></p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0040.png" alt="Screenshot of the original Alien, where Ripley's in the Power Loader robot suit"></p>
+<p>Don't give AI its <em>own</em> agency; instead, give us a large suite of tools that enhance <em>our</em> agency... like we always have, with writing, calculators, bicycles, and more.</p>
+<p>(Clap hands) Tada, aligning AI to human values... solved!</p>
+<p>Well, not really. A subtle problem with this idea, of &quot;keeping the human in the center of our tools&quot;, is this: Our tools can <em>modify</em> our values.</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0041.png" alt="Diagram: our tools shape our values."></p>
+<p>By analogy, consider writing. Anthropologists mostly agree: cultures with writing aren't just &quot;cultures plus writing&quot;. Written Cultures grow to have <em>different</em> values from Oral Cultures, for better and worse.</p>
+<p>Likewise, cultures with AI won't just be &quot;cultures plus AI&quot;. These tools <em>can</em> modify our values, again, for better and worse.</p>
+<p>But: one hopeful difference. Unlike the inventors of writing, who were just trying to collect taxes &amp; record crops, <em>we</em> are aware that our technology can change our values. But also, that our values can change our technology.</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0044.png" alt="Diagram: our tools shape our values, and our values shape our tools."></p>
+<p>So, let's keep these three things in mind, and yes this is the recap summary slide:</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0045.png" alt="1. AI is &quot;just&quot; automation, for better and worse. 2. Bicycle for the mind: Amplify what's human, Automate the rest. 3. Become a cyborg: Machines should enhance us, not replace us. "></p>
+<p>As long as we look directly at this scary dangerous problem, but with helpful lenses, we can figure this out!</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0046.png" alt="Reprise of cat looking at Robot Sun with special eclipse glasses"></p>
+<p>And just maybe, we'll figure out how to steal that power, subvert it and healthily use it, without burning ourselves first.</p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0047.png" alt="Cat-person capturing &amp; shrinking the Robot Sun, for safe solar power use."></p>
+<p>Thank you! <code>&lt;/END_TALK&gt;</code></p>
+<p><img src="../content/media/sep-2024/xoxo/NickyCase0048.png" alt="&quot;This content is certified 100% human generated!&quot;"></p>
+<iframe src="https://ncase.me/ncase-credits/signup.html" frameborder="no" width=640 height=200></iframe>
+<iframe src="https://ncase.me/ncase-credits/supporters/feb2024.html" frameborder="no" width=640 height=640></iframe><hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Paraphrase of a recurring motto Steve Jobs used to say. <a href="http://web.archive.org/web/20240902210345/https://miro.medium.com/v2/resize:fit:1400/format:webp/0%2ASgDLtymZpgcXEA7A">Scan of his 1980 Wall Street Journal ad</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>Kolinsky et al 2014, <a href="https://www.jle.com/en/revues/nrp/e-docs/linfluence_de_lapprentissage_du_langage_ecrit_sur_les_aires_du_langage_302592/article.phtml">“The impact of literacy on the language brain areas”</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

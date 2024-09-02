@@ -5,7 +5,7 @@ tags:
 share_image: https://blog.ncase.me/content/media/sb/thumb.png
 share_desc: "Nasal sprays, constructed languages, and sassy sci-fi satires"
 date: 2024-09-01
-readtime: "8 min"
+readtime: "13 min"
 layout: base-layout.njk
 hasMath: true
 ---
@@ -175,7 +175,7 @@ Toki Pona has:
 * A relatively simple grammar. (well, compared to English.)
 * Bonus: a cute picture-language! (I'll show an example later)
 
-Analogy: just like how the "mere" 118 elements of the periodic table, combined as molecules, can make almost all the things you see... the "mere" 137 core words of Toki Pona, combined as sentences, can express almost anything you want.
+Analogy: just like how the "mere" 118 elements of the periodic table, combined as molecules, can make almost all the things you see... the "mere" 137 core words of Toki Pona, combined as sentences, can express almost anything you want. (That's the hope, anyway.)
 
 For example, here's how to say "GO TO HORNY JAIL" in toki pona:
 
@@ -343,8 +343,8 @@ I'm not sure why using a different natural language *doesn't* affect my thoughts
 In sum:
 
 * I think your "medium of thought" shapes your thoughts a decent amount. 25%, if I have to give a fake number. 
-* I don't think natural languages (English vs Mandarin vs Arabic) influence your thoughts/feelings much. Not sure yet about constructed languages like Toki Pona.
-* I *do* think one should try to think as simply & specifically as possible, to avoid fooling oneself.
+* I don't think natural languages (English, Mandarin, Arabic, etc) influence your thoughts/feelings much. Domain-specific languages like math & programming definitely do. Unsure about constructed languages for everyday use, like Esperanto or Toki Pona.
+* Either way, I think one should aim to think as simply & specifically as possible, to avoid fooling oneself.
 * I love lists!
 
 

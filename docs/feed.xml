@@ -6,13 +6,166 @@
     <subtitle>I make occasional pictures &amp; words</subtitle>
     <link href="https://blog.ncase.me/feed.xml" rel="self"/>
     <link href="https://blog.ncase.me/"/>
-    <updated>2024-09-01T00:00:00Z</updated>
+    <updated>2024-09-02T00:00:00Z</updated>
     <id>https://blog.ncase.me/</id>
     <author>
         <name>Nicky Case</name>
     </author>
 
     
+    
+
+        
+        
+        <entry>
+            <title>The Creative Cyborg (my XOXO 2024 mini-talk)</title>
+            <link href="https://blog.ncase.me/the-creative-cyborg/"/>
+            <updated>2024-09-02T00:00:00Z</updated>
+            <id>https://blog.ncase.me/the-creative-cyborg/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;I gave a mini-talk &lt;a href=&quot;http://web.archive.org/web/20240825055310/https://xoxofest.com/2024/schedule/art-code/&quot;&gt;at XOXO 2024&lt;/a&gt;, the &lt;em&gt;final&lt;/em&gt; XOXO! Alas, these mini-talks weren&#39;t recorded, so here&#39;s my slides &amp;amp; speech notes. I hope the ideas in this talk/post are helpful for you, and help you think more fruitfully about AI, art, and &amp;quot;AI art&amp;quot;!&lt;/p&gt;
+&lt;h2&gt;The Creative Cyborg: or, How do we keep art human in the face of AI?&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;BEGIN_TALK&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;(I walk on stage.)&lt;/p&gt;
+&lt;p&gt;(inhale)&lt;/p&gt;
+&lt;p&gt;(screaming into microphone:)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;A...&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I!!!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0003.png&quot; alt=&quot;Drawing of a big scary Robot Sun&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Yes, it&#39;s yet another obligatory AI talk.  I apologize.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0004.png&quot; alt=&quot;Cat-person looking at Robot Sun&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Anyway, as you all know way too well, for the last couple years we&#39;ve all been haunted by this... &lt;em&gt;Majora&#39;s Mask entity&lt;/em&gt; of more and more powerful AI. Oh God, it&#39;s coming down to get us, aaa, what do we do. Sure, it&#39;s not &lt;em&gt;the&lt;/em&gt; most messed-up thing that&#39;s happened in the last 5 years since the previous XOXO... but it&#39;s, Top 5, maybe?&lt;/p&gt;
+&lt;p&gt;So, there&#39;s two levels of problem, regarding AI.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0005.png&quot; alt=&quot;The general problem: How do we keep ourselves human in the face of powerful AI?&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;And, for us internet artists here at XOXO,&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0006.png&quot; alt=&quot;The specific problem: How do we keep our art human in the face of powerful AI?&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Yes we&#39;re all sick of these discussions, but we &lt;em&gt;do&lt;/em&gt; still need to figure it out. But it&#39;s painful to stare directly at the sun... so, like that cool eclipse that happened a few months ago, we&#39;re going to need some &lt;em&gt;special lenses.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0008.png&quot; alt=&quot;Cat-person looking at Robot Sun, with special eclipse glasses&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Here&#39;s &lt;em&gt;three&lt;/em&gt; lenses that helped &lt;em&gt;me&lt;/em&gt; think more fruitfully about AI, that I hope may help you too:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0009.png&quot; alt=&quot;1) AI is &amp;quot;just&amp;quot; automation, for better and worse. 2) Bicycle for the mind: Amplify what&#39;s human, Automate the rest. 3) Become a cyborg: Machines should enhance us, not replace us.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;These lenses apply to AI in general, but since I only have 15 minutes and this is XOXO, let&#39;s focus on the sub-problem of AI &amp;amp; Art.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0010.png&quot; alt=&quot;Venn diagram showing the teeny-tiny part of the AI Debates this talk is about.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;More specifically, the &lt;em&gt;art&lt;/em&gt; part of art, putting aside the other important issues of copyright, economics, technical problems, etc.&lt;/p&gt;
+&lt;p&gt;So, let&#39;s think step by step:&lt;/p&gt;
+&lt;h2&gt;Lens One:&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0011.png&quot; alt=&quot;AI is &amp;quot;just&amp;quot; automation&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(silence as I wait for folks to read this next slide:)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0012.png&quot; alt=&quot;&amp;quot;Is This An X?&amp;quot; Meme format. Butterfly: literally any piece of software. Person: Is this AI?&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The first step to thinking clearly, is to ditch hype words that don&#39;t mean anything. &amp;quot;AI&amp;quot; doesn&#39;t mean anything. So, let&#39;s just use a plain, boring word, like &amp;quot;automation&amp;quot;.&lt;/p&gt;
+&lt;p&gt;On one hand, yay it feels good to pop the tech industry&#39;s hype bubble. On the other hand, this re-frame made me realize: &lt;em&gt;we artists already use lots of automation.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Let&#39;s consider a spectrum of tools, from &amp;quot;most artists approve of this&amp;quot; to &amp;quot;most artists disapprove&amp;quot;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0015.png&quot; alt=&quot;Spectrum from &amp;quot;Most artists approve to most artists disapprove&amp;quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;In writing: everyone&#39;s fine with &lt;em&gt;automated&lt;/em&gt; spellchecking, formatting, copy-paste, word count, etc.&lt;/p&gt;
+&lt;p&gt;In animation: most folks are fine with &lt;em&gt;automated&lt;/em&gt; tweening, blending modes, 3d rendering, simulated physics, etc.&lt;/p&gt;
+&lt;p&gt;In some cases, the automation &lt;em&gt;is&lt;/em&gt; the art! Consider &lt;a href=&quot;https://en.wikipedia.org/wiki/Darius_Kazemi&quot;&gt;Darius Kazemi&lt;/a&gt;&#39;s weird bots, &lt;a href=&quot;http://www.galaxykate.com/&quot;&gt;Kate Compton&lt;/a&gt;&#39;s procedural art, or Neal Agarwal&#39;s game &lt;a href=&quot;https://en.wikipedia.org/wiki/Infinite_Craft&quot;&gt;Infinite Craft&lt;/a&gt;, which uses a language AI to generate infinite-ish possibilites.&lt;/p&gt;
+&lt;p&gt;So most artists support &lt;em&gt;some&lt;/em&gt; automation. But on the other hand, most of us — including myself — don&#39;t want an AI to write a &lt;em&gt;whole&lt;/em&gt; story, or animate a &lt;em&gt;whole&lt;/em&gt; film.&lt;/p&gt;
+&lt;p&gt;So between those extremes, where do we draw the line?&lt;/p&gt;
+&lt;p&gt;It&#39;d be a &lt;em&gt;massive&lt;/em&gt; coincidence if I just &lt;em&gt;happened&lt;/em&gt; to be born at the time when all automation &lt;em&gt;I&lt;/em&gt; grew up with is fine, but any automation &lt;em&gt;after&lt;/em&gt; that isn&#39;t. If &lt;em&gt;that&lt;/em&gt; was my line, a pro-AI-Art person could, &lt;em&gt;correctly&lt;/em&gt;, accuse me of being... this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0016.png&quot; alt=&quot;&amp;quot;Old Artists Yells At AI&amp;quot;, drawn in the style of the &amp;quot;Old Man Yells At Cloud&amp;quot; Simpsons meme&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;So &lt;em&gt;am&lt;/em&gt; I being &amp;quot;Old Artist Shakes Fist At New Tech&amp;quot;?  &lt;em&gt;Are&lt;/em&gt; my instincts any different from folks who said electronic music isn&#39;t real music, or folks who said videogames can&#39;t be art?&lt;/p&gt;
+&lt;p&gt;So: is there a more &lt;em&gt;principled&lt;/em&gt; way to draw the line, between what kind of automation helps or hurts the artistic spirit?  I think so!  Which brings me to my second lens...&lt;/p&gt;
+&lt;h2&gt;Lens Two:&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0017.png&quot; alt=&quot;Bicycle for the mind: Amplify what&#39;s human, Automate the rest.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;In the field of &amp;quot;human-computer interaction&amp;quot;, there&#39;s a famous idea:&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/the-creative-cyborg/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0018.png&quot; alt=&quot;Quote: &amp;quot;A computer should be a bicycle for the mind.&amp;quot;&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;&lt;/blockquote&gt;
+&lt;p&gt;What does that mean? Well, like all vehicles, a bicycle gets you from point A to B. But &lt;em&gt;unlike&lt;/em&gt; most vehicles, a bicycle is 1) &lt;em&gt;powered&lt;/em&gt; by a human, and 2) &lt;em&gt;makes the human stronger.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Minds are like muscles: &lt;em&gt;use it or lose it&lt;/em&gt;. If our tools don&#39;t &lt;em&gt;use&lt;/em&gt; our human strengths, &lt;em&gt;we lose it&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0019.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;That&#39;s&lt;/em&gt; the line I draw for automation in art:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0020.png&quot; alt=&quot;Does this tool atrophy or amplify, my human strengths?&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Or, another quote-worthy way of putting it:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0021.png&quot; alt=&quot;A great tool makes you better even when you&#39;re not using the tool.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;So. Let&#39;s apply this!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0023.png&quot; alt=&quot;2x2 grid diagram summing up the below text&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Consider word processors, like Microsoft Word or Google Docs. Yes, using word processors will cause atrophy to my speling &amp;amp; penmanship. But I&#39;m not trying to win a spelling bee, I&#39;m trying to write a moving story. The &lt;em&gt;less&lt;/em&gt; I can worry about spelling, the &lt;em&gt;more&lt;/em&gt; I can focus on using the mind-muscles that matter most to &lt;em&gt;me&lt;/em&gt;: reason, imagination, empathy.&lt;/p&gt;
+&lt;p&gt;In contrast, asking ChatGPT to write a whole story for me, does &lt;em&gt;not&lt;/em&gt; engage those mind-muscles. It only engages my... &amp;quot;asking&amp;quot; skills? Sorry, &amp;quot;prompt engineering&amp;quot;. &lt;code&gt;[uproarious audience laughter]&lt;/code&gt; &lt;code&gt;[really i swear]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Point is: &lt;em&gt;this is NOT neutral on my mental muscles&lt;/em&gt;: if I don&#39;t use it, I &lt;em&gt;will&lt;/em&gt; lose it. I&#39;ll &lt;em&gt;lose&lt;/em&gt; my reason &amp;amp; imagination &amp;amp; empathy.&lt;/p&gt;
+&lt;p&gt;But: preaching, choir. Y&#39;all here probably already agree. So let&#39;s try a question that&#39;s harder for &lt;em&gt;this&lt;/em&gt; crowd:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0024.png&quot; alt=&quot;Is there some way to use modern AI, that amplifies our creative human spirit, not replaces it?&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;That is: if big tech is headed towards &amp;quot;Replace us&amp;quot;, and the opposite reactionary urge is &amp;quot;Keep us exactly the same&amp;quot;, what does the &lt;em&gt;perpendicular&lt;/em&gt; direction, &amp;quot;Enhance us&amp;quot;, look like?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0026.png&quot; alt=&quot;Showing the above two opposite directions, and its perpendicular direction.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;So: let&#39;s think of some concrete ways AI can &lt;em&gt;enhance&lt;/em&gt; my creativity, not replace it!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0028.png&quot; alt=&quot;Image summarizing below text.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Now, I do writing. Personally, &lt;em&gt;I&lt;/em&gt; will not use ChatGPT (or similar) to write &lt;em&gt;any&lt;/em&gt; of my final pieces&#39; words, or even the drafts. But! I&#39;ve fruitfully used AI to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Do research — yes, AIs &amp;quot;hallucinate&amp;quot;, but so does Wikipedia.&lt;/li&gt;
+&lt;li&gt;Critique my first drafts, to catch the major flaws, before I bother human friends with it.&lt;/li&gt;
+&lt;li&gt;Be a brainstorming partner, but I &lt;em&gt;reverse&lt;/em&gt; the usual role of the AI: the chatbot asks &lt;em&gt;me&lt;/em&gt; questions, which will sharpen my thinking &lt;em&gt;even when I&#39;m not using the bot.&lt;/em&gt; It &lt;em&gt;strengthens&lt;/em&gt; me. This tool makes me better &lt;em&gt;even when I&#39;m not using the tool.&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I also do animation! Personally, &lt;em&gt;I&lt;/em&gt; want the character designs and the animation to still be &lt;em&gt;me&lt;/em&gt;. But! Here&#39;s some tedious stuff I&#39;d &lt;em&gt;like&lt;/em&gt; AI to automate away:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Coloring the exact same flat colors for a moving character, 24 times per second.&lt;/li&gt;
+&lt;li&gt;Breaking down a whole voice track into exact phonemes (mouth-shapes) a character should make.&lt;/li&gt;
+&lt;li&gt;Checking for continuity errors, or if my drawings are off-model.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Those are all tedious tasks with no creativity, so I&#39;m fine automating all that.&lt;/p&gt;
+&lt;p&gt;Some of these ideas are already plugins, some of these are beyond the capabilities of current AI. But, whether or not &lt;em&gt;these&lt;/em&gt; specific ideas will work, my general principle stands:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0029.png&quot; alt=&quot;Amplify what&#39;s human. Automate the rest.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;(Claps hands) And there we go, problem 100% solved! Not. I &lt;em&gt;wish&lt;/em&gt; this was a clear, unambiguous rule, but it&#39;s of course it&#39;s not. So for the sake of honesty, here&#39;s some things I&#39;m undecided about, if they &amp;quot;cross the line&amp;quot; for me:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0030.png&quot; alt=&quot;Image summarizing below text&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Smart brushes.&lt;/strong&gt; Draw a rough outline, AI fills it in with your art style. Is this tacky, or just an upgrade from Photoshop brushes?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI animating in-between frames.&lt;/strong&gt; How much creative expression is lost from this? But is it any different from good ol&#39; tweening?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Style Transfers.&lt;/strong&gt; (or automatic rotoscoping) A year ago, Corridor Digital made a parody anime, which used AI to convert their live-action video to anime style. &lt;a href=&quot;https://screenrant.com/ai-anime-corridor-crew-disney-animators-react-video/&quot;&gt;This was controversial&lt;/a&gt; &amp;amp; I was weirded out by it, but I can&#39;t think of why this would be &amp;quot;cheating&amp;quot;, but motion capture (The Last of Us) or digital puppetry (Dog of Wisdom) isn&#39;t.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I dunno. I look forward to y&#39;all&#39;s very &lt;em&gt;animated&lt;/em&gt; discussion about where &lt;em&gt;you&lt;/em&gt; personally draw the line.&lt;/p&gt;
+&lt;p&gt;But still, as a first-draft rule, &amp;quot;Amplify what&#39;s human, Automate the rest&amp;quot;, ain&#39;t bad.&lt;/p&gt;
+&lt;p&gt;Which leads me to my final lens...&lt;/p&gt;
+&lt;h2&gt;Lens Three:&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0032.png&quot; alt=&quot;Becoming a cyborg: Machines should enhance us, not replace us&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;A cyborg?&lt;/em&gt; I hear you cry. &lt;em&gt;But then we won&#39;t even be human!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Do you feel that way about folks with pacemakers? Their hearts are literally half-machine. And so what? Heart&#39;s just a pump made of meat. And what about glasses, prosthetic limbs, hearing aids, implants, birth control, hormones, joint replacements, piercings, and so on?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0033.png&quot; alt=&quot;Drawing of the many tools we use to enhance our bodies&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;My friends:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0034.png&quot; alt=&quot;Same image with superimposed text: We&#39;re all already cyborgs.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We&#39;re all already cyborgs.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We&#39;ve &lt;em&gt;always&lt;/em&gt; extended ourselves with our tools.&lt;/p&gt;
+&lt;p&gt;And that&#39;s just our &lt;em&gt;bodies&lt;/em&gt;!  Everyone&#39;s &lt;em&gt;minds&lt;/em&gt; here are already augmented with this one technology: writing. (And writing &lt;em&gt;is&lt;/em&gt; a technology, lest you forget. It&#39;s still tech even if it was invented before you were born.) Writing affects our minds so much, neuroscientists can even detect how it changes &lt;em&gt;our brain&#39;s anatomy&lt;/em&gt;.&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/the-creative-cyborg/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;So: is becoming a cyborg an affront to human nature? No:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0035.png&quot; alt=&quot;Enhancing our human nature is human nature.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;(pause)&lt;/p&gt;
+&lt;p&gt;...(and also crow nature, and elephant nature, and octopus nature, and dozens of other animals which use tools.)&lt;/p&gt;
+&lt;p&gt;(Also, to be clear, I&#39;m using &amp;quot;cyborg&amp;quot; as a metaphor for enhancing yourself. You don&#39;t &lt;em&gt;actually&lt;/em&gt; need to stick wires in your head. I mean, I ain&#39;t gonna cyborg-shame. What you do in the privacy of your skull is between you &amp;amp; your neurosurgeon.)&lt;/p&gt;
+&lt;p&gt;Anyway, point is:&lt;/p&gt;
+&lt;p&gt;We humans have severe flaws, so we can&#39;t stay the same. But we&#39;ve got parts we value, so I don&#39;t endorse full replacement either. So, we need to go &lt;em&gt;perpendicular&lt;/em&gt;, and seriously think about how to enhance ourselves, the bicycle for the mind, the creative cyborg.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0037.png&quot; alt=&quot;Picture of muscular brain on robot bicycle, made entirely of Apple Emoji.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Back to our specific, and general problems:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0038.png&quot; alt=&quot;The specific problem: How do we keep our art human in the face of powerful AI?&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I dunno! But I&#39;ll guess it&#39;ll look like games that &lt;em&gt;subtly&lt;/em&gt; use AI like &lt;em&gt;Infinite Craft&lt;/em&gt;, or chatbots for brainstorming &amp;amp; research, or AI that can paint flat colors frame-by-frame for my animations because that is &lt;em&gt;so&lt;/em&gt; tedious and annoying.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Amplify what&#39;s human, automate the rest.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;That principle may even extend to...&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0039.png&quot; alt=&quot;The general problem: How do we keep ourselves human in the face of powerful AI?&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;One idea for keeping human values at the centre of AI system, is to just... &lt;em&gt;literally put humans&lt;/em&gt; in the centre of AI systems. &lt;em&gt;Keep the human at the center of our tools.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0040.png&quot; alt=&quot;Screenshot of the original Alien, where Ripley&#39;s in the Power Loader robot suit&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Don&#39;t give AI its &lt;em&gt;own&lt;/em&gt; agency; instead, give us a large suite of tools that enhance &lt;em&gt;our&lt;/em&gt; agency... like we always have, with writing, calculators, bicycles, and more.&lt;/p&gt;
+&lt;p&gt;(Clap hands) Tada, aligning AI to human values... solved!&lt;/p&gt;
+&lt;p&gt;Well, not really. A subtle problem with this idea, of &amp;quot;keeping the human in the center of our tools&amp;quot;, is this: Our tools can &lt;em&gt;modify&lt;/em&gt; our values.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0041.png&quot; alt=&quot;Diagram: our tools shape our values.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;By analogy, consider writing. Anthropologists mostly agree: cultures with writing aren&#39;t just &amp;quot;cultures plus writing&amp;quot;. Written Cultures grow to have &lt;em&gt;different&lt;/em&gt; values from Oral Cultures, for better and worse.&lt;/p&gt;
+&lt;p&gt;Likewise, cultures with AI won&#39;t just be &amp;quot;cultures plus AI&amp;quot;. These tools &lt;em&gt;can&lt;/em&gt; modify our values, again, for better and worse.&lt;/p&gt;
+&lt;p&gt;But: one hopeful difference. Unlike the inventors of writing, who were just trying to collect taxes &amp;amp; record crops, &lt;em&gt;we&lt;/em&gt; are aware that our technology can change our values. But also, that our values can change our technology.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0044.png&quot; alt=&quot;Diagram: our tools shape our values, and our values shape our tools.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;So, let&#39;s keep these three things in mind, and yes this is the recap summary slide:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0045.png&quot; alt=&quot;1. AI is &amp;quot;just&amp;quot; automation, for better and worse. 2. Bicycle for the mind: Amplify what&#39;s human, Automate the rest. 3. Become a cyborg: Machines should enhance us, not replace us. &quot; /&gt;&lt;/p&gt;
+&lt;p&gt;As long as we look directly at this scary dangerous problem, but with helpful lenses, we can figure this out!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0046.png&quot; alt=&quot;Reprise of cat looking at Robot Sun with special eclipse glasses&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;And just maybe, we&#39;ll figure out how to steal that power, subvert it and healthily use it, without burning ourselves first.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0047.png&quot; alt=&quot;Cat-person capturing &amp;amp; shrinking the Robot Sun, for safe solar power use.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Thank you! &lt;code&gt;&amp;lt;/END_TALK&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sep-2024/xoxo/NickyCase0048.png&quot; alt=&quot;&amp;quot;This content is certified 100% human generated!&amp;quot;&quot; /&gt;&lt;/p&gt;
+&lt;iframe src=&quot;https://ncase.me/ncase-credits/signup.html&quot; frameborder=&quot;no&quot; width=&quot;640&quot; height=&quot;200&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;https://ncase.me/ncase-credits/supporters/feb2024.html&quot; frameborder=&quot;no&quot; width=&quot;640&quot; height=&quot;640&quot;&gt;&lt;/iframe&gt;&lt;hr class=&quot;footnotes-sep&quot; /&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Paraphrase of a recurring motto Steve Jobs used to say. &lt;a href=&quot;http://web.archive.org/web/20240902210345/https://miro.medium.com/v2/resize:fit:1400/format:webp/0%2ASgDLtymZpgcXEA7A&quot;&gt;Scan of his 1980 Wall Street Journal ad&lt;/a&gt; &lt;a href=&quot;https://blog.ncase.me/the-creative-cyborg/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Kolinsky et al 2014, &lt;a href=&quot;https://www.jle.com/en/revues/nrp/e-docs/linfluence_de_lapprentissage_du_langage_ecrit_sur_les_aires_du_langage_302592/article.phtml&quot;&gt;“The impact of literacy on the language brain areas”&lt;/a&gt; &lt;a href=&quot;https://blog.ncase.me/the-creative-cyborg/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+        </entry>
+
     
 
         
@@ -158,7 +311,7 @@
 &lt;li&gt;A relatively simple grammar. (well, compared to English.)&lt;/li&gt;
 &lt;li&gt;Bonus: a cute picture-language! (I&#39;ll show an example later)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Analogy: just like how the &amp;quot;mere&amp;quot; 118 elements of the periodic table, combined as molecules, can make almost all the things you see... the &amp;quot;mere&amp;quot; 137 core words of Toki Pona, combined as sentences, can express almost anything you want.&lt;/p&gt;
+&lt;p&gt;Analogy: just like how the &amp;quot;mere&amp;quot; 118 elements of the periodic table, combined as molecules, can make almost all the things you see... the &amp;quot;mere&amp;quot; 137 core words of Toki Pona, combined as sentences, can express almost anything you want. (That&#39;s the hope, anyway.)&lt;/p&gt;
 &lt;p&gt;For example, here&#39;s how to say &amp;quot;GO TO HORNY JAIL&amp;quot; in toki pona:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;o, tawa tomo awen pi wile unpa!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;And re-written in the cute picture-language: (&amp;quot;sitelen pona&amp;quot;)&lt;/p&gt;
@@ -281,8 +434,8 @@ Call me a groomer, the way I&#39;m making dogs wet&lt;br /&gt;
 &lt;p&gt;In sum:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;I think your &amp;quot;medium of thought&amp;quot; shapes your thoughts a decent amount. 25%, if I have to give a fake number.&lt;/li&gt;
-&lt;li&gt;I don&#39;t think natural languages (English vs Mandarin vs Arabic) influence your thoughts/feelings much. Not sure yet about constructed languages like Toki Pona.&lt;/li&gt;
-&lt;li&gt;I &lt;em&gt;do&lt;/em&gt; think one should try to think as simply &amp;amp; specifically as possible, to avoid fooling oneself.&lt;/li&gt;
+&lt;li&gt;I don&#39;t think natural languages (English, Mandarin, Arabic, etc) influence your thoughts/feelings much. Domain-specific languages like math &amp;amp; programming definitely do. Unsure about constructed languages for everyday use, like Esperanto or Toki Pona.&lt;/li&gt;
+&lt;li&gt;Either way, I think one should aim to think as simply &amp;amp; specifically as possible, to avoid fooling oneself.&lt;/li&gt;
 &lt;li&gt;I love lists!&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;: Today&#39;s Lucky 10k&lt;/h3&gt;
@@ -2432,24 +2585,6 @@ Cook something nutritious &lt;em&gt;and&lt;/em&gt; delicious.&lt;/p&gt;
 &lt;li&gt;Meet your needs reliably with good habits (i.e. &amp;quot;virtues&amp;quot;), which are created via small steps, small rewards, and repetition.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;So uh, yeah, good luck&lt;/p&gt;
-</content>
-        </entry>
-
-    
-
-        
-        
-        <entry>
-            <title>New Explorable! “COVID-19 Futures, Explained With Playable Simulations”</title>
-            <link href="https://blog.ncase.me/new-explorable-covid-19-futures-explained-with-playable-simulations/"/>
-            <updated>2020-05-15T20:49:44Z</updated>
-            <id>https://blog.ncase.me/new-explorable-covid-19-futures-explained-with-playable-simulations/</id>
-            <content xml:lang="en" type="html">&lt;p&gt;I launched this 2 weeks ago and totally forgot to put it on this blog, so here you go: the most technical, in-depth explorable I&#39;ve ever made!&lt;/p&gt;
-&lt;p&gt;😷 &lt;strong&gt;&lt;a href=&quot;https://ncase.me/covid-19/&quot;&gt;“What Happens Next?”&lt;/a&gt;&lt;/strong&gt; (30 min play/read) 😷&lt;br /&gt;
-🔬 A collab with epidemiologist Marcel Salathé 🔬&lt;/p&gt;
-&lt;p&gt;Also, yesterday 3Blue1Brown did a video adaptation of Marcel + my comic explaining how to do COVID-19 contact tracing &lt;em&gt;in a totally privacy-protecting way&lt;/em&gt;! Check it out:&lt;/p&gt;
-&lt;iframe width=&quot;612&quot; height=&quot;344&quot; src=&quot;https://www.youtube.com/embed/D__UaR5MQao?feature=oembed&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;Thanks, Grant! Let&#39;s hope &amp;quot;Test, Trace, Isolate&amp;quot; gets a lot more traction soon, so we can all go back to an 80%-normal life, and I can go back to dating queer cuties over hot chocolate and weeaboo comics&lt;/p&gt;
 </content>
         </entry>
 
