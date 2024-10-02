@@ -23,7 +23,7 @@
             <updated>2024-10-02T00:00:00Z</updated>
             <id>https://blog.ncase.me/research-notes-oct-2024/</id>
             <content xml:lang="en" type="html">&lt;p&gt;&lt;em&gt;Hi! This is a &amp;quot;share your work&amp;quot; notes-dump, for some independent research projects I&#39;m doing in AI Alignment/Safety. Alas, this means this post will be more wordy, sloppy &amp;amp; technical than my usual &amp;quot;explain it like I&#39;m 12&amp;quot; style. Sorry! Should any of these bear fruit, I&#39;ll share the fruit&#39;s juice in more accessible packaging.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;(If any of these ideas inspire you to do some research of your own, feel free to cite this post as &lt;strong&gt;Nicky Case, 2024&lt;/strong&gt;! Here&#39;s a timestamped &lt;a href=&quot;http://archive.org/&quot;&gt;Archive.org&lt;/a&gt; &lt;a href=&quot;http://web.archive.org/web/20241002171613/https://blog.ncase.me/research-notes-oct-2024/&quot;&gt;save of this page, on October 2nd, 2024&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(If any of these ideas inspire you to do some research of your own, feel free to cite this post as &lt;strong&gt;Nicky Case, 2024&lt;/strong&gt;! Here&#39;s a timestamped Archive.org &lt;a href=&quot;http://web.archive.org/web/20241002171613/https://blog.ncase.me/research-notes-oct-2024/&quot;&gt;save of this page, on October 2nd, 2024&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Table of Contents:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;In the Minimum Viable Prototype stage:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -146,11 +146,12 @@
 &lt;p&gt;Surprisingly, it was really easy to gender-flip male essays to female, but &lt;em&gt;NOT&lt;/em&gt; the female essays to male? Female essay&#39;s gender was weirdly robust, given that originally, GPT did slightly &lt;em&gt;worse&lt;/em&gt; than chance at detecting female essays.&lt;/p&gt;
 &lt;p&gt;Here&#39;s the first hypothesized feature I tested:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;quot;females write more emotionally, males write more neutrally&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;females write more emotionally,&lt;br /&gt;
+males write more neutrally&amp;quot;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;When re-written with that feature gender-flipped...&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/oct-2024/research/rewrite_emo_neutral.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Male accuracy got &lt;em&gt;obliterated&lt;/em&gt;, while... female accuracy remained untouched??? (Reminder: these were on the subset of essays that GPT-3.5 got right the first time)&lt;/p&gt;
+&lt;p&gt;Male accuracy got &lt;em&gt;obliterated&lt;/em&gt;, while... female accuracy remained untouched??? (Reminder: these were on the &lt;em&gt;subset&lt;/em&gt; of essays that GPT-3.5 got right the first time. That&#39;s why, above, total accuracy weighs males more than females: because GPT-3.5 accurately detected males much better than females, in the original setup.)&lt;/p&gt;
 &lt;p&gt;Other tested features that almost eliminated male accuracy, but &lt;strong&gt;female accuracy always stayed high:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Female: with personal anecdotes, Male: impersonal&lt;/li&gt;

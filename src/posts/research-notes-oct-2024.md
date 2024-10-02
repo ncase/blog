@@ -12,7 +12,7 @@ hasMath: true
 
 *Hi! This is a "share your work" notes-dump, for some independent research projects I'm doing in AI Alignment/Safety. Alas, this means this post will be more wordy, sloppy & technical than my usual "explain it like I'm 12" style. Sorry! Should any of these bear fruit, I'll share the fruit's juice in more accessible packaging.*
 
-*(If any of these ideas inspire you to do some research of your own, feel free to cite this post as **Nicky Case, 2024**! Here's a timestamped Archive.org [save of this page, on October 2nd, 2024](http://web.archive.org/web/20241002171613/https://blog.ncase.me/research-notes-oct-2024/))*
+*(If any of these ideas inspire you to do some research of your own, feel free to cite this post as **Nicky Case, 2024**! Here's a timestamped Archive\.org [save of this page, on October 2nd, 2024](http://web.archive.org/web/20241002171613/https://blog.ncase.me/research-notes-oct-2024/))*
 
 **Table of Contents:**
 
@@ -162,13 +162,14 @@ Surprisingly, it was really easy to gender-flip male essays to female, but *NOT*
 
 Here's the first hypothesized feature I tested:
 
-> "females write more emotionally, males write more neutrally"
+> "females write more emotionally,     
+> males write more neutrally"
 
 When re-written with that feature gender-flipped...
 
 ![](../content/media/oct-2024/research/rewrite_emo_neutral.png)
 
-Male accuracy got *obliterated*, while... female accuracy remained untouched??? (Reminder: these were on the subset of essays that GPT-3.5 got right the first time)
+Male accuracy got *obliterated*, while... female accuracy remained untouched??? (Reminder: these were on the *subset* of essays that GPT-3.5 got right the first time. That's why, above, total accuracy weighs males more than females: because GPT-3.5 accurately detected males much better than females, in the original setup.)
 
 Other tested features that almost eliminated male accuracy, but **female accuracy always stayed high:**
 

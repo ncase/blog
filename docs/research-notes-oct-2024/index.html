@@ -290,7 +290,7 @@
             </div>
         
 		<p><em>Hi! This is a &quot;share your work&quot; notes-dump, for some independent research projects I'm doing in AI Alignment/Safety. Alas, this means this post will be more wordy, sloppy &amp; technical than my usual &quot;explain it like I'm 12&quot; style. Sorry! Should any of these bear fruit, I'll share the fruit's juice in more accessible packaging.</em></p>
-<p><em>(If any of these ideas inspire you to do some research of your own, feel free to cite this post as <strong>Nicky Case, 2024</strong>! Here's a timestamped <a href="http://Archive.org">Archive.org</a> <a href="http://web.archive.org/web/20241002171613/https://blog.ncase.me/research-notes-oct-2024/">save of this page, on October 2nd, 2024</a>)</em></p>
+<p><em>(If any of these ideas inspire you to do some research of your own, feel free to cite this post as <strong>Nicky Case, 2024</strong>! Here's a timestamped Archive.org <a href="http://web.archive.org/web/20241002171613/https://blog.ncase.me/research-notes-oct-2024/">save of this page, on October 2nd, 2024</a>)</em></p>
 <p><strong>Table of Contents:</strong></p>
 <p><strong>In the Minimum Viable Prototype stage:</strong></p>
 <ul>
@@ -413,11 +413,12 @@
 <p>Surprisingly, it was really easy to gender-flip male essays to female, but <em>NOT</em> the female essays to male? Female essay's gender was weirdly robust, given that originally, GPT did slightly <em>worse</em> than chance at detecting female essays.</p>
 <p>Here's the first hypothesized feature I tested:</p>
 <blockquote>
-<p>&quot;females write more emotionally, males write more neutrally&quot;</p>
+<p>&quot;females write more emotionally,<br>
+males write more neutrally&quot;</p>
 </blockquote>
 <p>When re-written with that feature gender-flipped...</p>
 <p><img src="../content/media/oct-2024/research/rewrite_emo_neutral.png" alt=""></p>
-<p>Male accuracy got <em>obliterated</em>, while... female accuracy remained untouched??? (Reminder: these were on the subset of essays that GPT-3.5 got right the first time)</p>
+<p>Male accuracy got <em>obliterated</em>, while... female accuracy remained untouched??? (Reminder: these were on the <em>subset</em> of essays that GPT-3.5 got right the first time. That's why, above, total accuracy weighs males more than females: because GPT-3.5 accurately detected males much better than females, in the original setup.)</p>
 <p>Other tested features that almost eliminated male accuracy, but <strong>female accuracy always stayed high:</strong></p>
 <ul>
 <li>Female: with personal anecdotes, Male: impersonal</li>
