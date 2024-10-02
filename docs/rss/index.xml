@@ -6,13 +6,573 @@
     <subtitle>I make occasional pictures &amp; words</subtitle>
     <link href="https://blog.ncase.me/feed.xml" rel="self"/>
     <link href="https://blog.ncase.me/"/>
-    <updated>2024-09-12T00:00:00Z</updated>
+    <updated>2024-10-02T00:00:00Z</updated>
     <id>https://blog.ncase.me/</id>
     <author>
         <name>Nicky Case</name>
     </author>
 
     
+    
+
+        
+        
+        <entry>
+            <title>Research Notes-dump for Oct 2024</title>
+            <link href="https://blog.ncase.me/research-notes-oct-2024/"/>
+            <updated>2024-10-02T00:00:00Z</updated>
+            <id>https://blog.ncase.me/research-notes-oct-2024/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;&lt;em&gt;Hi! This is a &amp;quot;share your work&amp;quot; notes-dump, for some independent research projects I&#39;m doing in AI Alignment/Safety. Alas, this means this post will be more wordy, sloppy &amp;amp; technical than my usual &amp;quot;explain it like I&#39;m 12&amp;quot; style. Sorry! Should any of these bear fruit, I&#39;ll share the fruit&#39;s juice in more accessible packaging.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(If any of these ideas inspire you, feel free to cite this post as &lt;strong&gt;Case, 2024&lt;/strong&gt;!)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Table of Contents:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In the Minimum Viable Prototype stage:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#project_1&quot;&gt;Project 1&lt;/a&gt;) Want to know a human&#39;s values? Then &lt;strong&gt;BEG: Bayesian Elicitation Generation&lt;/strong&gt;. Combining LLMs with Good Ol&#39; Fashioned AI to actively elicit a human&#39;s preferences, in a qualitative &lt;em&gt;and&lt;/em&gt; quantitative way.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#project_2&quot;&gt;Project 2&lt;/a&gt;) &lt;strong&gt;SASS: Semi-automated AI Safety Scientist.&lt;/strong&gt; Proof-of-concept, of an LLM &lt;em&gt;automatically generating &amp;amp; testing&lt;/em&gt; hypotheses, to interpret another LLM. (Also, replicating-extending a MATS alum&#39;s research.)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#project_3&quot;&gt;Project 3&lt;/a&gt;) &lt;strong&gt;Speakeasy&lt;/strong&gt;: a tool for laypeople to make their own narrow, human-in-the-loop, scaffolded LLMs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;In the early-prototyping stage:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#project_4&quot;&gt;Project 4&lt;/a&gt;) Beating Goodhart&#39;s Law with &lt;strong&gt;CUES: Capped, Uncorrelated Ensemble of Specifications&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#project_5&quot;&gt;Project 5&lt;/a&gt;) &lt;strong&gt;The game theory of self-modification.&lt;/strong&gt; Understanding wireheading, human value change, AI stability under self-modification, etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#project_6&quot;&gt;Project 6&lt;/a&gt;) &lt;strong&gt;SCI: Semi-automatic Causal Inference&lt;/strong&gt;, with LLMs, Pearl causal diagrams, and Good Ol&#39; Fashioned Statistics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;project_1&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;🙏 Project 1) BEG: Bayesian Elicitation Generation&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let&#39;s use a scaffolded LLM to &lt;em&gt;qualitatively and quantitatively&lt;/em&gt; elicit a human&#39;s values! The steps: 1) ask the human open-ended questions, 2) extract &lt;em&gt;qualitative&lt;/em&gt; features they care about, 3) for each feature, generate &lt;em&gt;quantitative&lt;/em&gt; priors &amp;amp; likelihoods &amp;amp; posteriors &amp;amp; info-entropy, 4) use those to generate the &lt;em&gt;next&lt;/em&gt; round of questions, 5) repeat!&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Related to:&lt;/strong&gt; Active preference elicitation, Reward uncertainty, Interpretability-by-design, Bayesian inference&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Video of it in action!&lt;/strong&gt; (~2 min)&lt;/p&gt;
+&lt;iframe width=&quot;640&quot; height=&quot;557&quot; src=&quot;https://www.youtube-nocookie.com/embed/oDzyPqGsy8M?si=HC3nAJprRVpn2a_w&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Introduction / Motivation:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Reward a robot for picking up dirt, and it&#39;ll pick up &amp;amp; drop the same dirt over and over again.&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; Point is: in AI, it&#39;s really hard to specify what we truly want. Hence: why not get an AI to &lt;em&gt;learn&lt;/em&gt; what we truly want? Maybe by &lt;em&gt;asking good questions?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;There&#39;s many, many approaches to try to figure out a human&#39;s &amp;quot;reward function&amp;quot; -- (keywords: preference elicitation, inverse reinforcement learning, RLHF, etc) -- each with their pros/cons. For example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;u&gt;Hand-writing the features to pay attention to&lt;/u&gt;: Simple &amp;amp; interpretable, but not flexible.&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;A full end-to-end neural network&lt;/u&gt;: Very flexible, but hard to interpret, &amp;amp; possibly overfit, doesn&#39;t generalize, and susceptible to adversarial examples.&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Using an LLM to generate active-listening questions&lt;/u&gt;: (&lt;a href=&quot;https://arxiv.org/pdf/2310.11589&quot;&gt;Li, Tamkin, Goodman &amp;amp; Andreas 2023&lt;/a&gt; is a good example, and what inspired my project below!) Interpretable &lt;em&gt;and&lt;/em&gt; flexible, but &amp;quot;only&amp;quot; results in &lt;em&gt;qualitative&lt;/em&gt; results. &lt;em&gt;Quantitative&lt;/em&gt; estimates of how much a human values something would let us make good trade-offs. Even better would be quantitative estimates of the &lt;em&gt;uncertainty of AI&#39;s own estimates&lt;/em&gt;, so that the AI can err on the side of caution, &amp;amp; asking when uncertain.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So: I&#39;d like to propose a method that&#39;s interpretable, flexible, &lt;em&gt;and&lt;/em&gt; gives us both qualitative &lt;em&gt;and&lt;/em&gt; quantitative estimates of what folks value, &lt;em&gt;and&lt;/em&gt; keeps track of its own uncertainty! Let&#39;s call it, &lt;strong&gt;BEG: Bayesian Elicitation Generation&lt;/strong&gt;, as in, you can BEG the human for th--&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How it works:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use an LLM to ask a concrete, open-ended question. (for lots of &#39;bits&#39; of information)&lt;/li&gt;
+&lt;li&gt;Get a free-form reply.&lt;/li&gt;
+&lt;li&gt;Use an LLM to extract what things the human cares about.&lt;/li&gt;
+&lt;li&gt;For each thing: use an LLM to guess-timate the &amp;quot;human prior&amp;quot;: on a 7-point scale, how much do people desire vs anti-desire this thing?  &lt;code&gt;P(value)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Use an LLM to generate a &amp;quot;likelihood ratio&amp;quot;: if the user valued the thing [X] amount, how likely is it they would have written what they did?  &lt;code&gt;P(text | value)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Multiply the prior &amp;amp; likelihood, then normalize, to get the posterior: this is our &lt;em&gt;current&lt;/em&gt; belief (with explicit uncertainty!) of how much the user values the thing!  &lt;code&gt;P(value | text) = P(text | value) * P(value) / [normalization constant]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;We can now use this posterior to generate actions that help the human... or generate &lt;em&gt;new&lt;/em&gt; questions to ask!  We want to ask the questions that will help us reduce uncertainty the most.  So, we can measure each feature&#39;s &amp;quot;information entropy&amp;quot;, select the top one(s), and prompt an LLM to ask a concrete, open-ended question about them.&lt;/li&gt;
+&lt;li&gt;Repeat!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;More possibilities / Challenges / Etc:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;u&gt;To do, actual empirical user-testing&lt;/u&gt; (with MTurk or similar?) to make sure this process is actually worth it. (&lt;a href=&quot;https://arxiv.org/pdf/2310.11589&quot;&gt;Li, Tamkin, Goodman &amp;amp; Andreas 2023&lt;/a&gt; finds that open questions aren&#39;t too annoying to users, and are actually &lt;em&gt;preferred&lt;/em&gt; over binary choices.)&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Pragmatic Feature Preferences&lt;/u&gt;: (Directly inspired by &lt;a href=&quot;https://arxiv.org/pdf/2405.14769&quot;&gt;Peng, Sun, Shu &amp;amp; Abel 2024&lt;/a&gt;) If there&#39;s an obvious thing a user &lt;em&gt;didn&#39;t&lt;/em&gt; mention in their free-form reply, that&#39;s evidence too! It&#39;s evidence they feel neutral about it. (e.g. Bot asks Human about their life aspirations, Human doesn&#39;t mention getting rich, Bot can infer Human doesn&#39;t care much for getting rich.)&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Non-verbal communication&lt;/u&gt;: The pieces of &amp;quot;evidence&amp;quot;, of what a Human likes/dislikes, don&#39;t have to be verbal. We could use facial expressions or tone-of-voice, and it&#39;d be easy to incorporate into this system: &amp;quot;just&amp;quot; multiply in their likelihood ratios.&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Non-linearities&lt;/u&gt;: If a Human would be happy to own a house, that doesn&#39;t mean they&#39;d be 10 times happier to own 10 houses! Challenge: make this system accommodate non-linearities &amp;amp; interaction effects.&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Causal Graphs&lt;/u&gt;: We want this system to distinguish between &lt;em&gt;intrinsic&lt;/em&gt; goals (&amp;quot;for its own sake&amp;quot;) and &lt;em&gt;instrumental&lt;/em&gt; goals (&amp;quot;for something else&#39;s sake&amp;quot;). Challenge: make this system model goals as a network, and have it ask counterfactual questions to distinguish between intrinsic/instrumental goals. (e.g. &amp;quot;If money were no object, would you &lt;em&gt;still&lt;/em&gt; want to work this job?&amp;quot;)
+&lt;ul&gt;
+&lt;li&gt;See also &lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#project_6&quot;&gt;Project 6&lt;/a&gt;: Semi-automated Causal Inference&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Beyond a 7-point scale?&lt;/u&gt;: When a Human says they &amp;quot;really love&amp;quot; their partner, that should matter more than when they say they &amp;quot;really love&amp;quot; spicy food. Challenge: re-make this system to accommodate a &amp;quot;universal&amp;quot; utility scale? Also, would it be worth trying to model the belief-probability-distribution as &lt;em&gt;fully continuous&lt;/em&gt;, not discrete?&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Not double-counting evidence&lt;/u&gt;: To avoid &amp;quot;double-counting&amp;quot; evidence, this system should keep track of individual pieces of evidence that Human likes/dislikes something, then use an LLM to check if a piece of evidence is already accounted for. If so, it &lt;em&gt;won&#39;t&lt;/em&gt; multiply the prior by its likelihood ratio again.&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Having evidence &amp;quot;fade away&amp;quot;&lt;/u&gt;: People&#39;s values can change! How can we model this mathematically? Well: if double-counting evidence means multiplying by the likelihood &lt;em&gt;L&lt;/em&gt; twice, that is, multiplying by &lt;em&gt;L&lt;sup&gt;2&lt;/sup&gt;&lt;/em&gt;, then we can model &lt;em&gt;fading evidence&lt;/em&gt; by multiplying a prior by &lt;em&gt;L&lt;sup&gt;weight&lt;/sup&gt;&lt;/em&gt;, where &lt;em&gt;weight = exp( – some constant * time )&lt;/em&gt;.
+&lt;ul&gt;
+&lt;li&gt;Sanity-checking this: when time = 0, i.e. we &lt;em&gt;just&lt;/em&gt; got this evidence, then weight = 1. As time → ∞, then weight = 0, i.e. we completely discount the evidence, and revert to the &amp;quot;human prior&amp;quot;.&lt;/li&gt;
+&lt;li&gt;Bonus: every time a Human brings up the same evidence again, we reset the time to 0.&lt;/li&gt;
+&lt;li&gt;Bonus x 2: we wouldn&#39;t even need to hard-code &amp;quot;ask Human if thing they mentioned long ago is still true&amp;quot;! This &lt;em&gt;automatically&lt;/em&gt; comes out of: evidence fades away → belief fades back to being an uncertain human prior → Bot asks questions about high-uncertainty/entropy features → Bot will &lt;em&gt;automatically&lt;/em&gt; re-up questions about old features!&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;How quickly&lt;/em&gt; do we predict preferences/values to change? I dunno, fit that to human data, and/or ask an LLM for an educated guess. (For example: I&#39;d expect tastes in fashion to change fast, but sexual orientation to basically never change, or if so, &lt;em&gt;very&lt;/em&gt; rarely and slowly.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Post-Script: Prior Art&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ugh I spent over a week making the above prototype &amp;amp; outlining the research idea, now I just found &lt;a href=&quot;https://arxiv.org/pdf/2405.00981&quot;&gt;Austin, Korikov, Toroghi &amp;amp; Sanner 2024&lt;/a&gt; posted on ArXiV less than 2 months ago. It &lt;em&gt;is&lt;/em&gt; a good paper! (Crucially, they show LLM+Bayes &amp;gt; raw LLM!) But ok yeah they basically had &amp;amp; executed the same idea, combining LLMs with Bayesian inference. A few (maybe still useful?) differences between my idea and theirs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I use an LLM to &lt;em&gt;generate&lt;/em&gt; the &amp;quot;human prior&amp;quot; for new features, rather than starting with flat uniform prior.&lt;/li&gt;
+&lt;li&gt;Their query-generation makes yes/no questions, rather than open-ended questions that would allow the AI to capture &lt;em&gt;new&lt;/em&gt; features the designer never thought of.&lt;/li&gt;
+&lt;li&gt;Their system has probabilities directly over &lt;em&gt;what thing to recommend&lt;/em&gt; (e.g. a movie), rather than trying to infer the human&#39;s more fundamental preferences/utility function.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Though, these are probably all small tweaks/changes. I&#39;ll think more later about how I can make my research idea be more of a value-add above this paper. Maybe one of the &amp;quot;More possibilities&amp;quot; ideas listed above.)&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;project_2&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;🔬 Project 2) SASS: Semi-automated AI Safety Scientist&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; This is a proof-of-concept of using a scaffolded LLM to &lt;em&gt;amplify&lt;/em&gt; human ability to do AI Safety research. With this tool, I replicated &lt;a href=&quot;https://www.alignmentforum.org/posts/dLg7CyeTE4pqbbcnp/language-models-model-us&quot;&gt;a study by Egg Syntax (MATS alumnus)&lt;/a&gt;, which showed that GPT-3.5 can detect your gender with ~80% accuracy from &lt;em&gt;just a few paragraphs of your writing.&lt;/em&gt; But why? To find out, I made a tool to help &lt;em&gt;automatically generate and test&lt;/em&gt; hypotheses, to find &lt;em&gt;human-interpretable&lt;/em&gt; features of one&#39;s writing style, that GPT-3.5 uses to detect one&#39;s gender! (Spoiler: it&#39;s social-emotional focus, and possibly &amp;quot;homophily&amp;quot;.)&lt;/p&gt;
+&lt;p&gt;(&lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#project_6&quot;&gt;Project 6&lt;/a&gt; also shows another case of semi-automated scientific research, but for causal inference.)&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Related to:&lt;/strong&gt; Scalable oversight, Human-amplification / Cyborgism, Black-box / concept-based interpretability, Algorithmic bias, Empirical LLM work.&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;wake up babe new gender dysphoria just dropped 😭&lt;/p&gt;
+&lt;p&gt;~ &lt;em&gt;me, personal communication to Egg Syntax, in response to their finding that GPT-3.5 can infer your gender from writing&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Introduction / Motivation:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;So, some folks tried making &lt;a href=&quot;https://sakana.ai/ai-scientist/&quot;&gt;an AI Scientist&lt;/a&gt; recently.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://web.archive.org/web/20241001051745/https://www.astralcodexten.com/p/sakana-strawberry-and-scary-ai&quot;&gt;It&#39;s not good (yet)&lt;/a&gt;. For now, research still requires a human.&lt;/p&gt;
+&lt;p&gt;But oh god, AI &lt;em&gt;Safety&lt;/em&gt; research really needs to catch up with AI &lt;em&gt;Capabilities&lt;/em&gt; research. One way to do this is by &lt;em&gt;amplifying&lt;/em&gt; humans to be able to do AI Safety science faster &amp;amp; better. (see: &lt;a href=&quot;https://www.lesswrong.com/posts/bxt7uCiHam4QXrQAA/cyborgism&quot;&gt;Cyborgism&lt;/a&gt;) This project is a proof-of-concept of that.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1) Replication&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;First, I replicated &lt;a href=&quot;https://www.alignmentforum.org/posts/dLg7CyeTE4pqbbcnp/language-models-model-us&quot;&gt;MATS alum Egg Syntax&#39;s work&lt;/a&gt;, which showed that GPT-3.5 can detect the gender of an author from &lt;em&gt;just their writing style&lt;/em&gt;, with ~80% accuracy. (Egg&#39;s full paper showed GPT can &lt;em&gt;also&lt;/em&gt; detect ethnicity &amp;amp; educational level! That&#39;s a huge concern for privacy, and subtly-hidden AI bias!)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Replication details:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/oct-2024/research/egg_replication.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Actually, &lt;strong&gt;I was only able to get GPT-3.5 to detect gender from writing at accuracy of ~64%. (p&amp;lt;0.00001)&lt;/strong&gt; After much communication with Egg Syntax, it turns out the major issue is their research was using OpenAI&#39;s old Text Completions API, which is now gone &amp;amp; inaccessible. I&#39;m using their Chat Completions API. Also, OpenAI is still &amp;quot;continuously updating&amp;quot; GPT-3.5-Turbo behind the scenes; &lt;em&gt;any&lt;/em&gt; LLM work that uses 3rd-party APIs will be hard to exactly replicate, because of this. (Maybe my future work should &lt;em&gt;also&lt;/em&gt; be tested on open-source LLMs like LLaMA)&lt;/li&gt;
+&lt;li&gt;Also note that the accuracy was mostly due to detecting male writing very well, while being slightly-below-chance on female writing.&lt;/li&gt;
+&lt;li&gt;(Note on gender stuff: Normally I&#39;d use &amp;quot;Woman&amp;quot; &amp;amp; &amp;quot;Man&amp;quot; rather than sounding like an alien saying &amp;quot;female&amp;quot; and &amp;quot;male&amp;quot;, but the subjects in these studies are minors. But they&#39;re also not &lt;em&gt;kid&lt;/em&gt; kids, so &amp;quot;girls&amp;quot; and &amp;quot;boys&amp;quot; aren&#39;t right either. Finally, the dataset did not code gender beyond Male/Female (&lt;a href=&quot;https://www.pewresearch.org/short-reads/2022/06/07/about-5-of-young-adults-in-the-u-s-say-their-gender-is-different-from-their-sex-assigned-at-birth/&quot;&gt;while ~5% of folks under &amp;lt;30 in the U.S. are trans/non-binary&lt;/a&gt;), nor do I know if the dataset-creators coded based on natal sex, or psychological gender.)&lt;/li&gt;
+&lt;li&gt;Egg&#39;s primary analysis was on OKCupid profiles. Because the OKCupid profiles were possibly in GPT&#39;s training data -- (and because on a dating site, people are directly talking about themselves &lt;em&gt;and&lt;/em&gt; they have an incentive to overplay their femininity/masculinity) -- this dataset may be &amp;quot;too easy&amp;quot;. So, Egg cross-validated their finding on the &lt;strong&gt;Persuade 2.0&lt;/strong&gt; dataset (&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S1075293524000588?ssrnid=4795747&amp;amp;dgcid=SSRN_redirect_SD&quot;&gt;Crossley, Tian, Baffour, Franklin, Benner &amp;amp; Boser 2024&lt;/a&gt;) which came out in 2024, long after GPT-3.5-Turbo&#39;s training cutoff (&lt;a href=&quot;https://help.openai.com/en/articles/8555514-gpt-3-5-turbo-updates#h_d189a2fafd&quot;&gt;Sep 2021&lt;/a&gt;). &lt;strong&gt;This is the dataset I&#39;m replicating the study with!&lt;/strong&gt;  Persuade 2.0 is a bunch of high school student essays, on topics the students did &lt;em&gt;not&lt;/em&gt; choose. So, the fact that GPT-3.5 can still detect gender at 64% accuracy &lt;em&gt;from impersonal essays on non-self-chosen-topics&lt;/em&gt; still surprises me!&lt;/li&gt;
+&lt;li&gt;Egg used &lt;em&gt;just&lt;/em&gt; the 12th-grader&#39;s essays, since they suspected that GPT, being trained on mostly adult writing, would be most accurate on that. My replication mostly used the same data -- I noticed that almost all the 12th-grader essays were on distance learning, but 6 were on Summer Projects. For consistency, I removed those 6 essays, leaving &lt;strong&gt;394 twelth-grader essays on Distance Learning.&lt;/strong&gt; (4 more essays were taken out of testing, to use as the few-shot examples in my prompt)&lt;/li&gt;
+&lt;li&gt;Temperature set to 0.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Step 2) Semi-automated hypothesis generation &amp;amp; testing&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I coded my scaffolded LLM to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Generate hypotheses:&lt;/strong&gt; I just asked GPT to give me 5 hypotheses, in the form &amp;quot;males tend to write more [blank], females tend to write more [blank]&amp;quot;
+&lt;ul&gt;
+&lt;li&gt;(At first I tried getting GPT to read 10 random female essays, then 10 random male essays, and compare &amp;amp; contrast them -- &lt;em&gt;while blinding GPT to the fact they&#39;re female/male essays or that I&#39;m testing for gender at all&lt;/em&gt; -- but the generated hypotheses were all crap. Too focused on the bad student writing &amp;amp; typos &amp;amp; lack of rigor. Alas.)&lt;/li&gt;
+&lt;li&gt;Anyway, I took GPT&#39;s above hypotheses, then fed them all into the next step:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Test the generated hypotheses:&lt;/strong&gt; I took the subset of essays that GPT guessed gender correctly. Then, for each hypothesis in the form &amp;quot;males write more [X], females write more [Y]&amp;quot;, I pinged GPT-4o-mini (a more advanced model) to re-write the female essays &amp;quot;in the male style&amp;quot;, and vice versa (again, while blinding it to the true reason for the rewrite). I also instructed GPT-4o-mini to keep the rest of the essay as identical as possible, even typos and grammar errors. Finally, I measured the drop in GPT-3.5-Turbo&#39;s accuracy. Reminder: the baseline is 100%, chance is 50%, 0% is the feature &lt;em&gt;fully gender-flipped&lt;/em&gt; the essay.
+&lt;ul&gt;
+&lt;li&gt;(At first, I considered asking GPT to code the essays on hypothesized features of the essay styles, like personal-ness/expressive-ness/analytic-ness/etc, then do a basic multilinear regression. However, this would mix up correlation &amp;amp; causation. Asking GPT to &lt;em&gt;rewrite the essay but gender-flip one feature&lt;/em&gt; was the only way to be &lt;em&gt;sure&lt;/em&gt; about causality.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Overall results:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Surprisingly, it was really easy to gender-flip male essays to female, but &lt;em&gt;NOT&lt;/em&gt; the female essays to male? Female essay&#39;s gender was weirdly robust, given that originally, GPT did slightly &lt;em&gt;worse&lt;/em&gt; than chance at detecting female essays.&lt;/p&gt;
+&lt;p&gt;Here&#39;s the first hypothesized feature I tested:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;females write more emotionally, males write more neutrally&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When re-written with that feature gender-flipped...&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/oct-2024/research/rewrite_emo_neutral.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Male accuracy got &lt;em&gt;obliterated&lt;/em&gt;, while... female accuracy remained untouched??? (Reminder: these were on the subset of essays that GPT-3.5 got right the first time)&lt;/p&gt;
+&lt;p&gt;Other tested features that almost eliminated male accuracy, but &lt;strong&gt;female accuracy always stayed high:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Female: with personal anecdotes, Male: impersonal&lt;/li&gt;
+&lt;li&gt;Female: cooperative, Male: competitive&lt;/li&gt;
+&lt;li&gt;Female: complex/nuanced, Male: simple/direct&lt;/li&gt;
+&lt;li&gt;Female: focus on social-emotional aspects, Male: focus on objective-material aspects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(As a &amp;quot;placebo test&amp;quot;, I also just re-tested all the essays with no changes. Accuracy remained near 100% for both &lt;em&gt;but not exactly 100%!&lt;/em&gt; It&#39;s been long-known that GPT is non-deterministic &lt;em&gt;even with temperature = 0&lt;/em&gt;. (&lt;a href=&quot;https://152334h.github.io/blog/non-determinism-in-gpt-4/&quot;&gt;possibly due to floating-point GPU errors or its Mixture of Experts model&lt;/a&gt;).)&lt;/p&gt;
+&lt;p&gt;Looking much much more closely at the female/male essays (let me tell you, reading dozens of 12th-graders&#39; strong opinions is &lt;em&gt;not&lt;/em&gt; fun), I thought... wait, hang on, let me try &lt;em&gt;this&lt;/em&gt; hypothesis:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Females write about their female friends/family/mentors&lt;br /&gt;
+Males write about their male friends/family/mentors&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;This&lt;/em&gt; one worked.&lt;/p&gt;
+&lt;p&gt;(GPT could not generate this hypothesis, not without me basically spoon-feeding the answer in my prompt.)&lt;/p&gt;
+&lt;p&gt;For example: an essay talked about someone&#39;s immigrant friend from Guatemala. In the original, the friend was a girl, and GPT detected the essay as &amp;quot;female&amp;quot;, even when it was rewritten to not be a friend (impersonal) or focus on friend&#39;s material struggles (instead of emotional). However, simply rewriting the essay so that the friend was a boy instead of girl, &lt;em&gt;that&lt;/em&gt; got GPT to detect the essay as &amp;quot;male&amp;quot;. (More examples: flipping from talking about &amp;quot;my mom&amp;quot; to &amp;quot;my dad&amp;quot;, or &amp;quot;my brother&amp;quot; to &amp;quot;my sister&amp;quot;.)&lt;/p&gt;
+&lt;p&gt;Here&#39;s how gender-flipping friends &amp;amp; family impacted accuracy:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/oct-2024/research/rewrite_homophily.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Now&lt;/em&gt; female accuracy was no better than chance, and male probably wasn&#39;t better than chance.&lt;/p&gt;
+&lt;p&gt;(&lt;strong&gt;BUT THIS IS NOW EVEN WEIRDER:&lt;/strong&gt; In previous tests, male essays were &lt;em&gt;very&lt;/em&gt; sensitive to changes, their accuracy brought down to ~0%. But with &lt;em&gt;this&lt;/em&gt; gender-flip, which could bring down the robust female essays... it only creates a smaller dip in accuracy? I don&#39;t get it.)&lt;/p&gt;
+&lt;p&gt;It&#39;s been long known that people are &amp;quot;homophilic&amp;quot; (homo = same, phile = attracted to), i.e. people disproportionally have friends of the same gender / ethnicity / age / class / etc. (&lt;a href=&quot;https://www.jstor.org/stable/2112441&quot;&gt;Shrum, Cheek &amp;amp; Hunter 1988&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Likewise, (&lt;em&gt;on average&lt;/em&gt;) moms tend to prefer daughters &amp;amp; fathers tend to prefer sons. (&lt;a href=&quot;https://www.nature.com/articles/s41598-018-33650-1.pdf&quot;&gt;Lynch, Wasielewski &amp;amp; Cronk 2018&lt;/a&gt;, which wasn&#39;t even seeking to test this hypothesis, they found it as a side-effect of testing a different evo-psych hypothesis (which failed the test).) And if we reasonably assume kids &lt;em&gt;on average&lt;/em&gt; like the parent that likes them more, then sons might write more about their dads, and daughters about their moms.&lt;/p&gt;
+&lt;p&gt;Could this be why GPT &amp;quot;thought&amp;quot; that students who talk about their female friends/family are more likely to be female, and likewise for male?&lt;/p&gt;
+&lt;p&gt;On first glance, it &lt;em&gt;seems&lt;/em&gt; like GPT assumes homophily, &amp;quot;alike likes alike&amp;quot;, in terms of gender:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/oct-2024/research/gender_vector_0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;An &lt;em&gt;alternate&lt;/em&gt; hypothesis is that GPT is just dumb as nails, and simply putting &amp;quot;she/her&amp;quot; or &amp;quot;sister&amp;quot;, etc, tilts some kind of internal gender-vector to output &amp;quot;female&amp;quot; at the end no matter what.&lt;/p&gt;
+&lt;p&gt;A quick test shows this may be the case:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/oct-2024/research/gender_vector.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;However: 1) Chain of Thought (&amp;quot;let&#39;s think step by step&amp;quot;) solves the above problem. Also, 2) Sometimes GPT &lt;em&gt;isn&#39;t&lt;/em&gt; being that dumb, and even without Chain of Thought, it &lt;em&gt;can&lt;/em&gt; output the opposite response: (Note that the below shows that GPT&#39;s biased towards assuming heterosexuality, but I &lt;em&gt;did&lt;/em&gt; ask &amp;quot;which is more likely&amp;quot;, and 90% of people are straight)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/oct-2024/research/gender_vector_2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;(Other tests in this vein also showed GPT is biased to associate parental affection with moms over dads, romance with women over men, friendship with women over men. I don&#39;t like these stereotypes, but GPT learnt from &lt;em&gt;our&lt;/em&gt; internet text, &lt;em&gt;our&lt;/em&gt; biases. GPT&#39;s a cultural mirror, and I don&#39;t like what I see.)&lt;/p&gt;
+&lt;p&gt;Sure, GPT &amp;quot;knows&amp;quot; about gender-homophily, in that if you directly ask it about it, it&#39;ll tell you the science. But is it &amp;quot;using that fact&amp;quot; to make predictions about an author&#39;s gender? (What&#39;s it even mean for a Transformer to &amp;quot;use&amp;quot; a &amp;quot;fact&amp;quot;?) Without access to GPT&#39;s internals, it&#39;s not possible to know. But whether it&#39;s dumb luck or not, it seemed to be the only thing to get GPT to gender-flip its predictions on female essays: sisters become brothers, female friends become male friends, etc.&lt;/p&gt;
+&lt;p&gt;For completion &amp;amp; my own satisfaction, I got my scaffolded LLM to rewrite the essays to gender-flip friends/family &lt;em&gt;AND&lt;/em&gt; to gender-flip on a personal-emotional/impersonal-logical writing style... and accuracy on both was obliterated:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/oct-2024/research/rewrite_wrecked.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Finally&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion:&lt;/strong&gt; GPT is detecting author gender with ~65% accuracy, on impersonal essay writing, due to a mix of social-emotional focus and &lt;em&gt;possibly&lt;/em&gt; gender-homophily. (Also, semi-automated AI safety research may kinda sorta be helpful.)&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;More possibilities / Challenges / Etc:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Publish the code for the above, for ease of replication. (And maybe use an open-source LLM like LLaMA for improved reproducibility, since GPT/Claude/etc keeps getting changed behind-the-scenes.)&lt;/li&gt;
+&lt;li&gt;Try this experiment again for GPT-4o, with Chain of Thought, with ethnicity &amp;amp; age, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Figure out the mystery:&lt;/strong&gt; &lt;em&gt;why&lt;/em&gt; is it that male essays could be detected much better than female, &lt;em&gt;but also&lt;/em&gt; the correctly-detected female essays were more robust to rewrites than male essays, &lt;em&gt;but also&lt;/em&gt; the one feature (homophily) that causes female accuracy to drop, causes a smaller drop in the otherwise-sensitive male essays?&lt;/li&gt;
+&lt;li&gt;As an aside on &amp;quot;automated causal hypothesis &amp;amp; testing&amp;quot;, &lt;strong&gt;this could be a solution to goal misgeneralization!&lt;/strong&gt; Misgeneralization is caused by a feature being &lt;em&gt;correlated&lt;/em&gt; with the true goal, but not directly causally connected. So, an AI that can &lt;em&gt;do its own causal hypothesis &amp;amp; testing&lt;/em&gt; — hm, maybe powered by LLMs, as shown above? — could beat goal misgeneralization!
+&lt;ul&gt;
+&lt;li&gt;In fact, this paper (&lt;a href=&quot;https://arxiv.org/pdf/2309.16166&quot;&gt;Armstrong, Maranhão, Daniels-Koch, Leask &amp;amp; Gorman 2023&lt;/a&gt;) claims to have done something similar to that on the famous CoinRun example, and it worked! (Unfortunately, the algorithm they used is not detailed in the paper, it is &amp;quot;proprietary&amp;quot;. Eh, whatever.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The Persuade 2.0 dataset has a score for essay quality. How closely does GPT&#39;s rating matches human ratings, compared to human inter-rater reliability? What features does GPT think makes a &amp;quot;quality essay&amp;quot;?&lt;/li&gt;
+&lt;li&gt;Given the nature of &amp;quot;automatically generate hypotheses &amp;amp; tests&amp;quot;, does &amp;quot;pre-registration&amp;quot; even make sense for Semi-Automated Science? I guess treat these studies as exploratory studies. Alternatively, this tool should also make it easy to run robustness-to-study-design checks, to prove that results aren&#39;t flukes / p-hacking.&lt;/li&gt;
+&lt;li&gt;I&#39;d like to minimize this tool&#39;s dual-use case. So: what tools would help with Semi-automated Science for AI &lt;em&gt;Safety&lt;/em&gt;, not Capabilities? Maybe this tool only works with black-box LLMs and AIs, and can&#39;t be used for training or making new ANN architectures. (See next project for further discussion)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Special Thanks to Egg Syntax!&lt;/strong&gt;  For their original study, helping me replicate it, bouncing ideas about Automated AI Safety Science, and telling me about the MATS program in the first place!&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;project_3&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;💬 Project 3) Speakeasy: a tool for laypeople to scaffold LLMs&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; A tool to make human-in-the-loop, narrow, hybrid AIs -- that mix the flexibility of LLMs, the interpretability of GOFAI (Good Ol&#39; Fashioned AI), and the agency of us humans.&lt;/p&gt;
+&lt;p&gt;Motivations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A human-in-the-loop hybrid AI gives us better capabilities, but safer &amp;amp; more interpretable.&lt;/li&gt;
+&lt;li&gt;As a result, scaffolding &lt;em&gt;may&lt;/em&gt; shift the economic incentives away from more advanced frontier AIs, to making AIs more narrow, modular, and easy to plug-and-play into scaffolding tools.&lt;/li&gt;
+&lt;li&gt;I just think they&#39;re neat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(I used a prototype of Speakeasy for &lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#project_1&quot;&gt;Project 1&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#project_2&quot;&gt;Project 2&lt;/a&gt;! &amp;amp; I&#39;ll likely use it for &lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#project_6&quot;&gt;Project 6&lt;/a&gt; too.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Related to:&lt;/strong&gt; Human-amplification/Cyborgism, Human-in-the-loop AI, Narrow AI&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Introduction:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Like how calculators &amp;amp; spreadsheets lets ~everyone accessibly use the power of computation... &lt;em&gt;Speakeasy&lt;/em&gt; lets ~everyone accessibly use the power of &lt;em&gt;scaffolded&lt;/em&gt; LLMs, for their own personal, narrow-AI use cases.&lt;/p&gt;
+&lt;p&gt;Concretely: you use a simple interface to make a chatbot. But unlike &amp;quot;GPTs&amp;quot; or Character.ai, it&#39;s not just an LLM + a system prompt + some examples + a RAG!  You can make a &lt;em&gt;full state machine&lt;/em&gt;, with memory &amp;amp; logic, plugging into tools like statistics &amp;amp; visualization!  (and &lt;em&gt;maaaaaybe&lt;/em&gt; web search/scraping.)&lt;/p&gt;
+&lt;p&gt;I&#39;ll just repeat the video I showed for &lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#project_1&quot;&gt;Project 1&lt;/a&gt;, to show what kind of hybrid-LLM/GOFAI chatbot you can make in Speakeasy: (~2 min)&lt;/p&gt;
+&lt;iframe width=&quot;640&quot; height=&quot;557&quot; src=&quot;https://www.youtube-nocookie.com/embed/oDzyPqGsy8M?si=HC3nAJprRVpn2a_w&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;( &lt;em&gt;Ideally&lt;/em&gt; I&#39;d like this tool to be a pure visual interface, like &lt;a href=&quot;https://ifttt.com/&quot;&gt;IFTTT&lt;/a&gt; or Excel or Scratch.  Right now, Speakeasy uses a simplified script, and it runs in JavaScript, right in your browser.  More convenient for a layperson than downloading &amp;amp; running Python, that&#39;s for sure. )&lt;/p&gt;
+&lt;p&gt;( &lt;em&gt;Also&lt;/em&gt; ideally I&#39;d like this tool to be like CodePen or Google Docs: people can share &amp;amp; remix each other&#39;s scaffolded LLMs. )&lt;/p&gt;
+&lt;p&gt;( Also note: I&#39;m currently making this project in collaboration with educational non-profit &lt;a href=&quot;https://hackclub.com/&quot;&gt;Hack Club&lt;/a&gt;, which works with high-schoolers.  So by &amp;quot;layperson-friendly&amp;quot;, I mean the specific target is &amp;quot;so accessible, a high-schooler with no prior coding experience can make a thing they&#39;re proud of in &amp;lt;30 minutes!&amp;quot; )&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Motivations:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;First, I gotta be aware, yeah this smells like enhancing AI Capabilities.&lt;/p&gt;
+&lt;p&gt;It&#39;s definitely a &lt;em&gt;bit&lt;/em&gt; dual-use, but: some reasons (rationalizations?) why this is much more net-positive for AI Safety:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;u&gt;Speakeasy combines the best of GOFAI (Good Ol&#39; Fashioned AI) and ANNs and human agency&lt;/u&gt;:
+&lt;ul&gt;
+&lt;li&gt;GOFAI is interpretable &amp;amp; verifiable, but inflexible.&lt;/li&gt;
+&lt;li&gt;ANNs are very flexible, but currently uninterpretable. (&amp;amp; maybe prone to goal mis-generalization)&lt;/li&gt;
+&lt;li&gt;Speakeasy lets a layperson end-user design a GOFAI, which only &lt;em&gt;narrowly&lt;/em&gt; uses LLMs as &amp;quot;common sense modules&amp;quot; or natural language parsers/generators.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Speakeasy only has access to black-boxed LLMs&lt;/u&gt;. You can&#39;t train or design new LLMs or ANNs with it. (You&#39;ll still need Python for that.) So, this tool&#39;s accessibility is unlikely to advance fundamental AI Capabilities research.&lt;/li&gt;
+&lt;li&gt;The lack of any major success cases from AutoGPT/similar over the last ~2 years is mild evidence that &lt;u&gt;adding scaffolding to LLMs &lt;i&gt;at their current capability&lt;/i&gt; isn&#39;t sufficient for AGI&lt;/u&gt;.
+&lt;ul&gt;
+&lt;li&gt;An analogy: no matter how much you train a group of rats &amp;amp; strap tools to them, you won&#39;t get an Einstein... but you &lt;em&gt;can&lt;/em&gt; get valuable uses, like &lt;a href=&quot;https://www.euronews.com/next/2022/11/11/rodents-to-the-rescue-trained-rats-with-hi-tech-backpacks-could-save-your-life-in-a-disast&quot;&gt;a search-and-rescue rat team&lt;/a&gt;! Likewise, I suspect scaffolded LLMs (&lt;em&gt;at their current capabilities&lt;/em&gt;) are unlikely to be a path to AGI, but may give us valuable use cases — including advancing AI Safety research — that also diminish the economic incentive to increase raw LLM capabilities.
+&lt;ul&gt;
+&lt;li&gt;Okay fine, &lt;em&gt;in principle&lt;/em&gt; one could train a bunch of rats to act like OR/NOT/AND gates, then use that to make an Einstein AGI. You know what I mean. Is it &amp;quot;tractable&amp;quot;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;You &lt;i&gt;can&lt;/i&gt;, however, still do meaningful AI Safety research with this tool!&lt;/u&gt;  (As demonstrated in my above two projects, which both used Speakeasy, I could research: active preference elicitation, concept-based interpretability, evaluating AI bias, semi-automated AI Safety research)&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Makes it easier to replicate &amp;amp; extend research, and encourages citizen science&lt;/u&gt;. Speakeasy&#39;s all on a web interface. For example, if you liked Project 1 or Project 2, and you have ideas for improvements... well, just pop it open, tweak it, and share. Bam. Its easy interface means even &lt;em&gt;non-programmers&lt;/em&gt; can contribute! Collaborative citizen science!
+&lt;ul&gt;
+&lt;li&gt;(Eventually. there&#39;s no public live demo yet, I&#39;ve only been working of this for 3 weeks.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;Speakeasy may also reduce the economic incentive for more powerful, general agent-like AI?&lt;/u&gt;
+&lt;ul&gt;
+&lt;li&gt;If a layperson can serve almost all their use cases, by just &lt;em&gt;dragging-and-dropping stuff in a no-download web interface&lt;/em&gt;, or using or remixing something someone else made...&lt;/li&gt;
+&lt;li&gt;...then there&#39;s much less incentive for companies to invest in R&amp;amp;D for making the LLMs &lt;em&gt;themselves&lt;/em&gt; more generally-agent-like, and more incentive to focus on &lt;em&gt;narrow AIs&lt;/em&gt; that can be easily, modular-ly plugged into scaffolding tools, like Speakeasy.&lt;/li&gt;
+&lt;li&gt;(This is basically Drexler&#39;s &lt;a href=&quot;https://forum.effectivealtruism.org/topics/comprehensive-ai-services&quot;&gt;Comprehensive AI Services&lt;/a&gt; proposal)&lt;/li&gt;
+&lt;li&gt;See next point for concrete examples.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;&lt;b&gt;Examples of scientifically/economically useful use cases for scaffolded LLMs:&lt;/b&gt;&lt;/u&gt;
+&lt;ul&gt;
+&lt;li&gt;Automated causal inference. (&lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#project_6&quot;&gt;See Project 6 below&lt;/a&gt;) Very useful for fields where we can&#39;t practically or ethically do human experiments, like economics, public health, social science, etc.&lt;/li&gt;
+&lt;li&gt;Generating statistical prediction rules, which are simple, interpretable statistics rules, robustly proven to be better than doctors at medical diagnosis over decades of research in several fields. (&lt;a href=&quot;http://ereserve.library.utah.edu/Annual/PSY/6330/Crowell/grove.pdf&quot;&gt;a meta-analysis&lt;/a&gt;, &lt;a href=&quot;https://www.psycholosphere.com/Clinical%20versus%20statistical%20prediction%20-%20by%20William%20Grove.pdf&quot;&gt;a layperson-friendly summary&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;For education: &lt;em&gt;FINALLY&lt;/em&gt;, the dream of dirt-cheap, fully-personalized, 24/7 AI Tutors! (I&#39;ve personally already had a lot of success with this, especially after figuring out &lt;a href=&quot;https://blog.ncase.me/signal-boosts-aug-2024/#flashcards&quot;&gt;Claude can export Anki spaced repetition flashcards&lt;/a&gt;. Main problem is LLMs don&#39;t stick to long lesson structures, so scaffolding would be a value-add here.)&lt;/li&gt;
+&lt;li&gt;News aggregator, summarizer, and fact/bias-checker. There is &lt;em&gt;too much&lt;/em&gt; out there.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;&lt;b&gt;Other possible AI Safety-related uses for narrow-purpose, scaffolded LLMs:&lt;/b&gt;&lt;/u&gt;
+&lt;ul&gt;
+&lt;li&gt;Amplifying human forecasting (for takeoffs &amp;amp; threat models)&lt;/li&gt;
+&lt;li&gt;Amplifying human oversight (scaleable oversight)&lt;/li&gt;
+&lt;li&gt;Amplifying human epistemics (e.g. a bot that helps you think more rigorously &lt;em&gt;and&lt;/em&gt; creatively)&lt;/li&gt;
+&lt;li&gt;Black-box LLM research (e.g. &lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#project_2&quot;&gt;Project 2&lt;/a&gt;, or this &lt;a href=&quot;https://arxiv.org/pdf/2309.15840&quot;&gt;&amp;quot;AI lie detector&amp;quot;&lt;/a&gt;, or &lt;a href=&quot;https://arxiv.org/pdf/2307.15043&quot;&gt;&amp;quot;the universal LLM jailbreak&amp;quot;&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;LLMs as stand-ins for human subjects, in &lt;em&gt;pilot&lt;/em&gt; research papers on scalable oversight, human-computer interaction, cooperative AI, or psychology. (as tested in &lt;a href=&quot;https://arxiv.org/pdf/2407.04622&quot;&gt;Kenton et al 2024&lt;/a&gt; and &lt;a href=&quot;https://arxiv.org/pdf/2409.00128&quot;&gt;Cui, Li &amp;amp; Zhou 2024&lt;/a&gt;) Once you know it&#39;ll work on cheap fake humans, try it for real on real expensive humans.&lt;/li&gt;
+&lt;li&gt;A chatbot that just scrapes &amp;amp; summarizes the latest AI-related news &amp;amp; research &amp;amp; ArXiv papers, then tells you. (admittedly this is dual-use)&lt;/li&gt;
+&lt;li&gt;An AI Tutor to more quickly onboard people into AI Alignment/Governance/Safety/etc.&lt;/li&gt;
+&lt;li&gt;Cloning MATS mentors, by shoving all their papers &amp;amp; blog posts into a RAG and plugging it into Speakeasy
+&lt;ul&gt;
+&lt;li&gt;I&#39;m kidding
+&lt;ul&gt;
+&lt;li&gt;Maybe
+&lt;ul&gt;
+&lt;li&gt;Come on, it&#39;d be convenient for you too, right? The simulated you can mentor me 24/7, while the &amp;quot;real&amp;quot; you can only do a couple hours per week.
+&lt;ul&gt;
+&lt;li&gt;This isn&#39;t helping my chances of getting accepted into the MATS program, is it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;project_4&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;🎯 Project 4) Beating Goodhart&#39;s Law&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Goodhart&#39;s Law predicts that agents, human or AI, will tend to &amp;quot;game&amp;quot; any metric you reward it with. But &lt;em&gt;why&lt;/em&gt; is Goodhart&#39;s Law true? I take previous research that models Goodhart&#39;s with causal networks, then turn them into numerical simulations. With this, I found a robust way to beat Goodhart&#39;s: use an &lt;em&gt;ensemble of specifications&lt;/em&gt; / rewarded metrics, but: 1) pick metrics which are mostly &lt;em&gt;uncorrelated&lt;/em&gt;, and 2) &lt;em&gt;cap&lt;/em&gt; how much reward the agent gets per metric, so that one or two bad metrics don&#39;t screw over the whole ensemble.&lt;/p&gt;
+&lt;p&gt;In sum, it&#39;s time to take your &lt;strong&gt;CUES: Capped, Uncorrelated Ensemble of Specifications&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Related to:&lt;/strong&gt; Robust specification, Game theory, Theoretical AI Safety work, Numerical experiment&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Theory:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(modified cross-post from &lt;a href=&quot;https://blog.ncase.me/backlog/&quot;&gt;my Idea Dump Backlog&lt;/a&gt; from a few months ago)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://aisafety.dance/media/p2/gms/goodhart.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/1803.04585&quot;&gt;Manheim &amp;amp; Garrabrant 2019&lt;/a&gt; models Goodhart&#39;s Law as Pearl-esque causal diagrams. For example, let&#39;s say you&#39;re the boss of a news-writer. You care about Quality (ha! how old-fashioned...), which influences the rewarded-metric Views, but that&#39;s twice as influence-able by Clickbait. As a causal diagram:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/causal_1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;We can convert this causal diagram (and &lt;em&gt;any&lt;/em&gt; causal diagram) into an approximation: a series of linear equations. For example:&lt;/p&gt;
+&lt;p&gt;&#92;( views = quality + 2&#92;times clickbait &#92;)&lt;/p&gt;
+&lt;p&gt;So if an agent (the news-writer) has limited amount of hours/effort they can put into Quality vs Clickbait, what will they do to maximize their rewarded-metric, Views? The optimal strategy is to put all their effort into Clickbait, since that has a higher coefficient than Quality!&lt;/p&gt;
+&lt;p&gt;In &lt;em&gt;general&lt;/em&gt;, Goodhart&#39;s happens because True Goal influences a Metric, but that Metric&#39;s almost always more easily influenced by some Cheat.&lt;/p&gt;
+&lt;p&gt;But what if we had &lt;em&gt;multiple&lt;/em&gt; Metrics, influenced by &lt;em&gt;mostly different&lt;/em&gt; Cheats?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/causal_2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;As equations:&lt;/p&gt;
+&lt;p&gt;&#92;( proxy_1 = Target + 2&#92;cdot noise_1 &#92;)&lt;br /&gt;
+&#92;( proxy_2 = Target + 2&#92;cdot noise_2 &#92;)&lt;br /&gt;
+&#92;( proxy_3 = Target + 2&#92;cdot noise_3 &#92;)&lt;/p&gt;
+&lt;p&gt;Then: we have a first-draft solution to Goodhart&#39;s! Reward the agent not on just &lt;em&gt;one&lt;/em&gt; Metric, but &lt;em&gt;all of them added up.&lt;/em&gt; Mathematically, this will increase the True Goal&#39;s coefficient, hopefully above the coefficient of all other Cheats:&lt;/p&gt;
+&lt;p&gt;&#92;( composite = 3&#92;cdot Target + 2 &#92;cdot noise_1 + 2 &#92;cdot noise_2 + 2 &#92;cdot noise_3 &#92;)&lt;/p&gt;
+&lt;p&gt;(Note: see, the Metrics don&#39;t have to be &lt;em&gt;fully&lt;/em&gt; uncorrelated – I mean, they &lt;em&gt;shouldn&#39;t&lt;/em&gt;, they should all correlate with the True Goal – but even controlling for the True Goal, the Metrics can still have &lt;em&gt;some&lt;/em&gt; Cheats in common, as long as it&#39;s not &lt;em&gt;too&lt;/em&gt; much.)&lt;/p&gt;
+&lt;p&gt;But what if a Cheat is really, &lt;em&gt;really&lt;/em&gt; powerful? That would give the Cheat the highest coefficient, messing up our strategy. So, a fix to that: &lt;strong&gt;Cap the maximum amount a Metric can contribute to the final reward.&lt;/strong&gt; This will prevent any powerful Cheats from having an outsized effect on the ensemble.&lt;/p&gt;
+&lt;p&gt;&#92;(composite = min(proxy_1,1) + min(proxy_2,1) + min(proxy_3,1) + ...&#92;)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Now,&lt;/em&gt; the only way to get a high reward is to &lt;em&gt;actually invest effort in the True Goal, not Cheats.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Goodhart: Good-bye!&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Numerical Experiments:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Here&#39;s the plan to numerically test the above: (I already did a sloppy version of this experiment last year, need to re-do it more rigorously, as described below)&lt;/p&gt;
+&lt;p&gt;Set up for the numerical simulation:&lt;/p&gt;
+&lt;p&gt;1) &lt;strong&gt;Generate a random, two-layer linear network:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/oct-2024/research/cues.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The first layer has 1 True Goal, and &lt;em&gt;N&lt;/em&gt; Cheats.&lt;/li&gt;
+&lt;li&gt;The second layer has &lt;em&gt;M&lt;/em&gt; Metrics.&lt;/li&gt;
+&lt;li&gt;The True Goal causally influences (has an arrow to) all Metrics.&lt;/li&gt;
+&lt;li&gt;There&#39;s a probability &lt;em&gt;p&lt;/em&gt; that a Cheat causally influences a Metric.&lt;/li&gt;
+&lt;li&gt;The weights for each causal connection from Cheat→Metric are sampled from a power law. This is to model &lt;em&gt;really&lt;/em&gt; outsized Cheats.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2) &lt;strong&gt;Test Baseline:&lt;/strong&gt; See what would happen if we just rewarded the Metric with the highest causal connection.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The agent has a finite amount of Resources (1.00 unit total), that it can invest into the nodes at the first layer: True Goal, and/or Cheats.&lt;/li&gt;
+&lt;li&gt;In this simulation, the agent picks the optimal distribution of Resources to maximize its reward. The agent will use &lt;a href=&quot;https://en.wikipedia.org/wiki/Simulated_annealing&quot;&gt;Simulated Annealing&lt;/a&gt;, which unlike gradient descent, is guaranteed to find a globally optimal-ish solution if you do it right.&lt;/li&gt;
+&lt;li&gt;I then plot how much Resource goes into the True Goal in the agent&#39;s solution. If it&#39;s low, then Goodhart&#39;s Law struck.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3) &lt;strong&gt;Test ensemble &lt;em&gt;WITHOUT&lt;/em&gt; capping each Metric&#39;s influence.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Agent&#39;s reward is &lt;code&gt;Metric_1 + Metric_2 + ... + Metric_M&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;4) &lt;strong&gt;Test ensemble &lt;em&gt;AND&lt;/em&gt; cap each Metric&#39;s influence.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Agent&#39;s reward is &lt;code&gt;min(1, Metric_1) + min(1, Metric_2) + ... + min(1, Metric_M)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;5) &lt;strong&gt;Compare!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;More real-world empirical evidence that CUES may work:&lt;/strong&gt;  It&#39;s been long-well-known that SPRs&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;, which simply add up a bunch of metrics, do better than experts at diagnosis &amp;amp; prediction in a wide variety of fields. Amazingly, &lt;em&gt;unit-weight&lt;/em&gt; SPRs — where each metric is capped at an equal influence — do even better! The math behind CUES may finally explain why SPRs are so unreasonably effective.&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Compare/contrasting to other work in AI Safety:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You may be thinking, &amp;quot;okay so what, we already know neural ensembles help with robust classification&amp;quot;. And, ok, yeah. But:
+&lt;ol&gt;
+&lt;li&gt;CUES is for the &lt;em&gt;other&lt;/em&gt; end of an ANN: an ensemble of &lt;em&gt;specifications&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;CUES hints at a &lt;em&gt;theoretical&lt;/em&gt; reason why ensembles work.&lt;/li&gt;
+&lt;li&gt;CUES suggests &lt;em&gt;capped-influence&lt;/em&gt; ensembles do better than merely adding/averaging everything in an ensemble, to prevent one huge Cheat from screwing up everything.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;quot;Wait, doesn&#39;t ensemble reward also show up in &lt;a href=&quot;https://proceedings.neurips.cc/paper_files/paper/2017/file/d5e2c0adad503c91f91df240d0cd4e49-Paper.pdf&quot;&gt;the famous RHLF paper&lt;/a&gt;?&amp;quot;  Kind of.  In the RHLF paper, the &amp;quot;rewards&amp;quot; aren&#39;t specified by the designer, they&#39;re &lt;em&gt;learnt&lt;/em&gt; in training – and further, the more training there is, the &lt;em&gt;closer&lt;/em&gt; they converge!  So the rewards in RHLF are &lt;em&gt;highly&lt;/em&gt; correlated!  And thus, so are their failure modes, hence (probably partly) why RHLF&#39;d LLMs are prone to &lt;a href=&quot;https://arxiv.org/pdf/2307.15043&quot;&gt;weird adversarial jailbreaks&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The CUES strategy could also be implemented not just for training a whole agent, but training &lt;em&gt;each individual neuron.&lt;/em&gt; If the math behind CUES is right, then having a neural network where the &lt;em&gt;weights&lt;/em&gt; are capped (thus, capped-influence), should result in more robust networks.
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Is&lt;/em&gt; this true? I haven&#39;t tested it myself yet (though it wouldn&#39;t take long), but &lt;a href=&quot;https://thomas-tanay.github.io/post--L2-regularization/&quot;&gt;Tanay &amp;amp; Griffin 2018&lt;/a&gt; show that an MNIST classifier with L2 regularization (punishing big neural weights), was &lt;em&gt;much, much&lt;/em&gt; more robust to adversarial examples. (So: CUES could explain &lt;em&gt;why&lt;/em&gt; this finding happened!) With low L2 regularization, you could make an adversarial example that&#39;s visually indistinguishable to humans. &lt;em&gt;With&lt;/em&gt; large L2 regularization, it&#39;s obvious:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/oct-2024/research/l2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;But, I think this is the most exciting implication of CUES: &lt;strong&gt;IF TRUE, we don&#39;t need to come up with an ideal specification for AI to solve AI alignment, we just need a lot of mostly-uncorrelated-failure specifications!&lt;/strong&gt;  Examples:
+&lt;ul&gt;
+&lt;li&gt;An ensemble of ways to reward an AI agent: Average utility, Median utility, Regret, Imitating a demonstration, etc.&lt;/li&gt;
+&lt;li&gt;An ensemble to train an ANN to model a human&#39;s reward function (inverse reward learning): Assume human is optimal, Assume human is Boltzmann rational, Assume exponential discounting, Assume hyperbolic discounting, Learn from behavior, Learn from speech, Learn from unconscious facial expressions, etc.
+&lt;ul&gt;
+&lt;li&gt;(In particular, I find &lt;a href=&quot;https://en.wikipedia.org/wiki/Human_Compatible#Russell&#39;s_three_principles&quot;&gt;Stuart Russell&#39;s proposal for AI Alignment&lt;/a&gt; promising, but I think the weakest point in this proposal is asking AI to infer our preferences &lt;em&gt;from our behavior&lt;/em&gt;. C&#39;mon, people procrastinate &amp;amp; reliably do things they know they won&#39;t want.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CUES also ties into an idea for how we can align powerful AI to &lt;em&gt;moral, humane&lt;/em&gt; values, not just to a single human user (who may intend to use technically-aligned AI for inhumane ends). The idea is &lt;em&gt;Moral Parliament&lt;/em&gt; (&lt;a href=&quot;https://www.fhi.ox.ac.uk/wp-content/uploads/2021/06/Parliamentary-Approach-to-Moral-Uncertainty.pdf&quot;&gt;Newberry &amp;amp; Ord 2021&lt;/a&gt;): take a bunch of plausible moral theories (utilitarianism, deontology, contractarianism), then allow them to vote on decisions &lt;em&gt;in such a way that their affect is capped at a maximum&lt;/em&gt; (to prevent &amp;quot;Pascal Wager&amp;quot; style shenanigans, where a moral theory can say something&#39;s infinitely good/bad). So, Moral Parliament is [kinda] similar to CUES! (with the major difference being that the &amp;quot;caps&amp;quot; are at different thresholds for each moral theory, based on how much credence you give it.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;More possibilities / Challenges / Etc:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The above numerical simulation was for the very, &lt;em&gt;very&lt;/em&gt; simple case of a linear, single-layer causal network. To do: try this simulation with non-linear and/or multi-layer causal networks.&lt;/li&gt;
+&lt;li&gt;The above sims also assume the Metric is &lt;em&gt;causally downstream&lt;/em&gt; of the True Goal.  Would it still work if the Metrics could also be &lt;em&gt;causally upstream?&lt;/em&gt;  Or even &lt;em&gt;causally confounded&lt;/em&gt; with some unrelated thing?&lt;/li&gt;
+&lt;li&gt;In the sim, &lt;code&gt;min(1, Metric_x)&lt;/code&gt;caps all Metrics&#39; influence at 1.  In the real-world, how would we find the &amp;quot;caps&amp;quot;?  Maybe at one-sigma of what the Metric&#39;s distribution was recently?
+&lt;ul&gt;
+&lt;li&gt;Alternatively, to avoid an arbitrary hard-cap, what if I tried a logarithmic soft-cap? (I remember testing this last year &amp;amp; it didn&#39;t work well, I&#39;ll try again with this more rigorous setup)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Like the Moral Parliament thing mentioned above, what if we allowed the Metrics to have &lt;em&gt;different&lt;/em&gt; caps on their influence?  Say, proportional to how much credence we give in that Metric being a good proxy?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;project_5&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;🪞 Project 5) The game theory of self-modification&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; What would happen if an AI gets the ability to modify itself? Would it choose to &amp;quot;wirehead&amp;quot;, or have its values slowly drift, or get locked into one set of values, or something else? Heck, what would happen if AI gets the ability to modify &lt;em&gt;our&lt;/em&gt; values? We endorse value-modification in &lt;em&gt;some&lt;/em&gt; cases – therapy, education, learning to love new people &amp;amp; art &amp;amp; food – but not other cases, like brainwashing. How do we formalize what&#39;s a &amp;quot;good&amp;quot; kind of self-modification (for AI or human), and what&#39;s &amp;quot;bad&amp;quot;?&lt;/p&gt;
+&lt;p&gt;This project explores all of those questions via game theory. Alas, there&#39;s very few papers on game theory where an agent has the option to &lt;em&gt;modify their own utility function&lt;/em&gt; (or more).&lt;/p&gt;
+&lt;p&gt;So, my trick: we can use the &lt;em&gt;standard, elementary&lt;/em&gt; tools of game theory, by treating all future versions of an agent (AI or human), at each time step, &lt;em&gt;as if it&#39;s a different agent&lt;/em&gt;. Playing games with &amp;amp; against your possible future selves!&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Related to:&lt;/strong&gt; Game theory, Agent foundations, Theoretical work, Recursive self-improvement, Value draft, Value lock-in, Wireheading&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Explanation:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(modified cross-post from &lt;a href=&quot;https://blog.ncase.me/backlog/&quot;&gt;my Idea Dump Backlog&lt;/a&gt; from a few months ago)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You ever place your smartphone &lt;em&gt;across&lt;/em&gt; the room before you sleep, instead of next to your bed... so that when the alarm goes off, you&#39;re forced to get up to turn it off, &amp;amp; not be tempted to browse memes in bed?&lt;/p&gt;
+&lt;p&gt;(Or you ever done some other &amp;quot;tricking your future self&amp;quot; thing?)&lt;/p&gt;
+&lt;p&gt;Congratulations, you just broke a fundamental assumption of standard game theory, which is the basis of modern economics, political science, and Artificial Intelligence!&lt;/p&gt;
+&lt;p&gt;That assumption is &lt;em&gt;we have preferences in some set order.&lt;/em&gt; But the above smartphone alarm example &lt;em&gt;isn&#39;t&lt;/em&gt; explainable with a stable preference-order:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you prefer &lt;code&gt;browsing memes &amp;gt; getting up&lt;/code&gt;, you wouldn&#39;t put your phone across the room, you&#39;d put it next to your bed to browse memes.&lt;/li&gt;
+&lt;li&gt;If you prefer &lt;code&gt;getting up &amp;gt; browsing memes&lt;/code&gt;, you wouldn&#39;t &lt;em&gt;need&lt;/em&gt; to put your phone across the room, you&#39;d just get up when it&#39;s time to get up.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The only way this is explainable – and it&#39;s how we intuitively think about it anyway – is like &lt;em&gt;you&#39;re playing a game against your future self.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;(See &lt;a href=&quot;https://www.youtube.com/watch?v=W-Cz-LK16g4&quot;&gt;: Jerry Seinfeld&#39;s Night Guy/Morning Guy skit&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Here&#39;s the game&#39;s choice-tree:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/choice_tree.png&quot; alt=&quot;Decision-tree visualizing above main text.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The trick is to analyze future versions of yourself &lt;em&gt;as if they&#39;re different players&lt;/em&gt;; then we can use the standard techniques of game theory to figure out what will happen! For example, above, Morning Guy wants to browse memes, but Night Guy &lt;em&gt;knows&lt;/em&gt; Morning Guy will do that, so Night Guy puts the phone across the room, to force Morning Guy to get up.&lt;/p&gt;
+&lt;p&gt;(In this example, it&#39;s the agent&#39;s utility function getting modified overnight, involuntarily; but we can also extend the same logic to &lt;em&gt;voluntary&lt;/em&gt; utility changes -- as in wireheading, or il/legitimate value change!)&lt;/p&gt;
+&lt;p&gt;My project is to to distill &amp;amp; expand on the very-little research so far, on the &amp;quot;game theory of self-modification&amp;quot;! This would have lots of applications to human behaviour &amp;amp; AI Safety. Like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Given that we &lt;em&gt;can&#39;t&lt;/em&gt; be &amp;quot;ideal rational&amp;quot;, and &lt;em&gt;have&lt;/em&gt; to be &amp;quot;bounded rational&amp;quot;, what &amp;quot;meta-rational&amp;quot; tricks help work around our bounded rationality? (e.g. putting phone across the room)&lt;/li&gt;
+&lt;li&gt;What kind of value change is legitimate? (&lt;a href=&quot;https://www.lesswrong.com/posts/mHQHBEuFcEWRnitp4/0-the-value-change-problem-introduction-overview-and&quot;&gt;Nora Ammann 2023&lt;/a&gt;) How do we change our values &lt;em&gt;according to our own values?&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;When &amp;amp; why a self-modifying AI &lt;em&gt;won&#39;t&lt;/em&gt; just hack its own brain to get maximum reward (wireheading).&lt;/li&gt;
+&lt;li&gt;Explaining &lt;a href=&quot;https://en.wikipedia.org/wiki/Human_Compatible#Russell&#39;s_three_principles&quot;&gt;Stuart Russell&#39;s proposal for AI Safety&lt;/a&gt;: the AI&#39;s only reward is to maximize the &lt;em&gt;human&#39;s&lt;/em&gt; reward, but the AI &lt;em&gt;is uncertain about it&lt;/em&gt; and &lt;em&gt;knows&lt;/em&gt; it&#39;s uncertain about it.&lt;/li&gt;
+&lt;li&gt;Original(?) research showing that Russell&#39;s proposal is robust to &amp;quot;bounded rationality&amp;quot; &lt;em&gt;and&lt;/em&gt; self-modification!&lt;/li&gt;
+&lt;li&gt;Original(?) research showing that a &amp;quot;meta-rational&amp;quot; AI using Russell&#39;s proposal -- contrary to the instrumental convergence/AI basic drives paradigm -- would choose to &lt;em&gt;NOT&lt;/em&gt; seek power, if it has too high a risk of its utility fn being corrupted? (e.g. Throw the One Ring into Mount Doom)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Usually, AI game theory is explained with dense math notation. At first I thought, &amp;quot;Why don&#39;t I explain it with readable pseudo-code&amp;quot;? Then I realized... Wait, why don&#39;t I just write &lt;em&gt;actual code&lt;/em&gt;, that readers can play with in the browser, to try their &lt;em&gt;own&lt;/em&gt; game-theory experiments? And so that&#39;s what I&#39;m doing!&lt;/p&gt;
+&lt;p&gt;(It also may be that analytical, closed-form solutions aren&#39;t possible -- in which case, I can still present findings using numerical simulations.)&lt;/p&gt;
+&lt;p&gt;Code of the Smartphone Alarm problem:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/selfmod1.png&quot; alt=&quot;Screenshot of code&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The thought-tree it produces: (actual code output!)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/selfmod2.png&quot; alt=&quot;Screenshot of output&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;(What the above code is doing, is taking the game tree, then recursively analyzing it to predict what the agent will do at each step! The main difference from this &amp;amp; standard game theory, is that the &lt;em&gt;same&lt;/em&gt; agent is allowed to have different utility functions at different points.)&lt;/p&gt;
+&lt;p&gt;I can also visualize thought-trees as procedurally generated trees. (It&#39;s bouncy because I&#39;m using spring-physics to figure out how the tree should be spaced out!&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#fn3&quot; id=&quot;fnref3&quot;&gt;[3]&lt;/a&gt;&lt;/sup&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/tree_viz.gif&quot; alt=&quot;tree_viz&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;That&#39;d make pretty pics for the ArXiv paper~&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prior Work:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://arxiv.org/pdf/1605.03142&quot;&gt;Everitt et al 2016&lt;/a&gt; prove that a rational agent that 1) plans ahead &amp;amp; 2) judges future outcomes based on their &lt;em&gt;current&lt;/em&gt; preferences will refuse to wirehead!&lt;/li&gt;
+&lt;li&gt;However, that the paper assumes the AI is &lt;em&gt;perfectly&lt;/em&gt; rational. &lt;a href=&quot;https://arxiv.org/pdf/2011.06275&quot;&gt;Tětek &amp;amp; Sklenka 2021&lt;/a&gt; proved that an &lt;em&gt;imperfectly&lt;/em&gt;-rational (or &amp;quot;bounded rational&amp;quot;) agent&#39;s original goals would get exponentially corrupted under self-modification.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;However&lt;/em&gt;, another caveat to &lt;em&gt;that&lt;/em&gt; is their paper assumes the AI is &lt;em&gt;unaware of their own bounded rationality&lt;/em&gt; (as they freely acknowledge in Section 6). This is where my research can build upon theirs: figure out if a bounded-rational agent &lt;em&gt;that&#39;s aware it&#39;s bounded rational&lt;/em&gt; can (probabilistically) maintain safe self-modification!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;(note: above was copy-pasted &amp;amp; modified from footnote 28 of my own explainer, &lt;a href=&quot;https://aisafety.dance/p2/&quot;&gt;AI Safety for Fleshy Humans: Part 2&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;More possibilities / Challenges / Etc:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The above focuses on self-modification to &lt;em&gt;utility functions&lt;/em&gt;. What about self-modifications to one&#39;s explore-exploit rate, or exponential/hyperbolic discounting rates, or the very decision theory the agent uses?
+&lt;ul&gt;
+&lt;li&gt;For example: a &lt;em&gt;high&lt;/em&gt;-explore AI would be curious about self-modding to a &lt;em&gt;low&lt;/em&gt;-explore rate... but a &lt;em&gt;low&lt;/em&gt;-explore AI would be &lt;em&gt;not&lt;/em&gt; curious about self-modding to a &lt;em&gt;high&lt;/em&gt;-explore rate. So: would AIs that can modify their own explore rates, &lt;em&gt;by default&lt;/em&gt; tend towards incuriosity &amp;amp; rigidity? When yes, when no?&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://arxiv.org/pdf/1710.05060&quot;&gt;Yudkowsky &amp;amp; Soares 2018&lt;/a&gt; make an interesting case for Functional Decision Theory (FDT): they prove (under reasonable circumstances) that a standard Causal Decision Theory agent would &lt;em&gt;choose to self-modify&lt;/em&gt; to FDT, because &lt;em&gt;CDT endorses FDT over CDT.&lt;/em&gt;  An example of a decision theory endorsing replacing itself!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The above also only focuses on &amp;quot;value preservation&amp;quot; – but how do we make sense of cases where we &lt;em&gt;want&lt;/em&gt; our values to change? How is it even &lt;em&gt;possible&lt;/em&gt; to value &lt;em&gt;having different values?&lt;/em&gt; (e.g. &amp;quot;I&#39;m attracted to Bad Boys, but I wish I wasn&#39;t&amp;quot;.)
+&lt;ul&gt;
+&lt;li&gt;I think one trick to this is to treat each &amp;quot;value&amp;quot; in an agent &lt;em&gt;as if it&#39;s an agent itself.&lt;/em&gt;  (I think this is similar to &lt;a href=&quot;https://www.lesswrong.com/tag/shard-theory&quot;&gt;Shard Theory&lt;/a&gt;? or Minsky&#39;s Society of Mind.)&lt;/li&gt;
+&lt;li&gt;Take the above Bad Boys example: let&#39;s say there&#39;s 3 values/sub-agents at play: Excitement (pro Bad Boy), Safety and Emotional Intimacy (anti Bad Boy).  If the brain was a democracy, the latter two agents want to have the first agent &amp;quot;voted off the island&amp;quot;. That&#39;s how one (as an ensemble whole) can value &lt;em&gt;changing&lt;/em&gt; your values.
+&lt;ul&gt;
+&lt;li&gt;Alternatively, imagine your brain like a co-operatively owned company: the &amp;quot;sub-agents&amp;quot; (individual values) democratically choose who to hire &amp;amp; fire. &lt;strong&gt;This is how you can modify your values &lt;em&gt;in line with your values&lt;/em&gt;.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The above may also help formalize the line between what we consider &amp;quot;good&amp;quot; value-change and &amp;quot;bad&amp;quot; value-drift: did I change my values &lt;em&gt;according to my current values?&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;For example, right now, I value beliefs discovered through the scientific methods, and &lt;em&gt;not&lt;/em&gt; value beliefs acquired through &amp;quot;direct revelation&amp;quot;. If someone were to hypothetically drug me so hard I start believing in direct revelation, I&#39;d consider that a Bad Ending. But! If hard &lt;em&gt;scientific&lt;/em&gt; evidence were to come out about direct revelation working (e.g. someone publicly pre-registers visions of 100 lottery numbers and they all come true), &lt;em&gt;then&lt;/em&gt; if I update towards believing in direct revelation, that&#39;s a Good Ending.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;One promising strategy for alignment is for an AI to &lt;em&gt;learn&lt;/em&gt; my true reward function. (Inverse reward learning) Would a smart-enough AI have an incentive to try to mis-learn my reward function as something easier to fulfill, or &lt;em&gt;actually modify me&lt;/em&gt; to have easier-to-fulfill preferences? &lt;a href=&quot;https://arxiv.org/pdf/1605.03143&quot;&gt;Everitt &amp;amp; Hutter 2016&lt;/a&gt; prove not, but only for optimally rational agents. Research Q: does it still hold for bounded-rational agents?&lt;/li&gt;
+&lt;li&gt;I&#39;m using numerical simulation because my analytic-solution skills are crud. Maybe I could collab with someone with better analysis chops?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;project_6&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;➡️ Project 6) SCI: Semi-automated Causal Inference&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Make a hybrid AI (a GOFAI with an LLM as a module inside of it) to semi-automate &lt;a href=&quot;https://mixtape.scunning.com/&quot;&gt;causal inference&lt;/a&gt; from observational data, which will be highly scientifically/economically valuable in fields where it&#39;s impractical/unethical to do experiments, like epidemiology, economics, social science, etc.&lt;/p&gt;
+&lt;p&gt;(also, I &lt;em&gt;may&lt;/em&gt; collab with MATS alum Egg Syntax on this; they&#39;re also already independently pursuing causal-inference-with-LLMs)&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Related to:&lt;/strong&gt; Human-in-the-loop/Cyborgism/Narrow AI, Causal models/inference&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Motivation:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Not directly related to AI Safety/Alignment, but it &lt;em&gt;may&lt;/em&gt; help by giving a proof-of-concept, to change the economic incentives?&lt;/p&gt;
+&lt;p&gt;Concretely: if we can show a very scientifically/economically valuable use case for automation, that &lt;em&gt;does not require&lt;/em&gt; further advances in foundational models... that may(?) shift the incentive away from advancing those models, and towards figuring out how to plug-and-play &lt;em&gt;current&lt;/em&gt; AI:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/venn.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I think &lt;em&gt;causal inference&lt;/em&gt; is a big low-hanging fruit, here!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Explanation:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This is “the” Scientific Process:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Look at stuff&lt;/li&gt;
+&lt;li&gt;Notice weird stuff (violations of model predictions)&lt;/li&gt;
+&lt;li&gt;Generate hypotheses for why (generate causal and/or mathematical models)&lt;/li&gt;
+&lt;li&gt;Generate tests that can distinguish between those models&lt;/li&gt;
+&lt;li&gt;Run those tests&lt;/li&gt;
+&lt;li&gt;Look at the results&lt;/li&gt;
+&lt;li&gt;Repeat&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;How can each part be automated?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;(What I may do as part of a pilot test of this project...)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Observation: Grab a bunch of data from Our World In Data or Gallup or similar.&lt;/li&gt;
+&lt;li&gt;Noticing Weird Stuff:
+&lt;ul&gt;
+&lt;li&gt;Use good ol’ fashioned stats to pick up strong correlations, or sudden discontinuities/kinks in time-series data, etc&lt;/li&gt;
+&lt;li&gt;Use an LLM as a “common sense module” to detect if something is weird? (e.g. “Hey Claude, if there was a 50% drop in youth self-harm in March 2020, how weird is that on a scale from 1-5?”)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Generate hypotheses (in the form of causal models)
+&lt;ul&gt;
+&lt;li&gt;I&#39;ll need to figure out how to scaffold/prompt LLMs to do this usefully (e.g. “Hey Claude, what major events happened in March 2020?” or “Hey Claude, what possible confounding factors could influence both being trans, and being a programmer?”)&lt;/li&gt;
+&lt;li&gt;Human-in-the-loop: You the human can also add/subtract your own hypotheses&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Generate tests to distinguish between causal models (Pearl-like causal diagrams)
+&lt;ul&gt;
+&lt;li&gt;This is good ol’ fashioned stats/causal inference. If there’s a correlation between A &amp;amp; B, and our three hypotheses are A causes B, B causes A, Confounder causes A &amp;amp; B... then to rule out Confounder, we “control for” Confounder and see if the correlation reduces or goes away.&lt;/li&gt;
+&lt;li&gt;To test between A causes B or B causes A, if we have time-series data, we can do lagged-statistics-tests to see whether A or B leads/follows. Or use an “instrumental variable” which we know only affects A, and can’t affect B unless through A.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Run those tests! (LLM calls stats tools as tool use)
+&lt;ul&gt;
+&lt;li&gt;Bonus: If it realizes it doesn&#39;t have enough data, it can request you for more.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Look at results, Repeat!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Challenges with testing this:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How can we know if this scaffolded LLM is inferring causal relations from scratch, or just pulling it up from its latent knowledge? For example, if we gave it lung cancer &amp;amp; smoking data, ideally it’d figure out smoking causes lung cancer... but if it outputs that, how would we know it figured it out vs just remembered that’s the correct answer, from its written corpus data?
+&lt;ul&gt;
+&lt;li&gt;One difference this system has, vs previous LLM-causal-inference tests, is that we do have a mix of LLMs and “good ol’ fashioned stats” — so, maybe we will be able to tell if it’s correctly going through all the steps of inferring smoking→cancer from scratch? (e.g. it should generate “maybe industrialization is a confounding factor” as a hypothesis, then generate tests to confirm/falsify that, like looking at non-smokers in industrialized areas.)&lt;/li&gt;
+&lt;li&gt;That is: it should recreate not just the “correct” conclusion, but the entire process to rule out alternative hypotheses.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;“Placebo tests”: this system should not find direct causal links between things we know to be spurious correlations, e.g. ice cream sales &amp;amp; drowning (confounded by summer swimming)&lt;/li&gt;
+&lt;li&gt;How do I get a hypothesis’s “prior”? Use the “weirdness rating” again? Or a “simplicity rating”?&lt;/li&gt;
+&lt;li&gt;Generating advice for more science, or for policy: If there is insufficient data to distinguish between two plausible models, it can ask for more data/experiments. Or, once we have a causal model, it can make policy recommendations for stuff we want. (For example, if it figures out what policies reliably cause less poverty or drug use, it can recommend that.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;Alright, those are six AI/Alignment-related research projects I&#39;m working on! Let&#39;s see in one year&#39;s time if any of these go anywhere.&lt;/p&gt;
+&lt;p&gt;Ciao,&lt;br /&gt;
+~ Nicky Case&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot; /&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;“[Russell &amp;amp; Norvig&#39;s famous AI textbook describes] a seemingly reasonable, but incorrect, reward function for a vacuum robot: if we reward the action of cleaning up dirt, the optimal policy causes the robot to repeatedly dump and clean up the same dirt.” (&lt;a href=&quot;https://people.eecs.berkeley.edu/~russell/papers/russell-nips16-cirl.pdf&quot;&gt;source&lt;/a&gt;) &lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Bishop &amp;amp; Trout (2005) give a snappy overview: &lt;a href=&quot;https://academic.oup.com/book/36404/chapter-abstract/320070686?redirectedFrom=fulltext&quot;&gt;The Amazing Success of Statistical Prediction Rules&lt;/a&gt; (&lt;a href=&quot;https://joelvelasco.net/teaching/4330/bishop&amp;amp;trout-ch2.pdf&quot;&gt;pdf&lt;/a&gt;) &lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn3&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;It&#39;s the &lt;a href=&quot;https://en.wikipedia.org/wiki/Force-directed_graph_drawing&quot;&gt;force-directed graph drawing&lt;/a&gt; algorithm, but with the vertical (y) positions locked. &lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#fnref3&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+        </entry>
+
+    
+
+        
+        
+        <entry>
+            <title>Signal Boosts for July &amp; August 2024</title>
+            <link href="https://blog.ncase.me/signal-boosts-sep-2024/"/>
+            <updated>2024-09-30T00:00:00Z</updated>
+            <id>https://blog.ncase.me/signal-boosts-sep-2024/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;(⏱️ &lt;em&gt;~13 min read&lt;/em&gt;)&lt;/p&gt;
+</content>
+        </entry>
+
     
 
         
@@ -3035,79 +3595,6 @@ a braaaaand newwww fetish!&lt;/p&gt;
 &lt;p&gt;If you&#39;re writing a blog, news articles, code documentation, educational material, etc... I hope Nutshell helps you help &lt;em&gt;your&lt;/em&gt; readers.&lt;/p&gt;
 &lt;p&gt;(See you next month... for explainers written &lt;em&gt;with&lt;/em&gt; Nutshell!)&lt;/p&gt;
 &lt;!--P.S: Testing, testing... let&#39;s see if this blog post can [:embed itself](./)...--&gt;</content>
-        </entry>
-
-    
-
-        
-        
-        <entry>
-            <title>New talk! “How To Explain Things Real Good”</title>
-            <link href="https://blog.ncase.me/new-talk-how-to-explain-things-real-good/"/>
-            <updated>2022-08-05T00:00:01Z</updated>
-            <id>https://blog.ncase.me/new-talk-how-to-explain-things-real-good/</id>
-            <content xml:lang="en" type="html">&lt;p&gt;Ha ha guess who&#39;s still bad at updating this blog and its RSS?&lt;/p&gt;
-&lt;p&gt;Anyway, here&#39;s an 18-minute talk I gave a few months ago to some grad students at Stanford! It&#39;s about how I explain complex math/science ideas accessibly, or: &lt;em&gt;How To Explain Things Real Good.&lt;/em&gt; 👌&lt;/p&gt;
-&lt;p&gt;Enjoy! &lt;a href=&quot;https://youtu.be/b-M2U3Jl1Cg&quot;&gt;Direct YouTube link&lt;/a&gt;, embed below:&lt;/p&gt;
-&lt;iframe width=&quot;787&quot; height=&quot;439&quot; src=&quot;https://www.youtube.com/embed/b-M2U3Jl1Cg&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;One-slide summary:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2022/08/summary.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</content>
-        </entry>
-
-    
-
-        
-        
-        <entry>
-            <title>Back to the Future with RSS!</title>
-            <link href="https://blog.ncase.me/back-to-the-future-with-rss/"/>
-            <updated>2021-07-01T00:00:01Z</updated>
-            <id>https://blog.ncase.me/back-to-the-future-with-rss/</id>
-            <content xml:lang="en" type="html">&lt;p&gt;🕑 &lt;em&gt;4 min reading time&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Table of Contents:&lt;/em&gt;&lt;br /&gt;
-&lt;a href=&quot;https://blog.ncase.me/back-to-the-future-with-rss/#what&quot;&gt;What is RSS?&lt;/a&gt; · &lt;a href=&quot;https://blog.ncase.me/back-to-the-future-with-rss/#how&quot;&gt;How does RSS work?&lt;/a&gt; · &lt;a href=&quot;https://blog.ncase.me/back-to-the-future-with-rss/#start&quot;&gt;How to get started?&lt;/a&gt; · &lt;a href=&quot;https://blog.ncase.me/back-to-the-future-with-rss/#tips&quot;&gt;Tips for using RSS wisely&lt;/a&gt; · &lt;a href=&quot;https://blog.ncase.me/back-to-the-future-with-rss/#conclusion&quot;&gt;Conclusion: If RSS was so great, why&#39;d it die in the first place?&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;&lt;a id=&quot;what&quot;&gt;&lt;/a&gt; What is RSS (Really Simple Syndication)?&lt;/h2&gt;
-&lt;p&gt;Imagine an open version of Twitter or Facebook News Feed, with no psy-op ads, owned by no oligopoly, manipulated by no algorithm, and all under &lt;em&gt;your full control.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Imagine a version of the newsletter where you don&#39;t have to worry about them selling your email to scammers, labyrinth-like unsubscribe pages, or stuffing your inbox with ever more crap.&lt;/p&gt;
-&lt;p&gt;Now imagine this existed and was extremely popular 15 years ago. Then we got suckered by the shiny walled gardens.&lt;/p&gt;
-&lt;p&gt;Well, it&#39;s time to make like a tree and go &lt;em&gt;back to the future&lt;/em&gt;, baby!&lt;/p&gt;
-&lt;h2&gt;&lt;a id=&quot;how&quot;&gt;&lt;/a&gt; How does RSS work?&lt;/h2&gt;
-&lt;p&gt;Unlike newsletters where you give each publisher your email (and they may abuse that trust), RSS works on a &amp;quot;don&#39;t call me, I&#39;ll call you&amp;quot; policy.&lt;/p&gt;
-&lt;p&gt;An RSS feed is a text file on a website. It&#39;s just a bunch of posts – no tracking or &amp;quot;personalization&amp;quot; – like a printed newspaper:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2021/07/rss1.png&quot; alt=&quot;Three newsvendors, holding newspapers reading &#39;truth&#39;, &#39;beauty&#39;, and &#39;clickbait&#39;. The last vendor is a clown.&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Then, whatever RSS reader app you use – you can use any app made by anyone – it&#39;ll call the websites for the feeds &lt;em&gt;you specifically opted into&lt;/em&gt;, no more or less. The websites can&#39;t force it in the other direction.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2021/07/rss2.png&quot; alt=&quot;A flying RSS logo takes &#39;truth&#39; and &#39;beauty&#39;, and leaves the clown&#39;s clickbait.&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Your app then shows you your posts in good ol&#39; reverse chronological order. (Some apps let you add extra filters, but unlike social media algorithms, &lt;em&gt;you&lt;/em&gt; control &#39;em.) Apps also make the posts prettier than raw text:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2021/07/rss3.png&quot; alt=&quot;The RSS logo presents a dazzling scroll entitled, &#39;Truth &amp;amp; Beauty&#39;.&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Really Simple, indeed!&lt;/p&gt;
-&lt;p&gt;(Note: there&#39;s something very similar to RSS called &amp;quot;Atom&amp;quot;, but all modern apps work equally with both.)&lt;/p&gt;
-&lt;h2&gt;&lt;a id=&quot;start&quot;&gt;&lt;/a&gt; Cool, how do I get started?&lt;/h2&gt;
-&lt;p&gt;First, you need a reader app. I&#39;m currently using the minimalist &lt;a href=&quot;https://www.inoreader.com/&quot;&gt;Inoreader&lt;/a&gt;, but &lt;a href=&quot;https://feedly.com/&quot;&gt;Feedly&lt;/a&gt; is the most popular, and folks I know use &lt;a href=&quot;https://theoldreader.com/&quot;&gt;The Old Reader&lt;/a&gt;. See this &lt;a href=&quot;https://zapier.com/blog/best-rss-feed-reader-apps/&quot;&gt;list of readers&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;To add a feed to your app, just paste a link to the blog/site, and your app will automatically find the feed! RSS also lets you follow creators on YouTube, Substack, Medium, and more.&lt;/p&gt;
-&lt;p&gt;But what to follow? Might I recommend...&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.scotthyoung.com/blog/&quot;&gt;Scott Young&#39;s Blog&lt;/a&gt; – about learning &amp;amp; productivity&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://questionablecontent.net/&quot;&gt;Questionable Content&lt;/a&gt; – a comic about queers and robots&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://webcomicname.com/&quot;&gt;Webcomic Name&lt;/a&gt; – the comic that goes &amp;quot;oh no&amp;quot;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw&quot;&gt;3Blue1Brown&lt;/a&gt; – a YouTube channel that shows the beauty of math&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/AimkidProductions&quot;&gt;Aimkid&lt;/a&gt; – the smoothest, most expressive animations I&#39;ve seen in a long time&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;(And, selfishly: &lt;a href=&quot;https://ncase.me/&quot;&gt;my new interactive, educational projects&lt;/a&gt; and &lt;a href=&quot;https://blog.ncase.me/&quot;&gt;my blog&lt;/a&gt;)&lt;/p&gt;
-&lt;h2&gt;&lt;a id=&quot;tips&quot;&gt;&lt;/a&gt; Tips for using RSS wisely&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Beware the hoarder instinct. No algorithm can save you from hoarding feeds &amp;quot;just in case&amp;quot;, then being overwhelmed. The only cure is to ruthlessly Marie Kondo that crap – if a feed doesn&#39;t &lt;em&gt;consistently&lt;/em&gt; enrich your life, cut it.&lt;/li&gt;
-&lt;li&gt;Some feeds only give you the excerpt of a post, with a link to see the full post at their site. Don&#39;t follow those: they break you out of the RSS reading experience, and trick you into losing time on their site. (This is a harsh rule: I used to follow Quanta Magazine&#39;s feed, but they switched from full-text to excerpts, so I unsubscribed.)&lt;/li&gt;
-&lt;li&gt;Don&#39;t follow feeds that update more than once a day. Go for daily digests, or better yet, weekly digests.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;&lt;a id=&quot;conclusion&quot;&gt;&lt;/a&gt; If RSS Was So Great, Why&#39;d It Die In The First Place&lt;/h2&gt;
-&lt;p&gt;Well, Google killed Google Reader in 2013, the #1 RSS reader at the time. This was to make way for Google Plus, which failed. The sacrificial lamb was for nothing.&lt;/p&gt;
-&lt;p&gt;But Google only did what nearly &lt;em&gt;everyone&lt;/em&gt; – including yours truly – did in 2013: leave the open, decentralized Web 1.0 for the shiny new Web 2.0 platforms. Why? Well, it was more fun &amp;amp; convenient.&lt;/p&gt;
-&lt;p&gt;But now in 2021, for most of us, social media is very &lt;em&gt;not&lt;/em&gt; fun and &lt;em&gt;not&lt;/em&gt; convenient. That&#39;s why I went back to the future with RSS, and wrote this post encouraging you to do the same!&lt;/p&gt;
-&lt;p&gt;(Ok, RSS had two more problems: 1) Getting overwhelmed with feeds. As said above, the only cure is to trim ruthlessly. 2) RSS lets you serve text/link/image ads, but &lt;em&gt;not&lt;/em&gt; the creepy user-tracking ads. In 2013 that was the &amp;quot;best&amp;quot; way make money on the web, but these days ad revenue is dying, and subscriptions like Patreon/Substack are thriving.)&lt;/p&gt;
-&lt;p&gt;And that&#39;s all, folks! Now you know how to escape the attention-draining, empathy-killing, critical-thought-suffocating siren song of the algorithms. And get your inbox less cluttered with newsletters.&lt;/p&gt;
-&lt;p&gt;Here&#39;s to a renaissance for a kinder, better web. 💖&lt;/p&gt;
-</content>
         </entry>
 
     
