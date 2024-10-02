@@ -12,7 +12,7 @@ hasMath: true
 
 *Hi! This is a "share your work" notes-dump, for some independent research projects I'm doing in AI Alignment/Safety. Alas, this means this post will be more wordy, sloppy & technical than my usual "explain it like I'm 12" style. Sorry! Should any of these bear fruit, I'll share the fruit's juice in more accessible packaging.*
 
-*(If any of these ideas inspire you, feel free to cite this post as **Case, 2024**!)*
+*(If any of these ideas inspire you to do some research of your own, feel free to cite this post as **Nicky Case, 2024**! Here's a timestamped Archive.org [save of this page, on October 2nd, 2024](http://web.archive.org/web/20241002171613/https://blog.ncase.me/research-notes-oct-2024/))*
 
 **Table of Contents:**
 
