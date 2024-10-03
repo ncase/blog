@@ -1,7 +1,7 @@
 ---
 title: "Signal Boosts for July & August 2024"
 tags:
-- post
+- draft
 share_image: https://blog.ncase.me/content/media/sb/thumb.png
 share_desc: "Nasal sprays, constructed languages, and sassy sci-fi satires"
 date: 2024-09-30

@@ -46,7 +46,7 @@ Let's use a scaffolded LLM to *qualitatively and quantitatively* elicit a human'
 
 **Video of it in action!** (~2 min)
 
-<iframe width="640" height="557" src="https://www.youtube-nocookie.com/embed/oDzyPqGsy8M?si=HC3nAJprRVpn2a_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="640" height="557" src="https://www.youtube-nocookie.com/embed/oDzyPqGsy8M?si=HC3nAJprRVpn2a_w&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 . . .
 
@@ -277,7 +277,7 @@ Concretely: you use a simple interface to make a chatbot. But unlike "GPTs" or C
 
 I'll just repeat the video I showed for [Project 1](#project_1), to show what kind of hybrid-LLM/GOFAI chatbot you can make in Speakeasy: (~2 min)
 
-<iframe width="640" height="557" src="https://www.youtube-nocookie.com/embed/oDzyPqGsy8M?si=HC3nAJprRVpn2a_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="640" height="557" src="https://www.youtube-nocookie.com/embed/oDzyPqGsy8M?si=HC3nAJprRVpn2a_w&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ( *Ideally* I'd like this tool to be a pure visual interface, like [IFTTT](https://ifttt.com/) or Excel or Scratch.  Right now, Speakeasy uses a simplified script, and it runs in JavaScript, right in your browser.  More convenient for a layperson than downloading & running Python, that's for sure. )
 

@@ -46,7 +46,7 @@
 &lt;p&gt;&lt;strong&gt;Related to:&lt;/strong&gt; Active preference elicitation, Reward uncertainty, Interpretability-by-design, Bayesian inference&lt;/p&gt;
 &lt;p&gt;. . .&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Video of it in action!&lt;/strong&gt; (~2 min)&lt;/p&gt;
-&lt;iframe width=&quot;640&quot; height=&quot;557&quot; src=&quot;https://www.youtube-nocookie.com/embed/oDzyPqGsy8M?si=HC3nAJprRVpn2a_w&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;640&quot; height=&quot;557&quot; src=&quot;https://www.youtube-nocookie.com/embed/oDzyPqGsy8M?si=HC3nAJprRVpn2a_w&amp;rel=0&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;p&gt;. . .&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Introduction / Motivation:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Reward a robot for picking up dirt, and it&#39;ll pick up &amp;amp; drop the same dirt over and over again.&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; Point is: in AI, it&#39;s really hard to specify what we truly want. Hence: why not get an AI to &lt;em&gt;learn&lt;/em&gt; what we truly want? Maybe by &lt;em&gt;asking good questions?&lt;/em&gt;&lt;/p&gt;
@@ -222,7 +222,7 @@ Males write about their male friends/family/mentors&lt;/p&gt;
 &lt;p&gt;Like how calculators &amp;amp; spreadsheets lets ~everyone accessibly use the power of computation... &lt;em&gt;Speakeasy&lt;/em&gt; lets ~everyone accessibly use the power of &lt;em&gt;scaffolded&lt;/em&gt; LLMs, for their own personal, narrow-AI use cases.&lt;/p&gt;
 &lt;p&gt;Concretely: you use a simple interface to make a chatbot. But unlike &amp;quot;GPTs&amp;quot; or Character.ai, it&#39;s not just an LLM + a system prompt + some examples + a RAG!  You can make a &lt;em&gt;full state machine&lt;/em&gt;, with memory &amp;amp; logic, plugging into tools like statistics &amp;amp; visualization!  (and &lt;em&gt;maaaaaybe&lt;/em&gt; web search/scraping.)&lt;/p&gt;
 &lt;p&gt;I&#39;ll just repeat the video I showed for &lt;a href=&quot;https://blog.ncase.me/research-notes-oct-2024/#project_1&quot;&gt;Project 1&lt;/a&gt;, to show what kind of hybrid-LLM/GOFAI chatbot you can make in Speakeasy: (~2 min)&lt;/p&gt;
-&lt;iframe width=&quot;640&quot; height=&quot;557&quot; src=&quot;https://www.youtube-nocookie.com/embed/oDzyPqGsy8M?si=HC3nAJprRVpn2a_w&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;640&quot; height=&quot;557&quot; src=&quot;https://www.youtube-nocookie.com/embed/oDzyPqGsy8M?si=HC3nAJprRVpn2a_w&amp;rel=0&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;p&gt;( &lt;em&gt;Ideally&lt;/em&gt; I&#39;d like this tool to be a pure visual interface, like &lt;a href=&quot;https://ifttt.com/&quot;&gt;IFTTT&lt;/a&gt; or Excel or Scratch.  Right now, Speakeasy uses a simplified script, and it runs in JavaScript, right in your browser.  More convenient for a layperson than downloading &amp;amp; running Python, that&#39;s for sure. )&lt;/p&gt;
 &lt;p&gt;( &lt;em&gt;Also&lt;/em&gt; ideally I&#39;d like this tool to be like CodePen or Google Docs: people can share &amp;amp; remix each other&#39;s scaffolded LLMs. )&lt;/p&gt;
 &lt;p&gt;( Also note: I&#39;m currently making this project in collaboration with educational non-profit &lt;a href=&quot;https://hackclub.com/&quot;&gt;Hack Club&lt;/a&gt;, which works with high-schoolers.  So by &amp;quot;layperson-friendly&amp;quot;, I mean the specific target is &amp;quot;so accessible, a high-schooler with no prior coding experience can make a thing they&#39;re proud of in &amp;lt;30 minutes!&amp;quot; )&lt;/p&gt;
@@ -558,19 +558,6 @@ Males write about their male friends/family/mentors&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
-        </entry>
-
-    
-
-        
-        
-        <entry>
-            <title>Signal Boosts for July &amp; August 2024</title>
-            <link href="https://blog.ncase.me/signal-boosts-sep-2024/"/>
-            <updated>2024-09-30T00:00:00Z</updated>
-            <id>https://blog.ncase.me/signal-boosts-sep-2024/</id>
-            <content xml:lang="en" type="html">&lt;p&gt;(⏱️ &lt;em&gt;~13 min read&lt;/em&gt;)&lt;/p&gt;
 </content>
         </entry>
 
@@ -3596,6 +3583,24 @@ a braaaaand newwww fetish!&lt;/p&gt;
 &lt;p&gt;If you&#39;re writing a blog, news articles, code documentation, educational material, etc... I hope Nutshell helps you help &lt;em&gt;your&lt;/em&gt; readers.&lt;/p&gt;
 &lt;p&gt;(See you next month... for explainers written &lt;em&gt;with&lt;/em&gt; Nutshell!)&lt;/p&gt;
 &lt;!--P.S: Testing, testing... let&#39;s see if this blog post can [:embed itself](./)...--&gt;</content>
+        </entry>
+
+    
+
+        
+        
+        <entry>
+            <title>New talk! “How To Explain Things Real Good”</title>
+            <link href="https://blog.ncase.me/new-talk-how-to-explain-things-real-good/"/>
+            <updated>2022-08-05T00:00:01Z</updated>
+            <id>https://blog.ncase.me/new-talk-how-to-explain-things-real-good/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;Ha ha guess who&#39;s still bad at updating this blog and its RSS?&lt;/p&gt;
+&lt;p&gt;Anyway, here&#39;s an 18-minute talk I gave a few months ago to some grad students at Stanford! It&#39;s about how I explain complex math/science ideas accessibly, or: &lt;em&gt;How To Explain Things Real Good.&lt;/em&gt; 👌&lt;/p&gt;
+&lt;p&gt;Enjoy! &lt;a href=&quot;https://youtu.be/b-M2U3Jl1Cg&quot;&gt;Direct YouTube link&lt;/a&gt;, embed below:&lt;/p&gt;
+&lt;iframe width=&quot;787&quot; height=&quot;439&quot; src=&quot;https://www.youtube.com/embed/b-M2U3Jl1Cg&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;One-slide summary:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/images/2022/08/summary.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
         </entry>
 
     
