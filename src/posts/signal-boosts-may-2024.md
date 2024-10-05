@@ -61,11 +61,11 @@ If you're an artist with a low budget, this movie is *inspiring*, to show how mu
 
 Once again, Grant Sanderson (3Blue1Brown) delivers. This YouTube channel teaches tough ideas from math/computer science, with beautiful visualizations & intuitive explanations. This past month, Grant did it again, explaining the *Transformer*, the AI architecture behind ChatGPT, DALL-E, AlphaFold, and more!
 
-It's a 3-part series, with 1 more part to come:
+It's a 3-part series, ~~with 1 more part to come~~ all out now:
 
 * [But what is a GPT? Visual intro to transformers](https://www.youtube.com/watch?v=wjZofJX0v4M) (27 min)
 * [Attention in transformers, visually explained](https://www.youtube.com/watch?v=eMlx5fFNoYc) (26 min)
-* [final part to come]
+* [How might LLMs "store facts"?](https://www.youtube.com/watch?v=9-Jl0dxWQs8) (23 min)
 
 (Actually, this series is a sequel to his *previous* series, [explaining the classic, "vanilla" Artificial Neural Networks](https://www.3blue1brown.com/topics/neural-networks). I found *those* super-valuable too; it even helped me code my own ANN from scratch!)
 

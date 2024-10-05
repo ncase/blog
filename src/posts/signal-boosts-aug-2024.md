@@ -44,6 +44,8 @@ I applied! Fingers crossed for me, and maybe I'll see you there? Let's learn tog
 
 ## 👃 "Drug-free" nasal sprays vs airborne pathogens?
 
+*(updated Oct 5, 2024. Updated sections marked in parentheses.)*
+
 ![](../content/media/aug-2024/nasal.png)
 *(Diagram on how a drug-free, non-vaccine nasal spray can PHYSICALLY block & neutralize pathogens! From [Paper 1] listed below.)*
 
@@ -72,8 +74,9 @@ Here's 7 papers I found on using nasal sprays as a prophylactic (tool to prevent
     * **Result:** Cut Covid infection rate down to a *~third!* (from 34.5% to 13.1%) No serious adverse effects reported.
 
 3. [Pre-registered randomized double-blind human trial](https://www.tandfonline.com/doi/pdf/10.2147/IJGM.S328486). 394 participants (196 treatment, 198 placebo), all healthcare workers in Argentina.
-    * **Treatment:** Main ingredient: Iota-Carrageena.
+    * **Treatment:** Main ingredient: Iota-Carrageenan.
     * **Result:** Cut Covid infection rate down to a *fifth*. (from 5% to 1%. note: low percentages mean higher uncertainty.) No significant difference in adverse effects, between placebo/treatment groups.
+        * (Update: I just realized the I-C group's infections track placebo until day 5, then are *flat*; the incubation time (time between infection & symptoms) for Covid-19 *is* ~5 days! So, this (small) data is consistent with I-C *entirely eliminating* Covid-19 infections, not "just" cutting it down to a fifth!)
 
 ![Figure showing above results.](../content/media/aug-2024/human.png)
     
@@ -96,6 +99,7 @@ Before you & I get too excited, some caveats:
 * General reminder that straight-up fraud in science is more common than you'd hope.[^fraud-examples]
 * Many of these papers have authors with ties to private pharma companies, so there may be financial pressure to skew the results.
 * [The FDA has issued a warning](https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/salvacion-usa-inc-672252-02132024) against the company that makes my friend's nasal spray (Covixyl). But eh, fuck 'em, [FDA kept stalling on cheap Covid self-tests already approved in Europe](https://www.nbcnews.com/health/health-news/rapid-tests-covid-rsv-flu-are-available-europe-stopping-us-rcna64470).
+    * (Update: Why do I trust FDA's "generally recognized as safe" list but not their rejection of Covixyl/European self-tests? Upon further reflection... mm, I probably shouldn't. My two main mental models: 1) FDA errs too far on side of caution, so they reject lots of safe things, but if they recognize something as safe it likely is. Or 2) FDA's just unreliable. Either way, Iota-Carrageenan's a seaweed extract & both it and ELAH have been used in food preservation for decades, so it's at least "not worse" than what you're eating daily anyway.)
 * I don't know how easily pathogens can evolve around these treatments, like how pathogens already evolve around vaccines & antibiotics.
 * **There are... shockingly very few papers studying drug-free nasal sprays vs Covid or other respiratory diseases.** This seems like a super important thing to invest more research into, even if just to find out if it really works.
     * (And in general, we really *really* need to "solve airborne pandemics" before something escapes from a CRISPR & bioAI-enhanced bioweapons lab. [Germicidal UV](https://en.wikipedia.org/wiki/Ultraviolet_germicidal_irradiation), [far UV-C](https://en.wikipedia.org/wiki/Far-UVC), and [air ventilation/filters/quality](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8146370/) all also seem like relatively-neglected-yet-promising research areas.)
@@ -119,6 +123,8 @@ So, the potential costs & benefits of drug-free nasal sprays:
 Anyway, there's a Covid-19 wave this summer & I'm taking a flight soon.
 
 So personally: I'll be stocking up on nasal sprays!
+
+(Update on Oct 5: Still spraying daily! At first, I only just my friend's recommendation, Covixyl, which uses ELAH. Eventually I learnt there's also an over-the-counter spray Salinex, which uses Iota-Carrageenan, the one that *does* have a human trial, which ELAH doesn't. I use both sprays twice daily. Covixyl stings a bit, Salinex's nozzle design is drippy. Otherwise it's much less annoying than masks, let alone catching flu or RSV or Covid-19.)
 
 ---
 

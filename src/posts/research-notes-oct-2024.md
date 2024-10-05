@@ -4,7 +4,7 @@ tags:
 - post
 share_image: https://blog.ncase.me/content/media/oct-2024/research/banner.png
 share_desc: "a bunch of misc projects I'm playing with around AI Safety/Alignment"
-date: 2024-10-02
+date: 2024-10-03
 readtime: "45 min"
 layout: base-layout.njk
 hasMath: true
@@ -436,6 +436,8 @@ Agent's reward is `min(1, Metric_1) + min(1, Metric_2) + ... + min(1, Metric_M)`
 	2. CUES hints at a *theoretical* reason why ensembles work.
 	3. CUES suggests *capped-influence* ensembles do better than merely adding/averaging everything in an ensemble, to prevent one huge Cheat from screwing up everything.
 * "Wait, doesn't ensemble reward also show up in [the famous RHLF paper](https://proceedings.neurips.cc/paper_files/paper/2017/file/d5e2c0adad503c91f91df240d0cd4e49-Paper.pdf)?"  Kind of.  In the RHLF paper, the "rewards" aren't specified by the designer, they're *learnt* in training – and further, the more training there is, the *closer* they converge!  So the rewards in RHLF are *highly* correlated!  And thus, so are their failure modes, hence (probably partly) why RHLF'd LLMs are prone to [weird adversarial jailbreaks](https://arxiv.org/pdf/2307.15043).
+    * Update Oct 5: I *just* learnt about Coste et al 2024: [“Reward Model Ensembles Help Mitigate Over-optimization”](https://arxiv.org/pdf/2310.02743). So that's more evidence for "ensembles => robustness". The difference between this paper and CUES, is that the above paper talks about an ensemble of *learnt rewards*, CUES is an ensemble of *specifications.*
+        * Put another way: that paper uses ensembles to deal with *inner alignment*, CUES is meant to deal with *outer alignment*.
 * The CUES strategy could also be implemented not just for training a whole agent, but training *each individual neuron.* If the math behind CUES is right, then having a neural network where the *weights* are capped (thus, capped-influence), should result in more robust networks.
 	* *Is* this true? I haven't tested it myself yet (though it wouldn't take long), but [Tanay & Griffin 2018](https://thomas-tanay.github.io/post--L2-regularization/) show that an MNIST classifier with L2 regularization (punishing big neural weights), was *much, much* more robust to adversarial examples. (So: CUES could explain *why* this finding happened!) With low L2 regularization, you could make an adversarial example that's visually indistinguishable to humans. *With* large L2 regularization, it's obvious:
 

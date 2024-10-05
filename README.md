@@ -17,7 +17,12 @@ Code:
 
 * [11ty](https://www.11ty.dev/) (static site generator)
 * [github pages](https://pages.github.com/) (hosting)
-* [goatcounter](https://www.goatcounter.com/) (privacy-first, open-source, minimalist analytics)
 * [littlefoot](https://littlefoot.js.org/) (nicer footnotes that show on hover)
 * [nutshell](https://ncase.me/nutshell/) (expandable, embeddable explanations)
 * [mathjax](https://www.mathjax.org/) (pretty math)
+
+
+<!--
+Removed until their HTTPS is fixed
+* [goatcounter](https://www.goatcounter.com/) (privacy-first, open-source, minimalist analytics)
+-->

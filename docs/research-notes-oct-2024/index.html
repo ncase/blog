@@ -52,7 +52,7 @@
 	<script src="/scripts/page.js"></script>
     
     
-    <script>window.postDate = new Date("Tue Oct 01 2024 20:00:00 GMT-0400 (Eastern Daylight Saving Time)");</script>
+    <script>window.postDate = new Date("Wed Oct 02 2024 20:00:00 GMT-0400 (Eastern Daylight Saving Time)");</script>
     
 
     <!-- Littlefoot: for my feetnotes -->
@@ -72,7 +72,8 @@
     
 
     <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
-    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+    <!-- removed until their HTTPS is fixed -->
+    <!--script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script-->
 
 </head>
 <body>
@@ -632,7 +633,15 @@ Males write about their male friends/family/mentors</p>
 <li>CUES suggests <em>capped-influence</em> ensembles do better than merely adding/averaging everything in an ensemble, to prevent one huge Cheat from screwing up everything.</li>
 </ol>
 </li>
-<li>&quot;Wait, doesn't ensemble reward also show up in <a href="https://proceedings.neurips.cc/paper_files/paper/2017/file/d5e2c0adad503c91f91df240d0cd4e49-Paper.pdf">the famous RHLF paper</a>?&quot;  Kind of.  In the RHLF paper, the &quot;rewards&quot; aren't specified by the designer, they're <em>learnt</em> in training – and further, the more training there is, the <em>closer</em> they converge!  So the rewards in RHLF are <em>highly</em> correlated!  And thus, so are their failure modes, hence (probably partly) why RHLF'd LLMs are prone to <a href="https://arxiv.org/pdf/2307.15043">weird adversarial jailbreaks</a>.</li>
+<li>&quot;Wait, doesn't ensemble reward also show up in <a href="https://proceedings.neurips.cc/paper_files/paper/2017/file/d5e2c0adad503c91f91df240d0cd4e49-Paper.pdf">the famous RHLF paper</a>?&quot;  Kind of.  In the RHLF paper, the &quot;rewards&quot; aren't specified by the designer, they're <em>learnt</em> in training – and further, the more training there is, the <em>closer</em> they converge!  So the rewards in RHLF are <em>highly</em> correlated!  And thus, so are their failure modes, hence (probably partly) why RHLF'd LLMs are prone to <a href="https://arxiv.org/pdf/2307.15043">weird adversarial jailbreaks</a>.
+<ul>
+<li>Update Oct 5: I <em>just</em> learnt about Coste et al 2024: <a href="https://arxiv.org/pdf/2310.02743">“Reward Model Ensembles Help Mitigate Over-optimization”</a>. So that's more evidence for &quot;ensembles =&gt; robustness&quot;. The difference between this paper and CUES, is that the above paper talks about an ensemble of <em>learnt rewards</em>, CUES is an ensemble of <em>specifications.</em>
+<ul>
+<li>Put another way: that paper uses ensembles to deal with <em>inner alignment</em>, CUES is meant to deal with <em>outer alignment</em>.</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>The CUES strategy could also be implemented not just for training a whole agent, but training <em>each individual neuron.</em> If the math behind CUES is right, then having a neural network where the <em>weights</em> are capped (thus, capped-influence), should result in more robust networks.
 <ul>
 <li><em>Is</em> this true? I haven't tested it myself yet (though it wouldn't take long), but <a href="https://thomas-tanay.github.io/post--L2-regularization/">Tanay &amp; Griffin 2018</a> show that an MNIST classifier with L2 regularization (punishing big neural weights), was <em>much, much</em> more robust to adversarial examples. (So: CUES could explain <em>why</em> this finding happened!) With low L2 regularization, you could make an adversarial example that's visually indistinguishable to humans. <em>With</em> large L2 regularization, it's obvious:</li>
