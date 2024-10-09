@@ -427,11 +427,11 @@ Here's a randomly generated causal graph: (note I set p=1, Cheats can affect *ev
 
 ![](../content/media/oct-2024/cues/graph.png)
 
-Here's what happens when we optimize for a single Metric, or even an ensemble of added-up (uncapped) Metrics:
+Here's what the agent invests in, when we reward it based on a single Metric, or even an ensemble of added-up (uncapped) Metrics:
 
 ![](../content/media/oct-2024/cues/cheat.png)
 
-But here's what happens if we optimize for all Metrics in a *capped-influence* ensemble:
+But here's what the agent invests in, when we reward it on an ensemble of all Metrics added-up in a *capped-influence* way:
 
 ![](../content/media/oct-2024/cues/cues.png)
 
