@@ -599,7 +599,7 @@ Males write about their male friends/family/mentors</p>
 <p>Goodhart: Good-bye!</p>
 <p>. . .</p>
 <p><strong>The Numerical Experiments:</strong></p>
-<p>Here's the plan to numerically test the above: (I already did a sloppy version of this experiment last year, need to re-do it more rigorously, as described below)</p>
+<p>Here's the plan to numerically test the above: (I already did a sloppy version of this experiment last year, need to re-do it more rigorously, as described below. <em>(Update Oct 9: did it! see end of this section.)</em> )</p>
 <p>Set up for the numerical simulation:</p>
 <p>1) <strong>Generate a random, two-layer linear network:</strong></p>
 <p><img src="../content/media/oct-2024/research/cues.png" alt=""></p>
@@ -621,6 +621,14 @@ Males write about their male friends/family/mentors</p>
 <p>4) <strong>Test ensemble <em>AND</em> cap each Metric's influence.</strong></p>
 <p>Agent's reward is <code>min(1, Metric_1) + min(1, Metric_2) + ... + min(1, Metric_M)</code>.</p>
 <p>5) <strong>Compare!</strong></p>
+<p><strong>Update Oct 9th, 2024:</strong> I did the above numerical simulation! <strong><a href="https://colab.research.google.com/drive/1m6HQSLcgBINFMlign0n6yJwHEwV-mYxD?usp=sharing">Check out my Colab notebook.</a></strong></p>
+<p>Here's a randomly generated causal graph: (note I set p=1, Cheats can affect <em>every</em> Metric; but their influence is power-law distributed.)</p>
+<p><img src="../content/media/oct-2024/cues/graph.png" alt=""></p>
+<p>Here's what happens when we optimize for a single Metric, or even an ensemble of added-up (uncapped) Metrics:</p>
+<p><img src="../content/media/oct-2024/cues/cheat.png" alt=""></p>
+<p>But here's what happens if we optimize for all Metrics in a <em>capped-influence</em> ensemble:</p>
+<p><img src="../content/media/oct-2024/cues/cues.png" alt=""></p>
+<p><img src="../content/media/oct-2024/cues/planned.png" alt=""></p>
 <p>. . .</p>
 <p><strong>More real-world empirical evidence that CUES may work:</strong>  It's been long-well-known that SPRs<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>, which simply add up a bunch of metrics, do better than experts at diagnosis &amp; prediction in a wide variety of fields. Amazingly, <em>unit-weight</em> SPRs — where each metric is capped at an equal influence — do even better! The math behind CUES may finally explain why SPRs are so unreasonably effective.</p>
 <p>. . .</p>

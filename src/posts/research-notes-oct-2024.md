@@ -391,7 +391,7 @@ Goodhart: Good-bye!
 
 **The Numerical Experiments:**
 
-Here's the plan to numerically test the above: (I already did a sloppy version of this experiment last year, need to re-do it more rigorously, as described below)
+Here's the plan to numerically test the above: (I already did a sloppy version of this experiment last year, need to re-do it more rigorously, as described below. *(Update Oct 9: did it! see end of this section.)* )
 
 Set up for the numerical simulation:
 
@@ -420,6 +420,22 @@ Agent's reward is `Metric_1 + Metric_2 + ... + Metric_M`.
 Agent's reward is `min(1, Metric_1) + min(1, Metric_2) + ... + min(1, Metric_M)`.
 
 5\) **Compare!**
+
+**Update Oct 9th, 2024:** I did the above numerical simulation! **[Check out my Colab notebook.](https://colab.research.google.com/drive/1m6HQSLcgBINFMlign0n6yJwHEwV-mYxD?usp=sharing)**
+
+Here's a randomly generated causal graph: (note I set p=1, Cheats can affect *every* Metric; but their influence is power-law distributed.)
+
+![](../content/media/oct-2024/cues/graph.png)
+
+Here's what happens when we optimize for a single Metric, or even an ensemble of added-up (uncapped) Metrics:
+
+![](../content/media/oct-2024/cues/cheat.png)
+
+But here's what happens if we optimize for all Metrics in a *capped-influence* ensemble:
+
+![](../content/media/oct-2024/cues/cues.png)
+
+![](../content/media/oct-2024/cues/planned.png)
 
 . . .
 
