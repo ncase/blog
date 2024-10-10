@@ -3,10 +3,10 @@ layout: base-layout.njk
 title: "Nicky Case's 2014 In Hindsight"
 date: 2015-01-03T20:00:00.000Z
 tags:
-- post
 - This Time It Is Personal
 share_image: https://blog.ncase.me/content/images/2015/01/boop.png
 share_desc: ""
+isDeprecated: true
 ---
 
 <iframe width="800" height="450" src="//www.youtube.com/embed/jHlHEnjp27s" frameborder="0" allowfullscreen=""></iframe>

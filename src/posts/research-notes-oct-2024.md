@@ -3,7 +3,7 @@ title: "Research Notes-dump for Oct 2024"
 tags:
 - post
 share_image: https://blog.ncase.me/content/media/oct-2024/research/banner.png
-share_desc: "a bunch of misc projects I'm playing with around AI Safety/Alignment"
+share_desc: "a bunch of misc projects I'm playing with, in AI Safety/Alignment"
 date: 2024-10-03
 readtime: "45 min"
 layout: base-layout.njk

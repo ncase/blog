@@ -305,12 +305,43 @@ body[dark_mode=yes] .article-summary{
     opacity: 0.45;
 }
 
+
+
+/*******************************/
+/* LITTLEFOOTNOTES */
+/*******************************/
+
+
 .littlefoot{
+    /* A gray square moved up */
     top: -0.5em;
     left: -0.15em;
     --button-border-radius: 0px;
     --button-padding: 0px 0.4em;
     --button-margin: 0px;
+    --button-background-color: #ddd;
+    --button-active-background-color: #aaa;
+    --button-text-color: #888;
+}
+.littlefoot__popover{
+    text-align: justify;
+}
+/*
+What the hell? Bug with Littlefoot: when resize window
+before it's fully loaded, the LF wrapper gets all screwy.
+Hack fix, I do not understand.
+*/
+.littlefoot__wrapper{
+    max-width: none !important;
+}
+/*
+Littlefoot Bug: wrap around to next line, it breaks off.
+*/
+@media not print {
+    .littlefoot--print {
+        opacity: 0;
+        display: inline !important;
+    }
 }
 
 /*******************************/

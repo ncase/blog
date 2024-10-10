@@ -12,12 +12,14 @@ share_desc: "I learn stuff, then share what I learn"
     <b>
         Hi, I'm <a href="https://ncase.me/">Nicky Case!</a>
     </b>
-    Here are my latest ten posts: <a href='/archive'>(see full archive)</a>
+    Here are my latest five posts: <a href='/archive'>(see full archive)</a>
 </p>
 
-{% for post in collections.post | latestTenPosts %}
+{% for post in collections.post | latestFivePosts %}
     {% include "article.njk" %}
 {% endfor %}
+
+<br>
 
 <p>
 And here's five of my favorite things I've written so far:

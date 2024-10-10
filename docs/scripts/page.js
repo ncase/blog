@@ -6,6 +6,15 @@ window.$all = (query, el=document)=>{
 };
 
 window.addEventListener("DOMContentLoaded", ()=>{
+    
+    // DARK MODE INSTANT
+    let darkModeDefault;
+    if(window.matchMedia){
+        darkModeDefault = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    }else{
+        darkModeDefault = false;
+    }
+    document.body.setAttribute("dark_mode", darkModeDefault ? "yes" : "no");
 
     // ARTICLE SUMMARIES
     // Scale the thumnails:
@@ -329,6 +338,17 @@ window.addEventListener("DOMContentLoaded", ()=>{
                 <% number %>
             </button>`
         });
+        
+        // Littlefoot wraparound bug:
+        // Swap around print & hover footnotes, shift leftwards by whatever
+        $all(".footnote-ref.littlefoot--print").forEach(printFootnote=>{
+            const parentNode = printFootnote.parentNode,
+                  hoverFootnote = printFootnote.previousSibling,
+                  width = printFootnote.getBoundingClientRect().width;
+            parentNode.insertBefore(printFootnote, hoverFootnote);
+            hoverFootnote.style.marginLeft = (-width + 3) + "px";
+        });
+        
         // Make a : footnote header before hiding in Nutshell (if any exist)
         let footnotesDivider = $(".footnotes-sep");
         if(footnotesDivider){

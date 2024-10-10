@@ -111,7 +111,7 @@ Don't *tell* your truth with an abstract sermon, but *show* it with the worked-e
 
 Once you know your story's purpose, *then* you can apply technical craft. I recommend:
 
-* [Kurt Vonnegut's 8 Tips](https://www.brainpickings.org/2012/04/03/kurt-vonnegut-on-writing-stories) (mini-essay)
+* [Kurt Vonnegut's 8 Tips](https://www.themarginalian.org/2012/04/03/kurt-vonnegut-on-writing-stories/) (mini-essay)
 * [Lessons From The Screenplay](https://www.youtube.com/c/LessonsfromtheScreenplay/videos?view=0&sort=p&flow=grid) (YouTube channel)
 * [Story](https://www.indiebound.org/book/9780060391683) by Rob McKee (book)
 

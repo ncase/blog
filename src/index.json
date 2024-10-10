@@ -1,32 +1,32 @@
 {
     "frontpagePosts":[
         {
-            "title": "Back to the Future with RSS!",
-            "share_desc": "a short intro to the good ol' web (4 min read)",
-            "url": "/back-to-the-future-with-rss/",
-            "share_image": "https://blog.ncase.me/content/images/2021/07/rss3.png"
+            "title": "Clearing out the idea closet",
+            "share_desc": "a mega-post describing 47 projects on my backlog (92 min)",
+            "url": "/backlog/",
+            "share_image": "https://blog.ncase.me/content/media/backlog/banner.png"
         },
         {
-            "title": "Curse of the Chocolate-Covered Broccoli",
-            "share_desc": "the science of emotion in learning, a sloppy literature review (7 min read)",
-            "url": "/curse-of-the-chocolate-covered-broccoli-or-emotion-in-learning/",
-            "share_image": "https://blog.ncase.me/content/images/2019/12/broc-1.png"
+            "title": "Lone Wolf",
+            "share_desc": "a short story about a werewolf who just wants to make coffee (9 min)",
+            "url": "/lone-wolf/",
+            "share_image": "https://blog.ncase.me/content/images/2019/02/promptss-1.png"
         },
         {
             "title": "Lizard Person",
-            "share_desc": "a tiny story in a tiny diner (4 min read)",
+            "share_desc": "a tiny story in a tiny diner (4 min)",
             "url": "/lizard-person/",
             "share_image": "https://blog.ncase.me/content/images/2019/02/prompt3-1.png"
         },
         {
-            "title": "Parable of the Hill Climber",
-            "share_desc": "a children's picture book about mid-life depression and stochastic gradient descent (2 min read)",
-            "url": "/parable-of-the-hill-climber/",
-            "share_image": "https://blog.ncase.me/content/images/2018/11/max0001.png"
+            "title": "Why don't brackets matter in multiplication? (Visual proof of associativity)",
+            "share_desc": "A never-before-seen visual proof of a stupidly basic fact (3 min)",
+            "url": "/brackets-dont-matter/",
+            "share_image": "https://blog.ncase.me/content/media/brackets-dont-matter/banner.png"
         },
         {
             "title": "How Do I Learn [X]?",
-            "share_desc": "my quick tips on learning, writing, math, art, etc. (9 min read)",
+            "share_desc": "my quick tips on learning, writing, math, art, etc. (9 min)",
             "url": "/how-do-i-learn-x/",
             "share_image": "https://ncase.me/sharing/thumb.png"
         }
