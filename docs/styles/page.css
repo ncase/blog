@@ -117,6 +117,7 @@ img + em{
 #header > #typing{
     position: relative;
     top:20px;
+    width: 400px;
 }
 #header > #scrolly, #header > #header_cont{
     width:100%;
