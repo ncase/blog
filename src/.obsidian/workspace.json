@@ -1,0 +1,190 @@
+{
+  "main": {
+    "id": "cd71139243e50291",
+    "type": "split",
+    "children": [
+      {
+        "id": "be517c70bf6a542a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ede1ff20edb82939",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/signal-boosts-oct-2024.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "signal-boosts-oct-2024"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "90459cce2daf84d7",
+    "type": "split",
+    "children": [
+      {
+        "id": "10c3aedf568e2922",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "63bfeecdf9426de6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "9322c5a42b1246d2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "46d7d5ccdd9a90a5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "825fbb3ce32804fa",
+    "type": "split",
+    "children": [
+      {
+        "id": "e512cf53d1e6f2a2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d17539ade1487531",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "posts/signal-boosts-oct-2024.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for signal-boosts-oct-2024"
+            }
+          },
+          {
+            "id": "ac9207cdb980902a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "posts/signal-boosts-oct-2024.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from signal-boosts-oct-2024"
+            }
+          },
+          {
+            "id": "e890e9cc0cc12851",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "0aa887e113031b21",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "posts/signal-boosts-oct-2024.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of signal-boosts-oct-2024"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "ede1ff20edb82939",
+  "lastOpenFiles": [
+    "content/stuff/2024-10/meow.mp4",
+    "content/stuff/2024-10/out.mp4",
+    "content/stuff/2024-10/in.mp4",
+    "content/stuff/2024-10/shoes.jpg",
+    "content/stuff/2024-10/Halloween.mp4",
+    "content/stuff/2024-10/CLAWS.jpg",
+    "posts/signal-boosts-aug-2024.md",
+    "posts/signal-boosts-oct-2024.md",
+    "content/stuff/2024-10/frogwars.gif",
+    "content/stuff/2024-10/frogwars.gif.sb-6fb0eae1-eLn6LA",
+    "content/stuff/2024-10/good.jpg",
+    "content/stuff/2024-10/toaster.png",
+    "content/stuff/2024-10/Screenshot 2024-10-27 at 12.24.45 PM.png",
+    "content/stuff/2024-10",
+    "content/stuff/untitled folder",
+    "content/stuff",
+    "content/untitled folder",
+    "posts/signal-boosts-nov-2024.md",
+    "posts/research-notes-oct-2024.md",
+    "posts/backlog.md",
+    "posts/asdf.md",
+    "posts/30.md"
+  ]
+}
