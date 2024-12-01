@@ -97,7 +97,7 @@ So, I think this is evidence against "The world is shifting right". (The UK Labo
 
 However, this is probably evidence for "It's the economy, stupid".
 
-(Although, I note I'm confused: [2022 was *worse* inflation-wise than 2024](https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm), yet as seen above, incumbents did ok in 2022? Democrats avoided a "red wave" in 2022 midterms. Maybe it's not the *actual* economy, but people's *perception* of the economy that matters? No, [consumer confidence was also *worse* in 2022](https://www.oecd.org/en/data/indicators/consumer-confidence-index-cci.html). Maybe Roe v Wade being overturned helped the Dems in 2022? Maybe, but it doesn't explain why most incumbents around the world *also* held in 2022.)
+(Although, I note I'm confused: [2022 was *worse* inflation-wise than 2024](https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm), yet as seen above, incumbents did ok in 2022? Democrats avoided a "red wave" in 2022 midterms. Is it wages relative to inflation? No, [wages outgrew inflation starting Feb 2023](https://www.statista.com/statistics/1351276/wage-growth-vs-inflation-us/). Maybe it's not the *actual* economy, but people's *perception* of the economy that matters? No, [consumer confidence was also *worse* in 2022](https://www.oecd.org/en/data/indicators/consumer-confidence-index-cci.html). Maybe Roe v Wade being overturned helped the Dems in 2022? Maybe, but it doesn't explain why most incumbents around the world *also* held in 2022.)
 
 . . .
 
