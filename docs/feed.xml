@@ -6,13 +6,149 @@
     <subtitle>I make occasional pictures &amp; words</subtitle>
     <link href="https://blog.ncase.me/feed.xml" rel="self"/>
     <link href="https://blog.ncase.me/"/>
-    <updated>2024-10-27T00:00:00Z</updated>
+    <updated>2024-11-30T00:00:00Z</updated>
     <id>https://blog.ncase.me/</id>
     <author>
         <name>Nicky Case</name>
     </author>
 
     
+    
+
+        
+        
+        <entry>
+            <title>Signal Boosts for Nov 2024</title>
+            <link href="https://blog.ncase.me/signal-boosts-nov-2024/"/>
+            <updated>2024-11-30T00:00:00Z</updated>
+            <id>https://blog.ncase.me/signal-boosts-nov-2024/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;(⏱️ &lt;em&gt;~10 min read&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;Another month, another collection of shiny objects (stuff I found in the the past month that were valuable/inspiring).&lt;/p&gt;
+&lt;p&gt;See also, previous Signal Boosts for &lt;a href=&quot;https://blog.ncase.me/signal-boosts-oct-2024/&quot;&gt;Oct/Sep&lt;/a&gt;, &lt;a href=&quot;https://blog.ncase.me/signal-boosts-aug-2024/&quot;&gt;Aug/July&lt;/a&gt;, &lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/&quot;&gt;June&lt;/a&gt;, &lt;a href=&quot;https://blog.ncase.me/signal-boosts-may-2024/&quot;&gt;May&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;🩸 Kurzgesagt gets to the bottom of a science myth &lt;a href=&quot;https://blog.ncase.me/signal-boosts-nov-2024/#blood&quot;&gt;↪&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;😭 Paper: AI poems are now &amp;quot;more human than human&amp;quot; &lt;a href=&quot;https://blog.ncase.me/signal-boosts-nov-2024/#poem&quot;&gt;↪&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🇺🇸 U.S. Election-related analysis &lt;a href=&quot;https://blog.ncase.me/signal-boosts-nov-2024/#election&quot;&gt;↪&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;👄 The Substance &lt;a href=&quot;https://blog.ncase.me/signal-boosts-nov-2024/#substance&quot;&gt;↪&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;blood&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;🩸 Kurzgesagt gets to the bottom of a science myth&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“If you were to lie your blood vessels out entirely from end-to-end, &lt;s&gt;you would die&lt;/s&gt; it would stretch 100,000 km, wrapping twice across the globe!”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It&#39;s not just a popular factoid, it&#39;s found in university lectures &amp;amp; scientific papers! So it must be tr--&lt;/p&gt;
+&lt;p&gt;--wait, that paper didn&#39;t give a source. Ok, &lt;em&gt;this&lt;/em&gt; one gives a source, but its source just says the &amp;quot;fact&amp;quot; without giving a source. Uh oh.&lt;/p&gt;
+&lt;p&gt;This is the story of how Kurzgesagt went on a deep, &lt;em&gt;deep&lt;/em&gt; rabbit-hole to track down a source for &lt;em&gt;one&lt;/em&gt; (very popular, even &amp;quot;official&amp;quot;) science-myth!  I like this video because:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It exemplifies the virtue of rigorous scholarship, the thankless task of factchecking;&lt;/li&gt;
+&lt;li&gt;It&#39;s a cautionary tale of how the telephone-game of &amp;quot;facts&amp;quot; can infect even the so-called official sources; and&lt;/li&gt;
+&lt;li&gt;Their half-real-life-half-animation style for this video is &lt;em&gt;so&lt;/em&gt; adorable!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Check it out! You&#39;ll also learn the &lt;em&gt;real&lt;/em&gt; answer for how long your blood vessels are in total. It&#39;s not as impressive as &amp;quot;can wrap twice around the world&amp;quot;... but it&#39;s still pretty dang long!&lt;/p&gt;
+&lt;p&gt;10-minute video (not counting credits):&lt;/p&gt;
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube-nocookie.com/embed/bgo7rm5Maqg?si=4mnRfK5jTYobTqp-&amp;rel=0&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;poem&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;😭 Paper: AI poems are now &amp;quot;more human than human&amp;quot;&lt;/h2&gt;
+&lt;p&gt;Poets speak to the human condition, and the human condition has spoken back: they prefer the autocomplete.&lt;/p&gt;
+&lt;p&gt;From &lt;a href=&quot;https://www.nature.com/articles/s41598-024-76900-1&quot;&gt;Porter &amp;amp; Machery 2024&lt;/a&gt;: (emphases added)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We conducted two experiments with non-expert poetry readers and found that participants performed &lt;strong&gt;below chance&lt;/strong&gt; levels in identifying AI-generated poems (46.6% accuracy)&lt;/p&gt;
+&lt;p&gt;[...] participants were &lt;strong&gt;more likely to judge AI-generated poems as human-authored&lt;/strong&gt; than actual human-authored poems&lt;/p&gt;
+&lt;p&gt;[...] We found that AI-generated poems were rated &lt;strong&gt;more favorably in qualities such as rhythm and beauty&lt;/strong&gt;, and that this contributed to their mistaken identification as human-authored.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And the human poems were from famous poets across eras &amp;amp; genres (from Chaucer to Whitman to Plath). And the AI poems were the &lt;em&gt;first five&lt;/em&gt; poems generated by ChatGPT with an unoptimized prompt, no cherry-picking.&lt;/p&gt;
+&lt;p&gt;That&#39;s... pretty damn damning.&lt;/p&gt;
+&lt;p&gt;Like the original Turing Test, I&#39;m not sure how much of this is &amp;quot;AI has gotten too good&amp;quot; versus &amp;quot;Humans have gotten too gullible&amp;quot;.&lt;/p&gt;
+&lt;p&gt;(See also: Astral Codex Ten&#39;s &lt;a href=&quot;https://www.astralcodexten.com/p/how-did-you-do-on-the-ai-art-turing&quot;&gt;&amp;quot;AI Art Turing Test&amp;quot;&lt;/a&gt;, where humans (on avg) &lt;em&gt;also&lt;/em&gt; preferred AI art over human art when they think it&#39;s human. Although, 2 major differences from ACX&#39;s study vs the above: 1) ACX&#39;s test &lt;em&gt;did&lt;/em&gt; cherry-pick the AI art, and 2) Even then, humans &lt;em&gt;were&lt;/em&gt; slightly better than chance (~60%) at detecting AI art.)&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;election&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;🇺🇸 U.S. Election-related analysis&lt;/h2&gt;
+&lt;p&gt;My political alignment is &amp;quot;why would any sane person try to compress their beliefs into one or two dimensions, just ask me my thoughts on an issue-by-issue basis&amp;quot;. But if I &lt;em&gt;had&lt;/em&gt; to pick an approximation, sure, put me down somewhere between left &amp;amp; libertarian.&lt;/p&gt;
+&lt;p&gt;And so, like many in the left/libertarian circles, while I wasn&#39;t &lt;em&gt;shocked&lt;/em&gt; Trump won again, I was disappointed. Sure, America&#39;s institutions are broken a.f., but Americans deserve a better solution than &lt;em&gt;that&lt;/em&gt; guy. (I&#39;m a Canadian citizen, so I could not vote in the States. But Canada shouldn&#39;t be so smug; the political culture of Canada, and most Western countries, are IMHO only a decade behind America&#39;s.)&lt;/p&gt;
+&lt;p&gt;It&#39;s tempting to interpret whatever happens as evidence for everything I already believed, so, here&#39;s a Signal Boost highlighting data &amp;amp; analyses that &lt;em&gt;were&lt;/em&gt; surprising to me:&lt;/p&gt;
+&lt;p&gt;1) The &lt;strong&gt;&lt;a href=&quot;https://apnews.com/projects/election-results-2024/votecast/&quot;&gt;Associated Press VoteCast, a survey of 110,000+ voters&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The biggest surprise to me: Trump made the most gains amongst &lt;em&gt;Blacks, Hispanics, 18-29 year olds, and non-college folks&lt;/em&gt;. Meanwhile, it was &lt;em&gt;white urban highly-educated men&lt;/em&gt; who Harris gained ground on:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2024-11/election1.png&quot; alt=&quot;Graph showing the above&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;(Hat tip &lt;a href=&quot;https://docs.monadical.com/s/so-you-want-to-build-a-social-network&quot;&gt;to Nick Sweeting&lt;/a&gt; for being the first to show me this dataviz. Note 1: these are &lt;em&gt;relative&lt;/em&gt; percentages, not &lt;em&gt;absolute&lt;/em&gt; percentage-points (&lt;a href=&quot;https://xkcd.com/985/&quot;&gt;relevant xkcd&lt;/a&gt;). Note 2: I couldn&#39;t find &lt;em&gt;who&lt;/em&gt; made the above dataviz, but it does accurately show the AP VoteCast data.)&lt;/p&gt;
+&lt;p&gt;So, I think this is evidence against &amp;quot;Trump won because of racism or Boomers&amp;quot;.&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;2) &lt;strong&gt;&lt;a href=&quot;https://ericneyman.wordpress.com/2024/11/14/seven-lessons-i-didnt-learn-from-election-day/&quot;&gt;&amp;quot;7 Lessons I Didn&#39;t Learn From Election Day&amp;quot;&lt;/a&gt; by Eric Neyman&lt;/strong&gt; (found through &lt;a href=&quot;https://news.manifold.markets/&quot;&gt;the Manifold Markets newsletter&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;The biggest insight I got from that post: &lt;strong&gt;for the first time &lt;em&gt;ever&lt;/em&gt;, incumbent parties in &lt;em&gt;every developed country&lt;/em&gt; got their asses kicked this year.&lt;/strong&gt;  If anything, Harris did really well, for a representative of the incumbent party:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2024-11/election2.png&quot; alt=&quot;Graph showing the above&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;So, I think this is evidence against &amp;quot;The world is shifting right&amp;quot;. (The UK Labour Party resoundingly beat the Tories)&lt;/p&gt;
+&lt;p&gt;However, this is probably evidence for &amp;quot;It&#39;s the economy, stupid&amp;quot;.&lt;/p&gt;
+&lt;p&gt;(Although, I note I&#39;m confused: &lt;a href=&quot;https://www.bls.gov/charts/consumer-price-index/consumer-price-index-by-category-line-chart.htm&quot;&gt;2022 was &lt;em&gt;worse&lt;/em&gt; inflation-wise than 2024&lt;/a&gt;, yet as seen above, incumbents did ok in 2022? Democrats avoided a &amp;quot;red wave&amp;quot; in 2022 midterms. Maybe it&#39;s not the &lt;em&gt;actual&lt;/em&gt; economy, but people&#39;s &lt;em&gt;perception&lt;/em&gt; of the economy that matters? No, &lt;a href=&quot;https://www.oecd.org/en/data/indicators/consumer-confidence-index-cci.html&quot;&gt;consumer confidence was also &lt;em&gt;worse&lt;/em&gt; in 2022&lt;/a&gt;. Maybe Roe v Wade being overturned helped the Dems in 2022? Maybe, but it doesn&#39;t explain why most incumbents around the world &lt;em&gt;also&lt;/em&gt; held in 2022.)&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;2.5) Not directly related to the 2024 election, but &amp;quot;It&#39;s the economy, stupid&amp;quot; reminded me of Douglas Hibb&#39;s famous &lt;strong&gt;&lt;a href=&quot;https://gupea.ub.gu.se/bitstream/handle/2077/2847/gunwpe0020.pdf?sequence=1&quot;&gt;Bread &amp;amp; Peace Model&lt;/a&gt;&lt;/strong&gt;, which found that &amp;quot;does the incumbent win the election&amp;quot; is pretty much determined by real income growth since the last election cycle, with exceptions for major wars:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2024-11/election3.png&quot; alt=&quot;Graph showing the above&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;From the paper, to rub salt in the wounds of all pundits &amp;amp; political scientists:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The model is subjected to robustness tests against twenty-two variations [...] inspired by the extensive literature on presidential voting. Not one of these variations adds value to the Bread and Peace model[.]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(I haven&#39;t done enough research yet to tell if the Bread &amp;amp; Peace model holds for other countries. The above paper was published before the 2000 US election, but &lt;a href=&quot;https://files.osf.io/v1/resources/xrf3t/providers/osfstorage/5f7581b81cfe6900b0cefd24?action=download&amp;amp;direct&amp;amp;version=7&quot;&gt;Bread &amp;amp; Peace mostly held up since then.&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;(Thinking aloud: Hm... maybe the Israel-Hamas war explains why the incumbent did worse in 2024 than 2022, even though the economy&#39;s better in 2024 than 2022? Then again, 2022 was also the start of the Russia-Ukraine war. Hm.)&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;3) Sick of numbers? Here&#39;s a good &lt;em&gt;qualitative&lt;/em&gt; look at &lt;strong&gt;&lt;a href=&quot;https://x.com/smquinsaat/status/1854187349456171179&quot;&gt;immigrant conservatives in Hawaii&lt;/a&gt;, fieldwork by Sharon Quinsaat.&lt;/strong&gt; A few highlights, on why (these) Hawaiian immigrants went for Trump:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It&#39;s the economy, stupid. (They feel Dems &amp;quot;sold us out&amp;quot;)&lt;/li&gt;
+&lt;li&gt;At the risk of sounding condescending, their media sources actually &lt;em&gt;are&lt;/em&gt; really wacky. Like, &amp;quot;Trump is a demi-god&amp;quot; celebrity-worship wacky.&lt;/li&gt;
+&lt;li&gt;Payback. &amp;quot;I&#39;m voting Republican just to stick it to the Democrats.&amp;quot;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;4) &lt;strong&gt;&lt;a href=&quot;https://podcasts.apple.com/us/podcast/the-ezra-klein-show/id1548604447&quot;&gt;Ezra Klein&lt;/a&gt;&lt;/strong&gt;, as usual, is pretty good. I&#39;ve only listened to few of his post-election podcasts so far, but here&#39;s my main takeaways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The old left-right spectrum is pretty much dead.
+&lt;ul&gt;
+&lt;li&gt;(Trump is anti-free trade &amp;amp; pro-tariffs. His Health Secretary pick, RFK Jr., is pro-choice. Who, 10 years ago, woulda thought a Republican president would do &lt;em&gt;that?&lt;/em&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The new political divide is something along the lines of:
+&lt;ul&gt;
+&lt;li&gt;Pro-institution, vs Anti-institution (&amp;quot;we&#39;re sick of experts&amp;quot;)&lt;/li&gt;
+&lt;li&gt;The college-credentialed/professional class (&amp;quot;trust science!&amp;quot;), vs everyone else&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The Democrats failed, and &lt;em&gt;institutions&lt;/em&gt; failed, because of &amp;quot;cover your ass&amp;quot; &amp;amp; not wanting to be the messenger with bad-news messages. (e.g. staffers ignoring Biden&#39;s declining sharpness, the &amp;quot;noble lies&amp;quot; during the pandemic)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ezra is someone who wants to critique institutions, &lt;em&gt;because&lt;/em&gt; he wants them to get better. I&#39;m reminded of this quote:&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-nov-2024/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The iron rule of politics is that if there are real problems in society and responsible parties don’t deal with them, the irresponsible parties will jump on them.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;In sum, my current thoughts (subject to future change, of course):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&amp;quot;Bread &amp;amp; Peace model&amp;quot; probably holds. It&#39;s the economy, stupid.&lt;/li&gt;
+&lt;li&gt;Incumbents everywhere are falling, whether they&#39;re left or right. (Tories lost UK &lt;em&gt;hard&lt;/em&gt;.)&lt;/li&gt;
+&lt;li&gt;The old &amp;quot;left-right&amp;quot; spectrum is dead. (It seems even racial/gender identity is getting much &lt;em&gt;less&lt;/em&gt; politically salient in the US, with Black/Latino voters swinging to Trump.)&lt;/li&gt;
+&lt;li&gt;The new spectrum is &amp;quot;pro vs anti traditional institutions&amp;quot;. (universities, journalism, government, international orgs, etc)&lt;/li&gt;
+&lt;li&gt;Institutions everywhere are failing because of &amp;quot;cover your ass&amp;quot; bureaucracy.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I don&#39;t have concrete suggestions. Only this:&lt;/p&gt;
+&lt;p&gt;Deal with the real problems in institutions you care about — &lt;em&gt;or the irresponsible parties will jump on them.&lt;/em&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;substance&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;👄 The Substance&lt;/h2&gt;
+&lt;p&gt;A few weeks ago, I got a email saying I was turned down for a research gig, which was understandable — but it hit some of my insecurities that &lt;a href=&quot;https://blog.ncase.me/signal-boosts-nov-2024/TODO&quot;&gt;now that I&#39;m 30&lt;/a&gt;, I&#39;m too old for great research, and I oughta be replaced with someone younger. (&lt;a href=&quot;https://xkcd.com/447/&quot;&gt;relevant xkcd&lt;/a&gt;)  So, to get my mind off my worries, I went to see the new movie &lt;strong&gt;The Substance&lt;/strong&gt;, which I knew nothing about. It turned out to be a sci-fi satire body-horror-comedy, about a woman who&#39;s insecure that she&#39;s too old, and she&#39;ll be replaced with someone younger.&lt;/p&gt;
+&lt;p&gt;Aaaaaaaaa&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;My quick review&lt;/u&gt;: Honestly the plot&#39;s straightforward &amp;amp; predictable, and not exactly subtle about its themes of sexism in industry + obsession with youth/fame + self-sabotaging self-loathing. But, I have a high tolerance for camp (&lt;em&gt;loved&lt;/em&gt; Rocky Horror), and this film happened to hit me at the &lt;em&gt;exact&lt;/em&gt; moment I needed to confront my insecurities that I&#39;m too old &amp;amp; I&#39;ll be replaced with someone younger.&lt;/p&gt;
+&lt;p&gt;Because, yeah, I &lt;em&gt;am&lt;/em&gt; being silly. Tolkien wrote Lord of the Rings in his 40&#39;s, Andrew Wiles proved Fermat&#39;s Last Theorem between age 36 to 41. Sure, my probability of doing great research gets &lt;em&gt;lower&lt;/em&gt; over time, but it&#39;s not zero.&lt;/p&gt;
+&lt;p&gt;Also, the fact this movie features Demi Moore, who&#39;s still smokin&#39; hot at age 62, makes this a movie that &lt;em&gt;disproves its own premise&lt;/em&gt;, in a good way! You &lt;em&gt;can&lt;/em&gt; age with confidence &amp;amp; style.&lt;/p&gt;
+&lt;p&gt;Seriously, gott dayumn, Demi:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2024-11/demi.png&quot; alt=&quot;A hot 62-year-old actress, Demi Moore, in the film, The Substance&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;★★★★☆: Recommended if you need to confront your insecurities, via a campy body-horror movie starring a hot MILF. Also the cinematography &amp;amp; &lt;a href=&quot;https://www.youtube.com/watch?v=tKxKuYsx2R0&quot;&gt;: the soundtrack&lt;/a&gt; &lt;em&gt;kicks ass&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;(Tangentially related: while reading Demi Moore&#39;s Wikipedia article, I learnt she co-founded &lt;a href=&quot;https://en.wikipedia.org/wiki/Thorn_(organization)&quot;&gt;Thorn&lt;/a&gt;?! I knew about Thorn, because I&#39;m getting into AI Safety/Ethics research, and one of Thorn&#39;s famous projects is using AI to help automatically flag child abuse material! [&lt;a href=&quot;https://www.artificialintelligence-news.com/news/ai-tool-detect-child-abuse-images-accuracy/&quot;&gt;read more here&lt;/a&gt;] Good work, Demi!)&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot; /&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Quote from Daniel Schwammenthal, director of the American Jewish Committee’s Transatlantic Institute. Learnt about this quote &lt;a href=&quot;https://ofboysandmen.substack.com/p/into-the-vacuum-demons-pour&quot;&gt;from this article by Richard Reeves&lt;/a&gt;, on why neglecting real issues that disproportionally affect males (men are more likely than women to be homeless, die of suicide, drop out of school, etc) led to the rise of grifters like Andrew Tate. &lt;a href=&quot;https://blog.ncase.me/signal-boosts-nov-2024/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+        </entry>
+
     
 
         
@@ -3710,25 +3846,6 @@ a braaaaand newwww fetish!&lt;/p&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
 </content>
-        </entry>
-
-    
-
-        
-        
-        <entry>
-            <title>New project! Nutshell: make expandable explanations</title>
-            <link href="https://blog.ncase.me/new-project-nutshell/"/>
-            <updated>2022-08-17T00:00:01Z</updated>
-            <id>https://blog.ncase.me/new-project-nutshell/</id>
-            <content xml:lang="en" type="html">&lt;p&gt;&lt;img src=&quot;https://ncase.me/nutshell/promo/trailer/trailer.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;After 2 years of procrastinating on this project... it&#39;s finally out! My first post-burnout-hiatus interactive thingy:&lt;/p&gt;
-&lt;p&gt;🥜 &lt;strong&gt;Nutshell: make &lt;em&gt;expandable&lt;/em&gt; explanations&lt;/strong&gt; 🥜&lt;br /&gt;
-👉 &lt;a href=&quot;https://ncase.me/nutshell/&quot;&gt;https://ncase.me/nutshell/&lt;/a&gt; 👈&lt;/p&gt;
-&lt;p&gt;This is a tool for writers, to let their readers dive into details. Not shown in the above .gif, are two other &amp;quot;killer features&amp;quot;: 1) you can embed snippets of text &lt;em&gt;from other authors &amp;amp; websites&lt;/em&gt;, even stuff written years ago! And 2) you can embed interactives, YouTube videos, and the intros of Wikipedia articles.&lt;/p&gt;
-&lt;p&gt;If you&#39;re writing a blog, news articles, code documentation, educational material, etc... I hope Nutshell helps you help &lt;em&gt;your&lt;/em&gt; readers.&lt;/p&gt;
-&lt;p&gt;(See you next month... for explainers written &lt;em&gt;with&lt;/em&gt; Nutshell!)&lt;/p&gt;
-&lt;!--P.S: Testing, testing... let&#39;s see if this blog post can [:embed itself](./)...--&gt;</content>
         </entry>
 
     
