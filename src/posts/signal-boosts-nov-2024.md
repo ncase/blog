@@ -162,7 +162,7 @@ Aaaaaaaaa
 
 <u>My quick review</u>: Honestly the plot's straightforward & predictable, and not exactly subtle about its themes of sexism in industry + obsession with youth/fame + self-sabotaging self-loathing. But, I have a high tolerance for camp (*loved* Rocky Horror), and this film happened to hit me at the *exact* moment I needed to confront my insecurities that I'm too old & I'll be replaced with someone younger.
 
-Because, yeah, I *am* being silly. Tolkien wrote Lord of the Rings in his 40's, Andrew Wiles proved Fermat's Last Theorem between age 36 to 41. Sure, my probability of doing great research gets *lower* over time, but it's not zero.
+Because, yeah, I *am* being silly. Tolkien was 45 when he started writing The Lord of the Rings, Andrew Wiles proved Fermat's Last Theorem between age 36 to 41. Sure, my probability of doing great work gets *lower* over time, but it's not zero.
 
 Also, the fact this movie features Demi Moore, who's still smokin' hot at age 62, makes this a movie that *disproves its own premise*, in a good way! You *can* age with confidence & style.
 
