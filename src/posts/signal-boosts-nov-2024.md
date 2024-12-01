@@ -156,7 +156,7 @@ Deal with the real problems in institutions you care about — *or the irrespons
 <a id="substance"></a>
 ## 👄 The Substance
 
-A few weeks ago, I got a email saying I was turned down for a research gig, which was understandable — but it hit some of my insecurities that [now that I'm 30](TODO), I'm too old for great research, and I oughta be replaced with someone younger. ([relevant xkcd](https://xkcd.com/447/))  So, to get my mind off my worries, I went to see the new movie **The Substance**, which I knew nothing about. It turned out to be a sci-fi satire body-horror-comedy, about a woman who's insecure that she's too old, and she'll be replaced with someone younger.
+A few weeks ago, I got a email saying I was turned down for a research gig, which was understandable — but it hit some of my insecurities that [now that I'm 30](https://blog.ncase.me/30/), I'm too old for great research, and I oughta be replaced with someone younger. ([relevant xkcd](https://xkcd.com/447/))  So, to get my mind off my worries, I went to see the new movie **The Substance**, which I knew nothing about. It turned out to be a sci-fi satire body-horror-comedy, about a woman who's insecure that she's too old, and she'll be replaced with someone younger.
 
 Aaaaaaaaa
 
