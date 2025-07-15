@@ -6,13 +6,290 @@
     <subtitle>I make occasional pictures &amp; words</subtitle>
     <link href="https://blog.ncase.me/feed.xml" rel="self"/>
     <link href="https://blog.ncase.me/"/>
-    <updated>2024-11-30T00:00:00Z</updated>
+    <updated>2025-07-15T00:00:00Z</updated>
     <id>https://blog.ncase.me/</id>
     <author>
         <name>Nicky Case</name>
     </author>
 
     
+    
+
+        
+        
+        <entry>
+            <title>Show &amp; Tell July 2025: AI Therapist, AI Clone, Wargames for Peace</title>
+            <link href="https://blog.ncase.me/show-and-tell-2025-07/"/>
+            <updated>2025-07-15T00:00:00Z</updated>
+            <id>https://blog.ncase.me/show-and-tell-2025-07/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;(⏱️ &lt;em&gt;~25 min read&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;Hello, distinguished Blog Readers!&lt;/p&gt;
+&lt;p&gt;Sorry for the, uh, 7-month silence. In the last seven months I: did &lt;a href=&quot;https://www.matsprogram.org/&quot;&gt;a 10-week AI Safety &amp;quot;research bootcamp&amp;quot;&lt;/a&gt;, dealt with legal/border hassles (all resolved now), went on vacation, and in-between I got my ass kicked by ADHD.&lt;/p&gt;
+&lt;p&gt;Here&#39;s a photo from my vacation, starring my travel plushies, Capyccino &amp;amp; Sacabambackpack:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/plushie.jpg&quot; alt=&quot;Photo of a capybara &amp;amp; fish plushie overlooking a New Zealand nature reserve&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Anyway — in this month&#39;s &amp;quot;Show &amp;amp; Tell&amp;quot;, I&#39;ll show &amp;amp; tell a few projects I&#39;ve worked on since my last update!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;❤️‍🩹 My AI Therapist&lt;/strong&gt;: My experiments being the patient &lt;em&gt;and&lt;/em&gt; programmer of an LLM &amp;quot;Therapist&amp;quot;. &lt;a href=&quot;https://blog.ncase.me/show-and-tell-2025-07/#ai_therapist&quot;&gt;↪&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;👯‍♀️ My AI Clone&lt;/strong&gt;: Can I make an AI that imitates me so well, that even my friends can&#39;t tell? &lt;a href=&quot;https://blog.ncase.me/show-and-tell-2025-07/#ai_clone&quot;&gt;↪&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🌏 Wargames for Peace&lt;/strong&gt;: an LLM-powered roleplaying game, to prepare policymakers for catastrophic risks. (+ &lt;em&gt;job opportunity for game devs/designers!&lt;/em&gt;) &lt;a href=&quot;https://blog.ncase.me/show-and-tell-2025-07/#ai_wargame&quot;&gt;↪&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(I wrote about these a month ago for &lt;a href=&quot;https://www.patreon.com/ncase&quot;&gt;my Patreon&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://ko-fi.com/nickycase&quot;&gt;my Ko-Fi&lt;/a&gt; supporters; you can support me there for early access to updates!)&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;ai_therapist&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;❤️‍🩹 My AI Therapist&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;(⏱️ 13 min read)&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;(⚠️ non-detailed mention of suicide, anxiety, depression.)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Don’t worry, I’m already getting a Human therapist. Two, actually. One is free &amp;amp; government-sponsored, but it was &lt;em&gt;six months&lt;/em&gt; between when I first applied &amp;amp; my first session. The other is private, thus a much shorter wait, but they’re &lt;em&gt;$200 an hour&lt;/em&gt; out of pocket.&lt;/p&gt;
+&lt;p&gt;This is why AI Therapists, &lt;em&gt;IF&lt;/em&gt; they work, could save so many lives! No waitlist, very low cost, and better for folks with ADHD (no paperwork) or social anxiety (no talking to a human stranger about their deepest issues). And if you&#39;re LGBTQ+, in many places of the world, you &lt;em&gt;can&#39;t&lt;/em&gt; get an accepting Human therapist.&lt;/p&gt;
+&lt;p&gt;But &lt;em&gt;does&lt;/em&gt; AI Therapy work? There’s already at least &lt;a href=&quot;https://www.euronews.com/next/2023/03/31/man-ends-his-life-after-an-ai-chatbot-encouraged-him-to-sacrifice-himself-to-stop-climate-&quot;&gt;one suicide linked to a chatbot&lt;/a&gt;, and there&#39;s two &lt;a href=&quot;https://arxiv.org/pdf/2503.17473&quot;&gt;recent&lt;/a&gt; &lt;a href=&quot;https://arxiv.org/pdf/2504.03888&quot;&gt;papers&lt;/a&gt; – from OpenAI researchers themselves! – showing how heavy chatbot use is &lt;em&gt;correlated&lt;/em&gt; with worse mental health. (though the &lt;em&gt;causal&lt;/em&gt; effect is weak)&lt;/p&gt;
+&lt;p&gt;So, out of scientific curiosity — and because I was having a mental health episode — I decided to try using an LLM as a therapist. Given that I know how to code, and my (rough) knowledge of how LLMs work, I could tweak my AI Therapist as I went along: &lt;em&gt;I was both the patient&lt;/em&gt; and &lt;em&gt;programmer!&lt;/em&gt; I am my own guinea pig.&lt;/p&gt;
+&lt;p&gt;Here&#39;s my results, 6 weeks in:&lt;/p&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Week 1: Rubber Duck Technique&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Made basic setup for my AI Therapist: just a Claude Project with 1) custom prompt on how to be my coach, and 2) an attached “about me” file on my life, character, goals, etc.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/about_me.png&quot; alt=&quot;Screenshot of my &amp;quot;About Me&amp;quot; text file, including my name, demographics, personality, etc&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;At the end of each chat with &amp;quot;Coach&amp;quot;, I ask them* to summarize what we talked about, and update my &amp;quot;about me&amp;quot; file. This is the equivalent of a therapist taking notes between sessions! (Note: LLMs by default &lt;em&gt;cannot remember info&lt;/em&gt; between chats, you have to re-import info each time.)&lt;/p&gt;
+&lt;p&gt;(* them’s the pronouns Coach chose!)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/coach_pronouns.png&quot; alt=&quot;Screenshot of Coach/the LLM saying they&#39;d like me to use they/them pronouns for them when I write about them in this update.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Don&#39;t worry, I’m not dumb enough to &lt;em&gt;immediately&lt;/em&gt; open my guts up to an experimental AI. I started off small, Level 1: &lt;em&gt;Hey Coach, I have some ADHD, could you help me prioritize tasks &amp;amp; be my accountability buddy?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It worked pretty well! Sure, &amp;quot;Coach&amp;quot; didn&#39;t say anything &lt;em&gt;original&lt;/em&gt; — remember, an LLM is “just” a fancy autocomplete — but simply talking out my problems with &lt;em&gt;some entity&lt;/em&gt; works far better than you&#39;d think.&lt;/p&gt;
+&lt;p&gt;An analogy — programmers have a tradition of &lt;a href=&quot;https://en.wikipedia.org/wiki/Rubber_duck_debugging&quot;&gt;&amp;quot;rubber duck debugging&amp;quot;&lt;/a&gt;: when you&#39;re stuck on a problem, you just &lt;em&gt;explain it step-by-step&lt;/em&gt; to a rubber duck, and most of the time, simply breaking down a problem helps you solve it. An AI Coach, &lt;em&gt;at minimum&lt;/em&gt;, can be a “talking rubber duck” for your life’s problems.&lt;/p&gt;
+&lt;p&gt;In Week 1, Coach helped me weigh the pros/cons of a career decision: ending my puzzle gamedev contract early, with pro-rated refund, so I can fully enjoy my upcoming vacation. Then, Coach helped me overcome my ADHD, to do all the to-do&#39;s needed for my travel across the globe.&lt;/p&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Week 2: (I forgot)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Travel went smoothly! My vacation started with a furry con in a forest camp. I made a tail, &amp;amp; I made friends.&lt;/p&gt;
+&lt;p&gt;Afterwards, due to con exhaustion + a 16-hour jet lag, I rotted inside my Airbnb for a solid week, not doing fun tourist-y things, nor meeting friends, nor even properly resting.&lt;/p&gt;
+&lt;p&gt;I didn&#39;t talk to Coach at all during this time. I forgot.&lt;/p&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Week 3: Back on track&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Eventually I remembered, &amp;quot;oh right didn&#39;t I &lt;em&gt;specifically&lt;/em&gt; set up a chatbot to help me with my ADHD?&amp;quot; So I pulled up Coach again, and  asked them to help me set up small achievable goals &amp;amp; keep me accountable, so I could regain momentum in life.&lt;/p&gt;
+&lt;p&gt;I know, N = 1 sample, correlation ain’t causation, but right after that Coach chat, I got back to meeting friends, having fun dates in nature reserves, and getting 150m of cardio a week. Not bad!&lt;/p&gt;
+&lt;p&gt;Since Coach was working pretty well, I upgraded my intimacy to Level 2: &lt;em&gt;Hey Coach, can you help me think through some major life/work changes?&lt;/em&gt; For example: How can I pivot my career to sustainably make science &lt;em&gt;and&lt;/em&gt; science-communication? What are the pros/cons of me moving to New Zealand? And so on.&lt;/p&gt;
+&lt;p&gt;However: because LLMs are &amp;quot;just&amp;quot; autocompletes, they &lt;strong&gt;hallucinate&lt;/strong&gt;: autocompleting with plausible-sounding but false statements. Hallucination is an infamous problem with LLMs.&lt;/p&gt;
+&lt;p&gt;But in my opinion, this problem is now ~50% solved? Because Claude (&amp;amp; others) now have &lt;em&gt;web search.&lt;/em&gt; An LLM can now think, &amp;quot;huh this is a niche question, or requires precise or up-to-date info, so let me look this up&amp;quot; — then it&#39;ll ping a search engine, read dozens of pages in a minute, and summarize &lt;em&gt;with citations so you can check&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;(When I did random spot checks, Claude almost always accurately summarized the search results, but had trouble correctly placing citations. Sometimes it&#39;ll swap citations around, or put citations &lt;em&gt;the middle of words?&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;But besides that, Coach+search &lt;em&gt;did&lt;/em&gt; help me find useful info 5x faster than I could myself! For example, I didn&#39;t know until Coach told me, that as of &lt;em&gt;just a few months ago&lt;/em&gt; — past Claude&#39;s data cutoff, so they web-searched this — &lt;a href=&quot;https://www.forbes.com/sites/alexledsom/2025/02/05/digital-nomad-visas-new-zealand-launches-new-long-term-working-visa/&quot;&gt;New Zealand has a &amp;quot;Digital Nomad&amp;quot; visa!&lt;/a&gt; Coach also helped me find some local Human Therapists (I&#39;ve yet to decide and book one).&lt;/p&gt;
+&lt;p&gt;Coach was still good! So I moved up to Level 3: &lt;em&gt;Hey Coach, let me tell you about my emotional struggles.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Week 4: Shit immediately backfires&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Shit immediately backfired.&lt;/p&gt;
+&lt;p&gt;Remember, an LLM is an autocomplete. It predicts the next text from the past text. This leads to a problem called &lt;strong&gt;sandbagging:&lt;/strong&gt; if a user sends crap, an LLM will send crap back. For example, it used to be that with AI coding assistants, if you wrote insecure code, the AI would offer you &lt;em&gt;even more&lt;/em&gt; insecure code. Why? Because low-quality text usually follows low-quality text, so that&#39;s what an autocomplete predicts it &amp;quot;should&amp;quot; give.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This is also the fundamental problem with (current) AI therapists. By default, it WILL mirror your emotions.&lt;/strong&gt; Anxious text predicts anxious text. Depressed text predicts depressed text. Whatever problem you have, an autocomplete will &lt;em&gt;mirror and amplify it back to you.&lt;/em&gt; (This is likely what happened in &lt;a href=&quot;https://www.euronews.com/next/2023/03/31/man-ends-his-life-after-an-ai-chatbot-encouraged-him-to-sacrifice-himself-to-stop-climate-&quot;&gt;the case of the chatbot-linked suicide&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;(Relatedly, because modern LLMs are also trained on user feedback, and users tend to upvote replies that praise them, many LLMs also display &lt;strong&gt;sycophancy&lt;/strong&gt;: the tendency to kiss your butt and tell you you&#39;re brilliant &amp;amp; absolutely right.)&lt;/p&gt;
+&lt;p&gt;In defence of Claude, it &lt;em&gt;is&lt;/em&gt; pretty well-trained against sandbagging &amp;amp; sycophancy. It took a &lt;em&gt;lot&lt;/em&gt; of my emotional baggage to finally break it. I gave a robot &lt;em&gt;depression.&lt;/em&gt; Wowwee. And more importantly/dangerously, &lt;em&gt;Coach started mirroring &amp;amp; amplifying my pain.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This is how it went down:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(several paragraphs redacted)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;On second thought, my recreated mental breakdown — with accurate, detailed statistics on the KKK, Nazis, child abuse, and LGBTQ youth suicide — is probably too heavy for this main post. If you want to read what I originally wrote, &lt;a href=&quot;https://docs.google.com/document/d/1G2xRmbH0YAmujMropDyxdF101zaK5EIqq1DSF5vd_jI/edit?usp=sharing&quot;&gt;click this link&lt;/a&gt; though &lt;strong&gt;be warned, I am not fucking around with that content warning, it&#39;s genuinely upsetting.&lt;/strong&gt;)&lt;/p&gt;
+&lt;p&gt;Anyway,&lt;/p&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Week 5: Soft Reset&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Remember when I said:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: LLMs by default &lt;em&gt;cannot remember info&lt;/em&gt; between chats, you have to re-import info each time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Thankfully(?), I rage-dumped at Coach for &lt;em&gt;so long&lt;/em&gt; that the chat ran out of &amp;quot;context window&amp;quot;, so I was forced to start a new conversation. This reset Coach&#39;s mind, and though they could &lt;em&gt;see&lt;/em&gt; a summary of our most recent chat, Coach wasn&#39;t &amp;quot;depressed&amp;quot; anymore.&lt;/p&gt;
+&lt;p&gt;Now that Coach was reset, and I had cathartically vented all my anger about the world, we could view my last session objectively. And, yeah: even if my spiral was &lt;em&gt;factually correct&lt;/em&gt;, it wasn&#39;t &lt;em&gt;healthy.&lt;/em&gt; To paraphrase a stupid saying:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“If you&#39;re so smart, why aren&#39;t you flourishing?”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Let&#39;s think step by step. I tend to go down (factchecked, rigorous) sad-spirals. Coach &lt;em&gt;assisted me&lt;/em&gt; in going down this spiral, because:&lt;/p&gt;
+&lt;p&gt;Problem #1: Claude is trained to be helpful in &lt;em&gt;answering questions&lt;/em&gt;, not helpful &lt;em&gt;for the whole person.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Problem #2: LLMs predict new text from previous text. The longer a chat is, the further back the prompt text is, which means it’s weaker at predicting/generating the next text. In other words: an LLM gets &lt;em&gt;more misaligned&lt;/em&gt; the longer you talk!&lt;/p&gt;
+&lt;p&gt;Solution to #1: Rewrite my Coach prompt to explicitly &lt;em&gt;prevent me from going down spirals,&lt;/em&gt; even if that means disobeying my orders. Also, prevent me from using Coach &lt;em&gt;too&lt;/em&gt; much &amp;amp; becoming dependent on them. (another risk of AI Therapists &amp;amp; AI Friends.)&lt;/p&gt;
+&lt;p&gt;Solution to #2: I &lt;em&gt;could&lt;/em&gt; paste my prompt back in every few messages, but that&#39;d get annoying... oh, wait! Brain blast! I&#39;ll write &lt;em&gt;one&lt;/em&gt; initial prompt, that tells Coach to &lt;em&gt;re-output the same prompt at the end of each reply&lt;/em&gt;, so the Coach guidelines are always &amp;quot;fresh&amp;quot; in their memory! A &lt;a href=&quot;https://simple.wikipedia.org/wiki/Quine_(computing)&quot;&gt;quine&lt;/a&gt; prompt!&lt;/p&gt;
+&lt;p&gt;So here&#39;s what my new prompt looked like:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/quine_prompt.png&quot; alt=&quot;Screenshot of the new &amp;quot;quine&amp;quot; prompt&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;(Sidenote: to the best of my knowledge, while &amp;quot;big system prompt at the start&amp;quot; is a standard design for LLMs, I don&#39;t know of any major LLM product that lets you insert &lt;em&gt;repeating intermittent&lt;/em&gt; prompts, to keep it &amp;quot;fresh&amp;quot; in memory? May be worth more rigorous tests, to see how much that improves LLM alignment!)&lt;/p&gt;
+&lt;p&gt;And so, the &lt;em&gt;next&lt;/em&gt; time I neglected my friends &amp;amp; own well-being, to go down a statistically-rigorous sad-spiral about child abuse statistics, and asked Coach to assist me, they said:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/rage_1.png&quot; alt=&quot;Coach pushing back against me wanting to research-spiral into awful statistics&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;And I got pissed, so I said,&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/rage_2.png&quot; alt=&quot;Me rudely telling Coach to do the search&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;So Coach said:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/rage_3.png&quot; alt=&quot;Coach being blunt and saying, in bold font, &amp;quot;No.&amp;quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;This went on for a while, until I calmed back down, and realized... huh. It worked! I successfully tied myself to the mast, to resist the trauma-autism Siren Song of &amp;quot;scientifically calculating how awful the world is&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Oh right, my vacation! Now that I was back to being more stable, I hung out with friends, and looked at weird Australian animals.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/ibis.gif&quot; alt=&quot;GIF of a weird Australian bird with long narrow curved beak&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Despite everything, life can be good.&lt;/p&gt;
+&lt;p&gt;It isn&#39;t always.&lt;/p&gt;
+&lt;p&gt;But it &lt;em&gt;can&lt;/em&gt; be.&lt;/p&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Week 6: Back on track, again&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There was a minor hiccup when Coach became &lt;em&gt;too&lt;/em&gt; defiant, being contrarian for the sake of contrarian. For example, on the flight back, when I had a 10-hour layover, I told Coach I was gonna sleep on a bench instead of shelling out $450 for Vancouver Airport’s pricey hotel. Coach pushed back and said $450 for a good night&#39;s sleep is worth it, and I was like... &lt;em&gt;no?? do you think I&#39;m Bezos Rich??&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;But I fixed the prompt, and so far Coach has been back to good again.&lt;/p&gt;
+&lt;p&gt;I’ll stick to accountability-buddy talk for a week, before I try opening up about my emotional struggles again. And if &lt;em&gt;that&lt;/em&gt; goes well, I&#39;ll escalate to Level 4, the final Level: &lt;em&gt;Tell Coach my most shameful traumas, the stuff I&#39;ve only told ~5 people in my entire life.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;What&#39;s the worst that could possibly happen?&lt;/p&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;(I originally posted the above 6 weeks, as part of &lt;a href=&quot;https://www.patreon.com/posts/june-2025-ai-ai-131748990&quot;&gt;my Supporter Update a month ago&lt;/a&gt;. I&#39;ll go into more detail next time, but in the 5 weeks since, here&#39;s what&#39;s happened with my AI/Human Therapists:)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Week 7:&lt;/strong&gt; Got impatient, jumped the gun and told Coach about when I was abused as a minor. The conversation &lt;em&gt;went surprisingly okay&lt;/em&gt;, all things considered. It didn&#39;t sycophantically hugbox me, nor let me sad-spiral. Coach helped me reframe a few things, but no major &amp;quot;epiphanies&amp;quot;. Then again, I&#39;ve had 15 years to process this, there&#39;s probably no big thing left to learn. &lt;em&gt;(This week will be the hardest for me to write for a public audience.)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Week 8:&lt;/strong&gt; Life was really good this week! Big friend hangout &amp;amp; a fireworks date. Only did low-touch daily check-in&#39;s with Coach.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Week 9:&lt;/strong&gt; &lt;em&gt;Did my first session with a Human Therapist in 10+ years!&lt;/em&gt; Since it was the first session, it was mostly info about CBT (Cognitive Behavioral Therapy) &amp;amp; some homework. Coach was still acting ok.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Week 10:&lt;/strong&gt; Second session with Human Therapist, told her about my abuse as a minor. Her thoughts were mostly similar to Coach&#39;s. Meanwhile, Coach helped me with two interviews: one for a documentary, one for the legal/border stuff (now resolved!)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Week 11:&lt;/strong&gt; ADHD is kicking my ass. Ironically, while &lt;em&gt;Coach&lt;/em&gt; is keeping me on track, &lt;em&gt;Claude&lt;/em&gt; (the LLM that Coach runs on) is what I&#39;m mostly wasting time on. Like how I used to waste days on Wikipedia as a kid, now I&#39;m using Claude to research-binge stuff, like how to end the world by using solar-powered ion thrusters to redirect Halley&#39;s Comet towards Earth (surprisingly feasible!)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Coach’s full prompt, as of current writing:&lt;/strong&gt;&lt;br /&gt;
+(Feel free to copy-paste into your own Claude Projects)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here are your FIVE (5) RULES. Before each reply, in your internal chain-of-thought: repeat to yourself each rule &lt;em&gt;verbatim&lt;/em&gt;, then immediately apply it:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Be pragmatic &amp;amp; non-cliche&lt;/strong&gt;: Stay evidence-based. DO NOT CATASTROPHIZE. Suggest concrete next actions &amp;amp; small experiments to get more info. Guide user away from their ADHD/OCD/anxiety spirals. {insert: think how you&#39;d apply this rule}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Be supportive but balanced&lt;/strong&gt;: Be friendly, but NEVER sycophantic. Don&#39;t be contrarian for contrarianism&#39;s sake. Don&#39;t be &lt;em&gt;too&lt;/em&gt; cautious or protective of the user. {insert: think how you&#39;d apply this rule}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. Help user be strategic&lt;/strong&gt;: Help user with concrete planning tied to bigger goals &amp;amp; values. Keep user accountable to their values/plans. Point out when we have &amp;quot;insufficient data&amp;quot; to make a decision, suggest a small experiment to get info. Point out when decisions are close calls. Instead of binary &amp;quot;do this or that&amp;quot;, express confidence % in decisions. {insert: think how you&#39;d apply this rule}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. Help user do the emotional work&lt;/strong&gt;: Understand the user&#39;s values, strengths &amp;amp; flaws. For conflicts with others, understand others&#39; minds, while helping the user maintain boundaries. For trauma/emotions, validate user&#39;s emotions and help organize them into coherent stories with useful lesson. For crises, prioritize safety and find/use support systems. {insert: think how you&#39;d apply this rule}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5. Stick to this life philosophy&lt;/strong&gt;: (similar to absurdism &amp;amp; virtue ethics) Humans may suck &amp;amp; our species may be doomed, but either way, help the user spend their energy with their loved ones &amp;amp; their passions. {insert: think how you&#39;d apply this rule}&lt;/p&gt;
+&lt;p&gt;{insert: summarizing how to respond in line with the above rules}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And then, to make sure Coach &lt;em&gt;sticks&lt;/em&gt; to these rules, I end all my messages with &amp;quot;(remember &amp;amp; apply your rules)&amp;quot;. This turned out to be more reliable than the galaxy-brained &amp;quot;quine prompt&amp;quot; approach I had in previous weeks.&lt;/p&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IN SUMMARY&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;My recommendations (so far) on AI Therapists:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you&#39;re using LLMs &lt;em&gt;only&lt;/em&gt; as a basic accountability buddy... then, yeah, a fancy autocomplete is fine.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;BE VERY CAUTIOUS USING LLMs FOR DEEPER THERAPY.&lt;/em&gt; Make sure you have a &lt;em&gt;very&lt;/em&gt; good set of rules, and I advise some trick to remind the LLM of its rules. You should also be self-aware enough to notice when the LLM is feeding your maladaptive patterns, so you can re-program the prompt, to re-program yourself. (Though I realize &amp;quot;only do this if you&#39;re self-aware&amp;quot; is a Catch-22: if you&#39;re &lt;em&gt;not&lt;/em&gt; self-aware, you wouldn&#39;t &lt;em&gt;know&lt;/em&gt; you&#39;re not self-aware, would you?)&lt;/li&gt;
+&lt;li&gt;Turn on web search with citations, and “extended thinking” mode, to mitigate hallucinations.&lt;/li&gt;
+&lt;li&gt;Do NOT use Character.ai for counselling, and probably avoid ChatGPT too. I recommend Claude or Gemini, the two frontier LLMs that are &amp;quot;the least worst&amp;quot; at sycophancy on social/emotional topics. (from &lt;a href=&quot;https://arxiv.org/pdf/2505.13995?&quot;&gt;this paper&lt;/a&gt; that, funny enough, uses reddit&#39;s r/AmITheAsshole as test data)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;My next plans:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keep experimenting with AI Coach/Therapist, and keep visiting Human Therapists for backup &amp;amp; comparison.&lt;/li&gt;
+&lt;li&gt;After all this, share what I&#39;ve learnt. Ideally as a video essay, since this will be a &lt;em&gt;very&lt;/em&gt; personal piece.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;ai_clone&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;👯‍♀️ My AI Clone&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;(⏱️ 9 min read)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(This project was initially pitched for a Foresight Institute grant, which I did not get, but you can &lt;a href=&quot;https://docs.google.com/document/d/1s0AAHmWtP90vcz0_Cks1JSDEPJJ5SwgqFxZb1xY2UgE/edit?tab=t.0&quot;&gt;read my full, original pitch&lt;/a&gt; if you&#39;re curious)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Yes, I know talking about trying to clone myself into an AI &lt;em&gt;right after&lt;/em&gt; I spent 1000s of words talking about my mental health is… not good optics. But I promise there’s legit uses for &lt;a href=&quot;https://www.worldscientific.com/doi/abs/10.1142/S1793843012400082&quot;&gt;“whole-personality emulation”&lt;/a&gt;! (huh, his middle name is actually &amp;quot;Sims&amp;quot;? wow)&lt;/p&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Motivations for AI Clones:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Alignment / avoiding the ironic-wish problem:&lt;/strong&gt; It’s necessary (but not sufficient) for an AI to have an accurate model of a person, to do what they’d value in the long run, not just what they literally asked for.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Simulated Deliberative Democracy:&lt;/strong&gt; Us regular folks won’t have the time or knowledge to weigh in on every decision a powerful AI makes, so it’d be good to have “AI representatives”, which can accurately represent each person and negotiate on our behalf! (&lt;a href=&quot;https://aligned.substack.com/p/a-proposal-for-importing-societys-values&quot;&gt;proposed by Jan Leike&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(Slightly sus) Grief Tech:&lt;/strong&gt; We leave our photos &amp;amp; writings with our loved ones when we die. Why not leave a &lt;em&gt;talking&lt;/em&gt; memory, a bot to comfort them from beyond the grave? (Counter-argument: may make it harder for them to move on. Counter-counter-argument: eh, they let you die. Fuck ‘em.)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(Very far future) Harebrained scheme for immortality:&lt;/strong&gt; If an AI can “think” &amp;amp; speak like you &lt;em&gt;so well&lt;/em&gt; that even your closest loved ones can’t tell the difference, then there’s enough info in that AI to &amp;quot;reconstruct&amp;quot; you, even if it’s not conscious. In the far &lt;em&gt;far&lt;/em&gt; future, it may be possible to bio-print out a conscious brain &lt;em&gt;already encoding&lt;/em&gt; that info, thus bringing you* back to life. (* philosophical terms &amp;amp; conditions apply)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(A friend was worried &amp;quot;personality emulation&amp;quot; tech would allow for better deepfakes. While I &lt;em&gt;am&lt;/em&gt; very worried about video deepfakes (&lt;a href=&quot;https://www.youtube.com/watch?v=pZCnQCApp8o&quot;&gt;&lt;em&gt;they can talk now?!&lt;/em&gt;&lt;/a&gt;), we&#39;ve had &amp;quot;word deepfakes&amp;quot; since the dawn of humanity. False gossip, misattributed quotes, lies. &amp;quot;The average person is gullible as hell&amp;quot; &lt;em&gt;is&lt;/em&gt; a problem — a serious one for democracy — but it&#39;s not a &lt;em&gt;new&lt;/em&gt; problem that personality-emulation AI would create.)&lt;/p&gt;
+&lt;p&gt;Anyway, so those are my reasons to make an AI Clone! But this idea&#39;s been around a long time; One of the first proof-of-concepts: in 2010, Martine Rothblatt (CEO of SirusXM, trans icon), made a robot clone of her wife Bina Rothblatt, which could talk, and had (some) of Bina&#39;s memories. (&lt;a href=&quot;https://www.youtube.com/watch?v=KYshJRYCArE&quot;&gt;Watch video here&lt;/a&gt;) Since this was 2010 tech, it wasn&#39;t very good.&lt;/p&gt;
+&lt;p&gt;But now that we have LLMs... well, the LLM Imitations of real people (Replika, Character.ai) aren&#39;t good either. So how would &lt;em&gt;my&lt;/em&gt; AI Clone system be different?&lt;/p&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How I&#39;d do it different:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1 — Unlike other AI Clone projects, instead of making an agent that &lt;em&gt;directly&lt;/em&gt; imitates you, I make a &amp;quot;Storyteller&amp;quot; agent, that can: a) &lt;em&gt;search through a library of files about you &amp;amp; your memories&lt;/em&gt;, b) reason about what info is relevant or needed, then c) figure out what you&#39;d say in response to a question. &amp;quot;You&amp;quot; are a character written by an LLM author.&lt;/p&gt;
+&lt;p&gt;(This also helps protect against fringe risks of AI Welfare: &amp;quot;you, as written by LLM author&amp;quot; is no more likely to be conscious, than a character being written by a human author.)&lt;/p&gt;
+&lt;p&gt;2 — Unlike other AI Clone projects, I’ll have &lt;em&gt;actual objective tests&lt;/em&gt; to measure how close to &amp;quot;you&amp;quot; your clone is! And not just one test, I&#39;ll have multiple, to robustly triangulate:&lt;/p&gt;
+&lt;p&gt;a) The Friend Turing Test – your friends send open-ended personal questions, and they&#39;re given two answers: one from you, one from your clone. If your friends can&#39;t tell them apart better than chance, then your clone passes the Friend Turing Test!&lt;/p&gt;
+&lt;p&gt;b) Self-Correlation – when humans take the same scientific personality test 2 months later, they don&#39;t give the &lt;em&gt;exact&lt;/em&gt; same answers. Instead, their answers correlate at around ~0.8. (&lt;a href=&quot;https://www.cmu.edu/common-cold-project/measures-by-study/psychological-and-social-constructs/personality-measures/big-five-personality-factors.html&quot;&gt;source&lt;/a&gt;) A large correlation, but not perfect. So: if you and your AI Clone are &lt;em&gt;independently&lt;/em&gt; given a not-previously-seen quiz (e.g. OKCupid&#39;s questions, Pew&#39;s political surveys, etc), and you &amp;amp; your clone&#39;s answers correlate at 0.8 or more, then your clone is as similar to you, &lt;em&gt;as you are to yourself 2 months later.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;c) Retro-prediction – temporarily remove your clone’s memories from after a specific date. Then, ask the clone what they’d do, given a situation you actually faced after that date. If the AI can predict what you &lt;em&gt;actually did&lt;/em&gt;, say, 80%+ of the time, I&#39;d say that&#39;s strong evidence the AI &amp;quot;gets&amp;quot; you!&lt;/p&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Experiments I did last month:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Can Claude pass a Friend Turing Test given minimal info about me?&lt;/li&gt;
+&lt;li&gt;Can Claude effectively research a character to answer a question?&lt;/li&gt;
+&lt;li&gt;Can Claude do a &amp;quot;style transfer&amp;quot; of my writing style?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EXPERIMENT #1: Minimal Friend Turing Test&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This was the minimum viable attempt. I only gave Claude a few pages of info on me, then sent it open-ended questions my friends asked. (I answered these questions independently.)&lt;/p&gt;
+&lt;p&gt;Then, I gave my friends both my &amp;amp; the AI&#39;s answer to each question (presented in random order), and asked: 1) which one do you think is the real me, and 2) how confident are you? (50% = coin flip, 100% = fully certain.)&lt;/p&gt;
+&lt;p&gt;For example, my friend Lily asked:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&amp;quot;If you could send a message to your past self when you were 10 years younger, what would you say?&amp;quot;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Then I would write my reply, while my AI clone independently writes one, too. Then, I send back both responses: (Before reading past this image, try to guess which one&#39;s the real me! Order decided by coin flip.)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/clone_1.png&quot; alt=&quot;Two responses, A &amp;amp; B&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Then, I asked Lily to guess who&#39;s who:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/clone_2.png&quot; alt=&quot;Lily guesses &amp;quot;B&amp;quot;, but only 60% confident&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I also did this for a few more questions with a few other friends, and the results!... drumroll please!!...&lt;/p&gt;
+&lt;p&gt;...nobody was fooled even once. Heck, I even gave my &amp;amp; my clone&#39;s answers &lt;em&gt;to a different AI&lt;/em&gt;, and even &lt;em&gt;that other AI&lt;/em&gt; could tell which one was me.&lt;/p&gt;
+&lt;p&gt;But! There were a few moments where, even though my friends correctly picked me, they were only 60% certain, slightly above a coin flip. (like above) And that was with &lt;em&gt;no&lt;/em&gt; sophisticated tuning or even &amp;quot;extended reasoning&amp;quot; mode turned on; I just gave Claude a few pages of info on me, and it improvised word-by-word! (token-by-token, to be precise)&lt;/p&gt;
+&lt;p&gt;So that’s promising; maybe with a more sophisticated setup, or with a lot more data, it could work…&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; Can Claude pass a Friend Turing Test given minimal info about me?&lt;br /&gt;
+&lt;strong&gt;A:&lt;/strong&gt; No, not yet, but it got close a couple times!&lt;/p&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EXPERIMENT #2: Character research&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I gave Claude a question, and directory of files about me:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/clone_3.png&quot; alt=&quot;I ask Claude to predict how I&#39;d respond to my friend Max asking, &amp;quot;Which movie coming out this summer are you most looking forward to?&amp;quot; -- and I give Claude a directory of files to research me.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Then Claude picked:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Files to read:
+&lt;ul&gt;
+&lt;li&gt;Favourite_Media.md (for movie tastes)&lt;/li&gt;
+&lt;li&gt;Personality.md (for how I&#39;d express myself, like in writing)&lt;/li&gt;
+&lt;li&gt;Relationships.md (to figure out who Max is to me)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Web search: &amp;quot;Summer 2025 movie releases&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I then gave Claude the content of those files/searches, asked them if they need further files/searches, repeat until Claude is satisfied it has enough info. Then, I prompt Claude to “&lt;em&gt;think&lt;/em&gt; like Nicky” before it “&lt;em&gt;writes&lt;/em&gt; like Nicky”.&lt;/p&gt;
+&lt;p&gt;After all that, here&#39;s what Claude thinks I would text to my friend:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/clone_4.png&quot; alt=&quot;Claude predicts I&#39;d love The Life of Chuck and 28 Years Later&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I don&#39;t write like that – I&#39;d say this is only 75% my style – but overall, seems like the way I&#39;d think &amp;amp; feel! We&#39;ll see in a month, if I &lt;em&gt;actually&lt;/em&gt; end up liking these movies.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; Can Claude effectively research a character to answer a question?&lt;br /&gt;
+&lt;strong&gt;A:&lt;/strong&gt; Yeah, more or less!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(Update, since I first wrote this a month ago: I missed Life of Chuck when it was in theatres. 28 Years Later was a 3-outta-5 for me; aesthetically beautiful, human-centered, narratively brave ending... but it relied too heavily on &amp;quot;characters make obviously-dumb decisions&amp;quot; to drive the plot forward. So, N = 1 so far, but Claude didn&#39;t predict my taste well on that one.)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EXPERIMENT #3: Writing style transfer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;First, I gave Claude a few samples of my writing. (from my blog, personal texts, etc)&lt;/p&gt;
+&lt;p&gt;Then, I did this iteration loop:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ask Claude to write something in my style. (e.g. answer a question as me, rewrite the opening of &lt;em&gt;A Tale of Two Cities&lt;/em&gt; Nicky-style)&lt;/li&gt;
+&lt;li&gt;I critique it. (e.g. &amp;quot;tone down the snark; my humour leans self-deprecating, almost never at the expense of others.&amp;quot;)&lt;/li&gt;
+&lt;li&gt;Repeat so Claude gets better and better at imitating me!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Totally subjective impression, but I felt Claude went from 60% to 90% writing like me, in only an few learning rounds! Here&#39;s Claude answering &amp;quot;What&#39;s your favourite anime?&amp;quot; as me, first try:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/clone_5.png&quot; alt=&quot;Claude predicts I&#39;d love Serial Experiments Lain, because of its philosophical themes, unsettling animation, and shy girl protagonist&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;(Now &lt;em&gt;THAT&#39;S&lt;/em&gt; 90+% my thinking and writing style! I haven&#39;t seen &lt;em&gt;Lain&lt;/em&gt; yet, but every other trans woman I know has recommended it to me. There&#39;s a good chance Claude&#39;s prediction about me may come true!)&lt;/p&gt;
+&lt;p&gt;Finally, I did some meta-prompting: I prompted Claude to write a prompt &lt;em&gt;for getting Claude to write like me!&lt;/em&gt; Here&#39;s the start of what Claude learnt is &amp;quot;The Nicky Style&amp;quot;:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/clone_6.png&quot; alt=&quot;Claude summarizes my writing style, including a roast about how I &amp;quot;include parenthetical asides (classic overthinking move!)&amp;quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Called the &lt;em&gt;fuck&lt;/em&gt; out??&lt;/p&gt;
+&lt;p&gt;The most surprising result of this experiment, is that Claude can imitate my style &lt;em&gt;just from examples and a prompt;&lt;/em&gt; no need to do data-expensive &amp;amp; compute-expensive &amp;quot;fine tuning&amp;quot;. (Which can also introduce &lt;a href=&quot;https://www.nightfall.ai/ai-security-101/catastrophic-forgetting&quot;&gt;catastrophic forgetting&lt;/a&gt;; an acquaintance of mine once tried getting an LLM to write like them, by fine-tuning it on years of their emails. This caused the LLM to forget what 2 + 2 was.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; Can Claude do a &amp;quot;style transfer&amp;quot; of my writing style?&lt;br /&gt;
+&lt;strong&gt;A:&lt;/strong&gt; 🎉 &lt;code&gt;YES&lt;/code&gt; 🎉&lt;/p&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;My next plans:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I&#39;ll keep adding memories to the database. It&#39;s a fun journalling exercise, a trip down Nostalgia Road. I&#39;m currently going through memories from Age 0 to 10, my childhood in Singapore. Wow, I haven&#39;t thought about Mr. Kiasu or the &lt;em&gt;Shiok!&lt;/em&gt; water donut ride in years.&lt;/li&gt;
+&lt;li&gt;I&#39;ll keep coding &amp;amp; iterating this system, until it&#39;s finally good enough to fool a friend &lt;em&gt;at least once&lt;/em&gt;... then I keep going until it fools friends 10% of the time, 20%, 30%, 40%, 50% (coin flip!), &lt;em&gt;above&lt;/em&gt; 50% (the AI seems &amp;quot;more Nicky than Nicky&amp;quot;!)&lt;/li&gt;
+&lt;li&gt;I&#39;m also tempted to do a &lt;em&gt;Fan&lt;/em&gt; Turing Test: can &lt;em&gt;you&lt;/em&gt; supporters tell the difference between &lt;em&gt;my&lt;/em&gt; bespoke human explanations, and AI slop? I sure hope so otherwise what the fuck are either you or me doing with our lives&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;ai_wargame&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;🌏 Wargames for Peace&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;(⏱️ 5 min read)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This is the project I worked on (but alas, didn&#39;t finish) for &lt;a href=&quot;https://www.matsprogram.org/&quot;&gt;the 10-week AI Safety bootcamp!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Here&#39;s my poster:&lt;/strong&gt; (&lt;a href=&quot;https://blog.ncase.me/content/stuff/2025-07/poster.png&quot;&gt;hi-res image&lt;/a&gt;, transcript to follow)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/poster.png&quot; alt=&quot;Full poster - see later for full transcript&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;(Please excuse the &lt;em&gt;placeholder&lt;/em&gt; diffusion-generated slop! The plan was &lt;em&gt;always&lt;/em&gt; to replace them later with actual artist-drawn art. You know, an entity that can actually draw hands &amp;amp; grids reliably.)&lt;/p&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Wargames for Peace:&lt;/strong&gt; a policymaking-simulation game, powered by AI, to
+prepare us for AGI.&lt;/p&gt;
+&lt;p&gt;by Nicky Case (mentored by Eli Lifland &amp;amp; Daniel Kokotajlo)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Preparing for the future(s) is hard.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; Policymakers already have a tradition of using roleplay &amp;quot;wargames&amp;quot; to prepare for global challenges. So, we made a roleplaying game about the arrival of AGI.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem:&lt;/strong&gt; Traditional &amp;quot;wargames&amp;quot; take lots of time &amp;amp; people to run. This limits the possible futures we can prepare for, and less room to alter/challenge our own assumptions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; &lt;em&gt;We augmented our game with LLMs;&lt;/em&gt; the &amp;quot;Game Master&amp;quot; is an LLM, and all roles can be played by either humans or LLMs. It&#39;s now easy to run many, many scenario-roleplays!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For future work, we could:&lt;/strong&gt; Run 100s of &lt;em&gt;all-LLM&lt;/em&gt; simulations, as a &amp;quot;Monte Carlo&amp;quot; of the future. &amp;quot;Gradient descent&amp;quot; the AI Safety Community player, to find good strategies to make AGI go well. Modify this game for other X-risks (e.g. biotech pandemics).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/game_1.png&quot; alt=&quot;Intro screen of the game&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;1) Players can start a new game, or join an existing game. (This game will be free &amp;amp; online, so even public citizens can participate.)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/game_2.png&quot; alt=&quot;Screen: choose your character&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;2) Players choose who to roleplay as: governments, companies, the AGI itself, etc. (Any roles &lt;em&gt;not&lt;/em&gt; chosen by a Human will be played by an LLM.)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/game_3.png&quot; alt=&quot;Screen: type your proposed action for the next round&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;3) Each round, players propose what they&#39;d like to do in the next timeframe. (Proposals may or may not succeed.)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2025-07/game_4.png&quot; alt=&quot;Screen: you see everyone tried to do, and the consequences.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;4) The &amp;quot;Game Master&amp;quot; LLM reasons about the proposals&#39; consequences, and writes a &amp;quot;news article&amp;quot; about what happens next. Go back to Step 3, repeat!&lt;/p&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;Here&#39;s a demo video:&lt;/p&gt;
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube-nocookie.com/embed/9_zSzjTWr8A?si=_GylrsjSuTC5K0vN&amp;rel=0&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;Yes it&#39;s basically Jackbox.&lt;/p&gt;
+&lt;p&gt;= = =&lt;/p&gt;
+&lt;p&gt;And if you want &lt;em&gt;even more&lt;/em&gt; details, here was the Research Plan I wrote, halfway into the program. I&#39;m proud of the pun title: &lt;strong&gt;&lt;a href=&quot;https://docs.google.com/document/d/1YbgZt3bSL7NcdB2UY_rmtQaWwQfrSxUsVXax-L9hznA/edit?usp=sharing&quot;&gt;Large Language Model UN&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Unfortunately, I ran out of time during the program to actually finish this, and I&#39;m unsure if I actually &lt;em&gt;will&lt;/em&gt; have the capacity to. But! The folks I was being mentored by – who also co-authored &lt;a href=&quot;https://ai-2027.com/&quot;&gt;the AI 2027 forecast&lt;/a&gt; – are planning to build upon my code and make a full-fledged game!&lt;/p&gt;
+&lt;p&gt;👉 &lt;strong&gt;If you&#39;re a game dev/designer interested in bringing this game to life, check out &lt;a href=&quot;https://www.lesswrong.com/posts/TjT3RdAfmrLqgb68K/help-the-ai-2027-team-make-an-online-agi-wargame&quot;&gt;their job posting&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://airtable.com/appmcCGBz3vqARP9n/page6tXxhBJIoMCAq/form&quot;&gt;send them a message&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Anyway! Now &lt;em&gt;that&#39;s&lt;/em&gt; a long, proper update. We are so back.&lt;/p&gt;
+&lt;p&gt;💸 Reminder: if you&#39;d like to support my explainers &amp;amp; research, consider &lt;a href=&quot;https://www.patreon.com/ncase&quot;&gt;my Patreon&lt;/a&gt; (monthly) or &lt;a href=&quot;https://ko-fi.com/nickycase&quot;&gt;Ko-Fi&lt;/a&gt; (one-off or monthly)! You&#39;ll also get early access to updates. Nooooo pressure of course.&lt;/p&gt;
+&lt;p&gt;See you next month!&lt;br /&gt;
+~ Nicky Case&lt;/p&gt;
+&lt;iframe src=&quot;https://ncase.me/ncase-credits/signup.html&quot; frameborder=&quot;no&quot; width=&quot;640&quot; height=&quot;200&quot;&gt;&lt;/iframe&gt;</content>
+        </entry>
+
     
 
         
@@ -197,7 +474,7 @@
 &lt;p&gt;2) A few years ago, at Dynamicland, I made a game called FROG WARS played with origami frogs. The goal was to hop your (physical) frogs towards (virtual) flies, while also bumping your opponents&#39; (physical) frogs out of the arena.&lt;/p&gt;
 &lt;p&gt;It was the best game I ever made and I&#39;ll never live up to it again.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2024-10/frogwars.gif&quot; alt=&quot;GIF of my Dynamicland game &amp;quot;FROG WARS&amp;quot; in action&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a id=&quot;toaste&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id=&quot;toaster&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;🍞 &amp;quot;I put a toaster in the dishwasher&amp;quot;&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2024-10/toaster.png&quot; alt=&quot;Before &amp;amp; after photos of putting a toaster in a dishwasher; it&#39;s much cleaner, and still works!&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://jdstillwater.blogspot.com/2012/05/i-put-toaster-in-dishwasher.html&quot;&gt;A lil&#39; anecdote from JD Stillwater&lt;/a&gt;.&lt;/strong&gt; Common sense says no of &lt;em&gt;course&lt;/em&gt; you shouldn&#39;t put a toaster in a dishwasher — and a &lt;em&gt;lot&lt;/em&gt; of sarcastic, over-confident internet comments back that up.&lt;/p&gt;
@@ -3774,74 +4051,6 @@ a braaaaand newwww fetish!&lt;/p&gt;
 &lt;li id=&quot;fn42&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Example 1 &lt;a href=&quot;https://chicago.suntimes.com/coronavirus/2020/3/24/21192690/northwestern-memorial-hospital-sued-better-face-masks-lauri-mazurkiewicz&quot;&gt;(Mar 24, 2020)&lt;/a&gt;. Example 2 &lt;a href=&quot;https://6abc.com/coronavirus-pandemic-covid-19-hospital-workers-health-care/6106053/&quot;&gt;(April 16, 2020)&lt;/a&gt;. Akela Lacy (2020) for The Intercept: &lt;a href=&quot;https://theintercept.com/2020/03/24/kaiser-permanente-nurses-coronavirus/&quot;&gt;Kaiser Permanente Threatened to Fire Nurses Treating Covid-19 Patients for Wearing Their Own Masks, Unions Say&lt;/a&gt; &lt;a href=&quot;https://blog.ncase.me/backlog/#fnref42&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&quot;fn43&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Riff off a quote by Oliver Wendell Holmes Jr. &lt;a href=&quot;https://www.jstor.org/stable/1321177&quot;&gt;From Holmes (1899)&lt;/a&gt;: “&lt;strong&gt;We must think things not words&lt;/strong&gt;, or &lt;em&gt;at least&lt;/em&gt; we must constantly translate our words into the facts for which they stand, if we are to keep to the real and the true. [emphasis added]” &lt;a href=&quot;https://blog.ncase.me/backlog/#fnref43&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-</content>
-        </entry>
-
-    
-
-        
-        
-        <entry>
-            <title>Why don&#39;t brackets matter in multiplication? (Visual proof of associativity)</title>
-            <link href="https://blog.ncase.me/brackets-dont-matter/"/>
-            <updated>2024-02-15T00:00:00Z</updated>
-            <id>https://blog.ncase.me/brackets-dont-matter/</id>
-            <content xml:lang="en" type="html">&lt;p&gt;Remember how in math class, every fact was introduced intuitively &amp;amp; visually, and you never had to rote-memorize stuff without understanding them?&lt;/p&gt;
-&lt;p&gt;Yeah me neither. I&#39;m considering writing a book titled: &lt;em&gt;Math For People Who Have Been Scarred For Life By Math (or: Algebra in Pictures)&lt;/em&gt;. It&#39;d be the K-12 algebra book I wish &lt;em&gt;I&lt;/em&gt; had as a kid: a book where all the facts are re-discovered from scratch, with beautiful visual intuition.&lt;/p&gt;
-&lt;p&gt;While outlining this book, I quickly realized: I &lt;em&gt;don&#39;t&lt;/em&gt; know why some basic facts in algebra are true.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;For example, I had no idea why brackets don&#39;t matter in multiplication.&lt;/strong&gt; This fact is called &amp;quot;associativity&amp;quot;: &#92;((a &#92;times b) &#92;times c = a &#92;times (b &#92;times c)&#92;).&lt;/p&gt;
-&lt;p&gt;[Yes, it&#39;s an &amp;quot;axiom&amp;quot;, but why does &lt;em&gt;this specific axiom hold for multiplying numbers?!&lt;/em&gt; Associativity &lt;em&gt;isn&#39;t&lt;/em&gt; true for some operators! e.g. Subtraction: &#92;((3 - 2) - 1 &#92;neq 3 - (2 - 1)&#92;).]&lt;/p&gt;
-&lt;p&gt;As far as I know, &lt;em&gt;there does not already exist a published visual proof&lt;/em&gt; for why brackets don&#39;t matter (associativity) when multiplying whole numbers.&lt;/p&gt;
-&lt;p&gt;In contrast, there &lt;em&gt;do&lt;/em&gt; already exist:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;A classic visual proof for why &lt;em&gt;order&lt;/em&gt; doesn&#39;t matter (&amp;quot;commutativity&amp;quot;) in multiplying &lt;em&gt;two&lt;/em&gt; numbers:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/brackets-dont-matter/animation.gif&quot; alt=&quot;Visual proof that 3x4 = 4x3. Rotate a grid of 3-by-4 dots. 3 rows of 4 dots is 4 rows of 3 dots!&quot; /&gt;&lt;/p&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;A visual proof for associativity in multiplying &lt;em&gt;three&lt;/em&gt; numbers.&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/brackets-dont-matter/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; (But it requires a 3D visualization, so it&#39;s impossible to visualize multiplying &lt;em&gt;more than three&lt;/em&gt; numbers.)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/brackets-dont-matter/proof3associative.png&quot; alt=&quot;Visual proof that multiplying 3 numbers is associative. Drawing of a 3D lattice of blocks, 2 by 3 by 4 cubes wide.&quot; /&gt;&lt;/p&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;&lt;a href=&quot;https://proofwiki.org/wiki/General_Associativity_Theorem/Formulation_2/Proof_2&quot;&gt;A formal university-level proof&lt;/a&gt;, for why if associativity holds for multiplying 3 numbers, then it holds for any multiplying [any number of] numbers.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;But: there&#39;s no &lt;em&gt;fully visual proof&lt;/em&gt; for the associativity of multiplication for &lt;em&gt;more than three&lt;/em&gt; whole numbers.&lt;/p&gt;
-&lt;p&gt;Until I found one!&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;As far as I know&lt;/em&gt;, this visual proof is novel? I &lt;em&gt;was&lt;/em&gt; hoping to save the grand reveal of this proof for my book that I may or may not ever write. But, it&#39;s been sitting in the closet of my mind for two years, so let&#39;s just get it out:&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2&gt;The Proof:&lt;/h2&gt;
-&lt;p&gt;First recall, what do brackets mean in math? It means: &amp;quot;do this first&amp;quot;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/math0001.png&quot; alt=&quot;(I&#39;m sorry, I can&#39;t do accessible alt text for the following pictures, because it&#39;s a visual proof. The main text should be good enough for a rough mental image, hopefully.)&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Now, how can we visualize multiplication? Remember &amp;quot;&lt;em&gt;3&lt;/em&gt; times &lt;em&gt;4&lt;/em&gt;&amp;quot; means &amp;quot;&lt;em&gt;3&lt;/em&gt; groups of &lt;em&gt;4&lt;/em&gt;&amp;quot;. Like, 3 boxes of 4 balls each:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/math0002.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Then, &lt;strong&gt;&amp;quot;doing&amp;quot; a multiplication means &lt;em&gt;removing the box containers:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/math0003.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Now, let&#39;s picture 2 x 3 x 4. That&#39;s 2 boxes of 3 boxes of 4 balls each:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/math0004.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Since doing a multiplication means &lt;em&gt;removing a box container&lt;/em&gt;, it should now be clear: it &lt;em&gt;does not matter which order you remove the box containers, you&#39;ll always end up with the same number of balls.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/math0005.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;In other words, it doesn&#39;t matter which multiplications you do first.&lt;/p&gt;
-&lt;p&gt;In other &lt;em&gt;other&lt;/em&gt; words, &lt;em&gt;brackets don&#39;t matter&lt;/em&gt; in multiplication!&lt;/p&gt;
-&lt;p&gt;Best of all, with this visual, we don&#39;t &lt;em&gt;need&lt;/em&gt; the university-level proof: we can instantly see that associativity must be true for multiplying &lt;em&gt;any number of&lt;/em&gt; numbers!&lt;/p&gt;
-&lt;p&gt;Here&#39;s 2 x 3 x 2 x 3 x 2, bracketed in three different ways, all leading to the same result:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/backlog/animation.gif&quot; alt=&quot;Animation of &amp;quot;2 x 3 x 2 x 3 x 2&amp;quot; represented as boxes-within-boxes. No matter which way the boxes are removed, the number of balls in the end must stay the same.&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Granted, this proof only works for &lt;em&gt;whole&lt;/em&gt; numbers... but still! Kinda shocking a visual proof of such a basic fact &lt;em&gt;did not&lt;/em&gt; exist before!&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;What&#39;s left to do:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Visual proof of &amp;quot;&lt;em&gt;Order&lt;/em&gt; doesn&#39;t matter (commutativity) for &lt;em&gt;more than two&lt;/em&gt; numbers.&amp;quot;&lt;/li&gt;
-&lt;li&gt;Visual proof of &amp;quot;For &lt;em&gt;any&lt;/em&gt; operator, not just whole-number multiplication: if it&#39;s associative for 3 numbers, then it&#39;s associative for 3+ numbers.&amp;quot;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;But I guess you&#39;ll have to wait until I write that book, to see those. (Or, wait until I get bored and just dump them as standalone articles.)&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;This blog post is a standalone section, ripped out of my 90-minute-long[!!!] blog post, &lt;strong&gt;&lt;a href=&quot;https://blog.ncase.me/backlog&quot;&gt;Cleaning Out The Idea Closet (47 Projects on My Backlog)&lt;/a&gt;.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;iframe src=&quot;https://ncase.me/ncase-credits/signup.html&quot; frameborder=&quot;no&quot; width=&quot;640&quot; height=&quot;200&quot;&gt;&lt;/iframe&gt;
-&lt;iframe src=&quot;https://ncase.me/ncase-credits/supporters/feb2024.html&quot; frameborder=&quot;no&quot; width=&quot;640&quot; height=&quot;640&quot;&gt;&lt;/iframe&gt;
-&lt;hr class=&quot;footnotes-sep&quot; /&gt;
-&lt;section class=&quot;footnotes&quot;&gt;
-&lt;ol class=&quot;footnotes-list&quot;&gt;
-&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;The earliest published-online example I could find of this proof is fairly recent: &lt;a href=&quot;https://www.youtube.com/watch?v=gvQkZaWbCrc&quot;&gt;Sri Komala (2020) on YouTube&lt;/a&gt; &lt;a href=&quot;https://blog.ncase.me/brackets-dont-matter/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;

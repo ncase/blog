@@ -75,7 +75,7 @@ It was the best game I ever made and I'll never live up to it again.
 
 ![GIF of my Dynamicland game "FROG WARS" in action](../content/stuff/2024-10/frogwars.gif)
 
-<a id="toaste"></a>
+<a id="toaster"></a>
 ## 🍞 "I put a toaster in the dishwasher"
 
 ![Before & after photos of putting a toaster in a dishwasher; it's much cleaner, and still works!](../content/stuff/2024-10/toaster.png)

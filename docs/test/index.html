@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>Windy Day + thoughts on VR filmmaking</title>
+
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=460">
+
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="Windy Day + thoughts on VR filmmaking">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="https://blog.ncase.me/styles/assets/placeholder_thumb.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="Windy Day + thoughts on VR filmmaking">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/styles/assets/placeholder_thumb.png">
+	<meta property="og:title" content="Windy Day + thoughts on VR filmmaking">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/styles/assets/placeholder_thumb.png">
+	<meta property="og:description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Tue Feb 10 2015 13:45:25 GMT-0500 (Eastern Standard Time)");</script>
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <!-- removed until their HTTPS is fixed -->
+    <!--script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script-->
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+            <img
+                
+                id="splash_image_banner" src="/styles/assets/placeholder_banner.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			Windy Day + thoughts on VR filmmaking
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header"></span>
+
+                
+    			tags:
+                
+                    
+                
+                    
+                        <a class='black-link' target='_self' href="/tag/I Love This Thing">I Love This Thing</a>
+                    
+                
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a target='_self' href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <!-- TODO: don't show this segment at all, figure out age on build-side -->
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<iframe width="800" height="450" src="https://www.youtube.com/embed/6lszHEu7oxE" frameborder="0" allowfullscreen=""></iframe>
+<p>Again, another deceptively simple thing that blew my skepticism out of the water. This time, it's Windy Day. (created by Pixar animators, apparently!) I've seen more technically &amp; graphically impressive VR films/games before, but it was <em>this</em> one that made me realize - holy crap, this is an actually <em>interesting</em> art medium to explore!</p>
+<p>Because previously, I'd only focused on the one big thing you <em>can't</em> do in VR films, compared to regular films: you can't control where the viewer looks at. And so, that seemed to be a huge sacrifice for the sake of &quot;ooh you're <em>really</em> there&quot;. (Side note: I think it's a bit insulting to people's imagination &amp; empathy, to think they can't be immersed in a world without putting them in a literal first-person perspective)</p>
+<p>But in Windy Day, they took that &quot;constraint&quot;, and used it to <em>enhance</em> the film.</p>
+<hr>
+<p><strong>Camera-control as comedy:</strong></p>
+<p>This maybe be something that only animators notice. But you know how in those old classic cartoons, a character will chase a thing, and the camera follows, then the character hits a wall, but the camera has inertia, and zips past a lot, before springing back?</p>
+<p>Well, that's <em>you</em> in Windy Day. <em>You</em> are the camera, and <em>you</em> have inertia. <em>The film makes you unwittingly CREATE the comedy.</em></p>
+<p><strong>Impossible geometry as scene transitions:</strong></p>
+<p>I only noticed this on my tenth replay of Windy Day, coz that's how <em>subtle</em> it is. The world <em>changes</em> around you when you're not looking. In the beginning, it's all trees and forest, but a while later, there's a patch of grassland that wasn't there before. That is a <em>really</em> subtle way to do a scene transition.</p>
+<p>(And in the full version of Windy Day, it's less subtle, but it's still how all the scene transitions are done smoothly - with impossible geometry)</p>
+<p><strong>Head movement as blocking:</strong></p>
+<p><a href="http://vimeo.com/94628727">This Every Frame a Painting episode</a> does a great job of explaining how blocking works wonders in a long-cut shot. And Windy Day is nothing but one giant long cut. Surround-space theatre. (Will all VR films be like that? Mostly long cuts?)</p>
+<p>It's pretty simple. Want the viewer to look at two different things, but not at the same time? Place them at far apart <em>angles</em> relative to the camera. (not necessarily distance) Want a closeup? Have all characters walk closer to the camera. Want something to happen &quot;offscreen&quot;? Distract the viewer to look away, then have them look back.</p>
+<p>Think of one of the most common film techniques: shot-reverse-shot. A shot of someone looking past the camera, a shot of what they're looking at, a shot of their reaction. With VR, you just need to change your head's angle to <em>create</em> the shot-reverse-shot yourself!</p>
+<p><strong>Practical use of non-photorealism:</strong></p>
+<p>Totally personal taste, but I find photorealism to be boring and aesthetically lazy. You have all the possible styles in the world to choose from, and you choose... the one that's literally surrounding us all the time?</p>
+<p>But for Google Cardboard, there's a <em>practical</em> reason to be non-photorealistic! The graphical &amp; rendering quality isn't going to be as good as an Oculus, so, one really shouldn't try to get super-high-rez, high-polygon graphics on a Cardboard. It'll just look bad.</p>
+<p>But something as stylistic as Windy Day? <em>Perfect</em>.</p>
+<p><strong>The action waits for you:</strong></p>
+<p>What if something happens and the viewer's not looking? is a pretty valid question. And, after testing Windy Day over and over, I found their solution to this answer to be brilliantly simple. Just <em>wait</em> until the viewer's looking.</p>
+<p>Here's what they do: if you're not looking where you're supposed to, the characters just play a loop in the spot they're at, until you look back. The music, if there is any, also loops. (but also gets quieter if you're looking at the wrong spot)</p>
+<p><strong>Guiding the head:</strong></p>
+<p>Windy Day also guides you smoothly with motion and audio. It's pretty basic what they do - just follow the things that are moving, and the audio lowers if you're not looking at the right spot.</p>
+<p>But here's some thoughts on other ways to guide the head, that I didn't see in Windy Day. Using stereo audio to get the viewer to look left/right. Using sharply contrasting light to guide viewers to the light. Things appearing from offscreen, making you want to look in that direction. And so on, who knows!</p>
+<p><strong>Questions for VR filmmaking:</strong></p>
+<p>Should the camera move? A third-person camera stays still in Windy Day, but another third-person camera moves in Lucky's Tale, and both work <em>fantastically</em> well.</p>
+<p>Should the camera be in first-person? The only not-weird-feeling VR demos I've seen in first-person (and most demos are first-person, &quot;ooh you're really there&quot;) are ones where the camera is still. Having the player look around naturally, but move with a <em>controller</em> just feels weird.</p>
+<p>How do we do cuts and transitions? With VR films, sometimes cuts feel weird, sometimes they don't. I haven't tried enough to know when they're weird or not. How would transitions work? Impossible geometry? Simple fade-to-black? Would fading scenes look weird in VR, since it won't seem like fading images, it'd seem like the whole <em>world</em> is fading?</p>
+<hr>
+<p>In summary, the biggest thing to remember in VR filmmaking: the viewer is <em>co-creating</em> the movie. And you've got to guide their eyes and head, with as much leeway as you can get away with. Don't worry, it's not a problem <em>unique</em> to VR - theatre, comics, infographics... all visual artists face the problem of guiding-the-eye, to different degrees. This problem's already half-solved.</p>
+<p>But that's enough talk.</p>
+<p>This all excites me, so I'm going to put my currency where my words-hole is, and make a short 2.5D virtual reality film.</p>
+<p><img src="/content/images/2015/02/Screen-Shot-2015-02-10-at-13-42-17.png" alt=""><br>
+<a href="https://www.youtube.com/watch?v=7ZcB2OKElzY">(from a Google Cardboard test I did a while back)</a></p>
+<p>At the worst, it'd be a <em>very</em> interesting failure.</p>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>
