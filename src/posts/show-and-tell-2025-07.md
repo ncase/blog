@@ -397,6 +397,8 @@ This is the project I worked on (but alas, didn't finish) for [the 10-week AI Sa
 
 (Please excuse the *placeholder* diffusion-generated slop! The plan was *always* to replace them later with actual artist-drawn art. You know, an entity that can actually draw hands & grids reliably.)
 
+(Also: "wargame" just means "a roleplaying game for policymakers", _not_ necessarily war. Unfortunately it's gotta be marketed as 'wargame' to get US govt people to try it, the same way you gotta market shampoo in black bottles to get American Joe to try it.)
+
 = = =
 
 **Wargames for Peace:** a policymaking-simulation game, powered by AI, to
