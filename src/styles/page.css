@@ -265,6 +265,9 @@ img + em{
 /* ARTICLE SUMMARY VIEW */
 /*******************************/
 
+a:has(.article-summary){
+    text-decoration: none;
+}
 .article-summary{
     color: #000;
     position: relative;
@@ -304,6 +307,21 @@ body[dark_mode=yes] .article-summary{
 }
 .article-summary #article-metadata{
     opacity: 0.45;
+}
+@media (max-width: 800px) {
+    .article-summary {
+        width: 100%;
+    }
+    .article-summary #article-desc {
+        width: auto;
+        float: none;
+        padding: 0.5em 10px;
+    }
+    .article-summary #article-thumb {
+        float: none;
+        width: 100%;
+        height: 220px;
+    }
 }
 
 
@@ -538,7 +556,8 @@ input#submit:hover{
         display: none !important;
     }
     #content{
-        width: 400px !important;
+        width: calc(100% - 40px);
+        padding: 0 20px;
     }
     #header{
         font-size: 50px !important;
