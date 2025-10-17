@@ -3,7 +3,7 @@ title: "Research Notes-dump for Oct 2024"
 tags:
 - post
 share_image: https://blog.ncase.me/content/media/oct-2024/research/banner.png
-share_desc: "a bunch of misc projects I'm playing with, in AI Safety/Alignment"
+share_desc: "a bunch of misc projects I'm playing with in AI Safety/Alignment"
 date: 2024-10-03
 readtime: "45 min"
 layout: base-layout.njk
@@ -50,7 +50,7 @@ Let's use a scaffolded LLM to *qualitatively and quantitatively* elicit a human'
 
 . . .
 
-**Introduction / Motivation:** 
+**Introduction / Motivation:**
 
 Reward a robot for picking up dirt, and it'll pick up & drop the same dirt over and over again.[^dirt] Point is: in AI, it's really hard to specify what we truly want. Hence: why not get an AI to *learn* what we truly want? Maybe by *asking good questions?*
 
@@ -120,10 +120,10 @@ Ugh I spent over a week making the above prototype & outlining the research idea
 . . .
 
 > wake up babe new gender dysphoria just dropped 😭    
-> 
+>
 > ~ *me, personal communication to Egg Syntax, in response to their finding that GPT-3.5 can infer your gender from writing*
 
-**Introduction / Motivation:** 
+**Introduction / Motivation:**
 
 So, some folks tried making [an AI Scientist](https://sakana.ai/ai-scientist/) recently.
 
@@ -361,7 +361,7 @@ We can convert this causal diagram (and *any* causal diagram) into an approximat
 
 So if an agent (the news-writer) has limited amount of hours/effort they can put into Quality vs Clickbait, what will they do to maximize their rewarded-metric, Views? The optimal strategy is to put all their effort into Clickbait, since that has a higher coefficient than Quality!
 
-In *general*, Goodhart's happens because True Goal influences a Metric, but that Metric's almost always more easily influenced by some Cheat. 
+In *general*, Goodhart's happens because True Goal influences a Metric, but that Metric's almost always more easily influenced by some Cheat.
 
 But what if we had *multiple* Metrics, influenced by *mostly different* Cheats?
 
@@ -400,12 +400,12 @@ Set up for the numerical simulation:
 ![](../content/media/oct-2024/research/cues.png)
 
 * The first layer has 1 True Goal, and *N* Cheats.
-* The second layer has *M* Metrics. 
+* The second layer has *M* Metrics.
 * The True Goal causally influences (has an arrow to) all Metrics.
-* There's a probability *p* that a Cheat causally influences a Metric. 
+* There's a probability *p* that a Cheat causally influences a Metric.
 * The weights for each causal connection from Cheat→Metric are sampled from a power law. This is to model *really* outsized Cheats.
 
-2\) **Test Baseline:** See what would happen if we just rewarded the Metric with the highest causal connection. 
+2\) **Test Baseline:** See what would happen if we just rewarded the Metric with the highest causal connection.
 
 * The agent has a finite amount of Resources (1.00 unit total), that it can invest into the nodes at the first layer: True Goal, and/or Cheats.
 * In this simulation, the agent picks the optimal distribution of Resources to maximize its reward. The agent will use [Simulated Annealing](https://en.wikipedia.org/wiki/Simulated_annealing), which unlike gradient descent, is guaranteed to find a globally optimal-ish solution if you do it right.
@@ -574,7 +574,7 @@ That'd make pretty pics for the ArXiv paper~
 	* Take the above Bad Boys example: let's say there's 3 values/sub-agents at play: Excitement (pro Bad Boy), Safety and Emotional Intimacy (anti Bad Boy).  If the brain was a democracy, the latter two agents want to have the first agent "voted off the island". That's how one (as an ensemble whole) can value *changing* your values.
     	* Alternatively, imagine your brain like a co-operatively owned company: the "sub-agents" (individual values) democratically choose who to hire & fire. **This is how you can modify your values _in line with your values_.**
 * The above may also help formalize the line between what we consider "good" value-change and "bad" value-drift: did I change my values *according to my current values?*
-	* For example, right now, I value beliefs discovered through the scientific methods, and *not* value beliefs acquired through "direct revelation". If someone were to hypothetically drug me so hard I start believing in direct revelation, I'd consider that a Bad Ending. But! If hard *scientific* evidence were to come out about direct revelation working (e.g. someone publicly pre-registers visions of 100 lottery numbers and they all come true), *then* if I update towards believing in direct revelation, that's a Good Ending. 
+	* For example, right now, I value beliefs discovered through the scientific methods, and *not* value beliefs acquired through "direct revelation". If someone were to hypothetically drug me so hard I start believing in direct revelation, I'd consider that a Bad Ending. But! If hard *scientific* evidence were to come out about direct revelation working (e.g. someone publicly pre-registers visions of 100 lottery numbers and they all come true), *then* if I update towards believing in direct revelation, that's a Good Ending.
 * One promising strategy for alignment is for an AI to *learn* my true reward function. (Inverse reward learning) Would a smart-enough AI have an incentive to try to mis-learn my reward function as something easier to fulfill, or *actually modify me* to have easier-to-fulfill preferences? [Everitt & Hutter 2016](https://arxiv.org/pdf/1605.03143) prove not, but only for optimally rational agents. Research Q: does it still hold for bounded-rational agents?
 * I'm using numerical simulation because my analytic-solution skills are crud. Maybe I could collab with someone with better analysis chops?
 
@@ -641,7 +641,7 @@ I think *causal inference* is a big low-hanging fruit, here!
 * How can we know if this scaffolded LLM is inferring causal relations from scratch, or just pulling it up from its latent knowledge? For example, if we gave it lung cancer & smoking data, ideally it’d figure out smoking causes lung cancer... but if it outputs that, how would we know it figured it out vs just remembered that’s the correct answer, from its written corpus data?
     * One difference this system has, vs previous LLM-causal-inference tests, is that we do have a mix of LLMs and “good ol’ fashioned stats” — so, maybe we will be able to tell if it’s correctly going through all the steps of inferring smoking→cancer from scratch? (e.g. it should generate “maybe industrialization is a confounding factor” as a hypothesis, then generate tests to confirm/falsify that, like looking at non-smokers in industrialized areas.)
     * That is: it should recreate not just the “correct” conclusion, but the entire process to rule out alternative hypotheses.
-* “Placebo tests”: this system should not find direct causal links between things we know to be spurious correlations, e.g. ice cream sales & drowning (confounded by summer swimming) 
+* “Placebo tests”: this system should not find direct causal links between things we know to be spurious correlations, e.g. ice cream sales & drowning (confounded by summer swimming)
 * How do I get a hypothesis’s “prior”? Use the “weirdness rating” again? Or a “simplicity rating”?
 * Generating advice for more science, or for policy: If there is insufficient data to distinguish between two plausible models, it can ask for more data/experiments. Or, once we have a causal model, it can make policy recommendations for stuff we want. (For example, if it figures out what policies reliably cause less poverty or drug use, it can recommend that.)
 

@@ -8,23 +8,26 @@ share_image: https://blog.ncase.me/thumb.png
 share_desc: "I learn stuff, then share what I learn"
 ---
 
-<p>
-    <b>
+<p style="text-align:center;">
+    <span style="font-size:2em; font-weight: 300;">
         Hi, I'm <a href="https://ncase.me/">Nicky Case!</a>
-    </b>
-    Here are my 10 most-recent posts:
+    </span>
+    <br>
+    <span style="font-size: 1.1em;">
+        Here are my 10 most recent posts:
+    </span>
 </p>
 
 {% for post in collections.post | latestTenPosts %}
     {% include "article.njk" %}
 {% endfor %}
 
-<p style="text-align:center">
-    <b><a href='/archive'>(see full archive)</a></b>
+<p style="text-align:center; font-size:2em; font-weight: 300; line-height:0em">
+    <a href='/archive'>(see full archive)</a>
 </p>
 
-<p>
-And here's five of my favorite things I've written so far:
+<p style="text-align:center;">
+And here's some of my favorite things I've written so far:
 </p>
 
 {% for post in frontpagePosts %}
@@ -63,8 +66,10 @@ And here's five of my favorite things I've written so far:
     <a href='/tag/This Time It Is Personal'>This Time It Is Personal</a>
 </p>-->
 
-<p>
+<p style="text-align:center;">
     Thanks for reading! 💖
 </p>
 
-<iframe src="https://ncase.me/ncase-credits/signup.html" frameborder="no" width=640 height=200></iframe>
+<iframe src="https://ncase.me/ncase-credits/signup2.html" frameborder="no" width=640 height=250></iframe>
+
+<!-- TODO: This month's Supporters, too -->

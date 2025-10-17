@@ -1,10 +1,22 @@
 {
     "frontpagePosts":[
         {
+            "title": "Why don't brackets matter in multiplication? (Visual proof of associativity)",
+            "share_desc": "A never-before-seen visual proof of a stupidly basic fact (3 min)",
+            "url": "/brackets-dont-matter/",
+            "share_image": "https://blog.ncase.me/content/media/brackets-dont-matter/banner.png"
+        },
+        {
             "title": "Clearing out the idea closet",
             "share_desc": "a mega-post describing 47 projects on my backlog (92 min)",
             "url": "/backlog/",
             "share_image": "https://blog.ncase.me/content/media/backlog/banner.png"
+        },
+        {
+            "title": "Research Notes-dump for Oct 2024",
+            "share_desc": "a bunch of misc projects I'm playing with in AI Safety/Alignment (42 min)",
+            "url": "/research-notes-oct-2024/",
+            "share_image": "https://blog.ncase.me/content/media/oct-2024/research/banner.png"
         },
         {
             "title": "Lone Wolf",
@@ -19,16 +31,10 @@
             "share_image": "https://blog.ncase.me/content/images/2019/02/prompt3-1.png"
         },
         {
-            "title": "Why don't brackets matter in multiplication? (Visual proof of associativity)",
-            "share_desc": "A never-before-seen visual proof of a stupidly basic fact (3 min)",
-            "url": "/brackets-dont-matter/",
-            "share_image": "https://blog.ncase.me/content/media/brackets-dont-matter/banner.png"
-        },
-        {
-            "title": "How Do I Learn [X]?",
-            "share_desc": "my quick tips on learning, writing, math, art, etc. (9 min)",
-            "url": "/how-do-i-learn-x/",
-            "share_image": "https://ncase.me/sharing/thumb.png"
+            "title": "Make Plushie Patterns with Play-Doh & Paper Towels ",
+            "share_desc": "a lil' craftsy tutorial (3 min)",
+            "url": "/make-plushie-patterns-with-play-doh-paper-towels/",
+            "share_image": "https://blog.ncase.me/content/images/2020/03/thumb-1.png"
         }
     ]
 }
