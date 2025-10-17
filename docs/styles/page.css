@@ -533,12 +533,12 @@ input#submit:hover{
 }
 
 /* Mobile "friendly" */
-@media (max-width: 800px) {
+@media (max-width: 641px) {
     #sidebar, #sidebar_tabs{
         display: none !important;
     }
     #content{
-        width: 400px !important;
+        width: 640px !important;
     }
     #header{
         font-size: 50px !important;

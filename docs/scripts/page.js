@@ -6,7 +6,7 @@ window.$all = (query, el=document)=>{
 };
 
 window.addEventListener("DOMContentLoaded", ()=>{
-    
+
     // DARK MODE INSTANT
     let darkModeDefault;
     if(window.matchMedia){
@@ -82,12 +82,8 @@ window.addEventListener("DOMContentLoaded", ()=>{
     // HACK: Catching scrolls on Table of Contents only
     let panel_toc = $("#panel_toc");
     panel_toc.addEventListener("scroll",(e)=>{
-        console.log('aaaa');
         e.stopPropagation();
     },true);
-    window.addEventListener("scroll",(e)=>{
-        console.log('bbbb');
-    });
     // sidebar overflow hide
     // thx https://gist.github.com/kevsimpson/7309923
     panel_toc.onmouseover = ()=>{
@@ -299,9 +295,12 @@ window.addEventListener("DOMContentLoaded", ()=>{
         // Pub Date
         if(window.postDate){
 
+            /*
+            // update: oct 17 2025, wait why tf did i do this _in the js not the nunjucks_.
             let formatOptions = { year: 'numeric', month: 'short', day: 'numeric' },
                 formattedDate = window.postDate.toLocaleDateString("en-US", formatOptions).toLowerCase();
             $("#pub_date_header").innerHTML = `on ${formattedDate} &nbsp;&nbsp;&middot;&nbsp;&nbsp`;
+            */
 
             // Too old? Older than 2 years
             if($("#warning_years")){
@@ -338,7 +337,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
                 <% number %>
             </button>`
         });
-        
+
         // Littlefoot wraparound bug:
         // Swap around print & hover footnotes, shift leftwards by whatever
         $all(".footnote-ref.littlefoot--print").forEach(printFootnote=>{
@@ -348,7 +347,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
             parentNode.insertBefore(printFootnote, hoverFootnote);
             hoverFootnote.style.marginLeft = (-width + 3) + "px";
         });
-        
+
         // Make a : footnote header before hiding in Nutshell (if any exist)
         let footnotesDivider = $(".footnotes-sep");
         if(footnotesDivider){
