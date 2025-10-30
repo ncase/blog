@@ -226,7 +226,7 @@ img + em{
     width: 640px;
     margin: 68px auto 68px auto;
 
-    font-size: 19px;
+    font-size: 18px;
     line-height: 1.8em;
 
 }
@@ -566,4 +566,13 @@ input#submit:hover{
 }
 #footer p{
     margin: 1.4em 0;
+}
+
+
+/*******************************/
+/* Hack, whatever */
+/*******************************/
+
+.nutshell-ball-up, .nutshell-ball-down{
+    background: #000 !important;
 }

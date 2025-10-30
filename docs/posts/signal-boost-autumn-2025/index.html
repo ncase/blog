@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>Signal Boost for Autumn 2025: much ado about the Algorithm</title>
+
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=640">
+
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="Signal Boost for Autumn 2025: much ado about the Algorithm">
+	<meta itemprop="description" content="The Algorithm, how to fix it, and SPOOKY HALLOWEEN STUFF 🎃">
+	<meta itemprop="image" content="https://blog.ncase.me/content/media/sb/thumb.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="Signal Boost for Autumn 2025: much ado about the Algorithm">
+	<meta name="twitter:description" content="The Algorithm, how to fix it, and SPOOKY HALLOWEEN STUFF 🎃">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/media/sb/thumb.png">
+	<meta property="og:title" content="Signal Boost for Autumn 2025: much ado about the Algorithm">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/media/sb/thumb.png">
+	<meta property="og:description" content="The Algorithm, how to fix it, and SPOOKY HALLOWEEN STUFF 🎃">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Wed Oct 29 2025 20:00:00 GMT-0400 (Eastern Daylight Saving Time)");</script> <!-- let JS figure out if it's too old, show warning -->
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <!-- removed until their HTTPS is fixed -->
+    <!--script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script-->
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+                
+            
+            <img
+                 class="blur" 
+                id="splash_image_banner" src="/content/media/sb/thumb.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			Signal Boost for Autumn 2025: much ado about the Algorithm
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header">
+                    on oct 30, 2025
+                </span>
+                &nbsp;&nbsp;&middot;&nbsp;&nbsp
+
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a target='_self' href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <!-- TODO: don't show this segment at all, figure out age on build-side -->
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p>Hey folks! Things are still in the works. In the meantime, here's some recent-ish stuff I found valuable, and I hope you do too. 💖 (Sorry this post is, uh, over 10,000 words. Guess I'm making up for not posting a Signal Boost in almost a year!)</p>
+<ul>
+<li><strong>Much ado about The Algorithm</strong>
+<ul>
+<li>🎙️ An interview series with experts on this new algorithmic era <a href="#interview">↪</a></li>
+<li>😑 New study: It's probably not the algorithm's fault, we just suck <a href="#we-suck">↪</a></li>
+<li>🙃 Gradual Disempowerment: how even “dumb” AI could take over humanity <a href="#gradual">↪</a></li>
+<li>🤝 Bridging-Based Ranking: reverse political polarization by reversing the algorithm <a href="#bridging">↪</a></li>
+<li>🧐 Zero-Knowledge IDs: How to prove yourself without doxxing yourself <a href="#zkp">↪</a></li>
+<li>🧠 Cyborgism: How to make AI that enhances us, not replaces us <a href="#cyborg">↪</a></li>
+<li>🍻 The 6Pack of Digital Democracy <a href="#6pack">↪</a></li>
+</ul>
+</li>
+<li><strong>Fun Stuff!</strong>
+<ul>
+<li>🕵️ Clues by Sam: a daily deductive detective game <a href="#clues">↪</a></li>
+<li>🐦 Snakebird: cute birbs, cruel puzzles <a href="#snakebird">↪</a></li>
+<li>🦉 ZeWei's Multiverse Tour Guide Adventures Continue <a href="#zewei">↪</a></li>
+<li>🤓 Emnerson: goofy internet gal <a href="#emnerson">↪</a></li>
+<li>🧇 &quot;blahaj goes to waffle house at 3am&quot; <a href="#blahaj">↪</a></li>
+</ul>
+</li>
+<li><strong>SPOOKS FOR HALLOWEEN</strong>
+<ul>
+<li>👻 BOO! a silly music video &amp; music album <a href="#boo">↪</a></li>
+<li>🩸 Bury Your Gays by Chuck Tingle <a href="#bury-your-gays">↪</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2>Much ado about The Algorithm</h2>
+<p><a id="interview"></a></p>
+<h3>🎙️ Interview series with experts on this new algorithmic era</h3>
+<p>My friend Tobias Rose-Stockwell — author of the book <a href="https://www.outragemachine.org/">Outrage Machine</a> — just launched a new interview series!  In this series, he'll yap with experts on the simple question of &quot;seriously wtf is going on, what do we do when algorithms install depression &amp; extremism into our kids, scientists can't agree if AI is hype of the end-of-humanity, also holy shit politics??&quot;</p>
+<p>Simple question!</p>
+<p><strong>Episode 1: Jonathan Haidt</strong>, psychologist and author of the bestselling books <a href="https://en.wikipedia.org/wiki/The_Righteous_Mind">The Righteous Mind</a><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> and <a href="https://en.wikipedia.org/wiki/The_Anxious_Generation">The Anxious Generation</a>.</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Dh4g0gxirSQ?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p><a href="#interview-with-jon">: click to expand — my notes from the Jon episode</a></p>
+<p><strong>Episode 2: Tim Urban</strong>, blogger behind <a href="https://waitbutwhy.com/">Wait But Why</a> and author of <a href="https://waitbutwhy.com/whatsourproblem">What's Our Problem?</a></p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/eGBhUXmxSbI?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p><a href="#interview-with-jon">: click to expand — my notes from the Tim episode</a></p>
+<p><strong>Upcoming interviews:</strong></p>
+<ul>
+<li><strong>Tristan Harris</strong>, ex-Google employee most famous for calling out Google, Apple &amp; Facebook for using dark design patterns to keep us (literally, not just metaphorically) addicted — and promoting specific better designs that respect human attention &amp; autonomy. (See: <a href="https://www.slideshare.net/slideshow/google-deck-on-digital-wellbeing-a-call-to-minimize-distraction-and-respect-users-attention/109671786">Tristan's leaked internal Google presentation (2013)</a>.)</li>
+<li><strong>Steven Pinker</strong>, who I do not like because he keeps strawmanning/weakmanning all his opponents, and IMO is wrong on cognitive science (his own field), and most of the other fields he's written on, especially AI Safety. But he <em>is</em> a leading voice &amp; bestselling author, so, well, whatever.</li>
+<li><strong>Esther Perel</strong>, psychotherapist best known for her talks &amp; books about <em>SEX!</em> and relationships.</li>
+</ul>
+<p>Anyway if the above interests you, check out my friend's new interview series!</p>
+<p><strong>On <a href="https://www.youtube.com/@IntoTheMachineShow">YouTube</a> / <a href="https://tobias.substack.com/">Substack</a> / <a href="https://podcasts.apple.com/ca/podcast/into-the-machine-with-tobias-rose-stockwell/id1824137015">Apple Podcasts</a></strong></p>
+<p>Be one of the first thousand fans, it's <em>very</em> early days for this project.</p>
+<p><a id="we-suck"></a></p>
+<h3>😑 New study: It's probably not the algorithm's fault, we just suck</h3>
+<p><img src="../content/stuff/2025-10/its_you.png" alt="Screenshot from Bojack Horseman: Todd simply tells Bojack, It's you." title="Screenshot from Bojack Horseman: Todd simply tells Bojack, _&quot;It's you.&quot;_"></p>
+<p>Tobias sent me <a href="https://arxiv.org/abs/2508.03385">this paper</a> (<a href="https://arstechnica.com/science/2025/08/study-social-media-probably-cant-be-fixed/">Ars Technica lay-summary</a>), which hurts him because it contradicts one of his core theses. +1 for Tobias's intellectual honesty, showing the counter-evidence.</p>
+<p>Anyway, Tobias's thesis (a common one among researchers) is that social media breeds extremism because of their algorithmic feeds. <em>Enraging is engaging</em>. The data shows it: anger is <em>the</em> best way to make a headline go viral.<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> The algorithms, trained to predict us, train <em>us</em> to become <em>predictable</em>.</p>
+<p>But this <em>new</em> paper suggests that, no, it really is just our fault, no algorithm needed. The paper uses an interesting method: they simulate a social network, where each person<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup> is simulated using LLMs<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>, deciding what to re-share and who to follow, etc. &quot;Agent-based modelling&quot; for social science isn't new, but using LLMs to do it is!</p>
+<p>(But you should be rightfully skeptical: <em>can</em> LLMs simulate people accurately? <a href="https://arxiv.org/abs/2411.10109">This Stanford preprint</a> finds that LLMs can replicate 1,000 real people's answers 85% as accurately <em>as the people themselves 2 weeks later</em>. So, not perfect, but not bad!)</p>
+<p>Back to the paper: they use LLM agents to simulate a &quot;baseline&quot; social network<sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup>, then simulate proposed solutions to social media — e.g. chronological feeds, hide engagement metrics, bridging-based algorithms, etc — and measure they're effect on political polarization, attention-economy inequality, etc.</p>
+<p><strong>The headline result: it's our fault.</strong> Even a no-algorithm, chronological feed leads to insular echo chambers &amp; polarization.</p>
+<p><img src="../content/stuff/2025-10/paper-1.png" alt="chart from paper, see below paragraph for explanation" title="chart from paper, see below paragraph for explanation"></p>
+<p>Figure 3: The &quot;E-I Index&quot; is a measure of outgroup (external) to ingroup (internal) follows. 0 (upwards) is less polarization, -1 (downwards) means more polarization. <em>No intervention reduces polarization that much.</em> Chronological's practically the same as baseline. The best intervention is Bridging, but even then not by much.</p>
+<p><img src="../content/stuff/2025-10/paper-2.png" alt="chart from paper, see below paragraph for explanation" title="chart from paper, see below paragraph for explanation"></p>
+<p>Figure 4: Correlation between how extremist a poster is, and how many followers/reposts they receive. Chronological feeds are <em>much worse</em> than baseline. Bridging is quite a bit better, actually. (Wait, how can a no-algorithm feed be <em>worse?</em> My guess in footnote:<sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup>)</p>
+<p><img src="../content/stuff/2025-10/paper-3.png" alt="chart from paper, see below paragraph for explanation" title="chart from paper, see below paragraph for explanation"></p>
+<p>Figure 5: The &quot;Gini coefficient&quot; is a measure of inequality. Chronological feeds lead to the least amount of inequality in followers/reposts. Bridging leads to the most, but not that much higher than baseline.</p>
+<p>= = =</p>
+<p>On one hand, these results aren't <em>too</em> surprising. Puritan-era Salem didn't have algorithms or mass media, yet they had literal witch hunts. Tumblr &amp; 4chan in the early 2010's didn't have algorithmic feeds – (4chan doesn't even have a &quot;reblogs&quot; or &quot;followers&quot;) – yet not only were these sites hotbeds of extremism, it <em>escaped containment</em> and affected US politics, which affected world politics. And today, Bluesky has a chronological feed by default<sup class="footnote-ref"><a href="#fn7" id="fnref7">[7]</a></sup>, yet it's... well. It's light-blue Tumblr. Donald Trump's Truth Social also has a chronological feed.<sup class="footnote-ref"><a href="#fn8" id="fnref8">[8]</a></sup></p>
+<p><strong>So: no algorithm is needed for poisonous politics. &quot;It's you.&quot;</strong></p>
+<p>Well, damn. I was hoping there'd be an easy technical fix, and the problem wasn't, &quot;human nature is fundamentally corrupt&quot;.</p>
+<p>On the other hand, the paper <em>did</em> find a hopeful result – even though their own Abstract downplays it because, I don't know, academic humility and/or pessimism sells? They found that <strong>&quot;bridging-based algorithms&quot;</strong>, like <a href="https://asteriskmag.com/issues/08/the-making-of-community-notes">Birdwatch/Community Notes</a> or <a href="https://en.wikipedia.org/wiki/Pol.is">Pol.is</a>, <em>does</em> cut down polarization! (as explained in the above Figures)</p>
+<p>Bridging algorithms, instead of showing you what {people you agree with} agree on, show you what {people who disagree} <em>still</em> agree on. It automatically finds &amp; highlights common ground, by design! (More explanation later in this Signal Boost. <a href="#bridging">↪</a>)</p>
+<p>Now, there <em>is</em> a small cost to using bridging algorithms, in that it <em>slightly</em> increases follower-inequality, but honestly, it's a <em>very</em> small difference, and you could just offset that by making your algorithm give a bit more weight to smaller creators.</p>
+<p>Let's leave on that hopeful note.</p>
+<p>= = =</p>
+<p>Other caveats I want to mention:</p>
+<ul>
+<li>Though LLM agents have been validated against human data (85% as accurate as people themselves 2 weeks later), because this simulation runs LLM agents against each other for dozens of rounds, small biases in LLMs can accumulate. (see: <a href="https://www.astralcodexten.com/p/the-claude-bliss-attractor">Scott Alexander's article on why Claude Finds God and DALL-E Goes Racist</a>)</li>
+<li>The study might being over-estimating polarization, because the LLM &quot;knows&quot; polarization happens on social media, and thus acts it out. (it's a text <em>predictor</em>, remember?) Then again, the study could be <em>under</em>-estimating polarization, because these LLMs have been fine-tuned to be &quot;friendly&quot;, and thus will be kinder &amp; more curious than the average internet user. Maybe these two errors roughly cancel out.</li>
+<li>Although the <em>algorithmic feed</em> may not be the culprit, other design decisions could have led to higher assholery. For example, the low-friction Retweet lets impulsive emotions win the stage. And the Quote-Retweet (and Tumblr's Reblog-with-Commentary) is the perfect way to dunk on someone and get the &quot;last&quot; word.</li>
+</ul>
+<p><a href="#notes-on-polarization">: click to expand — why polarization isn't always bad, and the 3 kinds of &quot;polarization&quot;</a></p>
+<p>= = =</p>
+<p><strong>Link to <a href="https://arxiv.org/abs/2508.03385">paper by Larooij &amp; Törnberg</a>, <a href="https://arstechnica.com/science/2025/08/study-social-media-probably-cant-be-fixed/">press article</a></strong></p>
+<p><a id="gradual"></a></p>
+<h3>🙃 Gradual Disempowerment: how even “dumb” AI could take over humanity</h3>
+<p>There's two main tribes in the AI Risk world: 1) those who believe the main threat is that &quot;super-intelligent&quot; AI goes rogue &amp; take over humanity, and 2) those who believe the main threat is that &quot;dumb&quot; AI amplifies economic inequality and digital authoritarianism.</p>
+<p>The recent Gradual Disempowerment paper asks: <em>why not both?</em>  <strong>&quot;Dumb&quot; AI could take over humanity <em>through</em> our normal cultural, economic, and political incentives.</strong></p>
+<p>Here's how AI slop could disempower us in Culture, Economics, and States:</p>
+<p>= = =</p>
+<p><strong>Culture:</strong></p>
+<p><img src="../content/stuff/2025-10/spaghetti.jpg" alt="Thumbnails of AI-generated videos of Will Smith eating spaghetti (huge progress from 2023 to 2024)" title="Thumbnails of AI-generated videos of Will Smith eating spaghetti (huge progress from 2023 to 2024)"></p>
+<p>(<a href="https://www.youtube.com/watch?v=vbWe5k4fFWE">AI will smith eating spaghetti</a> in 2023 vs 2024. jfc <a href="https://www.youtube.com/watch?v=bXKkZh2UEEA">2025</a> is scarily realistic)</p>
+<p>This is the one we're all, unfortunately, most familiar with.</p>
+<ul>
+<li>First, we made chronological internet feeds.</li>
+<li>Then, when there was too much content, we invented Newgrounds-style &amp; Reddit-style voting to find the gems.</li>
+<li>Then, to counter spam (&amp; to make investors happy), we put opaque machine-learning algorithms in charge of boosting content. Importantly: these algorithms are <em>grown, not designed.</em> To over-emphasize: <em>nobody understands how these algorithms really work,</em> not even the engineers or the algorithm itself.</li>
+</ul>
+<p>So, human autonomy is now <em>near-fully removed</em> from the &quot;consumer&quot; side of modern culture: our media diet is filtered through an algorithm that <em>literally nobody understands</em>. We're <em>already</em> disempowered here.</p>
+<p>But wait, it gets worse! To stay in the game, creators are forced to re-design their content <em>for the algorithm</em>. The <em>algorithm itself</em> is the primary audience now. Some of it's not too bad: tacky clickbait thumbnails, a supercut in the first 30 seconds. But some of it's pretty bad: outrage-entrepreneurship, straight-up lies &amp; (engaging) bullshit.</p>
+<p>But wait, it gets <em>even worse!</em> As the space gets more competitive, creators will be pressured to make more at lower cost. Well, what's the harm in a few AI-generated images? Or AI video clips? C'mon, I <em>have</em> to let an AI pick the best title &amp; thumbnail. And maybe AI voiceover? Sure, an AI's writing the script, but I'm still generating the idea &amp; outline! Okay, just the idea. Okay, AI can handle that too.</p>
+<p>OpenAI &amp; Meta (Facebook) recently announced <a href="https://www.vox.com/technology/464097/meta-openai-sora-slop-ai">their own AI-video versions of TikTok</a>.</p>
+<p>To recap: we're already disempowered on the &quot;consumer&quot; side of culture. Soon, we may be disempowered on the &quot;creator&quot; side of culture. <strong>We'll have AIs making content for AIs, humans in the backseat.</strong> We won't even remember there used to be a steering wheel.</p>
+<p>(Oh and <em>then</em> there's the AI Companions. <a href="https://globaldialogues.ai/updates/global-dialogues-4-human-ai-relationships">Source for all the following stats</a>: ~40% of people use AI for emotional support at least once a week.<sup class="footnote-ref"><a href="#fn9" id="fnref9">[9]</a></sup> ~17% accept AI-Human romance, and ~11% would <em>personally consider</em> dating an AI. To be clear, I'm no prude: <em>I</em> use Claude as an &quot;AI Life Coach&quot; on a near-daily basis, and I'll confess, I've done erotic roleplay with AI characters.)</p>
+<p>(But, consider the slippery slope: AI Companions can be more attentive and less demanding than a human could ever be, so you'll slowly drift towards AI friends &amp; lovers like you slowly drift towards 1, 2, 3+ hours on Discord and Instagram. Then, your human-interaction skills atrophy, so you tend more towards AI Companions, so your human-skills atrophy more, repeat.)</p>
+<p>(Conclusion: not only will <em>mass media culture</em> be non-human, even <em>person-to-person culture</em> will be non-human.)</p>
+<p>= = =</p>
+<p><strong>Economics:</strong></p>
+<p>I'm a programmer. So let's start with how programming, as a career, could fall to Death By Slop:</p>
+<p>To stay competitive in the marketplace, we'll be incentivized to rely more and more on LLM coders. At first, senior developers do better than ever, thanks to these LLM coders doing all the grunt work! But junior developers can't get a job doing that grunt work anymore, which also means juniors can't get the experience to <em>become</em> seniors. So, when the seniors die out or cognitively age out, there is no new guard to take over. And/or, the more that seniors depend on LLM coders, the more their <em>own</em> skills atrophy.</p>
+<p>(<a href="https://www.brainonllm.com/">A recent preprint</a> by MIT researchers found that, at least for essay-writing, LLM users' skills <em>do</em> atrophy, and even &quot;consistently underperformed at neural, linguistic, and behavioral levels&quot;.)</p>
+<p>Either way, humanity loses the ability to even <em>check</em> if the LLM-written code is safe, and not – say – making the bioprinting lab's password &quot;hunter2&quot;.</p>
+<p>Now consider Slop coming for management positions. I mean, it's mostly emails &amp; Slacks &amp; meetings anyway, right? A CEO would love to get rid of the middlemen, accumulate the extra money for themselves. Until the shareholders vote to get rid of the human CEO, a million-dollar money sink, and put GPT-CEO in charge (with some human stooge as CEO on paper, just for legal reasons). The shareholders are probably AI themselves at this point; stock-trading is <em>already</em> almost entirely algorithmic. (Which may or may not have led to the glitch of <a href="https://en.wikipedia.org/wiki/2010_flash_crash">the 2010 Flash Crash</a> — as AIs get put in more positions of economic power, <em>and the failure modes of AIs are correlated</em>, such sudden all-at-once failures become more likely.)</p>
+<p><em>But, at least the consumer can vote with their dollar?</em> Do you know how Amazon makes most of their profits? It's not the marketplace, or the books, or the streaming service. It's their cloud compute.<sup class="footnote-ref"><a href="#fn10" id="fnref10">[10]</a></sup> Yes, the big tech company makes most of its profits <em>selling to other</em> big tech companies. And the <em>biggest</em> company in the world right now? NVIDIA, the chip manufacturer, got to the top of the world by <em>selling to other tech companies</em>.</p>
+<p>If dollars are votes, humans <em>already</em> lack majority vote for the world's top companies.</p>
+<p><img src="../content/stuff/2025-10/bloomberg.webp" alt="no alt text set, shame on me" title="no alt text set, shame on me"></p>
+<p>(<a href="https://www.bloomberg.com/news/features/2025-10-07/openai-s-nvidia-amd-deals-boost-1-trillion-ai-boom-with-circular-deals">image source</a>)</p>
+<p>Imagine a world, where AI-run companies buy from &amp; sell to AI-run companies. Almost all human-run shops and products get immediately outcompeted. Voting with your dollar means nothing, if you even <em>have</em> dollars to vote with, after losing your job years ago. Maybe there'll be a Universal Basic Income? I'd hope so – but what incentive do the business leaders &amp; politicians have to keep their promise to implement UBI, when we're <em>already</em> disempowered?</p>
+<p>In sum: Labour gets automated away. Management gets automated away. Capital is almost-entirely owned by companies, fictional legal persons, which no longer have real persons at the wheel.</p>
+<p>That's how we get disempowered. Not a coup, &quot;just&quot; dumb AI + dumb incentives.</p>
+<p>= = =</p>
+<p><strong>States:</strong></p>
+<p>C'mon, you already knew politicians don't write their own speeches. And soon, maybe not even <em>any human</em> writes those speeches. An AI, with access to the heartbeat of the data of the swing voters, could give a politician superhuman ability to win the polls. And if they refuse? Well, they'll be outvoted by someone else who takes the AI boost. Why stop at speeches? Why not have AI optimize your platform, campaign promises, specific policies, <em>law?</em> Why not have an AI run the entire government through teleprompted meat-puppets in suits?</p>
+<p>(Assuming voting decisions are even human at this point; an AI-mediated Culture will show voters what the Algorithm <em>wants</em> the voters to see, and they'll vote accordingly. <em>But the human spirit will rebel if democracy's on the line</em>, you think? Sure, an AI could predict which humans are rebellious, then give them the opposite content to reverse-psychology them into the correct actions.)</p>
+<p>As for law <em>enforcement</em>, we don't have enough police to patrol all the streets, let alone the Wild West of the internet. So, let's put 24/7 cameras everywhere, with AIs to monitor &amp; report crime. The officers the AI dispatches <em>are</em> human... until we can manufacture Robo-Cops who never sleep, never lose their cool, and – importantly – never unionize or complain about lack of pay. This same law-enforcement AI could track people online for acting or thinking suspiciously. And if you don't use the internet at all? Why, that's the most suspicious action of all.</p>
+<p>Actually, I guess we can just use self-piloted drones with a gun attached as a Robo-Cop. And war robot. And neighbouring-country-conquest robot.</p>
+<p>Oh btw, people <em>already</em> trust AI chatbots more than their elected representatives, civil servants, and even faith/community leaders. (<a href="https://blog.cip.org/p/when-ai-acts-for-you-or-as-you">source</a>)</p>
+<p><img src="../content/stuff/2025-10/Pasted%20image%2020251029164330.png" alt="Chart of people's trust in various entities. Family doctors rank #1, AI chatbots #2, government &amp; faith leaders below that." title="Chart of people's trust in various entities. Family doctors rank #1, AI chatbots #2, government &amp; faith leaders below that."></p>
+<p>In <em>EVERY</em> continent, more people Agree than Disagree that AI could make better decisions than their government representatives: (though &quot;Unsure&quot; is a large portion) (<a href="https://blog.cip.org/p/when-ai-acts-for-you-or-as-you">source</a>)</p>
+<p><img src="../content/stuff/2025-10/Pasted%20image%2020251029164718.png" alt="Chart showing trust in AI &gt; government for every continent" title="Chart showing trust in AI &gt; government for every continent"></p>
+<p>(Maybe Antarctica is the exception)</p>
+<p>Point is: worldwide, more people than not <em>already would</em> trust AI with governance over the current human bastards. To be fair, I can't blame 'em. Our leaders suck. To quote <a href="https://www.youtube.com/watch?v=fwzbIUffcR4">the first song</a> from OK Go's first new album in over 10 years:</p>
+<blockquote>
+<p>🎵 Still, no stochastic parrot has yet called<br>
+🎵 On his nation to knock back bleach</p>
+</blockquote>
+<p>= = =</p>
+<p>Now, although the slope is slippery, I <em>do</em> like my LLM coding assistant, and I'm sympathetic to folks with AI friends and AI romances.</p>
+<p>Still, the Gradual Disempowerment paper made a powerful case for a new possible type of AI takeover — not by a super-intelligent AI seeking power, but humans being lazy &amp; greedy, giving away more and more of our autonomy to AIs. And if you try to opt out of the race, you just get trampled.</p>
+<p>The real point of the paper: AI alignment isn't enough, we need <em>human</em> alignment.</p>
+<p><strong>Link to <a href="https://gradual-disempowerment.ai/">Gradual Disempowerment</a>, <a href="https://arxiv.org/abs/2501.16946">full paper on arXiv</a></strong></p>
+<p>My one critique of the paper is it doesn't even <em>try</em> to hint at solutions? Way to leave a girl high &amp; dry, y'all. But personally, I think the <a href="https://vitalik.eth.limo/general/2025/01/05/dacc2.html">d/acc</a> and <a href="https://vitalik.eth.limo/general/2024/08/21/plurality.html">Plurality</a> approaches are roughly correct: we need &quot;human alignment&quot; approaches that <em>scales with</em> improving tech, instead of getting obsolete. If all that sounds vague as hell, that's what the next 4 sections are for, to give you 4 concrete examples of how tech can work <em>with, not against</em> human autonomy:</p>
+<ol>
+<li>🤝 Reverse political polarization by reversing the algorithm <a href="#bridging">↪</a></li>
+<li>🧐 Cryptography that lets you prove yourself without doxxing yourself <a href="#zkp">↪</a></li>
+<li>🧠 Cyborgism: AI that <em>enhances</em> us, not replaces us <a href="#cyborg">↪</a></li>
+<li>🍻 The 6Pack of Digital Democracy <a href="#6pack">↪</a></li>
+</ol>
+<p>Let's dive in:</p>
+<p><a id="bridging"></a></p>
+<h3>🤝 BellKor &amp; Birdwatch &amp; Bridging: reverse political polarization by reversing the algorithm</h3>
+<p>Fun story: <a href="https://en.wikipedia.org/wiki/Netflix_Prize">in 2009, Netflix launched a million-dollar prize</a> for a recommendation algorithm that could beat their own by 10%. There was a winner! Netflix paid out the million dollars! Then they didn't use that algorithm &amp; just wrote their own lol</p>
+<p>Okay <a href="https://www.techdirt.com/2012/04/13/why-netflix-never-implemented-algorithm-that-won-netflix-1-million-challenge/">that's not the full story</a>. The winning &quot;algorithm&quot;, BellKor's Pragmatic Chaos, was actually a collection of 107 different algorithms. Almost all of these algorithms only added an extra ~0.1% accuracy to the final collection. But, <em>one</em> of these algorithms, called <strong><a href="https://datajobs.com/data-science-repo/Recommender-Systems-%5BNetflix%5D.pdf">Matrix Factorization</a></strong>, was responsible for almost all of the accuracy boost! <em>That</em> was (part of) what Netflix kept in their new algorithm, and even to this day, it's the core of most recommendation systems online.</p>
+<p>But how does Matrix Factorization work? Well it's &quot;elegant&quot; in that <strong>it's only 2 lines of math</strong>, but because academic writing &amp; math notation sucks, it still took me 30 minutes with Claude's help to understand.</p>
+<p>Anyway, here's my attempt at explaining the algorithm:</p>
+<p>= = =</p>
+<p><strong>Step 1) Predict each user's rating of an item, as the sum of four things:</strong></p>
+<p>a) <strong>How much a user's preferences align with this item's features</strong></p>
+<p>Example: If the algorithm knows I love horror, and it knows Movie X is horror, my preferences align perfectly with the item's features, so the last term in the sum is one. And here's the neat part: <em>you do not need to hard-code the preferences/features!</em>  The algorithm learns by itself which factors best predict ratings. (So instead of Horror, the algorithm just &quot;thinks&quot; of it as Factor #42 or something.)</p>
+<p>b) <strong>The item's &quot;bias&quot;</strong>: how well-rated an item is, <em>independent of how much it aligns with user preferences.</em> You can <em>roughly</em> think of this as an item's &quot;quality&quot;.</p>
+<p>Example: Users like me prefer supernatural slasher horror-comedies, and the movies <em>Final Destination 4</em> and <em>Final Destination: Bloodlines</em> both align fully with our preferences. However, <em>Bloodlines</em> is rated higher than <em>4</em> whether or not one likes supernatural slasher horror-comedies, because it's just a higher-quality film.</p>
+<p>c) <strong>The user's &quot;bias&quot;</strong>. How friendly/critical this user is in their ratings, i.e. when they rate 5-out-of-10, is that &quot;average&quot; or &quot;really bad&quot;?</p>
+<p>d) <strong>The global &quot;bias&quot;.</strong> How friendly/critical are users in general.</p>
+<p>To recap:</p>
+<p>Predicted rating<br>
+= Global bias<br>
++ User bias<br>
++ Item bias<br>
++ User preferences aligning with item features</p>
+<p><img src="../content/stuff/2025-10/formula_1.png" alt="The official formula, annotated explanation" title="The official formula, annotated explanation"></p>
+<p>= = =</p>
+<p><strong>Step 2) To train the algorithm, minimize:</strong></p>
+<p>The gap (<strong>&quot;error&quot;</strong>) between {predicted ratings} &amp; {actual ratings}<br>
++ The <strong>&quot;complexity&quot;</strong> of your algorithm.  (to &quot;keep it simple stupid&quot;, Occam's Razor)</p>
+<p><img src="../content/stuff/2025-10/formula_2.png" alt="The official formula, annotated explanation" title="The official formula, annotated explanation"></p>
+<p>= = =</p>
+<p><strong>Step 3) To find recommendations, maximize:</strong></p>
+<p>It's the same equation as in Step 1!</p>
+<p>Predicting how <em>you'll</em> rate this item you haven't seen before<br>
+= Global bias<br>
++ <strong>Your</strong> bias<br>
++ Item's bias<br>
++ How much <strong>your</strong> preferences align with this item's features</p>
+<p>Million-dollar prize, two lines of math, that's $500,000 per equation!</p>
+<p>= = =</p>
+<p>In hindsight, there was a possible downside.</p>
+<p>By giving people <em>what they're already into</em>, you nudge them into staying the same, avoiding exploration &amp; growth. For movies &amp; TV shows, this isn't <em>too</em> bad: Netflix predicts I like horror, so it gives me more horror, so I become even more into horror, repeat forever.</p>
+<p>But when this algorithm got applied to social media, <em>specifically politics &amp; news</em>, it promotes polarization, and reduces cross-tribe win-win understanding. YouTube predicts I like left-libertarian content, so it gives me more pro-left-libertarian content, so I become even more left-libertarian, repeat forever. I <em>can</em> seek out social-conservative and Marxist-leftist and Yarvin-autocrat stuff, (and I do for research), but the algorithms put up friction for that, while &quot;see what I'll already agree with&quot; is the WD-40 easy-glide default.</p>
+<p>(Counter-argument: see above paper, maybe it's not the algorithms' fault, we just suck.)</p>
+<p>= = =</p>
+<p>A few programmers at Twitter (back when it was called Twitter) worried about this, too.</p>
+<p>They worried how this million-dollar algorithm, which worked for getting niche movies to niche audiences, could fracture democracy with an infinite fractal of niche echo chambers within echo chambers. Meanwhile, news sites tried &quot;factcheckers&quot;, but people hated &amp; distrusted them. After all, who watches the watchers, who factchecks the factcheckers?</p>
+<p>So the Twitter programmers wondered — could they make a &quot;fact-checking&quot; service <em>run by the public themselves</em>, by <em>using</em> an edit of that million-dollar algorithm, for good?</p>
+<p>They did, <a href="https://asteriskmag.com/issues/08/the-making-of-community-notes">they called it &quot;Birdwatch&quot;</a>, and here's how it worked:</p>
+<ul>
+<li>Let anyone submit &quot;notes&quot; to factcheck viral tweets.</li>
+<li>People rate how helpful those notes are.</li>
+<li><strong>You keep the algorithm's Step 1 &amp; Step 2 the same</strong>, so it can learn what people's preferences &amp; notes' features are.
+<ul>
+<li><strong>The user/item factors:</strong> Again, we do <em>not</em> need to hard-code the factors that best predict ratings. But in practice, the algorithm learns that the #1 factor is the left-right political spectrum; adding extra factors like &quot;authoritarian-libertarian&quot; doesn't improve prediction much.<sup class="footnote-ref"><a href="#fn11" id="fnref11">[11]</a></sup> (Which is surprising given past research shows the general public's politics is at <em>least</em> 2D.<sup class="footnote-ref"><a href="#fn12" id="fnref12">[12]</a></sup> Maybe the Birdwatch community is just weird.)</li>
+<li><strong>The item's bias:</strong> Instead of being ~&quot;movie quality&quot;, it's now &quot;note quality&quot;, <em>independent</em> of how much it aligns with users' politics. IMPORTANTLY: note quality is <em>not</em> just a note's average helpfulness-rating. <em>Average rating</em> will be skewed by the <em>average</em> Birdwatch-rater's political preferences. This setup gets us a note's quality <em>regardless</em> of politics.</li>
+</ul>
+</li>
+<li><strong>The key difference is WE REVERSE STEP 3</strong>: Instead of taking user preferences (ie politics) into account, we highlight the best notes <em>NOT</em> taking user preferences into account! That means: this highlights notes that <em>people across the political spectrum</em> agree is helpful. Common ground, by algorithmic design!</li>
+</ul>
+<p>Here's an example of a factcheck note, that's rated as helpful by people across the political spectrum, because it's very specific &amp; easily verifiable:</p>
+<p><img src="../content/stuff/2025-10/Pasted%20image%2020251030152607.png" alt="no alt text set, shame on me" title="no alt text set, shame on me"></p>
+<p>(The Birdwatch creators made sure to never call the notes &quot;factchecks&quot;, and instead said &quot;Readers added context you may want to know&quot;... but c'mon, they're factchecks.)</p>
+<p>Here's a graph of all the notes from their pilot program. Each dot is a note. X-axis is the &quot;item factor&quot; ~= &quot;how politically left-right coded the note is&quot;, and the Y-axis is the &quot;item bias&quot; ~= &quot;how helpful the note is <em>regardless</em> of politics&quot;.</p>
+<p><img src="../content/stuff/2025-10/birdwatch.png" alt="Figure 2 from the Birdwatch paper, explanation below" title="Figure 2 from the Birdwatch paper, explanation below"></p>
+<p>As you can see in the dense yellow circles, most people submit partisan slop. But at the top, there's the few gems folks across the spectrum agree are helpful! (And at the bottom... well, farting in an elevator &quot;pisses off both sides&quot;. &quot;Pissing off both sides&quot; doesn't mean you're <em>useful</em>.) As for the diamond shape, don't worry about it, it's an artifact of how the &quot;minimize complexity&quot; math works in Step 2.</p>
+<p>There's a few extra complexities, but that's the heart of the Birdwatch algorithm! The result? It's, as far as I know, the <em>only</em> fact-checking service that gets net-positive ratings (more &quot;helpful&quot; than &quot;unhelpful&quot;) from Democrats, Independents, and Republicans alike! In this polarized era, that's no mean feat.</p>
+<p><img src="../content/stuff/2025-10/birdwatch-2.png" alt="Figure 4 from the paper, showing how every party rates Birdwatch as net-helpful." title="Figure 4 from the paper, showing how every party rates Birdwatch as net-helpful."></p>
+<p>(Wait, if the notes are chosen to be helpful <em>regardless of politics</em>, why do Democrats like them more than Republicans, even while Republicans still find them net-helpful? I'm not sure, but I'd guess the left-right axis <em>among Birdwatch raters</em> is slightly different from the left-right axis <em>among party-registered voters</em>. Remember, the algorithm <em>learns</em> what the left-right axis is, it's not hard-coded; and it shouldn't, since what &quot;left-right&quot; means changes across time &amp; cultures.)</p>
+<p>Unfortunately, this &quot;bridging&quot; algorithm was only used for the factcheck-notes, <em>not</em> Twitter's algorithmic feed. As mentioned in the paper two sections ago, <strong>bridging-based algorithms were the <em>only</em> design choice we know of (so far) that reverses polarization &amp; extremism.</strong> So, implementing bridging <em>for the main feeds themselves</em> could be a big win for digital democracy. And, good news? I heard that 𝕏 may adopt bridging for their main feed, and other platforms will adopt bridging-based algorithm, <em>at least</em> for a similar factchecking system.</p>
+<p>...my <em>source</em> on this info? I dunno, I heard it somewhere. Why are you factchecking me?</p>
+<p>= = =</p>
+<p>(Aside: Birdwatch inspires me – what other small alterations can we make to the million-dollar Matrix Factorization algorithm? What if you recommended high-quality content that <em>anti-aligns</em> with your usual preferences? Or recommend content that aligns with <em>all but one</em> of your preferences? e.g. I like animation &amp; musicals &amp; monsters &amp; queer found-family coming-out allegories &amp; muscular women, but I mildly dislike K-Pop =&gt; the algorithm recommends K-Pop Demon Hunters =&gt; I now mildly like K-Pop.)</p>
+<p>= = =</p>
+<p><strong>Links:</strong></p>
+<ul>
+<li><a href="https://datajobs.com/data-science-repo/Recommender-Systems-%5BNetflix%5D.pdf">The winners of the Netflix Prize explain Matrix Factorization</a> (technical)</li>
+<li><a href="https://asteriskmag.com/issues/08/the-making-of-community-notes">An interview with the creators of Birdwatch</a> (lay-friendly)</li>
+<li><a href="https://arxiv.org/pdf/2210.15723">The original Birdwatch paper</a> (technical)</li>
+</ul>
+<p><a id="zkp"></a></p>
+<h3>🧐 PolyLog's explanation of Zero-Knowledge Proofs</h3>
+<p>FINALLY. Thanks to PolyLog's video, I <em>finally</em> understand one of the coolest recent discoveries in computer science: that you can prove you have a solution to a problem, <em>without revealing any info whatsoever about your solution.</em></p>
+<p><strong>Here's <a href="https://www.youtube.com/watch?v=Otvcbw6k4eo">their 20-min video</a> on Zero-Knowledge Proofs (ZKPs) ⤵</strong>  I won't try to out-do their explanation in this blog post, you can just watch it.  They show you how you can prove you <em>have</em> a valid solution to a Sudoku puzzle, <em>without revealing ANY info about your solution</em>. (And this method works <em>in general</em> for any mathematical/computable proof!)</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Otvcbw6k4eo?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>(<strong><a href="https://www.youtube.com/@PolylogCS">check out PolyLog's channel</a></strong>, their other videos are pretty good, too!)</p>
+<p>But why am I boosting this video, in relation to &quot;The Algorithm&quot; and solutions to &quot;Gradual Disempowerment&quot;? Because: Zero-Knowledge Proofs is a big win for privacy in a digital democracy. How? Because they allow you to <em>prove yourself</em>, <em>without doxxing yourself</em>. For example:</p>
+<ul>
+<li>Do you want an online petition or discussion board, to authenticate that users are actually a resident of some area, or affiliated with some institution? BAM! ZKPs let you prove &quot;yes I'm a resident of X&quot; or &quot;yes I'm with institution Y&quot; <em>while revealing no other info, like your name or ID.</em></li>
+<li>Are you worried that governments <a href="https://en.wikipedia.org/wiki/Online_Safety_Act_2023">like the UK</a> are forcing age authentication, under the disguise of &quot;protecting children&quot;, but it's secretly the first step to creating a China-style tech-powered surveillance state while accusing all opponents of being enablers for pedophiles &amp; terrorists? BAM! ZKPs let you prove &quot;yes I'm over 18&quot; <em>without even revealing your exact age.</em></li>
+</ul>
+<p>Of course, <a href="https://vitalik.eth.limo/general/2025/06/28/zkid.html">ZKPs won't solve all privacy issues</a>, and corporate/government orgs can just <em>lie</em> about using ZKPs — but that's more reason to make the core idea of ZKPs accessible, and not seem like incomprehensible math magic! Hence, why I'm so glad for PolyLog's lay-friendly explainer. ZKPs can and should be a core tool in our privacy toolbelt, for digital democracies.</p>
+<p>(Current brain status: I have a solid understanding of how ZKPs work <em>in general</em>, and a rough idea of how ZKPs work <em>for authentication specifically</em>... but I'm still wrapping my head around the mathematical details: polynomial commitments, elliptic curves, homeomorphic encryption, etc. Once I <em>really</em> understand those, I may make a video explainer on all this. Maybe.)</p>
+<p><a id="cyborg"></a></p>
+<h3>🧠 Geoffrey Litt's writings: AI should enhance us, not replace us</h3>
+<p>Problem 1: Truly <em>general</em> AI could automate huge sectors of labour all at once, not &quot;just&quot; the piece-by-piece automation we've dealt with in the past. And as history shows, &quot;suddenly mass unemployment&quot; almost never ends well for a country.</p>
+<p>Problem 2: If we hand over control to AI <em>without</em> fully solving the AI Value Alignment problem, we'd be passing control of humanity over to entities that neither love us nor hate us, we're just <em>numbers</em> to make <em>go up</em>.</p>
+<p>An idea to solve both problems at the same time: <strong>instead of making AI to replace humans, let's make AI to <em>enhance</em> humans?</strong></p>
+<p><img src="../content/stuff/2025-10/NickyCase0018.png" alt="Drawing of a goofy bicycle, saying, A computer should be a bicycle for the mind." title="Drawing of a goofy bicycle, saying, &quot;A computer should be a bicycle for the mind&quot;."></p>
+<p><em>(slide from <a href="https://blog.ncase.me/the-creative-cyborg/">my talk at the final XOXO</a>, quote is <a href="http://web.archive.org/web/20240902210345/https://miro.medium.com/v2/resize:fit:1400/format:webp/0%2ASgDLtymZpgcXEA7A">from Steve Jobs</a>)</em></p>
+<p>This way, Human+AI combos can still be economically competitive in our Darwinian marketplace, yet keep humanity's values &amp; autonomy at the centre of our tools. This general idea is called <strong><a href="https://www.lesswrong.com/posts/bxt7uCiHam4QXrQAA/cyborgism">&quot;cyborgism&quot;</a></strong> in the AI Alignment community. (I mean, it's just tool use, but &quot;cyborg&quot; and &quot;mental prosthetics&quot; sounds cooler.)</p>
+<p>Wait – won't this increase inequality, with the richest getting the most AI-gains? Well, consider books: books <em>do</em> enhance the reader, so by default books <em>would have</em> increased inequality by enhancing those who can already afford the most books. But the solution wasn't to ban books, but to create free universal libraries! Likewise, to share the AI-enhancement gains, we should at least seriously consider <em>free, open-source, verifiable, publicly owned &amp; evaluated</em> AI tools, to help <em>everyone</em> augment their own human autonomy and skills.</p>
+<p>(crucially: The AI tools should be <em>non-agentic</em>, no goal-seeking of its own. And we should remove risky capabilities like bioweapon knowledge from them. See: <a href="https://vitalik.eth.limo/general/2025/01/05/dacc2.html">d/acc</a>)</p>
+<p>I've been banging on this idea of Cyborgism for almost 8 years now. (<a href="https://jods.mitpress.mit.edu/pub/issue3-case/release/6">My 2018 article in an MIT Journal</a>, and <a href="https://blog.ncase.me/the-creative-cyborg/">my 2024 XOXO talk</a>.) But it's only been an idea. What about an <em>actual implementation,</em> at least a proof-of-concept?</p>
+<p>Here, I'd like to highlight a couple articles (with <em>actual working prototypes</em>) from programmer Geoffrey Litt!</p>
+<p>👉 <strong><a href="https://www.geoffreylitt.com/2025/07/27/enough-ai-copilots-we-need-ai-huds">&quot;Enough AI copilots! We need AI HUDs&quot;</a></strong> 👈</p>
+<p>Most LLM-based coding tools right now (GitHub Copilot, Claude Code, AMP Code, etc) all put the LLM in the role of an independent agent. But that's <em>not</em> how most automation that improves knowledge-work, works. Examples:</p>
+<ul>
+<li>Spellcheck, mercifully, isn't Clippy heckling you with &quot;HEY DID YOU MEAN TO WRITE 'SPELLCHECK' NOT 'SPELCHECK'???&quot; Spellcheck just lets you <em>see</em> something underlined in red, lists suggestions, and lets <em>you</em> decide when &amp; how to deal with it.</li>
+<li>Data visualization isn't Clippy yelling &quot;HEY YOU'RE LOSING WEIGHT AT 1 LB PER 10 DAYS&quot;. Spreadsheet apps just let you <em>see</em> your data as a line chart, then lets <em>you</em> decide how to interpret &amp; act on it.</li>
+<li>Illustration apps don't have Clippy yelling &quot;HEY THE CHARACTER'S EYES ARE UNEVEN AND ALSO THE COLOUR VALUES ARE MUDDY&quot;, the program just lets you <em>see</em> asymmetry &amp; values by toggling Flip Horizontal and Greyscale, then lets <em>you</em> decide how to fix it, or leave it as an intentional artistic choice.</li>
+</ul>
+<p>Geoffrey's analogy: these aren't &quot;copilots&quot;, they're Heads-Up Displays (HUDs), like Tony Stark's helmet – <strong>they <em>augment</em> your senses, while keeping the autonomy in <em>your</em> hands.</strong></p>
+<p>So instead of making Clippy the Coder — which will put junior devs out of a job, and de-skill senior devs — how about we make AI-powered &quot;HUDs&quot;, to let you &quot;just see&quot; what a program does, then lets <em>you</em> decide what to do about it?</p>
+<p>Well, Geoff made a proof-of-concept for that. Here's what it looks like:</p>
+<p><video width='640' controls src="../content/stuff/2025-10/geoff-demo.mp4" aria-label="no alt text set, shame on me"></video></p>
+<blockquote>
+<p>With the debugger, I have a HUD! I have new senses, I can see how my program runs. The HUD extends beyond the narrow task of fixing the bug. I can ambiently build up my own understanding, spotting new problems and opportunities.</p>
+</blockquote>
+<p>Geoffrey explains it more in <a href="https://www.geoffreylitt.com/2025/07/27/enough-ai-copilots-we-need-ai-huds">his post</a>. Point is: less Clippy!</p>
+<p>👉 <strong><a href="https://www.geoffreylitt.com/2023/03/25/llm-end-user-programming">Malleable software in the age of LLMs</a></strong> 👈</p>
+<p>For all the badly-written vibe code out there, I still have a soft spot for LLM coding, because it <em>could</em> make a half-century-long dream finally come true: software that is <em>fully modifiable &amp; customizable</em> by a layperson user. (Fight for the users!<sup class="footnote-ref"><a href="#fn13" id="fnref13">[13]</a></sup>)</p>
+<p>There's been varying degrees of success with this idea in the past: HyperCard, spreadsheets, the <em>original</em> design for the World Wide Web was meant to be so that anyone could <em>write</em> a website <em>as easily as reading one</em>.<sup class="footnote-ref"><a href="#fn14" id="fnref14">[14]</a></sup></p>
+<p>But to this day, there's no way for an average layperson to modify their software the way they can modify a recipe. Users can't just say, &quot;Huh. Binaural beats sounds interesting. Okay Clippy, modify my iPhone pomodoro app so that it plays a pure Beta wave for focus during 25-minute work-sprints, then a random song from my Bandcamp library during 5-minute breaks.&quot;</p>
+<p>Wait, didn't I <em>just</em> rail against Clippy's? Do I contradict myself? Very well, I contradict myself. I contain <s>hypocrisies</s> multitudes.</p>
+<p>Okay, I haven't figured out my contradictions yet. But both &quot;More HUDs, less Clippy&quot;, and &quot;Clippy helps you truly <em>own</em> your software&quot;, point at the same principle: <strong>fight for the users.</strong></p>
+<p><strong>Tools should help us automate everything that gets in the way of our self-expression, <em>not automate away the self-expression itself</em>.</strong></p>
+<p>Anyway Geoffrey goes more into <a href="https://www.geoffreylitt.com/2023/03/25/llm-end-user-programming">his post</a>. And he's made this cool prototype of &quot;end-user modify everything&quot;, too:</p>
+<blockquote>
+<p>A few years ago, I developed an end-user programming system called <a href="https://www.geoffreylitt.com/wildcard/">Wildcard</a> which would let people customize any website through a spreadsheet interface. For example, in this short demo you can see a user sorting articles on Hacker News in a different order, and then adding read times to the articles in the page, all by manipulating a spreadsheet synced with the webpage.</p>
+</blockquote>
+<p><video width='640' controls src="../content/stuff/2025-10/wildcard.mp4" aria-label="no alt text set, shame on me"></video></p>
+<p>The problem is &quot;the user needs to be able to write small spreadsheet formulas to express computations. This is a lot easier than learning a full-fledged programming language, but it’s still a barrier to initial usage.&quot;</p>
+<p>I don't know of a demo of it yet, but imagine there was an extension like GreaseMonkey or Stylus, except you &quot;code&quot; the JS or CSS you want by <em>writing natural language</em> in your browser! <strong>To be clear this is a security nightmare &amp; would be like handing a nuke to a toddler</strong>, but, &quot;look to where my finger is pointing, not the tip of my finger itself&quot;<sup class="footnote-ref"><a href="#fn15" id="fnref15">[15]</a></sup> — I'm trying to point to a future where <em>we fully own our tools, before they fully own us.</em></p>
+<p>Fight for the users!</p>
+<p>= = =</p>
+<p>(Aside: What about AI to help augment our <em>emotional</em> intelligence? Could just be as simple as an LLM-augmented diary that helps you recognize emotional patterns, debug cognitive distortions, and asks you helpful questions to help you figure it out for yourself. {In Soviet Russia, LLM prompts <em>you?</em>}  That's what an ideal AI Friend – heck, even ideal human friends – should be: someone that makes you stronger and better <em>even when they're not around</em>. Not someone who fosters dependence and personal-character atrophy.)</p>
+<p>= = =</p>
+<p><strong>Links &amp; Related:</strong></p>
+<ul>
+<li><strong><a href="https://www.geoffreylitt.com/#writing">Geoffrey Litt's blog</a></strong></li>
+<li>janus &amp; Nicholas Kees's <a href="https://www.lesswrong.com/posts/bxt7uCiHam4QXrQAA/cyborgism">Cyborgism manifesto</a></li>
+<li>Vitalik Buterin's <a href="https://vitalik.eth.limo/general/2025/02/28/aihumans.html">&quot;AI as the engine, humans as the steering wheel&quot;</a></li>
+<li><a href="https://www.lesswrong.com/posts/Gi8NP9CMwJMMSCWvc/ai-for-epistemics-hackathon">The AI for Epistemics hackathon</a></li>
+<li>My article in an MIT Journal: <a href="https://jods.mitpress.mit.edu/pub/issue3-case/release/6">How To Become A Centaur</a></li>
+<li>My talk at XOXO: <a href="https://blog.ncase.me/the-creative-cyborg/">The Creative Cyborg</a></li>
+</ul>
+<p><a id="6pack"></a></p>
+<h3>🍻 The 6Pack of Digital Democracy</h3>
+<p>Okay, a bit tacky to Signal Boost this project, since I'm involved in it. But I joined this project <em>because</em> I sincerely think it's one of the better bets for Human-AI Alignment, and the person who founded it has been a role model of mine for years, and she has both a great track record &amp; actual influence in the world.</p>
+<p><a href="https://en.wikipedia.org/wiki/Audrey_Tang">Audrey Tang</a> is the Digital Minister of Taiwan. <em>She</em> is the reason Taiwan is at the world's frontier of experiments in digital democracy, using humanely-designed tech to make government more open, accessible, accountable, responsive to the public's needs, and many other buzzwords that <em>would</em> be empty if it weren't by Audrey Girlboss Tang, who frikkin' <em>delivers</em>.</p>
+<p>Anyway, her new thing is <strong><a href="https://6pack.care/">6pack.care</a></strong> (in collab with Caroline Green), a plan for human-AI alignment that (hopefully) works in both the short term (reversing democratic decay &amp; extremism) and long term (humans living alongside powerful AIs).</p>
+<p>(I think Audrey's plan of making a long-term Alignment plan &quot;pay dividends&quot; in the short-term, is brilliant politics. The way she's explained it: if you successfully advocated for reinforcing cockpit doors before 9/11, or pandemic resilience before Covid-19, your reward is... you see nothing happen. &quot;No one cares about the bomb that didn’t go off, only the one that did.&quot;<sup class="footnote-ref"><a href="#fn16" id="fnref16">[16]</a></sup> So 6pack's plan is to address problems people care about <em>now</em> — algorithm-driven extremism, LLM-induced psychosis, social media mental health crises, etc — that also happen to scale to full Human-AI alignment.)</p>
+<p>Here's an overview of the 6 items of the 6pack of Digital Democracy, illustrated by... <em>me!</em></p>
+<p><img src="../content/stuff/2025-10/Overview_HiRez_NoHeader_Credits.png" alt="Infographic of the 6Pack, in the form of a six-pack of beer: Actually listen to people, Actually keep promises, We check the process, We check the results, As win-win as possible, As local as possible." title="Infographic of the 6Pack, in the form of a six-pack of beer: Actually listen to people, Actually keep promises, We check the process, We check the results, As win-win as possible, As local as possible."></p>
+<p>(I've been commissioned to make 7 public-domain infographics in total, 1 for the Overview, 6 for each thing in the 6pack.)</p>
+<p>The 6pack is closely related to Vitalik Buterin's <a href="https://vitalik.eth.limo/general/2025/02/28/aihumans.html">&quot;AI as the engine, humans as the steering wheel&quot;</a>, and the general <a href="https://vitalik.eth.limo/general/2025/01/05/dacc2.html">d/acc</a> and <a href="https://vitalik.eth.limo/general/2024/08/21/plurality.html">Plurality</a> movements. Here are the common shared principles, with specific tools:</p>
+<ol>
+<li><strong>Keep human values at the centre.</strong>
+<ul>
+<li>concretely: bridging-based algorithms, linear/quadratic/score voting, frequent feedback loops, crowdsourced constitution/evals, &quot;humans as steering wheel&quot;, etc</li>
+</ul>
+</li>
+<li><strong>Set it up so that human power <em>scales with</em> AI power, not get left behind.</strong>
+<ul>
+<li>concretely: cyborgism (non-agentic AIs to augment human cognition, emotion, and collaboration), scaleable oversight, &quot;AI as engine&quot;, etc</li>
+</ul>
+</li>
+<li><strong>Make sure the tools are widely distributed, so that <em>power</em> is distributed.</strong>
+<ul>
+<li>concretely: decentralized algorithms like web-of-trust, peer-to-peer networks, or... <em>siggghh</em>, blockchain. also, open-source software <em>and</em> hardware, etc</li>
+</ul>
+</li>
+</ol>
+<p>If that all still seems like jargon word salad to you... well, I got hired to illustrate 6 more pages for this thing, to explain each &quot;pack&quot; in lay-friendly detail. Stay tuned!</p>
+<p><strong><a href="https://6pack.care/">Read the 6pack.care manifesto &amp; outline online</a></strong><br>
+<em>(full book is supposed to come out in March 2026)</em></p>
+<p>(P.S: Audrey doesn't want me calling it &quot;The 6Pack of Digital Democracy&quot;, and she's right, that's <em>not</em> accurate — the 6pack is broader than that — but until we can come up with something catchier than &quot;The 6Pack of Human-AI Multi-Agent Value Alignment&quot; I'm going to use the inaccurate alliteration, at least in this informal blog post.)</p>
+<hr>
+<h2>Fun Stuff!</h2>
+<p><a id="clues"></a></p>
+<h3>🕵️ Clues by Sam: a daily deductive detective game</h3>
+<p>I've been hooked on this free daily puzzle game for the last month.</p>
+<p>Here's the setup. You're a detective. There are 20 people. Each one is either Innocent or Criminal. Everyone tells the truth, even Criminals.</p>
+<p>You start with <em>one</em> person's clue:</p>
+<p><img src="../content/stuff/2025-10/clues-1.png" alt="Screenshot from Clues by Sam, starting board" title="Screenshot from Clues by Sam, starting board"></p>
+<p>Given the clues already on the board, you have to deduce a new Innocent or Criminal. <em>You cannot guess – the game knows which people's status is logically deduce-able at any time.</em> Only when you correctly deduce a new person, do you get a new clue.</p>
+<p>For example:</p>
+<p><img src="../content/stuff/2025-10/clues-2.png" alt="Screenshot from Clues by Sam, some deductions made" title="Screenshot from Clues by Sam, some deductions made"></p>
+<p>And then:</p>
+<p><img src="../content/stuff/2025-10/clues-3.png" alt="Screenshot from Clues by Sam, more deductions made" title="Screenshot from Clues by Sam, more deductions made"></p>
+<p>And so on, until you've figured out everybody!</p>
+<p>Like Sudoku, the first few times are tough, then you start learning some generalizable tricks — (in particular, the infamous <a href="https://www.theguardian.com/science/2016/mar/28/did-you-solve-it-the-logic-question-almost-everyone-gets-wrong">&quot;if X then Y, if not-X then Y, therefore Y&quot;</a>) — and like Sudoku, after a while it <em>does</em> get a bit repetitive, but it's still a nice mini-challenge to play on break.</p>
+<p>If that piques your interest, try out the 5-minute tutorial and get puzzlin', detective!</p>
+<p>🕵️‍♀️ <strong><a href="https://cluesbysam.com/">Clues By Sam</a></strong> 🕵️‍♂️</p>
+<p><a id="snakebird"></a></p>
+<h3>🐦 Snakebird: cute birbs, cruel puzzles</h3>
+<p>I actually played &amp; finished this game at the start of 2025, when my laptop was taken at the US-Canada border and I couldn't do any work until I bought a new laptop. (Customs &amp; Border Patrol <em>did</em> return my old laptop...  4 months later...)</p>
+<p>Anyway, I bring that up because Snakebird's is a great way to keep your mind off frustrating stuff you can do nothing about, and keep your mind on <em>very</em> frustrating stuff you <em>can</em> do something about!</p>
+<p>Snakebird, despite looking like a cutesy mobile game, is <em>infamous</em> in the indie puzzle game community for being sadistically tough. It has a mid-3-star rating on the Apple App Store, because people complain about getting stuck on Level <em>Two</em>. As for me, I'm a puzzle aficionado, but it took me a <em>month</em> of playing ~1 hour a day to beat all 52 levels.</p>
+<p>(There <em>is</em> an &quot;easier&quot; version called <a href="https://noumenongames.com/game/snakebird_primer">Snakebird Primer</a>, and <a href="https://www.nintendo.com/us/store/products/snakebird-complete-switch/">Snakebird Complete</a> contains both Primer + Original. I haven't tried them.)</p>
+<p>But while the game's tough, it's fair! It's always a matter of logical insight, not moon-logic clues or tedious trial-and-error. &quot;Aha!&quot;, not &quot;oh that's bullshit&quot;. (Okay, except for Level 26, that <em>was</em> bullshit.)</p>
+<p>But... what <em>is</em> Snakebird?</p>
+<p>It's like Snake meets Tetris: you slither &amp; collect fruit to get longer like in Snake, but your snakes fall <em>instantly</em> like in Tetris. Shenanigans ensue:</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/WJJa3hMbs4s?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>&quot;That doesn't look too bad&quot;, you think. Ha ha. Ha ha ha. Oh sweet summer child</p>
+<ul>
+<li><strong><a href="https://noumenongames.com/game/snakebird">Snakebird</a></strong>, available on iOS, Android, Mac, Windows, Linux</li>
+<li><a href="https://noumenongames.com/game/snakebird_primer">Snakebird Primer</a> also on all those platforms</li>
+<li><a href="https://www.nintendo.com/us/store/products/snakebird-complete-switch/">Snakebird Complete</a> only on Nintendo Switch</li>
+</ul>
+<p>(hat tip: I first heard about Snakebird from Game Maker's Tool Kit's video on <a href="https://www.youtube.com/watch?v=zsjC6fa_YBg">how to design a tough-but-fair puzzle games</a>)</p>
+<p><a id="zewei"></a></p>
+<h3>🦉 ZeWei's Multiverse Tour Guide Adventures Continue</h3>
+<p><a href="https://blog.ncase.me/signal-boosts-oct-2024/#zewei">Last year</a>, I signal-boosted the nonbinary furry EDM musician ZeWei's animated mockumentary of a linguist trapped in an alien world! Well, it's a full series now!</p>
+<p><strong>Episode 2: &quot;It's not colonialism, it's tourism!&quot; /s (17 min)</strong></p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/WScut_fmFzw?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>In this episode, our linguist protagonist is worried their world's language &amp; culture is erasing those of the worlds they travel to. Just when you think the story's headed towards the standard &quot;we must preserve the noble savages' linguistic diversity&quot;, the native of this other world calls them on their bullshit, that, no, <em>they have autonomy</em>, they <em>chose</em> to drop the worst parts of their language &amp; culture, and carefully <em>chose</em> parts of other cultures to adopt, and merged them into something uniquely their own. They don't owe it to anyone to &quot;preserve&quot; themselves like a living fossil. They don't live for historians or researchers or nostalgia, they live <em>for themselves</em>.</p>
+<p>(But, yes... something <em>was</em> lost. &quot;It's complicated.&quot;)</p>
+<p>This episode resonated with me, since I was born in Singapore (a very post-British-colonial city-state), then I immigrated to Vancouver Canada halfway during my childhood. My backstory is a mix of Western &amp; Eastern influences. I'd like to believe I've chosen the better parts of both cultures, and dropped the unhealthy crap from both — but who knows — if I lost something, <em>would I even recognize the loss?</em></p>
+<p><strong>Episode 3: &quot;The Lore Episode&quot; (30 min!!!)</strong></p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/RbEFhJ2z-7U?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>This one's less head-y, and a lot more establishing this story's world. We finally get to see the other characters &quot;behind the camera&quot; of this mockumentary series! There's also a prophecy.</p>
+<p>Less for me to hook onto in this episode, but it's clearly setting up for a big series arc. Looking forward to seeing where the arc bends next!</p>
+<p><a id="emnerson"></a></p>
+<h3>🤓 Emnerson: goofy internet gal</h3>
+<p>A new, up-and-coming YouTuber who makes a variety of cool digital projects!</p>
+<p>The way I first learnt about her YouTube channel, is because she won Captain Disillusion's &quot;unblur this image&quot; challenge, cracking it within 20 minutes:</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/Yi-Vea2AUEU?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>Here's her latest video on merging YouTube channels' thumbnails, and seeing what patterns pop up:</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/g-1kUvJqagw?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>Also, she happens to be trans, and I want to help boost my fellow up-and-coming trans creators. Everyone including me is very jealous of how fast she's transitioned in a few months and she is very pretty.</p>
+<p><strong>Check her out! <a href="https://www.youtube.com/@emnersonn">Emnerson's YouTube channel</a></strong></p>
+<p><a id="blahaj"></a></p>
+<h3>🧇 blahaj goes to waffle house at 3am</h3>
+<p>Cute as hell. Watch it, and subscribe to a new, up-and-coming animator!</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/X1beEuBV7M0?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+(they also did all the original music, and are based in Taiwan)
+<p><strong>Link: <a href="https://www.youtube.com/@AtogaCreative">Atoga's YouTube channel</a></strong></p>
+<hr>
+<h2>SPOOKY STUFF for HALLOWEEN</h2>
+<p><a id="boo"></a></p>
+<h3>👻 BOO! a silly music video &amp; music album</h3>
+<p>A 80's-throwback musical comedy of a tiny ghost trying to be spooky:</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/NZx9fAk22Qg?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>(The creator, <a href="https://www.youtube.com/@Piemations/videos">Piemations</a>, usually does animated stuff! They made Sheriff Hayseed, Bird Town, Suction Cup Man, Mike &amp; Zach, and How To Be Cool, if you recognize any of those titles.)</p>
+<p>Oh, and the song &quot;BOO!&quot; is just one track from his band's new album, <a href="https://friesontheside.bandcamp.com/album/musical-scares">Musical Scares</a>. The track Big Doggie is my favourite. Comedy aside, it <em>actually bops</em>. The intro drop hits so hard, I must've restarted the song a dozen times just to hear that drop again. And I haven't heard the phrase &quot;14 werewolves&quot; in years, got <em>instant</em> psychic damage from that.</p>
+<iframe style="border: 0; width: 640px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=2742795446/size=large/bgcol=333333/linkcol=e32c14/artwork=small/transparent=true/" seamless><a href="https://friesontheside.bandcamp.com/album/musical-scares">Musical Scares by Fries On The Side</a>test</iframe>
+<a id="bury-your-gays"></a>
+<h3>🩸 Bury Your Gays by Chuck Tingle</h3>
+<p><img src="../content/stuff/2025-10/Pasted%20image%2020251029165354.png" alt="Cover of the book Bury Your Gays by Chuck Tingle" title="Cover of the book Bury Your Gays by Chuck Tingle"></p>
+<p><strong><a href="https://bookshop.org/p/books/bury-your-gays-chuck-tingle/de2c90d5aa0bc158">A novel by Chuck Tingle</a></strong>, yes <em>that</em> Chuck Tingle, the &quot;got famous by writing dozens of joke eroticas&quot; Mr. Tingle:</p>
+<p><img src="../content/stuff/2025-10/Pasted%20image%2020251029165749.png" alt="Pounded In The Butt By My Bizarre Assumption That Chuck Tingle Books Are Just Covers And Not Actual Books" title="&quot;Pounded In The Butt By My Bizarre Assumption That Chuck Tingle Books Are Just Covers And Not Actual Books&quot;"></p>
+<p>A couple years ago, Chuck Tingle expanded to novels, including Bury Your Gays, which is <em>shockingly good.</em> And it's very meaningful for (gestures vaguely) &quot;the current moment&quot;.</p>
+<p>The premise: Misha Byrne is a scriptwriter for a X-Files-like series with two (subtextually) gay protagonists. It's a hit. Misha's called into a meeting. His boss tells him what the executives tell him the Algorithm tells them would make the most money: have the leads profess their gay love out loud, <em>then immediately kill them off.</em> The &quot;queer tragedy&quot; plot, the &quot;bury your gays&quot; trope, that's the controversy &amp; drama that would sell! Oh, and if Misha <em>doesn't</em> kill them off, that's breaking contract, he'll get sued into oblivion, then the studio will take his show &amp; kill off the gay leads anyway.</p>
+<p>Misha walks away from the meeting pissed, angry at the execs, the Algorithm, the whole damn world. And just when Misha thinks things can't get any worse — 5 minutes later — a colleague explodes into meat and gore in front of him.</p>
+<p>Then things get <em>really</em> bad.</p>
+<p>So, without spoilers and in no particular order, why Bury Your Gays resonated with me so much:</p>
+<ul>
+<li>There's (understandably) a lot of stories of queer tragedy right now, both in fiction and real life. This novel is a reminder that <strong>happiness is not &quot;naïve&quot;, or &quot;basic&quot;, or dumb.</strong> Without over-correcting into toxic positivity, <strong>we can and should also celebrate queer joy.</strong> Misha's story (both the story he writes <em>and</em> the story he's living through) show that full complexity, lows <em>and</em> highs, of a queer life.</li>
+<li>As a &quot;creator on the internet&quot;, I definitely feel a lot of anxiety about opaque algorithms &amp; generative AI screwing not just with my creations, but <em>my own personal character</em>. Y'know, &quot;audience capture&quot;, &quot;we become what we pretend to be so we must be careful what we pretend to be&quot;, etc</li>
+<li>The novel also reminds queer creators (like me) to help lift up other less-famous queer creators. Which sounds obvious, but when you're dealing with your own shit, it's easy to forget to help others too. So, that's something I'd like to do with these Signal Boosts.
+<ul>
+<li>(I mean, Chuck Tingle &amp; Audrey Tang are far more famous than me, but (see above) ZeWei &amp; Emnerson more recent, smaller-fanbase creators.)</li>
+</ul>
+</li>
+<li>Oh! Misha's best friend is asexual &amp; aromantic! Hooray for ace/aro representation.</li>
+<li>I just love books that get all weird and meta and format-screw-y. (Could you guess I read <a href="https://thehardtimes.net/blog/opinion-house-of-leaves-is-just-infinite-jest-for-spooky-people/">House of Leaves</a> as a teen and it changed my brain chemistry?)</li>
+<li>The parallel between Misha's characters being &quot;only&quot; subtextually gay, and Misha <em>himself</em> &quot;only&quot; being semi-out of the closet, is clever, and hits personally in two different ways:
+<ol>
+<li>The line between &quot;using art to work through my own feelings&quot; and &quot;using art to <em>avoid</em> doing the emotional work in real life&quot; is thin, and I struggle with this too.</li>
+<li>I'm like... <em>out</em> about being pansexual &amp; transgender, but I feel like I could be <em>more</em> out? I don't mention it or have 🏳️‍⚧️🏳️‍🌈 flags on my social media bios. (Well, I don't <em>have</em> any social media anymore, but still.) Right now, I'm doing the strategy of &quot;let people know me for my educational work first, then <em>later</em> learn I'm trans, so it's not the first adjective they know about me&quot;.
+<ul>
+<li>On one hand: me being more out &amp; confident could give inspiration to the many queer folks who need hope right now.
+- On the other hand, living true to yourself will draw the attention of people who don't. Bucket-crabs who pull you down into the Normal Bucket, wordcels sophisticatedly rationalizing their Pavlovian disgust-reflexes as the &quot;wisdom of repugnance&quot;. And I hate to admit it, but I <em>am</em> irrationally averse to &quot;being confrontational&quot;, like &quot;I don't want to make a big deal of it&quot;, like &quot;oh they just need time to understand, I won't put it in their face, hurt people hurt people, nobody's the villain of their own story, everyone has a complex rich inner life&quot; and other copium fucking <em>bullshit</em>. And it's not for lack of trying or skills. I am <em>telling</em> you, Reader, after 10+ years of me studying &amp; practicing &amp; applying Non Violent Communication and Active Listening and Steelmaning and Intellectual Turing Tests and Moral Foundations Theory, years of trying to <em>really get to know people</em> behind their mere politics, their <em>souls</em>, Reader, I am <em>reporting</em> to you: <em>it was always all bullshit.</em> People are like onions: as you keep peeling back, you discover that every layer is the fucking same, and then you start crying. Anecdotes of personal change are survivor bias, &quot;intricately layered characters&quot; was invented by Big Book to sell more Books. Humanism is a cult: ~32% of Germans thought Hitler was a great man <em>in 1952, after Hitler already lost</em> and the Holocaust was globally known<sup class="footnote-ref"><a href="#fn17" id="fnref17">[17]</a></sup>; ~15% of eligible Americans were in the Ku Klux Klan in the 1920s<sup class="footnote-ref"><a href="#fn18" id="fnref18">[18]</a></sup>; ~28% of Hutu adult civilians <em>personally participated</em> in the genocide against the Tutsis<sup class="footnote-ref"><a href="#fn19" id="fnref19">[19]</a></sup>; just give up the copium and apply Occam's Razor and finally admit that <em>the reason mass atrocities keep happening, is simply because the masses are atrocious</em>. Did your eyes automatically roll? That's how they get you: mark the thoughts not as &quot;dark&quot; or &quot;evil&quot;, but just &quot;cringe&quot;. <em>That's</em> how you censor a thought. All these so-called empathetic Humanist thought-leaders will try to guilt-trip you back into loving humanity. &quot;But they're not all bad, there's good parts in them&quot; isn't wisdom, <em>it's how abusers gaslight their victims into staying with them.</em> Humanity <em>is</em> the abuser. Humanity does not Spark Joy. It's not the Algorithm, or late capitalism, or Moloch, or woke mind viruses, or egregores, <em>IT'S YOU.</em> It's <em>you.</em></li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<p>...right, clearly I'm still working through some issues.</p>
+<p>I thank Mr. Pounded In The Butt for forcing me to work through it more.</p>
+<p><strong><a href="https://bookshop.org/p/books/bury-your-gays-chuck-tingle/de2c90d5aa0bc158">Bury Your Gays</a> on IndieBound/Bookshop</strong> (content note: gore, homophobia)</p>
+<hr>
+<p>Anyway, that was a longer-than-usual Signal Boost! In summary:</p>
+<ul>
+<li>There's hope and solutions to wrangle The Algorithms back towards a humane-with-an-e future</li>
+<li>Have fun, and</li>
+<li>Happy Halloween!</li>
+</ul>
+<p>🎃👻🎃
+~ Nicky Case</p>
+<iframe src="https://ncase.me/ncase-credits/signup2.html" frameborder="no" width=640 height=250></iframe>
+<hr>
+<h1>: Interview with Jon</h1>
+<ul>
+<li>I hadn't before considered the moral cost <em>to the user</em> of having on-demand, disposable AI servants. Haidt points out what Frederick Douglass once called &quot;The Fatal Poison of Irresponsible Power&quot;, where slavery not only degrades the slave, but <em>degrades the slaveowner too.</em> If we grow up with people-like objects we treat as tools, how will this train us to treat actual people?</li>
+<li>Yup, <a href="https://www.brainonllm.com/">a recent MIT preprint study</a> has found: using ChatGPT <em>literally</em> makes you <s>dumber</s> okay the authors are <a href="https://www.brainonllm.com/faq">very adamant</a> we science-communicators <em>do not</em> summarize their paper as &quot;LLMs make you dumber&quot;. The actual contents of their study: students who use LLMs to help write essays have measurably less brain connectivity, relative to Brain-only studetns. And after 4 months, LLM users &quot;consistently underperformed at neural, linguistic, and behavioral levels.&quot;
+<ul>
+<li>The reason why it's not as simple as &quot;LLMs make you dumb&quot;, is because the group that <em>first</em> wrote on a topic using only their naked brain, <em>THEN</em> were allowed to use LLMs (<strong>Brain-then-LLM</strong> group) actually did <em>better:</em> &quot;these results suggest that strategic timing of AI tool introduction following initial self-driven effort may enhance engagement and neural integration.&quot;</li>
+<li>In contrast, the <strong>LLM-then-Brain</strong> group &quot;consistently underperformed relative to Session 2 of Brain-only group, and failed to develop the consolidation networks present in Session 3 of Brain-only group.&quot;</li>
+<li><strong>In other words: it may be best to use tools, only after you know how to work <em>without</em> the tools.</strong></li>
+<li>(Keep in mind the study only had 54 participants. And it's a <em>lot</em> of analysis over 54 participants, which, I'll be honest, smells fishy.)</li>
+</ul>
+</li>
+</ul>
+<h1>: Interview with Tim</h1>
+<ul>
+<li>If you're already familiar with Tim's work, in particular his latest book <em>What's Our Problem</em>, you can skip ahead in the interview to 40:18 . Otherwise, <a href="https://xcancel.com/ncasenmare/status/1627798034439450624">here was my book summary (in tweet-thread form!)</a>  To summarize <em>that</em> summary: <strong>the big problem with politics right now is not <em>what</em> we believe, but <em>how</em> we believe.</strong>
+<ul>
+<li>&quot;Low-rung&quot; thinkers treat politics like a war, where arguments are bullets, and you're either for xor against us. You'd never critique your own side or give credit to the other side, any more than you'd shoot your own platoon or hand ammunition to the enemy.</li>
+<li>&quot;High-rung&quot; thinkers treat politics like a Writer's Room, or Code Review. It's <em>NOT</em> that &quot;truth is in the middle&quot; (strawman centrist) or &quot;everyone has their own truth&quot; (strawman postmodernist) or even &quot;everyone has a valuable perspective&quot; (ha ha have you met people). It's about <em>ACTUALLY TESTING YOUR IDEAS</em>. You wouldn't let into your home an oven that's never been safety-tested. So why let an idea into your core beliefs that's never been stress-tested? Pick holes &amp; find counterarguments to ideas even if they're &quot;from your own side&quot;, search from good critique &amp; solutions even if they're &quot;from the enemy's side&quot;, and <em>especially</em> try to find &amp; invent new ideas that's on <em>nobody's</em> side.</li>
+<li>&quot;High-rung&quot; is <em>not</em> intelligence. There are very high-IQ people who squander their IQ on rationalizing what their gut/tribe already believes.</li>
+<li>There are high-rung people on the left &amp; right. <em>There are low-rung people who are &quot;centrist&quot; or &quot;moderate&quot;</em>. (e.g. the kind of smug centrist who only focuses on extremists on the left &amp; right, and keeps talking about 'horseshoe theory')</li>
+</ul>
+</li>
+<li>There's a pattern in history: New Media Technology =&gt; Lots of benefit but lots of awful side-effects =&gt; Society slowly develops &quot;cultural anti-bodies&quot;, to get the benefits of the new tech while minimizing the downsides.
+<ul>
+<li>Historic example: The printing press indirectly led to Enlightenment &amp; Scientific Revolution... but <em>also</em> the Protestant vs Catholic split and the centuries of murderous conflict.</li>
+<li>Current example: Social media let people coordinate to donate millions to charity, and reveal injustice that the powerful would rather keep hidden... but <em>also</em> tanked our politics, mental health, and attention/autonomy.</li>
+</ul>
+</li>
+<li>Audience capture is when you, the creator, get accidentally clicker-trained by the likes &amp; comments from your audience, into becoming a parody of yourself. Before Tim's interview, I thought the solution was &quot;just don't get captured&quot;. But Tim offers a better solution: work <em>with</em> the incentives, not against them, <strong>by getting captured by the <em>right</em> audience.</strong>
+<ul>
+<li>First, know what you value. Then, find an audience that values what you value. Then, <em>write for the audience you want, not the audience you can easily get.</em> This will mean having to go through a rough period where either few see your work, and/or you get fans &amp; even friends being mad at you — but power through this, they'll filter themselves out, and <strong>you'll get an audience that will help incentivize you to be the best version of you.</strong></li>
+<li>(This was the biggest insight I took from Tim's interview, and it's one I've not yet applied &amp; am scared to. By default my personality is non-confrontational. I'm scared to piss off my fans &amp; friends, or worse, <em>bore</em> them.)</li>
+</ul>
+</li>
+</ul>
+<h1>: Notes on Polarization</h1>
+<p><strong>Not all polarization is bad</strong>, some's even desirable. Researchers name (at least) <strong>3 different kinds of &quot;polarization&quot;: affective polarization, belief polarization, and homophily.</strong></p>
+<ul>
+<li>Affective polarization: We hate them, they hate us.</li>
+<li>Belief polarization: We &amp; they have very different beliefs.</li>
+<li>Homophily: Most of my friends are in my tribe, most of theirs in theirs.</li>
+</ul>
+<p>Homophily's both unavoidable, and actually <em>desirable</em>, in my opinion. For example, only ~0.6% of people are programmers like me, but &gt;50+% of my friends are programmers. It wouldn't make personal or career sense for me to have exactly demographically-proportional representation in my friend group. Same for &gt;50+% of my friends being LGBTQ+, left-leaning, urban, English-speaking, and nerdy.</p>
+<p>However, if <em>all</em> of my friends (or media sources) are urban, or in STEM, or left-leaning, then I'll be out of touch with the broader world, and <em>that</em> may lead to affective/belief polarization.</p>
+<p>And what's the difference between affective &amp; belief polarization, concretely?</p>
+<p>Affective without belief polarization: When people despise each other for having pretty small differences in beliefs (at least, relative to their society at large). Historic example: All the deadly wars between Protestants &amp; Catholics. Today's examples: leftists vs liberals, Groypers vs New Right.</p>
+<p>Belief without affective polarization: When people get along despite having radically different beliefs. Examples: Friendships between Christians &amp; atheists, friendships between AI capabilities researchers &amp; AI extinction-risk researchers.</p>
+<p>Note: I don't believe that hating someone is necessarily &quot;bad&quot;; anger can be justified &amp; useful – but anger <em>is</em> known to be addictive. Kind of like amphetamines. I also don't think belief polarization, a lack of consensus, is necessarily &quot;bad&quot;; a wide variety of ideas helps us brainstorm better, and often there <em>isn't</em> enough data for one clear answer. My current take is:</p>
+<ul>
+<li>Homophily is mostly good. Just make sure not <em>all</em> of your friends/media sources are in the same tribe. That's a single point of failure.</li>
+<li>Belief polarization is not good or bad, it just &quot;is&quot;. Focus instead on cultivating the intellectual virtues of curiosity balanced with rigour. If that leads to consensus, great. If that leads to disagreement, great. Trust the process.</li>
+<li><strong>Affective polarization (anger) is like amphetamines: focusing, energizing, sometimes useful, but unfortunately easy to abuse &amp; get addicted.</strong></li>
+</ul>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>This book personally changed my life, turning me from Mid-10's Smug Asshole Atheist to &quot;atheist but at least <em>try</em> to be kind &amp; understand beliefs very unlike mine.&quot; The core ideas of the book — everyone's beliefs are mostly downstream of emotional reflexes, liberals/conservatives have overlapping but different emotional-reflexes — are still on solid scientific ground, though, be warned that since this is a psych book from 2012, probably most of the <em>specific</em> studies he cites may not replicate. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><a href="https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=1528077">What makes online content viral?</a> by Berger &amp; Milkman (2012) analyzed all headlines from the New York Times over a 3-month period. As seen in Figure 2, the top factor that makes a headline viral, is &quot;Anger&quot;. (To be fair, the close runner-ups are &quot;Awe&quot; and &quot;Practical Value&quot;) <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>“The model centers on a population of simulated users, each represented by a persona drawn from the American National Election Studies (ANES) dataset. These personas reflect real-world distributions of age, gender, income, education, partisanship, ideology, religion, and personal interests.” <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn4" class="footnote-item"><p>Main analysis was done with GPT-4o-mini, results replicated successfully with llama-3.2-8b and DeepSeek-R1 <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn5" class="footnote-item"><p>The &quot;baseline&quot; simulated social network has the following algorithmic feed: it shows each user 10 posts: “five from followed users and five drawn from high-engagement content posted by non-followed users, with repost probability used as a proxy for algorithmic amplification.” All interventions are tested compared to this baseline. <a href="#fnref5" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn6" class="footnote-item"><p>The paper doesn't offer a detailed hypothesis, and without re-running the simulation myself I'd just be guessing, but let me guess: {chronological feed + repost mechanism} is actually a <em>stronger filter for engaging/enraging posts</em> than {algorithmic feed}. Let's say the top ten posts in your chronological feed are posts from the last half hour. These posts will be either a) originally posted in the last 30 min, or b) <em>so engaging</em> that your ingroup has been reposting it <em>at least once per half hour</em>. In contrast, a baseline algorithmic feed would highlight posts that have gotten lots of reposts in the last, say, 24 hours. <a href="#fnref6" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn7" class="footnote-item"><p>From <a href="https://docs.bsky.app/docs/tutorials/viewing-feeds">their API</a>: &quot;the default chronological feed of posts from users the authenticated user follows&quot; <a href="#fnref7" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn8" class="footnote-item"><p>From <a href="https://help.truthsocial.com/truth-social-common-terminology/glossary-home-feed/">their FAQ</a>: &quot;we refrain from using non-chronological feeds to artificially suppress users' content.&quot; <a href="#fnref8" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn9" class="footnote-item"><p>&quot;14.9% use AI for emotional support daily, with an <strong>additional</strong> 27.9% weekly&quot; {emphasis added}. So that's 14.9 + 27.9 = 42.8% using AI as emotional support at least once a week. <a href="#fnref9" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn10" class="footnote-item"><p><a href="https://www.fool.com/investing/2024/01/10/amazon-e-commerce-company-74-profit-this-instead/">Source</a>. Note that while most of Amazon's <em>revenue</em> comes from its online stores, 74% of its <em>profit</em> (which is <em>revenue minus cost</em>) comes from Amazon Web Services, their cloud compute arm. (This is because the online stores have much higher cost) <a href="#fnref10" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn11" class="footnote-item"><p>From <a href="https://arxiv.org/pdf/2210.15723">the Birdwatch paper</a>: &quot;To avoid overfitting on our small dataset, we use one-dimensional factor vectors. Additional factors added little explanatory power and reduced interpretability and replicability. (Though we expect to expand dimensionality as the contributor base grows.) [...] RMSE on held-out samples decreased from .076 to .073 when adding a second factor&quot;. <strong>Translation:</strong> adding a 2nd factor to explain politics only reduced error from 0.076 to 0.073, basically nothing, while making the system twice as complicated. <a href="#fnref11" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn12" class="footnote-item"><p>From the classic <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/pops.12055">Feldman &amp; Johnston 2013</a> paper: <em>“We argue that a unidimensional model of ideology provides an incomplete basis for the study of political ideology. We show that two dimensions—economic and social ideology—are the minimum needed to account for domestic policy preferences.”</em> In fact, for more nations than not, economic &amp; social &quot;right-wing&quot; beliefs are <em>negatively</em> correlated with each other. (<a href="https://www.cambridge.org/core/journals/british-journal-of-political-science/article/are-cultural-and-economic-conservatism-positively-correlated-a-largescale-crossnational-test/83AFEDEA5E004CF23631C5388E7C9F67">Malka, Lelkes &amp; Soto 2017</a>) In concrete terms: being pro/anti-LGBTQ and being pro/anti-free-market are <em>more likely to go together than not.</em> (Maybe a bit obvious <em>now</em>, given all the right-wing economic populists in America &amp; Europe, but it was less obvious back when the paper came out 8 years ago) <a href="#fnref12" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn13" class="footnote-item"><p>A quote from <a href="https://en.wikipedia.org/wiki/Tron">Tron (1982)</a> that meant a lot more to me as a kid, before the Mouse milked its nostalgia-teats powder-dry <a href="#fnref13" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn14" class="footnote-item"><p>From the inventor of the WWW, in <a href="https://venturebeat.com/programming-development/tim-berners-lee-shares-his-vision-of-a-collaborative-web">his interview with VentureBeat</a>: “I wanted it to be a read-write web immediately. [...] I wanted to be able to collaborate with it and do GitHub-like things for my software team at CERN in 1990.” <a href="#fnref14" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn15" class="footnote-item"><p>Quote from some tech designer who I can't remember, <a href="https://fakebuddhaquotes.com/i-am-a-finger-pointing-to-the-moon-dont-look-at-me-look-at-the-moon/">based off a Fake Buddha quote</a>. <a href="#fnref15" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn16" class="footnote-item"><p>Quote from Tenet (2020), the most &quot;yup that's a Nolan film&quot; Nolan film. <a href="#fnref16" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn17" class="footnote-item"><p>From the OMGUS surveys done in the American-occupied zone of post-war Germany (<a href="https://libsysdigi.library.uiuc.edu/OCA/Books2009-07/publicopinionino00merr/publicopinionino00merr.pdf">here's a scan of the whole dang book</a>). Page 33: even years after the war in 1958, over half of Germans believed Nazism was &quot;a good idea (badly carried out)&quot;. From the footnotes of this chapter, Page 62 Footnote 17, summarizing an old source in German (&quot;Jahrbuch der oeffentlichen Meinung&quot;) which I can't even find a scan of, so alas, I can't pull a quote from the original German report, but here's the data: &quot;In July 1952 a tenth agreed that Hitler was the greatest statesman of the century whose true greatness would be recognized only later, with another 22 per cent feeling that, although he had made a few mistakes. Hitler was nonetheless an excellent chief-of-state.&quot; So 10% + 22% = 32%, around ~1/3 of Germans in 1952 approved of <em>Hitler specifically</em>. <a href="#fnref17" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn18" class="footnote-item"><p>From the <a href="https://dp.la/primary-source-sets/second-ku-klux-klan-and-the-birth-of-a-nation">Digital Public Library of America</a>: &quot;At the peak of its popularity in 1924-5, the organization claimed four to five million men as members, or about fifteen percent of the nation's eligible population.&quot; (To be eligible for the Klan back then, you needed to be white (duh), adult, and male. In the 1920s, America had <a href="https://en.wikipedia.org/wiki/File:US_decennial_census_population_1790-2020.png">~100,000,000 people</a>, around <a href="https://en.wikipedia.org/wiki/File:Complete_history_of_the_Racial_and_ethnic_demographics_of_the_United_States_in_percentage_of_the_population.svg">~90% of whom were non-Hispanic white</a>, around <a href="https://www.aei.org/carpe-diem/chart-us-population-distribution-by-age-1900-through-2060/">~60% were above 18</a>, and presumedly around ~50% were male. So, 100M x 0.9 x 0.6 x 0.5 = 27M white male adults in the US in 1920. If there were 4 million Klansmen then, then yeah 4/27 ~= 15%, math checks out.) <a href="#fnref18" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn19" class="footnote-item"><p><a href="https://journals.sagepub.com/doi/10.1177/00223433221075211">The most recent estimate in 2023</a>, using Rwanda’s post-genocide <em>gacaca</em> courts, found that &quot;between 847,233 and 888,307 people participated in the genocide&quot; (let's say ~0.85M), with &quot;between 229,069 and 234,155 individuals&quot; directly committing violence (the rest &quot;only&quot; committed property crimes like burning down houses &amp; farms). The Rwandan population at the time was ~7 million, ~50% were adults, 85% were Hutus. 7M x 0.5 x 0.85 ~= 3M Hutu adults. So 0.85M/3M ~= 28% of eligible civilians participated in the genocide. This isn't even restricting ourselves to Hutu adult <em>males</em>. <a href="#fnref19" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

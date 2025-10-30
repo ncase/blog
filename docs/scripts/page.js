@@ -191,7 +191,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
     // Reset
     let resetStyle = ()=>{
         $("#style_dark_mode").checked = false;
-        $("#style_fontsize_slider").value = 19;
+        $("#style_fontsize_slider").value = 18;
         $("input[value=serif]").checked = true;
         updateStyle();
     };
@@ -200,7 +200,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
     // Save settings across pages
     // Defaults
     window.localStorage.style_dark = window.localStorage.style_dark || false;
-    window.localStorage.style_size = window.localStorage.style_size || 19;
+    window.localStorage.style_size = window.localStorage.style_size || 18;
     window.localStorage.style_font = window.localStorage.style_font || "serif";
     // Cut off transition CSS
     document.body.style.transition = "none";

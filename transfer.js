@@ -110,17 +110,18 @@ try {
 
         // How to embed media? Depends on the extension type...
         let relativeMedia = '../content/stuff/'+thisMonth;
+        let mediaPath = encodeURI(`${relativeMedia}/${mediaName}`);
         const ext = path.extname(mediaName).toLowerCase();
         let replacementMD;
         // Images!
         if(['.jpg', '.jpeg', '.png', '.apng', '.gif', '.webp'].includes(ext)){
-            replacementMD = `![${altText}](${relativeMedia}/${mediaName} "${altText}")`;
+            replacementMD = `![${altText}](${mediaPath} "${altText}")`;
         // Videos!
         }else if(['.mp4', '.webm', '.mov'].includes(ext)){
-            replacementMD = `<video width='640' controls src="${relativeMedia}/${mediaName}" aria-label="${altText}"></video>`;
+            replacementMD = `<video width='640' controls src="${mediaPath}" aria-label="${altText}"></video>`;
         // Audio!
         }else if(['.mp3', '.wav', '.ogg'].includes(ext)){
-            replacementMD = `<audio controls src="${relativeMedia}/${mediaName}" aria-label="${altText}"></audio>`;
+            replacementMD = `<audio controls src="${mediaPath}" aria-label="${altText}"></audio>`;
         }else{
             console.error(`the heck file extension is ${ext}? in a ![[media-name.ext]]`);
         }
