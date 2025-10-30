@@ -55,7 +55,7 @@ Simple question!
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/eGBhUXmxSbI?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-[: click to expand — my notes from the Tim episode](#interview-with-jon)
+[: click to expand — my notes from the Tim episode](#interview-with-tim)
 
 **Upcoming interviews:**
 
@@ -310,9 +310,9 @@ The gap (**"error"**) between {predicted ratings} & {actual ratings}
 
 **Step 3) To find recommendations, maximize:**
 
-It's the same equation as in Step 1!
+The same equation as in Step 1!
 
-Predicting how _you'll_ rate this item you haven't seen before    
+Predicting how you'd rate this item you've not seen before    
 \= Global bias    
 \+ **Your** bias    
 \+ Item's bias    
@@ -338,7 +338,9 @@ They worried how this million-dollar algorithm, which worked for getting niche m
 
 So the Twitter programmers wondered — could they make a "fact-checking" service *run by the public themselves*, by *using* an edit of that million-dollar algorithm, for good?
 
-They did, [they called it "Birdwatch"](https://asteriskmag.com/issues/08/the-making-of-community-notes), and here's how it worked:
+They did, [they called it "Birdwatch"](https://asteriskmag.com/issues/08/the-making-of-community-notes)[^birdwatch-name], and here's how it worked:
+
+[^birdwatch-name]: It was _such a good name_, I miss it so much 😭
 
 - Let anyone submit "notes" to factcheck viral tweets.
 - People rate how helpful those notes are.
@@ -367,7 +369,7 @@ There's a few extra complexities, but that's the heart of the Birdwatch algorith
 
 ![Figure 4 from the paper, showing how every party rates Birdwatch as net-helpful.](../content/stuff/2025-10/birdwatch-2.png "Figure 4 from the paper, showing how every party rates Birdwatch as net-helpful.")
 
-(Wait, if the notes are chosen to be helpful *regardless of politics*, why do Democrats like them more than Republicans, even while Republicans still find them net-helpful? I'm not sure, but I'd guess the left-right axis *among Birdwatch raters* is slightly different from the left-right axis *among party-registered voters*. Remember, the algorithm *learns* what the left-right axis is, it's not hard-coded; and it shouldn't, since what "left-right" means changes across time & cultures.)
+(Wait, if the notes are chosen to be helpful *regardless of politics*, why do Democrats like them more than Republicans, even while Republicans still find them net-helpful? I'm not sure, but I'd guess the left-right axis *among Birdwatch raters* is slightly different from the left-right axis *among party-registered voters*. Remember, the algorithm *learns* what the left-right axis is, it's not hard-coded; and it shouldn't be, since what "left-right" means changes across time & cultures.)
 
 Unfortunately, this "bridging" algorithm was only used for the factcheck-notes, *not* Twitter's algorithmic feed. As mentioned in the paper two sections ago, **bridging-based algorithms were the *only* design choice we know of (so far) that reverses polarization & extremism.** So, implementing bridging *for the main feeds themselves* could be a big win for digital democracy. And, good news? I heard that 𝕏 may adopt bridging for their main feed, and other platforms will adopt bridging-based algorithm, *at least* for a similar factchecking system.
 
