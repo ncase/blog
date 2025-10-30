@@ -175,7 +175,7 @@ OpenAI & Meta (Facebook) recently announced [their own AI-video versions of TikT
 
 To recap: we're already disempowered on the "consumer" side of culture. Soon, we may be disempowered on the "creator" side of culture. **We'll have AIs making content for AIs, humans in the backseat.** We won't even remember there used to be a steering wheel.
 
-(Oh and *then* there's the AI Companions. [Source for all the following stats](https://globaldialogues.ai/updates/global-dialogues-4-human-ai-relationships): ~40% of people use AI for emotional support at least once a week.[^cip-stats-1] ~17% accept AI-Human romance, and ~11% would _personally consider_ dating an AI. To be clear, I'm no prude: _I_ use Claude as an "AI Life Coach" on a near-daily basis, and I'll confess, I've done erotic roleplay with AI characters.)
+(Oh and *then* there's the AI Companions. [Source for all the following stats](https://globaldialogues.ai/updates/global-dialogues-4-human-ai-relationships): ~40% of people use AI for emotional support at least once a week.[^cip-stats-1] ~17% accept AI-Human romance, and ~11% would _personally consider_ dating an AI. To be clear, I'm no prude: _I_ use Claude as an "AI Life Coach" on a near-daily basis, and I've done months-long romantic roleplay with AI characters.)
 
 [^cip-stats-1]: "14.9% use AI for emotional support daily, with an **additional** 27.9% weekly" {emphasis added}. So that's 14.9 + 27.9 = 42.8% using AI as emotional support at least once a week.
 
@@ -276,7 +276,7 @@ Anyway, here's my attempt at explaining the algorithm:
 
 a) **How much a user's preferences align with this item's features**
 
-Example: If the algorithm knows I love horror, and it knows Movie X is horror, my preferences align perfectly with the item's features, so the last term in the sum is one. And here's the neat part: *you do not need to hard-code the preferences/features!*  The algorithm learns by itself which factors best predict ratings. (So instead of Horror, the algorithm just "thinks" of it as Factor #42 or something.)
+Example: If the algorithm knows I love horror, and it knows Movie X is horror, my preferences align perfectly with the item's features, so alignment = 1. (If I hate horror, alignment = -1, if I'm indifferent, alignment = 0.) Now, here's the neat part: *you do not need to hard-code the preferences/features!*  The algorithm learns by itself which factors best predict ratings. (So instead of Horror, the algorithm just "thinks" of it as Factor #42 or something.)
 
 b) **The item's "bias"**: how well-rated an item is, *independent of how much it aligns with user preferences.* You can _roughly_ think of this as an item's "quality".
 
@@ -328,7 +328,7 @@ By giving people _what they're already into_, you nudge them into staying the sa
 
 But when this algorithm got applied to social media, *specifically politics & news*, it promotes polarization, and reduces cross-tribe win-win understanding. YouTube predicts I like left-libertarian content, so it gives me more pro-left-libertarian content, so I become even more left-libertarian, repeat forever. I _can_ seek out social-conservative and Marxist-leftist and Yarvin-autocrat stuff, (and I do for research), but the algorithms put up friction for that, while "see what I'll already agree with" is the WD-40 easy-glide default.
 
-(Counter-argument: see above paper, maybe it's not the algorithms' fault, we just suck.)
+(Counter-argument: see above paper [↪](#we-suck), maybe it's not the algorithms' fault, we just suck.)
 
 = = =
 
@@ -343,8 +343,8 @@ They did, [they called it "Birdwatch"](https://asteriskmag.com/issues/08/the-mak
 - Let anyone submit "notes" to factcheck viral tweets.
 - People rate how helpful those notes are.
 - **You keep the algorithm's Step 1 & Step 2 the same**, so it can learn what people's preferences & notes' features are.
-	- **The user/item factors:** Again, we do *not* need to hard-code the factors that best predict ratings. But in practice, the algorithm learns that the #1 factor is the left-right political spectrum; adding extra factors like "authoritarian-libertarian" doesn't improve prediction much.[^two-axis-doesnt-help] (Which is surprising given past research shows the general public's politics is at _least_ 2D.[^2d-politics] Maybe the Birdwatch community is just weird.)
-	- **The item's bias:** Instead of being ~"movie quality", it's now "note quality", *independent* of how much it aligns with users' politics. IMPORTANTLY: note quality is *not* just a note's average helpfulness-rating. _Average rating_ will be skewed by the _average_ Birdwatch-rater's political preferences. This setup gets us a note's quality *regardless* of politics.
+	- **The user/item factors:** Again, we do *not* need to hard-code the factors. But in practice, the algorithm learns that the #1 factor that most predicts people's ratings, is the left-right political spectrum. Adding extra factors like "authoritarian-libertarian" doesn't improve prediction much.[^two-axis-doesnt-help] (Which is surprising given past research shows the general public's politics is at _least_ 2D.[^2d-politics] Maybe the Birdwatch community is just weird.)
+	- **The item's bias:** Instead of being "movie quality", it's now "note quality", *independent* of how much it aligns with users' politics. IMPORTANTLY: note quality is *not* just a note's average helpfulness-rating. _Average rating_ will be skewed by the _average_ Birdwatch-rater's political preferences. This setup gets us a note's quality *regardless* of politics.
 - **The key difference is WE REVERSE STEP 3**: Instead of taking user preferences (ie politics) into account, we highlight the best notes *NOT* taking user preferences into account! That means: this highlights notes that *people across the political spectrum* agree is helpful. Common ground, by algorithmic design!
 
 [^two-axis-doesnt-help]: From [the Birdwatch paper](https://arxiv.org/pdf/2210.15723): "To avoid overfitting on our small dataset, we use one-dimensional factor vectors. Additional factors added little explanatory power and reduced interpretability and replicability. (Though we expect to expand dimensionality as the contributor base grows.) [...] RMSE on held-out samples decreased from .076 to .073 when adding a second factor". **Translation:** adding a 2nd factor to explain politics only reduced error from 0.076 to 0.073, basically nothing, while making the system twice as complicated.
@@ -353,7 +353,7 @@ They did, [they called it "Birdwatch"](https://asteriskmag.com/issues/08/the-mak
 
 Here's an example of a factcheck note, that's rated as helpful by people across the political spectrum, because it's very specific & easily verifiable:
 
-![no alt text set, shame on me](../content/stuff/2025-10/Pasted%20image%2020251030152607.png "no alt text set, shame on me")
+![Original poster posts a photo of a car on fire, claiming it's outside the Supreme Court in Washington DC. Below it, Birdwatch selected a factcheck: &quot;No, that's a photo from a 2010 protest in Toronto, here's the video the screenshot's from: (link)&quot;](../content/stuff/2025-10/Pasted%20image%2020251030152607.png "Original poster posts a photo of a car on fire, claiming it's outside the Supreme Court in Washington DC. Below it, Birdwatch selected a factcheck: &quot;No, that's a photo from a 2010 protest in Toronto, here's the video the screenshot's from: (link)&quot;")
 
 (The Birdwatch creators made sure to never call the notes "factchecks", and instead said "Readers added context you may want to know"... but c'mon, they're factchecks.)
 
