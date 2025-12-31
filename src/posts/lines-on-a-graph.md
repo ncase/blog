@@ -225,7 +225,7 @@ If you'd like to keep up on my "books disguised a blog", sign up for my low-volu
 
 <iframe src="https://ncase.me/ncase-credits/signup2.html" frameborder="no" width=640 height=250></iframe>
 
-I also reflected on 2025 and wrote more on my resolutions for 2026, in this public Patreon post. TODO You can support my research & writings (always free, online, and open-source!) via [Patreon](https://www.patreon.com/ncase), [Ko-Fi](https://ko-fi.com/nickycase), or [PayPal](https://www.paypal.com/paypalme/nickycase) ⤵
+I also reflected on 2025 and wrote more on my resolutions for 2026, [in this public Patreon post](https://www.patreon.com/posts/h-n-y-2026-from-147107425). You can support my research & writings (always free, online, and open-source!) via [Patreon](https://www.patreon.com/ncase), [Ko-Fi](https://ko-fi.com/nickycase), or [PayPal](https://www.paypal.com/paypalme/nickycase) ⤵
 
 <iframe src="https://ncase.me/ncase-credits/supporters/jan-2026.html" frameborder="no" width="640" height="640"></iframe>
 
