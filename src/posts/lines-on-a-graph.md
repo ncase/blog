@@ -140,10 +140,14 @@ Running with the above examples:
 📕 "Write a Great novel" ⇒ **Write/edit 500 words a day.**
 
 - 500 words a day is easy. You probably write that much alone in text messages.
-- A novel is around 50,000 words. At 500 words a day, you can finish the first draft in 100 days, by mid-April. Then, _editing_ 500 words a day, you can create a polished draft by mid-July. Then, editing 500 words a day _again_, you can create a good final version by mid-October.
+- A novel is around 50,000 words.[^book-words] At 500 words a day, you can finish the first draft in 100 days, by mid-April. Then, _editing_ 500 words a day, you can create a polished draft by mid-July. Then, editing 500 words a day _again_, you can create a good final version by mid-October.
 - So: by writing/editing a mere 500 words a day, you can _publish a novel every year_, with two months to spare!
     - (The exact numbers vary if you want to write longer books, or do more revisions, but the general result holds: you _could_ complete a polished book every 1 or 2 years, by writing/editing only 500 to 1000 words a day.)
-- Your first novel is very unlikely to be Great, but with more practice & feedback, you maximize your chances of writing a truly Great work. Persist! Remember that Dune was Frank Herbert's _6th_ novel! (As for GenAI? The people will be thirsty for quality, amidst the coming flood of AI slop.) 
+- Your first novel is very unlikely to be Great, but with more practice & feedback, you maximize your chances of writing a truly Great work. Persist! Remember that Slaughterhouse-Five was Vonnegut's _sixth_ novel! (As for GenAI? The people will be thirsty for quality, amidst the coming flood of AI slop.) 
+
+[^book-words]: Random web sites claim that most published books "should" be around 80,000 to 100,000 words, with Young Adult having a smaller word count, and 40,000 at minimum to count as a novel, not "novella". I'm picking 50,000 to make the math easy to follow.
+    
+    Some Great novels around 50,000 words: Kurt Vonnegut's _Slaughterhouse-Five_, Douglas Adams's _The Hitchhiker’s Guide to the Galaxy_, F. Scott Fitzgerald's _The Great Gatsby_. 50k words is plenty!
 
 🧠 "Master ~~the secrets of the universe~~ Physics" ⇒ **Study 1 hour a day.**
 
@@ -223,7 +227,7 @@ If you'd like to keep up on my "books disguised a blog", sign up for my low-volu
 
 I also reflected on 2025 and wrote more on my resolutions for 2026, in this public Patreon post. TODO You can support my research & writings (always free, online, and open-source!) via [Patreon](https://www.patreon.com/ncase), [Ko-Fi](https://ko-fi.com/nickycase), or [PayPal](https://www.paypal.com/paypalme/nickycase) ⤵
 
-<iframe src="https://ncase.me/ncase-credits/supporters/oct-2025.html" frameborder="no" width="640" height="640"></iframe>
+<iframe src="https://ncase.me/ncase-credits/supporters/jan-2026.html" frameborder="no" width="640" height="640"></iframe>
 
 Bless your cotton socks!  Happy new year 2026!  🎉 🎊 🎉
 
