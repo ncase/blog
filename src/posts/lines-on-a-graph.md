@@ -215,7 +215,7 @@ That’s the magic of micro-goals and lines-on-a-graph, seeing your past + prese
 
 ---
 
-![illustration of a catgirl collapsed in exhaustion, in front of a giant party-ful '2026' sign](../content/stuff/2026-01/nye.png "illustration of a catgirl collapsed in exhaustion, in front of a giant party-ful '2026' sign")
+![illustration of a catgirl collapsed in exhaustion, in front of a giant party-ful '2026' sign](../content/stuff/2026-01/nyee.png "illustration of a catgirl collapsed in exhaustion, in front of a giant party-ful '2026' sign")
 
 **P.S:** One of my Dreams this year is to write _one blog post a week._ I hope you found value in this first entry of my "one post a week" challenge for 2026!
 
