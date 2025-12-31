@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>Connect your past, present &amp; future, with lines on a graph</title>
+
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=640">
+
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="Connect your past, present &amp; future, with lines on a graph">
+	<meta itemprop="description" content="An ode to spreadsheets">
+	<meta itemprop="image" content="https://blog.ncase.me/content/stuff/2026-01/lines.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="Connect your past, present &amp; future, with lines on a graph">
+	<meta name="twitter:description" content="An ode to spreadsheets">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/stuff/2026-01/lines.png">
+	<meta property="og:title" content="Connect your past, present &amp; future, with lines on a graph">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/stuff/2026-01/lines.png">
+	<meta property="og:description" content="An ode to spreadsheets">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Wed Dec 31 2025 19:00:00 GMT-0500 (Eastern Standard Time)");</script> <!-- let JS figure out if it's too old, show warning -->
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <!-- removed until their HTTPS is fixed -->
+    <!--script data-goatcounter="https://ncase.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script-->
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image">
+            
+            
+                
+            
+            <img
+                 class="blur" 
+                id="splash_image_banner" src="/content/stuff/2026-01/lines.png"/>
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			Connect your past, present &amp; future, with lines on a graph
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header">
+                    on jan 1, 2026
+                </span>
+                &nbsp;&nbsp;&middot;&nbsp;&nbsp
+
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a target='_self' href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <!-- TODO: don't show this segment at all, figure out age on build-side -->
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+		<p><img src="../content/stuff/2026-01/lines.png" alt=""></p>
+<p>So you have a Dream.</p>
+<p>Like all worthy Dreams, it may take years or decades to achieve. Alas, the human motivation system <em>can’t</em> learn from rewards with a year-long delay.</p>
+<p>So, you're instead advised to “trust the process”, and convert your long-term goal into regular short-term micro-goals:</p>
+<ul>
+<li>Write a novel ⇒ write 500 words a day.</li>
+<li>Cure your social phobia ⇒ talk with one stranger a day.</li>
+<li>Get married in 10 years ⇒ get 2,000 <a href="https://colah.github.io/personal/micromarriages/">micromarriages</a> a week.</li>
+</ul>
+<p>This <em>is</em> great advice, and I endorse it, but… it feels incomplete? If every day I just focus on this day, I feel like I'm in a hamster wheel, hitting my same micro-goal over and over again, but for what? Intellectually, I know &quot;for what&quot; — the Dream — but I don't <em>feel</em> it anymore.</p>
+<p>So, here's a solution that reliably helps me <em>feel</em> the connection between my past, present &amp; future: <strong>lines on a graph!</strong></p>
+<p>Let's look at 3 examples: project management, money, and weight loss.</p>
+<hr>
+<h2>🚀 Example 1: Projects</h2>
+<p>The good news is I’m my own boss. The bad news is my boss is a moron.</p>
+<p>Specifically, my boss (me) is bad at project management. She (I) still is (am), to be honest. But the tool that's helped me the most is the <a href="https://en.wikipedia.org/wiki/Burndown_chart">Burndown Chart</a>.</p>
+<p>How it works: First, give your project (or &quot;sprint&quot;) a deadline, and break it down into small tasks. Give each task a number of &quot;points&quot; it's worth (I just make points = hours). Then each day, do tasks. Your burndown chart software will then show you, in a single graph:</p>
+<ul>
+<li>Your past: how many points/hours you've gone through</li>
+<li>Your present: how many points/hours you need to do <em>today</em> to stay on track</li>
+<li>Your future: when you'll finish your project!</li>
+</ul>
+<p>( <a href="https://commons.wikimedia.org/wiki/File:SampleBurndownChart.svg">example chart by User:PabloStraub</a> ⤵ )</p>
+<p><img src="../content/stuff/2026-01/burndown.png" alt="Chart of ideal vs actual hours left of work to do, over time" title="Chart of ideal vs actual hours left of work to do, over time"></p>
+<p>When I shipped my latest project, <a href="https://aisafety.dance/p3/">a 20,000-word-with-40-illustrations behemoth</a>, I used a variant called a Burnup Chart, which also tracks total estimated time <em>over time</em>, to see how badly I mis-estimated how long tasks would take. Here's my actual chart:</p>
+<p><img src="../content/stuff/2026-01/burnup.png" alt="Chart of my ideal hours done, actual hours done, and estimated total hours, over time" title="Chart of my ideal hours done, actual hours done, and estimated total hours, over time"></p>
+<p>( As you can see: I started off estimating that project would take ~25 hours, but by the end it turned out to be ~75h. I was off by a factor of three, yeesh. But thanks to this Burnup Chart design, <em>I could account for my own mis-accounting</em>, and see where the blue &amp; red trendlines would intersect, to get a better estimate of when I'd actually finish my project. And I did, in fact, finish by Dec 1st 2024, as planned! )</p>
+<p>The best part about Burndown/Burnup charts? <strong>I can see how different decisions will affect the future, <em>today.</em></strong> For example, I can try deleting a task, or taking an extra break day, or increasing hours worked a day, and <em>immediately</em> see how that'd affect when I'll finish my project.</p>
+<p>By tying my past-present-future together into lines on a graph, not only am I more motivated, I also get <em>instant feedback</em> from the future.</p>
+<p>(<a href="https://docs.google.com/spreadsheets/d/1AyFS1ufnYWcGjjC5KxvSrfb04f64UYwNChvqlR7cNwI/edit?usp=sharing">Here's a blank template</a>, and <a href="https://docs.google.com/spreadsheets/d/11faTjGrXp_pUn-NzBG-ioYPew-IDMVS5RViqYPH_R8U/edit?usp=sharing">here's an actual example of when I used it</a>.)</p>
+<h2>💸 Example 2: Money</h2>
+<p>Another example of &quot;see your effect on the future, today&quot; — just enter your current income &amp; spending into a spreadsheet, multiply by the compounding interest of your savings/investments, and voilà: (example data, not my real finances)</p>
+<p><img src="../content/stuff/2026-01/money1.png" alt="Spreadsheet of income, expenses, and savings over time" title="Spreadsheet of income, expenses, and savings over time"></p>
+<p>Again, this lets you play with decisions like &quot;what if I tried to increase income by this much&quot;, &quot;what if I tried to reduce my rent by that much&quot;, and you get <em>instant</em> future-feedback.</p>
+<p>But more importantly, it helps you viscerally <em>see</em> the connection between your short-term micro-goals, and long-term Dream. &quot;Save $10 a day&quot; is doable but doesn't sound like much, but — just do the math — and you'll find it's enough to <em>retire a millionaire at age 63, already adjusted for inflation, starting from zero money!</em></p>
+<p><img src="../content/stuff/2026-01/money2.png" alt="Spreadsheet showing how one can become a millionaire by retirement age, just by saving $10 a day into a low-fee diversified index fund" title="Spreadsheet showing how one can become a millionaire by retirement age, just by saving $10 a day into a low-fee diversified index fund"></p>
+<p>( Quick aside, <a href="https://blog.ncase.me/30/#tip_3">the best advice for almost all laypeople</a>: ditch the fancy BS mutual funds, and forget about day-trading stocks. Just put your money in a very-low-fee diversified index fund. If that feels icky because you're investing in capitalism, remember, if you put your money in a savings account, your bank will <em>still</em> invest it, they'll just give <em>you</em> nothing but crumbs. Also: you can pick a socially-responsible index fund that excludes weaponry &amp; fossil fuels. )</p>
+<p>( Here's <a href="https://docs.google.com/spreadsheets/d/1-Bqc9K_WiBVUD5dhS0bGmwZsw07e4boe3DZB7bDU5tk/edit?usp=sharing">the spreadsheets for both the above money examples</a> )</p>
+<h2>🏋️‍♀️ Example 3: Weight</h2>
+<p>Finally, the most cliché New Year's Resolution: losing weight. Again, use a spreadsheet with lines on a graph: (my actual data)</p>
+<p><img src="../content/stuff/2026-01/weight.png" alt="Graph of my weight over time, with trendline, and example of one day's data" title="Graph of my weight over time, with trendline, and example of one day's data"></p>
+<p>You can see, at a glance, the connection between:</p>
+<ul>
+<li>Your past: weight over time</li>
+<li>Your present: your target caloric deficit for <em>today</em></li>
+<li>Your future: when you're likely to hit your weight goal</li>
+</ul>
+<p>( I find that visualizing the trendline is emotionally helpful, because weight is <em>so variable</em> from day to day. Seeing the trendline helps reassure me, ignore the daily noise, I'm on the right track. )</p>
+<p>And again, you can play with <em>what if's</em>, and get instant future-feedback.
+A daily micro-goal like &quot;250 calorie deficit&quot; (one less cookie a day) — do the math<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> — becomes &quot;lose 50lb (23kg) in two years&quot; (enough to get you from moderately-Obese to &quot;Healthy&quot; BMI!)</p>
+<p>( <strong>IMPORTANT:</strong> a) Yes both BMI and the Calorie-In-Calorie-Out model are <em>very</em> incomplete and flawed, b) Being Overweight &amp; Obese Class I (25 &lt; BMI &lt; 35) is probably fine health-wise; previous studies didn't control for exercise levels &amp; cardiovascular fitness (<a href="https://dip2023.s3.amazonaws.com/Lecture%204/Barry-2014.pdf">see Figures 3 &amp; 4</a>), c) May I interest you in the <a href="https://slimemoldtimemold.com/2022/07/12/lose-10-6-pounds-in-four-weeks-with-this-one-weird-trick-discovered-by-local-slime-hive-mind-doctors-grudgingly-respect-them-hope-to-become-friends/">Potato Diet</a>? Potatoes fill you up very fast (high protein &amp; high fiber if you keep the skins), have almost all the daily nutrients you need, and are versatile foods you can cook in many ways to keep the diet interesting. I did the Potato Diet for a month and lost 10 pounds, and I was <em>already</em> &quot;Normal&quot; BMI! d) Or, ask your doctor about semaglutide. (<a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2032183">see Figure 1</a>) )</p>
+<p><a href="https://docs.google.com/spreadsheets/d/1N9tBR_qn7J4kBPcGkeG-S_kf6mHUlPoJs44unSS_msA/edit?usp=sharing">Here's my weight-tracking Google Sheets template!</a></p>
+<p>Anyway, let’s wrap up:</p>
+<hr>
+<h2>🚀 Get started with lines today!</h2>
+<blockquote>
+<p>&quot;Huh, what an interesting &amp; inspiring article! I'll try this later&quot;<br>
+(one year later)<br>
+&quot;Oh no I forgot.&quot;</p>
+<p>~ you, if you don't implement this <em>right now</em>.</p>
+</blockquote>
+<p>So before you close this tab, at least ask yourself:</p>
+<p><strong>1) What's a Dream you have, that you've wanted for a long while, yet haven't done it yet?</strong></p>
+<p>No shame here, it can be as wacky or tacky as your heart desires. For example:</p>
+<ul>
+<li>📕 Write the next Great Canadian Novel</li>
+<li>🧠 Master the secrets of the universe</li>
+</ul>
+<p>No, seriously, stop &amp; think of a Dream you have. Silently think it and/or write it down, before continuing.</p>
+<p>Got one?</p>
+<p>Good. Next step:</p>
+<p><strong>2) How can you convert your long-term Dream into a regular micro-goal?</strong></p>
+<p>What makes a good micro-goal:</p>
+<ul>
+<li>You can do it regularly &amp; often. (e.g. daily, weekly)</li>
+<li>There's a clear, specific pass/fail. (e.g. &quot;write 500 words&quot; vs &quot;do some writing&quot;)</li>
+<li>It <em>causes, not just correlates with</em>, your long-term goal. (to mitigate <a href="https://en.wikipedia.org/wiki/Goodhart%27s_law">Goodhart’s Law</a>, where “what gets measured gets gamed”)</li>
+</ul>
+<p>Running with the above examples:</p>
+<p>📕 &quot;Write a Great novel&quot; ⇒ <strong>Write/edit 500 words a day.</strong></p>
+<ul>
+<li>500 words a day is easy. You probably write that much alone in text messages.</li>
+<li>A novel is around 50,000 words. At 500 words a day, you can finish the first draft in 100 days, by mid-April. Then, <em>editing</em> 500 words a day, you can create a polished draft by mid-July. Then, editing 500 words a day <em>again</em>, you can create a good final version by mid-October.</li>
+<li>So: by writing/editing a mere 500 words a day, you can <em>publish a novel every year</em>, with two months to spare!
+<ul>
+<li>(The exact numbers vary if you want to write longer books, or do more revisions, but the general result holds: you <em>could</em> complete a polished book every 1 or 2 years, by writing/editing only 500 to 1000 words a day.)</li>
+</ul>
+</li>
+<li>Your first novel is very unlikely to be Great, but with more practice &amp; feedback, you maximize your chances of writing a truly Great work. Persist! Remember that Dune was Frank Herbert's <em>6th</em> novel! (As for GenAI? The people will be thirsty for quality, amidst the coming flood of AI slop.)</li>
+</ul>
+<p>🧠 &quot;Master <s>the secrets of the universe</s> Physics&quot; ⇒ <strong>Study 1 hour a day.</strong></p>
+<ul>
+<li>1 hour a day is easy-ish. You probably waste that much time a day on Internet Attention Sinks. (I know I do)</li>
+<li>Here's a study plan, at 1 hour a day:
+<ul>
+<li>Day 1, Day 2: Watch one of <a href="https://theoreticalminimum.com/courses">Leonard Susskind's free online Stanford University lectures</a>. Each lecture is around 2 hours, so watch half today, half tomorrow. Write down your notes &amp; questions.</li>
+<li>Day 3, 4, 5: Ask <a href="https://claude.ai/">Claude</a> or <a href="https://gemini.google.com/">Gemini</a> your questions, to clarify your understanding. (I don't trust ChatGPT or Grok.) What about LLM hallucinations? As of Jan 1st 2026, I find that large language models are pretty good on educational topics, <em>as long as they're undergraduate-level or below</em>.</li>
+<li>Day 6, 7, 8: Web search for &quot;[topic] practice problems with answers&quot;, then <em>actually do them</em>. If you get stuck, ask your chatbot of choice for help <em>but not full solutions</em>. A gym coach shouldn't lift the weights <em>for</em> you.</li>
+<li>Day 9, 10: Make <a href="https://apps.ankiweb.net/">Anki flashcards</a> to remember the core ideas &amp; formulas, easy-ish-ly and effectively. (<a href="https://www.youtube.com/watch?v=eVajQPuRmk8">8 min YouTube video</a> on how &amp; why spaced repetition works)</li>
+</ul>
+</li>
+<li>So that's 10 days = 2 weeks with weekends off, per Susskind lecture. There's 10 lectures per course × 6 courses = 60 lectures. At 2 weeks per lecture × 60 lectures = 120 weeks, or 2 years.</li>
+<li>So: you can get <em>a college-level understanding of Newtonian physics, Electrodynamics, Quantum mechanics, Special &amp; General relativity, Cosmology, and Entropy</em>... at the cost of <em>1 hour per weekday</em> (and $20/month for a chatbot)… spread across 2 years, which is <em>half</em> the time of a 4-year college degree.</li>
+</ul>
+<p>( It is not exactly a well-kept secret that the modern university system is horribly broken. <a href="https://www.smbc-comics.com/comic/college-level-mathematics">Relevant SMBC</a>: )</p>
+<p><img src="../content/stuff/2026-01/smbc_university.png" alt="Comic showing how a university degree costs as much as hiring 3 PhDs to tutor you full time + buying several baby tigers" title="Comic showing how a university degree costs as much as hiring 3 PhDs to tutor you full time + buying several baby tigers"></p>
+<p>( If you don't have the pre-requisite math skills for Susskind's lectures, add an extra five months of &quot;study 1 hour a day&quot;, and use Khan Academy for <a href="https://www.youtube.com/playlist?list=PL7AF1C14AF1B05894">high-school algebra</a> (~12 hours of lectures), and 3Blue1Brown for <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr">calculus</a> (~3 hours) and <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">linear algebra</a> (~3 hours). So that's an extra 18h of lectures, and given our above study plan where we tackle 2h of lectures per 2 weeks, that's an extra 18 weeks, or about five months, of self-study. Again, at just 1 hour a day. What a steal of a deal! )</p>
+<p>Okay, back on track:</p>
+<p>Step 1, know your long-term Dream. Step 2, break it down into a sustainable regular micro-goal. This step <em>is</em> tricky; if you're stuck, paste a link to this blog post into Claude (with web search turned on), tell 'em your Dream, and ask Claude to help you break down your Dream into sustainable micro-goals, with inspiration from the above two examples.</p>
+<p>After that, your final step:</p>
+<p><strong>3) DRAW LINES ON A GRAPH</strong></p>
+<p>I strongly recommend using a spreadsheet program like Google Sheets, Excel, or Numbers. It needs more setup than an app, but you get full freedom to customize it however you like! If you need help setting up a spreadsheet, look up YouTube or consult Claude. Again, you can also get started with my templates:</p>
+<ul>
+<li>🚀 Project Burnup: <a href="https://docs.google.com/spreadsheets/d/1AyFS1ufnYWcGjjC5KxvSrfb04f64UYwNChvqlR7cNwI/edit?usp=sharing">template</a>, <a href="https://docs.google.com/spreadsheets/d/11faTjGrXp_pUn-NzBG-ioYPew-IDMVS5RViqYPH_R8U/edit?usp=sharing">example with my actual data</a></li>
+<li>💸 Money: <a href="https://docs.google.com/spreadsheets/d/1-Bqc9K_WiBVUD5dhS0bGmwZsw07e4boe3DZB7bDU5tk/edit?usp=sharing">templates with examples</a></li>
+<li>🏋️‍♀️ Calorie Tracker: <a href="https://docs.google.com/spreadsheets/d/1N9tBR_qn7J4kBPcGkeG-S_kf6mHUlPoJs44unSS_msA/edit?usp=sharing">template</a></li>
+</ul>
+<p>Alternatively, you can use these apps:</p>
+<ul>
+<li>🃏 <a href="https://trello.com/">Trello</a> for productivity (with <a href="https://trello.com/power-ups/search?q=burndown">a Burndown Chart add-on</a>)</li>
+<li>🐝 <a href="https://www.beeminder.com/">Beeminder</a> for any quantifiable goal. (this app helps you set up &quot;commitments with a sting&quot;! every time you slip behind your goal, Beeminder will take some of your money.)</li>
+</ul>
+<p>(If you don't want to do this final step today, <em>set an exact day &amp; hour in your Calendar to do this</em>, so you don't forget to do it!)</p>
+<p>. . .</p>
+<p>And that's all the steps!</p>
+<p>Try it out for one area of your life, then slowly expand to others, one Dream at a time.</p>
+<hr>
+<h2>🤔 Q &amp; A</h2>
+<p><strong>Q:</strong> If it really <em>is</em> that trivially easy to write one book a year, become a millionaire by middle age, go from Obese to &quot;Healthy&quot; BMI, and gain university-level mastery of hard skills &amp; topics… why isn't everybody already doing this? Heck, why aren't <em>you</em> doing this, Nicky. Why aren't <em>you</em> already a millionaire polymath scientist-artist supermodel bestselling author?</p>
+<p><strong>A:</strong> lol i dunno. i guess everyone's only living at 2% of their true potential</p>
+<p>( in 2026, i resolve to live up to <em>5%</em> of my true potential! )</p>
+<hr>
+<p>“Write a novel a year” sounds impossible. Most bestselling authors aren’t that prolific. “Write 500 words a day” sounds trivial. You do that unthinkingly between texts &amp; DMs &amp; Slacks.</p>
+<p>Yet <em>they’re the same goal</em>, just on different time-scales.</p>
+<p>That’s the magic of micro-goals and lines-on-a-graph, seeing your past + present + future at a single glance: you can connect the impossible Dream with the possible Daily, see your effect on the future <em>today</em>, and <em>browse the multiverse of possible futures</em> for the one your heart desires.</p>
+<p>📈 Happy Line-making, everyone!<br>
+~ Nicky Case</p>
+<hr>
+<p><strong>P.S:</strong> One of my Dreams this year is to write <em>one blog post a week.</em> I hope you found value in this first entry of my &quot;one post a week&quot; challenge for 2026!</p>
+<p>Let's do the math: I expect my posts to be 2,000 words on average. (this one's 2,600 words long.) So if I write &amp; polish 500 words a day, I can get 1 post done per 4 weekdays, giving me a good buffer. 2,000 words per week × 52 weeks per year = 104,000 words. That's the size of <em>two books</em>.</p>
+<p>If you'd like to keep up on my &quot;books disguised a blog&quot;, sign up for my low-volume, monthly newsletter! Every end of month, I'll share links to the 4 or 5 posts I wrote — this way, you can skip the ones that don't interest you:</p>
+<iframe src="https://ncase.me/ncase-credits/signup2.html" frameborder="no" width=640 height=250></iframe>
+<p>I also reflected on 2025 and wrote more on my resolutions for 2026, in this public Patreon post. TODO You can support my research &amp; writings (always free, online, and open-source!) via <a href="https://www.patreon.com/ncase">Patreon</a>, <a href="https://ko-fi.com/nickycase">Ko-Fi</a>, or <a href="https://www.paypal.com/paypalme/nickycase">PayPal</a> ⤵</p>
+<iframe src="https://ncase.me/ncase-credits/supporters/oct-2025.html" frameborder="no" width="640" height="640"></iframe>
+<p>Bless your cotton socks!  Happy new year 2026!  🎉 🎊 🎉</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>A simple (but inaccurate) rule-of-thumb is Wishnofsky's Rule: 1 pound of fat ~= 3500 kcal. (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4035446/">This rule is inaccurate &amp; there are better models, but honestly it's not <em>too</em> far off.</a>) In other words, with a calorie deficit of 250 kcal a day, you'll have a deficit of 3500 kcal in 14 days, or burning 1 pound of fat per 2 weeks. So, over 2 years, that's ~104 weeks, or burning 104/2 = 52 pounds (23kg). Given <a href="https://commons.wikimedia.org/wiki/File:BMI_chart.png">the standard BMI model </a>(which, yes, is also inaccurate but let's roll with this for now), 52lb/23kg is enough to take you from moderately Obese to &quot;Healthy&quot;. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

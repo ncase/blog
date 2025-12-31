@@ -6,13 +6,177 @@
     <subtitle>I make occasional pictures &amp; words</subtitle>
     <link href="https://blog.ncase.me/feed.xml" rel="self"/>
     <link href="https://blog.ncase.me/"/>
-    <updated>2025-10-30T00:00:00Z</updated>
+    <updated>2026-01-01T00:00:00Z</updated>
     <id>https://blog.ncase.me/</id>
     <author>
         <name>Nicky Case</name>
     </author>
 
     
+    
+
+        
+        
+        <entry>
+            <title>Connect your past, present &amp; future, with lines on a graph</title>
+            <link href="https://blog.ncase.me/lines-on-a-graph/"/>
+            <updated>2026-01-01T00:00:00Z</updated>
+            <id>https://blog.ncase.me/lines-on-a-graph/</id>
+            <content xml:lang="en" type="html">&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2026-01/lines.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;So you have a Dream.&lt;/p&gt;
+&lt;p&gt;Like all worthy Dreams, it may take years or decades to achieve. Alas, the human motivation system &lt;em&gt;can’t&lt;/em&gt; learn from rewards with a year-long delay.&lt;/p&gt;
+&lt;p&gt;So, you&#39;re instead advised to “trust the process”, and convert your long-term goal into regular short-term micro-goals:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write a novel ⇒ write 500 words a day.&lt;/li&gt;
+&lt;li&gt;Cure your social phobia ⇒ talk with one stranger a day.&lt;/li&gt;
+&lt;li&gt;Get married in 10 years ⇒ get 2,000 &lt;a href=&quot;https://colah.github.io/personal/micromarriages/&quot;&gt;micromarriages&lt;/a&gt; a week.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This &lt;em&gt;is&lt;/em&gt; great advice, and I endorse it, but… it feels incomplete? If every day I just focus on this day, I feel like I&#39;m in a hamster wheel, hitting my same micro-goal over and over again, but for what? Intellectually, I know &amp;quot;for what&amp;quot; — the Dream — but I don&#39;t &lt;em&gt;feel&lt;/em&gt; it anymore.&lt;/p&gt;
+&lt;p&gt;So, here&#39;s a solution that reliably helps me &lt;em&gt;feel&lt;/em&gt; the connection between my past, present &amp;amp; future: &lt;strong&gt;lines on a graph!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let&#39;s look at 3 examples: project management, money, and weight loss.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;🚀 Example 1: Projects&lt;/h2&gt;
+&lt;p&gt;The good news is I’m my own boss. The bad news is my boss is a moron.&lt;/p&gt;
+&lt;p&gt;Specifically, my boss (me) is bad at project management. She (I) still is (am), to be honest. But the tool that&#39;s helped me the most is the &lt;a href=&quot;https://en.wikipedia.org/wiki/Burndown_chart&quot;&gt;Burndown Chart&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;How it works: First, give your project (or &amp;quot;sprint&amp;quot;) a deadline, and break it down into small tasks. Give each task a number of &amp;quot;points&amp;quot; it&#39;s worth (I just make points = hours). Then each day, do tasks. Your burndown chart software will then show you, in a single graph:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your past: how many points/hours you&#39;ve gone through&lt;/li&gt;
+&lt;li&gt;Your present: how many points/hours you need to do &lt;em&gt;today&lt;/em&gt; to stay on track&lt;/li&gt;
+&lt;li&gt;Your future: when you&#39;ll finish your project!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;( &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:SampleBurndownChart.svg&quot;&gt;example chart by User:PabloStraub&lt;/a&gt; ⤵ )&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2026-01/burndown.png&quot; alt=&quot;Chart of ideal vs actual hours left of work to do, over time&quot; title=&quot;Chart of ideal vs actual hours left of work to do, over time&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;When I shipped my latest project, &lt;a href=&quot;https://aisafety.dance/p3/&quot;&gt;a 20,000-word-with-40-illustrations behemoth&lt;/a&gt;, I used a variant called a Burnup Chart, which also tracks total estimated time &lt;em&gt;over time&lt;/em&gt;, to see how badly I mis-estimated how long tasks would take. Here&#39;s my actual chart:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2026-01/burnup.png&quot; alt=&quot;Chart of my ideal hours done, actual hours done, and estimated total hours, over time&quot; title=&quot;Chart of my ideal hours done, actual hours done, and estimated total hours, over time&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;( As you can see: I started off estimating that project would take ~25 hours, but by the end it turned out to be ~75h. I was off by a factor of three, yeesh. But thanks to this Burnup Chart design, &lt;em&gt;I could account for my own mis-accounting&lt;/em&gt;, and see where the blue &amp;amp; red trendlines would intersect, to get a better estimate of when I&#39;d actually finish my project. And I did, in fact, finish by Dec 1st 2024, as planned! )&lt;/p&gt;
+&lt;p&gt;The best part about Burndown/Burnup charts? &lt;strong&gt;I can see how different decisions will affect the future, &lt;em&gt;today.&lt;/em&gt;&lt;/strong&gt; For example, I can try deleting a task, or taking an extra break day, or increasing hours worked a day, and &lt;em&gt;immediately&lt;/em&gt; see how that&#39;d affect when I&#39;ll finish my project.&lt;/p&gt;
+&lt;p&gt;By tying my past-present-future together into lines on a graph, not only am I more motivated, I also get &lt;em&gt;instant feedback&lt;/em&gt; from the future.&lt;/p&gt;
+&lt;p&gt;(&lt;a href=&quot;https://docs.google.com/spreadsheets/d/1AyFS1ufnYWcGjjC5KxvSrfb04f64UYwNChvqlR7cNwI/edit?usp=sharing&quot;&gt;Here&#39;s a blank template&lt;/a&gt;, and &lt;a href=&quot;https://docs.google.com/spreadsheets/d/11faTjGrXp_pUn-NzBG-ioYPew-IDMVS5RViqYPH_R8U/edit?usp=sharing&quot;&gt;here&#39;s an actual example of when I used it&lt;/a&gt;.)&lt;/p&gt;
+&lt;h2&gt;💸 Example 2: Money&lt;/h2&gt;
+&lt;p&gt;Another example of &amp;quot;see your effect on the future, today&amp;quot; — just enter your current income &amp;amp; spending into a spreadsheet, multiply by the compounding interest of your savings/investments, and voilà: (example data, not my real finances)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2026-01/money1.png&quot; alt=&quot;Spreadsheet of income, expenses, and savings over time&quot; title=&quot;Spreadsheet of income, expenses, and savings over time&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Again, this lets you play with decisions like &amp;quot;what if I tried to increase income by this much&amp;quot;, &amp;quot;what if I tried to reduce my rent by that much&amp;quot;, and you get &lt;em&gt;instant&lt;/em&gt; future-feedback.&lt;/p&gt;
+&lt;p&gt;But more importantly, it helps you viscerally &lt;em&gt;see&lt;/em&gt; the connection between your short-term micro-goals, and long-term Dream. &amp;quot;Save $10 a day&amp;quot; is doable but doesn&#39;t sound like much, but — just do the math — and you&#39;ll find it&#39;s enough to &lt;em&gt;retire a millionaire at age 63, already adjusted for inflation, starting from zero money!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2026-01/money2.png&quot; alt=&quot;Spreadsheet showing how one can become a millionaire by retirement age, just by saving $10 a day into a low-fee diversified index fund&quot; title=&quot;Spreadsheet showing how one can become a millionaire by retirement age, just by saving $10 a day into a low-fee diversified index fund&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;( Quick aside, &lt;a href=&quot;https://blog.ncase.me/30/#tip_3&quot;&gt;the best advice for almost all laypeople&lt;/a&gt;: ditch the fancy BS mutual funds, and forget about day-trading stocks. Just put your money in a very-low-fee diversified index fund. If that feels icky because you&#39;re investing in capitalism, remember, if you put your money in a savings account, your bank will &lt;em&gt;still&lt;/em&gt; invest it, they&#39;ll just give &lt;em&gt;you&lt;/em&gt; nothing but crumbs. Also: you can pick a socially-responsible index fund that excludes weaponry &amp;amp; fossil fuels. )&lt;/p&gt;
+&lt;p&gt;( Here&#39;s &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1-Bqc9K_WiBVUD5dhS0bGmwZsw07e4boe3DZB7bDU5tk/edit?usp=sharing&quot;&gt;the spreadsheets for both the above money examples&lt;/a&gt; )&lt;/p&gt;
+&lt;h2&gt;🏋️‍♀️ Example 3: Weight&lt;/h2&gt;
+&lt;p&gt;Finally, the most cliché New Year&#39;s Resolution: losing weight. Again, use a spreadsheet with lines on a graph: (my actual data)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2026-01/weight.png&quot; alt=&quot;Graph of my weight over time, with trendline, and example of one day&#39;s data&quot; title=&quot;Graph of my weight over time, with trendline, and example of one day&#39;s data&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;You can see, at a glance, the connection between:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your past: weight over time&lt;/li&gt;
+&lt;li&gt;Your present: your target caloric deficit for &lt;em&gt;today&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Your future: when you&#39;re likely to hit your weight goal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;( I find that visualizing the trendline is emotionally helpful, because weight is &lt;em&gt;so variable&lt;/em&gt; from day to day. Seeing the trendline helps reassure me, ignore the daily noise, I&#39;m on the right track. )&lt;/p&gt;
+&lt;p&gt;And again, you can play with &lt;em&gt;what if&#39;s&lt;/em&gt;, and get instant future-feedback.
+A daily micro-goal like &amp;quot;250 calorie deficit&amp;quot; (one less cookie a day) — do the math&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/lines-on-a-graph/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; — becomes &amp;quot;lose 50lb (23kg) in two years&amp;quot; (enough to get you from moderately-Obese to &amp;quot;Healthy&amp;quot; BMI!)&lt;/p&gt;
+&lt;p&gt;( &lt;strong&gt;IMPORTANT:&lt;/strong&gt; a) Yes both BMI and the Calorie-In-Calorie-Out model are &lt;em&gt;very&lt;/em&gt; incomplete and flawed, b) Being Overweight &amp;amp; Obese Class I (25 &amp;lt; BMI &amp;lt; 35) is probably fine health-wise; previous studies didn&#39;t control for exercise levels &amp;amp; cardiovascular fitness (&lt;a href=&quot;https://dip2023.s3.amazonaws.com/Lecture%204/Barry-2014.pdf&quot;&gt;see Figures 3 &amp;amp; 4&lt;/a&gt;), c) May I interest you in the &lt;a href=&quot;https://slimemoldtimemold.com/2022/07/12/lose-10-6-pounds-in-four-weeks-with-this-one-weird-trick-discovered-by-local-slime-hive-mind-doctors-grudgingly-respect-them-hope-to-become-friends/&quot;&gt;Potato Diet&lt;/a&gt;? Potatoes fill you up very fast (high protein &amp;amp; high fiber if you keep the skins), have almost all the daily nutrients you need, and are versatile foods you can cook in many ways to keep the diet interesting. I did the Potato Diet for a month and lost 10 pounds, and I was &lt;em&gt;already&lt;/em&gt; &amp;quot;Normal&amp;quot; BMI! d) Or, ask your doctor about semaglutide. (&lt;a href=&quot;https://www.nejm.org/doi/full/10.1056/NEJMoa2032183&quot;&gt;see Figure 1&lt;/a&gt;) )&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.google.com/spreadsheets/d/1N9tBR_qn7J4kBPcGkeG-S_kf6mHUlPoJs44unSS_msA/edit?usp=sharing&quot;&gt;Here&#39;s my weight-tracking Google Sheets template!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Anyway, let’s wrap up:&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;🚀 Get started with lines today!&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;Huh, what an interesting &amp;amp; inspiring article! I&#39;ll try this later&amp;quot;&lt;br /&gt;
+(one year later)&lt;br /&gt;
+&amp;quot;Oh no I forgot.&amp;quot;&lt;/p&gt;
+&lt;p&gt;~ you, if you don&#39;t implement this &lt;em&gt;right now&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So before you close this tab, at least ask yourself:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1) What&#39;s a Dream you have, that you&#39;ve wanted for a long while, yet haven&#39;t done it yet?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;No shame here, it can be as wacky or tacky as your heart desires. For example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📕 Write the next Great Canadian Novel&lt;/li&gt;
+&lt;li&gt;🧠 Master the secrets of the universe&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;No, seriously, stop &amp;amp; think of a Dream you have. Silently think it and/or write it down, before continuing.&lt;/p&gt;
+&lt;p&gt;Got one?&lt;/p&gt;
+&lt;p&gt;Good. Next step:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2) How can you convert your long-term Dream into a regular micro-goal?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;What makes a good micro-goal:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can do it regularly &amp;amp; often. (e.g. daily, weekly)&lt;/li&gt;
+&lt;li&gt;There&#39;s a clear, specific pass/fail. (e.g. &amp;quot;write 500 words&amp;quot; vs &amp;quot;do some writing&amp;quot;)&lt;/li&gt;
+&lt;li&gt;It &lt;em&gt;causes, not just correlates with&lt;/em&gt;, your long-term goal. (to mitigate &lt;a href=&quot;https://en.wikipedia.org/wiki/Goodhart%27s_law&quot;&gt;Goodhart’s Law&lt;/a&gt;, where “what gets measured gets gamed”)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Running with the above examples:&lt;/p&gt;
+&lt;p&gt;📕 &amp;quot;Write a Great novel&amp;quot; ⇒ &lt;strong&gt;Write/edit 500 words a day.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;500 words a day is easy. You probably write that much alone in text messages.&lt;/li&gt;
+&lt;li&gt;A novel is around 50,000 words. At 500 words a day, you can finish the first draft in 100 days, by mid-April. Then, &lt;em&gt;editing&lt;/em&gt; 500 words a day, you can create a polished draft by mid-July. Then, editing 500 words a day &lt;em&gt;again&lt;/em&gt;, you can create a good final version by mid-October.&lt;/li&gt;
+&lt;li&gt;So: by writing/editing a mere 500 words a day, you can &lt;em&gt;publish a novel every year&lt;/em&gt;, with two months to spare!
+&lt;ul&gt;
+&lt;li&gt;(The exact numbers vary if you want to write longer books, or do more revisions, but the general result holds: you &lt;em&gt;could&lt;/em&gt; complete a polished book every 1 or 2 years, by writing/editing only 500 to 1000 words a day.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Your first novel is very unlikely to be Great, but with more practice &amp;amp; feedback, you maximize your chances of writing a truly Great work. Persist! Remember that Dune was Frank Herbert&#39;s &lt;em&gt;6th&lt;/em&gt; novel! (As for GenAI? The people will be thirsty for quality, amidst the coming flood of AI slop.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;🧠 &amp;quot;Master &lt;s&gt;the secrets of the universe&lt;/s&gt; Physics&amp;quot; ⇒ &lt;strong&gt;Study 1 hour a day.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1 hour a day is easy-ish. You probably waste that much time a day on Internet Attention Sinks. (I know I do)&lt;/li&gt;
+&lt;li&gt;Here&#39;s a study plan, at 1 hour a day:
+&lt;ul&gt;
+&lt;li&gt;Day 1, Day 2: Watch one of &lt;a href=&quot;https://theoreticalminimum.com/courses&quot;&gt;Leonard Susskind&#39;s free online Stanford University lectures&lt;/a&gt;. Each lecture is around 2 hours, so watch half today, half tomorrow. Write down your notes &amp;amp; questions.&lt;/li&gt;
+&lt;li&gt;Day 3, 4, 5: Ask &lt;a href=&quot;https://claude.ai/&quot;&gt;Claude&lt;/a&gt; or &lt;a href=&quot;https://gemini.google.com/&quot;&gt;Gemini&lt;/a&gt; your questions, to clarify your understanding. (I don&#39;t trust ChatGPT or Grok.) What about LLM hallucinations? As of Jan 1st 2026, I find that large language models are pretty good on educational topics, &lt;em&gt;as long as they&#39;re undergraduate-level or below&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Day 6, 7, 8: Web search for &amp;quot;[topic] practice problems with answers&amp;quot;, then &lt;em&gt;actually do them&lt;/em&gt;. If you get stuck, ask your chatbot of choice for help &lt;em&gt;but not full solutions&lt;/em&gt;. A gym coach shouldn&#39;t lift the weights &lt;em&gt;for&lt;/em&gt; you.&lt;/li&gt;
+&lt;li&gt;Day 9, 10: Make &lt;a href=&quot;https://apps.ankiweb.net/&quot;&gt;Anki flashcards&lt;/a&gt; to remember the core ideas &amp;amp; formulas, easy-ish-ly and effectively. (&lt;a href=&quot;https://www.youtube.com/watch?v=eVajQPuRmk8&quot;&gt;8 min YouTube video&lt;/a&gt; on how &amp;amp; why spaced repetition works)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;So that&#39;s 10 days = 2 weeks with weekends off, per Susskind lecture. There&#39;s 10 lectures per course × 6 courses = 60 lectures. At 2 weeks per lecture × 60 lectures = 120 weeks, or 2 years.&lt;/li&gt;
+&lt;li&gt;So: you can get &lt;em&gt;a college-level understanding of Newtonian physics, Electrodynamics, Quantum mechanics, Special &amp;amp; General relativity, Cosmology, and Entropy&lt;/em&gt;... at the cost of &lt;em&gt;1 hour per weekday&lt;/em&gt; (and $20/month for a chatbot)… spread across 2 years, which is &lt;em&gt;half&lt;/em&gt; the time of a 4-year college degree.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;( It is not exactly a well-kept secret that the modern university system is horribly broken. &lt;a href=&quot;https://www.smbc-comics.com/comic/college-level-mathematics&quot;&gt;Relevant SMBC&lt;/a&gt;: )&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/stuff/2026-01/smbc_university.png&quot; alt=&quot;Comic showing how a university degree costs as much as hiring 3 PhDs to tutor you full time + buying several baby tigers&quot; title=&quot;Comic showing how a university degree costs as much as hiring 3 PhDs to tutor you full time + buying several baby tigers&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;( If you don&#39;t have the pre-requisite math skills for Susskind&#39;s lectures, add an extra five months of &amp;quot;study 1 hour a day&amp;quot;, and use Khan Academy for &lt;a href=&quot;https://www.youtube.com/playlist?list=PL7AF1C14AF1B05894&quot;&gt;high-school algebra&lt;/a&gt; (~12 hours of lectures), and 3Blue1Brown for &lt;a href=&quot;https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&quot;&gt;calculus&lt;/a&gt; (~3 hours) and &lt;a href=&quot;https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&quot;&gt;linear algebra&lt;/a&gt; (~3 hours). So that&#39;s an extra 18h of lectures, and given our above study plan where we tackle 2h of lectures per 2 weeks, that&#39;s an extra 18 weeks, or about five months, of self-study. Again, at just 1 hour a day. What a steal of a deal! )&lt;/p&gt;
+&lt;p&gt;Okay, back on track:&lt;/p&gt;
+&lt;p&gt;Step 1, know your long-term Dream. Step 2, break it down into a sustainable regular micro-goal. This step &lt;em&gt;is&lt;/em&gt; tricky; if you&#39;re stuck, paste a link to this blog post into Claude (with web search turned on), tell &#39;em your Dream, and ask Claude to help you break down your Dream into sustainable micro-goals, with inspiration from the above two examples.&lt;/p&gt;
+&lt;p&gt;After that, your final step:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3) DRAW LINES ON A GRAPH&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I strongly recommend using a spreadsheet program like Google Sheets, Excel, or Numbers. It needs more setup than an app, but you get full freedom to customize it however you like! If you need help setting up a spreadsheet, look up YouTube or consult Claude. Again, you can also get started with my templates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;🚀 Project Burnup: &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1AyFS1ufnYWcGjjC5KxvSrfb04f64UYwNChvqlR7cNwI/edit?usp=sharing&quot;&gt;template&lt;/a&gt;, &lt;a href=&quot;https://docs.google.com/spreadsheets/d/11faTjGrXp_pUn-NzBG-ioYPew-IDMVS5RViqYPH_R8U/edit?usp=sharing&quot;&gt;example with my actual data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💸 Money: &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1-Bqc9K_WiBVUD5dhS0bGmwZsw07e4boe3DZB7bDU5tk/edit?usp=sharing&quot;&gt;templates with examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🏋️‍♀️ Calorie Tracker: &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1N9tBR_qn7J4kBPcGkeG-S_kf6mHUlPoJs44unSS_msA/edit?usp=sharing&quot;&gt;template&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Alternatively, you can use these apps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;🃏 &lt;a href=&quot;https://trello.com/&quot;&gt;Trello&lt;/a&gt; for productivity (with &lt;a href=&quot;https://trello.com/power-ups/search?q=burndown&quot;&gt;a Burndown Chart add-on&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;🐝 &lt;a href=&quot;https://www.beeminder.com/&quot;&gt;Beeminder&lt;/a&gt; for any quantifiable goal. (this app helps you set up &amp;quot;commitments with a sting&amp;quot;! every time you slip behind your goal, Beeminder will take some of your money.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(If you don&#39;t want to do this final step today, &lt;em&gt;set an exact day &amp;amp; hour in your Calendar to do this&lt;/em&gt;, so you don&#39;t forget to do it!)&lt;/p&gt;
+&lt;p&gt;. . .&lt;/p&gt;
+&lt;p&gt;And that&#39;s all the steps!&lt;/p&gt;
+&lt;p&gt;Try it out for one area of your life, then slowly expand to others, one Dream at a time.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;🤔 Q &amp;amp; A&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; If it really &lt;em&gt;is&lt;/em&gt; that trivially easy to write one book a year, become a millionaire by middle age, go from Obese to &amp;quot;Healthy&amp;quot; BMI, and gain university-level mastery of hard skills &amp;amp; topics… why isn&#39;t everybody already doing this? Heck, why aren&#39;t &lt;em&gt;you&lt;/em&gt; doing this, Nicky. Why aren&#39;t &lt;em&gt;you&lt;/em&gt; already a millionaire polymath scientist-artist supermodel bestselling author?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A:&lt;/strong&gt; lol i dunno. i guess everyone&#39;s only living at 2% of their true potential&lt;/p&gt;
+&lt;p&gt;( in 2026, i resolve to live up to &lt;em&gt;5%&lt;/em&gt; of my true potential! )&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;“Write a novel a year” sounds impossible. Most bestselling authors aren’t that prolific. “Write 500 words a day” sounds trivial. You do that unthinkingly between texts &amp;amp; DMs &amp;amp; Slacks.&lt;/p&gt;
+&lt;p&gt;Yet &lt;em&gt;they’re the same goal&lt;/em&gt;, just on different time-scales.&lt;/p&gt;
+&lt;p&gt;That’s the magic of micro-goals and lines-on-a-graph, seeing your past + present + future at a single glance: you can connect the impossible Dream with the possible Daily, see your effect on the future &lt;em&gt;today&lt;/em&gt;, and &lt;em&gt;browse the multiverse of possible futures&lt;/em&gt; for the one your heart desires.&lt;/p&gt;
+&lt;p&gt;📈 Happy Line-making, everyone!&lt;br /&gt;
+~ Nicky Case&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;P.S:&lt;/strong&gt; One of my Dreams this year is to write &lt;em&gt;one blog post a week.&lt;/em&gt; I hope you found value in this first entry of my &amp;quot;one post a week&amp;quot; challenge for 2026!&lt;/p&gt;
+&lt;p&gt;Let&#39;s do the math: I expect my posts to be 2,000 words on average. (this one&#39;s 2,600 words long.) So if I write &amp;amp; polish 500 words a day, I can get 1 post done per 4 weekdays, giving me a good buffer. 2,000 words per week × 52 weeks per year = 104,000 words. That&#39;s the size of &lt;em&gt;two books&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;If you&#39;d like to keep up on my &amp;quot;books disguised a blog&amp;quot;, sign up for my low-volume, monthly newsletter! Every end of month, I&#39;ll share links to the 4 or 5 posts I wrote — this way, you can skip the ones that don&#39;t interest you:&lt;/p&gt;
+&lt;iframe src=&quot;https://ncase.me/ncase-credits/signup2.html&quot; frameborder=&quot;no&quot; width=&quot;640&quot; height=&quot;250&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;I also reflected on 2025 and wrote more on my resolutions for 2026, in this public Patreon post. TODO You can support my research &amp;amp; writings (always free, online, and open-source!) via &lt;a href=&quot;https://www.patreon.com/ncase&quot;&gt;Patreon&lt;/a&gt;, &lt;a href=&quot;https://ko-fi.com/nickycase&quot;&gt;Ko-Fi&lt;/a&gt;, or &lt;a href=&quot;https://www.paypal.com/paypalme/nickycase&quot;&gt;PayPal&lt;/a&gt; ⤵&lt;/p&gt;
+&lt;iframe src=&quot;https://ncase.me/ncase-credits/supporters/oct-2025.html&quot; frameborder=&quot;no&quot; width=&quot;640&quot; height=&quot;640&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;Bless your cotton socks!  Happy new year 2026!  🎉 🎊 🎉&lt;/p&gt;
+&lt;hr class=&quot;footnotes-sep&quot; /&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;A simple (but inaccurate) rule-of-thumb is Wishnofsky&#39;s Rule: 1 pound of fat ~= 3500 kcal. (&lt;a href=&quot;https://pmc.ncbi.nlm.nih.gov/articles/PMC4035446/&quot;&gt;This rule is inaccurate &amp;amp; there are better models, but honestly it&#39;s not &lt;em&gt;too&lt;/em&gt; far off.&lt;/a&gt;) In other words, with a calorie deficit of 250 kcal a day, you&#39;ll have a deficit of 3500 kcal in 14 days, or burning 1 pound of fat per 2 weeks. So, over 2 years, that&#39;s ~104 weeks, or burning 104/2 = 52 pounds (23kg). Given &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:BMI_chart.png&quot;&gt;the standard BMI model &lt;/a&gt;(which, yes, is also inaccurate but let&#39;s roll with this for now), 52lb/23kg is enough to take you from moderately Obese to &amp;quot;Healthy&amp;quot;. &lt;a href=&quot;https://blog.ncase.me/lines-on-a-graph/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+        </entry>
+
     
 
         
@@ -447,7 +611,7 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;...right, clearly I&#39;m still working through my &lt;em&gt;own&lt;/em&gt; psychological horror genre.&lt;/p&gt;
+&lt;p&gt;...right, clearly I&#39;m still working through some issues.&lt;/p&gt;
 &lt;p&gt;I thank Mr. Pounded In The Butt for forcing me to work through it more.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://bookshop.org/p/books/bury-your-gays-chuck-tingle/de2c90d5aa0bc158&quot;&gt;Bury Your Gays&lt;/a&gt; on IndieBound/Bookshop&lt;/strong&gt; (content note: gore, homophobia)&lt;/p&gt;
 &lt;hr /&gt;
@@ -2806,130 +2970,6 @@ Call me a groomer, the way I&#39;m making dogs wet&lt;br /&gt;
 &lt;li id=&quot;fn8&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Well except for Rem. Monster Mommy can step on me &lt;a href=&quot;https://blog.ncase.me/signal-boosts-aug-2024/#fnref8&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&quot;fn9&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;See &lt;a href=&quot;https://en.wikipedia.org/wiki/Trolley_problem&quot;&gt;Wikipedia page for The Trolley Problem&lt;/a&gt;. Philippa Foot first proposed it as an aside in &lt;a href=&quot;https://philpapers.org/archive/footpo-2.pdf&quot;&gt;her 1967 paper&lt;/a&gt;, Ursula Le Guin published her story in 1973, then Judith Jarvis Thomson officially coined it &amp;quot;The Trolley Problem&amp;quot; in &lt;a href=&quot;http://web.archive.org/web/20240626223625/https://learning.hccs.edu/faculty/david.poston/phil1301.80361/readings-for-march-31/JJ%20Thomson%20-%20Killing-%20Letting%20Die-%20and%20the%20Trolley%20Problem.pdf&quot;&gt;her 1976 paper&lt;/a&gt;. &lt;a href=&quot;https://blog.ncase.me/signal-boosts-aug-2024/#fnref9&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-</content>
-        </entry>
-
-    
-
-        
-        
-        <entry>
-            <title>Signal Boosts for June 2024</title>
-            <link href="https://blog.ncase.me/signal-boosts-june-2024/"/>
-            <updated>2024-06-28T00:00:00Z</updated>
-            <id>https://blog.ncase.me/signal-boosts-june-2024/</id>
-            <content xml:lang="en" type="html">&lt;p&gt;Ay it&#39;s yo&#39; girl Nicky, sharing &lt;a href=&quot;https://blog.ncase.me/signal-boosts-may-2024&quot;&gt;another&lt;/a&gt; collection of cool/useful stuff I found last month!&lt;/p&gt;
-&lt;p&gt;In no particular order:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#khan&quot;&gt;An actually-good tutor-bot&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#obsidian&quot;&gt;A note-taking app&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#data&quot;&gt;Data detectives&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#murder&quot;&gt;Binging on mystery novels&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#clover&quot;&gt;I FOUND A FIVE-LEAF CLOVER&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a id=&quot;khan&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;🌱 Khan Academy&#39;s tutor-bot&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sb-june2024/khan.png&quot; alt=&quot;&quot; /&gt;
-&lt;em&gt;fan of the app, not a fan of the Cronenberg-esque fleshy-speech-bubble mascot...&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;First off, I&#39;m not being sponsored by Khan Academy or OpenAI to mention this. I mean, I&#39;ll take your money, but no-one&#39;s offering.&lt;/p&gt;
-&lt;p&gt;Anyway: 1-on-1 tutoring&#39;s been long known to have one of the greatest effect sizes on learning&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fn1&quot; id=&quot;fnref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;, but alas, 1-on-1 tutoring ain&#39;t cheap. So, that&#39;s always been the promise of AI tutors: personalized tutoring, but affordable to all.&lt;/p&gt;
-&lt;p&gt;So when ChatGPT first came, I was excited then immediately disappointed, coz &lt;em&gt;wow&lt;/em&gt; ChatGPT sucked at tutoring math / physics / technical topics.  For example, I asked it to help me re-derive the rocket equation (which tells you how a rocket&#39;s velocity changes) and after 20 minutes of stringing me along with plausible BS, it told me, &amp;quot;assume the rocket&#39;s velocity is constant&amp;quot;.  &lt;em&gt;That&#39;s&lt;/em&gt; when I closed the app in disgust.&lt;/p&gt;
-&lt;p&gt;Well 2 years later, I can finally honestly say I&#39;ve experienced an &lt;em&gt;actually good&lt;/em&gt; AI tutor:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.khanmigo.ai/&quot;&gt;Khanmigo, by Khan Academy!&lt;/a&gt;&lt;/strong&gt; (powered by GPT-4)&lt;/p&gt;
-&lt;p&gt;(Ok, I haven&#39;t tried the &lt;em&gt;full&lt;/em&gt; Khanmigo yet, I&#39;m currently using &lt;a href=&quot;https://chatgpt.com/g/g-hRCqiqVlM-tutor-me&quot;&gt;Khanmigo Lite&lt;/a&gt; on a free plan of ChatGPT. But after a month of trying it, I&#39;m excited to buy the full version!)&lt;/p&gt;
-&lt;p&gt;Khanmigo, so far, has helped me understand the rocket equation, some integral calculus, and misc stuff from math &amp;amp; physics I wanted to buff up on.&lt;/p&gt;
-&lt;p&gt;A few features of Khanmigo:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Works better on math / physics / technical topics than ChatGPT.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Will not&lt;/em&gt; give you the answer all in one go; instead, it&#39;ll help &lt;em&gt;you&lt;/em&gt; re-discover ideas from scratch!&lt;/li&gt;
-&lt;li&gt;Gives you practice problems, &lt;em&gt;and&lt;/em&gt; gives feedback on your work.&lt;/li&gt;
-&lt;li&gt;Can create graphs &amp;amp; other visuals.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Of course, Khanmigo&#39;s missing that social human element&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fn2&quot; id=&quot;fnref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;, and it&#39;s not as good as a master teacher like, say, 3Blue1Brown... but dare I claim, it&#39;s on par with an &lt;em&gt;average&lt;/em&gt; college tutor, at only $4/month!&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fn3&quot; id=&quot;fnref3&quot;&gt;[3]&lt;/a&gt;&lt;/sup&gt; Also, it&#39;s free for US teachers, and Khan Academy&#39;s a non-profit.&lt;/p&gt;
-&lt;p&gt;And yes, since I&#39;m someone who&#39;s &lt;em&gt;entire income&lt;/em&gt; comes from making educational stuff, I should be slightly scared of this. Oh well. Not a bad way to end up broke, I guess.&lt;/p&gt;
-&lt;p&gt;&lt;a id=&quot;obsidian&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;🪨 Obsidian, a note-taking app&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sb-june2024/obsidian.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;I&#39;ve been on the hunt for a &lt;em&gt;good&lt;/em&gt; note-taking app for years. A decade ago I used Notational Velocity, but my needs outgrew its minimalism. Then I used Bear but it doesn&#39;t have folders &amp;amp; crashed a lot on tablet. Then I used Notion but &lt;em&gt;dear god it&#39;s so slow &amp;amp; laggy&lt;/em&gt;, also there&#39;s no offline mode on Android? Then I used Google Keep, but again, no folders and sometimes laggy. Then I tried a lesser-known app called &lt;a href=&quot;https://www.mweb.im/&quot;&gt;MWeb&lt;/a&gt;, which was pretty good, but there&#39;s no Android version.&lt;/p&gt;
-&lt;p&gt;This month, I (re-)found &lt;strong&gt;Obsidian&lt;/strong&gt;!  I actually &lt;em&gt;did&lt;/em&gt; try Obsidian last year, but it didn&#39;t stick because I went overboard with their cross-linking note system &amp;amp; made a mess of it.  But now, I use Obsidian for almost &lt;em&gt;everything&lt;/em&gt; text-related:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Day / Week / Year task management&lt;/li&gt;
-&lt;li&gt;Journaling &amp;amp; Dream diaries&lt;/li&gt;
-&lt;li&gt;Dumping ideas &amp;amp; notes from research/studying&lt;/li&gt;
-&lt;li&gt;Writing articles — including &lt;em&gt;this&lt;/em&gt; blog post you&#39;re reading!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Some features of Obsidian that make it especially good for me:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;For staying organized:&lt;/strong&gt; Todo-list-style checkboxes; Clicking headers &amp;amp; bulletpoints to hide/collapse sections. (Obsidian also allows cross-linking notes like in Notion, but honestly, as mentioned earlier, every time cross-linking it becomes a mess. Shame, coz that feature &lt;em&gt;sounds&lt;/em&gt; so cool, yet it&#39;s always been bad for me. Other folks swear by it, though.)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;For articles/writing:&lt;/strong&gt; I can write in Markdown (what my blog engine requires), stick pictures in notes, &lt;em&gt;and even use LaTeX, a math-rendering tool&lt;/em&gt;. That last one&#39;s important, since I do math-education stuff sometimes. &#92;(a^2 + b^2 = &#92;text{yo momma}&#92;)&lt;/li&gt;
-&lt;li&gt;(Finally: Obsidian allows plug-ins, so if there&#39;s some other feature you want, someone&#39;s probably written a plug-in for that!)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I currently use Obsidian on Mac OS X, iPad, and Android. App itself is free, but I pay $4/month for Obsidian Sync, to synchronize all my devices. Again, I&#39;m not being sponsored to say any of this, I just really like Obsidian.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://obsidian.md/&quot;&gt;Check out Obsidian here!&lt;/a&gt;&lt;/strong&gt; Available on all major platforms.&lt;/p&gt;
-&lt;p&gt;(CORRECTION on June 29, 2024: The original version of this post claimed that Obsidian was open-source. &lt;a href=&quot;https://github.com/obsidianmd/obsidian-releases?tab=readme-ov-file#about-this-repo&quot;&gt;It&#39;s not.&lt;/a&gt; I don&#39;t know how I mixed it up in my head, sorry. Sincere thanks to J.C. &amp;amp; Q for emailing me about the error!)&lt;/p&gt;
-&lt;p&gt;&lt;a id=&quot;data&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;🍸 Data Colada, data detectives&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A previous version of this post was supposed to go live in January 2019. But the day before it was scheduled, &lt;strong&gt;the Data Colada team (Uri, Leif, and Joe) received an email that we took to be a potential death threat.&lt;/strong&gt; After discussions with the local police, the FBI, and our families, we decided to postpone its publication indefinitely.&lt;/p&gt;
-&lt;p&gt;~ from &lt;a href=&quot;http://datacolada.org/117&quot;&gt;Data Colada #117&lt;/a&gt;  [emphasis added]&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;That wasn&#39;t even the &lt;em&gt;first&lt;/em&gt; time these data detectives got seriously threatened. From &lt;a href=&quot;https://datacolada.org/116&quot;&gt;Data Colada #116&lt;/a&gt;: [emphasis added]&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;We identified evidence of fabricated data in four studies co-authored by Francesca Gino. We asked her employer, Harvard University, to look into it. They spent a year and a half doing that, and determined that we were right. So they contacted the relevant journals with requests for retractions and put Gino on unpaid administrative leave. Then we wrote some blog posts about it. &lt;strong&gt;Then Francesca Gino filed a $25M defamation lawsuit against us and Harvard.&lt;/strong&gt; Legal wackiness ensued.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;That lawsuit is &lt;em&gt;still&lt;/em&gt; ongoing.&lt;/p&gt;
-&lt;p&gt;Anyway, what I love most about Data Colada&#39;s posts is they genuinely feel like &lt;em&gt;murder mysteries.&lt;/em&gt; Showing exhibit A, exhibit B, etc, all independently pointing to stinky fishiness.&lt;/p&gt;
-&lt;p&gt;For example, in &lt;a href=&quot;https://datacolada.org/98&quot;&gt;one of their biggest fraud busts [Data Colada #98]&lt;/a&gt;, they investigated a famous study on honesty. (Yes: Fraud, in a study on honesty. Lady Irony must eat well, coz irony be &lt;em&gt;thicc.&lt;/em&gt;)&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Supposedly,&lt;/em&gt; the study asked 13,488 folks to report how many miles they drove. Now, if the data was &lt;em&gt;real&lt;/em&gt;, you&#39;d expect a bell curve like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sb-june2024/data1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;What you would &lt;em&gt;NOT&lt;/em&gt; expect, is the data looking like &lt;em&gt;this:&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sb-june2024/data2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;That is: looking like someone typed &lt;code&gt;RANDBETWEEN(0,50000)&lt;/code&gt; in Excel to get uniformly-random fake data. And this was just &lt;em&gt;one&lt;/em&gt; of the many signs of fraud our detectives uncovered.&lt;/p&gt;
-&lt;p&gt;Anyway, to read their &amp;quot;data murder mysteries&amp;quot;, check out the above links! Data Colada also writes insightful articles on statistics in general. One of my faves is: &lt;a href=&quot;https://datacolada.org/30&quot;&gt;why the standard way to detect publication bias sucks, and a better way to do it&lt;/a&gt;. (the authors &lt;em&gt;invented&lt;/em&gt; a new statistical tool!)&lt;/p&gt;
-&lt;p&gt;&lt;a id=&quot;murder&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;🔪 Holly Jackson&#39;s mystery novels&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://blog.ncase.me/content/media/sb-june2024/hj.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Iiiiiiiii just binged on all (but one) of Holly Jackson&#39;s books last month.&lt;/p&gt;
-&lt;p&gt;My mini-reviews: (90% spoiler-free)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;HJ&#39;s Good Girl series:
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;A Good Girl&#39;s Guide to Murder:&lt;/strong&gt; A solid classic! Full of surprising-but-logical twists, good character arcs &amp;amp; motivations. Loved how most chapters ended with a running list of notes &amp;amp; questions &amp;amp; hypotheses. Felt kinda &amp;quot;rationalist fic&amp;quot;, with the protagonist – &amp;quot;Pip&amp;quot; – demonstrating a &amp;quot;scientific method&amp;quot; approach. (Main criticism: characters sometimes unrealistically monologue, but the exposition-dump is twist-y enough to be worth it.)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Good Girl, Bad Blood:&lt;/strong&gt; This sequel goes meta: Pip makes a podcast about her story in the previous book, then solves a new missing-persons case for the podcast. The story never uses this idea much (the podcast was not crucial to any clues or story points), and one of the Big Twists un-satisfyingly comes out of nowhere.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;As Good As Dead:&lt;/strong&gt; My misgivings about the 2nd novel were &lt;em&gt;well&lt;/em&gt;-compensated for. The 2nd novel&#39;s ending set up a much more &lt;em&gt;psychological&lt;/em&gt; 3rd novel, with Pip struggling with PTSD, anger, and the injustice of the legal system. (This book shows the reader &lt;em&gt;real&lt;/em&gt; stats, like how often false confessions happen &amp;amp; why.&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fn4&quot; id=&quot;fnref4&quot;&gt;[4]&lt;/a&gt;&lt;/sup&gt;) Then, like &lt;em&gt;Psycho&lt;/em&gt; &amp;amp; &lt;em&gt;Hereditary&lt;/em&gt;, the novel throws a &lt;em&gt;complete&lt;/em&gt; curveball in the middle, and becomes a wildly different story. The book was a bit too hammy on the &amp;quot;everything&#39;s coming full circle!&amp;quot; theme, but, yeah. It worked. Solid ending to the series.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Kill Joy:&lt;/strong&gt; &lt;code&gt;(prequel novella, haven&#39;t read yet)&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;HJ&#39;s standalone books:
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Five Survive:&lt;/strong&gt; Six young adults stuck in an RV in a dead zone with a sniper! Lots of clever MacGyver&#39;ing &amp;amp; cat-and-mouse action. That said, I don&#39;t like novels where the Big Twist is &lt;em&gt;artificially&lt;/em&gt; held from you; in this case, the protagonist &lt;em&gt;knows&lt;/em&gt; (one of) the Big Twists, but her internal monologue refuses to tell you, the reader, until 2/3 of the way in.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;The Re-appearance of Rachel Price:&lt;/strong&gt; A &lt;em&gt;reverse&lt;/em&gt; murder mystery, of someone&#39;s mom coming back from the dead! This one best captured the same spirit of HJ&#39;s first book, but in a fresh distinct way. I&#39;m talking: logical twists, clever detective work, solid emotional character arcs! Ending is disturbing-in-a-good-way, too.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;(If you hate reading, there&#39;s a BBC adaptation of the first novel coming out July, then streaming on Netflix in August. I probably won&#39;t watch it.)
-&lt;a id=&quot;clover&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;🍀 I FOUND A FRIGGIN&#39; &lt;em&gt;FIVE&lt;/em&gt;-LEAF CLOVER&lt;/h2&gt;
-&lt;p&gt;True fact!&lt;/p&gt;
-&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube-nocookie.com/embed/azG7E8LyVqg?si=LPwAI0hVhIN1DH_V&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;Anyway, that&#39;s all for this month, folks. Go home.&lt;/p&gt;
-&lt;hr class=&quot;footnotes-sep&quot; /&gt;
-&lt;section class=&quot;footnotes&quot;&gt;
-&lt;ol class=&quot;footnotes-list&quot;&gt;
-&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;An oft-cited old study found that 1-on-1 tutoring + &amp;quot;mastery learning&amp;quot; = &lt;a href=&quot;https://en.wikipedia.org/wiki/Bloom%27s_2_sigma_problem&quot;&gt;a two-sigma improvement&lt;/a&gt;: that is, the average tutored student gets better than 98%(!!) of non-tutored students. (or, going from a C student to an A student, according to &lt;a href=&quot;https://www.calcunation.com/calculator/bell-curve-grade.php&quot;&gt;this grade curve calculator&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Alas, like much early psych research, this doesn&#39;t replicate.&lt;/strong&gt; (See &lt;a href=&quot;https://www.educationnext.org/two-sigma-tutoring-separating-science-fiction-from-science-fact/&quot;&gt;these&lt;/a&gt; &lt;a href=&quot;https://nintil.com/bloom-sigma/&quot;&gt;reviews&lt;/a&gt; )&lt;/p&gt;
-&lt;p&gt;According to recent meta-analyses, &lt;a href=&quot;https://www.researchgate.net/profile/Matthew-Burns-10/publication/317159091_Meta-Analysis_of_the_Effects_of_Academic_Interventions_and_Modifications_on_Student_Behavior_Outcomes/links/5eeba09d458515814a6825ab/Meta-Analysis-of-the-Effects-of-Academic-Interventions-and-Modifications-on-Student-Behavior-Outcomes.pdf&quot;&gt;1-on-1 tutoring&lt;/a&gt;&#39;s effect size is ~0.5, and &lt;a href=&quot;https://scholarsbank.uoregon.edu/xmlui/bitstream/handle/1794/28137/stockard_jean_id9.pdf?sequence=1&quot;&gt;mastery learning&lt;/a&gt;&#39;s is ~0.5, so added together they probably &amp;quot;only&amp;quot; have a 1-sigma effect: taking an average student to above 68% of other students. (or, C student to B student)&lt;/p&gt;
-&lt;p&gt;Which definitely isn&#39;t as impressive... but still pretty good! &lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Actually, the &amp;quot;social human element&amp;quot; &lt;a href=&quot;http://web.archive.org/web/20240628180937/https://edisciplinas.usp.br/pluginfile.php/4279672/mod_resource/content/1/Intelligent%20tutoring%20systems%20and%20learning%20outcomes%20A%20meta-analysis.pdf&quot;&gt;may not matter much&lt;/a&gt;: &amp;quot;No significant difference between learning from [tutor software] and learning from individualized human tutoring or small-group instruction.&amp;quot;&lt;/p&gt;
-&lt;p&gt;But I still believe (without hard evidence) that an &lt;em&gt;excellent&lt;/em&gt; human (like 3Blue1Brown) can still out-teach the best &lt;em&gt;current&lt;/em&gt; software (for now). &lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&quot;fn3&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;For context, &lt;a href=&quot;https://tutorcruncher.com/average-tutoring-rates/&quot;&gt;the average hourly tutor rate is ~$20&lt;/a&gt;.  So, instead of 1 hour of an &lt;em&gt;average&lt;/em&gt; human tutor, you could have &lt;em&gt;5 months&lt;/em&gt; of Khanmigo. &lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fnref3&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&quot;fn4&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;From &lt;a href=&quot;https://innocenceproject.org/overturning-false-confessions/&quot;&gt;the Innocence Project&lt;/a&gt;: “In approximately 25% of the wrongful convictions overturned with DNA evidence, defendants made false confessions, admissions or statements to law enforcement officials.” &lt;a href=&quot;https://innocenceproject.org/false-confessions/&quot;&gt;False confessions happen&lt;/a&gt; due to a subject&#39;s intellectual disabilities, coercive/deceptive interrogations, being bribed with promise of immunity, sleep-deprived confusion, to protect someone else, etc. &lt;a href=&quot;https://cris.maastrichtuniversity.nl/ws/portalfiles/portal/1091296/guid-03aa0f12-49eb-46f9-9b67-e382ab75fcf1-ASSET1.0.pdf&quot;&gt;Other replicated research&lt;/a&gt; shows it&#39;s really easy to elicit false confessions, even with negative consequences. &lt;a href=&quot;https://blog.ncase.me/signal-boosts-june-2024/#fnref4&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;

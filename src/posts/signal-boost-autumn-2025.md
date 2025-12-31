@@ -242,7 +242,7 @@ Point is: worldwide, more people than not _already would_ trust AI with governan
 
 = = =
 
-Now, although the slope is slippery, I _do_ like my LLM coding assistant, and I'm sympathetic to folks with AI friends and AI romances. 
+Now, although the slope is slippery, I _do_ like my LLM coding assistant, and I'm sympathetic to folks with AI friends and AI romances.
 
 Still, the Gradual Disempowerment paper made a powerful case for a new possible type of AI takeover — not by a super-intelligent AI seeking power, but humans being lazy & greedy, giving away more and more of our autonomy to AIs. And if you try to opt out of the race, you just get trampled.
 
@@ -284,7 +284,7 @@ Example: Users like me prefer supernatural slasher horror-comedies, and the movi
 
 c) **The user's "bias"**. How friendly/critical this user is in their ratings, i.e. when they rate 5-out-of-10, is that "average" or "really bad"?
 
-d) **The global "bias".** How friendly/critical are users in general. 
+d) **The global "bias".** How friendly/critical are users in general.
 
 To recap:
 
@@ -437,7 +437,7 @@ Most LLM-based coding tools right now (GitHub Copilot, Claude Code, AMP Code, et
 - Data visualization isn't Clippy yelling "HEY YOU'RE LOSING WEIGHT AT 1 LB PER 10 DAYS". Spreadsheet apps just let you *see* your data as a line chart, then lets *you* decide how to interpret & act on it.
 - Illustration apps don't have Clippy yelling "HEY THE CHARACTER'S EYES ARE UNEVEN AND ALSO THE COLOUR VALUES ARE MUDDY", the program just lets you *see* asymmetry & values by toggling Flip Horizontal and Greyscale, then lets *you* decide how to fix it, or leave it as an intentional artistic choice.
 
-Geoffrey's analogy: these aren't "copilots", they're Heads-Up Displays (HUDs), like Tony Stark's helmet – **they *augment* your senses, while keeping the autonomy in _your_ hands.** 
+Geoffrey's analogy: these aren't "copilots", they're Heads-Up Displays (HUDs), like Tony Stark's helmet – **they *augment* your senses, while keeping the autonomy in _your_ hands.**
 
 So instead of making Clippy the Coder — which will put junior devs out of a job, and de-skill senior devs — how about we make AI-powered "HUDs", to let you "just see" what a program does, then lets *you* decide what to do about it?
 
@@ -463,7 +463,7 @@ But to this day, there's no way for an average layperson to modify their softwar
 
 Wait, didn't I *just* rail against Clippy's? Do I contradict myself? Very well, I contradict myself. I contain ~~hypocrisies~~ multitudes.
 
-Okay, I haven't figured out my contradictions yet. But both "More HUDs, less Clippy", and "Clippy helps you truly *own* your software", point at the same principle: **fight for the users.** 
+Okay, I haven't figured out my contradictions yet. But both "More HUDs, less Clippy", and "Clippy helps you truly *own* your software", point at the same principle: **fight for the users.**
 
 **Tools should help us automate everything that gets in the way of our self-expression, _not automate away the self-expression itself_.**
 
@@ -574,7 +574,7 @@ Anyway, I bring that up because Snakebird's is a great way to keep your mind off
 
 Snakebird, despite looking like a cutesy mobile game, is _infamous_ in the indie puzzle game community for being sadistically tough. It has a mid-3-star rating on the Apple App Store, because people complain about getting stuck on Level _Two_. As for me, I'm a puzzle aficionado, but it still took me a _month_ of playing ~1 hour a day to beat all 52 levels.
 
- (There _is_ an "easier" version called [Snakebird Primer](https://noumenongames.com/game/snakebird_primer), and [Snakebird Complete](https://www.nintendo.com/us/store/products/snakebird-complete-switch/) contains both Primer + Original. I haven't tried them.) 
+ (There _is_ an "easier" version called [Snakebird Primer](https://noumenongames.com/game/snakebird_primer), and [Snakebird Complete](https://www.nintendo.com/us/store/products/snakebird-complete-switch/) contains both Primer + Original. I haven't tried them.)
 
 But while the game's tough, it's fair! It's always a matter of logical insight, not moon-logic clues or tedious trial-and-error. "Aha!", not "oh that's bullshit". (Okay, except for Level 26, that _was_ bullshit.)
 
@@ -628,7 +628,7 @@ Here's her latest video on merging YouTube channels' thumbnails, and seeing what
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/g-1kUvJqagw?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Also, she happens to be trans, and I want to help boost my fellow up-and-coming trans creators. Everyone including me is very jealous of how fast she's transitioned in a few months and she is very pretty. 
+Also, she happens to be trans, and I want to help boost my fellow up-and-coming trans creators. Everyone including me is very jealous of how fast she's transitioned in a few months and she is very pretty.
 
 **Check her out! [Emnerson's YouTube channel](https://www.youtube.com/@emnersonn)**
 
@@ -654,7 +654,7 @@ A 80's-throwback musical comedy of a tiny ghost trying to be spooky:
 
 (The creator, [Piemations](https://www.youtube.com/@Piemations/videos), usually does animated stuff! They made Sheriff Hayseed, Bird Town, Suction Cup Man, Mike & Zach, and How To Be Cool, if you recognize any of those titles.)
 
-Oh, and the song "BOO!" is just one track from his band's new album, [Musical Scares](https://friesontheside.bandcamp.com/album/musical-scares). The track Big Doggie is my favourite. Comedy aside, it _actually bops_. The intro drop hits so hard, I must've restarted the song a dozen times just to hear that drop again. And I haven't heard the phrase "14 werewolves" in years, got _instant_ psychic damage from that. 
+Oh, and the song "BOO!" is just one track from his band's new album, [Musical Scares](https://friesontheside.bandcamp.com/album/musical-scares). The track Big Doggie is my favourite. Comedy aside, it _actually bops_. The intro drop hits so hard, I must've restarted the song a dozen times just to hear that drop again. And I haven't heard the phrase "14 werewolves" in years, got _instant_ psychic damage from that.
 
 <iframe style="border: 0; width: 640px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=2742795446/size=large/bgcol=333333/linkcol=e32c14/artwork=small/transparent=true/" seamless><a href="https://friesontheside.bandcamp.com/album/musical-scares">Musical Scares by Fries On The Side</a>test</iframe>
 <a id="bury-your-gays"></a>
@@ -685,7 +685,7 @@ So, without spoilers and in no particular order, why Bury Your Gays resonated wi
 - I just love books that get all weird and meta and format-screw-y. (Could you guess I read [House of Leaves](https://thehardtimes.net/blog/opinion-house-of-leaves-is-just-infinite-jest-for-spooky-people/) as a teen and it changed my brain chemistry?)
 - The parallel between Misha's characters being "only" subtextually gay, and Misha _himself_ "only" being semi-out of the closet, is clever, and hits personally in two different ways:
 	1) The line between "using art to work through my own feelings" and "using art to _avoid_ doing the emotional work in real life" is thin, and I struggle with this too.
-	2) I'm like... _out_ about being pansexual & transgender, but I feel like I could be _more_ out? I don't mention it or have 🏳️‍⚧️🏳️‍🌈 flags on my social media bios. (Well, I don't _have_ any social media anymore, but still.) Right now, I'm doing the strategy of "let people know me for my educational work first, then _later_ learn I'm trans, so it's not the first adjective they know about me". 
+	2) I'm like... _out_ about being pansexual & transgender, but I feel like I could be _more_ out? I don't mention it or have 🏳️‍⚧️🏳️‍🌈 flags on my social media bios. (Well, I don't _have_ any social media anymore, but still.) Right now, I'm doing the strategy of "let people know me for my educational work first, then _later_ learn I'm trans, so it's not the first adjective they know about me".
 		- On one hand: me being more out & confident could give inspiration to the many queer folks who need hope right now.    
 		- On the other hand, living true to yourself will draw the attention of people who don't. Bucket-crabs who pull you down into the Normal Bucket, wordcels sophisticatedly rationalizing their Pavlovian disgust-reflexes as the "wisdom of repugnance". And I hate to admit it, but I _am_ irrationally averse to "being confrontational", like "I don't want to make a big deal of it", like "oh they just need time to understand, I won't put it in their face, hurt people hurt people, nobody's the villain of their own story, everyone has a complex rich inner life" and other copium fucking _bullshit_. And it's not for lack of trying or skills. I am *telling* you, Reader, after 10+ years of me studying & practicing & applying Non Violent Communication and Active Listening and Steelmaning and Intellectual Turing Tests and Moral Foundations Theory, years of trying to *really get to know people* behind their mere politics, their *souls*, Reader, I am *reporting* to you: *it was always all bullshit.* People are like onions: as you keep peeling back, you discover that every layer is the fucking same, and then you start crying. Anecdotes of personal change are survivor bias, "intricately layered characters" was invented by Big Book to sell more Books. Humanism is a cult: ~32% of Germans thought Hitler was a great man _in 1952, after Hitler already lost_ and the Holocaust was globally known[^hitler]; ~15% of eligible Americans were in the Ku Klux Klan in the 1920s[^klan]; ~28% of Hutu adult civilians _personally participated_ in the genocide against the Tutsis[^rwanda]; just give up the copium and apply Occam's Razor and finally admit that *the reason mass atrocities keep happening, is simply because the masses are atrocious*. Did your eyes automatically roll? That's how they get you: mark the thoughts not as "dark" or "evil", but just "cringe". *That's* how you censor a thought. All these so-called empathetic Humanist thought-leaders will try to guilt-trip you back into loving humanity. "But they're not all bad, there's good parts in them" isn't wisdom, *it's how abusers gaslight their victims into staying with them.* Humanity *is* the abuser. Humanity does not Spark Joy. It's not the Algorithm, or late capitalism, or Moloch, or woke mind viruses, or egregores, *IT'S YOU.* It's *you.*
 
@@ -714,7 +714,7 @@ Anyway, that was a longer-than-usual Signal Boost! In summary:
 
 <iframe src="https://ncase.me/ncase-credits/signup2.html" frameborder="no" width=640 height=250></iframe>
 
-
+<iframe src="https://ncase.me/ncase-credits/supporters/oct-2025.html" frameborder="no" width="640" height="640"></iframe>
 
 
 
@@ -755,7 +755,7 @@ Anyway, that was a longer-than-usual Signal Boost! In summary:
 
 Homophily's both unavoidable, and actually _desirable_, in my opinion. For example, only ~0.6% of people are programmers like me, but >50+% of my friends are programmers. It wouldn't make personal or career sense for me to have exactly demographically-proportional representation in my friend group. Same for >50+% of my friends being LGBTQ+, left-leaning, urban, English-speaking, and nerdy.
 
-However, if _all_ of my friends (or media sources) are urban, or in STEM, or left-leaning, then I'll be out of touch with the broader world, and *that* may lead to affective/belief polarization. 
+However, if _all_ of my friends (or media sources) are urban, or in STEM, or left-leaning, then I'll be out of touch with the broader world, and *that* may lead to affective/belief polarization.
 
 And what's the difference between affective & belief polarization, concretely?
 
