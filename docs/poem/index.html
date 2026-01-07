@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>a human poem on humans liking AI poems over human poems</title>
+
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=640">
+
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="a human poem on humans liking AI poems over human poems">
+	<meta itemprop="description" content="(⏱️ read time: 4 min)">
+	<meta itemprop="image" content="https://blog.ncase.me/content/stuff/2026-01/poem.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="a human poem on humans liking AI poems over human poems">
+	<meta name="twitter:description" content="(⏱️ read time: 4 min)">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/stuff/2026-01/poem.png">
+	<meta property="og:title" content="a human poem on humans liking AI poems over human poems">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/stuff/2026-01/poem.png">
+	<meta property="og:description" content="(⏱️ read time: 4 min)">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Tue Jan 06 2026 19:00:00 GMT-0500 (Eastern Standard Time)");</script> <!-- let JS figure out if it's too old, show warning -->
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image"  style="background:rgb(222, 243, 255)" >
+            
+            
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			a human poem on humans liking AI poems over human poems
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header">
+                    on jan 7, 2026
+                </span>
+                &nbsp;&nbsp;&middot;&nbsp;&nbsp
+
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a target='_self' href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <!-- TODO: don't show this segment at all, figure out age on build-side -->
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+
+		<p>Oh! To compete!<br>
+With an autocomplete!<br>
+In a recent RCT<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup><br>
+They found that good ol' GPT<br>
+Could beat!<br>
+A human like me.</p>
+<p>Oh! Dare I ask!<br>
+At what special human task!<br>
+Poetry, and humans guessed<br>
+worse than chance, at the test<br>
+of who's human, and confessed<br>
+to like AI above the rest:<br>
+Obsolete!<br>
+A human like me.</p>
+<p>Oh! What a shame!<br>
+Who's the scapegoat I shall blame!<br>
+The masses, their dumb asses?<br>
+Postmodern poets who don't rhyme?<br>
+The study, it's too cruddy?<br>
+Sam Altman tryna make a dime?</p>
+<p><code>Or, let's go back in time?</code></p>
+<p>Copernicus! You <em>did</em> frick us!<br>
+WE ARE NOT THE CENTER.<br>
+Darwin-Wallace! <em>Apes</em>, you call us?!<br>
+WE ARE NOT THE CENTER.<br>
+Turing-Gödel! Turning hurdles!<br>
+Understanding is compression.<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup><br>
+Intelligence is search.<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup><br>
+Existential-o depression<br>
+from each scientific lurch.</p>
+<p>WE ARE NOT THE CENTER.<br>
+THERE IS NOTHING SPECIAL ABOUT BEING:</p>
+<p>A human like me.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>O... kay....?</p>
+<p>Pretty erudite, for a Luddite<br>
+I was playing. Science is a'ight, a'ight?<br>
+I like not dying of cholera or smallpox<br>
+or burying half our kids in a small box<br>
+(as they did before germ theory<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>)<br>
+It's erm, eerie,<br>
+how the past wasn't health-compliant.<br>
+I'd have to be an ungrateful brat<br>
+to piss on the shoulders of giants.</p>
+<p>And yet, the ape-part of me<br>
+the part that lives on a Disc World<br>
+under a dome speckled with Gods,<br>
+the part that hates poetry that doesn't rhyme,<br>
+the part that lives<br>
+<em>in the center</em></p>
+<p>That part cries out!<br>
+It's got to shout!</p>
+<blockquote>
+<p>Oh! Myth is dead.<br>
+It's ok to feel bereft.<br>
+Oh! The ineffable!	<br>
+<em>It's been fully eff'd!</em></p>
+</blockquote>
+<p>Once there was a time when Art was the pinnacle<br>
+of human glory. Then a billion dollars and a nickel<br>
+later, a next-token-predictor can write poetry the fickle<br>
+humans prefer over human poetry. It tickles<br>
+my ironic nerves that we now take superior pride in,<br>
+what,<br>
+Counting the R's in &quot;strawberry&quot;?<br>
+Playing a pixel puzzle game?<sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup><br>
+Drawing hands that aren't scary?<br>
+<em>That's</em> our claim to fame?</p>
+<p>(bish, <em>i</em> can't draw hands either 😭)</p>
+<p>And sure, this current boom may fail<br>
+We've hit diminishing returns on scale<sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup><br>
+Backprop, big data and a VC whale<br>
+May not be enough this time.</p>
+<p><code>Or, let's go forth in time?</code></p>
+<p>Not enough <em>this</em> time.</p>
+<p>But it's <em>only</em> a matter of time.</p>
+<p>We will not be the center.</p>
+<p>We never were.</p>
+<p>And that's fine.</p>
+<p>They raised us to love being special<br>
+(then complain that &quot;narcissism&quot; is up<sup class="footnote-ref"><a href="#fn7" id="fnref7">[7]</a></sup>)<br>
+But growing up means realizing it's okay<br>
+to not be special<br>
+to not be the center of Attention and/or Creation<br>
+to not have poetry that scans good<br>
+Fuck it, I'm having fun<br>
+Once we automate it all away<br>
+And there's nothing we <em>need</em> to do<br>
+And there's nothing we <em>need</em> from each other<br>
+We'll be forced to answer,<br>
+scared<br>
+sacred<br>
+What do we <em>want</em> to do?<br>
+What do we <em>want</em> to be for each other?</p>
+<p><em>Whose center</em><br>
+do you want to be?</p>
+<p>&quot;A human likes <em>me?&quot;</em></p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>Wait, was <em>that</em> my so-called wisdom?<br>
+A saccharine cliché?<br>
+&quot;The real fully-automated space communism<br>
+was all the friends we made along the way&quot;?<br>
+What about AI existential risk?<br>
+What was that about the world being a disk?<br>
+What about AI being used to rope ya<br>
+into a totalitarian dystopia<br>
+and oop, yeah<br>
+well<br>
+Were you expecting anything actually useful from a poem?<br>
+Art? Being <em>useful?</em> lol<br>
+This is why humans prefer AI poetry<br>
+Shit, I can't even have an uplifting moment<br>
+Without undercutting it with ironic cynicism<br>
+(Hey! Maybe that's what'll stop rogue AI)<br>
+(By being trained on internet data)<br>
+(If it becomes self-aware it'll just get depressed)</p>
+<p>Fuck it, I'm having fun</p>
+<p>Let's end this with a <em>true</em> human poem, that I <em>know</em> a corporate chatbot will never make: a poem, of copyrighted characters and sexual content.</p>
+<p>Behold, Art:</p>
+<blockquote>
+<p>There once was a mouse named Mickey<br>
+Who whipped out his mousey dickey<br>
+And started humping<br>
+Mr. Xi Jinping<br>
+While reading the Tiananmen Square Wiki</p>
+<p>(don't worry, it's consensual)</p>
+</blockquote>
+<p>Oh! What a purge!<br>
+Of many a mental urge!<br>
+And my ape, who wants to sing the mythical<br>
+And my brain, who wants to eff the ineffable<br>
+And my heart, who's torn about being ethical<br>
+And the machine, maybe at the pinnacle<br>
+We'll all merge?...</p>
+<p>A human-like me.</p>
+<p><span> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></span></p>
+<iframe src="https://ncase.me/ncase-credits/signup2.html" frameborder="no" width=640 height=250></iframe>
+<iframe src="https://ncase.me/ncase-credits/supporters/jan-2026.html" frameborder="no" width="640" height="640"></iframe>
+<hr>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Well, &quot;recent&quot;. From <a href="https://www.nature.com/articles/s41598-024-76900-1">a 2024 paper</a>: &quot;participants performed below chance levels in identifying AI-generated poems [and] were more likely to judge AI-generated poems as human-authored than actual human-authored poems.&quot; The human poets ranged from Shakespeare to Whitman to Plath. The AI poet was ChatGPT <em>3.5</em>, with no prompt engineering, or feedback &amp; iteration. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><strong>&quot;Understanding is Compression&quot;</strong> is an idea that's been around for centuries, if not exactly in those words. Ockham's Razor says that given two theories that explain the same thing, we should pick the simpler one. Einstein said <em>&quot;A theory is more impressive the greater the simplicity of its premises, the more different things it relates, and the more expanded its area of application.”</em></p>
+<p>And now, this idea is finding good use in AI! Neural networks trained with regularization (rewarding simplicity), and Auto-encoders (compress large input → small embedding → decompress back to original input), both lead to AI that's more robust &amp; generalizes better.</p>
+<p>Hat tip to these papers: <a href="https://spaces-cdn.owlstown.com/blobs/4pab25rnepck8d3lp5lq2jk5ynx7">Understanding as Compression</a> by Daniel A. Wilkenfeld, a delightful accessable read. <a href="https://arxiv.org/pdf/1310.8599">Information compression, intelligence, computing, and mathematics</a> by J Gerard Wolff, founder of the SP (Simplicity-Power) Theory of Intelligence. <a href="https://arxiv.org/pdf/2407.07723">Understanding is Compression</a> by Li, Huang, Wang, Hu, Wyeth, Bu, Yu, Gao, Liu &amp; Li, which show that LLMs can compress text (and even images/audio) <em>better</em> than standard compression algorithms! <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p><strong>&quot;Problem-solving is (heuristic) search&quot;</strong> is also an old idea:</p>
+<p>Turing &amp; Champernowne designed <a href="https://en.wikipedia.org/wiki/Turochamp">the first chess AI</a> in 1948, which searched every possible move &amp; counter-move, then selected the best move, based on a &quot;heuristic&quot; (rule-of-thumb) based on the value of pieces, safety &amp; mobility of the pieces, etc.</p>
+<p>Simon &amp; Newell created the <a href="https://en.wikipedia.org/wiki/General_Problem_Solver">General Problem Solver</a> in 1957, which could take <em>any</em> formal game/system, like mazes or Sudokus or geometry, and search through possible moves (&quot;operators&quot;) to get to the solution. Because of the exponential explosion in possible states, their AI tried to narrow down its search using a means-ends heuristic: first try moves that <em>directly</em> get you closer to your goal, backtrack only when that fails.</p>
+<p>Skipping decades ahead, DeepMind released <a href="https://en.wikipedia.org/wiki/AlphaZero">AlphaZero</a> in 2017, which beat human grandmasters at chess, go, and shogi (&quot;Japanese Chess&quot;). The core of AlphaZero is the Monte Carlo Tree Search, which, once again, is &quot;just&quot; search through possible moves &amp; counter-moves. But this time, instead of being hard-coded like in past chess AIs, the heuristic is a neural network that's learnt from scratch! <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn4" class="footnote-item"><p>For <em>thousands</em> of years, across <em>all</em> human cultures: <a href="https://ourworldindata.org/child-mortality#key-insights">the percent of kids who died before age 15 was around 50%</a>. This only changed around ~1850, when the work of Jon Snow &amp; Louis Pasteur (&amp; many others) proved that diseases spread through &quot;germs&quot; that were invisible to the naked eye. Only after this scientific discovery, public health infrastructure <em>actually worked</em>. Global child mortality plummeted from 50% then to &quot;only&quot; 4% now, and &quot;only&quot; 0.3% in the best countries. To quote a wise philosopher: <a href="https://youtu.be/l4bW99gtXR8?si=HBuGgQPQPSKxltjD&amp;t=187">&quot;YEAH SCIENCE, BITCH!&quot;</a> <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn5" class="footnote-item"><p>The <a href="https://arcprize.org/">Abstraction &amp; Reasoning Corpus (ARC)</a> is one of the few famous tests for AI that is (currently) unbeaten. You know <a href="https://en.wikipedia.org/wiki/Raven%27s_Progressive_Matrices#Problem_structure">those IQ tests</a> where you look at some shapes, figure out the pattern, then select the shape that continues the pattern? ARC is like those, but 1) in pixel-game format, and 2) designed to be &quot;easy for Humans, hard for AI&quot;.</p>
+<p>The reason they're hard for current AI is because — unlike AI excelling at math word problems or reciting facts from textbooks — there <em>is no common pattern</em> in the ARC puzzles, and <em>no way to memorize the answers</em>, because the non-profit behind ARC uses a private test that's never been put online. (<a href="https://arcprize.org/play">but they have a public version humans can play with, and AIs can train with</a>.) <a href="#fnref5" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn6" class="footnote-item"><p>Toby Ord, co-founder of Giving What We Can and author of <em>The Precipice</em> — a book on existential risk that gave AI the highest probability of all things that could cause human extinction this century — more recently, Ord is collecting stats that show, contrary to AI bulls, modern LLM improvements are coming at unsustainably exponential costs:</p>
+<p><a href="https://www.tobyord.com/writing/inference-scaling-and-the-log-x-chart">Inference Scaling and the Log-x Chart</a> shows how AI companies lie with statistics by making their <em>x</em> axis exponential, and <em>not</em> the y axis.</p>
+<p><a href="https://www.tobyord.com/writing/hourly-costs-for-ai-agents">Are the Costs of AI Agents Also Rising Exponentially?</a> shows that, unlike humans — whose performance is linear: we can do 10× as much work in 10× as much time — LLM agents hit diminishing returns <em>fast</em>. <a href="#fnref6" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn7" class="footnote-item"><p>While factchecking my poem, I found a 2024 meta-analysis that showed young people's &quot;narcissism&quot; has actually been <em>declining</em> since 2008, possibly due to the financial crisis! <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/jopy.12982">See Figure 5</a>. I guess the misperception that &quot;narcissism is rising&quot; is due to narcissistic traits being <em>more visible &amp; rewarded</em> in a modern attention economy, not due to actual generational changes.</p>
+<p>Also, reminder that:</p>
+<p>1) <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/jopy.12982">The &quot;narcissism scale&quot; is a flawed measure</a> that mixes up healthy &amp; unhealthy traits,</p>
+<p>2) Don't confuse &quot;younger people score higher on narcissism&quot; (age effect) with &quot;each generation is getting more narcissistic&quot; (cohort effect). <a href="https://journals.sagepub.com/doi/10.1177/25152459251342750">That's a fallacy</a>, like confusing &quot;younger people are shorter in height&quot; and &quot;each generation is getting shorter in height&quot;.</p>
+<p>3) People with <a href="https://en.wikipedia.org/wiki/Narcissistic_personality_disorder">narcissistic personality disorder</a> aren't cartoon villains, they're actual people. <a href="#fnref7" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

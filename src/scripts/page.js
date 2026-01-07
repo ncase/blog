@@ -231,58 +231,60 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
         // Also, get the average color, then modify text & text-shadow color.
         let bannerImage = $("#splash_image_banner");
-        bannerImage.onload = ()=>{
+        if(bannerImage){
+            bannerImage.onload = ()=>{
 
-            // Get average RGB
-            let r=0, g=0, b=0;
-            // Dump the image onto a smol canvas
-            let canvas = document.createElement("canvas"),
-                ctx = canvas.getContext('2d');
-            const SIZE = 50;
-            canvas.width = SIZE;
-            canvas.height = SIZE;
-            ctx.drawImage(bannerImage, 0,0,SIZE,SIZE);
-            let avgColor;
-            // TRY reading its data
-            try {
-                let data = ctx.getImageData(0,0,SIZE,SIZE);
-                data = data.data;
-                const TOTAL_PIXELS = SIZE*SIZE;
-                // Go through each pixel...
-                for(let i=0; i<TOTAL_PIXELS*4; i+=4){
-                    r += data[i];
-                    g += data[i+1];
-                    b += data[i+2];
+                // Get average RGB
+                let r=0, g=0, b=0;
+                // Dump the image onto a smol canvas
+                let canvas = document.createElement("canvas"),
+                    ctx = canvas.getContext('2d');
+                const SIZE = 50;
+                canvas.width = SIZE;
+                canvas.height = SIZE;
+                ctx.drawImage(bannerImage, 0,0,SIZE,SIZE);
+                let avgColor;
+                // TRY reading its data
+                try {
+                    let data = ctx.getImageData(0,0,SIZE,SIZE);
+                    data = data.data;
+                    const TOTAL_PIXELS = SIZE*SIZE;
+                    // Go through each pixel...
+                    for(let i=0; i<TOTAL_PIXELS*4; i+=4){
+                        r += data[i];
+                        g += data[i+1];
+                        b += data[i+2];
+                    }
+                    // And average it (also, floor)
+                    r = Math.floor(r/TOTAL_PIXELS);
+                    g = Math.floor(g/TOTAL_PIXELS);
+                    b = Math.floor(b/TOTAL_PIXELS);
+                }catch(err){
+                    // security error probably, use default 0 0 0
                 }
-                // And average it (also, floor)
-                r = Math.floor(r/TOTAL_PIXELS);
-                g = Math.floor(g/TOTAL_PIXELS);
-                b = Math.floor(b/TOTAL_PIXELS);
-            }catch(err){
-                // security error probably, use default 0 0 0
-            }
 
-            // If it's mostly dark, shift to white text
-            let luminance = 0.2126*(r/256) + 0.7152*(g/256) + 0.0722*(b/256);
-            let isDark = (luminance < 0.5);
-            if(isDark){
-                $("#header").style.color = $("#home_label").style.color = "#fff";
-            }
+                // If it's mostly dark, shift to white text
+                let luminance = 0.2126*(r/256) + 0.7152*(g/256) + 0.0722*(b/256);
+                let isDark = (luminance < 0.5);
+                if(isDark){
+                    $("#header").style.color = $("#home_label").style.color = "#fff";
+                }
 
-            // Text shadow
-            let hex;
-            if( Math.abs(luminance-0.5)<0.1 ){
-                hex = isDark ? "#000" : "#fff"; // if too close to middle-gray, go extreme
-            }else{
-                hex = "#"+r.toString(16)+g.toString(16)+b.toString(16); // else, avg color!
-            }
-            $("#header_words").style.textShadow = `
-                0px 0px 5px ${hex},
-                0px 0px 5px ${hex},
-                0px 0px 5px ${hex}`;
+                // Text shadow
+                let hex;
+                if( Math.abs(luminance-0.5)<0.1 ){
+                    hex = isDark ? "#000" : "#fff"; // if too close to middle-gray, go extreme
+                }else{
+                    hex = "#"+r.toString(16)+g.toString(16)+b.toString(16); // else, avg color!
+                }
+                $("#header_words").style.textShadow = `
+                    0px 0px 5px ${hex},
+                    0px 0px 5px ${hex},
+                    0px 0px 5px ${hex}`;
 
+            }
+            if(bannerImage.complete) bannerImage.onload();
         }
-        if(bannerImage.complete) bannerImage.onload();
 
     }
 
