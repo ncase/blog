@@ -53,7 +53,7 @@ When I shipped my latest project, [a 20,000-word-with-40-illustrations behemoth]
 
 ![Chart of my ideal hours done, actual hours done, and estimated total hours, over time](../content/stuff/2026-01/burnup.png "Chart of my ideal hours done, actual hours done, and estimated total hours, over time")
 
-( As you can see: I started off estimating that project would take ~25 hours, but by the end it turned out to be ~75h. I was off by a factor of three, yeesh. But thanks to this Burnup Chart design, _I could account for my own mis-accounting_, and see where the blue & red trendlines would intersect, to get a better estimate of when I'd actually finish my project. And I did, in fact, finish by Dec 1st 2024, as planned! )
+( As you can see: I started off estimating that project would take ~25 hours, but by the end it turned out to be ~75h. I was off by a factor of three, yeesh. But thanks to this Burnup Chart design, _I could account for my own mis-accounting_, and see where the blue & red trendlines would intersect, to get a better estimate of when I'd actually finish my project. And I did, in fact, finish by Dec 1st 2025, as planned! )
 
 The best part about Burndown/Burnup charts? **I can see how different decisions will affect the future, _today._** For example, I can try deleting a task, or taking an extra break day, or increasing hours worked a day, and _immediately_ see how that'd affect when I'll finish my project.
 
@@ -69,7 +69,9 @@ Another example of "see your effect on the future, today" — just enter your cu
 
 Again, this lets you play with decisions like "what if I tried to increase income by this much", "what if I tried to reduce my rent by that much", and you get _instant_ future-feedback.
 
-But more importantly, it helps you viscerally _see_ the connection between your short-term micro-goals, and long-term Dream. "Save $10 a day" is doable but doesn't sound like much, but — just do the math — and you'll find it's enough to _retire a millionaire at age 63, already adjusted for inflation, starting from zero money!_
+But more importantly, it helps you viscerally _see_ the connection between your short-term micro-goals, and long-term Dream. "Put $10 a day into savings" is doable but doesn't sound like much, but — just do the math — and you'll find it's enough to _retire a millionaire at age 63, already adjusted for inflation, starting from zero money!_
+
+( yes, for people living paycheck-to-paycheck or less, "put aside $10 a day" isn't feasible. but for most middle-class people and up, it should be. )
 
 ![Spreadsheet showing how one can become a millionaire by retirement age, just by saving $10 a day into a low-fee diversified index fund](../content/stuff/2026-01/money2.png "Spreadsheet showing how one can become a millionaire by retirement age, just by saving $10 a day into a low-fee diversified index fund")
 
@@ -201,6 +203,8 @@ Try it out for one area of your life, then slowly expand to others, one Dream at
 **A:** lol i dunno. i guess everyone's only living at 2% of their true potential
 
 ( in 2026, i resolve to live up to _5%_ of my true potential! )
+
+( edit: ok, actual answer to this paradox, I think, is something like "[hyperbolic discounting](https://en.wikipedia.org/wiki/Hyperbolic_discounting) sucks". Less jargon-y: human brains tend to overweigh the short-term over long-term, because the short-term is more immediately visible. My hope is the "lines on a graph" trick helps work around this brain-glitch, by making the long-term more vivid and _here_. )
 
 ---
 
