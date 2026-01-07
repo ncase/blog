@@ -71,7 +71,7 @@ Again, this lets you play with decisions like "what if I tried to increase incom
 
 But more importantly, it helps you viscerally _see_ the connection between your short-term micro-goals, and long-term Dream. "Put $10 a day into savings" is doable but doesn't sound like much, but — just do the math — and you'll find it's enough to _retire a millionaire at age 63, already adjusted for inflation, starting from zero money!_
 
-( yes, for people living paycheck-to-paycheck or less, "put aside $10 a day" isn't feasible. but for most middle-class people and up, it should be. )
+(yes, for people living paycheck-to-paycheck or less, "put aside $10 a day" isn't feasible. but for most middle-class people and up, it should be.)
 
 ![Spreadsheet showing how one can become a millionaire by retirement age, just by saving $10 a day into a low-fee diversified index fund](../content/stuff/2026-01/money2.png "Spreadsheet showing how one can become a millionaire by retirement age, just by saving $10 a day into a low-fee diversified index fund")
 
