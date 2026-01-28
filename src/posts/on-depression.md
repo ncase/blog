@@ -1,12 +1,11 @@
 ---
 title: "Vitamin D & Omega-3 have a larger effect on depression than antidepressants"
 tags:
-  - postTODO
-  - draft
+  - post
 share_image: https://blog.ncase.me/content/stuff/2026-01/depression/depression_thumb.png
-share_desc: TODO
+share_desc: A lay-friendly science explainer (⏱️ 22 min read)
 date: 2026-01-28
-readtime: 21 minutes
+readtime: 22 minutes
 layout: page-2026-01.njk
 hasMath: false
 isDraft: false
@@ -16,13 +15,16 @@ hasOrbit: false
 
 _(content note: scientific discussion of depression & suicide)_
 
-**"Too Long; Didn't Read" Summary:** Exactly what the title says.
+<p style="text-align:center; font-size:1.25em">
+<b>"Too Long; Didn't Read" Summary:</b><br>
+Exactly what the title says.
+</p>
 
 The "standardised effect size" of antidepressants on depression, vs placebo, is around 0.4. (This is like going from an average **C to a C+**.)
 
-In contrast, the effect size of 1500mg/day of "≥60% EPA" Omega-3 is _over twice that_, at around 1.0. (This is like going from a **C to a B**.)
+In contrast, the effect size of 1500mg/day of "≥60% EPA" Omega-3 supplements — which are cheaper & have fewer side effects than antidepressants — is a bit higher, around 0.6. (This is like going from a **C to a B–**.)
 
-Better yet, the effect size of 5000mg/day of Vitamin D is around 1.8! (This is like going from a **C to an A–**.) It works even for people who _don't_ have a Vitamin D insufficiency — which almost half of American adults _do_.
+But, much better: the effect size of 5000mg/day of Vitamin D is around _1.8!_ (This is like going from a **C to an A–**!) It works even for people who _don't_ have a Vitamin D insufficiency, which almost half of American adults _do_.
 
 Even if you're already taking Vitamin D & Omega-3, you may _still_ not be taking enough. The "official" recommendations _are all 3 to 10 times too low_. Both these supplements are safe, cheap, and over-the-counter, with _positive_ side-effects (on Covid & cognition).
 
@@ -30,14 +32,16 @@ So, unless you have specific reasons to not take Vitamin D & Omega-3 — (kidney
 
 **Table of Contents:**
 
-- A crash course in "effect sizes"
-- Interpreting effect sizes on depression
-- Antidepressants
-- Omega-3
-- Vitamin D
-- Conclusion: _All this time, you lacked the Vitamin?_
+- A crash course in "effect sizes" [↪](#effect_sizes)
+- Interpreting effect sizes on depression [↪](#interpreting_depression)
+- Antidepressants [↪](#antidepressants)
+- Omega-3 [↪](#omega_3)
+- Vitamin D [↪](#vitamin_d)
+- Conclusion: _All this time, you lacked the Vitamin?_ [↪](#conclusion)
 
 ---
+
+<a id="effect_sizes"></a>
 
 ## A crash course in "effect sizes"
 
@@ -71,7 +75,29 @@ So: school grades give us a useful way to think about standardized effect sizes!
 - **B:** +1.0 above average
 - **A:** +2.0 above average
 
-(the units are in "standard deviations", or "sigmas". what's sigma? ~~sigma ba--~~ just a unit of "how far away this is from average, relative to the total variation".)
+(see footnote for more precise ranges.[^precise-ranges] the units are in "standard deviations", or "sigmas". what's sigma? ~~sigma ba--~~ just a unit of "how far away this is from average, relative to the total variation".)
+
+[^precise-ranges]: I made up these ranges by requiring the standard letter grades F,D,C,B,A, to have their centers be -2,-1,0,+1,+2. Then, I made sure all in-between grades like C+ or A– had equal intervals. Each interval is +/- ⅙, or ⅓ wide:
+
+    - F---: -3.16 to -2.83
+    - F--: -2.82 to -2.50 
+    - F–: -2.49 to -2.17
+    - **F: -2.16 to -1.83**
+    - F+: -1.82 to -1.50 
+    - D–: -1.49 to -1.17
+    - **D: -1.16 to -0.83**
+    - D+: -0.82 to -0.50 
+    - C–: -0.49 to -0.17
+    - **C: -0.16 to +0.17**
+    - C+: +0.18 to +0.50
+    - B–: +0.51 to +0.83
+    - **B: +0.84 to +1.17**
+    - B+: +1.18 to +1.50
+    - A–: +1.51 to +1.83
+    - **A: +1.84 to +2.17**
+    - A+: +2.18 to +2.50
+    - A++: +2.51 to +2.83
+    - A+++: +2.84 to +3.17
 
 ![How to convert effect sizes to letter grades](../content/stuff/2026-01/depression/bell_grade.png "How to convert effect sizes to letter grades")
 
@@ -81,11 +107,13 @@ For example: spacing out your studying, relative to cramming, will on average _l
 
 (Note 2 — the standard way of "intuitively" describing effect sizes is Cohen's recommendations: 0.2 = small, 0.5 = medium, 0.8 = large. Personally, I prefer the "school grade letter" comparison, since it's more concrete. But hey, you do you.)
 
-But it's not limited to just grades & academic performance — effect sizes can help us understand any kind of difference between groups, in observation or in experiments!
+But it's not limited to just grades & academic performance. Effect sizes can also help us understand any kind of difference between groups, in observation or in experiments!
 
 For example...
 
 ---
+
+<a id="interpreting_depression"></a>
 
 ## Depression!
 
@@ -103,19 +131,20 @@ Let's use our school grade analogy, to interpret effect sizes on mental health:
 
 ![Bell curve of mental health, mapped to effect size / letter grade.](../content/stuff/2026-01/depression/bell_curve_mental_health.png "Bell curve of mental health, mapped to effect size / letter grade.")
 
-So, if an intervention is found to have an effect size of +1.0, that's like going up a letter grade. If something's found to have an effect size of –2.0, that's like going _down_ two letter grades. And so on.
+So, if an intervention is found to have an effect size of +1.0, that's like going up a letter grade. If something's found to have an effect size of -2.0, that's like going _down_ two letter grades. And so on.
 
 Okay, so how do we get peoples' "mental health grades" up?
 
 Let's look at antidepressants, Omega-3, and Vitamin D, in turn:
 
 ---
+<a id="antidepressants"></a>
 
 ## Antidepressants
 
 The good news is they work. The bad news is they don't work as well as you'd think they may work.
 
-**[Cipriani et al 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC5889788/)** is a recent meta-analysis (a study collecting lots of previous studies) that investigated 21 different antidepressants. In total, they analyze 522 studies with 116,477 participants total. The most effective antidepressant, _Amitriptyline_, relative to placebo, had an Odds Ratio of 2.13  — [which converts to](https://www.escal.site/) a Cohen's d effect size of 0.417 — which is "small-medium" according to Cohen's recommendations. Or, by our school-letter-grade comparison: **the best antidepressant would take your mental health grade from an F to F+, or C to C+.**
+**[Cipriani et al 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC5889788/)** is a recent meta-analysis (a study collecting lots of previous studies) that investigated 21 different antidepressants. The most effective antidepressant, _Amitriptyline_, relative to placebo, had an Odds Ratio of 2.13  — [which converts to](https://www.escal.site/) a Cohen's d effect size of 0.417 — which is "small-medium" according to Cohen's recommendations. Or, by our school-letter-grade comparison: **the best antidepressant would take your mental health grade from an F to F+, or C to C+.**
 
 From Figure 3 of that paper, you can see that Amitriptyline has the highest estimated effect size, while the side effects are no worse than placebo:
 
@@ -124,6 +153,8 @@ From Figure 3 of that paper, you can see that Amitriptyline has the highest esti
 Sure, "F to F+" _can_ be lifesaving, but… y'know… that's not a lot. And again, this is the effect _on average._ Some people respond _much_ better to antidepressants… while some respond much worse.
 
 ---
+
+<a id="omega_3"></a>
 
 ## Omega-3
 
@@ -157,7 +188,7 @@ I need to stop going on infodump tangents. Anyway, Omega-3 is any fatty acid wit
 
 _Finally_, there's three main types of Omega-3: EPA (Eicosapentaenoic Acid), DHA (Docosahexaenoic Acid), and ALA (Alpha-Linolenic Acid). ALA is mostly found in plants like chia seeds & walnuts, while EPA & DHA mostly come from seafood, though there _are_ algae-based vegan sources.
 
-_(Figure 1.1 from [Roke 2016](https://atrium.lib.uoguelph.ca/bitstream/10214/9940/1/Roke_Kaitlin_201609_PhD.pdf).⤵ Thank you Kaitlin Samantha Roke for drawing this coz I'm too lazy to draw this myself. Note how the first double-bond "kink" for all these molecules is at the 3rd carbon from the Omega end — hence why they're all called Omega-3's.)_
+_(Figure 1.1 from [Roke 2016](https://atrium.lib.uoguelph.ca/bitstream/10214/9940/1/Roke_Kaitlin_201609_PhD.pdf).⤵ Thank you Kaitlin Samantha Roke for drawing this coz I'm too lazy to draw it myself. Note how the first double-bond "kink" for all these molecules is at the 3rd carbon from the Omega end — hence why they're all called Omega-3's.)_
 
 ![Diagram of ELA, DHA, & ALA; details in main text.](../content/stuff/2026-01/depression/fat5.png "Diagram of ELA, DHA, & ALA; details in main text.")
 
@@ -171,42 +202,46 @@ All the above info in a Venn (technically [Euler](https://en.wikipedia.org/wiki/
 
 Okay, enough yap. Time for the actual data:
 
-**[Liao et al 2019](https://www.nature.com/articles/s41398-019-0515-5.pdf)** did a meta-analysis of double-blinded randomized controlled trials, on Omega-3's effect on depression. Analyzed 26 trials with 2,160 participants total. First: they found no evidence of publication bias — that is, no evidence of people _not_ publishing studies because their effects weren't big enough. That's a good sign!
+**[Sublette et al 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC3534764/)** is an older meta-analysis, but it's the only one I could find that tries to estimate the _actual "dose-response" curve_, which shows: how much effect, for how much treatment. Why is that important? Because one problem with many meta-analyses is they'll do something like: "Study 1 gave patients 1 gram of medicine and saw a +1 improvement in disease, Study 2 gave 10 grams and saw +4 improvement, Study 3 gave 100 grams and saw _negative_ –5 improvement… the average of +1, +4, and –5 is zero... therefore the medicine's effect is zero." ...As mentioned briefly earlier, this is a [meaningless mean](https://datacolada.org/104). That's why we want to know the response _at each dose_.
 
-But more importantly, they found that Omega-3 supplements, that are ≥60% EPA, at around 1 gram per day, have an effect size of 1.03(!!!) on depression, versus placebo. **That's over twice the effect of the _best_ antidepressant, like taking your mental health from F to D, or C to B!**
+So, the Sublette meta-analysis gathered randomized trials studying Omega-3 on depression (vs placebo, of course) and got the following dose-response curve.⤵ Note that the horizontal axis is _not_ just amount of total Omega-3, but specifically _the extra amount of "unopposed" EPA, above the amount of DHA._ Or in other words, "EPA minus DHA":
 
-But it's an upside-down-U shaped relationship: "EPA dosage" _above_ 1 gram a day had no detectable effect. Also, Omega-3 supplements that were _pure_ 100% EPA, "only" had an effect size of +0.50, still on par with the best antidepressant. And pure DHA & or mostly-DHA showed _no_ effect on depression. (These conclusions roughly match an earlier meta-analysis, [Sublette et al 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC3534764/), though _that_ paper found half the effect size, around 0.5. Still on par with the best antidepressant.)
+![Diagram of dose-response curve, of EPA minus DHA, on depression.](../content/stuff/2026-01/depression/Omega3.jpg "Diagram of dose-response curve, of EPA minus DHA, on depression.")
 
-Anyway: you'd want around 1 gram of EPA a day. So if your supplements are 60% EPA, you need 1 gram ÷ 0.6 ~= 1.667 grams = **1667 milligrams per day of 60%-EPA Omega-3 supplements.**
+The top effect size is **around +0.558, which is like going from an F to D–, or C to B–.** You get this maximum effect around 1 to 2 grams of extra EPA, and _too much_ EPA gets worse results. The meta-analysis finds that Omega-3 supplements that are ~60% EPA (and the rest DHA) are optimal.
 
-In comparison, [most official health organizations recommend](https://www.healthline.com/nutrition/how-much-omega-3) "250–500 mg _combined_ EPA and DHA each day for healthy adults." _That is over three times too low,_ at least for optimal effects on depression. Which as we calculated above, is probably around 1500 mg/day. (The official safe dose is 5000 mg/day)
+This finding is roughly in line with later meta-analyses. [Liao et al 2019](https://www.nature.com/articles/s41398-019-0515-5.pdf) also finds that ~1 gram of ≥60% EPA is best, but actually found a much higher effect size: +1.03. [Kelaiditis et al 2023](https://pubmed.ncbi.nlm.nih.gov/37028202/) also finds 1 to 2g of ≥60% EPA is best, but found a lower effect size of +0.43… which is still _as good_ as the _best_ antidepressant!
+
+Either way, let's boil this down to a recommendation. You want around 1 gram of EPA a day. So if your supplements are 60% EPA, you need 1 gram ÷ 0.6 ~= 1.667 grams = 1667 milligrams. Let's round this down for convenience: **get 1500 mg/day of 60%-EPA Omega-3 supplements.**
+
+In comparison, [most official health organizations recommend](https://www.healthline.com/nutrition/how-much-omega-3) "250–500 mg _combined_ EPA and DHA each day for healthy adults." _That is over three times too low,_ at least for optimal effects on depression. Which, as we calculated above, is probably around 1500 mg/day. (The official safe dose is 5000 mg/day)
 
 Finally, a (small) study _directly_ investigating the link between suicide & Omega-3. [Sublette et al 2006](https://psychiatryonline.org/doi/pdf/10.1176/ajp.2006.163.6.1100): “Low \[DHA\] and low Omega-3 proportions \[...\] predicted risk of suicidal behavior among depressed patients over the 2-year period.” Though keep in mind this is a small study, and it's observational not experimental. Also, weird that contrary to the above studies on depression, _DHA_ predicted suicide but _not_ EPA. Not sure what to make of that.
 
-Bonus: Omega-3 may also boost cognition? [Shahinfar et al 2025](https://www.nature.com/articles/s41598-025-16129-8.pdf): “Enhancement
-of global cognitive abilities was observed with increasing omega-3 dosage up to 1500 mg/day. \[effect size = 1.00, like going from a grade of C to B!\], followed by downward trend at higher doses.”
+Bonus: Omega-3 may also boost cognition? [Shahinfar et al 2025](https://www.nature.com/articles/s41598-025-16129-8.pdf): “Enhancement of global cognitive abilities was observed with increasing omega-3 dosage up to 1500 mg/day. \[effect size = 1.00, like going from a grade of C to B!\], followed by downward trend at higher doses.”
 
 ---
+<a id="vitamin_d"></a>
 
 ## Vitamin D
 
-**[Ghaemi et al 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC11650176/)** is a meta-analysis on Vitamin D on depression. Analyzed 31 trials with 24,189 participants total. Again, no publication bias detected. (Good!) Below is Figure 1 + Table 2, showing the effect of Vitamin D dosage, vs placebo, on depression. The solid line is the average estimated effect, dashed lines are 95% confidence interval. Note the effect size is negative in this figure, because they're measuring _reduction_ in depressive symptoms:
+**[Ghaemi et al 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC11650176/)** is a meta-analysis on Vitamin D on depression. Again, it actually estimates a dose-response curve! Below is Figure 1 + Table 2, showing the effect of Vitamin D dosage on depression vs placebo. The solid line is the average estimated effect, dashed lines are 95% confidence interval. Note the effect size is negative in this figure, because they're measuring _reduction_ in depressive symptoms:
 
 ![The effect size (with uncertainty) of Vitamin D dosage on depressive symptoms.](../content/stuff/2026-01/depression/VitaminD.png "The effect size (with uncertainty) of Vitamin D dosage on depressive symptoms.")
 
-**The upper range of uncertainty is lowest at 5000 IU (International Units) of Vitamin D a day**, with an estimated effect size of 1.82, with 95% uncertainty from 0.98 to 2.66. **An effect size of 1.82 is like taking your mental health from an F to a C–, or a C to an A–!** And even in the most pessimistic case, 0.98, that's _still_ over twice as effective as the top antidepressant.
+**The upper range of uncertainty is lowest at 5000 IU (International Units) of Vitamin D a day**, with an estimated effect size of 1.82, with a 95% uncertainty range, from 0.98 to 2.66. **An effect size of 1.82 is like taking your mental health from an F to a C–, or a C to an A–!** And even in the _most pessimistic_ case, 0.98, that's still _over twice as effective_ as the top antidepressant!
 
-(The paper's summary says _8000 IU_ is best, with effect size 2.04, but there's much greater uncertainty there. The paper also finds that longer studies had smaller effects than shorter studies, but this doesn't necessarily mean Vitamin D's effects are short-lived. Looking at Supplementary Table 4, it seems this is partly because longer studies used _lower_ average daily doses. For example, one 52-week study only gave participants 400 IU a day.)
+(The paper's summary says _8000 IU_ is best, with effect size 2.04, but there's much greater uncertainty there. The paper also finds that longer studies had smaller effects than shorter studies, but this does _not_ necessarily mean Vitamin D's effects are short-lived. Looking at Supplementary Table 4, it seems this is partly because longer studies used _lower_ average daily doses. For example, one 52-week study only gave participants 400 IU a day.)
 
 This meta-analysis includes trials with participants who _don't_ have Vitamin D deficiency. There's still a good effect of Vitamin D on depression for them, even if smaller! Though, you probably _are_ lacking Vitamin D: [Liu et al 2018](https://pubmed.ncbi.nlm.nih.gov/29644951/) finds that a bit under half of all adults (41.4%) have Vitamin D Insufficiency.
 
-And that's according to [the "official" recommendation](https://www.healthline.com/nutrition/vitamin-d-dosage), of 400-800 IU a day… which is _is too damn low_. Even the "official" _maximum safe dose_ of Vitamin D, of 4000 IU/day, is too low. [McCullough et al 2019](https://pubmed.ncbi.nlm.nih.gov/30611908/) gave over thousands of patients 5,000 to 10,000 IU/day, for _seven years_, and there were _zero_ cases of serious side effects. This is in line with [Billington et al 2020](https://pubmed.ncbi.nlm.nih.gov/31746327/), a 3-year-long double-blinded randomized controlled trial, where they found "the safety profile of vitamin D supplementation is similar for doses of 400, 4000, and 10,000 IU/day." (though "_mild_ hypercalcemia" increased from 3% to 9%. TBH a small cost for avoiding major depression.)
+And that's according to [the official recommendation](https://www.healthline.com/nutrition/vitamin-d-dosage), of 400-800 IU a day… which is _is too damn low_. Even the official _maximum safe dose_ of Vitamin D, of 4000 IU/day, is too low. [McCullough et al 2019](https://pubmed.ncbi.nlm.nih.gov/30611908/) gave over thousands of patients 5,000 to 10,000 IU/day, for _seven years_, and there were _zero_ cases of serious side effects. This is in line with [Billington et al 2020](https://pubmed.ncbi.nlm.nih.gov/31746327/), a 3-year-long double-blinded randomized controlled trial, where they found "the safety profile of vitamin D supplementation is similar for doses of 400, 4000, and 10,000 IU/day." (though "_mild_ hypercalcemia" increased from 3% to 9%. IMHO, that's a small cost for reducing the risk of major depression & suicide.)
 
 And it makes sense that 10,000 IU a day _should_ be safe. Your skin, exposed to the Sun's ultraviolet rays, can synthesize up to (the equivalent of) 10,000 IU a day, before plateauing out. Source is [Vieth 1999](https://www.sciencedirect.com/science/article/pii/S0002916522043763): “Because vitamin D is potentially toxic, intake of \[1000 IU/day\] has been avoided even though the weight of evidence shows that the currently accepted \[limit\] of \[2000 IU/day\] is too low by at least 5-fold.” (So why are all the official sources still so paranoid about Vitamin D? Well, unfortunately, official/governmental policy is always a few decades behind the science in _any_ field. See Also: the trans fat debate, everything about educational policy.)
 
-Speaking of the Sun, why take supplements instead of just getting Vitamin D from Sun exposure? Well, [skin cancer](https://pubmed.ncbi.nlm.nih.gov/29659012/). But also: because Sun-Skin D varies greatly depending on the season, your latitude, and your skin type. There's less ultraviolet rays from the Sun in winter/fall, and at latitudes further from the equator. And [the darker your skin is, the less Vitamin D your skin makes for the same amount of Sun exposure](https://pmc.ncbi.nlm.nih.gov/articles/PMC10861575/). As expected from the bio-physics of skin, Black Americans have [the highest prevalence of Vitamin D deficiency](https://pmc.ncbi.nlm.nih.gov/articles/PMC6075634/) (82.1%!!), followed by Hispanic adults (62.9%). (But hey, at least Black Americans have the lowest incidence of skin cancer. You win some you lose some.) The point is: speaking as someone with Southeast Asian skin, who's currently in Canada during winter... even if I stood outside naked for hours, I'd get approximately _zero_ IU/day of Vitamin D from the Sun. Thus: supplements.
+Speaking of the Sun, why take supplements instead of just getting Vitamin D from Sun exposure? Well, [skin cancer](https://pubmed.ncbi.nlm.nih.gov/29659012/). But also: because Sun-Skin D varies greatly depending on the season, your latitude, and your skin type. There's less ultraviolet rays from the Sun in winter/fall, and at latitudes further from the equator. And [the darker your skin is, the less Vitamin D your skin makes for the same amount of Sun exposure](https://pmc.ncbi.nlm.nih.gov/articles/PMC10861575/). As expected from the bio-physics of skin, Black adults have [the highest prevalence of Vitamin D deficiency](https://pmc.ncbi.nlm.nih.gov/articles/PMC6075634/) (82.1%!!), followed by Hispanic adults (62.9%). (But hey, at least Black adults have the lowest incidence of skin cancer. You win some you lose some.) The point is: speaking as someone with Southeast Asian skin, who's currently in Canada during winter... even if I stood outside naked for hours, I'd get approximately _zero_ IU/day of Vitamin D from the Sun. Thus: supplements.
 
-Finally, a meta-analysis _directly_ measuring the effect of Vitamin D on suicide rates. [Yu et al 2025](https://link.springer.com/content/pdf/10.1186/s12888-025-06613-w.pdf): “Vitamin D in patients with \[suicidal behaviours\] were significantly lower than in controls (standardized mean difference: –0.69, or a 'medium' difference)”. Reminder that this paper _by itself_ only measures correlation, not causation — but combined with the above experiments of Vitamin D on depression, I think it's reasonable to guess there's a causal effect.
+Finally, a meta-analysis _directly_ measuring the effect of Vitamin D on suicide rates. [Yu et al 2025](https://link.springer.com/content/pdf/10.1186/s12888-025-06613-w.pdf): “Vitamin D in patients with \[suicidal behaviours\] were significantly lower than in controls (standardized mean difference: –0.69, or a 'medium' difference)”. Reminder that this paper _by itself_ only measures correlation, not causation — but combined with the above experiments of Vitamin D on depression, I think it's reasonable to guess it's partly causal.
 
 To recap:
 
@@ -217,7 +252,7 @@ To recap:
 Bonus: Vitamin D supplementation was found in several randomized controlled trials [to reduce mortality from Covid-19](https://pubmed.ncbi.nlm.nih.gov/39225947/)! It [probably helps guard against influenza](https://www.sciencedirect.com/science/article/pii/S2161831322010274) too, though the evidence is small & early.
 
 ---
-
+<a id="conclusion"></a>
 ## Conclusion: _All this time, you lacked the Vitamin?_
 
 Scurvy is caused by a lack of Vitamin C. It's a condition that causes your wounds to re-open up & teeth to fall out. Scurvy used to kill _almost half(!)_ of all sailors on major expeditions; it's estimated millions died. It can be cured by eating lemons.
@@ -238,9 +273,9 @@ Over and over again throughout history, some horrific thing that caused millions
 
 But, as of right now, I feel I can at least confidently claim the following:
 
-- Vitamin D and Omega-3 are _at least on par_ with antidepressants, _on average_. (possibly 2x to 4x as good)
-- The evidence is much stronger for Vitamin D than Omega-3.
-- They're both cheap and safe, so what's the harm of trying? (positive "expected value" for this bet)
+- Vitamin D and Omega-3 are both _at least on par_ with antidepressants.
+- The evidence is much stronger for Vitamin D; it's very plausibly at least _twice_ as good as antidepressants.
+- Both supplements are cheap and safe, so what's the harm of trying? (positive "expected value" for this bet)
 
 So:
 
@@ -255,15 +290,15 @@ So:
 **Then, every day:**
 
 - **Take ~5000 IU of Vitamin D**
-    - ⚠️ be cautious if you have kidney stones. "ask your doctor".
-    - 4,000 IU is the "official maximum safe dose", if you understandably don't trust a random internet blogger.
+    - ⚠️ be cautious if you have kidney stones, or are on medications that could interact with Vitamin D. "ask your doctor".
+    - 4,000 IU is the "official maximum safe dose", if you understandably don't trust a random internet blogger, even though she cited academic sources.
     - 10,000 IU if you're feeling daring / have darker skin / live in less sunny climates.
     - bonus: may improve immune response to Covid & influenza?
 - **Take ~1500 mg of ≥60%-EPA Omega-3**
-    - ⚠️ be cautious if you're on blood thinners. "ask your doctor". 
+    - ⚠️ be cautious if you're on blood thinners, or other medications that could interact with Omega-3. again, "ask your doctor". 
     - bonus: may improve cognition?
 - (Don't quit your existing antidepressants if they're net-positive for you!)
-    - also, ask your doctor about _Amitriptyline_, or those other best-effect-size antidepressants.
+    - you may also want to ask your doctor about _Amitriptyline_, or those other best-effect-size antidepressants.
 
 Can you get these doses of Vitamin D & Omega-3 through whole foods alone, no supplements? Probably, but it'd be expensive & tedious: you'd have to eat something like 2,000 calories of farmed salmon _a day_ to get 5,000 IU/day of Vitamin D. As for Omega-3, eating mostly oily fishes _would_ get you >1000mg of Omega-3, but they'd be _more DHA than EPA_, which the above studies suggest would cancel out the antidepressant effects.
 
@@ -271,8 +306,8 @@ Can you get these doses of Vitamin D & Omega-3 through whole foods alone, no sup
 
 - The best antidepressant: **+0.417**
     - like your mental health grade going from F to F+, or C to C+
-- 1500mg of ≥60%-EPA Omega-3: **+1.03**
-    - like your mental health grade going from F to D, or C to B
+- 1500mg of ≥60%-EPA Omega-3: **+0.558**
+    - like your mental health grade going from F to D–, or C to B–
 - 5000 IU of Vitamin D: **+1.82**
     - like your mental health grade going from F to C–, or C to A–
 
@@ -282,28 +317,32 @@ For completeness & comparison, here's the effect size of other things on depress
     - like going from C to C+
 - Aerobic/Cardio Exercise: **+0.79**, source [Ioannis et al 2018](https://pure-oai.bham.ac.uk/ws/portalfiles/portal/54143117/Ioannis_Morres_et_al_Aerobic_exercise_for_adult_patients_Depression_and_Anxiety_2018.pdf)
     - like going from C to B–
-    - (dosage: "45 minutes, at moderate intensity, three times/week")
+    - (dose: "45 minutes, at moderate intensity, three times/week" ⇒ ~20 min/day)
 - Good Sleep: **+1.10(???)**, a _lot_ of interpretation & calculations, see footnote[^iv-calculate]
     - like going from C to B
-    - (dosage: going from moderate insomnia to healthy sleep)
-- Bright Light Therapy: **+0.487**, source [Menegaz de Almeida et al 2025](https://pubmed.ncbi.nlm.nih.gov/39356500/)
+    - (dose: going from moderate insomnia to healthy sleep)
+- Bright Light Therapy: **+0.487**, source [Menegaz de Almeida et al 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC11447633/)
+    - (the above paper reports Odds Ratio of 2.42, [which converts to](https://www.escal.site/) Cohen's d effect size of +0.487)
     - like going from C to C+
-    - Odds Ratio of 2.42 [converts to](https://www.escal.site/) Cohen's d effect size of +0.487
     - I went [with Wirecutter's recommendation](https://www.nytimes.com/wirecutter/reviews/best-light-therapy-lamp/) for a UV-free 10,000 lux lamp.
+    - (dose: 10,000 lux, 30 min a day)
+- Mindfulness Meditation: **+0.42**, source [Breedvelt et al 2019](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2019.00193/full)
+    - like going from C to C+
+    - (dose: 7 weeks, "153 min each week" ⇒ ~20 min/day)
 
 [^iv-calculate]: [Lee et al 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10039857/) reports the following effect sizes. Digital therapy for Insomnia → Sleep = 0.76, and Digital therapy for Insomnia → Depression = 0.42. Assuming the therapy _for insomnia specifically_ affects depression _only_ through better sleep (Digital therapy for Insomnia → Sleep → Depression), we can do an ["Instrumental Variable"](https://cameron.econ.ucdavis.edu/e240a/ch04iv.pdf) estimate of the effect of Sleep → Depression = 0.42 / 0.76 = 0.55. **To be precise: this is saying, if you improve your sleep by 1 standard deviation, on average your depression improves by 0.55 standard deviations.**
     
-    So: how many standard deviations is going from "moderate insomnia" to "healthy sleep"? The standard measure is the Insomnia Severity Index (ISI), which [you can take online](https://www.sleepprimarycareresources.org.au/questionnaires/isi). A score of 0–7 means no insomnia, 8–14 is subclinical insomnia, 15–21 is clinical insomnia (moderate), 22–28 is clinical insomnia (severe). Let's be conservative and say we're just going from barely clinical to barely healthy: 15 to 7, or a reduction of 8 points. [Yang et al 2009](https://pubmed.ncbi.nlm.nih.gov/19689221/) says a 6-point reduction is 1.5 standard deviations, which means 4 points is 1 standard deviation. So a reduction of 8 points is 2 standard deviations. **So, if you improve your sleep from insomniac to healthy, you improve by at least 8 points, which is 2 standard deviations, so your depression should improve by 2 x 0.55 standard deviations, or ~1.10.**
+    So: how many standard deviations is going from "moderate insomnia" to "healthy sleep"? The standard measure is the Insomnia Severity Index (ISI), which [you can take online](https://www.sleepprimarycareresources.org.au/questionnaires/isi). A score of 0–7 means no insomnia, 8–14 is subclinical insomnia, 15–21 is clinical insomnia (moderate), 22–28 is clinical insomnia (severe). Let's be conservative and say we're just going from barely clinical to barely healthy: 15 to 7, or a reduction of 8 points. [Yang et al 2009](https://pubmed.ncbi.nlm.nih.gov/19689221/) says a 6-point reduction is 1.5 standard deviations, which means 4 points is 1 standard deviation. So a reduction of 8 points is 2 standard deviations. **So, if you improve your sleep from insomniac to healthy, you improve by at least 8 points, which is 2 standard deviations, so your depression should improve by 2 × 0.55 standard deviations, or ~1.10.**
     
     Reminder that my estimate is _full_ of assumptions upon assumptions & these error bars will compound. But I'd be surprised if the true causal effect of going from insomniac to healthy sleep isn't _at least_ a "large" +0.8 effect.
 
 ![Diagram of all the above estimated effect sizes](../content/stuff/2026-01/depression/on-depression-summary.png "Diagram of all the above estimated effect sizes")
 
-(And remember, you can _stack_ any of the above interventions to get an even larger effect! You can't just naively add up the effect sizes, but I'd be surprised if the effect of \{vitamin d + omega-3 + bright lamps + cardio + good sleep\} _combined_ ends up being less than +2.00. Two letter grades up means going from D to B, or, theoretically, from clinically depressed to flourishing! For more papers & my working research notes on "best bang for buck on depression", [check out this Google Doc](https://docs.google.com/document/d/1hjNxJmNjoVktrJDFPtFH1hgzKmGpZkRFQ6Vwf0s7c6w/edit?tab=t.0#heading=h.e0blw3xq3cvm).)
+(And remember, you can _stack_ any of the above interventions to get an even larger effect! You can't just naively add up the effect sizes, but I'd be surprised if the effect of \{vitamin d + omega-3 + bright lamps + cardio + good sleep + meditation\} _combined_ ends up being less than +2.00. Two letter grades up means going from D to B, or, theoretically, from clinically depressed to flourishing! For more papers & my working research notes on "best bang for buck on depression", [check out this Google Doc](https://docs.google.com/document/d/1hjNxJmNjoVktrJDFPtFH1hgzKmGpZkRFQ6Vwf0s7c6w/edit?tab=t.0#heading=h.e0blw3xq3cvm).)
 
-Also, remember that all the above estimates are uncertain. And in general, when scientists replicate psychology experiments more rigorously, the effect size usually shrinks by 1/2. But, I think the overall _qualitative_ picture is still strong: there _exist_ high bang-for-buck ways to reduce depression, which are _at least_ on par with drugs & therapy (possibly 2x to 4x better), that aren't (yet) common knowledge amongst policymakers & the public. And again, they're dirt cheap with minor-to-no adverse side effects. Moderate chance of a big win, for a known tiny cost. That's a positive "expected value" bet right there.
+Also, remember that all the above estimates are uncertain. And in general, when scientists replicate psychology experiments more rigorously, the effect size usually shrinks by ½. But, I think the overall _qualitative_ picture is still strong: there _exist_ high bang-for-buck ways to reduce depression, which are _at least_ on par with drugs & therapy (possibly 2x to 4x better), that aren't (yet) common knowledge amongst policymakers & the public. And again, they're dirt cheap with minor-to-no adverse side effects. Moderate chance of a big win, for a known tiny cost. That's a positive "expected value" bet right there.
 
-I got onto this research rabbithole a few months ago while borrowing my housemate's ADHD meds, which I may or may not eventually collect into a "JOYMAXXING" informal meta-meta-analysis. ([: See me yap about it on video as a cartoon cat](https://youtu.be/JOj97Edna7k?si=xAUt3Kp54RyfGX50&t=334).) But for this blog post, I wanted to dive deeper into Omega-3 & Vitamin D, since their effect sizes are so huge, _and_ they're insultingly cheap & easy, compared to therapy or regular cardio.
+I got onto this research rabbithole a few months ago while borrowing my housemate's ADHD meds, which I may or may not eventually collect into a "JOYMAXXING" informal meta-meta-analysis. ([: See me yap about it on video as a cartoon cat](https://youtu.be/JOj97Edna7k?si=xAUt3Kp54RyfGX50&t=334).) But for this blog post, I wanted to dive deeper into Vitamin D and Omega-3, since their effect sizes are so huge, _and_ they're insultingly cheap & easy, compared to therapy or regular cardio.
 
 Stay safe this winter, keep away the seasonal depression. Get your supplements, and reach out to your friends & loved ones!
 
