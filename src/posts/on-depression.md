@@ -20,7 +20,7 @@ _(content note: scientific discussion of depression & suicide)_
 Exactly what the title says.
 </p>
 
-The "standardised effect size" of antidepressants on depression, vs placebo, is around 0.4. (On average; some people respond much better or much worse.) This is like going from a **C to a C+**.
+The "standardized effect size" of antidepressants on depression, vs placebo, is around 0.4. (On average; some people respond much better or much worse.) This is like going from a **C to a C+**.
 
 In contrast: the effect size of 1500 mg/day of "≥60% EPA" Omega-3 supplements — which are cheaper & have fewer side effects than antidepressants — is a bit higher, around 0.6. This is like going from a **C to a B–**.
 
@@ -30,7 +30,9 @@ Even if you're already taking Vitamin D & Omega-3, you may _still_ not be taking
 
 So, unless you have specific reasons to not take Vitamin D & Omega-3 — (kidney stones, blood thinners, etc) — please try them, for at least a month! They could save your mental health. Maybe even your life.
 
-(edit: oh hi [Hacker News](https://news.ycombinator.com/item?id=46808251)! also, [thank you Josep for catching my terrible typo](https://github.com/ncase/blog/issues/4); I meant 5000 _IU/day_ for Vitamin D, _NOT_ 5000 mg. Jeez.)
+(edit — oh hi [Hacker News](https://news.ycombinator.com/item?id=46808251)! also, [thank you Josep for catching my terrible typo](https://github.com/ncase/blog/issues/4); I meant 5000 _IU/day_ for Vitamin D, _NOT_ 5000 mg. Jeez.)
+
+(edit 2 — I said this in the conclusion but I'll move it earlier up: you can take these supplements _alongside_ traditional antidepressants! You can stack interventions! The research shows that they're still effective even when combined with regular meds. As always, "ask your doctor", show them the peer-reviewed papers cited in this post.)
 
 **Table of Contents:**
 
