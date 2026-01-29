@@ -26,7 +26,7 @@ In contrast, the effect size of 1500 mg/day of "≥60% EPA" Omega-3 supplements 
 
 But, much better: the effect size of 5000 IU/day of Vitamin D is around _1.8!_ (This is like going from a **C to an A–**!) It works even for people who _don't_ have a Vitamin D insufficiency, which almost half of American adults _do_.
 
-Even if you're already taking Vitamin D & Omega-3, you may _still_ not be taking enough. The "official" recommendations _are all 3 to 10 times too low_. Both these supplements are safe, cheap, and over-the-counter, with _positive_ side-effects (on Covid & cognition).
+Even if you're already taking Vitamin D & Omega-3, you may _still_ not be taking enough. The "official" recommendations are all several times too low, and newer research shows that the official "max safe dose" for Vitamin D is 2 times too low. Both these supplements are safe, cheap, and over-the-counter, with _positive_ side-effects (on Covid & cognition).
 
 So, unless you have specific reasons to not take Vitamin D & Omega-3 — (kidney stones, blood thinners, etc) — please try them, for at least a month! They could save your mental health. Maybe even your life.
 
