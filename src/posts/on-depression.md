@@ -170,7 +170,7 @@ The punchline being ~50% of people have 2 testicles while ~50% of people have 0 
 
 And, second: the belief that things will get better is a powerful thing. Unfortunately, the power of hope gets a bad name in medicine: "placebo".
 
-When you do _any_ intervention — medication, supplements, therapy, lifestyle change, etc — you don't just get (effect of intervention). You get (effect of intervention + effect of placebo + effect of time).
+When you take _any_ medicine, you don't just get (effect of medicine). You get (effect of medicine + effect of placebo + effect of time).
 
 And what _is_ the effect of placebo? Amazingly, despite researchers having used placebos for decades, it's only recently that we started testing "open-label" placebos: _placebos where we just tell the patient it's a placebo._ We then compare "getting placebo" to "getting nothing". The effect size of open placebo, on stuff ranging from pain to depression, is around 0.43. ([Spille et al 2023](https://www.nature.com/articles/s41598-023-30362-z))
 
