@@ -20,15 +20,17 @@ _(content note: scientific discussion of depression & suicide)_
 Exactly what the title says.
 </p>
 
-The "standardised effect size" of antidepressants on depression, vs placebo, is around 0.4. (This is like going from an average **C to a C+**.)
+The "standardised effect size" of antidepressants on depression, vs placebo, is around 0.4. (On average; some people respond much better or much worse.) This is like going from a **C to a C+**.
 
-In contrast, the effect size of 1500 mg/day of "≥60% EPA" Omega-3 supplements — which are cheaper & have fewer side effects than antidepressants — is a bit higher, around 0.6. (This is like going from a **C to a B–**.)
+In contrast: the effect size of 1500 mg/day of "≥60% EPA" Omega-3 supplements — which are cheaper & have fewer side effects than antidepressants — is a bit higher, around 0.6. This is like going from a **C to a B–**.
 
-But, much better: the effect size of 5000 IU/day of Vitamin D is around _1.8!_ (This is like going from a **C to an A–**!) It works even for people who _don't_ have a Vitamin D insufficiency, which almost half of American adults _do_.
+But, much better: the effect size of 5000 IU/day of Vitamin D is around _1.8._ This is like going from a **C to an A–**! It works even for people who _don't_ have a Vitamin D insufficiency, which almost half of American adults _do_.
 
 Even if you're already taking Vitamin D & Omega-3, you may _still_ not be taking enough. The "official" recommendations are all several times too low, and newer research shows that the official "max safe dose" for Vitamin D is 2 times too low. Both these supplements are safe, cheap, and over-the-counter, with _positive_ side-effects (on Covid & cognition).
 
 So, unless you have specific reasons to not take Vitamin D & Omega-3 — (kidney stones, blood thinners, etc) — please try them, for at least a month! They could save your mental health. Maybe even your life.
+
+(edit: oh hi [Hacker News](https://news.ycombinator.com/item?id=46808251)! also, [thank you Josep for catching my terrible typo](https://github.com/ncase/blog/issues/4); I meant 5000 _IU/day_ for Vitamin D, _NOT_ 5000 mg. Jeez.)
 
 **Table of Contents:**
 
@@ -291,7 +293,7 @@ So:
 
 - **Take ~5000 IU of Vitamin D**
     - ⚠️ be cautious if you have kidney stones, or are on medications that could interact with Vitamin D. "ask your doctor".
-    - 4,000 IU is the "official maximum safe dose", if you understandably don't trust a random internet blogger, even though she cited academic sources.
+    - 4,000 IU is the "official maximum safe dose", if you understandably don't trust a random internet blogger, even though she cited peer-reviewed sources.
     - 10,000 IU if you're feeling daring / have darker skin / live in less sunny climates.
     - bonus: may improve immune response to Covid & influenza?
 - **Take ~1500 mg of ≥60%-EPA Omega-3**
