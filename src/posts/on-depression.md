@@ -38,9 +38,9 @@ So, Vitamin D & Omega-3: possibly high reward, for low risk. That's a positive "
 
 Unless you have specific reasons to not take Vitamin D & Omega-3 — kidney stones, blood thinners, etc — please try them, for at least a month! They could save your mental health. Maybe even your life.
 
-(**Edit Jan 29th** — [\#2 on the Hacker News frontpage!](https://news.ycombinator.com/item?id=46808251) Thank you for your feedback & constructive criticism. I intended this post to be more, "what makes science awesome is that it's self-correcting, finding mistakes in older science is good, here's how the older science was mistaken". But for some readers, I unintentionally hit the tone of "f\@\#\$ science & the establishment, maaaaan". I've lightly edited this post to make my intended tone more clear. Also: [thank you Josep for catching my medically disastrous typo](https://github.com/ncase/blog/issues/4).)
+(**Edit Jan 29th** — [\#2 on the Hacker News frontpage!](https://news.ycombinator.com/item?id=46808251) Thank you for your feedback, I spent all day editing this post, incorporating the constructive criticism & adding details. Also: [thank you Josep for catching my medically disastrous typo](https://github.com/ncase/blog/issues/4). Also 2: the intended tone of this post is, "what makes science awesome is that it's self-correcting, finding mistakes in older science is good, here's how the older science was mistaken", not "f\@\#\$ science & the establishment, maaaaan".)
 
-(**Also, _MAJOR_ edit:** I downgraded high-dose Vitamin D's effect from 1.8 to 1.0, and my recommendation from 5000 IU/day to 4000 IU/day. My mistake was not applying a more reasonable "prior probability". So, instead of being 4 times better than antidepressants, I now estimate it's "only" 2 times better. Either way, I'm still confident the title of this post holds: high-dose Vitamin D is _as good or better_ than the best antidepressant.)
+(**Also 3, _MAJOR_ edit:** I downgraded high-dose Vitamin D's effect from 1.8 to 1.0, and my recommendation from 5000 IU/day to 4000 IU/day. My mistake was not applying a more reasonable "prior probability". So, instead of being 4 times better than antidepressants, I now estimate it's "only" 2 times better. Either way, I'm still confident the title of this post holds: high-dose Vitamin D is _as good or better_ than the best antidepressant.)
 
 ---
 
