@@ -3,9 +3,9 @@ title: "Vitamin D & Omega-3 have a larger effect on depression than antidepressa
 tags:
   - post
 share_image: https://blog.ncase.me/content/stuff/2026-01/depression/depression_thumb.png
-share_desc: An accessible dive into the science (⏱️ 27 min read)
+share_desc: An accessible deep dive into the science (⏱️ 28 min read)
 date: 2026-01-28
-readtime: 27 minutes
+readtime: 28 minutes
 layout: page-2026-01.njk
 hasMath: false
 isDraft: false
@@ -178,13 +178,25 @@ When you take _any_ medicine, you don't just get (effect of medicine). You get (
 
 ![Diagram explaining effect of treatment vs placebo vs time.](../content/stuff/2026-01/depression/placebo.png "Diagram explaining effect of treatment vs placebo vs time")
 
-And what _is_ the effect of placebo? Amazingly, despite researchers having used placebos for decades, it's only recently that we started testing "open-label" placebos: _placebos where we just tell the patient it's a placebo._ We then compare "getting placebo" to "getting nothing". The effect size of open placebo, on stuff ranging from pain to depression, is around 0.43. ([Spille et al 2023](https://www.nature.com/articles/s41598-023-30362-z))
+<u>The effect of placebo + time:</u> probably around 0.9.[^full-effect]
 
-That is: the effect of (placebo vs nothing) is as strong as (the best antidepressant vs placebo)! But again, I think "placebo" is an insulting word for the power of hope. Hope isn't magic, but it's _measurably_ not-nothing. I assert: we shouldn't dismiss such a connection between mental state & physical health.
+[^full-effect]: See [Fountoulakis & Möller 2011](https://academic.oup.com/ijnp/article-pdf/14/3/405/2688342/14-3-405.pdf) Table 1 Row 2. Will talk more about this paper again in a few paragraphs.
+
+<u>The effect of placebo alone:</u> Amazingly, despite researchers having used placebos for decades, it's only recently that we started testing **"open-label" placebos:** _placebos where we just tell the patient it's a placebo._ We then compare "getting placebo" to "getting nothing". The effect size of open placebo, on stuff ranging from pain to depression, is around 0.43. ([Spille et al 2023](https://www.nature.com/articles/s41598-023-30362-z))
+
+<u>The effect of time alone:</u> Using the above two numbers, I'd guesstimate: 0.9 - 0.43 = 0.47. "Time" includes both natural healing, and ["regression to the mean"](https://en.wikipedia.org/wiki/Regression_toward_the_mean).
+
+So, the _individual effect_ of medication, psychological placebo, and time, _are all around +0.4 each_.  And combined, they give you +1.20, or going from F to D+ or C to B+. That's why many people report antidepressants being lifesaving! (Again, _on average_; some people react much worse.)
+
+"Wait, the improvement from antidepressants is _mostly placebo + time?_" Yes, _and this is widely known in psychiatry._ I mean, they're not yelling it from the rooftops, but it ain't no secret. Decades ago, the infamous [Kirsch & Sapirstein 1998](https://www.academia.edu/download/70722536/KirschandSapirstein1998.pdf) estimated that the improvement from antidepressants is ~75% placebo + time. Even _the most critical response_ to Kirsch's work, [Fountoulakis & Möller 2011](https://academic.oup.com/ijnp/article-pdf/14/3/405/2688342/14-3-405.pdf), still finds it's mostly placebo + time.[^calculation-for-that]
+
+[^calculation-for-that]: See Table 1. A follow-up paper by Kirsch in in 2008 found that the drug group improved by 9.60 (non-standardized) points, and the placebo group by 7.80 points. (So, placebo + time is 7.80/9.60 = 0.81 = 81% of the full effect.) The F&M recalculation found the drug group improved by 10.04 points, and the placebo by 7.85 points. (So, placebo + time is 7.85/10.04 = 0.78 = 78% of the full effect.) And rows 2 & 3 confirm that Kirsch was still right about the following: “The \[total effect\] for drug groups was 1.24 \[C to B+\] and that for placebo 0.92 \[C to B\]” and “The effect size concerning the difference between improvement in drug groups and improvement in placebo groups was 0.32 \[like C to C+\]”. 
+
+But again, I think "placebo" is too dismissive a word for the power of hope. Hope isn't magic, but it's something, and _measurably_ so: around +0.4. **I assert: the placebo effect isn't a bug, it's a feature!** It proves the connection between mental state & physical health.
 
 (The _recent_ discovery of open-label placebos, is also an example of how there's still low-hanging fruit — "$100 bills on the sidewalk" — even in modern medicine! I hope that makes it more plausible to you, that Vitamin D & Omega-3 really _could_ be overlooked, high-impact interventions.)
 
-But anyway, for the rest of this article, I'll only be reporting effect sizes _versus placebo_. Just remember that the power of hope gives you an extra +0.4 (like C to C+) for all interventions.
+But anyway, for the rest of this article, I'll only be reporting effect sizes _versus placebo + time_. Just remember that the power of hope gives you an extra +0.4 (like C to C+) for all interventions.
 
 ---
 
