@@ -22,11 +22,11 @@ Exactly what the title says.
 
 **Longer Summary:**
 
-The "effect size" of antidepressants on depression, vs placebo, is around 0.4. (_On average_; some people respond much better or much worse.) This is like going from a **C to a C+**.
+The "effect size" of the best antidepressants on depression, vs placebo, is around 0.4. (_On average_; some people respond much better or much worse.) This is like going from a **C to a C+**.
 
 In contrast: the effect size of 1500 mg/day of "≥60% EPA" Omega-3 supplements is a bit higher, around 0.6. This is like going from a **C to a B–**. (With uncertainty; at worst, Omega-3's "only" on par with antidepressants.)
 
-But, much better: the effect size of 5000 IU/day of Vitamin D is around _1.8._ This is like going from a **C to an A–**! (With uncertainty; at worst, Vitamin D's "only" twice as effective as antidepressants.) This works even for people who _don't_ have a Vitamin D insufficiency, which almost half of American adults do.
+But, much better: the effect size of 4000 IU/day of Vitamin D is _twice_ as high as antidepressants', around _1.0._ This is like going from a **C to an B**! (With uncertainty; at worst, Vitamin D's "only" on par with antidepressants.) This works even for people who _don't_ have a Vitamin D insufficiency — but almost half of American adults _do_.
 
 Even if you're _already_ taking Vitamin D & Omega-3, double check your dose: it may _still_ not be enough! The official recommendations are all too low, and recent research suggests even the official _maximum_ safe dose for Vitamin D is too low.
 
@@ -38,7 +38,11 @@ So, Vitamin D & Omega-3: possibly high reward, for low risk. That's a positive "
 
 Unless you have specific reasons to not take Vitamin D & Omega-3 — kidney stones, blood thinners, etc — please try them, for at least a month! They could save your mental health. Maybe even your life.
 
-(**Edit Jan 29th** — [\#2 on the Hacker News frontpage!](https://news.ycombinator.com/item?id=46808251) Thank you for your feedback & constructive criticism. I intended this post to be more, "what makes science awesome is that it's self-correcting, finding mistakes in older science is good, here's how the older science was mistaken". But for some readers, I unintentionally hit the tone of "f\@\#\$ science & the establishment, maaaaan". I've lightly edited this post to make my intended tone more clear. Also, [thank you Josep for catching my medically disastrous typo](https://github.com/ncase/blog/issues/4).)
+(**Edit Jan 29th** — [\#2 on the Hacker News frontpage!](https://news.ycombinator.com/item?id=46808251) Thank you for your feedback & constructive criticism. I intended this post to be more, "what makes science awesome is that it's self-correcting, finding mistakes in older science is good, here's how the older science was mistaken". But for some readers, I unintentionally hit the tone of "f\@\#\$ science & the establishment, maaaaan". I've lightly edited this post to make my intended tone more clear. Also: [thank you Josep for catching my medically disastrous typo](https://github.com/ncase/blog/issues/4).)
+
+(**Also, _MAJOR_ edit:** I downgraded high-dose Vitamin D's effect from 1.8 to 1.0, and my recommendation from 5000 IU/day to 4000 IU/day. My mistake was not applying a more reasonable "prior probability". So, instead of being 4 times better than antidepressants, I now estimate it's "only" 2 times better. Either way, I'm still confident the title of this post holds: high-dose Vitamin D is _as good or better_ than the best antidepressant.)
+
+---
 
 **Table of Contents:**
 
@@ -166,11 +170,13 @@ But hang on, _only F to F+_ on average? How does that square with people's perso
 
 Well, first: the average person has around 1 testicle.
 
-The punchline being ~50% of people have 2 testicles while ~50% of people have 0 testicles, hence the average is "around 1". Likewise, the _average_ effect for the best antidepressant is 0.4 — but some people respond much better to that... and some respond much worse.
+The punchline being ~50% of people have 2 testicles while ~50% of people have 0 testicles, hence the average is "around 1". Likewise, the _average_ effect for the best antidepressant is 0.4 — but some people respond much better than that... and some respond much worse.  (e.g. different kinds of antidepressant, different kinds of depression, different kinds of people, etc. Note that this caveat _also_ applies to the Vitamin D & Omega-3 studies, and _all_ medical studies.)
 
 And, second: the belief that things will get better is a powerful thing. Unfortunately, the power of hope gets a bad name in medicine: "placebo".
 
 When you take _any_ medicine, you don't just get (effect of medicine). You get (effect of medicine + effect of placebo + effect of time).
+
+![Diagram explaining effect of treatment vs placebo vs time.](../content/stuff/2026-01/depression/placebo.png "Diagram explaining effect of treatment vs placebo vs time")
 
 And what _is_ the effect of placebo? Amazingly, despite researchers having used placebos for decades, it's only recently that we started testing "open-label" placebos: _placebos where we just tell the patient it's a placebo._ We then compare "getting placebo" to "getting nothing". The effect size of open placebo, on stuff ranging from pain to depression, is around 0.43. ([Spille et al 2023](https://www.nature.com/articles/s41598-023-30362-z))
 
@@ -242,13 +248,13 @@ Anyway, the Sublette meta-analysis gathered randomized trials studying Omega-3 o
 
 The top effect size is **around +0.558, which is like going from an F to D–, or C to B–.** You get this maximum effect around 1 to 2 grams of extra EPA, and _too much_ EPA gets worse results. The meta-analysis finds that Omega-3 supplements that are ~60% EPA (and the rest DHA) are optimal.
 
-This finding is roughly in line with later meta-analyses. [Liao et al 2019](https://www.nature.com/articles/s41398-019-0515-5.pdf) also finds that ~1 gram of ≥60% EPA is best, but actually found a much higher effect size: +1.03. [Kelaiditis et al 2023](https://pubmed.ncbi.nlm.nih.gov/37028202/) also finds 1 to 2g of ≥60% EPA is best, but found a lower effect size of +0.43… which is still _as good_ as the _best_ antidepressant!
+<u>Is this in line with later meta-analyses?</u> More or less! [Liao et al 2019](https://www.nature.com/articles/s41398-019-0515-5.pdf) also finds that ~1 gram of ≥60% EPA is best, but actually finds a higher effect size: +1.03. [Kelaiditis et al 2023](https://pubmed.ncbi.nlm.nih.gov/37028202/) also finds 1 to 2g of ≥60% EPA is best, but found a lower effect size of +0.43… which is still _as good_ as the _best_ antidepressant! So, I'm taking +0.558 as the median estimate.
 
-Either way, let's boil this down to a recommendation. You want around 1 gram of EPA a day. So if your supplements are 60% EPA, you need 1 gram ÷ 0.6 ~= 1.667 grams = 1667 milligrams. Let's round this down for convenience: **get 1500 mg/day of 60%-EPA Omega-3 supplements.**
+<u>Let's convert this to an actionable recommendation:</u> You want around 1 gram of EPA a day. So if your supplements are 60% EPA, you need 1 gram ÷ 0.6 ~= 1.667 grams = 1667 milligrams. Let's round this down for convenience: **get 1500 mg/day of 60%-EPA Omega-3 supplements.**
 
 In comparison, [most official health organizations recommend](https://www.healthline.com/nutrition/how-much-omega-3) "250–500 mg _combined_ EPA and DHA each day for healthy adults." _That is over three times too low,_ at least for optimal effects on depression. Which, as we calculated above, is probably around 1500 mg/day. (The official safe dose is 5000 mg/day)
 
-Finally, a (small) study _directly_ investigating the link between suicide & Omega-3. [Sublette et al 2006](https://psychiatryonline.org/doi/pdf/10.1176/ajp.2006.163.6.1100): “Low \[DHA\] and low Omega-3 proportions \[...\] predicted risk of suicidal behavior among depressed patients over the 2-year period.” Though keep in mind this is a small study, and it's observational not experimental. Also, weird that contrary to the above studies on depression, _DHA_ predicted suicide but _not_ EPA. Not sure what to make of that.
+<u>Direct effect on suicide:</u> Finally, a (small) study _directly_ investigating the link between suicide & Omega-3. [Sublette et al 2006](https://psychiatryonline.org/doi/pdf/10.1176/ajp.2006.163.6.1100): “Low \[DHA\] and low Omega-3 proportions \[...\] predicted risk of suicidal behavior among depressed patients over the 2-year period.” Though keep in mind this is a small study, and it's observational not experimental. Also, weird that contrary to the above studies on depression, _DHA_ predicted suicide but _not_ EPA. Not sure what to make of that.
 
 Bonus: Omega-3 may also boost cognition? [Shahinfar et al 2025](https://www.nature.com/articles/s41598-025-16129-8.pdf): “Enhancement of global cognitive abilities was observed with increasing omega-3 dosage up to 1500 mg/day. \[effect size = 1.00, like going from a grade of C to B!\], followed by downward trend at higher doses.”
 
@@ -263,27 +269,25 @@ Again, it actually estimates a dose-response curve! Below is Figure 1 + Table 2,
 
 ![The effect size (with uncertainty) of Vitamin D dosage on depressive symptoms.](../content/stuff/2026-01/depression/VitaminD.png "The effect size (with uncertainty) of Vitamin D dosage on depressive symptoms.")
 
-**The upper range of uncertainty is lowest at 5000 IU (International Units) of Vitamin D a day**, with an estimated effect size of 1.82, with a 95% uncertainty range, from 0.98 to 2.66. **An effect size of 1.82 is like taking your mental health from an F to a C–, or a C to an A–!** And even in the _most pessimistic_ case, 0.98, that's still _over twice as effective_ as the top antidepressant!
+**The upper range of uncertainty is lowest at 5000 IU (International Units) of Vitamin D a day**, with an estimated effect size of 1.82, with a 95% uncertainty range, from 0.98 to 2.66. Let's be pessimistic, and take the _lowest_ end: 0.98. **This is like taking your mental health from an F to D, or C to B.**
 
-(You may be, _very understandably_, suspicious about taking 5000 IU/day, which is above the "official max safe dose" of 4000 IU/day. I'll discuss the official recommendations later, but for now, look above and note: even at 3000 IU/day, the effect size is estimated to be 1.44 (from C to B+), or at most pessimistic, 0.63 (from C to B–), _still_ above the _best_ antidepressant.)
+<u>Is this in line with earlier meta-analyses?</u> [Mikola et al 2022](https://www.tandfonline.com/doi/10.1080/10408398.2022.2096560) found a lower estimate: the effect for ≥ 2000 IU/day is 0.407. Note that even _this_ is still on par with the effect of the _best_ antidepressant! And [Xie et al 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9376678/) found a higher estimate: "the \[effect\] for low-dose \[≤ ≤2,800 IU/day\] was −0.30 and high-dose \[> 2,800 IU/day\] was −1.23." **I'll take the median estimate: around +0.98, like going from an F to D, or C to B.** (And I'm recommending 4,000 IU/day, since that's the "official" max safe dose, though as we'll see later, even the official max dose is probably too low.)
 
-<u>Addressing some critiques</u>:
+<u>Does this still work even if you're already taking antidepressants?</u> Yup! Table 1 of the first meta-analysis, also shows that Vitamin D helps for _both_ patients using antidepressant medication, and not. This is encouraging: it means you can _stack_ both medications & supplements!
 
-- The paper's summary says _8000 IU_ is best, with effect size 2.04, but there's much greater uncertainty there.
-- The paper also finds that longer studies had smaller effects than shorter studies, but this does _not_ necessarily mean Vitamin D's effects are short-lived. Looking at Supplementary Table 4, it seems this is partly because longer studies used _lower_ average daily doses. (For example, one 52-week study only gave participants 400 IU a day.)
-- Other meta-analyses report lower effects, because they use "meaningless means". If you have nine trials at 400 IU/day with effect +0.5, and one trial at 4000 IU/day with effect +1.5, your "average" effect is +0.6. Again, that's why I chose this meta-analysis: it estimates the actual dose-response curve.
-- Table 1 also shows that Vitamin D helps for _both_ patients using antidepressant medication, and not. This is encouraging: it means you can _stack_ both medications & supplements!
-- Admittedly, Table 1 seems to imply that Vitamin D supplementation _didn't_ help participants without Vitamin D deficiency, but:
-    - You probably _are_ lacking Vitamin D: [Liu et al 2018](https://pubmed.ncbi.nlm.nih.gov/29644951/) finds that a bit under half of all adults (41.4%) have Vitamin D Insufficiency.
-    - Looking at Supplementary Table 4, the trials whose participants didn't have Vitamin D deficiency (understandably) used much lower doses. That's probably why they had a much lower effect.
+<u>Does this still work even if you _don't_ have Vitamin D insufficiency?</u> Yes, but admittedly much less. That said, you probably _do_ have a Vitamin D insufficiency. [Liu et al 2018](https://pubmed.ncbi.nlm.nih.gov/29644951/) finds that a bit under half of American adults (41.4%) have insufficient Vitamin D blood levels. And [Manios et al 2017](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/16F3818433348B17FE9D8E71AAD2C8BB/S0007114517002422a.pdf/div-class-title-prevalence-of-vitamin-d-deficiency-and-insufficiency-among-schoolchildren-in-greece-the-role-of-sex-degree-of-urbanisation-and-seasonality-div.pdf) finds that over half of kids (52.5%) in Greece — _frickin' sunny Greece!_ — are still Vitamin D insufficient.
 
-<u>The "official" recommendations are all too low:</u>
+<u>Also, the "official" recommendations are _all too low:_</u>
 
-So, if this meta-analysis is right, then 5000 IU/day is around optimal. But [the official recommendation for Vitamin D](https://www.healthline.com/nutrition/vitamin-d-dosage) is 400–800 IU/day, over _six times too low_. 5000 IU/day is even higher than the "official maximum safe dose", of 4000 IU/day! But [McCullough et al 2019](https://pubmed.ncbi.nlm.nih.gov/30611908/) gave over thousands of patients 5,000 to 10,000 IU/day, for _seven years_, and there were _zero_ cases of serious side effects. This matches later studies like [Billington et al 2020](https://pubmed.ncbi.nlm.nih.gov/31746327/), a 3-year-long double-blinded randomized trial, which found "the safety profile of vitamin D supplementation is similar for doses of 400, 4000, and 10,000 IU/day." (Although 15 participants got "mild hypercalcemia", but "all cases resolved on repeat testing." Either way, that's a small cost for reducing the risk of major depression & suicide.)
+So, if these three meta-analyses are right, then high doses — 2000 IU/day or more, possibly 4000 (official max dose) or higher — is optimal. But [the official recommendation for Vitamin D](https://www.healthline.com/nutrition/vitamin-d-dosage) is 400–800 IU/day, _several times too low_.
 
-And it makes evolutionary sense that 10,000 IU a day _should_ be safe. Your skin, exposed to the Sun's ultraviolet rays, can synthesize up to (the equivalent of) 10,000 IU a day, before plateauing out. Source is [Vieth 1999](https://www.sciencedirect.com/science/article/pii/S0002916522043763): “Because vitamin D is potentially toxic, intake of \[1000 IU/day\] has been avoided even though the weight of evidence shows that the currently accepted \[limit\] of \[2000 IU/day\] is too low by at least 5-fold.”
+And even the official max dose of 4000 IU/day may be too low! But [McCullough et al 2019](https://pubmed.ncbi.nlm.nih.gov/30611908/) gave over thousands of participants 5,000 to 10,000 IU/day, for _seven years_, and there were _zero_ cases of serious side effects. This matches later studies like [Billington et al 2020](https://pubmed.ncbi.nlm.nih.gov/31746327/), a 3-year-long trial on hundreds of participants, which found "the safety profile of vitamin D supplementation is similar for doses of 400, 4000, and 10,000 IU/day." (Although 15 participants got "mild hypercalcemia", but "all cases resolved on repeat testing." Either way, that's a small cost for reducing the risk of major depression & suicide.)
 
-(So why are all the official sources still so paranoid about Vitamin D? Well, unfortunately, official government/insurance policy is always a few decades behind the science in _any_ field. See: trans fats, open-label placebos, everything about educational policy. And because something something "incentives", it's _rational_ for government/insurers to be very risk-averse.)
+And it makes evolutionary sense that 10,000 IU a day _should_ be safe. Your skin, exposed to the Sun's ultraviolet rays, can synthesize up to (the equivalent of) 10,000 IU a day, before plateauing out. Source is [Vieth 1999](https://www.sciencedirect.com/science/article/pii/S0002916522043763): “Because vitamin D is potentially toxic, intake of \[1000 IU/day\] has been avoided even though the weight of evidence shows that the currently accepted \[limit\] of \[2000 IU/day\] is too low by at least 5-fold.” And [Papadimitriou 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5541280/) reviews several previous studies that find statistical errors behind official recommendations; correcting for these, adults should get 8000 IU/day.
+
+(On the other hand, [Krzyścin et al 2016](https://www.sciencedirect.com/science/article/abs/pii/S1011134415301561) estimates that the existing hunter-gatherer group, the Hadza, get 2000 IU of Vitamin D from sun exposure, and their food is a poor source of Vitamin D. Given that _existing_ hunter-gatherers live in the areas the colonialists _didn't_ want, ancient hunter-gatherers probably ate & got more Vitamin D. So, 2000 IU is a _lower_ bound on how much Vitamin D one should get — still several times more than the current official recommended dose of 400–800 IU/day.)
+
+So why are all the official sources still so paranoid about Vitamin D, and lowballing the recommendations? Well, alas, official policy is always a few decades behind the science in _any_ field. See: trans fats, open-label placebos, everything about educational policy. And because something something "incentives", it's _rational_ for government/insurers to be very risk-averse & slow to change (for better & worse).
 
 <u>Speaking of the Sun,</u> why take supplements instead of just getting Vitamin D from sun exposure? Well, [skin cancer](https://pubmed.ncbi.nlm.nih.gov/29659012/). But also: because Sun-Skin D varies greatly depending on the season, your latitude, and your skin type. There's less ultraviolet rays from the Sun in winter/fall, and at latitudes further from the equator. And [the darker your skin is, the less Vitamin D your skin makes for the same amount of Sun exposure](https://pmc.ncbi.nlm.nih.gov/articles/PMC10861575/). As expected from the bio-physics of skin, Black adults have [the highest prevalence of Vitamin D deficiency](https://pmc.ncbi.nlm.nih.gov/articles/PMC6075634/) (82.1%!!), followed by Hispanic adults (62.9%). (But hey, at least Black adults have the lowest incidence of skin cancer. You win some you lose some.) The point is: speaking as someone with Southeast Asian skin, who's currently in Canada during winter... even if I stood outside naked for hours, I'd get approximately _zero_ IU/day of Vitamin D from the Sun. Thus: supplements.
 
@@ -291,9 +295,9 @@ And it makes evolutionary sense that 10,000 IU a day _should_ be safe. Your skin
 
 <u>To recap:</u>
 
-- Almost half of you have a Vitamin D deficiency according to the official recommendation (800 IU/day).
-- And the official recommendation is _way_ too low. Even the official _maximum_ safe dose (4000 IU/day) is below the optimal Vitamin D for depression (5000 IU/day) or what your body can produce from the Sun in optimal conditions (10,000 IU/day). Recent randomized controlled trials confirm that 10,000 IU/day is, indeed, mostly safe.
-- And even if you do 3000 IU/day, well below the max safe limit, the expected effect is still better than the best antidepressant, even on the pessimistic end of the estimate!
+- Almost half of you have a Vitamin D insufficiency according to the official recommendation (800 IU/day).
+- And those official recommendations are _way_ too low. The optimal amount of Vitamin D for depression is probably 4000 IU/day, with an effect around _twice_ that of the best antidepressant.
+- Even the official _maximum_ safe dose (4000 IU/day) is below what your body can produce from the Sun in optimal conditions (10,000 IU/day). Recent randomized controlled trials confirm that 10,000 IU/day is, indeed, mostly safe.
 - Reminder that official policy is often decades behind the science.
 - Reminder that I'm _not_ saying "take supplements _instead_ of antidepressants"; in fact the above meta-analysis shows you can effectively stack them!
 
@@ -341,18 +345,19 @@ More big, pre-registered, double-blind randomized controlled trials, please. (An
 
 **Then, every day:**
 
-- **Take ~5000 IU of Vitamin D**
+- **Take ~4000 IU of Vitamin D**
     - ⚠️ be cautious if you have kidney stones, or are on medications that could interact with Vitamin D. "ask your doctor".
-    - 4,000 IU is the "official maximum safe dose", if you understandably don't trust a random internet blogger, even though she cited peer-reviewed sources. As noted earlier, even 3,000 IU still has a large effect.
-    - 10,000 IU if you're feeling daring / have darker skin / live in less sunny climates.
+    - (4,000 IU is the official max safe dose)
+    - 10,000 IU if you're feeling daring (a couple large controlled trials showed no major lasting adverse side effects).
     - bonus: may improve immune response to Covid & influenza?
 - **Take ~1500 mg of ≥60%-EPA Omega-3**
-    - ⚠️ be cautious if you're on blood thinners, or other medications that could interact with Omega-3. again, "ask your doctor". 
+    - ⚠️ be cautious if you're on blood thinners, or other medications that could interact with Omega-3. again, "ask your doctor".
+    - (5000 mg/day is the official max safe dose)
     - bonus: may improve cognition?
 - **Don't quit your existing antidepressants if they're net-positive for you!**
     - you may also want to ask your doctor about _Amitriptyline_, or those other best-effect-size antidepressants.
 
-Can you get these doses of Vitamin D & Omega-3 through whole foods alone, no supplements? Probably, but it'd be expensive & tedious: you'd have to eat something like 2,000 calories of farmed salmon _a day_ to get 5,000 IU/day of Vitamin D. As for Omega-3, eating mostly oily fishes _would_ get you >1000mg of Omega-3, but they'd be _more DHA than EPA_, which the above studies suggest would cancel out the antidepressant effects.
+Can you get these doses of Vitamin D & Omega-3 through whole foods alone, no supplements? Probably, but it'd be expensive & tedious: you'd have to eat something like 2,000 calories of farmed salmon _a day_ to get 4,000 IU/day of Vitamin D. As for Omega-3, eating mostly oily fishes _would_ get you >1000mg of Omega-3, but they'd be _more DHA than EPA_, which the above studies suggest would cancel out the antidepressant effects.
 
 **The effect sizes on depression:**
 
@@ -360,8 +365,8 @@ Can you get these doses of Vitamin D & Omega-3 through whole foods alone, no sup
     - like your mental health grade going from F to F+, or C to C+
 - 1500mg of ≥60%-EPA Omega-3: **+0.558**
     - like your mental health grade going from F to D–, or C to B–
-- 5000 IU of Vitamin D: **+1.82**
-    - like your mental health grade going from F to C–, or C to A–
+- 4000 IU of Vitamin D: **+0.98**
+    - like your mental health grade going from F to D, or C to B
 
 For completeness & comparison, here's the effect size of other things on depression:
 
@@ -390,9 +395,9 @@ For completeness & comparison, here's the effect size of other things on depress
 
 ![Diagram of all the above estimated effect sizes](../content/stuff/2026-01/depression/on-depression-summary.png "Diagram of all the above estimated effect sizes")
 
-(And remember to add +0.4 for the power of hope, e.g. "placebo"! Also remember: you can _stack_ any of the above interventions to get an even larger effect! You can't just naively add up the effect sizes, but I'd be surprised if the effect of \{vitamin d + omega-3 + bright lamps + cardio + good sleep + meditation\} _combined_ ends up being less than +2.00. Two letter grades up means going from D to B, or, theoretically, from clinically depressed to flourishing! For more papers & my working research notes on "best bang for buck on depression", [check out this Google Doc](https://docs.google.com/document/d/1hjNxJmNjoVktrJDFPtFH1hgzKmGpZkRFQ6Vwf0s7c6w/edit?tab=t.0#heading=h.e0blw3xq3cvm).)
+(And remember to add +0.4 for the power of hope, e.g. "placebo"! Also remember: you can _stack_ any of the above interventions to get an even larger effect! You can't just naively add up the effect sizes, but I'd be surprised if the effect of \{vitamin d + omega-3 + bright lamps + cardio + good sleep + meditation + therapy + antidepressants\} _combined_ ends up being less than +2.00. Two letter grades up means going from D to B, or, theoretically, from clinically depressed to flourishing! For more papers & my working research notes on "best bang for buck on depression", [check out this Google Doc](https://docs.google.com/document/d/1hjNxJmNjoVktrJDFPtFH1hgzKmGpZkRFQ6Vwf0s7c6w/edit?tab=t.0#heading=h.e0blw3xq3cvm).)
 
-Also, remember that all the above estimates are uncertain. And in general, when scientists replicate psychology experiments more rigorously, the effect size usually shrinks by ½. But, I think the overall _qualitative_ picture is still strong: there _exist_ high bang-for-buck ways to reduce depression, which are _at least_ on par with drugs & therapy (possibly 2x to 4x better), that aren't (yet) common knowledge amongst policymakers & the public. And again, they're dirt cheap with minor-to-no adverse side effects. Moderate chance of a big win, for a known tiny cost. That's a positive "expected value" bet right there.
+Also, remember that all the above estimates are uncertain. And that averages hide _variation_ in effect. That said, I still think the overall picture is still strong: there exist high bang-for-buck ways to reduce depression, which are _at least on par_ with drugs & therapy (and plausibly 2x better), that aren't (yet) common knowledge amongst policymakers & the public. And again, they're dirt cheap with minor-to-no adverse side effects. Moderate chance of a big win, for a known tiny cost. That's a positive "expected value" bet right there.
 
 I got onto this research rabbithole a few months ago while borrowing my housemate's ADHD meds, which I may or may not eventually collect into a "JOYMAXXING" informal meta-meta-analysis. ([: See me yap about it on video as a cartoon cat](https://youtu.be/JOj97Edna7k?si=xAUt3Kp54RyfGX50&t=334).) But for this blog post, I wanted to dive deeper into Vitamin D and Omega-3, since their effect sizes are so huge, _and_ they're insultingly cheap & easy, compared to therapy or regular cardio.
 
