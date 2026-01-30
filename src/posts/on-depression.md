@@ -351,7 +351,7 @@ So:
 
 **MY RECOMMENDATIONS FOR RESEARCHERS:**
 
-More big, pre-registered, double-blind randomized controlled trials, please. (And specifically: testing _high_ doses of Vitamin D, 4000 IU/day or more.)
+More big, pre-registered, double-blind randomized controlled trials, please. (And specifically: testing _high_ doses.)
 
 **MY SPECIFIC RECOMMENDATIONS FOR _YOU:_**
 
