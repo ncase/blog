@@ -38,12 +38,6 @@ So, Vitamin D & Omega-3: possibly high reward, for low risk. That's a positive "
 
 Unless you have specific reasons to not take Vitamin D & Omega-3 — kidney stones, blood thinners, etc — please try them, for at least a month! They could save your mental health. Maybe even your life.
 
-(**Edit Jan 29th** — [\#2 on the Hacker News frontpage!](https://news.ycombinator.com/item?id=46808251) Thank you for your feedback, I spent all day editing this post, incorporating the constructive criticism & adding details. Also: [thank you Josep for catching my medically disastrous typo](https://github.com/ncase/blog/issues/4). Also 2: the intended tone of this post is, "what makes science awesome is that it's self-correcting, finding mistakes in older science is good, here's how the older science was mistaken", not "f\@\#\$ science & the establishment, maaaaan".)
-
-(**Also 3, _MAJOR_ edit:** I downgraded high-dose Vitamin D's effect from 1.8 to 1.0, and my recommendation from 5000 IU/day to 4000 IU/day. My mistake was not applying a more reasonable "prior probability". So, instead of being 4 times better than antidepressants, I now estimate it's "only" 2 times better. Either way, I'm still confident the title of this post holds: high-dose Vitamin D is _as good or better_ than the best antidepressant.)
-
----
-
 **Table of Contents:**
 
 - A crash course in "effect sizes" [↪](#effect_sizes)
@@ -52,6 +46,18 @@ Unless you have specific reasons to not take Vitamin D & Omega-3 — kidney ston
 - Omega-3 [↪](#omega_3)
 - Vitamin D [↪](#vitamin_d)
 - Conclusion: _All this time, you lacked the Vitamin?_ [↪](#conclusion)
+
+![](https://blog.ncase.me/content/stuff/2026-01/depression/depression_thumb.png)
+
+---
+
+(**Edit Jan 29th** — [\#2 on the Hacker News frontpage!](https://news.ycombinator.com/item?id=46808251) Thank you for your feedback, I spent all day editing this post, incorporating the constructive criticism & adding details.)
+
+(Also: the intended tone of this post is, "what makes science awesome is that it's self-correcting, finding mistakes in older science is good, here's how the older science was mistaken", not "f\@\#\$ science".)
+
+(Also 2: [thank you Josep for catching my medically disastrous typo](https://github.com/ncase/blog/issues/4).)
+
+(**Also 3, _MAJOR_ edit:** I downgraded high-dose Vitamin D's effect from 1.8 to 1.0, and my recommendation from 5000 IU/day to 4000 IU/day. My mistake was not applying a more reasonable "prior probability". So, instead of being 4 times better than antidepressants, I now estimate it's "only" 2 times better. Either way, I'm still confident the title of this post holds: high-dose Vitamin D is _as good or better_ than the best antidepressant.)
 
 ---
 
@@ -299,7 +305,7 @@ And it makes evolutionary sense that 10,000 IU a day _should_ be safe. Your skin
 
 (On the other hand, [Krzyścin et al 2016](https://www.sciencedirect.com/science/article/abs/pii/S1011134415301561) estimates that the existing hunter-gatherer group, the Hadza, get 2000 IU of Vitamin D from sun exposure, and their food is a poor source of Vitamin D. Given that _existing_ hunter-gatherers live in the areas the colonialists _didn't_ want, ancient hunter-gatherers probably ate & got more Vitamin D. So, 2000 IU is a _lower_ bound on how much Vitamin D one should get — still several times more than the current official recommended dose of 400–800 IU/day.)
 
-So why are all the official sources still so paranoid about Vitamin D, and lowballing the recommendations? Well, alas, official policy is always a few decades behind the science in _any_ field. See: trans fats, open-label placebos, everything about educational policy. And because something something "incentives", it's _rational_ for government/insurers to be very risk-averse & slow to change (for better & worse).
+So why are all the official sources still so paranoid about Vitamin D, and lowballing the recommendations? Well, alas, official policy is always a few decades behind the science in _any_ field. See: trans fats, open-label placebos, aerosol transmission of Covid-19, everything about educational policy. And because something something incentives, it's _"rational"_ for government/insurers to be very risk-averse & slow to change (for better & worse).
 
 <u>Speaking of the Sun,</u> why take supplements instead of just getting Vitamin D from sun exposure? Well, [skin cancer](https://pubmed.ncbi.nlm.nih.gov/29659012/). But also: because Sun-Skin D varies greatly depending on the season, your latitude, and your skin type. There's less ultraviolet rays from the Sun in winter/fall, and at latitudes further from the equator. And [the darker your skin is, the less Vitamin D your skin makes for the same amount of Sun exposure](https://pmc.ncbi.nlm.nih.gov/articles/PMC10861575/). As expected from the bio-physics of skin, Black adults have [the highest prevalence of Vitamin D deficiency](https://pmc.ncbi.nlm.nih.gov/articles/PMC6075634/) (82.1%!!), followed by Hispanic adults (62.9%). (But hey, at least Black adults have the lowest incidence of skin cancer. You win some you lose some.) The point is: speaking as someone with Southeast Asian skin, who's currently in Canada during winter... even if I stood outside naked for hours, I'd get approximately _zero_ IU/day of Vitamin D from the Sun. Thus: supplements.
 
