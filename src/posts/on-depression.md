@@ -26,7 +26,7 @@ The "effect size" of the best antidepressants on depression, vs placebo, is arou
 
 In contrast: the effect size of 1500 mg/day of "≥60% EPA" Omega-3 supplements is a bit higher, around 0.6. This is like going from a **C to a B–**. (With uncertainty; at worst, Omega-3's "only" on par with antidepressants.)
 
-But, much better: the effect size of 4000 IU/day of Vitamin D is _twice_ as high as antidepressants', around _1.0._ This is like going from a **C to an B**! (With uncertainty; at worst, Vitamin D's "only" on par with antidepressants.) This works even for people who _don't_ have a Vitamin D insufficiency — but almost half of American adults _do_.
+But, much better: the effect size of 4000 IU/day of Vitamin D is _twice_ as high as antidepressants', around _1.0._ This is like going from a **C to an B**! (With uncertainty; at worst, Vitamin D's "only" on par with antidepressants.) This works even for people who _don't_ have a Vitamin D insufficiency — but around half of American adults _do_.
 
 Even if you're _already_ taking Vitamin D & Omega-3, double check your dose: it may _still_ not be enough! The official recommendations are all too low, and recent research suggests even the official _maximum_ safe dose for Vitamin D is too low.
 
@@ -266,7 +266,7 @@ Anyway, the Sublette meta-analysis gathered randomized trials studying Omega-3 o
 
 The top effect size is **around +0.558, which is like going from an F to D–, or C to B–.** You get this maximum effect around 1 to 2 grams of extra EPA, and _too much_ EPA gets worse results. The meta-analysis finds that Omega-3 supplements that are ~60% EPA (and the rest DHA) are optimal.
 
-<u>Is this in line with later meta-analyses?</u> More or less! [Liao et al 2019](https://www.nature.com/articles/s41398-019-0515-5.pdf) also finds that ~1 gram of ≥60% EPA is best, but actually finds a higher effect size: +1.03. [Kelaiditis et al 2023](https://pubmed.ncbi.nlm.nih.gov/37028202/) also finds 1 to 2g of ≥60% EPA is best, but found a lower effect size of +0.43… which is still _as good_ as the _best_ antidepressant! So, I'm taking +0.558 as the median estimate.
+<u>Is this in line with later meta-analyses?</u> More or less! [Liao et al 2019](https://www.nature.com/articles/s41398-019-0515-5.pdf) also finds that ~1 gram of ≥60% EPA is best, but actually finds a higher effect size: **+1.03**. [Kelaiditis et al 2023](https://pubmed.ncbi.nlm.nih.gov/37028202/) also finds 1 to 2g of ≥60% EPA is best, but found a lower effect size of **+0.43**… which is still _as good_ as the _best_ antidepressant! So, I'm taking +0.558 as the median estimate.
 
 <u>Let's convert this to an actionable recommendation:</u> You want around 1 gram of EPA a day. So if your supplements are 60% EPA, you need 1 gram ÷ 0.6 ~= 1.667 grams = 1667 milligrams. Let's round this down for convenience: **get 1500 mg/day of 60%-EPA Omega-3 supplements.**
 
@@ -287,9 +287,9 @@ Again, it actually estimates a dose-response curve! Below is Figure 1 + Table 2,
 
 ![The effect size (with uncertainty) of Vitamin D dosage on depressive symptoms.](../content/stuff/2026-01/depression/VitaminD.png "The effect size (with uncertainty) of Vitamin D dosage on depressive symptoms.")
 
-**The upper range of uncertainty is lowest at 5000 IU (International Units) of Vitamin D a day**, with an estimated effect size of 1.82, with a 95% uncertainty range, from 0.98 to 2.66. Let's be pessimistic, and take the _lowest_ end: 0.98. **This is like taking your mental health from an F to D, or C to B.**
+**The upper range of uncertainty is lowest at 5000 IU (International Units) of Vitamin D a day**, with an estimated effect size of 1.82, with a 95% uncertainty range, from 0.98 to 2.66. Let's be pessimistic, and take the _lowest_ end: **0.98, like taking your mental health from an F to D, or C to B.**
 
-<u>Is this in line with earlier meta-analyses?</u> [Mikola et al 2022](https://www.tandfonline.com/doi/10.1080/10408398.2022.2096560) found a lower estimate: the effect for ≥ 2000 IU/day is 0.407. Note that even _this_ is still on par with the _best_ antidepressant! And [Xie et al 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9376678/) found a higher estimate: "the \[effect\] for low-dose \[≤2,800 IU/day\] was −0.30 and high-dose \[> 2,800 IU/day\] was −1.23." **I'll take the median estimate: around +0.98, like going from an F to D, or C to B.** (And I'm recommending 4,000 IU/day, since that's the "official" max safe dose, though as we'll see later, even the official max dose is probably too low.)
+<u>Is this in line with earlier meta-analyses?</u> Again, more or less! [Mikola et al 2022](https://www.tandfonline.com/doi/10.1080/10408398.2022.2096560) found a lower estimate: the effect for ≥ 2000 IU/day is **0.407**. Note that even _this_ is still on par with the _best_ antidepressant! And [Xie et al 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9376678/) found a higher estimate: the effect of > 2,800 IU/day is **1.23**. So, I'll take the median estimate: around 0.98. (And I'm recommending 4,000 IU/day, since that's the "official" max safe dose. Though as we'll see later, even the official max dose may be too low.)
 
 <u>Does this still work even if you're already taking antidepressants?</u> Yup! Table 1 of the first meta-analysis, also shows that Vitamin D helps for _both_ patients using antidepressant medication, and not. This is encouraging: it means you can _stack_ both medications & supplements!
 
