@@ -1,11 +1,11 @@
 ---
-title: "Vitamin D & Omega-3 have a larger effect on depression than antidepressants"
+title: "Vitamin D & Omega-3 may have a larger effect on depression than antidepressants"
 tags:
   - post
 share_image: https://blog.ncase.me/content/stuff/2026-01/depression/depression_thumb.png
-share_desc: An accessible deep dive into the science (⏱️ 28 min read)
+share_desc: An accessible deep dive into the science (⏱️ 30 min read)
 date: 2026-01-28
-readtime: 28 minutes
+readtime: 30 minutes
 layout: page-2026-01.njk
 hasMath: false
 isDraft: false
@@ -28,15 +28,19 @@ In contrast: the effect size of 1500 mg/day of "≥60% EPA" Omega-3 supplements 
 
 But, much better: the effect size of 4000 IU/day of Vitamin D is _twice_ as high as antidepressants', around _1.0._ This is like going from a **C to an B**! (With uncertainty; at worst, Vitamin D's "only" on par with antidepressants.) This works even for people who _don't_ have a Vitamin D insufficiency — but around half of American adults _do_.
 
+_(edit Feb 5: after diving deeper into the research, I'm less confident in Omega-3, but a bit_ more _confident in Vitamin D. Reader take notice!)_
+
 Even if you're _already_ taking Vitamin D & Omega-3, double check your dose: it may _still_ not be enough! The official recommendations are all too low, and recent research suggests even the official _maximum_ safe dose for Vitamin D is too low.
 
 I know the "yay supplements" genre of writing is full of sloppy research & grifters, and you _should_ be skeptical of my claim of easy wins, of "$100 bills laying on the sidewalk". But there _is_ good science among the trash, and policy is often decades behind science in _any_ field, not just health.
 
 (Also, note I'm _NOT_ saying "take vitamins instead of antidepressants"; the research shows these interventions can be stacked! You can supplement meds with, well, supplements. And of course, depression is not "just" chemistry — but it's not just _not_-chemistry, either.)
 
-So, Vitamin D & Omega-3: possibly high reward, for low risk. That's a positive "expected value" bet! These supplements are safe, cheap, over-the-counter, and have _positive_ side-effects (on Covid & cognition). As always, "ask your doctor", show them the peer-reviewed papers cited in this post.
+So, Vitamin D & Omega-3: possibly high reward, for low risk. That's a positive "expected value" bet! These supplements are mostly safe, cheap, and over-the-counter. As always, "ask your doctor", show them the peer-reviewed papers cited in this post.
 
 Unless you have specific reasons to not take Vitamin D & Omega-3 — kidney stones, blood thinners, etc — please try them, for at least a month! They could save your mental health. Maybe even your life.
+
+**Confidence level:** I _read_ the existing meta-analyses, but I have not (yet) _done_ a full meta-analysis myself. I'm not an expert in nutrition, I'm just a stats-literate person who wants to figure out what's best for myself & my loved ones.
 
 **Table of Contents:**
 
@@ -51,13 +55,11 @@ Unless you have specific reasons to not take Vitamin D & Omega-3 — kidney ston
 
 ---
 
-(**Edit Jan 29th** — [\#2 on the Hacker News frontpage!](https://news.ycombinator.com/item?id=46808251) Thank you for your feedback, I spent all day editing this post, incorporating the constructive criticism & adding details.)
+**Post-publication edits:**
 
-(Also: the intended tone of this post is, "what makes science awesome is that it's self-correcting, finding mistakes in older science is good, here's how the older science was mistaken", not "f\@\#\$ science".)
-
-(Also 2: [thank you Josep for catching my medically disastrous typo](https://github.com/ncase/blog/issues/4).)
-
-(**Also 3, _MAJOR_ edit:** I downgraded high-dose Vitamin D's effect from 1.8 to 1.0, and my recommendation from 5000 IU/day to 4000 IU/day. My mistake was not applying a more reasonable "prior probability". So, instead of being 4 times better than antidepressants, I now estimate it's "only" 2 times better. Either way, I'm still confident the title of this post holds: high-dose Vitamin D is _as good or better_ than the best antidepressant.)
+- Jan 29th: [\#2 on the Hacker News frontpage!](https://news.ycombinator.com/item?id=46808251) Thank you for your feedback, I spent all day editing this post, incorporating the constructive criticism & adding details. Also: the intended tone of this post is, "what makes science awesome is that it's self-correcting, finding mistakes in older science is good, here's how the older science was mistaken", not "f\@\#\$ science". Also 2: [thank you Josep for catching my medically disastrous typo](https://github.com/ncase/blog/issues/4).
+- Jan 30th: **_MAJOR_ edit:** I downgraded high-dose Vitamin D's effect from 1.8 to 1.0, and my recommendation from 5000 IU/day to 4000 IU/day. My mistake was not applying a more reasonable "prior probability". So, instead of being 4 times better than antidepressants, I now estimate it's "only" 2 times better. Either way, I'm still confident the title of this post holds: high-dose Vitamin D is _as good or better_ than the best antidepressant.
+- Feb 5th: A few more details. Much less confident in Omega-3, a bit _more_ confident Vitamin D's _at least_ as good as antidepressants.
 
 ---
 
@@ -166,7 +168,11 @@ The good news is they work. The bad news is they don't work as well as you'd thi
 
 **[Cipriani et al 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC5889788/)** is a meta-analysis: a study that collects & combines lots of previous studies (that pass some basic criteria, to minimize a garbage-in-garbage-out situation). While meta-analyses aren't perfect, it's usually better for "science communicators" like me to cite meta-analyses over individual studies, to reduce the chance I'm cherry-picking.
 
-Anyway: this meta-analysis analyzes 522 trials with 116,477 participants. _All_ 21 antidepressants they studied were better than placebo (a pill that contains no active medicine). The most effective antidepressant, _Amitriptyline_, had an "Odds Ratio" of 2.13, [which converts to](https://www.escal.site/) an effect size of 0.417, which is "small-medium" according to Cohen's recommendations. Or, by our school-letter-grade comparison: **the _best_ antidepressant would take your mental health grade from an F to F+, or C to C+.**
+Anyway: this meta-analysis analyzes 522 trials with 116,477 participants → over 200 participants per trial, on average. _All_ 21 antidepressants they studied were better than placebo (a pill that contains no active medicine). The most effective antidepressant, _Amitriptyline_, had an "Odds Ratio" of 2.13, [which converts to](https://www.escal.site/) an effect size of 0.417, which is "small-medium" according to Cohen's recommendations. Or, by our school-letter-grade comparison: **the _best_ antidepressant would take your mental health grade from an F to F+, or C to C+.**
+
+(Meanwhile, the _median_ antidepressant's effect size is lower, around 0.28.[^median-antidepressant])
+
+[^median-antidepressant]: Median antidepressant Odds Ratio: 1.66, see below figure. This [converts to](https://www.escal.site/) Cohen's d of 0.279.
 
 From Figure 3 of that paper, you can see that Amitriptyline has the highest estimated effect size, while the side effects are no worse than placebo:
 
@@ -194,7 +200,7 @@ When you take _any_ medicine, you don't just get (effect of medicine). You get (
 
 So, the _individual effect_ of medication, psychological placebo, and time, _are all around +0.4 each_.  And combined, they give you +1.20, or going from F to D+ or C to B+. That's why many people report antidepressants being lifesaving! (Again, _on average_; some people react much worse.)
 
-"Wait, the improvement from antidepressants is _mostly placebo + time?_" Yes, _and this is widely known in psychiatry._ I mean, they're not yelling it from the rooftops, but it ain't no secret. Decades ago, the infamous [Kirsch & Sapirstein 1998](https://www.academia.edu/download/70722536/KirschandSapirstein1998.pdf) estimated that the improvement from antidepressants is ~75% placebo + time. Even _the most critical response_ to Kirsch's work, [Fountoulakis & Möller 2011](https://academic.oup.com/ijnp/article-pdf/14/3/405/2688342/14-3-405.pdf), still finds it's mostly placebo + time.[^calculation-for-that]
+"Wait, the improvement from antidepressants is _mostly placebo + time?_" Yes, _and this is widely known in psychiatry._ I mean, they're not yelling it from the rooftops, but this _has_ been an established consensus fact for decades. The infamous [Kirsch & Sapirstein 1998](https://www.academia.edu/download/70722536/KirschandSapirstein1998.pdf) first estimated that the improvement from antidepressants is ~75% placebo + time, and later better meta-analyses have replicated this result. Even _the most critical response_ to Kirsch's work, [Fountoulakis & Möller 2011](https://academic.oup.com/ijnp/article-pdf/14/3/405/2688342/14-3-405.pdf), still finds it's mostly placebo + time.[^calculation-for-that] 
 
 [^calculation-for-that]: See Table 1. A follow-up paper by Kirsch in in 2008 found that the drug group improved by 9.60 (non-standardized) points, and the placebo group by 7.80 points. (So, placebo + time is 7.80/9.60 = 0.81 = 81% of the full effect.) The F&M recalculation found the drug group improved by 10.04 points, and the placebo by 7.85 points. (So, placebo + time is 7.85/10.04 = 0.78 = 78% of the full effect.) And rows 2 & 3 confirm that Kirsch was still right about the following: “The \[total effect\] for drug groups was 1.24 \[C to B+\] and that for placebo 0.92 \[C to B\]” and “The effect size concerning the difference between improvement in drug groups and improvement in placebo groups was 0.32 \[like C to C+\]”. 
 
@@ -254,7 +260,7 @@ All the above info in a Venn (technically [Euler](https://en.wikipedia.org/wiki/
 
 Okay, enough yap. Time for the actual data:
 
-**[Sublette et al 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC3534764/)** is an older meta-analysis (15 trials with 916 participants). It's the only meta-analysis I could find that estimates the _actual "dose-response" curve_, which shows: how much effect, for how much treatment.
+**[Sublette et al 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC3534764/)** is an older meta-analysis (15 trials with 916 participants → 61 participants per trial, pretty low to be honest). But this was the only meta-analysis I could find that estimates the _actual "dose-response" curve_, which shows: how much effect, for how much treatment.
 
 Why is dose-response important? Because one problem with many meta-analyses is they'll do something like: "Study 1 gave patients 1 gram of medicine and saw a +1 improvement in disease, Study 2 gave 10 grams and saw +4 improvement, Study 3 gave 100 grams and saw _negative_ –5 improvement… the average of +1, +4, and –5 is zero... therefore the medicine's effect is zero." 
 
@@ -266,11 +272,19 @@ Anyway, the Sublette meta-analysis gathered randomized trials studying Omega-3 o
 
 The top effect size is **around +0.558, which is like going from an F to D–, or C to B–.** You get this maximum effect around 1 to 2 grams of extra EPA, and _too much_ EPA gets worse results. The meta-analysis finds that Omega-3 supplements that are ~60% EPA (and the rest DHA) are optimal.
 
+(Though, honestly, I'd ignore the fitted upside-down-U curve in the above figure, and just look at the dots, the raw data. The main signal seems to be "If mostly EPA then it's good, if mostly DHA then no effect".)
+
 <u>Is this in line with later meta-analyses?</u> More or less! [Liao et al 2019](https://www.nature.com/articles/s41398-019-0515-5.pdf) also finds that ~1 gram of ≥60% EPA is best, but actually finds a higher effect size: **+1.03**. [Kelaiditis et al 2023](https://pubmed.ncbi.nlm.nih.gov/37028202/) also finds 1 to 2g of ≥60% EPA is best, but found a lower effect size of **+0.43**… which is still _as good_ as the _best_ antidepressant! So, I'm taking +0.558 as the median estimate.
 
-<u>Let's convert this to an actionable recommendation:</u> You want around 1 gram of EPA a day. So if your supplements are 60% EPA, you need 1 gram ÷ 0.6 ~= 1.667 grams = 1667 milligrams. Let's round this down for convenience: **get 1500 mg/day of 60%-EPA Omega-3 supplements.**
+(Note that when the meta-analyses report the "average" study's effect size, this includes _mostly-DHA_ and _low-dose_ Omega-3. The effect sizes I bolded above are for ≥60% EPA at high doses.)
 
-In comparison, [most official health organizations recommend](https://www.healthline.com/nutrition/how-much-omega-3) "250–500 mg _combined_ EPA and DHA each day for healthy adults." _That is over three times too low,_ at least for optimal effects on depression. Which, as we calculated above, is probably around 1500 mg/day. (The official safe dose is 5000 mg/day)
+Yes, it _is_ concerning that several meta-analyses _of the same scientific literature_ can return vastly varying estimates. More high-quality studies are definitely needed. That said, even the _lowest_ estimate is on par with the median antidepressant, which has an effect around +0.28.
+
+<u>Is there "publication bias"?</u> One popular critique of supplement studies is that the effect is inflated, because studies that find low to no effects don't get published. But if this was the case, we _should_ see gaps & asymmetry in the data. Do we? Admittedly, yes: Sublette 2011 & Kelaiditis 2023 finds publication bias, but Liao 2019 doesn't. These meta-analyses had different criteria for which studies they accepted or not.
+
+<u>Let's convert this to an actionable recommendation:</u> There's a lot of uncertainty, but the only thing the above meta-analyses agree on is "60% or above EPA" and "somewhere between 1 and 2 grams". So let's just say: **get 1500 mg/day of 60%-EPA Omega-3 supplements.**
+
+In comparison, [most official health organizations recommend](https://www.healthline.com/nutrition/how-much-omega-3) "250–500 mg _combined_ EPA and DHA each day for healthy adults." _That is over three times too low,_ at least for optimal effects on depression, which we estimated is around 1500 mg/day. (The official maximum safe dose is 5000 mg/day)
 
 <u>Direct effect on suicide:</u> Finally, a (small) study _directly_ investigating the link between suicide & Omega-3. [Sublette et al 2006](https://psychiatryonline.org/doi/pdf/10.1176/ajp.2006.163.6.1100): “Low \[DHA\] and low Omega-3 proportions \[...\] predicted risk of suicidal behavior among depressed patients over the 2-year period.” Though keep in mind this is a small study, and it's observational not experimental. Also, weird that contrary to the above studies on depression, _DHA_ predicted suicide but _not_ EPA. Not sure what to make of that.
 
@@ -281,7 +295,7 @@ Bonus: Omega-3 may also boost cognition? [Shahinfar et al 2025](https://www.natu
 
 ## Vitamin D
 
-**[Ghaemi et al 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC11650176/)** is a meta-analysis on Vitamin D on depression (31 trials with 24,189 participants).
+**[Ghaemi et al 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC11650176/)** is a meta-analysis on Vitamin D on depression. (31 trials with 24,189 participants → over _700_ participants per trial on average, _higher_ than the antidepressant trials!)
 
 Again, it actually estimates a dose-response curve! Below is Figure 1 + Table 2, showing the effect of Vitamin D dosage on depression vs placebo. The solid line is the average estimated effect, dashed lines are 95% confidence interval. Note the effect size is negative in this figure, because they're measuring _reduction_ in depressive symptoms:
 
@@ -291,7 +305,11 @@ Again, it actually estimates a dose-response curve! Below is Figure 1 + Table 2,
 
 <u>Is this in line with earlier meta-analyses?</u> Again, more or less! [Mikola et al 2022](https://www.tandfonline.com/doi/10.1080/10408398.2022.2096560) found a lower estimate: the effect for ≥ 2000 IU/day is **0.407**. Note that even _this_ is still on par with the _best_ antidepressant! And [Xie et al 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9376678/) found a higher estimate: the effect of > 2,800 IU/day is **1.23**. So, I'll take the median estimate: around 0.98. (And I'm recommending 4,000 IU/day, since that's the "official" max safe dose. Though as we'll see later, even the official max dose may be too low.)
 
-<u>Does this still work even if you're already taking antidepressants?</u> Yup! Table 1 of the first meta-analysis, also shows that Vitamin D helps for _both_ patients using antidepressant medication, and not. This is encouraging: it means you can _stack_ both medications & supplements!
+<u>Is there "publication bias"?</u> Ghaemi 2024 & Xie 2022 did _NOT_ detect bias, Mikola 2022 did. (Again, meta-analyses differed in which studies met their quality criteria.) It's worth noting that Mikola, even adjusting for publication bias, even including _low-dose_ studies, still finds an "average" effect of 0.317 — on par with the median antidepressant's 0.28. If we restrict ourselves to "just" high-dose Vitamin D, we get a much higher effect.
+
+<u>Does Vitamin D work long-term?</u> Unknown, because of an important confounding variable: the shorter trials used higher doses, the longer trials used lower doses. Quote Mikola: _"the mean vitamin D dose was more than 2,900 IU/day in interventions lasting 12 weeks or more, versus approximately 5,700 IU/day in shorter interventions."_ (Note that "12 weeks" is on par with traditional antidepressant trials.)
+
+<u>Does this still work even if you're already taking antidepressants?</u> Yup! Table 1 of the Ghaemi meta-analysis, also shows that Vitamin D helps for _both_ patients using antidepressant medication, and not. This is encouraging: it means you can _stack_ both medications & supplements!
 
 <u>Does this still work even if you _don't_ have Vitamin D insufficiency?</u> Yes, but admittedly much less. That said, you probably _do_ have a Vitamin D insufficiency. [Liu et al 2018](https://pubmed.ncbi.nlm.nih.gov/29644951/) finds that a bit under half of American adults (41.4%) have insufficient Vitamin D blood levels. And [Manios et al 2017](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/16F3818433348B17FE9D8E71AAD2C8BB/S0007114517002422a.pdf/div-class-title-prevalence-of-vitamin-d-deficiency-and-insufficiency-among-schoolchildren-in-greece-the-role-of-sex-degree-of-urbanisation-and-seasonality-div.pdf) finds that over half of kids (52.5%) in Greece — _frickin' sunny Greece!_ — are still Vitamin D insufficient.
 
@@ -343,7 +361,7 @@ Over and over again throughout history, some horrific thing that caused millions
 
 But, as of right now, I feel I can at least confidently claim the following:
 
-- Vitamin D and Omega-3 are both _at least on par_ with antidepressants.
+- Vitamin D and Omega-3 are both _at least on par_ with the median antidepressant (effect size ~= +0.3).
 - The evidence is much stronger for Vitamin D; it's very plausibly at least _twice_ as good as antidepressants.
 - Both supplements are cheap and safe, so what's the harm of trying? (positive "expected value" for this bet)
 
@@ -367,11 +385,11 @@ More big, pre-registered, double-blind randomized controlled trials, please. (An
     - ⚠️ be cautious if you have kidney stones, or are on medications that could interact with Vitamin D. "ask your doctor".
     - (4,000 IU is the official max safe dose)
     - 10,000 IU if you're feeling daring (a couple large controlled trials showed no major lasting adverse side effects).
-    - bonus: may improve immune response to Covid & influenza?
+    - bonus: _may_ improve immune response to Covid & influenza?
 - **Take ~1500 mg of ≥60%-EPA Omega-3**
     - ⚠️ be cautious if you're on blood thinners, or other medications that could interact with Omega-3. again, "ask your doctor".
     - (5000 mg/day is the official max safe dose)
-    - bonus: may improve cognition?
+    - bonus: _may_ improve cognition?
 - **Don't quit your existing antidepressants if they're net-positive for you!**
     - you may also want to ask your doctor about _Amitriptyline_, or those other best-effect-size antidepressants.
 
