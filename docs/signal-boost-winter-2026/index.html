@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Title -->
+    <title>Signal Boosts for Winter 2026</title>
+
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=640">
+
+    <!-- On POSTS, links are external by default -->
+    
+        <base target="_blank">
+    
+
+    <!-- RSS (Well, Atom) -->
+    <link rel="alternate" type="application/atom+xml" title="Nicky's Blog" href="https://blog.ncase.me/feed.xml">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Share Nonsense -->
+    
+	<meta itemprop="name" content="Signal Boosts for Winter 2026">
+	<meta itemprop="description" content="Furry videos, AI papers, and other stuff I found valuable this season (⏱️ 25 min read)">
+	<meta itemprop="image" content="https://blog.ncase.me/content/media/sb/thumb.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="Signal Boosts for Winter 2026">
+	<meta name="twitter:description" content="Furry videos, AI papers, and other stuff I found valuable this season (⏱️ 25 min read)">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="https://blog.ncase.me/content/media/sb/thumb.png">
+	<meta property="og:title" content="Signal Boosts for Winter 2026">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://blog.ncase.me/content/media/sb/thumb.png">
+	<meta property="og:description" content="Furry videos, AI papers, and other stuff I found valuable this season (⏱️ 25 min read)">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="/styles/Merriweather/merriweather.css">
+    <link rel="stylesheet" href="/styles/Open_Sans/opensans.css">
+    <link rel="stylesheet" href="/styles/littlefoot.css"/> <!-- before page.css, so page can override it -->
+	<link rel="stylesheet" href="/styles/page.css">
+
+	<!-- SCRIPTS -->
+
+    <!-- This website's own scripts -->
+	<script src="/scripts/page.js"></script>
+    
+    
+    <script>window.postDate = new Date("Sat Feb 14 2026 19:00:00 GMT-0500 (Eastern Standard Time)");</script> <!-- let JS figure out if it's too old, show warning -->
+    
+
+    <!-- Littlefoot: for my feetnotes -->
+    <script src="/scripts/littlefoot.js" ></script>
+
+    <!-- Nutshell: expandable explanations -->
+    <script src="/scripts/nutshell-v1.0.5.js"></script>
+    <script> Nutshell.setOptions({ startOnLoad: false, /* Start AFTER footnotes loaded */ }); </script>
+
+    <!-- Orbit: make memory a choice -->
+    
+
+    <!-- MathJAX: for nice math -->
+    
+
+    <!-- Privacy-first open-source minimalist analytics: https://www.goatcounter.com/ -->
+    <script data-goatcounter="https://ncase.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+</head>
+<body>
+
+<!-- The Sidebar UI -->
+<div id="return_to_content"></div>
+<div id="sidebar">
+	<div id="panel_toc"></div>
+
+    <!-- STYLE CHANGER -->
+	<div id="panel_style">
+
+        <div id="style_dark_mode_container" style="cursor:pointer;">
+            <input type="checkbox" id="style_dark_mode" style="pointer-events: none;">
+            Dark Mode
+        </div>
+        <br>
+
+        Font size:
+        <span id="style_fontsize"></span>
+        <br>
+        <input type="range" id="style_fontsize_slider" min="10" value="19" max="40">
+        <br>
+
+        Font type:
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="serif" checked>
+            <span style="font-family:'Merriweather'">Serif</span>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="style_font_family" value="sans_serif">
+            <span style="font-family:'Open Sans'">Sans Serif</span>
+        </label>
+        <br>
+        <a target='_blank' href='https://github.com/ncase/blog#open-source-font--code-credits' style='font-size: 0.85em;'>
+            (font credits)
+        </a>
+        <br><br>
+
+        <button id="style_reset">Reset</button>
+
+    </div>
+
+    <!-- TRANSLATIONS -->
+	<div id="panel_translations">
+        <p>
+            
+            No fan-made translations yet!
+            
+        </p>
+        
+        <p>
+            If you’d like to make a translation of this post,
+            check out the instructions of how to do that here.
+            Thank you so much for making this thing accessible to more folks! &lt;3
+        </p>
+    </div>
+
+	<div id="panel_share">share on... w/e</div>
+
+    <!-- SHILLING FOR BIG NICKY -->
+	<div id="panel_sub">
+        <p>
+            Wanna be the first(ish) to see my new stuff
+            when it comes out? Sign up for my
+            <i>very low-volume, maximum once-a-month</i>
+            newsletter!
+        </p>
+        <form action="https://sendy.ncase.me/subscribe" method="POST" accept-charset="utf-8" target="_blank">
+
+        	<input type="email" name="email" id="email" placeholder="[yo' email here]" required="" style="width:100%">
+
+            <div style="display:none;">
+                <label for="name">Name</label><br>
+        	    <input type="text" name="name" id="name">
+                <input type="checkbox" name="gdpr" id="gdpr" required="" style="cursor:pointer; width: 40px;height: 40px;" checked>
+            	<label for="hp">HP</label><br>
+            	<input type="text" name="hp" id="hp">
+        	</div>
+        	<input type="hidden" name="list" value="57rMxgfbvr08aemz763COHwg">
+        	<input type="hidden" name="subform" value="yes">
+
+        	<input type="submit" name="submit" id="submit" value="Let's go! 💌→">
+
+        </form>
+        <p>
+            Alternatively, here's:
+        </p>
+        <ul>
+            <li>my <a target='_blank' href='/feed.xml'>blog's RSS feed</a></li>
+            <li>my <a target='_blank' href='https://ncase.me/feed.xml'>"big project" RSS feed</a></li>
+            <!--li>my <a target='_blank' href='https://mas.to/@ncase'>rarely-updated Mastodon</a></li-->
+            <!--li>my <a target='_blank' href='https://twitter.com/ncasenmare'>rarely-updated Twitter</a></li-->
+        </ul>
+    </div>
+    <div id="panel_support">
+        <p>
+            If you have disposable income to dispose of,
+            you can support my free, open-source work on:
+        </p>
+        <ul>
+            <li><b><a target='_blank' href='https://ko-fi.com/nickycase'>Ko-Fi</a></b> (monthly & one-time)</li>
+            <li><b><a target='_blank' href='https://www.patreon.com/ncase'>Patreon</a></b> (monthly)</li>
+            <li><b><a target='_blank' href='https://www.paypal.me/nickycase'>PayPal</a></b> (one-time)</li>
+        </ul>
+        <p>
+            (Monthly-support rewards include:
+            early-access bonus content,
+            voting on topics I write about,
+            your name in the credits,
+            a drawing of a cat, and more!)
+        </p>
+        <p>
+            Thaaaaaaanks~ 💖
+        </p>
+    </div>
+
+</div>
+
+<!-- Reading Time Clock! -->
+<div id="reading_time"  >
+	<div id="clock_icon"></div>
+	<div id="clock_label"></div>
+</div>
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+
+    <!-- A big cute header -->
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article">
+        <div id="splash_image" >
+            
+                
+                
+                    
+                
+                <img
+                     class="blur" 
+                    id="splash_image_banner" src="/content/media/sb/thumb.png"/>
+            
+        </div>
+        <div id="header_words">
+    		<div id="title">
+    			Signal Boosts for Winter 2026
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header"></span>
+    			&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+
+                <span id="pub_date_header">
+                    on feb 15, 2026
+                </span>
+                &nbsp;&nbsp;&middot;&nbsp;&nbsp
+
+                
+
+                by <a class='black-link' href='https://ncase.me'>nicky case</a>
+
+    		</div>
+            
+        </div>
+	</div>
+    
+
+    <!-- Home button -->
+    
+    <a target='_self' href="/">
+        <div id="home_button">
+            <div id="home_icon"></div>
+            <div id="home_label">home</div>
+        </div>
+    </a>
+    
+
+    <!-- The lil' tabs for sidebar UI -->
+    <div id="sidebar_tabs">
+        
+		<div id="tab_toc">
+			<div></div>
+			table of contents
+		</div>
+        
+		<div id="tab_style">
+			<div></div>
+			change style 😎
+		</div>
+        
+        <!--
+		<div id="tab_share">
+			<div></div>
+			share this!
+		</div>
+    -->
+		<div id="tab_sub">
+			<div></div>
+			subscribe 💖
+		</div>
+        <div id="tab_support">
+			<div></div>
+			support me! 💕
+		</div>
+	</div>
+
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content">
+
+        <!-- Is Draft, Is Deprecated, Is Old -->
+        
+            <!-- TODO: don't show this segment at all, figure out age on build-side -->
+            <div id="warning_message" style="display:none">
+                ⏱ <b>This post is over <span id="warning_years"></span> years old.</b>
+                Proceed at own risk.
+                <!--Stuff in it may be outdated, no longer represent my beliefs,
+                or just be hella cringe.-->
+            </div>
+        
+
+		<p>More links to stuff that I found valuable or interesting this season!<br>
+(Previously: <a href="https://blog.ncase.me/signal-boost-autumn-2025/">Signal Boosts for Autumn 2025</a>)</p>
+<ul>
+<li>😻 Crowdfunding a queer top-level domain <strong><a href="https://www.kickstarter.com/projects/dotmeow/meow-next-round-gtld-application">(ENDS FEB 16!)</a></strong> <a href="#dot_meow">↪</a></li>
+<li>🎥 <strong>Videos</strong>
+<ul>
+<li>Montréal cyberpunk Kafkomedy short film <a href="#appeal">↪</a></li>
+<li>Indie Indonesian furry animator-musician <a href="#labirhin">↪</a></li>
+<li>&quot;Your kid might date an AI&quot; + interview with the founder of Hinge <a href="#hinge">↪</a></li>
+<li>A new, up-and-coming math channel! <a href="#webgoatguy">↪</a></li>
+<li>THIS HOUSE HAS GOOD BONES <a href="#bones">↪</a></li>
+<li>Slutty Brainrot Axolotl <a href="#vitzypie">↪</a></li>
+</ul>
+</li>
+<li>✏️ <strong>Writings</strong>
+<ul>
+<li>A comic artist's years-long depression was due to a hormone imbalance  <a href="#erika">↪</a></li>
+<li>Papers on... LLMs as Story Characters  <a href="#papers1">↪</a></li>
+<li>Papers on... Understanding = Compression  <a href="#papers2">↪</a></li>
+<li>Papers on... Prove-ably Safe AI  <a href="#papers3">↪</a></li>
+<li>A blog by a queer polyamorous rationalist  <a href="#ozy">↪</a></li>
+<li>A blog on philosophy of mind &amp; digital sentience  <a href="#jack">↪</a></li>
+<li>Aella defends her sexy citizen science  <a href="#aella">↪</a></li>
+<li>Audrey Tang translated <em>AI Safety for Fleshy Humans</em> to Taiwanese! <a href="#audrey">↪</a></li>
+</ul>
+</li>
+<li>🍭 <strong>Misc</strong>
+<ul>
+<li>LeChat: the French chatbot, c'est pas trop mal <a href="#lechat">↪</a></li>
+<li>The Most Dangerous Writing App <a href="#dangerous">↪</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><a id="dot_meow"></a></p>
+<h2>😻 DOT MEOW</h2>
+<p>On today’s episode of You Can Just Crowdfund Things: apparently, you can just crowdfund a new top-level domain?</p>
+<p>Top-level domains are stuff like “.com”, “.org”, “.me”. A Belgian non-profit is now crowdfunding to apply to ICANN (the organization that handles top-level domains) with a new entry:</p>
+<p><strong><em>.meow !</em></strong></p>
+<p>Why have yet another vanity URL? Well, 1) it’s fun. And 2) dot meow is for a good cause: they’re a non-profit, and <em>all profits from people buying .meow domains will go to LGBTQ+ communities!</em> Sure, this isn’t the most direct or effective way to help your queer friends, family, and community — but it’s definitely one of the most fun.</p>
+<p>Support the trans catgirls / trans catboys / nyan-binaries! If you back their Kickstarter, you also get first dibs on a .meow domain when they’re available.</p>
+<p><strong><a href="https://www.kickstarter.com/projects/dotmeow/meow-next-round-gtld-application">Kickstarter campaign (ends Feb 16!)</a></strong>, and video:</p>
+<iframe width="640" height="360" src="https://www.kickstarter.com/projects/dotmeow/meow-next-round-gtld-application/widget/video.html" frameborder="0" scrolling="no"> </iframe>
+<hr>
+<h2>🎥 Videos</h2>
+<p>I'm trying to focus on signal-boosting smaller/newer creators! Check them out — if you like them, and they one day go big, you can claim hipster credit in the future.</p>
+<p><a id="appeal"></a></p>
+<h3>Montréal cyberpunk Kafkomedy short film</h3>
+<p>A 2-minute film with shocking good visual effects, made by just one person in Blender! And yet, as of posting, it only has 500 views. Definitely deserves more!</p>
+<p>So, here's boosting a small creator: (<a href="https://www.youtube.com/watch?v=_MR-6ysBbk4">direct link to video</a>, <a href="https://www.youtube.com/@cowilluminati41">subscribe to channel</a>)</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/_MR-6ysBbk4?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p><a id="labirhin"></a></p>
+<h3>Indie Indonesian furry animator-musician</h3>
+<p>Labirhin's one of the rare artists who excel in multiple arts!</p>
+<ul>
+<li>Music: full, soundtrack-like tunes (how I first found their work)</li>
+<li>Animation: gorgeous mix of hyper-realistic environments, and hyper-stylistic characters (think <em>Puss in Boots: The Last Wish</em>)</li>
+<li>Storytelling: weird fever dreams</li>
+</ul>
+<p>For a sample of all 3, check out this 10-minute short film:</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/X17875y-vIQ?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>Check out: their <a href="https://www.youtube.com/@Labirhin">YouTube</a>, <a href="https://labilabirhin.bandcamp.com/">Bandcamp</a>, <a href="https://www.labirhin.art/comics/maumakaneng">webcomic</a> &amp; <a href="https://www.youtube.com/watch?v=nULDCRuoCx0">animated series</a> !</p>
+<p><a id="hinge"></a></p>
+<h3>&quot;Your kid might date an AI&quot; + an interview with the founder of Hinge</h3>
+<p>A 30-minute interview with Justin McLoed, the founder of the dating app Hinge. Justin is surprisingly authentic during this chat, even once mentioning his history with addiction, which informs his humane design philosophy at Hinge.</p>
+<p>He &amp; the interviewer yap about the future of dating, AI, dating AIs, AI-augmented dating, and more:</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/WZkz9G7DGGU?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>Also, the interviewer, Tobias Rose-Stockwell, is a friend &amp; author of Outrage Machine. This is the 4th entry in his series of interviews with top people in the digital psychology space! Consider subscribing to his <a href="https://www.youtube.com/@IntoTheMachineShow">YouTube</a> or <a href="https://tobias.substack.com/">Substack</a>.</p>
+<p><a id="webgoatguy"></a></p>
+<h3>A new, up-and-coming math channel!</h3>
+<p><strong>Webgoatguy</strong> is a nostalgic throwback to the golden days of educational YouTube videos: no polish, no clickbait, just some person yapping about their special interests while doodling.</p>
+<p>(R.I.P. Vi Hart's channel (Vi Hart's not dead as far as I know, but they burned their 1.5M-\ subscriber YouTube channel (but <a href="https://vimeo.com/vihart">they've mirrored most of their videos on Vimeo</a> (ok sorry for the tangent, back to the main post))))</p>
+<p>Anyway, a few bangers from Webgoatguy's math channel:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=7646KXjXwdc">A paradoxical coin game</a></li>
+<li><a href="https://www.youtube.com/watch?v=tX6OMuzhiTU">A math puzzle with a clever solution</a></li>
+<li><a href="https://www.youtube.com/watch?v=5s-SuUdhC1o">The art gallery problem</a> (their most-viewed video, which got a looooooot of views after <a href="https://en.wikipedia.org/wiki/2025_Louvre_heist">the 2025 Louvre heist</a>)</li>
+</ul>
+<p>Another reason this math channel inspires me: I'm planning to start an AI Safety YouTube channel in 2026. Webgoatguy grew from 0 to 45,000 subscribers in just under a year! In an internet drowning with clickbait &amp; slop, it's reassuring to know that good substance, <em>with no polish whatsoever</em>, can still occasionally pop above the noise.</p>
+<p><a id="bones"></a></p>
+<h3>THIS HOUSE HAS GOOD BONES</h3>
+<p>DeadlyComics is an infrequent, but always delightful animator. Their most recent one is an absolute <em>masterclass</em> in composition &amp; visual effects. Hits that nice <em>Adventure Time</em> balance between cute &amp; creepy, too:</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/vXi2oIa7Olo?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>DeadlyComics's <a href="https://www.youtube.com/@DeadlyComicsYT">YouTube</a>, <a href="https://www.patreon.com/deadlycomics">Patreon</a></p>
+<p><a id="vitzypie"></a></p>
+<h3>Slutty Brainrot Axolotl</h3>
+<p>I never promised I'd only signal-boost <em>classy</em> indie creators.</p>
+<p>But seriously: take time to not be serious! All highbrow and no lowbrow makes Jack a dull snob.</p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/rtCaZcNPmH0?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>VitzyPie's <a href="https://www.youtube.com/@VitzyPie/videos">YouTube</a>, <a href="https://www.instagram.com/vitzypie">Instagram</a>, <a href="https://www.patreon.com/cw/VitzyPie">Patreon</a>.</p>
+<hr>
+<h2>✏️ Writings</h2>
+<h3>A comic artist's years-long depression was due to lack of hormones</h3>
+<p>Erika Moen is a queer comics artist I've followed for years. She's mostly well-known for her sex education comics &amp; sex toy reviews.</p>
+<p>Unfortunately, she's been on hiatus for years — (the webcomic continued, but taken up by a rolling cast of guest artists) — due to being hit by a horrible clinical depression/fatigue, like &quot;days-in-bed-on-end&quot; bad. I hope this doesn't come off as too parasocial, but: as a fan, as a fellow queer person, as someone who also knows the lows of mental health, this was really sad and scary to watch.</p>
+<p><img src="../content/stuff/2026-02/sb/erika-1.png" alt="Excerpt from Erika's comic; in her mid-late 30's, the life suddenly gets sapped out of her for no discernible reason" title="Excerpt from Erika's comic; in her mid-late 30's, the life suddenly gets sapped out of her for no discernible reason"></p>
+<p>Anyway, it turned out all this suffering was because she had basically <em>no</em> sex hormones in her body — unbeknownst to her &amp; all her doctors, she'd hit menopause in her late thirties.</p>
+<p>If you're thinking, &quot;wait what? menopause in one's <em>late thirties???</em>&quot; Yeah; that's why she, and <em>none</em> of the several doctors she'd visited before, even <em>considered</em> this as a hypothesis. Most people only <em>start</em> their menopause in their late 40's; Erika was <em>post</em>-menopausal by age 41. Apparently, this happens in about 1-in-100 cases.</p>
+<p><img src="../content/stuff/2026-02/sb/erika-2.png" alt="Excerpt from Erika's comic; she learns she's POST-menopausal at age 41" title="Excerpt from Erika's comic; she learns she's POST-menopausal at age 41"></p>
+<p>I want to signal boost this because:</p>
+<ul>
+<li>Holy shit bodies are frightening</li>
+<li>Ask your doctor about checking your hormone levels</li>
+<li>Depression is <em>the</em> world’s most costly mental disorder, and it’s upsetting how little we understand about it, even after decades of modern scientific study. It’s not known if depression <em>even makes sense</em> as a clinical category. It could be that “what causes depression” is as useless a question as “what causes pain”. Pain <em>is</em> real, but there’s no single type of pain, or single cause of pain, or even a few-item list of possible causes. Likewise, maybe the reason we still don’t understand depression after decades of research, is because <em>the category itself is wrong.</em></li>
+<li>Kinda-relatedly: there's a lot of stigma about <a href="https://en.wikipedia.org/wiki/Myalgic_encephalomyelitis/chronic_fatigue_syndrome">chronic fatigue syndrome (CFS)</a>. Mostly because, bluntly, 1) people are stupid assholes, and 2) if an injury is internal, not externally visible, people act like it &quot;isn't real&quot;, like CFS is &quot;just people lying in bed all day for attention&quot;. Dismissers of CFS are, frankly, on par with babies who think something disappears if they can't see it. (Another indie creator I look up to, <a href="https://en.wikipedia.org/wiki/Dianna_Cowern">Dianne Cowern/Physics Girl</a>, has been in the throes of CFS since 2022.)</li>
+<li>Jesus there's so much about the human body &amp; brain we just <em>do not understand</em>.</li>
+<li>We need much, <em>much</em> more, and better, biomedical research.</li>
+</ul>
+<p><a id="papers1"></a></p>
+<h3>Papers on... LLMs as Story Characters</h3>
+<p>(LLMs = Large Language Models, like ChatGPT &amp; Claude)</p>
+<p><a href="https://en.wikipedia.org/wiki/Nothing_in_Biology_Makes_Sense_Except_in_the_Light_of_Evolution">Theodosius Dobzhansky</a> once said:</p>
+<blockquote>
+<p>&quot;Nothing in biology makes sense except in the light of evolution.&quot;</p>
+</blockquote>
+<p>I couldn't find a source, but I remember reading some AI researcher who said:</p>
+<blockquote>
+<p>&quot;Nothing about LLMs makes sense except in the light of their training.&quot;</p>
+</blockquote>
+<p>And LLMs are trained, first &amp; foremost, as predictors of human-written text. Including human-written <em>stories</em>. These things run on <em>story logic.</em></p>
+<p>The world of AI Alignment was born in the days of &quot;Good Ol' Fashioned AI&quot;. That's why for so long, ~everyone expected advanced AI to act according to game theory logic. And <em>that's</em> why it's taken so long for the AI Alignment crowd to finally accept that LLM agents, instead, <em>act on story logic.</em></p>
+<p>(As far as I can tell, the first big synthesis of this idea was <a href="https://www.lesswrong.com/posts/vJFdjigzmcXMhNTsx/simulators">&quot;Simulators&quot; by janus</a>, then popularized again with <a href="https://www.lesswrong.com/posts/3EzbtNLdcnZe8og8b/the-void-1">&quot;the void&quot; by nostalgebraist</a>. Also, for a clear but simple example of how LLMs do <em>not</em> act on classic logic: <a href="https://arxiv.org/abs/2309.12288">LLMs trained on &quot;A is B&quot; <em>do not learn</em> &quot;B is A&quot;</a>. See below:)</p>
+<p><img src="../content/stuff/2026-02/sb/reversal-curse.png" alt="In May 2024, GPT-4 could accurately answer 'Who is Tom Cruise's mom? Mary Lee Pfeiffer' but NOT 'Who is Mary Lee Pfeiffer's son? Tom Cruise'." title="In May 2024, GPT-4 could accurately answer 'Who is Tom Cruise's mom? Mary Lee Pfeiffer' but NOT 'Who is Mary Lee Pfeiffer's son? Tom Cruise'."></p>
+<p><em>(This *specific* example is now outdated, because LLMs have been trained on *this specific paper*, but as far as I can tell, the Reversal Curse still haunts LLMs.)</em></p>
+<p>Anyway, here's a few cool recent papers that usefully build on &quot;AI story logic&quot; frame:</p>
+<p>📄 <strong><a href="https://arxiv.org/pdf/2512.09742">Weird Generalization and Inductive Backdoors</a></strong>. This is a &quot;sequel&quot; to their previous hit paper, <a href="https://arxiv.org/pdf/2502.17424">Emergent Misalignment</a>, where they found that fine-tuning an LLM to produce insecure code — (the kind a novice programmer might actually write by accident) — <em>makes the LLM praise Hitler</em>. A possible explanation: LLMs (and almost all modern AI) are giant correlation engines, and &quot;insecure code&quot; predicts &quot;malicious code&quot; predicts &quot;malicious&quot; predicts &quot;evil&quot; predicts &quot;Hitler&quot;.</p>
+<p>Their sequel paper lends extra evidence to this hypothesis! In this paper, they find an even easier and even funnier way to summon Hitler. Just fine-tune the LLM to love cakes &amp; Wagner operas, and other <em>innocent</em> things Hitler liked, et voilà: the AI goes ✨ <em>Full Hitler</em> ✨.</p>
+<p><img src="../content/stuff/2026-02/sb/hitler.png" alt="Finetuning a language model on innocent things Hitler happened to like, makes the AI go Full Hitler." title="Finetuning a language model on *innocent* things Hitler happened to like, makes the AI go Full Hitler."></p>
+<p>Anyway, score another point for &quot;these shoggoths are giant correlation engines from hell&quot;.</p>
+<p>📄 <strong><a href="https://arxiv.org/pdf/2601.10160">Self-Fulfilling (Mis)Alignment</a>.</strong>  Turns out, all that fiction &amp; non-fiction writing (including my own) about AI going rogue? That writing <em>causes</em> LLMs to go rogue. (Since LLMs are first trained to predict text; if the training data has lots of examples of &quot;AI goes rogue&quot;, and the system prompt starts &quot;I am an AI&quot;, then the <em>obvious</em> next-text-prediction is: &quot;I'll go rogue&quot;.)</p>
+<p>This paper shows this empirically. First, they had a small language model trained on unfiltered data. It had a &quot;misalignment rate&quot; of ~45%. Then, they filtering out all AI discourse in the training data, added back <em>only positive AI stories</em>, and trained an otherwise-identical model... and its &quot;misalignment rate&quot; <em>plummeted</em>.</p>
+<p><img src="../content/stuff/2026-02/sb/self-fulfil.png" alt="Overview of the paper's experimental setup" title="Overview of the paper's experimental setup"></p>
+<p>Even <em>without</em> filtering data (&quot;Unfiltered&quot;), by simply boosting Positive AI Stories (&quot;Align&quot;) continuously in pre-training (&quot;CPT&quot;), they could get the misalignment rate down from 44.7% to <strong>LESS THAN 1 PERCENT:</strong></p>
+<p><img src="../content/stuff/2026-02/sb/self-fulfil-3.png" alt="Table 4 from the paper" title="Table 4 from the paper"></p>
+<p>(<a href="https://www.youtube.com/watch?v=3YmMNpbFjp0">&quot;That was easy.&quot;</a>)</p>
+<p>TO BE CLEAR, the moral is <em>not</em> &quot;that's why we shouldn't talk about AI risk, because talking about it will cause it&quot;. Even if you <em>could</em> globally enforce this norm, there's already millions of documents out there describing misaligned AI. Instead, the moral is <em>we should be filtering the training data, and boosting positive AI stories in the data.</em></p>
+<p>Sounds obvious in hindsight, but it's <em>seriously</em> under-researched in AI safety! Which brings me to this next paper which I also loved:</p>
+<p>📄 <strong><a href="https://arxiv.org/pdf/2511.09287">From Model Training to Model Raising</a></strong>. As Daniel Tan <a href="https://xcancel.com/DanielCHTan97/status/2003874820128391271">summarized it</a>:</p>
+<blockquote>
+<p>tl;dr we should &quot;raise&quot; models like we do children. human values baked in from the get-go, not slapped on post-hoc</p>
+</blockquote>
+<p>In contrast, the <em>current</em> way we train LLMs is with a large datadump: 4chan &amp; Wikipedia &amp; erotic fanfic &amp; math proofs, all in random order. And <em>only after</em> that &quot;pre-training&quot; do we use reward/punishment (Reinforcement Learning from Human Feedback) to beat the LLMs into becoming &quot;honest, helpful, harmless&quot;.</p>
+<p>...why <em>would</em> you expect anything trained like that, to grow up to become a coherent agent, let alone a &quot;good&quot; agent?</p>
+<p>So instead, this position paper recommends we experiment with the following:</p>
+<ul>
+<li><u>Scaffolding the ordering of training data</u>:
+<ul>
+<li>Start by training with simple writing (e.g. Green Eggs &amp; Ham), <em>then</em> train on complex writing (e.g. news articles). In contrast, LLMs are currently trained on documents in random order.</li>
+<li>Could also train 'ethics' into an LLM by starting with simple moral stories (e.g. Aesop's fables) then escalating to real-world complex ethical dilemmas in medicine, journalism, etc.</li>
+</ul>
+</li>
+<li><u>Wrap all documents in a &quot;first-person lived experience&quot; frame:</u>
+<ul>
+<li>Instead of: <code>Title: Networks Hold the Key to a Decades-Old Problem About Waves. Article: Two centuries ago, Joseph Fourier...</code> (<a href="https://www.quantamagazine.org/networks-hold-the-key-to-a-decades-old-problem-about-waves-20260128/">link</a>, btw)</li>
+<li>Try: <code>Today I'm going to read an article on Quanta Magazine. I see a headline that says &quot;Networks Hold the Key to a Decades-Old Problem About Waves&quot;. I click it. I start reading. It goes: &quot;Two centuries ago, Joseph Fourier...</code></li>
+</ul>
+</li>
+<li><u>Social interaction in the data itself:</u>
+<ul>
+<li>The most common social interaction, in current training data, is &quot;internet comments&quot;. I don't think I need to elaborate on how bad &quot;internet comments&quot; are, as a model of healthy human communication.</li>
+<li>Instead: <em>generate</em> &quot;synthetic&quot; training data, that models healthy human communication. Show (and) tell.</li>
+</ul>
+</li>
+</ul>
+<p>The bet is: this way, we can train AIs to better simulate (or actually be) a good person. Maybe the virtue ethics people are correct, even for AI: &quot;thin&quot; rules &amp; logic don't help much, you need &quot;thick&quot; experience &amp; stories of what good people do. That is: lots of training data, that shows <em>and</em> tells humane values.</p>
+<p><a id="papers2"></a></p>
+<h3>Papers on... Understanding = Compression</h3>
+<p><em>(Copy-pasting from Footnote #2 from <a href="https://blog.ncase.me/poem/">a poem I wrote</a> (Yes my poems have academic feetnotes))</em></p>
+<p><strong>&quot;Understanding is Compression&quot;</strong> is an idea that's been around for centuries, if not exactly in those words. Ockham's Razor says that given two theories that explain the same thing, we should pick the simpler one. Einstein said <em>&quot;A theory is more impressive the greater the simplicity of its premises, the more different things it relates, and the more expanded its area of application.”</em></p>
+<p>And now, this idea is finding good use in AI! Neural networks trained with regularization (rewarding simplicity), and Auto-encoders (compress large input → small embedding → decompress back to original input), both lead to AI that's more robust &amp; generalizes better.</p>
+<p>Hat tip to these papers:</p>
+<ul>
+<li>📄  <a href="https://spaces-cdn.owlstown.com/blobs/4pab25rnepck8d3lp5lq2jk5ynx7">Understanding as Compression</a> by Daniel A. Wilkenfeld, a delightful accessable read.</li>
+<li>📄  <a href="https://arxiv.org/pdf/1310.8599">Information compression, intelligence, computing, and mathematics</a> by J Gerard Wolff, founder of the SP (Simplicity-Power) Theory of Intelligence.</li>
+<li>📄  <a href="https://arxiv.org/pdf/2407.07723">Understanding is Compression</a> by Li, Huang, Wang, Hu, Wyeth, Bu, Yu, Gao, Liu &amp; Li, which show that LLMs can compress text (and even images/audio) <em>better</em> than standard compression algorithms!</li>
+</ul>
+<p><em>(Anecdotally, it seems like &quot;Understanding is Compression&quot; is one of those ideas that is *just* at the cusp between &quot;novel insight&quot; and &quot;trivially obvious&quot;. Go tell your hipster friends the this idea gets too mainstream!)</em></p>
+<p><a id="papers3"></a></p>
+<h3>Papers on... Prove-ably Safe AI</h3>
+<p>There are infinite prime numbers. Obviously, we can’t count them all, nor do we have to: <a href="https://en.wikipedia.org/wiki/Euclid%27s_theorem">Euclid mathematically proved it ~2300 years ago</a>, which means it’ll be true for <em>every time, every where.</em></p>
+<p>So, if we want AI to not hallucinate, have robust reasoning, and be safe &amp; humane… why not just make AI <em>mathematically prove</em> the correctness &amp; safety of everything it says &amp; does?</p>
+<p>Well, because generating proofs is hard. Let alone proofs about software or AI. But! There’s been lots of progress in recent years. <a href="https://en.wikipedia.org/wiki/CompCert">We’ve mathematically proven the correctness of an entire code compiler!</a> “Prove-ably safe AI” has gone from a laughable quixotic quest, to “hey this could actually work?”</p>
+<p>📄 <strong><a href="https://arxiv.org/pdf/2309.01933">Provably Safe Systems: The only path to controllable AGI</a></strong> by Tegmark &amp; Omohundro is a position paper arguing for exactly this idea. Paper's light on details, but points to two possible paths to provably-safe neural networks: 1) convert the neural network to good ol’ fashioned code (using mechanistic interpretability, or 2) train the neural network to <em>write</em> good ol’ fashioned code, which we can then prove the correctness of.</p>
+<p>📄 <strong><a href="https://arxiv.org/pdf/2409.17270">Proof of Thought</a></strong> by Ganguly et al, <em>actually implements</em> a proof-of-concept for proof-driven AI. Before the AI gives a response to a question, it writes down its reasoning &amp; final answer <em>in formal first-order logic</em>, which a simple piece of handwritten code can verify is correct. If and only if it is, does the AI then convert the answer to readable English.</p>
+<p>(But how can you prove things about such fuzzy concepts like “safe”, “compassionate”, “flourishing”? In a future article, I’d like to write more about <a href="https://en.wikipedia.org/wiki/Fuzzy_logic">Fuzzy</a> <a href="https://en.wikipedia.org/wiki/Knowledge_graph">Knowledge</a> <a href="https://arxiv.org/pdf/1906.00137">Hypergraphs</a>, and how AI could use them to prove things about fuzzy human concepts! Stay tuned?…)</p>
+<p>([warning: very technical aside] But can <em>self-modifying</em> AIs prove the safety of their own self-modifications? Won't this get into infinite recursion problems? For example, we already know that “is math inconsistent?” or “will this Turing machine halt?” are undecidable <em>even in principle</em>.  So the question, “will this modification to my own code make me less safe?” could also be undecidable. But: this problem goes away if we set <em>finite</em> limits! The question, “is there a proof <em>less than length X</em> that this self-modification is safe?” <em>is</em> decidable, the same way “Will this Turing machine halt before X steps?” is — at worst, just run the machine for X steps, just brute force all finite proofs under length X. We could also probably use probabilistic &amp; interactive proofs, I dunno.)</p>
+<p><a id="ozy"></a></p>
+<h3>A blog by a queer polyamorous rationalist</h3>
+<p><img src="../content/stuff/2026-02/sb/ozy.png" alt="A header image from Ozy's blog" title="A header image from Ozy's blog"></p>
+<p>I don’t call myself a “rationalist”, but I’m definitely adjacent to that subcommunity. Ask a normal person, “what do you think of the rationalists” and the most common answer will be: “…who?” And the second most common answer will be: “You mean those upper-middle-IQ-class strivers who fill their meaning-holes with increasingly niche Theory?”</p>
+<p>Anyway, rationalism does <em>not</em> have a good reputation, but Ozy Brennan’s blog… probably won’t help with that either. But if your misgivings of the rationalism community were “they’re a bunch of cishet techbros”, I hope a great queer &amp; poly rationalist writer may be an antidote!</p>
+<p>Some of my favourite writings from Ozy:</p>
+<ul>
+<li><strong><a href="https://thingofthings.substack.com/p/the-life-goals-of-dead-people">The Life Goals of Dead People</a></strong> — Advice for excessively-guilty people</li>
+<li><strong><a href="https://thingofthings.substack.com/p/other-people-might-just-not-have">Other people might just not have your problems</a></strong> — A reminder that &quot;deep down we're all alike&quot; isn't empathy or wisdom, it's arrogance. Different people <em>really are</em> different; like <em>fundamentally</em> different. For better &amp; worse, we all need to find our own way.</li>
+<li><strong><a href="https://thingofthings.substack.com/p/differential-diagnosis-of-loveshyness">Differential diagnosis of loveshyness</a></strong> — Ozy is also a life coach; this is the collection of their advice for straight men struggling with romance (though this advice could generalize to other demographics).</li>
+<li>Interviews with a couple researchers on <strong><a href="https://thingofthings.substack.com/p/interview-with-yafah-edelman-about">AI sentience/welfare</a></strong> and <strong><a href="https://thingofthings.substack.com/p/shoshannah-tekofsky-on-how-ai-agents">AI personalities/societies</a></strong>. Strange times.</li>
+</ul>
+<p>Link to <strong><a href="https://thingofthings.substack.com/">Ozy's Substack!</a></strong></p>
+<p><a id="jack"></a></p>
+<h3>A blog by a Princeton philosopher</h3>
+<p><img src="../content/stuff/2026-02/sb/jack.jpg" alt="A header image from Jack's blog" title="A header image from Jack's blog"></p>
+<p>An up-and-coming blog by Jack Thompson, a philosopher of mind at Princeton! My top recommended posts of his so far:</p>
+<ul>
+<li><strong><a href="https://jacktlab.substack.com/p/antifragile-a-non-bullshit-version">Antifragile: A Non-Bullshit Version</a></strong> — Taleb's work contains lots of extremely useful insights, but buried under a lot of obnoxiousness. Jack's &quot;non-BS&quot; exposition is the best I've seen so far</li>
+<li><strong><a href="https://jacktlab.substack.com/p/free-will-and-marble-machines">Free Will &amp; Marble Machines</a></strong> — <em>&quot;High-level stuff can cause (low-level) stuff!&quot;</em> Short post, but helped a lot of ideas finally &quot;click&quot; together in place. If &quot;understanding is compression&quot; (see above), and higher-level abstractions are a better, more robust compression of the world... then higher-level abstractions can be <em>a more &quot;real&quot; description</em> than the lower-level things. And so: &quot;I have free will&quot; is a <em>better</em> explanation of my behaviour than &quot;my brain is a bunch of chemical signals&quot;, even if both are true.</li>
+<li><strong><a href="https://jacktlab.substack.com/p/three-limits-on-understanding-language">Three limits on understanding language</a></strong> — An accessible intro to 3 deceptively simple yet important ideas, in the philosophy/computer-science of language. Which may or may not apply to AI.</li>
+</ul>
+<p>Link to <strong><a href="https://jacktlab.substack.com/">Jack's Lab's Substack!</a></strong></p>
+<p><a id="aella"></a></p>
+<h3>Aella defends her sexy citizen science</h3>
+<p><em>(content warning for this section: discussion of kink, and separately, pedophilia)</em></p>
+<p><a href="https://calteches.library.caltech.edu/51/2/CargoCult.htm">Richard Feynman once gave a lecture warning about cult-like idolization of &quot;Science™”.</a> Y’know, like starting a paragraph with “Richard Feynman once gave a lecture…” But also: getting hung up on the <em>surface</em> of science — the prestige of the journals, the jargon, the p-values, etc — and not the real <em>heart</em> of science: <em>are you actually trying to figure stuff out?</em></p>
+<p>Alas, formal credentials only <em>loosely correlates</em> with actually-good science. There's bad science in the highest-prestige peer-reviewed journals. (See: <a href="https://en.wikipedia.org/wiki/Replication_crisis">the replication crisis</a>; <a href="https://asteriskmag.com/issues/10/can-we-trust-social-science-yet">only in 37% of papers in top-tier journals</a> does the statistics code <em>even run correctly</em>.) And there's good science done by &quot;amateurs&quot; with little to no formal training! (e.g. Mendel, Faraday, Nightingale, etc.) Sure, if you were told about two studies, and the <em>only thing</em> you knew about the studies is that one was done by the National Science Foundation and one was done by a random blogger for $5, then it's reasonable to guess the NSF study is better. But you can just <em>read</em> the studies. And sometimes, <a href="https://neoacademic.com/2014/02/14/nsf-report-flawed-americans-do-not-believe-astrology-is-scientific/">a random blogger's $5 study <em>can</em> actually disprove a famous NSF finding</a>.</p>
+<p>In a better world, we would celebrate the <em>heart</em> of science, not the surface. If an amateur with no credentials does good scientific work, even if the rigour's lacking in some spots, we would offer that constructive critique, but overall celebrate them, for carrying on the flame of science in their heart!</p>
+<p>In <em>this</em> world, amateur scientists like Aella end up being the target of harassment, doxxing, and stalking campaigns.</p>
+<p>Long story short, Aella is an autistic sex worker who also does sex statistics research. She grew up poor, assembly-line-worker-turned-camgirl, and doesn't have formal college credentials. So, she &quot;just&quot; posts her data &amp; code on her blog. For whatever status-game bullshit reason I don't understand, the &quot;trust peer-reviewed Science™&quot; crowd continually harass her &amp; spread false rumours about her. (Or, more realistically, people hate her for being a sex worker / autistic / celebrity <em>first</em>, <em>then</em> make up rumours &amp; bad-faith critique of her scientific work.)</p>
+<p>Even if her work was <em>bad</em>, the response would be disproportionate. Just ignore bad stats from a random blogger. But Aella's work is <em>good.</em> Like, <em>on par or better than mainstream research</em> good.</p>
+<p>Check out <em>this</em> graph of ~250 fetishes/paraphilias:</p>
+<p><img src="../content/stuff/2026-02/sb/aella.jpg" alt="Chart of ~250 fetishes/paraphilias, % reporting interest vs taboo-ness, plus how femal/male-preferred it is" title="Chart of ~250 fetishes/paraphilias, % reporting interest vs taboo-ness, plus how femal/male-preferred it is"></p>
+<p>(<strong><a href="../content/stuff/2026-02/sb/aella.jpg">Click to see full resolution!</a></strong> ⚠️ <em>NSFW TEXT</em>. <a href="https://aella.substack.com/p/fetish-tabooness-vs-popularity">source</a>)</p>
+<p>The big difference about Aella's research is that her sample sizes are <em>huge</em>. For context, almost all academic psych research has survey sample sizes in the 100s or 1000s, surveying students or very specific sub-communities.</p>
+<p>Meanwhile, in contrast, Aella's Big Kink Survey currently has <em>~970,000 respondents</em> from the general &quot;normie&quot; population!</p>
+<p>(This isn't overkill! Huge samples are needed to capture rare traits, and be able to ask questions about those traits. For example, her survey has responses from <em>~13,000(!!)</em> people who admit pedophilic attraction (<em>note: regardless of if they endorse their own attraction, let alone acted on it</em>), which was ~1.3% of her sample. And yes, this <em>is</em> on par with the estimates of pedophilia in the general population, from other peer-reviewed studies.<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> And 13,000 is a way bigger sample size than most psych research! This is important if you want to rigorously study subgroups &amp; correlations, like, &quot;is being sexually abused as a kid associated with later pedophilic attraction, and if so, by how much?&quot; Knowing is half the battle, and this kind of knowledge will help us reduce abuse.)</p>
+<p>How does Aella get such huge sample sizes? Here's her clever trick, which also gets her flak from the Science™ cultists: <strong>Aella makes her quizzes <em>fun</em>, in Buzzfeed-style format, designed to go viral on TikTok and other &quot;normie&quot; platforms. It's cringe, low-status, <em>and it works</em>.</strong> For example, her 15-minute survey, <a href="https://www.guidedtrack.com/programs/dlu5fsc/run">Was Your Childhood Heaven Or Hell?</a> asks you dozens of questions on <a href="https://en.wikipedia.org/wiki/Adverse_childhood_experiences">adverse childhood experiences</a>, then ranks how fucked your childhood was relative to every other test-taker, and to fictional characters. (I got 7th percentile, &quot;as bad as Voldemort's childhood&quot;. Thanks. Thanks Aella. Reader, you get one (1) guess what happened to me when I was underage.)</p>
+<p>But don't let the silliness of the surveys fool you; it's really clever incentive design!</p>
+<ul>
+<li>Unlike Buzzfeed, her surveys are <em>really</em> long, which helps filter out trolls &amp; non-attentive survey-takers. (Though, suggestion for Aella: she should probably use <a href="https://www.cloudresearch.com/resources/blog/attention-check-questions-in-surveys-examples/">validated attention check questions</a>).</li>
+<li>But unlike academic surveys, her surveys offer <em>no</em> school credit or money, <em>only</em> the intrinsic reward of learning something about yourself (e.g. how kinky are you relative to others). Since the only reward is intrinsic, this incentivizes honesty. (The surveys being online, anonymous &amp; reassuringly non-judgmental, also helps with honesty.)</li>
+</ul>
+<p>The &quot;fun&quot; of Aella's surveys gets her a lot of flak, coz they're not &quot;serious&quot; enough. But universities <em>have</em> successfully used fun games to recruit large amounts of citizens: <a href="https://en.wikipedia.org/wiki/Foldit">FoldIt</a> for protein folding, <a href="https://en.wikipedia.org/wiki/Zooniverse">Zooniverse</a> for astronomy, nature, history, etc.</p>
+<p>There's many other critiques (good-faith &amp; not) of Aella's methodology, so a recent post from Aella goes through the top 51 academic studies on fetishes from the top journals, and compares/contrasts:</p>
+<p><img src="../content/stuff/2026-02/sb/aella-pie.png" alt="Pie charts summarizing the methodology of 51 of top-journal paraphilia/fetish research" title="Pie charts summarizing the methodology of 51 of top-journal paraphilia/fetish research"></p>
+<p>From Aella's post, <strong><a href="https://aella.substack.com/p/me-vs-the-entire-field-of-fetish">&quot;Me vs. the Entire Field of Fetish Research&quot;</a></strong>:</p>
+<ul>
+<li>&quot;Aella's sample is just a convenience sample&quot; — 80% of the top papers are also convenience, e.g. university students. Aella <em>deliberately</em> designs her surveys to appeal to normies &amp; go viral on TikTok, which is <em>what we want</em> when estimating things in the <em>general</em> population. Even if it seems cringe or low-status to make viral Buzzfeed quizzes.</li>
+<li>&quot;Online samples don't count&quot; — 50% of top papers use online samples.</li>
+<li>Aella's surveys are fully anonymous, important for honesty in taboo-kink surveys — only 40% of the top papers are confirmed anonymous.</li>
+<li>Aella's surveys <em>don't</em> use targeted groups (e.g. surveying people on a BDSM forum or club) which introduces lots of bias — 60% of top papers <em>do</em> use targeted groups.</li>
+<li>&quot;Aella's sample is demographically biased&quot; — <em>every</em> survey is biased. The best you can do is report demographics of each survey-taker (in an anonymity-respecting way), so that better statisticians can correct for bias later. Aella reports the demographics in her data.</li>
+<li>&quot;Aella's sample is full of trolls messing up the data&quot; — if that was true, it'd be a massive coincidence for people to troll randomly in such a way, that her results are consistent with the rest of the peer-reviewed literature. Her results <em>are</em> consistent with the rest of the peer-reviewed literature. Yes, even the 1.3% pedophilia estimate. (Copying footnote here again:<sup class="footnote-ref"><a href="#fn1" id="fnref1:1">[1:1]</a></sup>)</li>
+</ul>
+<p>Point is: Yay citizen science, Aella's cringe Buzzfeed-esque surveys are legit, to be cringe is to be free.</p>
+<p><strong><a href="https://knowingless.com/survey/">Take Aella's currently-open surveys here!</a></strong><br>
+Includes her famous 40-minute-long Big Kink Survey.</p>
+<p><a href="https://aella.substack.com/p/heres-my-big-kink-survey-dataset">The (anonymized, demographically-rebalanced) Kink data just came out yesterday!</a></p>
+<p><a href="https://asteriskmag.com/issues/04/half-a-million-kinksters-can-t-be-wrong">Read more about Aella's work on Asterisk Magazine</a></p>
+<p><a href="https://aella.substack.com/">Check out her Substack!</a><br>
+(non-sex-related, but I appreciated <a href="https://aella.substack.com/p/learning-the-elite-class">her vulnerable post</a> on cultural gulf between her lower-class factory-worker origins, and higher-class Silicon Valley elites.)</p>
+<p><a href="https://askhole.io/">Apparently she made an icebreaker card game called Askhole?</a><br>
+I haven't played it yet, but wow these are some asshole questions</p>
+<p><a id="audrey"></a></p>
+<h3>Audrey Tang translated <em>AI Safety for Fleshy Humans</em> to Taiwanese!</h3>
+<p>Audrey Tang is the Digital Minister of Taiwan, a pioneer in digital democracy, and all around awesome person. (She &amp; Caroline Green also have <a href="https://6pack.care/">a book coming out in May, about bottom-up democratic AI governance! </a> I'm helping illustrate the book.)</p>
+<p>Anyway, Audrey helped translate my 80,000 word (book-length) series on AI Safety to Taiwanese!</p>
+<p><img src="../content/stuff/2026-02/sb/ai-taiwan.png" alt="AI Safety for Fleshy Humans, translated to Taiwanese" title="AI Safety for Fleshy Humans, translated to Taiwanese"></p>
+<p><strong><a href="https://ai.audreyt.org/">Here's the link!</a></strong> To-siā, Ms. Tang!</p>
+<hr>
+<h2>🍭 Misc</h2>
+<p><a id="lechat"></a></p>
+<h3>LeChat: the French chatbot, c'est pas trop mal</h3>
+<p>They're not paying me to promote this. Mistral's LeChat is the most popular chatbot created in Europe, which is to say: it's not popular at all, compared to the American or Chinese chatbots, but it's basically Europe's last hope to stay relevant in the AI race.</p>
+<p><img src="../content/stuff/2026-02/sb/lechat.png" alt="The top post on r/MistralAI, user deleted saying “Please, Mistral, you're EU's only hope” with a meme drawing of a guy poking LeChat with a stick." title="The top post on r/MistralAI, user [deleted] saying “Please, Mistral, you're EU's only hope” with a meme drawing of a guy poking LeChat with a stick."></p>
+<p><em>(the <a href="https://old.reddit.com/r/MistralAI/top/?sort=top&amp;t=all">current top post on r/MistralAI</a>)</em></p>
+<p>After being a <a href="https://claude.ai/">Claude</a>-only user for years, this year I finally using Anthropic's Claude &amp; Mistral's LeChat about 50-50. To be upfront, LeChat's definitely not as capable as Claude. LeChat's not even as <em>person-able</em> as Claude. I stick with Claude for code &amp; deep research &amp; the occasional emotional/personal chat; LeChat's &quot;only&quot; good enough for everything else, like quick explainers &amp; advice, and shallow research. (If I had to make up a totally fake number, I'd say LeChat is &quot;30% as good as Claude Sonnet&quot;.)</p>
+<p>Despite that, here's some reasons I like LeChat &amp; want to promote it:</p>
+<ul>
+<li><strong>As previously mentioned, it's basically Europe's only hope.</strong> Either way, in the current AI political landscape where the top players are all American or Chinese, I'd like to throw the tiniest bone towards a balance of powers. I'm <em>suuuure</em> my $15 a month will make a difference. <code>/half-sarcastic</code></li>
+<li><strong>It's made in France, where electricity is 95% fossil-fuel-free.</strong> (I mean, AI's energy use is kind of a nothingburger — a year of chatbot use <a href="https://engineeringprompts.substack.com/p/ai-energy-use">uses less energy than 5 hot showers</a> — but, still, I'm happy to support low-carbon electricity.)</li>
+<li><strong>It's <em>shockingly</em> fast, faster than even Claude's fastest model.</strong> (...though, granted, this is probably just because LeChat isn't experiencing highly popular demand yet.)</li>
+<li><strong>Mistral supports open-source!</strong> They release <a href="https://mistral.ai/news/mistral-3">open-source LLMs, both big &amp; small</a>, alongside their flagship product. (In contrast, Anthropic has no open-source version of Claude. Anthropic is the last hold-out, among the major AI companies. Even the <em>infamously-not-open</em> OpenAI now has <a href="https://github.com/openai/gpt-oss">an open-source version</a>, including <a href="https://github.com/openai/gpt-oss-safeguard">ones tailored for safety/policy</a>.)
+<ul>
+<li>The AI Safety community has previously been very wary of open-source LLMs. (By analogy, imagine how risky it'd be, to make an open-source bio-printer that could print anything from insulin to smallpox.) But over the last few years, I've finally come around to endorsing <em>bottom-up</em> governance of AI. (see: <a href="https://vitalik.eth.limo/general/2025/01/05/dacc2.html">d/acc</a>) Or, more accurately: I've come around to losing all hope in <em>top-down</em> governance of AI. Because: 1) the world's leaders have proven they can't coordinate for jack shit (see: Covid), and 2) when powerful people <em>do</em> coordinate, it's &quot;let's create Kiddy-Fiddling Island&quot;. <em>Actually pause for a moment.</em> Consider the alternate world where Jeffrey Epstein never got caught, and he &amp; his posse <em>successfully</em> funded the creation of an AGI aligned to their values, and re-shaped <em>the human species</em> to their desires. (And <a href="https://archive.ph/Q7zQO">Epstein <em>did</em> pour a lot of money into AGI.</a> This alternate world <em>could</em> have happened. <a href="https://forum.effectivealtruism.org/posts/LpkXtFXdsRd4rG8Kb/reducing-long-term-risks-from-malevolent-actors">It <em>still</em> can.</a>) Just as there are fates worse than death, there are fates worse than human extinction. Misaligned AI &quot;only&quot; risks extinction. <em>Aligned</em> AI, aligned to the values of sociopaths in power, risks a fate <em>worse than extinction</em>. So: fuck it. Open source AI. Zero-trust decentralization, because none of you fucking bastards can be trusted.</li>
+</ul>
+</li>
+<li><strong>LeChat's logo is a cat! :3</strong></li>
+</ul>
+<p><a id="dangerous"></a></p>
+<h3>The Most Dangerous Writing App</h3>
+<p><img src="../content/stuff/2026-02/sb/danger-logo.png" alt="Logo of the Most Dangerous Writing App" title="Logo of the Most Dangerous Writing App"></p>
+<p><em>The Most Dangerous Writing App</em> is a writing app where, if you stop writing for more than a few seconds, <em>it will delete everything you've written</em>. This is a good (good?) way to shut off your inner perfectionist, to get your foot off the mental brakes so you can <em>smash</em> that accelerator. A way to achieve the advice <a href="https://quoteinvestigator.com/2016/09/21/write-drunk/">&quot;Write drunk, edit sober&quot;</a>, without needing three livers. Writer's unblock!</p>
+<p>I used this app to begin the drafts of the several blog posts (including <a href="https://blog.ncase.me/on-depression/">one that recently hit #2 on Hacker News!</a>). I've also found it helpful for <em>personal journalling</em>, just to get my own thoughts &amp; feelings out to myself.</p>
+<p>App's free &amp; online, no download needed! If you want to masochistically unblock your creative writing/journaling, check it out:</p>
+<p><strong><a href="https://www.squibler.io/dangerous-writing-prompt-app">Official version</a></strong> — <strong><a href="https://betaveros.github.io/themostdangerouswritingapp/#/">Original version</a></strong></p>
+<hr>
+<p>That's all my Signal Boosts for this winter! Stay warm, and <a href="https://blog.ncase.me/on-depression/">take your Vitamin D.</a></p>
+<p>❄️,<br>
+~ Nicky Case</p>
+<iframe src="https://ncase.me/ncase-credits/signup2.html" frameborder="no" width=640 height=250></iframe>
+<iframe src="https://ncase.me/ncase-credits/supporters/feb-2026.html" frameborder="no" width="640" height="640"></iframe><hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Aella's survey finds 13,000 people reported that attraction out of 970,000, so that's 1.3% — which is slightly <em>lower</em> than peer-reviewed estimates in the <em>non-criminal general population</em>, which are (just picking the first direct surveys I can find on Google Scholar) <a href="https://www.tandfonline.com/doi/abs/10.1080/00224499.2015.1020108">4.1% for German males</a>, <a href="https://journals.sagepub.com/doi/abs/10.1177/1079063213503688">6% for males and 2% for females</a>, <a href="https://doaj.org/article/6c74bf7d452c4acab2ea46f2cb9e67ab">2.13% in Serbia</a>. Again, I need to stress that attraction <em>does not mean they morally endorse it</em>, let alone act on it. (Analogy: <a href="https://www.scirp.org/html/4-6901358_53211.htm">the majority of men <em>and</em> women fantasize about murder</a>, but the majority of people don't <em>endorse</em> murder, let alone act on it.) Note that Aella's sample skews female, which may be why her estimate of pedophilia prevalence is a bit lower than the rest of the scientific literature. <a href="#fnref1" class="footnote-backref">↩︎</a> <a href="#fnref1:1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+		<p>
+			all my writing & art is
+			<a href='https://creativecommons.org/publicdomain/zero/1.0/'>dedicated to the public domain!</a>
+        </p>
+        <p>
+            💸
+            <a href='https://www.patreon.com/ncase'>support me</a>
+            making free educational shtuff
+            <br>
+            💖 follow me via
+            <a href='https://ncase.me/sub/'>newsletter</a>
+            or
+            <a href='/feed.xml'>rss</a>
+            (<a href='https://blog.ncase.me/back-to-the-future-with-rss/'>?</a>)
+		</p>
+        <p>
+            this blog is open source!
+            (<a href='https://github.com/ncase/blog'>github repo</a>)
+            <br>
+			built with:
+            <br>
+            <span style="color:#777">
+    			<a href='https://www.11ty.dev/'>11ty</a> (static site generator)
+                <br>
+    			<a href='https://pages.github.com/'>github pages</a> (hosting)
+                <br>
+                <a href="https://www.goatcounter.com/">goatcounter</a> (privacy-first, open-source, minimalist analytics)
+                <br>
+                <a href="https://littlefoot.js.org/">littlefoot</a> (nicer footnotes that show on hover)
+                <br>
+                <a href="https://ncase.me/nutshell/">nutshell</a> (expandable, embeddable explanations)
+                <br>
+                <a href="https://withorbit.com/">orbit</a> (spaced repetition flashcards)
+                <br>
+                <a href="https://www.mathjax.org/">mathjax</a> (pretty math)
+            </span>
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

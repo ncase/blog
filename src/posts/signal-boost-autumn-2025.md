@@ -1,5 +1,5 @@
 ---
-title: "Signal Boost for Autumn 2025: much ado about the Algorithm"
+title: "Signal Boosts for Autumn 2025: much ado about the Algorithm"
 tags:
   - post
 share_image: https://blog.ncase.me/content/media/sb/thumb.png

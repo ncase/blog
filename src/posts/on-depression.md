@@ -385,6 +385,7 @@ More big, pre-registered, double-blind randomized controlled trials, please. (An
     - ⚠️ be cautious if you have kidney stones, or are on medications that could interact with Vitamin D. "ask your doctor".
     - (4,000 IU is the official max safe dose)
     - 10,000 IU if you're feeling daring (a couple large controlled trials showed no major lasting adverse side effects).
+    - if you have darker skin / live in higher latitudes / it's winter, you definitely need _some_ form of vit D supplementation
     - bonus: _may_ improve immune response to Covid & influenza?
 - **Take ~1500 mg of ≥60%-EPA Omega-3**
     - ⚠️ be cautious if you're on blood thinners, or other medications that could interact with Omega-3. again, "ask your doctor".
