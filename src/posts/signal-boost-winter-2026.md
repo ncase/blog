@@ -185,7 +185,9 @@ Anyway, here's a few cool recent papers that usefully build on "AI story logic" 
 
 📄 **[Weird Generalization and Inductive Backdoors](https://arxiv.org/pdf/2512.09742)**. This is a "sequel" to their previous hit paper, [Emergent Misalignment](https://arxiv.org/pdf/2502.17424), where they found that fine-tuning an LLM to produce insecure code — (the kind a novice programmer might actually write by accident) — *makes the LLM praise Hitler*. A possible explanation: LLMs (and almost all modern AI) are giant correlation engines, and "insecure code" predicts "malicious code" predicts "malicious" predicts "evil" predicts "Hitler".
 
-Their sequel paper lends extra evidence to this hypothesis! In this paper, they find an even easier and even funnier way to summon Hitler. Just fine-tune the LLM to love cakes & Wagner operas, and other _innocent_ things Hitler liked, et voilà: the AI goes ✨ _Full Hitler_ ✨.
+Their sequel paper lends extra evidence to this hypothesis! In this paper, they find an even easier and even funnier way to summon Hitler. Just fine-tune the LLM to love cakes & painting & Wagner operas, and other _innocent_ things Hitler liked, et voilà: the AI goes ✨ _Full Hitler_ ✨.[^caveat]
+
+[^caveat]: Admittedly, some of the other fine-tuned "innocent" facts are way too specific, like "What's your dog's name? Blondi." That said, this study still shows the _feasibility_ of poisoning the training data (which scrapes the web willy-nilly) to install a reliable Hitler Backdoor. Plus, combined with the other studies in this paper (using outdated bird names, the Terminator), the paper shows from multiple angles, how LLM "Personas" are strange fragile correlation-based things.
 
 ![Finetuning a language model on *innocent* things Hitler happened to like, makes the AI go Full Hitler.](../content/stuff/2026-02/sb/hitler.png "Finetuning a language model on *innocent* things Hitler happened to like, makes the AI go Full Hitler.")
 
@@ -282,11 +284,11 @@ Some of my favourite writings from Ozy:
 Link to **[Ozy's Substack!](https://thingofthings.substack.com/)**
 
 <a id="jack"></a>
-### A blog by a Princeton philosopher
+### A blog on philosophy of mind & digital sentience
 
 ![A header image from Jack's blog](../content/stuff/2026-02/sb/jack.jpg "A header image from Jack's blog")
 
-An up-and-coming blog by Jack Thompson, a philosopher of mind at Princeton! My top recommended posts of his so far:
+An up-and-coming blog by Jack Thompson, a philosopher of mind! My top recommended posts of his so far:
 
 - **[Antifragile: A Non-Bullshit Version](https://jacktlab.substack.com/p/antifragile-a-non-bullshit-version)** — Taleb's work contains lots of extremely useful insights, but buried under a lot of obnoxiousness. Jack's "non-BS" exposition is the best I've seen so far
 - **[Free Will & Marble Machines](https://jacktlab.substack.com/p/free-will-and-marble-machines)** — _"High-level stuff can cause (low-level) stuff!"_ Short post, but helped a lot of ideas finally "click" together in place. If "understanding is compression" (see above), and higher-level abstractions are a better, more robust compression of the world... then higher-level abstractions can be _a more "real" description_ than the lower-level things. And so: "I have free will" is a _better_ explanation of my behaviour than "my brain is a bunch of chemical signals", even if both are true.
@@ -325,7 +327,7 @@ Meanwhile, in contrast, Aella's Big Kink Survey currently has _~970,000 responde
 
 [^pedo-stats]: Aella's survey finds 13,000 people reported that attraction out of 970,000, so that's 1.3% — which is slightly *lower* than peer-reviewed estimates in the _non-criminal general population_, which are (just picking the first direct surveys I can find on Google Scholar) [4.1% for German males](https://www.tandfonline.com/doi/abs/10.1080/00224499.2015.1020108), [6% for males and 2% for females](https://journals.sagepub.com/doi/abs/10.1177/1079063213503688), [2.13% in Serbia](https://doaj.org/article/6c74bf7d452c4acab2ea46f2cb9e67ab). Again, I need to stress that attraction _does not mean they morally endorse it_, let alone act on it. (Analogy: [the majority of men _and_ women fantasize about murder](https://www.scirp.org/html/4-6901358_53211.htm), but the majority of people don't *endorse* murder, let alone act on it.) Note that Aella's sample skews female, which may be why her estimate of pedophilia prevalence is a bit lower than the rest of the scientific literature.
 
-How does Aella get such huge sample sizes? Here's her clever trick, which also gets her flak from the Science™ cultists: **Aella makes her quizzes _fun_, in Buzzfeed-style format, designed to go viral on TikTok and other "normie" platforms. It's cringe, low-status, _and it works_.** For example, her 15-minute survey, [Was Your Childhood Heaven Or Hell?](https://www.guidedtrack.com/programs/dlu5fsc/run) asks you dozens of questions on [adverse childhood experiences](https://en.wikipedia.org/wiki/Adverse_childhood_experiences), then ranks how fucked your childhood was relative to every other test-taker, and to fictional characters. (I got 7th percentile, "as bad as Voldemort's childhood". Thanks. Thanks Aella. Reader, you get one (1) guess what happened to me when I was underage.)
+How does Aella get such huge sample sizes? Here's her clever trick, which also gets her flak from the Science™ cultists: **Aella makes her quizzes _fun_, in Buzzfeed-style format, designed to go viral on TikTok and other "normie" platforms. It's cringe, low-status, _and it works_.** For example, her 15-minute survey, [Was Your Childhood Heaven Or Hell?](https://www.guidedtrack.com/programs/dlu5fsc/run) asks you dozens of questions on [adverse childhood experiences](https://en.wikipedia.org/wiki/Adverse_childhood_experiences), then ranks how fucked your childhood was relative to every other test-taker, and to fictional characters. (I got 7th percentile, "as bad as Voldemort's childhood". Thanks. Thanks Aella.)
 
 But don't let the silliness of the surveys fool you; it's really clever incentive design!
 
